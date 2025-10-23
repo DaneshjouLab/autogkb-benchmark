@@ -20,11 +20,11 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
     if len(ground_truth) != len(predictions):
         raise ValueError(f"Length mismatch: GT={len(ground_truth)}, Pred={len(predictions)}")
     
-    # Initialize PubMedBERT model for semantic similarity
+    # PubMedBERT model init for semantic similarity
     print("Loading PubMedBERT model...")
     model = SentenceTransformer('microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext')
     
-    # Field evaluation functions
+    # Field eval functions
     def exact_match(gt_val: Any, pred_val: Any) -> float:
         """1:1 exact match"""
         if gt_val is None and pred_val is None:
@@ -47,34 +47,86 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
             return 1.0
         
         try:
-            # Get embeddings for both strings
+            # embedding based similarity
             embeddings = model.encode([gt_str, pred_str])
             gt_embedding = embeddings[0]
             pred_embedding = embeddings[1]
-            
-            # Calculate cosine similarity
             similarity = np.dot(gt_embedding, pred_embedding) / (
                 np.linalg.norm(gt_embedding) * np.linalg.norm(pred_embedding)
             )
             return float(similarity)
         except Exception as e:
             print(f"Error in semantic similarity: {e}")
-            # Fallback to sequence matcher
+            # sequence matcher fallback
             return SequenceMatcher(None, gt_str.lower(), pred_str.lower()).ratio()
     
-    def variant_coverage(gt_variants: str, pred_variants: str) -> float:
-        """Evaluate variant coverage - penalize missing, don't penalize extra"""
+    def enhanced_variant_coverage(gt_variants: str, pred_variants: str) -> float:
+        """
+        Evaluate variant coverage with proper parsing and wild-type handling.
+        - Penalize for missing GT variants
+        - Don't penalize for extra predicted variants (unless they're significant)
+        - Exclude wild-type alleles from penalty
+        - Use exact match for rsIDs and star alleles
+        - Use semantic similarity for phenotype descriptions
+        """
         if not gt_variants or not pred_variants:
             return 1.0 if not gt_variants and not pred_variants else 0.0
         
-        # Simple coverage check
-        gt_lower = gt_variants.lower()
-        pred_lower = pred_variants.lower()
+        # Helpers to check the type of variant (wild-type, rsID, star allele)
+        def is_wildtype(variant: str) -> bool:
+            variant_lower = variant.lower().strip()
+            wildtype_indicators = ['wild type', 'wildtype', 'wt', '*1']
+            return any(wt in variant_lower for wt in wildtype_indicators)
         
-        if gt_lower in pred_lower or pred_lower in gt_lower:
-            return 1.0
+        def is_rsid(variant: str) -> bool:
+            return variant.strip().lower().startswith('rs')
         
-        return SequenceMatcher(None, gt_lower, pred_lower).ratio()
+        def is_star_allele(variant: str) -> bool:
+            return '*' in variant.strip()
+        
+        # Parse variants (handle multiple separators)
+        import re
+        gt_list = re.split(r'[,;|\s]+(?:\+\s*)?', gt_variants)
+        pred_list = re.split(r'[,;|\s]+(?:\+\s*)?', pred_variants)
+        
+        gt_list = [v.strip() for v in gt_list if v.strip()]
+        pred_list = [v.strip() for v in pred_list if v.strip()]
+        
+        # Filter out wild-type from ground truth (don't penalize for missing these)
+        gt_list_filtered = [v for v in gt_list if not is_wildtype(v)]
+        
+        if not gt_list_filtered:
+            # If all GT variants were wild-type, just check if prediction is reasonable
+            return 1.0 if pred_list else 0.0
+        
+        # Calculate coverage
+        covered_count = 0
+        for gt_var in gt_list_filtered:
+            gt_var_lower = gt_var.lower()
+            
+            # Exact match for rsIDs and star alleles
+            if is_rsid(gt_var) or is_star_allele(gt_var):
+                if any(gt_var_lower == pred_var.lower() for pred_var in pred_list):
+                    covered_count += 1
+            else:
+                # Semantic/fuzzy match for phenotype descriptions
+                best_match_score = 0.0
+                for pred_var in pred_list:
+                    # Check for substring matches
+                    if gt_var_lower in pred_var.lower() or pred_var.lower() in gt_var_lower:
+                        best_match_score = 1.0
+                        break
+                    # Use sequence matching for similarity
+                    similarity = SequenceMatcher(None, gt_var_lower, pred_var.lower()).ratio()
+                    best_match_score = max(best_match_score, similarity)
+                
+                # Consider covered if similarity > 0.8
+                if best_match_score > 0.8:
+                    covered_count += 1
+        
+        # Coverage score: proportion of GT variants found in predictions
+        coverage = covered_count / len(gt_list_filtered)
+        return coverage
     
     def category_match(gt_val: str, pred_val: str, valid_categories: List[str]) -> float:
         """Category classification accuracy"""
@@ -90,7 +142,7 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
     
     # Field definitions and evaluation methods
     field_evaluators = {
-        'Variant/Haplotypes': variant_coverage,
+        'Variant/Haplotypes': enhanced_variant_coverage,
         'Gene': semantic_similarity,
         'Drug(s)': semantic_similarity,
         'PMID': exact_match,
@@ -141,5 +193,21 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
     # Calculate overall score
     field_scores = [scores['mean_score'] for scores in results['field_scores'].values()]
     results['overall_score'] = sum(field_scores) / len(field_scores) if field_scores else 0.0
+    
+    # Generate detailed results for each sample
+    results['detailed_results'] = []
+    for i, (gt, pred) in enumerate(zip(ground_truth, predictions)):
+        sample_result = {
+            'sample_id': i,
+            'field_scores': {}
+        }
+        
+        for field, evaluator in field_evaluators.items():
+            gt_val = gt.get(field)
+            pred_val = pred.get(field)
+            score = evaluator(gt_val, pred_val)
+            sample_result['field_scores'][field] = score
+        
+        results['detailed_results'].append(sample_result)
     
     return results

@@ -101,11 +101,17 @@ def main():
     # Run the benchmark
     results = evaluate_functional_analysis(gt_annotations, pred_annotations)
     
-    print(f"\n=== BENCHMARK RESULTS ===")
+    print(f"\n=== INDIVIDUAL ANNOTATION SCORES ===")
+    for i, sample_result in enumerate(results['detailed_results']):
+        print(f"\n--- Annotation {i+1} Scores ---")
+        for field, score in sample_result['field_scores'].items():
+            print(f"  {field:25}: {score:.3f}")
+    
+    print(f"\n=== OVERALL BENCHMARK RESULTS ===")
     print(f"Overall Score: {results['overall_score']:.3f}")
     print(f"Total Samples: {results['total_samples']}")
     
-    print(f"\n=== FIELD SCORES ===")
+    print(f"\n=== AVERAGE FIELD SCORES ===")
     for field, scores in results['field_scores'].items():
         print(f"{field:25}: {scores['mean_score']:.3f}")
 
