@@ -5,21 +5,25 @@ version = "0.1.0"
 channels = ["conda-forge", "pypi"]
 platforms = ["osx-64", "linux-64"]
 
-[dependencies]
-python = ">=3.9"
-requests = "*"
-pandas = "*"
-numpy = "*"
-
 [tasks]
 setup-repo = "pixi install && pixi run setup-data"
 setup-data = "python -m src.data_setup.main"
 
-[environments]
-dev = { solve-group = "dev" }
-
-[environments.dev.dependencies]
-pytest = "*"
-black = "*"
-flake8 = "*"
-mypy = "*"
+[dependencies]
+seaborn = ">=0.13.2,<0.14"
+tqdm = ">=4.67.1,<5"
+requests = ">=2.32.3,<3"
+biopython = ">=1.85,<2"
+ipykernel = ">=6.29.5,<7"
+pandas = ">=2.2.3,<3"
+numpy = ">=2.2.5,<3"
+openai = ">=1.76.2,<2"
+playwright = ">=1.52.0,<2"
+loguru = ">=0.7.2,<0.8"
+python-dotenv = ">=1.1.0,<2"
+black = ">=25.1.0,<26"
+datasets = ">=3.6.0,<4"
+litellm = ">=1.72.2,<2"
+termcolor = ">=3.1.0,<4"
+gdown = ">=5.2.0,<6"
+google-auth = ">=2.40.3,<3"
