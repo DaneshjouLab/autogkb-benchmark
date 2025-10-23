@@ -7,8 +7,13 @@ platforms = ["osx-64", "linux-64"]
 
 [dependencies]
 python = ">=3.9"
+requests = "*"
+pandas = "*"
+numpy = "*"
 
 [tasks]
+setup-repo = "pixi install && pixi run setup-data"
+setup-data = "python -m src.data_setup.main"
 
 [environments]
 dev = { solve-group = "dev" }
