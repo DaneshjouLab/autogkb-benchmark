@@ -1,6 +1,6 @@
 [project]
 name = "autogkb-benchmark"
-description = "Benchmark for evaluating LLM-generated functional analysis annotations"
+description = "Benchmark for evaluating annotations"
 version = "0.1.0"
 channels = ["conda-forge", "pypi"]
 platforms = ["osx-64", "linux-64"]
