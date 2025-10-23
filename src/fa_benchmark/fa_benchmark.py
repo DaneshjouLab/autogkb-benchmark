@@ -60,7 +60,7 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
             # sequence matcher fallback
             return SequenceMatcher(None, gt_str.lower(), pred_str.lower()).ratio()
     
-    def enhanced_variant_coverage(gt_variants: str, pred_variants: str) -> float:
+    def variant_coverage(gt_variants: str, pred_variants: str) -> float:
         """
         Evaluate variant coverage with proper parsing and wild-type handling.
         - Penalize for missing GT variants
@@ -142,7 +142,7 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
     
     # Field definitions and evaluation methods
     field_evaluators = {
-        'Variant/Haplotypes': enhanced_variant_coverage,
+        'Variant/Haplotypes': variant_coverage,
         'Gene': semantic_similarity,
         'Drug(s)': semantic_similarity,
         'PMID': exact_match,
