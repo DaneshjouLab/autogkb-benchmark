@@ -1,5 +1,7 @@
 from typing import Dict, List, Any
 from difflib import SequenceMatcher
+import numpy as np
+from sentence_transformers import SentenceTransformer
 
 
 def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]], 
@@ -18,6 +20,10 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
     if len(ground_truth) != len(predictions):
         raise ValueError(f"Length mismatch: GT={len(ground_truth)}, Pred={len(predictions)}")
     
+    # Initialize PubMedBERT model for semantic similarity
+    print("Loading PubMedBERT model...")
+    model = SentenceTransformer('microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext')
+    
     # Field evaluation functions
     def exact_match(gt_val: Any, pred_val: Any) -> float:
         """1:1 exact match"""
@@ -28,19 +34,33 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
         return 1.0 if str(gt_val).strip().lower() == str(pred_val).strip().lower() else 0.0
     
     def semantic_similarity(gt_val: Any, pred_val: Any) -> float:
-        """Semantic similarity using sequence matching"""
+        """Semantic similarity using PubMedBERT embeddings"""
         if gt_val is None and pred_val is None:
             return 1.0
         if gt_val is None or pred_val is None:
             return 0.0
         
-        gt_str = str(gt_val).strip().lower()
-        pred_str = str(pred_val).strip().lower()
+        gt_str = str(gt_val).strip()
+        pred_str = str(pred_val).strip()
         
         if gt_str == pred_str:
             return 1.0
         
-        return SequenceMatcher(None, gt_str, pred_str).ratio()
+        try:
+            # Get embeddings for both strings
+            embeddings = model.encode([gt_str, pred_str])
+            gt_embedding = embeddings[0]
+            pred_embedding = embeddings[1]
+            
+            # Calculate cosine similarity
+            similarity = np.dot(gt_embedding, pred_embedding) / (
+                np.linalg.norm(gt_embedding) * np.linalg.norm(pred_embedding)
+            )
+            return float(similarity)
+        except Exception as e:
+            print(f"Error in semantic similarity: {e}")
+            # Fallback to sequence matcher
+            return SequenceMatcher(None, gt_str.lower(), pred_str.lower()).ratio()
     
     def variant_coverage(gt_variants: str, pred_variants: str) -> float:
         """Evaluate variant coverage - penalize missing, don't penalize extra"""
