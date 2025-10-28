@@ -25,6 +25,7 @@
 - Uses `microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext` model
 - Cosine similarity between embeddings
 - Fallback to sequence matching if embedding fails
+- Uses a singleton pattern to cache the PubMedBERT model, avoiding reloading on multiple evaluations
 
 #### 4. Variant Coverage Field
 **Field:** `Variant/Haplotypes`
@@ -39,13 +40,7 @@
 - **Coverage calculation:** `covered_variants / total_non_wildtype_variants`
 
 #### Overall Score
-The overall benchmark score is the arithmetic mean of all field scores:
-```python
-overall_score = sum(field_scores) / len(field_scores)
-```
-
-#### Sample-Level Scores
-Each annotation receives individual scores for all fields, allowing for detailed error analysis.
+The overall benchmark score is the arithmetic mean of all field scores, and also includes dependency validation. 
 
 ### Running the Benchmark
 ```bash

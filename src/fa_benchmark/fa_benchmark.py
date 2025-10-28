@@ -1,11 +1,127 @@
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 from difflib import SequenceMatcher
 import numpy as np
+import re
 from sentence_transformers import SentenceTransformer
+from src.fa_benchmark.model_cache import ModelCache
+
+
+def validate_external_data(annotation: Dict[str, Any]) -> List[str]:
+    """Validate external data format and nomenclature."""
+    issues = []
+    
+    # Regex patterns for validation
+    rsid_pattern = re.compile(r'^rs\d+$', re.IGNORECASE)
+    star_allele_pattern = re.compile(r'^[A-Z0-9]+\*\d+$')
+    gene_pattern = re.compile(r'^[A-Z0-9]+$')
+    
+    # Validate variant nomenclature
+    variants = annotation.get('Variant/Haplotypes', '')
+    if variants:
+        variant_list = re.split(r'[,;|\s]+(?:\+\s*)?', variants)
+        for variant in variant_list:
+            variant = variant.strip()
+            if not variant:
+                continue
+                
+            # Check rsID format
+            if variant.lower().startswith('rs'):
+                if not rsid_pattern.match(variant):
+                    issues.append(f"Invalid rsID format: {variant}")
+            
+            # Check star allele format
+            elif '*' in variant:
+                if not star_allele_pattern.match(variant):
+                    issues.append(f"Invalid star allele format: {variant}")
+    
+    # Validate gene names
+    gene = annotation.get('Gene', '')
+    if gene and not gene_pattern.match(gene):
+        issues.append(f"Invalid gene name format: {gene}")
+    
+    # Validate drug names (should be non-empty when significance is yes)
+    drugs = annotation.get('Drug(s)', '')
+    significance = annotation.get('Significance', '')
+    if significance == 'yes' and not drugs:
+        issues.append("Drug(s) should be specified when Significance is 'yes'")
+    
+    return issues
+
+
+def validate_field_dependencies(annotation: Dict[str, Any]) -> List[str]:
+    """Validate logical dependencies between fields."""
+    issues = []
+    
+    # If "Gene/gene product" is filled, "Gene" must be filled
+    gene_product = annotation.get('Gene/gene product')
+    gene = annotation.get('Gene')
+    if gene_product and not gene:
+        issues.append("Gene field required when Gene/gene product is specified")
+    
+    # If "Comparison Allele(s)" exists, "Variant/Haplotypes" must exist
+    comparison_alleles = annotation.get('Comparison Allele(s) or Genotype(s)')
+    variants = annotation.get('Variant/Haplotypes')
+    if comparison_alleles and not variants:
+        issues.append("Variant/Haplotypes required when Comparison Allele(s) is specified")
+    
+    # If "Direction of effect" is set, "Is/Is Not associated" should be "Associated with"
+    direction = annotation.get('Direction of effect')
+    association = annotation.get('Is/Is Not associated')
+    if direction and association != 'Associated with':
+        issues.append("Direction of effect requires 'Associated with' status")
+    
+    # If "Functional terms" is specified, "Gene/gene product" should be filled
+    functional_terms = annotation.get('Functional terms')
+    gene_product = annotation.get('Gene/gene product')
+    if functional_terms and not gene_product:
+        issues.append("Gene/gene product recommended when Functional terms is specified")
+    
+    return issues
+
+
+def validate_annotation_consistency(annotation: Dict[str, Any], 
+                                 study_params: List[Dict[str, Any]]) -> List[str]:
+    """Check annotation consistency with study parameters."""
+    issues = []
+    
+    # Check Variant Annotation ID exists in study_parameters
+    variant_id = annotation.get('Variant Annotation ID')
+    if variant_id:
+        found_in_study = any(
+            sp.get('Variant Annotation ID') == variant_id 
+            for sp in study_params
+        )
+        if not found_in_study:
+            issues.append(f"Variant Annotation ID {variant_id} not found in study_parameters")
+    
+    # Check PMID consistency
+    annotation_pmid = annotation.get('PMID')
+    if annotation_pmid and study_params:
+        study_pmids = {sp.get('PMID') for sp in study_params if sp.get('PMID')}
+        if study_pmids and annotation_pmid not in study_pmids:
+            issues.append(f"PMID {annotation_pmid} inconsistent with study parameters")
+    
+    return issues
+
+
+def validate_all_dependencies(annotation: Dict[str, Any], 
+                            study_params: Optional[List[Dict[str, Any]]] = None) -> List[str]:
+    """Run all validation checks on an annotation."""
+    issues = []
+    
+    # Run all validation methods
+    issues.extend(validate_external_data(annotation))
+    issues.extend(validate_field_dependencies(annotation))
+    
+    if study_params:
+        issues.extend(validate_annotation_consistency(annotation, study_params))
+    
+    return issues
 
 
 def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]], 
-                                predictions: List[Dict[str, Any]]) -> Dict[str, Any]:
+                                predictions: List[Dict[str, Any]],
+                                study_parameters: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
     """
     Evaluate LLM predictions against ground truth for functional analysis annotations.
     
@@ -21,8 +137,7 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
         raise ValueError(f"Length mismatch: GT={len(ground_truth)}, Pred={len(predictions)}")
     
     # PubMedBERT model init for semantic similarity
-    print("Loading PubMedBERT model...")
-    model = SentenceTransformer('microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext')
+    model = ModelCache.get_model()
     
     # Field eval functions
     def exact_match(gt_val: Any, pred_val: Any) -> float:
@@ -196,6 +311,7 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
     
     # Generate detailed results for each sample
     results['detailed_results'] = []
+    
     for i, (gt, pred) in enumerate(zip(ground_truth, predictions)):
         sample_result = {
             'sample_id': i,
@@ -207,6 +323,10 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
             pred_val = pred.get(field)
             score = evaluator(gt_val, pred_val)
             sample_result['field_scores'][field] = score
+        
+        # Add dependency validation issues
+        dependency_issues = validate_all_dependencies(pred, study_parameters)
+        sample_result['dependency_issues'] = dependency_issues
         
         results['detailed_results'].append(sample_result)
     
