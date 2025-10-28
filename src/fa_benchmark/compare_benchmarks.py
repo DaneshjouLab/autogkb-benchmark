@@ -114,20 +114,6 @@ def run() -> None:
         report_lines.append("#### Average field scores")
         report_lines.append(format_field_scores(results["field_scores"]))
         report_lines.append("")
-        
-        # Dependency validation issues
-        all_issues = []
-        for sample in results['detailed_results']:
-            if sample.get('dependency_issues'):
-                all_issues.extend(sample['dependency_issues'])
-        
-        if all_issues:
-            report_lines.append("#### Dependency Validation Issues")
-            for issue in all_issues[:10]:  # Show first 10
-                report_lines.append(f"- {issue}")
-            if len(all_issues) > 10:
-                report_lines.append(f"- ... and {len(all_issues) - 10} more")
-            report_lines.append("")
 
         overall_scores.append(results["overall_score"])
 

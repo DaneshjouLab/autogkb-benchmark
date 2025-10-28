@@ -39,12 +39,6 @@ def validate_external_data(annotation: Dict[str, Any]) -> List[str]:
     if gene and not gene_pattern.match(gene):
         issues.append(f"Invalid gene name format: {gene}")
     
-    # Validate drug names (should be non-empty when significance is yes)
-    drugs = annotation.get('Drug(s)', '')
-    significance = annotation.get('Significance', '')
-    if significance == 'yes' and not drugs:
-        issues.append("Drug(s) should be specified when Significance is 'yes'")
-    
     return issues
 
 
@@ -305,10 +299,6 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
             'scores': scores
         }
     
-    # Calculate overall score
-    field_scores = [scores['mean_score'] for scores in results['field_scores'].values()]
-    results['overall_score'] = sum(field_scores) / len(field_scores) if field_scores else 0.0
-    
     # Generate detailed results for each sample
     results['detailed_results'] = []
     
@@ -328,6 +318,47 @@ def evaluate_functional_analysis(ground_truth: List[Dict[str, Any]],
         dependency_issues = validate_all_dependencies(pred, study_parameters)
         sample_result['dependency_issues'] = dependency_issues
         
+        # Apply dependency penalty to relevant field scores only
+        if dependency_issues:
+            penalty_per_issue = 0.05  # 5% penalty per dependency issue
+            total_penalty = min(len(dependency_issues) * penalty_per_issue, 0.3)  # Cap at 30% penalty
+            
+            # Define which fields to penalize based on the type of issue
+            fields_to_penalize = set()
+            for issue in dependency_issues:
+                if "Gene" in issue or "gene" in issue:
+                    fields_to_penalize.update(['Gene', 'Gene/gene product'])
+                elif "Variant" in issue or "variant" in issue:
+                    fields_to_penalize.update(['Variant/Haplotypes', 'Comparison Allele(s) or Genotype(s)'])
+                elif "Direction" in issue or "Associated" in issue:
+                    fields_to_penalize.update(['Direction of effect', 'Is/Is Not associated'])
+                elif "Functional" in issue:
+                    fields_to_penalize.update(['Functional terms', 'Gene/gene product'])
+                elif "rsID" in issue or "star allele" in issue:
+                    fields_to_penalize.add('Variant/Haplotypes')
+                else:
+                    # For other issues, penalize all fields
+                    fields_to_penalize.update(sample_result['field_scores'].keys())
+            
+            for field in fields_to_penalize:
+                if field in sample_result['field_scores']:
+                    original_score = sample_result['field_scores'][field]
+                    penalized_score = original_score * (1 - total_penalty)
+                    sample_result['field_scores'][field] = penalized_score
+        
         results['detailed_results'].append(sample_result)
+    
+    # Recalculate field scores and overall score after penalties
+    field_names = list(field_evaluators.keys())
+    for field in field_names:
+        field_scores = [sample['field_scores'][field] for sample in results['detailed_results']]
+        results['field_scores'][field] = {
+            'mean_score': sum(field_scores) / len(field_scores),
+            'scores': field_scores
+        }
+    
+    # Calculate overall score
+    field_scores = [scores['mean_score'] for scores in results['field_scores'].values()]
+    results['overall_score'] = sum(field_scores) / len(field_scores) if field_scores else 0.0
     
     return results
