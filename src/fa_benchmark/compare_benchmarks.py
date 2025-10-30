@@ -9,7 +9,11 @@ import json
 from pathlib import Path
 import sys
 
-from src.fa_benchmark.fa_benchmark import evaluate_functional_analysis
+from src.fa_benchmark.fa_benchmark import (
+    evaluate_functional_analysis,
+    expand_annotations_by_variant,
+    normalize_variant,
+)
 
 
 def load_json(path: Path) -> Dict[str, Any]:
@@ -39,14 +43,42 @@ def align_annotations(
     Align ground-truth and benchmark annotations by Variant Annotation ID.
     Returns (gt_list, pred_list, used_variant_ids)
     """
-    gt_by_id = get_fa_by_variant_id(gt_fa)
-    pred_by_id = get_fa_by_variant_id(bench_fa)
+    # Expand multi-variant annotations into per-variant records
+    gt_expanded = expand_annotations_by_variant(gt_fa)
+    pred_expanded = expand_annotations_by_variant(bench_fa)
 
-    common_ids = [vid for vid in gt_by_id.keys() if vid in pred_by_id]
+    # Build maps keyed by (Variant Annotation ID, normalized_variant) with fallback to (id, '')
+    def keyed_map(records: List[Dict[str, Any]]) -> Dict[Tuple[str, str], Dict[str, Any]]:
+        m: Dict[Tuple[str, str], Dict[str, Any]] = {}
+        for rec in records:
+            vid_raw = rec.get('Variant Annotation ID')
+            vid = str(vid_raw) if vid_raw is not None else ''
+            var = rec.get('Variant/Haplotypes') or ''
+            key = (vid, normalize_variant(var) if var else '')
+            # Prefer exact variant key when available
+            if key not in m:
+                m[key] = rec
+        return m
 
-    aligned_gt: List[Dict[str, Any]] = [gt_by_id[vid] for vid in common_ids]
-    aligned_pred: List[Dict[str, Any]] = [pred_by_id[vid] for vid in common_ids]
-    return aligned_gt, aligned_pred, common_ids
+    gt_map = keyed_map(gt_expanded)
+    pred_map = keyed_map(pred_expanded)
+
+    # Determine common keys; if either side lacks a variant token (empty ''),
+    # try to match on (id, any) by falling back to (id, '')
+    common_keys: List[Tuple[str, str]] = []
+    for key in gt_map.keys():
+        if key in pred_map:
+            common_keys.append(key)
+        else:
+            vid, var = key
+            fallback = (vid, '')
+            if fallback in pred_map:
+                common_keys.append(fallback)
+
+    aligned_gt: List[Dict[str, Any]] = [gt_map[k] for k in common_keys]
+    aligned_pred: List[Dict[str, Any]] = [pred_map[k] for k in common_keys]
+    display_keys = [f"{k[0]}:{k[1]}" if k[1] else k[0] for k in common_keys]
+    return aligned_gt, aligned_pred, display_keys
 
 
 def format_field_scores(field_scores: Dict[str, Any]) -> str:

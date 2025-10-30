@@ -6,6 +6,43 @@ from sentence_transformers import SentenceTransformer
 from src.fa_benchmark.model_cache import ModelCache
 
 
+def parse_variant_list(variants_text: Optional[str]) -> List[str]:
+    """Split multi-variant strings into a list of tokens using common separators."""
+    if not variants_text:
+        return []
+    # Reuse the same splitting logic used inside variant_coverage
+    tokens = re.split(r'[,;|\s]+(?:\+\s*)?', variants_text)
+    return [t.strip() for t in tokens if t and t.strip()]
+
+
+def normalize_variant(variant: str) -> str:
+    """Normalize variant tokens: lowercase rsIDs, standardize spacing/case for star alleles."""
+    v = variant.strip()
+    if v.lower().startswith('rs'):
+        return v.lower()
+    # For star alleles, keep case but normalize internal spaces
+    return re.sub(r'\s+', '', v)
+
+
+def expand_annotations_by_variant(annotations: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Expand annotations with multiple Variant/Haplotypes into per-variant entries.
+    Keeps all other fields identical and marks expanded entries internally.
+    """
+    expanded: List[Dict[str, Any]] = []
+    for ann in annotations:
+        variants_field = ann.get('Variant/Haplotypes')
+        tokens = parse_variant_list(variants_field)
+        if len(tokens) <= 1:
+            expanded.append(ann)
+            continue
+        for tok in tokens:
+            new_ann = dict(ann)
+            new_ann['Variant/Haplotypes'] = normalize_variant(tok)
+            new_ann['_expanded_from_multi_variant'] = True
+            expanded.append(new_ann)
+    return expanded
+
 def validate_external_data(annotation: Dict[str, Any]) -> List[str]:
     """Validate external data format and nomenclature."""
     issues = []

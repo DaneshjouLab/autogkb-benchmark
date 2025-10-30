@@ -40,7 +40,7 @@
 - **Coverage calculation:** `covered_variants / total_non_wildtype_variants`
 
 #### Overall Score
-The overall benchmark score is the arithmetic mean of all field scores, with dependency validation penalties applied (5% per issue, capped at 30% total penalty). 
+The overall benchmark score is the arithmetic mean of all field scores, with dependency validation penalties applied (5% per issue, capped at 30% total penalty). Variant/Haplotypes supports multi-variant records; evaluation is set-aware and does not penalize combined vs split formats.
 
 ### Running the Benchmark
 ```bash

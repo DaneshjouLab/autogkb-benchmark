@@ -4,9 +4,9 @@ PMCs compared: PMC11430164, PMC10786722
 Macro-average overall score: 0.993
 
 ### PMC11430164
-- **Aligned Variant Annotation IDs**: 1452626580, 1452626560
-- **Samples compared**: 2
-- **Overall score**: 0.987
+- **Aligned Variant Annotation IDs**: 1452626580:CYP3A4*2, 1452626580:CYP3A4*3, 1452626580:CYP3A4*4, 1452626580:CYP3A4*5, 1452626580:CYP3A4*9, 1452626580:CYP3A4*14, 1452626580:CYP3A4*15, 1452626580:CYP3A4*16, 1452626580:CYP3A4*17, 1452626580:CYP3A4*19, 1452626580:CYP3A4*24, 1452626580:CYP3A4*28, 1452626580:CYP3A4*29, 1452626580:CYP3A4*31, 1452626560:CYP3A4*11, 1452626560:CYP3A4*18, 1452626560:CYP3A4*33
+- **Samples compared**: 17
+- **Overall score**: 0.986
 
 #### Average field scores
 - **Variant/Haplotypes**: 1.000
@@ -15,7 +15,7 @@ Macro-average overall score: 0.993
 - **PMID**: 1.000
 - **Phenotype Category**: 1.000
 - **Significance**: 1.000
-- **Alleles**: 0.913
+- **Alleles**: 0.896
 - **Specialty Population**: 1.000
 - **Assay type**: 1.000
 - **Metabolizer types**: 1.000
@@ -31,7 +31,7 @@ Macro-average overall score: 0.993
 - **Comparison Metabolizer types**: 1.000
 
 ### PMC10786722
-- **Aligned Variant Annotation IDs**: 1452352260, 1452352325, 1452352320
+- **Aligned Variant Annotation IDs**: 1452352260:rs56038477, 1452352325:rs1801160, 1452352320:rs2297595
 - **Samples compared**: 3
 - **Overall score**: 1.000
 
