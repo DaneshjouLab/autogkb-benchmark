@@ -8,7 +8,7 @@ from pathlib import Path
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent / 'src'))
 
-from benchmarks.run_benchmark import (
+from .run_benchmark import (
     run_single_benchmark,
     run_all_benchmarks,
     display_mismatches,

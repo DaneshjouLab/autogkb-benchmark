@@ -1,7 +1,7 @@
 from typing import Dict, List, Any, Optional, Tuple
 from difflib import SequenceMatcher
 import re
-from benchmarks.shared_utils import (
+from .shared_utils import (
     exact_match,
     semantic_similarity,
     category_equal,

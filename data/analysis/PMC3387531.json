@@ -2,8 +2,8 @@
   "pmcid": "PMC3387531",
   "pmid": "21505298",
   "title": "Toxicogenomics of nevirapine-associated cutaneous and hepatic adverse events among populations of African, Asian, and European descent",
-  "overall_score": 0.15129379714197583,
-  "num_benchmarks": 4,
+  "overall_score": 0.4631965431053605,
+  "num_benchmarks": 3,
   "benchmarks": {
     "drug_annotations": {
       "score": 0.0,
@@ -15,72 +15,138 @@
         "items": []
       },
       "extra_predictions": {
-        "count": 5,
+        "count": 17,
         "items": [
           {
-            "variant": "CYP2B6",
+            "variant": "rs3745274",
             "gene": "CYP2B6",
             "drug": "nevirapine",
             "annotation": {
-              "Variant/Haplotypes": "CYP2B6",
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "rs3745274",
               "Gene": "CYP2B6",
               "Drug(s)": "nevirapine",
+              "PMID": 21505298,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all).",
-              "Sentence": "CYP2B6 516G\u2192T is associated with increased cutaneous adverse events nevirapine among HIV-infected adults.",
+              "Notes": "CYP2B6 516G\u2192T (rs3745274) was associated with nevirapine-associated severe (grade III/IV) cutaneous adverse events. In all participants, cutaneous adverse events were associated with CYP2B6 516G\u2192T with OR 1.66. There was a significant allele-dose effect in Blacks and Whites (Cochran\u2013Armitage trend test P=0.0025 and P=0.021, respectively) and a weaker trend in Asians (P=0.12). In Blacks, the OR for 516TT vs 516GG was 5.92 (95% CI 1.53\u201326.8).",
+              "Sentence": "Genotype TT is associated with increased risk of nevirapine-related severe cutaneous adverse events in people with Disease:HIV infectious disease as compared to genotype GG.",
               "Alleles": "TT",
-              "Metabolizer types": "poor metabolizer",
+              "Specialty Population": null,
+              "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "adverse events",
-              "Multiple drugs And/or": "",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
               "Population types": "in people with",
-              "Population Phenotypes or diseases": "other:HIV-1",
-              "Comparison Allele(s) or Genotype(s)": "",
-              "Comparison Metabolizer types": "",
-              "Specialty Population": "",
-              "Multiple phenotypes or diseases And/or": "",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "GG",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all)...",
-                "The association with 516G\u2192T was particularly strong in Blacks, in whom the OR for 516TT homozygosity relative to 516GG homozygosity was 5.92 [95% confidence interval (CI) 1.53-26.8].",
-                "Among patients with at least 150 CD4 T cells/\u03bcl, polymorphisms in drug metabolism and immune response pathways were associated with greater likelihood of risk for nevirapine-related adverse events."
+                "We studied 276 evaluable cases (175 cutaneous adverse events, 101 hepatic adverse events) and 587 controls. Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais). Risk for cutaneous adverse events was particularly high among Blacks with CYP2B6 516TT and HLA-Cw*04 (OR 18.90) and Asians with HLA-B*35 and HLA-Cw*04 (OR 18.34).",
+                "For CYP2B6 516G\u2192T, increasing T-allele count (0, 1, 2) was significantly associated with progressively increased risk of cutaneous adverse events in Blacks and Whites, with a weak trend in Asians (P=0.0025, P=0.021, and P=0.12, respectively, Cochran-Armitage trend test). Among Asians, the association was stronger for rs2054675 and rs3786547 (both P = 0.041). The association with 516G\u2192T was particularly strong in Blacks, in whom the OR for 516TT homozygosity relative to 516GG homozygosity was 5.92 [95% confidence interval (CI) 1.53\u201326.8].",
+                "Patients carrying both CYP2B6 516TT and HLA-Cw*04 were at highest risk in the total population (OR 6.31, 95% CI 2.53\u201315.73), and in Blacks and Asians analyzed separately (Fig. 4b)."
               ],
-              "_expanded_from_multi_variant": true
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs3745274",
+                "variant_id": "PA166155409",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
             }
           },
           {
-            "variant": "516G\u2192T",
+            "variant": "rs2054675",
             "gene": "CYP2B6",
             "drug": "nevirapine",
             "annotation": {
-              "Variant/Haplotypes": "516G\u2192T",
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "rs2054675",
               "Gene": "CYP2B6",
               "Drug(s)": "nevirapine",
+              "PMID": 21505298,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all).",
-              "Sentence": "CYP2B6 516G\u2192T is associated with increased cutaneous adverse events nevirapine among HIV-infected adults.",
-              "Alleles": "TT",
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
+              "Notes": "Two linked CYP2B6 SNPs, rs2054675 and rs3786547 (r2=0.982), were significantly associated with nevirapine-associated cutaneous adverse events after correction for multiple comparisons in all participants. Among Asians, the association with rs2054675 was stronger than for rs3745274 (P=0.041).",
+              "Sentence": "Genotypes carrying the rs2054675 risk allele are associated with increased risk of nevirapine-related severe cutaneous adverse events in people with Disease:HIV infectious disease as compared to genotypes without the rs2054675 risk allele.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "adverse events",
-              "Multiple drugs And/or": "",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
               "Population types": "in people with",
-              "Population Phenotypes or diseases": "other:HIV-1",
-              "Comparison Allele(s) or Genotype(s)": "",
-              "Comparison Metabolizer types": "",
-              "Specialty Population": "",
-              "Multiple phenotypes or diseases And/or": "",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non\u2011risk allele genotypes",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all)...",
-                "The association with 516G\u2192T was particularly strong in Blacks, in whom the OR for 516TT homozygosity relative to 516GG homozygosity was 5.92 [95% confidence interval (CI) 1.53-26.8].",
-                "Among patients with at least 150 CD4 T cells/\u03bcl, polymorphisms in drug metabolism and immune response pathways were associated with greater likelihood of risk for nevirapine-related adverse events."
+                "A total of 2744 SNPs across ADME and MHC genes (see [supplemental material](#SD1), [http://links.lww.com/QAD/A139](http://links.lww.com/QAD/A139)) were assessed for associations with adverse events in each race group and among all participants. In analyses controlled for population stratification among all participants, two linked SNPs in *CYP2B6* [rs2054675 and rs3786547 (*r*^2^ = 0.982)] were significantly associated with cutaneous adverse events after correcting for multiple comparisons ([Fig. 2a](#F2)).",
+                "For *CYP2B6* 516G\u2192T, increasing T-allele count (0, 1, 2) was significantly associated with progressively increased risk of cutaneous adverse events in Blacks and Whites, with a weak trend in Asians (*P*=0.0025, *P*=0.021, and *P*=0.12, respectively, Cochran-Armitage trend test). Among Asians, the association was stronger for rs2054675 and rs3786547 (both *P* = 0.041).",
+                "CYP2B6 polymorphisms include rs2054675, rs3786547, and rs3745274."
               ],
-              "_expanded_from_multi_variant": true
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs2054675",
+                "variant_id": "PA166155378",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs3786547",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "rs3786547",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "CYP2B6 rs3786547, which is in strong linkage disequilibrium with rs2054675 (r2=0.982) and rs3745274 (r2>0.90), was significantly associated with nevirapine-associated cutaneous adverse events after multiple-testing correction. Among Asians, rs3786547 showed P=0.041 for association with cutaneous adverse events.",
+              "Sentence": "Genotypes carrying the rs3786547 risk allele are associated with increased risk of nevirapine-related severe cutaneous adverse events in people with Disease:HIV infectious disease as compared to genotypes without the rs3786547 risk allele.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non\u2011risk allele genotypes",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "In analyses controlled for population stratification among all participants, two linked SNPs in *CYP2B6* [rs2054675 and rs3786547 (*r*^2^ = 0.982)] were significantly associated with cutaneous adverse events after correcting for multiple comparisons ([Fig. 2a](#F2a)). Both were in linkage disequilibrium with rs3745274 (*CYP2B6* 516G\u2192T; *r*^2^ > 0.90) ([Fig. 2b](#F2b)), which is known to predict delayed plasma nevirapine clearance [[9](#R9)\u2013[15](#R15)].",
+                "For *CYP2B6* 516G\u2192T, increasing T-allele count (0, 1, 2) was significantly associated with progressively increased risk of cutaneous adverse events in Blacks and Whites, with a weak trend in Asians (*P*=0.0025, *P*=0.021, and *P*=0.12, respectively, Cochran-Armitage trend test). Among Asians, the association was stronger for rs2054675 and rs3786547 (both *P* = 0.041).",
+                "Major associations with genetic polymorphism in *CYB2B6* and *HLA* are summarized in [Fig. 4a](#F4). ... CYP2B6 polymorphisms include rs2054675, rs3786547, and rs3745274."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs3786547",
+                "variant_id": "PA166155411",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
             }
           },
           {
@@ -88,31 +154,43 @@
             "gene": "HLA-C",
             "drug": "nevirapine",
             "annotation": {
+              "Variant Annotation ID": 4,
               "Variant/Haplotypes": "HLA-Cw*04",
               "Gene": "HLA-C",
               "Drug(s)": "nevirapine",
+              "PMID": 21505298,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "HLA-Cw*04 was significantly associated with cutaneous adverse events among all study participants, most notably in Blacks and Asians (OR 2.51, all).",
-              "Sentence": "HLA-Cw*04 is associated with increased cutaneous adverse events nevirapine among HIV-infected adults.",
-              "Alleles": "",
-              "Metabolizer types": "",
+              "Notes": "HLA-Cw*04 was significantly associated with nevirapine-associated severe cutaneous adverse events among all study participants, most notably among Blacks and Asians. In analyses excluding concomitant hepatic events, the OR for cutaneous adverse events among all participants increased from 2.51 to 2.98.",
+              "Sentence": "HLA-Cw*04 is associated with increased risk of nevirapine-related severe cutaneous adverse events in people with Disease:HIV infectious disease as compared to HLA-Cw*04-negative individuals.",
+              "Alleles": "HLA-Cw*04-positive",
+              "Specialty Population": null,
+              "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "adverse events",
-              "Multiple drugs And/or": "",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
               "Population types": "in people with",
-              "Population Phenotypes or diseases": "other:HIV-1",
-              "Comparison Allele(s) or Genotype(s)": "",
-              "Comparison Metabolizer types": "",
-              "Specialty Population": "",
-              "Multiple phenotypes or diseases And/or": "",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-Cw*04-negative",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais).",
-                "HLA-Cw*04 was significantly associated with cutaneous adverse events among all study participants, most notably among Blacks and Asians (OR 2.51, all).",
-                "Risk for cutaneous adverse events was particularly high among Blacks with CYP2B6 516TT and HLA-Cw*04 (OR 18.90) and Asians with HLA-B*35 and HLA-Cw*04 (OR 18.34)."
-              ]
+                "We studied 276 evaluable cases (175 cutaneous adverse events, 101 hepatic adverse events) and 587 controls. Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais).",
+                "A total of 863 patients were HLA typed. HLA-Cw*04 was significantly associated with cutaneous adverse events among all study participants, most notably among Blacks and Asians (Fig. 3a).",
+                "In analyses that excluded individuals with concomitant cutaneous and hepatic adverse events, OR for cutaneous adverse events increased from 5.65 to 7.31 for HLA-B*35 in Thai participants and from 2.51 to 2.98 for HLA-Cw*04 among all participants (data not shown)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-Cw*04",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
             }
           },
           {
@@ -120,518 +198,1221 @@
             "gene": "HLA-B",
             "drug": "nevirapine",
             "annotation": {
+              "Variant Annotation ID": 5,
               "Variant/Haplotypes": "HLA-B*35",
               "Gene": "HLA-B",
               "Drug(s)": "nevirapine",
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "HLA-B*35 was strongly associated with cutaneous adverse events in Asian and Thai participants (OR 3.47, Asians; 5.65, Thais).",
-              "Sentence": "HLA-B*35 is associated with increased cutaneous adverse events nevirapine among HIV-infected adults.",
-              "Alleles": "",
-              "Metabolizer types": "",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "adverse events",
-              "Multiple drugs And/or": "",
-              "Population types": "in people with",
-              "Population Phenotypes or diseases": "other:HIV-1",
-              "Comparison Allele(s) or Genotype(s)": "",
-              "Comparison Metabolizer types": "",
-              "Specialty Population": "",
-              "Multiple phenotypes or diseases And/or": "",
-              "Citations": [
-                "Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais).",
-                "Among Asians, but not Blacks or Whites, the OR for cutaneous adverse events was markedly increased among those carrying both HLA-Cw*04 and HLA-B*35 (OR 18.34, 95% CI 5.10-65.99).",
-                "This study confirmed strong associations between HLA-B*35, HLA-Cw*04, and cutaneous adverse events among Asians, particularly in Thai participants."
-              ]
-            }
-          },
-          {
-            "variant": "HLA-DRB*01",
-            "gene": "HLA-DRB",
-            "drug": "nevirapine",
-            "annotation": {
-              "Variant/Haplotypes": "HLA-DRB*01",
-              "Gene": "HLA-DRB",
-              "Drug(s)": "nevirapine",
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "HLA-DRB*01 was significantly associated with hepatic adverse events in Whites (OR 3.02, Whites).",
-              "Sentence": "HLA-DRB*01 is associated with increased hepatic adverse events nevirapine among HIV-infected adults.",
-              "Alleles": "",
-              "Metabolizer types": "",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "adverse events",
-              "Multiple drugs And/or": "",
-              "Population types": "in people with",
-              "Population Phenotypes or diseases": "other:HIV-1",
-              "Comparison Allele(s) or Genotype(s)": "",
-              "Comparison Metabolizer types": "",
-              "Specialty Population": "",
-              "Multiple phenotypes or diseases And/or": "",
-              "Citations": [
-                "Hepatic adverse events were associated with HLA-DRB*01 (OR 3.02, Whites), but not CYP2B6 genotypes.",
-                "*HLA-DRB1*01* was significantly associated with hepatic adverse events in Whites.",
-                "In analyses that excluded individuals with coincident cutaneous and hepatic adverse events, OR for hepatic adverse events among Whites increased from 3.02 to 3.63 for *HLA-DRB1*01.*\"]}   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User. Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.   Assistant has stopped speaking, and hands back control to the User.  Assistant has stopped speaking, and hands back control to the User.    "
-              ]
-            }
-          }
-        ]
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
-      }
-    },
-    "phenotype_annotations": {
-      "score": 0.2675281051132414,
-      "total_samples": 6,
-      "ground_truth_annotations": {
-        "count": 6,
-        "matched_count": 2,
-        "unmatched_count": 4,
-        "items": [
-          {
-            "matched": true,
-            "overall_match_score": 0.7792996287345886,
-            "annotation": {
-              "Variant/Haplotypes": "rs3745274",
-              "Gene": "CYP2B6",
-              "Drug(s)": "nevirapine",
-              "Phenotype Category": "Toxicity",
-              "Alleles": "T",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Phenotype": "Side Effect:Drug Toxicity",
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Comparison Allele(s) or Genotype(s)": null
-            },
-            "field_comparison": {
-              "Variant/Haplotypes": {
-                "ground_truth": "rs3745274",
-                "prediction": "CYP2B6",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Gene": {
-                "ground_truth": "CYP2B6",
-                "prediction": "CYP2B6",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Drug(s)": {
-                "ground_truth": "nevirapine",
-                "prediction": "nevirapine",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype Category": {
-                "ground_truth": "Toxicity",
-                "prediction": "toxicity",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Alleles": {
-                "ground_truth": "T",
-                "prediction": "TT",
-                "score": 0.9099615812301636,
-                "match_status": "partial_match"
-              },
-              "Is/Is Not associated": {
-                "ground_truth": "Associated with",
-                "prediction": "Associated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Direction of effect": {
-                "ground_truth": "increased",
-                "prediction": "increased",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype": {
-                "ground_truth": "Side Effect:Drug Toxicity",
-                "prediction": "cutaneous adverse events",
-                "score": 0.8830347061157227,
-                "match_status": "partial_match"
-              },
-              "When treated with/exposed to/when assayed with": {
-                "ground_truth": "when treated with",
-                "prediction": "when treated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Comparison Allele(s) or Genotype(s)": {
-                "ground_truth": null,
-                "prediction": "GG",
-                "score": 0.0,
-                "match_status": "no_match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.7792996287345886,
-            "annotation": {
-              "Variant/Haplotypes": "rs3745274",
-              "Gene": "CYP2B6",
-              "Drug(s)": "nevirapine",
-              "Phenotype Category": "Toxicity",
-              "Alleles": "T",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Phenotype": "Side Effect:Drug Toxicity",
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Comparison Allele(s) or Genotype(s)": null
-            },
-            "field_comparison": {
-              "Variant/Haplotypes": {
-                "ground_truth": "rs3745274",
-                "prediction": "516G\u2192T",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Gene": {
-                "ground_truth": "CYP2B6",
-                "prediction": "CYP2B6",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Drug(s)": {
-                "ground_truth": "nevirapine",
-                "prediction": "nevirapine",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype Category": {
-                "ground_truth": "Toxicity",
-                "prediction": "toxicity",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Alleles": {
-                "ground_truth": "T",
-                "prediction": "TT",
-                "score": 0.9099615812301636,
-                "match_status": "partial_match"
-              },
-              "Is/Is Not associated": {
-                "ground_truth": "Associated with",
-                "prediction": "Associated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Direction of effect": {
-                "ground_truth": "increased",
-                "prediction": "increased",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype": {
-                "ground_truth": "Side Effect:Drug Toxicity",
-                "prediction": "cutaneous adverse events",
-                "score": 0.8830347061157227,
-                "match_status": "partial_match"
-              },
-              "When treated with/exposed to/when assayed with": {
-                "ground_truth": "when treated with",
-                "prediction": "when treated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Comparison Allele(s) or Genotype(s)": {
-                "ground_truth": null,
-                "prediction": "GG",
-                "score": 0.0,
-                "match_status": "no_match"
-              }
-            }
-          },
-          {
-            "matched": false,
-            "annotation": {
-              "Variant Annotation ID": 1185002091,
-              "Variant/Haplotypes": "HLA-B*35:01",
-              "Gene": "HLA-B",
-              "Drug(s)": "nevirapine",
               "PMID": 21505298,
-              "Phenotype Category": "Toxicity",
+              "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "The frequency of the HLA-B*35 allele was greater in those with nevirapine-related hepatic adverse events as compared to healthy controls when considering a Thai population. No significant results were seen for Asians (non-Thai), Blacks or Whites (p corrected = 0.053, 1.0, 1.0, respectively). Note that this annotation was done on HLA-B*35:01:01:01 because this was the first *35 allele discovered. p-value corrected for multiple testing.",
-              "Sentence": "HLA-B *35:01 is associated with increased risk of Drug Toxicity when treated with nevirapine in people with HIV Infections.",
-              "Alleles": "*35:01",
+              "Notes": "HLA-B*35 was strongly associated with nevirapine-associated severe cutaneous adverse events in Asians and particularly in Thais. Reported ORs for cutaneous adverse events were 3.47 in Asians and 5.65 in Thais; when excluding concomitant hepatic events, the OR in Thais increased to 7.31. Associations in Whites were weak and did not withstand multiple-testing correction.",
+              "Sentence": "HLA-B*35 is associated with increased risk of nevirapine-related severe cutaneous adverse events in Asian patients with Disease:HIV infectious disease as compared to HLA-B*35-negative Asian patients.",
+              "Alleles": "HLA-B*35-positive",
               "Specialty Population": null,
               "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Drug Toxicity",
-              "Multiple phenotypes And/or": "and",
-              "When treated with/exposed to/when assayed with": "when treated with",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-B*35-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cCutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais).\u201d",
+                "\u201cHLA-B*35 was strongly associated with cutaneous adverse events in Asian and Thai participants, but not in non-Thai Asians (mainly Taiwanese); there was a weak association with HLA-B*35 among Whites that did not withstand multiple testing correction. In analyses that excluded individuals with concomitant cutaneous and hepatic adverse events, OR for cutaneous adverse events increased from 5.65 to 7.31 for HLA-B*35 in Thai participants and from 2.51 to 2.98 for HLA-Cw*04 among all participants (data not shown).\u201d",
+                "\u201cOur data confirmed strong associations between HLA-B*35, HLA-Cw*04, and cutaneous adverse events among Asians, particularly in Thai participants, and extended the HLA-Cw*04 association to Black and White populations.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-B*35",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-Cw*04",
+            "gene": "HLA-C, HLA-B",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 6,
+              "Variant/Haplotypes": "HLA-Cw*04",
+              "Gene": "HLA-C, HLA-B",
+              "Drug(s)": "nevirapine",
+              "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Among Asians, carriage of both HLA-Cw*04 and HLA-B*35 markedly increased risk of nevirapine-associated cutaneous adverse events (OR 18.34, 95% CI 5.10\u201365.99). This synergy was not observed in Blacks or Whites.",
+              "Sentence": "The combination of HLA-Cw*04 and HLA-B*35 is associated with increased risk of nevirapine-related severe cutaneous adverse events in Asian patients with Disease:HIV infectious disease as compared to patients lacking either HLA-Cw*04 or HLA-B*35.",
+              "Alleles": "HLA-Cw*04-positive + HLA-B*35-positive",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-Cw*04-negative and/or HLA-B*35-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cWe studied 276 evaluable cases (175 cutaneous adverse events, 101 hepatic adverse events) and 587 controls. Cutaneous adverse events were associated with *CYP2B6* 516G\u2192T (OR 1.66, all), *HLA-Cw*04* (OR 2.51, all), and *HLA-B*35* (OR 3.47, Asians; 5.65, Thais). Risk for cutaneous adverse events was particularly high among Blacks with CYP2B6 516TT and *HLA-Cw*04* (OR 18.90) and Asians with *HLA-B*35* and *HLA-Cw*04* (OR 18.34).\u201d",
+                "\u201c*HLA-Cw*04* was significantly associated with cutaneous adverse events among all study participants, most notably among Blacks and Asians ([Fig. 3a](#F3)). *HLA-B*35* was strongly associated with cutaneous adverse events in Asian and Thai participants, but not in non-Thai Asians (mainly Taiwanese)\u2026 Among Asians, but not Blacks or Whites, the OR for cutaneous adverse events was markedly increased among those carrying both *HLA-Cw*04* and *HLA-B*35* (OR 18.34, 95% CI 5.10\u201365.99).\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-Cw*04, HLA-B*35",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "HLA-B*35",
+            "gene": "HLA-C, HLA-B",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 6,
+              "Variant/Haplotypes": "HLA-B*35",
+              "Gene": "HLA-C, HLA-B",
+              "Drug(s)": "nevirapine",
+              "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Among Asians, carriage of both HLA-Cw*04 and HLA-B*35 markedly increased risk of nevirapine-associated cutaneous adverse events (OR 18.34, 95% CI 5.10\u201365.99). This synergy was not observed in Blacks or Whites.",
+              "Sentence": "The combination of HLA-Cw*04 and HLA-B*35 is associated with increased risk of nevirapine-related severe cutaneous adverse events in Asian patients with Disease:HIV infectious disease as compared to patients lacking either HLA-Cw*04 or HLA-B*35.",
+              "Alleles": "HLA-Cw*04-positive + HLA-B*35-positive",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-Cw*04-negative and/or HLA-B*35-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cWe studied 276 evaluable cases (175 cutaneous adverse events, 101 hepatic adverse events) and 587 controls. Cutaneous adverse events were associated with *CYP2B6* 516G\u2192T (OR 1.66, all), *HLA-Cw*04* (OR 2.51, all), and *HLA-B*35* (OR 3.47, Asians; 5.65, Thais). Risk for cutaneous adverse events was particularly high among Blacks with CYP2B6 516TT and *HLA-Cw*04* (OR 18.90) and Asians with *HLA-B*35* and *HLA-Cw*04* (OR 18.34).\u201d",
+                "\u201c*HLA-Cw*04* was significantly associated with cutaneous adverse events among all study participants, most notably among Blacks and Asians ([Fig. 3a](#F3)). *HLA-B*35* was strongly associated with cutaneous adverse events in Asian and Thai participants, but not in non-Thai Asians (mainly Taiwanese)\u2026 Among Asians, but not Blacks or Whites, the OR for cutaneous adverse events was markedly increased among those carrying both *HLA-Cw*04* and *HLA-B*35* (OR 18.34, 95% CI 5.10\u201365.99).\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-Cw*04, HLA-B*35",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "rs3745274",
+            "gene": "CYP2B6, HLA-C",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 7,
+              "Variant/Haplotypes": "rs3745274",
+              "Gene": "CYP2B6, HLA-C",
+              "Drug(s)": "nevirapine",
+              "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients carrying both CYP2B6 516TT (rs3745274) and HLA-Cw*04 were at particularly high risk for nevirapine-associated cutaneous adverse events. In the total population, OR was 6.31 (95% CI 2.53\u201315.73). Among Blacks, the OR for those with CYP2B6 516TT plus HLA-Cw*04 was 18.90. Similar increased risk was seen in Asians.",
+              "Sentence": "The combination of CYP2B6 516TT and HLA-Cw*04 is associated with increased risk of nevirapine-related severe cutaneous adverse events in people with Disease:HIV infectious disease as compared to individuals with CYP2B6 516GG and lacking HLA-Cw*04.",
+              "Alleles": "CYP2B6 516TT + HLA-Cw*04-positive",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
               "Multiple drugs And/or": null,
               "Population types": "in people with",
               "Population Phenotypes or diseases": "Disease:HIV infectious disease",
               "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6 516GG and HLA-Cw*04-negative",
               "Comparison Metabolizer types": null,
-              "PMID_norm": "21505298",
-              "Variant Annotation ID_norm": "1185002091"
+              "Citations": [
+                "\u201cCutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all)\u2026 Risk for cutaneous adverse events was particularly high among Blacks with CYP2B6 516TT and HLA-Cw*04 (OR 18.90) and Asians with HLA-B*35 and HLA-Cw*04 (OR 18.34).\u201d",
+                "\u201cPatients carrying both CYP2B6 516TT and HLA-Cw*04 were at highest risk in the total population (OR 6.31, 95% CI 2.53\u201315.73), and in Blacks and Asians analyzed separately (Fig. 4b).\u201d",
+                "\u201cAssociation between polymorphisms and related adverse events. Panel (a) shows major association between genetic polymorphisms and nevirapine-related adverse events (AEs). CYP2B6 polymorphisms include rs2054675, rs3786547, and rs3745274.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs3745274, HLA-Cw*04",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
             }
           },
           {
-            "matched": false,
+            "variant": "HLA-Cw*04",
+            "gene": "CYP2B6, HLA-C",
+            "drug": "nevirapine",
             "annotation": {
-              "Variant Annotation ID": 1185002083,
-              "Variant/Haplotypes": "HLA-DRB1*01:01",
+              "Variant Annotation ID": 7,
+              "Variant/Haplotypes": "HLA-Cw*04",
+              "Gene": "CYP2B6, HLA-C",
+              "Drug(s)": "nevirapine",
+              "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients carrying both CYP2B6 516TT (rs3745274) and HLA-Cw*04 were at particularly high risk for nevirapine-associated cutaneous adverse events. In the total population, OR was 6.31 (95% CI 2.53\u201315.73). Among Blacks, the OR for those with CYP2B6 516TT plus HLA-Cw*04 was 18.90. Similar increased risk was seen in Asians.",
+              "Sentence": "The combination of CYP2B6 516TT and HLA-Cw*04 is associated with increased risk of nevirapine-related severe cutaneous adverse events in people with Disease:HIV infectious disease as compared to individuals with CYP2B6 516GG and lacking HLA-Cw*04.",
+              "Alleles": "CYP2B6 516TT + HLA-Cw*04-positive",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6 516GG and HLA-Cw*04-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cCutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all)\u2026 Risk for cutaneous adverse events was particularly high among Blacks with CYP2B6 516TT and HLA-Cw*04 (OR 18.90) and Asians with HLA-B*35 and HLA-Cw*04 (OR 18.34).\u201d",
+                "\u201cPatients carrying both CYP2B6 516TT and HLA-Cw*04 were at highest risk in the total population (OR 6.31, 95% CI 2.53\u201315.73), and in Blacks and Asians analyzed separately (Fig. 4b).\u201d",
+                "\u201cAssociation between polymorphisms and related adverse events. Panel (a) shows major association between genetic polymorphisms and nevirapine-related adverse events (AEs). CYP2B6 polymorphisms include rs2054675, rs3786547, and rs3745274.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs3745274, HLA-Cw*04",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "HLA-DRB1*01",
+            "gene": "HLA-DRB1",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 8,
+              "Variant/Haplotypes": "HLA-DRB1*01",
               "Gene": "HLA-DRB1",
               "Drug(s)": "nevirapine",
               "PMID": 21505298,
-              "Phenotype Category": "Toxicity",
+              "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "The frequency of the HLA-DRB1*01 allele was greater in those with nevirapine-related hepatic adverse events as compared to healthy controls when considering a White population. No significant results were seen for Asians or Blacks. Note that this annotation was done on HLA-DRB1*01:01:01 because this was the first *01 allele discovered. p-value corrected for multiple testing.",
-              "Sentence": "HLA-DRB1 *01:01 is associated with increased risk of Drug Toxicity when treated with nevirapine in people with HIV Infections.",
-              "Alleles": "*01:01",
+              "Notes": "HLA-DRB1*01 was significantly associated with nevirapine-associated hepatic adverse events in Whites. Reported OR was 3.02; when considering only isolated hepatic events, the OR increased to 3.63. This allele was infrequent in Blacks and rare in Asians, where no significant associations were observed.",
+              "Sentence": "HLA-DRB1*01 is associated with increased risk of nevirapine-related hepatic adverse events in White patients with Disease:HIV infectious disease as compared to HLA-DRB1*01-negative White patients.",
+              "Alleles": "HLA-DRB1*01-positive",
               "Specialty Population": null,
               "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Drug Toxicity",
-              "Multiple phenotypes And/or": "and",
-              "When treated with/exposed to/when assayed with": "when treated with",
+              "PD/PK terms": "risk of",
               "Multiple drugs And/or": null,
-              "Population types": "in people with",
+              "Population types": "in patients with",
               "Population Phenotypes or diseases": "Disease:HIV infectious disease",
               "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-DRB1*01-negative",
               "Comparison Metabolizer types": null,
-              "PMID_norm": "21505298",
-              "Variant Annotation ID_norm": "1185002083"
+              "Citations": [
+                "\u201cHepatic adverse events were associated with HLA-DRB1*01 (OR 3.02, Whites), but not CYP2B6 genotypes.\u201d",
+                "\u201cHLA-DRB1*01* was significantly associated with hepatic adverse events in Whites (Fig. 3b). This HLA allele was infrequent among Blacks and rare among Asians. In analyses that excluded individuals with coincident cutaneous and hepatic adverse events, OR for hepatic adverse events among Whites increased from 3.02 to 3.63 for HLA-DRB1*01.*\u201d",
+                "\u201cThe current study confirmed the association between HLA-DRB1*01* and hepatic adverse events among Whites. We did not find any significant association with HLA-DRB1*01* in Blacks and Asians, perhaps because HLA-DRB1*01* is infrequent in these populations [27].\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-DRB1*01",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
             }
           },
           {
-            "matched": false,
+            "variant": "HLA-DQB1*05",
+            "gene": "HLA-DQB1",
+            "drug": "nevirapine",
             "annotation": {
-              "Variant Annotation ID": 1185002071,
-              "Variant/Haplotypes": "HLA-C*04:01",
-              "Gene": "HLA-C",
+              "Variant Annotation ID": 9,
+              "Variant/Haplotypes": "HLA-DQB1*05",
+              "Gene": "HLA-DQB1",
               "Drug(s)": "nevirapine",
               "PMID": 21505298,
-              "Phenotype Category": "Toxicity",
+              "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "The frequency of the HLA-Cw*04 allele was greater in those with nevirapine-related cutaneous adverse events as compared to healthy controls. Note that this annotation was done on HLA-C*04:01:01:01 because this was the first *04 allele discovered. p-value corrected for multiple testing.",
-              "Sentence": "HLA-C *04:01 is associated with increased risk of Drug Toxicity when treated with nevirapine in people with HIV Infections.",
-              "Alleles": "*04:01",
+              "Notes": "HLA-DQB1*05 was significantly associated with hepatic adverse events among Whites in initial analyses, likely due to linkage disequilibrium with HLA-DRB1*01. However, when restricting to isolated hepatic adverse events, the association with HLA-DQB1*05 was no longer statistically significant.",
+              "Sentence": "HLA-DQB1*05 is associated with increased risk of nevirapine-related hepatic adverse events in White patients with Disease:HIV infectious disease as compared to HLA-DQB1*05-negative White patients, although this association was not evident when only isolated hepatic events were analyzed.",
+              "Alleles": "HLA-DQB1*05-positive",
               "Specialty Population": null,
               "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Drug Toxicity",
-              "Multiple phenotypes And/or": "and",
-              "When treated with/exposed to/when assayed with": "when treated with",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-DQB1*05-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Similarly, *HLA-DQB1*05* was significantly associated with hepatic adverse events among Whites only, despite its high frequency among Asians and Blacks but not when considering isolated hepatic adverse events (data not shown).",
+                "Cutaneous adverse events were associated with MHC class I alleles *(HLA-B*35* and *HLA-Cw*04)* and hepatic adverse events with MHC class II alleles *(HLA-DRB1*01* and possibly *HLA-DQB1*05*).",
+                "Results also indicated an association between *HLA-DQB*05* and hepatic adverse events in Whites, likely reflecting linkage between *HLA-DRB1*01* and *HLA-DQB1*05* [[27](#R27)]. However, among individuals with isolated hepatic adverse events the association with *HLA-DQB*05* was no longer significant, whereas the *HLA-DRB1*01* association increased."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-DQB1*05",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs3745274",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 10,
+              "Variant/Haplotypes": "rs3745274",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "The study states that hepatic adverse events were not associated with CYP2B6 genotypes, despite the clear association of CYP2B6 516G\u2192T (rs3745274) with cutaneous adverse events. No CYP2B6 SNPs remained significantly associated with hepatic adverse events after multiple-testing correction.",
+              "Sentence": "CYP2B6 516G\u2192T (rs3745274) is not associated with risk of nevirapine-related hepatic adverse events in people with Disease:HIV infectious disease as compared to CYP2B6 516GG genotype.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
               "Multiple drugs And/or": null,
               "Population types": "in people with",
               "Population Phenotypes or diseases": "Disease:HIV infectious disease",
               "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Allele(s) or Genotype(s)": "516GG",
               "Comparison Metabolizer types": null,
-              "PMID_norm": "21505298",
-              "Variant Annotation ID_norm": "1185002071"
+              "Citations": [
+                "Results: \"Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais). \u2026 Hepatic adverse events were associated with HLA-DRB*01 (OR 3.02, Whites), but not CYP2B6 genotypes.\"",
+                "Results \u2013 Associations with ADME gene and major histocompatibility complex polymorphisms: \"For CYP2B6 516G\u2192T, increasing T-allele count (0, 1, 2) was significantly associated with progressively increased risk of cutaneous adverse events in Blacks and Whites, with a weak trend in Asians \u2026 No SNP was significantly associated with hepatic adverse events after correcting for multiple comparisons ([Fig. 2c](#F2)).\"",
+                "Discussion: \"We found no association between CYP2B6 variants and hepatic adverse events, consistent with limited previous data [[7](#R7),[8](#R8)] and with a rat model [[26](#R26)].\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs3745274",
+                "variant_id": "PA166155409",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
             }
           },
           {
-            "matched": false,
+            "variant": "rs2054675",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
             "annotation": {
-              "Variant Annotation ID": 1185002114,
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "rs2054675",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "No CYP2B6 SNPs, including rs2054675, were significantly associated with nevirapine-associated hepatic adverse events after adjusting for multiple comparisons.",
+              "Sentence": "CYP2B6 rs2054675 is not associated with risk of nevirapine-related hepatic adverse events in people with Disease:HIV infectious disease as compared to genotypes without the rs2054675 risk allele.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non\u2011risk allele genotypes",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Hepatic adverse events were associated with HLA-DRB*01 (OR 3.02, Whites), but not CYP2B6 genotypes. Associations differed by population, at least in part reflecting allele frequencies.",
+                "No SNP was significantly associated with hepatic adverse events after correcting for multiple comparisons ([Fig. 2c](#F2)).",
+                "We found no association between CYP2B6 variants and hepatic adverse events, consistent with limited previous data [[7](#R7),[8](#R8)] and with a rat model [[26](#R26)]."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs2054675",
+                "variant_id": "PA166155378",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs3786547",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 12,
               "Variant/Haplotypes": "rs3786547",
               "Gene": "CYP2B6",
               "Drug(s)": "nevirapine",
               "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "In the SNP-wide analyses for hepatic adverse events, no CYP2B6 variants including rs3786547 were significantly associated after correcting for multiple comparisons.",
+              "Sentence": "CYP2B6 rs3786547 is not associated with risk of nevirapine-related hepatic adverse events in people with Disease:HIV infectious disease as compared to genotypes without the rs3786547 risk allele.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non\u2011risk allele genotypes",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "A total of 2744 SNPs across ADME and MHC genes (see supplemental material, http://links.lww.com/QAD/A139) were assessed for associations with adverse events in each race group and among all participants. In analyses controlled for population stratification among all participants, two linked SNPs in CYP2B6 [rs2054675 and rs3786547 (r^2 = 0.982)] were significantly associated with cutaneous adverse events after correcting for multiple comparisons (Fig. 2a). \u2026 No SNP was significantly associated with hepatic adverse events after correcting for multiple comparisons (Fig. 2c).",
+                "We found no association between CYP2B6 variants and hepatic adverse events, consistent with limited previous data [7,8] and with a rat model [26].",
+                "Hepatic adverse events were associated with HLA-DRB*01 (OR 3.02, Whites), but not CYP2B6 genotypes. Associations differed by population, at least in part reflecting allele frequencies."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs3786547",
+                "variant_id": "PA166155411",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "ABCB1",
+            "gene": "ABCB1",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 13,
+              "Variant/Haplotypes": "ABCB1",
+              "Gene": "ABCB1",
+              "Drug(s)": "nevirapine",
+              "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "The study found no statistically significant association between ABCB1 3435C\u2192T and nevirapine-associated cutaneous or hepatic adverse events overall. Among Blacks, the OR for hepatic adverse events in carriers of the 3435T allele was 0.50 (95% CI 0.14\u20131.76; P=0.27), consistent in direction with prior reports but not significant.",
+              "Sentence": "ABCB1 3435C\u2192T is not associated with risk of nevirapine-related cutaneous or hepatic adverse events in people with Disease:HIV infectious disease as compared to ABCB1 3435CC genotype.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "3435CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "We found no statistically significant association between *ABCB1* 3435C\u2192T and nevirapine-associated cutaneous or hepatic adverse events, although the OR for hepatic adverse events among Blacks was 0.50 (95% CI 0.14\u20131.76; *P*= 0.27).",
+                "Two previous studies involving individuals of African descent suggested that *ABCB1* 3435C*\u2192*T was associated with decreased nevirapine-associated hepatic adverse events [[5](#R5),[6](#R6)]. Whereas we found no statistically significant association between *ABCB1* 3435C*\u2192*T and nevirapine-associated adverse events, the ORs for *ABCB1* 3435C*\u2192*T and hepatic adverse events among Blacks was consistent with previous studies."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "ABCB1 3435C>T",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "3435C>T",
+            "gene": "ABCB1",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 13,
+              "Variant/Haplotypes": "3435C>T",
+              "Gene": "ABCB1",
+              "Drug(s)": "nevirapine",
+              "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "The study found no statistically significant association between ABCB1 3435C\u2192T and nevirapine-associated cutaneous or hepatic adverse events overall. Among Blacks, the OR for hepatic adverse events in carriers of the 3435T allele was 0.50 (95% CI 0.14\u20131.76; P=0.27), consistent in direction with prior reports but not significant.",
+              "Sentence": "ABCB1 3435C\u2192T is not associated with risk of nevirapine-related cutaneous or hepatic adverse events in people with Disease:HIV infectious disease as compared to ABCB1 3435CC genotype.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "3435CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "We found no statistically significant association between *ABCB1* 3435C\u2192T and nevirapine-associated cutaneous or hepatic adverse events, although the OR for hepatic adverse events among Blacks was 0.50 (95% CI 0.14\u20131.76; *P*= 0.27).",
+                "Two previous studies involving individuals of African descent suggested that *ABCB1* 3435C*\u2192*T was associated with decreased nevirapine-associated hepatic adverse events [[5](#R5),[6](#R6)]. Whereas we found no statistically significant association between *ABCB1* 3435C*\u2192*T and nevirapine-associated adverse events, the ORs for *ABCB1* 3435C*\u2192*T and hepatic adverse events among Blacks was consistent with previous studies."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "ABCB1 3435C>T",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "HLA-Cw*08",
+            "gene": "HLA-C",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 14,
+              "Variant/Haplotypes": "HLA-Cw*08",
+              "Gene": "HLA-C",
+              "Drug(s)": "nevirapine",
+              "PMID": 21505298,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "HLA-Cw*08, present in approximately 7% of participants, was not associated with nevirapine-associated cutaneous or hepatic adverse events in this multiethnic cohort.",
+              "Sentence": "HLA-Cw*08 is not associated with risk of nevirapine-related cutaneous or hepatic adverse events in people with Disease:HIV infectious disease as compared to HLA-Cw*08-negative individuals.",
+              "Alleles": "HLA-Cw*08-positive",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "HLA-Cw*08-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "We found no association between *HLA-Cw*08* (present in 7% of participants) and cutaneous or hepatic adverse events.",
+                "This analysis did not replicate findings from studies in Sardinia and Japan that suggested an association between *HLA-Cw*08* and nevirapine-associated hypersensitivity [[5](#R5),[6](#R6)]."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-Cw*08",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.876021241562234,
+      "total_samples": 6,
+      "ground_truth_annotations": {
+        "count": 6,
+        "matched_count": 6,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.8933577239513397,
+            "annotation": {
+              "Variant/Haplotypes": "rs3745274",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
               "Phenotype Category": "Toxicity",
-              "Significance": "yes",
-              "Notes": "The frequency of the C allele was greater in those with nevirapine-related cutaneous adverse events as compared to healthy controls. This SNP was in LD with rs2054674 (r2 = 0.982) and rs3745274 (r2 > 0.90). p-value corrected for multiple testing. This SNP was not associated with hepatic adverse events after correcting for multiple comparisons.",
-              "Sentence": "Allele C is associated with increased risk of Drug Toxicity when treated with nevirapine in people with HIV Infections.",
+              "Alleles": "T",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Drug Toxicity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs3745274",
+                "prediction": "rs3745274",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "nevirapine",
+                "prediction": "nevirapine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "T",
+                "prediction": "T",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Drug Toxicity",
+                "prediction": "Side Effect:Cutaneous adverse events",
+                "score": 0.9335772395133972,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": "G or GG",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8922467410564423,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-DRB1*01:01",
+              "Gene": "HLA-DRB1",
+              "Drug(s)": "nevirapine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*01:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Drug Toxicity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-DRB1*01:01",
+                "prediction": "HLA-DRB1*01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-DRB1",
+                "prediction": "HLA-DRB1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "nevirapine",
+                "prediction": "nevirapine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*01:01",
+                "prediction": "*01",
+                "score": 0.9854477047920227,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Drug Toxicity",
+                "prediction": "Side Effect:Hepatic adverse events",
+                "score": 0.9370197057723999,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": "non-carriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8891534626483917,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*35:01",
+              "Gene": "HLA-B",
+              "Drug(s)": "nevirapine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*35:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Drug Toxicity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-B*35:01",
+                "prediction": "HLA-B*35",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-B",
+                "prediction": "HLA-B",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "nevirapine",
+                "prediction": "nevirapine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*35:01",
+                "prediction": "*35",
+                "score": 0.95795738697052,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Drug Toxicity",
+                "prediction": "Side Effect:Cutaneous adverse events",
+                "score": 0.9335772395133972,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": "non-carriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8933577239513397,
+            "annotation": {
+              "Variant/Haplotypes": "rs2054675",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "Phenotype Category": "Toxicity",
               "Alleles": "C",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Drug Toxicity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs2054675",
+                "prediction": "rs2054675",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "nevirapine",
+                "prediction": "nevirapine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "C",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Drug Toxicity",
+                "prediction": "Side Effect:Cutaneous adverse events",
+                "score": 0.9335772395133972,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8933577239513397,
+            "annotation": {
+              "Variant/Haplotypes": "rs3786547",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "C",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Drug Toxicity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs3786547",
+                "prediction": "rs3786547",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "nevirapine",
+                "prediction": "nevirapine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "C",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Drug Toxicity",
+                "prediction": "Side Effect:Cutaneous adverse events",
+                "score": 0.9335772395133972,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.789931720495224,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-C*04:01",
+              "Gene": "HLA-C",
+              "Drug(s)": "nevirapine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*04:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Drug Toxicity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-C*04:01",
+                "prediction": "HLA-Cw*04",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-C",
+                "prediction": "HLA-C",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "nevirapine",
+                "prediction": "nevirapine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*04:01",
+                "prediction": "*04",
+                "score": 0.9657399654388428,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Drug Toxicity",
+                "prediction": "Side Effect:Cutaneous adverse events",
+                "score": 0.9335772395133972,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": "non-carriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 3,
+        "items": [
+          {
+            "variant": "HLA-DQB1*05",
+            "gene": "HLA-DQB1",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 7,
+              "Variant/Haplotypes": "HLA-DQB1*05",
+              "Gene": "HLA-DQB1",
+              "Drug(s)": "nevirapine",
+              "PMID": "21505298",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-DQB1*05 was significantly associated with hepatic adverse events among Whites in initial analyses, likely reflecting linkage with HLA-DRB1*01; this association was not significant when restricting to isolated hepatic adverse events.",
+              "Sentence": "HLA-DQB1*05 is associated with increased risk of Hepatic adverse events when treated with nevirapine in people with HIV-1 infection.",
+              "Alleles": "*05",
               "Specialty Population": null,
               "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
               "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Drug Toxicity",
-              "Multiple phenotypes And/or": "and",
+              "Phenotype": "Side Effect:Hepatic adverse events",
+              "Multiple phenotypes And/or": null,
               "When treated with/exposed to/when assayed with": "when treated with",
               "Multiple drugs And/or": null,
               "Population types": "in people with",
-              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Population Phenotypes or diseases": "Disease:HIV-1 infection",
               "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers",
               "Comparison Metabolizer types": null,
               "PMID_norm": "21505298",
-              "Variant Annotation ID_norm": "1185002114"
+              "Variant Annotation ID_norm": "7",
+              "Citations": [
+                "Similarly, *HLA-DQB1*05* was significantly associated with hepatic adverse events among Whites only, despite its high frequency among Asians and Blacks but not when considering isolated hepatic adverse events (data not shown).",
+                "Cutaneous adverse events were associated with MHC class I alleles *(HLA-B*35* and *HLA-Cw*04)* and hepatic adverse events with MHC class II alleles *(HLA-DRB1*01* and possibly *HLA-DQB1*05*).",
+                "Results also indicated an association between *HLA-DQB*05* and hepatic adverse events in Whites, likely reflecting linkage between *HLA-DRB1*01* and *HLA-DQB1*05* [[27](#R27)]. However, among individuals with isolated hepatic adverse events the association with *HLA-DQB*05* was no longer significant, whereas the *HLA-DRB1*01* association increased."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-DQB1*05",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "CYP2B6",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 8,
+              "Variant/Haplotypes": "CYP2B6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "PMID": "21505298",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Among Blacks, CYP2B6 516TT homozygosity was strongly associated with cutaneous adverse events (OR 5.92 vs 516GG). In combination with HLA-Cw*04, risk was further increased (OR 18.90 in Blacks; OR 6.31 overall for carriers of both CYP2B6 516TT and HLA-Cw*04).",
+              "Sentence": "CYP2B6 516TT is associated with increased risk of Cutaneous adverse events when treated with nevirapine in people with HIV-1 infection.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Cutaneous adverse events",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV-1 infection",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "516GG",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "21505298",
+              "Variant Annotation ID_norm": "8",
+              "Citations": [
+                "We studied 276 evaluable cases (175 cutaneous adverse events, 101 hepatic adverse events) and 587 controls. Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais). Risk for cutaneous adverse events was particularly high among Blacks with CYP2B6 516TT and HLA-Cw*04 (OR 18.90) and Asians with HLA-B*35 and HLA-Cw*04 (OR 18.34).",
+                "For CYP2B6 516G\u2192T, increasing T-allele count (0, 1, 2) was significantly associated with progressively increased risk of cutaneous adverse events in Blacks and Whites, with a weak trend in Asians (P=0.0025, P=0.021, and P=0.12, respectively, Cochran-Armitage trend test). Among Asians, the association was stronger for rs2054675 and rs3786547 (both P = 0.041). The association with 516G\u2192T was particularly strong in Blacks, in whom the OR for 516TT homozygosity relative to 516GG homozygosity was 5.92 [95% confidence interval (CI) 1.53\u201326.8].",
+                "Patients carrying both CYP2B6 516TT and HLA-Cw*04 were at highest risk in the total population (OR 6.31, 95% CI 2.53\u201315.73), and in Blacks and Asians analyzed separately (Fig. 4b)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs28399499",
+                "variant_id": "PA166155478",
+                "confidence": 0.8
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "516TT",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 8,
+              "Variant/Haplotypes": "516TT",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "PMID": "21505298",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Among Blacks, CYP2B6 516TT homozygosity was strongly associated with cutaneous adverse events (OR 5.92 vs 516GG). In combination with HLA-Cw*04, risk was further increased (OR 18.90 in Blacks; OR 6.31 overall for carriers of both CYP2B6 516TT and HLA-Cw*04).",
+              "Sentence": "CYP2B6 516TT is associated with increased risk of Cutaneous adverse events when treated with nevirapine in people with HIV-1 infection.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Cutaneous adverse events",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV-1 infection",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "516GG",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "21505298",
+              "Variant Annotation ID_norm": "8",
+              "Citations": [
+                "We studied 276 evaluable cases (175 cutaneous adverse events, 101 hepatic adverse events) and 587 controls. Cutaneous adverse events were associated with CYP2B6 516G\u2192T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais). Risk for cutaneous adverse events was particularly high among Blacks with CYP2B6 516TT and HLA-Cw*04 (OR 18.90) and Asians with HLA-B*35 and HLA-Cw*04 (OR 18.34).",
+                "For CYP2B6 516G\u2192T, increasing T-allele count (0, 1, 2) was significantly associated with progressively increased risk of cutaneous adverse events in Blacks and Whites, with a weak trend in Asians (P=0.0025, P=0.021, and P=0.12, respectively, Cochran-Armitage trend test). Among Asians, the association was stronger for rs2054675 and rs3786547 (both P = 0.041). The association with 516G\u2192T was particularly strong in Blacks, in whom the OR for 516TT homozygosity relative to 516GG homozygosity was 5.92 [95% confidence interval (CI) 1.53\u201326.8].",
+                "Patients carrying both CYP2B6 516TT and HLA-Cw*04 were at highest risk in the total population (OR 6.31, 95% CI 2.53\u201315.73), and in Blacks and Asians analyzed separately (Fig. 4b)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs28399499",
+                "variant_id": "PA166155478",
+                "confidence": 0.8
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
             }
           }
         ]
-      },
-      "extra_predictions": {
-        "count": 0,
-        "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 10,
-        "fields": {
-          "Variant/Haplotypes": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Gene": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Drug(s)": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Phenotype Category": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Alleles": {
-            "mean_score": 0.3033205270767212,
-            "scores": [
-              0.9099615812301636,
-              0.9099615812301636,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Is/Is Not associated": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Direction of effect": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Phenotype": {
-            "mean_score": 0.2943449020385742,
-            "scores": [
-              0.8830347061157227,
-              0.8830347061157227,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "When treated with/exposed to/when assayed with": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Comparison Allele(s) or Genotype(s)": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          }
-        }
-      }
-    },
-    "functional_analysis": {
-      "score": 0.0,
-      "total_samples": 0,
-      "ground_truth_annotations": {
-        "count": 0,
-        "matched_count": 0,
-        "unmatched_count": 0,
-        "items": []
-      },
-      "extra_predictions": {
-        "count": 0,
-        "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
       }
     },
     "study_parameters": {
-      "score": 0.35517682804001705,
+      "score": 0.538754310078091,
       "total_samples": 6,
       "ground_truth_annotations": {
         "count": 6,
-        "matched_count": 4,
-        "unmatched_count": 2,
+        "matched_count": 6,
+        "unmatched_count": 0,
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.6135771344689762,
+            "overall_match_score": 0.612785213133868,
             "annotation": {
               "Study Parameters ID": 1185002122,
               "Variant Annotation ID": 1185002120,
@@ -654,7 +1435,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1185002122,
-                "prediction": null,
+                "prediction": 1,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -672,9 +1453,9 @@
               },
               "Study Cases": {
                 "ground_truth": 175.0,
-                "prediction": 276,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 175,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Study Controls": {
                 "ground_truth": 587.0,
@@ -684,15 +1465,15 @@
               },
               "Characteristics": {
                 "ground_truth": "Severe cutaneous toxicity - grade III or IV on NIAID Division of AIDS criteria.",
-                "prediction": "Symptomatic nevirapine-associated severe (grade III/IV) cutaneous and/or hepatic adverse events",
-                "score": 0.9308112859725952,
+                "prediction": "All participants, nevirapine-associated severe cutaneous adverse events vs matched nevirapine-tolerant controls",
+                "score": 0.9173486232757568,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Disease",
-                "prediction": "disease",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Frequency In Cases": {
                 "ground_truth": null,
@@ -750,7 +1531,7 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "Multiple groups, Asian, Black, White",
-                "prediction": "African, Asian, European",
+                "prediction": "Multiple Groups",
                 "score": 0.0,
                 "match_status": "no_match"
               }
@@ -758,7 +1539,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.4941643721917096,
+            "overall_match_score": 0.5242710078463835,
             "annotation": {
               "Study Parameters ID": 1185002101,
               "Variant Annotation ID": 1185002099,
@@ -781,7 +1562,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1185002101,
-                "prediction": null,
+                "prediction": 12,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -799,9 +1580,9 @@
               },
               "Study Cases": {
                 "ground_truth": 175.0,
-                "prediction": 276,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 175,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Study Controls": {
                 "ground_truth": 587.0,
@@ -811,13 +1592,13 @@
               },
               "Characteristics": {
                 "ground_truth": "Severe cutaneous toxicity - grade III or IV on NIAID Division of AIDS criteria.",
-                "prediction": "HLA-B*35 associated with cutaneous adverse events",
-                "score": 0.9007943272590637,
+                "prediction": "All participants, nevirapine-associated severe cutaneous adverse events vs matched nevirapine-tolerant controls, combined CYP2B6 516TT genotype and HLA-Cw*04 carriage",
+                "score": 0.9126071333885193,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Disease",
-                "prediction": "drug",
+                "prediction": "Study Cohort",
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -847,9 +1628,9 @@
               },
               "P Value": {
                 "ground_truth": "= 0.019",
-                "prediction": "= 0.01",
-                "score": 0.5,
-                "match_status": "partial_match"
+                "prediction": "< 0.001",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -859,25 +1640,25 @@
               },
               "Ratio Stat": {
                 "ground_truth": 1.76,
-                "prediction": 3.47,
+                "prediction": 6.31,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Confidence Interval Start": {
                 "ground_truth": 1.36,
-                "prediction": null,
+                "prediction": 2.53,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Confidence Interval Stop": {
                 "ground_truth": 2.27,
-                "prediction": null,
+                "prediction": 15.73,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Biogeographical Groups": {
                 "ground_truth": "Multiple groups, Asian, Black, White",
-                "prediction": "Asians",
+                "prediction": "Multiple Groups",
                 "score": 0.0,
                 "match_status": "no_match"
               }
@@ -885,7 +1666,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.4933976320659413,
+            "overall_match_score": 0.5242682870696572,
             "annotation": {
               "Study Parameters ID": 1185002116,
               "Variant Annotation ID": 1185002114,
@@ -908,7 +1689,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1185002116,
-                "prediction": null,
+                "prediction": 9,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -926,9 +1707,9 @@
               },
               "Study Cases": {
                 "ground_truth": 175.0,
-                "prediction": 276,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 175,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Study Controls": {
                 "ground_truth": 587.0,
@@ -938,13 +1719,13 @@
               },
               "Characteristics": {
                 "ground_truth": "Severe cutaneous toxicity - grade III or IV on NIAID Division of AIDS criteria.",
-                "prediction": "HLA-Cw*04 associated with cutaneous adverse events",
-                "score": 0.8877597451210022,
+                "prediction": "Asian participants, nevirapine-associated severe cutaneous adverse events vs matched nevirapine-tolerant controls, combined carriage of HLA-B*35 and HLA-Cw*04",
+                "score": 0.9125608801841736,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Disease",
-                "prediction": "drug",
+                "prediction": "Study Cohort",
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -974,9 +1755,9 @@
               },
               "P Value": {
                 "ground_truth": "= 0.029",
-                "prediction": "= 0.025",
-                "score": 0.5,
-                "match_status": "partial_match"
+                "prediction": "< 0.05",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -986,25 +1767,25 @@
               },
               "Ratio Stat": {
                 "ground_truth": 1.74,
-                "prediction": 2.51,
+                "prediction": 18.34,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Confidence Interval Start": {
                 "ground_truth": 1.34,
-                "prediction": null,
+                "prediction": 5.1,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Confidence Interval Stop": {
                 "ground_truth": 2.25,
-                "prediction": null,
+                "prediction": 65.99,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Biogeographical Groups": {
                 "ground_truth": "Multiple groups, Asian, Black, White",
-                "prediction": "All races",
+                "prediction": "East Asian",
                 "score": 0.0,
                 "match_status": "no_match"
               }
@@ -1012,7 +1793,261 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.2792087744264041,
+            "overall_match_score": 0.4549824875943801,
+            "annotation": {
+              "Study Parameters ID": 1185002079,
+              "Variant Annotation ID": 1185002071,
+              "Study Type": "case/control",
+              "Study Cases": 175.0,
+              "Study Controls": 587.0,
+              "Characteristics": "Severe cutaneous toxicity - grade III or IV on NIAID Division of AIDS criteria.",
+              "Characteristics Type": "Disease",
+              "Frequency In Cases": 0.377,
+              "Allele Of Frequency In Cases": "*04:01",
+              "Frequency In Controls": 0.194,
+              "Allele Of Frequency In Controls": "*04:01",
+              "P Value": "= 8.7E-6",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.51,
+              "Confidence Interval Start": 1.73,
+              "Confidence Interval Stop": 3.62,
+              "Biogeographical Groups": "Multiple groups, Asian, Thai, Black, White"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1185002079,
+                "prediction": 2,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1185002071,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 175.0,
+                "prediction": 175,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": 587.0,
+                "prediction": 587,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Severe cutaneous toxicity - grade III or IV on NIAID Division of AIDS criteria.",
+                "prediction": "All participants, nevirapine-associated severe cutaneous adverse events vs matched nevirapine-tolerant controls, carriers of HLA-Cw*04",
+                "score": 0.9140622019767761,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Disease",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.377,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*04:01",
+                "prediction": "HLA-Cw*04",
+                "score": 0.9103200435638428,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.194,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "*04:01",
+                "prediction": "HLA-Cw*04",
+                "score": 0.9103200435638428,
+                "match_status": "partial_match"
+              },
+              "P Value": {
+                "ground_truth": "= 8.7E-6",
+                "prediction": "< 0.05",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 2.51,
+                "prediction": 2.51,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.73,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 3.62,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups, Asian, Thai, Black, White",
+                "prediction": "Multiple Groups",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.3977435266270357,
+            "annotation": {
+              "Study Parameters ID": 1185002093,
+              "Variant Annotation ID": 1185002091,
+              "Study Type": "case/control",
+              "Study Cases": 52.0,
+              "Study Controls": 173.0,
+              "Characteristics": "Severe cutaneous toxicity - grade III or IV on NIAID Division of AIDS criteria.",
+              "Characteristics Type": "Disease",
+              "Frequency In Cases": 0.192,
+              "Allele Of Frequency In Cases": "*35:01",
+              "Frequency In Controls": 0.043,
+              "Allele Of Frequency In Controls": "*35:01",
+              "P Value": "= 0.022",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 5.65,
+              "Confidence Interval Start": 2.03,
+              "Confidence Interval Stop": 15.71,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1185002093,
+                "prediction": 6,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1185002091,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 52.0,
+                "prediction": 71,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 173.0,
+                "prediction": 233,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "Severe cutaneous toxicity - grade III or IV on NIAID Division of AIDS criteria.",
+                "prediction": "Thai participants, nevirapine-associated severe cutaneous adverse events vs matched nevirapine-tolerant controls, carriers of HLA-B*35",
+                "score": 0.9027771949768066,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Disease",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.192,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*35:01",
+                "prediction": "HLA-B*35",
+                "score": 0.9294313788414001,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.043,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "*35:01",
+                "prediction": "HLA-B*35",
+                "score": 0.9294313788414001,
+                "match_status": "partial_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.022",
+                "prediction": "< 0.05",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 5.65,
+                "prediction": 5.65,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 2.03,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 15.71,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "East Asian",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.33817817814209883,
             "annotation": {
               "Study Parameters ID": 1185002085,
               "Variant Annotation ID": 1185002083,
@@ -1035,7 +2070,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1185002085,
-                "prediction": null,
+                "prediction": 3,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -1053,7 +2088,7 @@
               },
               "Study Cases": {
                 "ground_truth": 57.0,
-                "prediction": 276,
+                "prediction": 175,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -1065,13 +2100,13 @@
               },
               "Characteristics": {
                 "ground_truth": "Symptomatic grade >= 3 hepatic transaminase elevation (ALT or AST >5x ULN) or acute hepatic failure",
-                "prediction": "HLA-DRB*01 associated with hepatic adverse events",
-                "score": 0.8965491652488708,
+                "prediction": "Black participants, nevirapine-associated severe cutaneous adverse events vs matched nevirapine-tolerant controls, CYP2B6 516TT vs 516GG",
+                "score": 0.866078794002533,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Disease",
-                "prediction": "drug",
+                "prediction": "Study Cohort",
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -1083,9 +2118,9 @@
               },
               "Allele Of Frequency In Cases": {
                 "ground_truth": "*01:01",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "516T",
+                "score": 0.7914751172065735,
+                "match_status": "partial_match"
               },
               "Frequency In Controls": {
                 "ground_truth": 0.208,
@@ -1095,14 +2130,14 @@
               },
               "Allele Of Frequency In Controls": {
                 "ground_truth": "*01:01",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "516T",
+                "score": 0.7914751172065735,
+                "match_status": "partial_match"
               },
               "P Value": {
                 "ground_truth": "= 0.0074",
-                "prediction": "= 0.007",
-                "score": 0.85,
+                "prediction": "= 0.01",
+                "score": 0.5,
                 "match_status": "partial_match"
               },
               "Ratio Stat Type": {
@@ -1113,278 +2148,186 @@
               },
               "Ratio Stat": {
                 "ground_truth": 3.02,
-                "prediction": 3.02,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": 1.66,
-                "prediction": null,
+                "prediction": 5.92,
                 "score": 0.0,
                 "match_status": "no_match"
               },
+              "Confidence Interval Start": {
+                "ground_truth": 1.66,
+                "prediction": 1.53,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
               "Confidence Interval Stop": {
                 "ground_truth": 5.49,
-                "prediction": null,
+                "prediction": 26.8,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Biogeographical Groups": {
                 "ground_truth": "Multiple groups, Caucasian and Hispanic/Latino patients",
-                "prediction": "Whites",
+                "prediction": "African America/Afro-Caribbean",
                 "score": 0.0,
                 "match_status": "no_match"
               }
-            }
-          },
-          {
-            "matched": false,
-            "annotation": {
-              "Study Parameters ID": 1185002093,
-              "Variant Annotation ID": 1185002091,
-              "Study Type": "case/control",
-              "Study Cases": 52.0,
-              "Study Controls": 173.0,
-              "Characteristics": "Severe cutaneous toxicity - grade III or IV on NIAID Division of AIDS criteria.",
-              "Characteristics Type": "Disease",
-              "Frequency In Cases": 0.192,
-              "Allele Of Frequency In Cases": "*35:01",
-              "Frequency In Controls": 0.043,
-              "Allele Of Frequency In Controls": "*35:01",
-              "P Value": "= 0.022",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 5.65,
-              "Confidence Interval Start": 2.03,
-              "Confidence Interval Stop": 15.71,
-              "Biogeographical Groups": "East Asian",
-              "Variant Annotation ID_norm": "1185002091"
-            }
-          },
-          {
-            "matched": false,
-            "annotation": {
-              "Study Parameters ID": 1185002079,
-              "Variant Annotation ID": 1185002071,
-              "Study Type": "case/control",
-              "Study Cases": 175.0,
-              "Study Controls": 587.0,
-              "Characteristics": "Severe cutaneous toxicity - grade III or IV on NIAID Division of AIDS criteria.",
-              "Characteristics Type": "Disease",
-              "Frequency In Cases": 0.377,
-              "Allele Of Frequency In Cases": "*04:01",
-              "Frequency In Controls": 0.194,
-              "Allele Of Frequency In Controls": "*04:01",
-              "P Value": "= 8.7E-6",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 2.51,
-              "Confidence Interval Start": 1.73,
-              "Confidence Interval Stop": 3.62,
-              "Biogeographical Groups": "Multiple groups, Asian, Thai, Black, White",
-              "Variant Annotation ID_norm": "1185002071"
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 1,
+        "count": 6,
         "items": [
           {
             "variant": "N/A",
             "gene": "N/A",
             "drug": "N/A",
             "annotation": {
-              "Study Parameters ID": null,
+              "Study Parameters ID": 4,
               "Variant Annotation ID": null,
               "Study Type": "case/control",
-              "Study Cases": 276,
+              "Study Cases": 175,
               "Study Controls": 587,
-              "Characteristics": "CYP2B6 516G\u2192T associated with cutaneous adverse events",
-              "Characteristics Type": "drug",
+              "Characteristics": "Black participants, nevirapine-associated severe cutaneous adverse events vs matched nevirapine-tolerant controls, combined CYP2B6 516TT and HLA-Cw*04 carriage",
+              "Characteristics Type": "Study Cohort",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
               "Allele Of Frequency In Controls": null,
-              "P Value": "< 0.001",
+              "P Value": "< 0.05",
               "Ratio Stat Type": "OR",
               "Ratio Stat": 18.9,
-              "Confidence Interval Start": 1.53,
-              "Confidence Interval Stop": 26.8,
-              "Biogeographical Groups": "Black",
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "African America/Afro-Caribbean",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 5,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 175,
+              "Study Controls": 587,
+              "Characteristics": "Asian participants, nevirapine-associated severe cutaneous adverse events vs matched nevirapine-tolerant controls, carriers of HLA-B*35",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": "HLA-B*35",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": "HLA-B*35",
+              "P Value": "< 0.05",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3.47,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 7,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 71,
+              "Study Controls": 233,
+              "Characteristics": "Thai participants, nevirapine-associated severe cutaneous adverse events vs matched nevirapine-tolerant controls, carriers of HLA-B*35 after excluding concomitant hepatic adverse events",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": "HLA-B*35",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": "HLA-B*35",
+              "P Value": "< 0.05",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 7.31,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 8,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 175,
+              "Study Controls": 587,
+              "Characteristics": "All participants, nevirapine-associated severe cutaneous adverse events vs matched nevirapine-tolerant controls, carriers of HLA-Cw*04 after excluding concomitant hepatic adverse events",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": "HLA-Cw*04",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": "HLA-Cw*04",
+              "P Value": "< 0.05",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.98,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 10,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 101,
+              "Study Controls": 587,
+              "Characteristics": "White participants, nevirapine-associated severe hepatic adverse events vs matched nevirapine-tolerant controls, carriers of HLA-DRB1*01",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": "HLA-DRB1*01",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": "HLA-DRB1*01",
+              "P Value": "< 0.05",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3.02,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 11,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 101,
+              "Study Controls": 587,
+              "Characteristics": "White participants, isolated nevirapine-associated severe hepatic adverse events (excluding concomitant rash) vs matched nevirapine-tolerant controls, carriers of HLA-DRB1*01",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": "HLA-DRB1*01",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": "HLA-DRB1*01",
+              "P Value": "< 0.05",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3.63,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
               "Variant Annotation ID_norm": null
             }
           }
         ]
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 15,
-        "fields": {
-          "Study Type": {
-            "mean_score": 0.6666666666666666,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Study Cases": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Study Controls": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Characteristics": {
-            "mean_score": 0.6026524206002554,
-            "scores": [
-              0.9308112859725952,
-              0.9007943272590637,
-              0.8877597451210022,
-              0.8965491652488708,
-              0.0,
-              0.0
-            ]
-          },
-          "Characteristics Type": {
-            "mean_score": 0.16666666666666666,
-            "scores": [
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Frequency In Cases": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Allele Of Frequency In Cases": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Frequency In Controls": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Allele Of Frequency In Controls": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "P Value": {
-            "mean_score": 0.39166666666666666,
-            "scores": [
-              0.5,
-              0.5,
-              0.5,
-              0.85,
-              0.0,
-              0.0
-            ]
-          },
-          "Ratio Stat Type": {
-            "mean_score": 0.6666666666666666,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Ratio Stat": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              0.0,
-              0.0,
-              1.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Confidence Interval Start": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Confidence Interval Stop": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Biogeographical Groups": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          }
-        }
       }
     }
   }

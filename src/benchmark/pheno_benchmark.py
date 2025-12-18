@@ -1,6 +1,6 @@
 from typing import List, Dict, Any, Tuple, Set, Optional
 import re
-from benchmarks.shared_utils import (
+from .shared_utils import (
     semantic_similarity,
     category_equal,
     variant_substring_match,

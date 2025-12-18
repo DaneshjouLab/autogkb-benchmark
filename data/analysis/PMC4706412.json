@@ -2,20 +2,161 @@
   "pmcid": "PMC4706412",
   "pmid": "26745506",
   "title": "A Novel Admixture-Based Pharmacogenetic Approach to Refine Warfarin Dosing in Caribbean Hispanics",
-  "overall_score": 0.14512316399947145,
-  "num_benchmarks": 4,
+  "overall_score": 0.39442732410556763,
+  "num_benchmarks": 3,
   "benchmarks": {
     "drug_annotations": {
-      "score": 0.2623607704513951,
+      "score": 0.7140074901674923,
       "total_samples": 8,
       "ground_truth_annotations": {
         "count": 8,
-        "matched_count": 3,
-        "unmatched_count": 5,
+        "matched_count": 7,
+        "unmatched_count": 1,
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.7368421052631579,
+            "overall_match_score": 0.7831786149426511,
+            "annotation": {
+              "Variant/Haplotypes": "CYP4F2*1",
+              "Gene": "CYP4F2",
+              "PMID": 26745506,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Alleles": "*3",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "warfarin"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP4F2*1",
+                "prediction": "CYP4F2*1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP4F2",
+                "prediction": "CYP4F2",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 26745506,
+                "prediction": 26745506,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Dosage",
+                "prediction": "dosage",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*3",
+                "prediction": "*1/*3 + *3/*3",
+                "score": 0.9497439861297607,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "isPlural": {
+                "ground_truth": "Is",
+                "prediction": "Are",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "dose of",
+                "prediction": "dose requirements of",
+                "score": 0.9582560062408447,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Population types": {
+                "ground_truth": null,
+                "prediction": "in patients with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": null,
+                "prediction": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "and",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1",
+                "prediction": "*1/*1",
+                "score": 0.9723936915397644,
+                "match_status": "match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "warfarin",
+                "prediction": "warfarin",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7831786149426511,
             "annotation": {
               "Variant/Haplotypes": "CYP4F2*3",
               "Gene": "CYP4F2",
@@ -52,9 +193,9 @@
               },
               "PMID": {
                 "ground_truth": 26745506,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 26745506,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Phenotype Category": {
                 "ground_truth": "Dosage",
@@ -70,9 +211,9 @@
               },
               "Alleles": {
                 "ground_truth": "*3",
-                "prediction": "*3",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "*1/*3 + *3/*3",
+                "score": 0.9497439861297607,
+                "match_status": "partial_match"
               },
               "Specialty Population": {
                 "ground_truth": null,
@@ -82,15 +223,15 @@
               },
               "Metabolizer types": {
                 "ground_truth": null,
-                "prediction": "normal metabolizer",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "isPlural": {
                 "ground_truth": "Is",
-                "prediction": "Is",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Are",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Associated with",
@@ -106,39 +247,39 @@
               },
               "PD/PK terms": {
                 "ground_truth": "dose of",
-                "prediction": "dose of",
-                "score": 1.0,
+                "prediction": "dose requirements of",
+                "score": 0.9582560062408447,
                 "match_status": "match"
               },
               "Multiple drugs And/or": {
                 "ground_truth": null,
-                "prediction": "",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Population types": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "in patients with",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Population Phenotypes or diseases": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Multiple phenotypes or diseases And/or": {
                 "ground_truth": null,
-                "prediction": "",
+                "prediction": "and",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "*1",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "*1/*1",
+                "score": 0.9723936915397644,
+                "match_status": "match"
               },
               "Comparison Metabolizer types": {
                 "ground_truth": null,
@@ -156,7 +297,148 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.6813578950731378,
+            "overall_match_score": 0.8300315612240842,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C9*1",
+              "Gene": "CYP2C9",
+              "PMID": 26745506,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Alleles": "*2 + *3 + *8",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "warfarin"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C9*1",
+                "prediction": "CYP2C9*1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C9",
+                "prediction": "CYP2C9",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 26745506,
+                "prediction": 26745506,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Dosage",
+                "prediction": "dosage",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*2 + *3 + *8",
+                "prediction": "CYP2C9*2 carriers + CYP2C9*3 carriers + CYP2C9*8 carriers",
+                "score": 0.9179365038871765,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "isPlural": {
+                "ground_truth": "Are",
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "dose of",
+                "prediction": "dose requirements of",
+                "score": 0.9582560062408447,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Population types": {
+                "ground_truth": null,
+                "prediction": "in patients with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": null,
+                "prediction": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "and",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1",
+                "prediction": "CYP2C9*1/*1",
+                "score": 0.8944071531295776,
+                "match_status": "partial_match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "warfarin",
+                "prediction": "warfarin",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8300315612240842,
             "annotation": {
               "Variant/Haplotypes": "CYP2C9*2",
               "Gene": "CYP2C9",
@@ -193,9 +475,9 @@
               },
               "PMID": {
                 "ground_truth": 26745506,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 26745506,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Phenotype Category": {
                 "ground_truth": "Dosage",
@@ -211,8 +493,8 @@
               },
               "Alleles": {
                 "ground_truth": "*2 + *3 + *8",
-                "prediction": "*2",
-                "score": 0.9458000063896179,
+                "prediction": "CYP2C9*2 carriers + CYP2C9*3 carriers + CYP2C9*8 carriers",
+                "score": 0.9179365038871765,
                 "match_status": "partial_match"
               },
               "Specialty Population": {
@@ -223,15 +505,15 @@
               },
               "Metabolizer types": {
                 "ground_truth": null,
-                "prediction": "poor metabolizer",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "isPlural": {
                 "ground_truth": "Are",
-                "prediction": "Is",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Associated with",
@@ -247,39 +529,39 @@
               },
               "PD/PK terms": {
                 "ground_truth": "dose of",
-                "prediction": "dose of",
-                "score": 1.0,
+                "prediction": "dose requirements of",
+                "score": 0.9582560062408447,
                 "match_status": "match"
               },
               "Multiple drugs And/or": {
                 "ground_truth": null,
-                "prediction": "",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Population types": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "in patients with",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Population Phenotypes or diseases": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Multiple phenotypes or diseases And/or": {
                 "ground_truth": null,
-                "prediction": "",
+                "prediction": "and",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "*1",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "CYP2C9*1/*1",
+                "score": 0.8944071531295776,
+                "match_status": "partial_match"
               },
               "Comparison Metabolizer types": {
                 "ground_truth": null,
@@ -297,7 +579,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.6806861632748654,
+            "overall_match_score": 0.8300315612240842,
             "annotation": {
               "Variant/Haplotypes": "CYP2C9*3",
               "Gene": "CYP2C9",
@@ -334,9 +616,9 @@
               },
               "PMID": {
                 "ground_truth": 26745506,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 26745506,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Phenotype Category": {
                 "ground_truth": "Dosage",
@@ -352,8 +634,8 @@
               },
               "Alleles": {
                 "ground_truth": "*2 + *3 + *8",
-                "prediction": "*3",
-                "score": 0.9330371022224426,
+                "prediction": "CYP2C9*2 carriers + CYP2C9*3 carriers + CYP2C9*8 carriers",
+                "score": 0.9179365038871765,
                 "match_status": "partial_match"
               },
               "Specialty Population": {
@@ -364,15 +646,15 @@
               },
               "Metabolizer types": {
                 "ground_truth": null,
-                "prediction": "poor metabolizer",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "isPlural": {
                 "ground_truth": "Are",
-                "prediction": "Is",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Associated with",
@@ -388,39 +670,39 @@
               },
               "PD/PK terms": {
                 "ground_truth": "dose of",
-                "prediction": "dose of",
-                "score": 1.0,
+                "prediction": "dose requirements of",
+                "score": 0.9582560062408447,
                 "match_status": "match"
               },
               "Multiple drugs And/or": {
                 "ground_truth": null,
-                "prediction": "",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Population types": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "in patients with",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Population Phenotypes or diseases": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Multiple phenotypes or diseases And/or": {
                 "ground_truth": null,
-                "prediction": "",
+                "prediction": "and",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "*1",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "CYP2C9*1/*1",
+                "score": 0.8944071531295776,
+                "match_status": "partial_match"
               },
               "Comparison Metabolizer types": {
                 "ground_truth": null,
@@ -437,77 +719,14 @@
             }
           },
           {
-            "matched": false,
+            "matched": true,
+            "overall_match_score": 0.8300315612240842,
             "annotation": {
-              "Variant Annotation ID": 1447682700,
-              "Variant/Haplotypes": "CYP4F2*1",
-              "Gene": "CYP4F2",
-              "Drug(s)": "warfarin",
-              "PMID": 26745506,
-              "Phenotype Category": "Dosage",
-              "Significance": "yes",
-              "Notes": "The authors aimed to develop an admixture-adjusted (genetic ancestry) PGx dosing algorithm for warfarin in Caribbean Hispanics from Puerto Rico. [Algorithm R sq.=0.70, MAE = 0.72 mg/day]. When externally validated with 55 individuals from an independent cohort the novel algorithm predicted 58% of the warfarin dose variance [MAE = 0.89 mg/day, 24% mean bias]. Please note: the derivation cohort was 99% male.",
-              "Sentence": "CYP4F2 *3 is associated with increased dose of warfarin as compared to CYP4F2 *1.",
-              "Alleles": "*3",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "dose of",
-              "Multiple drugs And/or": null,
-              "Population types": null,
-              "Population Phenotypes or diseases": null,
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "*1",
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "26745506",
-              "Variant Annotation ID_norm": "1447682700",
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "matched": false,
-            "annotation": {
-              "Variant Annotation ID": 1447682605,
-              "Variant/Haplotypes": "CYP2C9*1",
-              "Gene": "CYP2C9",
-              "Drug(s)": "warfarin",
-              "PMID": 26745506,
-              "Phenotype Category": "Dosage",
-              "Significance": "yes",
-              "Notes": "The authors aimed to develop an admixture-adjusted (genetic ancestry) PGx dosing algorithm for warfarin in Caribbean Hispanics from Puerto Rico. [Algorithm R sq.=0.70, MAE = 0.72 mg/day]. When externally validated with 55 individuals from an independent cohort the novel algorithm predicted 58% of the warfarin dose variance [MAE = 0.89 mg/day, 24% mean bias]. Please note: the derivation cohort was 99% male and  \"variables were included in final lin. reg model if p<0.05 or if association with daily warfarin dose was marginally significant 0.05 = p = 0.20 with strong biological plausibility\".",
-              "Sentence": "CYP2C9 *2 + *3 + *8 are associated with decreased dose of warfarin as compared to CYP2C9 *1.",
-              "Alleles": "*2 + *3 + *8",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "decreased",
-              "PD/PK terms": "dose of",
-              "Multiple drugs And/or": null,
-              "Population types": null,
-              "Population Phenotypes or diseases": null,
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "*1",
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "26745506",
-              "Variant Annotation ID_norm": "1447682605",
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "matched": false,
-            "annotation": {
-              "Variant Annotation ID": 1447682605,
               "Variant/Haplotypes": "CYP2C9*8",
               "Gene": "CYP2C9",
-              "Drug(s)": "warfarin",
               "PMID": 26745506,
               "Phenotype Category": "Dosage",
               "Significance": "yes",
-              "Notes": "The authors aimed to develop an admixture-adjusted (genetic ancestry) PGx dosing algorithm for warfarin in Caribbean Hispanics from Puerto Rico. [Algorithm R sq.=0.70, MAE = 0.72 mg/day]. When externally validated with 55 individuals from an independent cohort the novel algorithm predicted 58% of the warfarin dose variance [MAE = 0.89 mg/day, 24% mean bias]. Please note: the derivation cohort was 99% male and  \"variables were included in final lin. reg model if p<0.05 or if association with daily warfarin dose was marginally significant 0.05 = p = 0.20 with strong biological plausibility\".",
-              "Sentence": "CYP2C9 *2 + *3 + *8 are associated with decreased dose of warfarin as compared to CYP2C9 *1.",
               "Alleles": "*2 + *3 + *8",
               "Specialty Population": null,
               "Metabolizer types": null,
@@ -521,23 +740,134 @@
               "Multiple phenotypes or diseases And/or": null,
               "Comparison Allele(s) or Genotype(s)": "*1",
               "Comparison Metabolizer types": null,
-              "PMID_norm": "26745506",
-              "Variant Annotation ID_norm": "1447682605",
-              "_expanded_from_multi_variant": true
+              "Drug(s)": "warfarin"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C9*8",
+                "prediction": "CYP2C9*8",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C9",
+                "prediction": "CYP2C9",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 26745506,
+                "prediction": 26745506,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Dosage",
+                "prediction": "dosage",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*2 + *3 + *8",
+                "prediction": "CYP2C9*2 carriers + CYP2C9*3 carriers + CYP2C9*8 carriers",
+                "score": 0.9179365038871765,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "isPlural": {
+                "ground_truth": "Are",
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "dose of",
+                "prediction": "dose requirements of",
+                "score": 0.9582560062408447,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Population types": {
+                "ground_truth": null,
+                "prediction": "in patients with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": null,
+                "prediction": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "and",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1",
+                "prediction": "CYP2C9*1/*1",
+                "score": 0.8944071531295776,
+                "match_status": "partial_match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "warfarin",
+                "prediction": "warfarin",
+                "score": 1.0,
+                "match_status": "match"
+              }
             }
           },
           {
-            "matched": false,
+            "matched": true,
+            "overall_match_score": 0.8255764465582999,
             "annotation": {
-              "Variant Annotation ID": 1447682688,
               "Variant/Haplotypes": "rs9923231",
               "Gene": "VKORC1",
-              "Drug(s)": "warfarin",
               "PMID": 26745506,
               "Phenotype Category": "Dosage",
               "Significance": "yes",
-              "Notes": "The authors aimed to develop an admixture-adjusted (genetic ancestry) PGx dosing algorithm for warfarin in Caribbean Hispanics from Puerto Rico. [Algorithm R sq.=0.70, MAE = 0.72 mg/day]. When externally validated with 55 individuals from an independent cohort the novel algorithm predicted 58% of the warfarin dose variance [MAE = 0.89 mg/day, 24% mean bias]. Please note: the derivation cohort was 99% male.",
-              "Sentence": "Genotypes CT + TT are associated with decreased dose of warfarin as compared to genotype CC.",
               "Alleles": "CT + TT",
               "Specialty Population": null,
               "Metabolizer types": null,
@@ -551,8 +881,123 @@
               "Multiple phenotypes or diseases And/or": null,
               "Comparison Allele(s) or Genotype(s)": "CC",
               "Comparison Metabolizer types": null,
-              "PMID_norm": "26745506",
-              "Variant Annotation ID_norm": "1447682688"
+              "Drug(s)": "warfarin"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs9923231",
+                "prediction": "rs9923231",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "VKORC1",
+                "prediction": "VKORC1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 26745506,
+                "prediction": 26745506,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Dosage",
+                "prediction": "dosage",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "CT + TT",
+                "prediction": "GA + AA",
+                "score": 0.8607323169708252,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "isPlural": {
+                "ground_truth": "Are",
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "dose of",
+                "prediction": "dose requirements of",
+                "score": 0.9582560062408447,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Population types": {
+                "ground_truth": null,
+                "prediction": "in patients with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": null,
+                "prediction": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "and",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "CC",
+                "prediction": "GG",
+                "score": 0.8669641613960266,
+                "match_status": "partial_match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "warfarin",
+                "prediction": "warfarin",
+                "score": 1.0,
+                "match_status": "match"
+              }
             }
           },
           {
@@ -587,33 +1032,493 @@
         ]
       },
       "extra_predictions": {
-        "count": 2,
+        "count": 22,
         "items": [
           {
-            "variant": "VKORC1-1639A",
-            "gene": "VKORC1",
+            "variant": "CYP2C9*4",
+            "gene": "CYP2C9",
             "drug": "warfarin",
             "annotation": {
-              "Variant/Haplotypes": "VKORC1-1639A",
-              "Gene": "VKORC1",
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "CYP2C9*4",
+              "Gene": "CYP2C9",
               "Drug(s)": "warfarin",
+              "PMID": 26745506,
               "Phenotype Category": "dosage",
               "Significance": "yes",
-              "Notes": "Carriers of the VKORC1-1639AA genotype had reduced warfarin dose requirements.",
-              "Sentence": "VKORC1-1639A is associated with decreased warfarin dose in Caribbean Hispanics.",
-              "Alleles": "A",
-              "Metabolizer types": "normal metabolizer",
+              "Notes": "In the multiple linear regression refinement model, CYP2C9*2, *3, and *8 carrier status were significant covariates (CYP2C9*2: \u03b2 = \u22120.245, p = 0.014; CYP2C9*3: \u03b2 = \u22120.544, p = 0.015; CYP2C9*8: \u03b2 = \u22121.00, p = 0.098) and combined loss-of-function CYP2C9 polymorphisms explained ~5% of dose variability and were associated with an average 18% decrease in therapeutic warfarin dose per variant allele.",
+              "Sentence": "Genotypes carrying CYP2C9 loss-of-function alleles (e.g., CYP2C9*2, CYP2C9*3, CYP2C9*8) are associated with decreased warfarin maintenance dose requirements in patients with thromboembolic indications as compared to the CYP2C9*1/*1 genotype.",
+              "Alleles": "CYP2C9*2 carriers + CYP2C9*3 carriers + CYP2C9*8 carriers",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CYP2C9*1/*1",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cThe numerical designations of \u201c0\u201d for the CYP2C9*1/*1 genotype (wild-type); \u201c1\u201d for the *1/*n genotypes (n stands for *3,*5,*6,*8,*11 \u201closs-of-function\u201d variants detected in the genotyping assay) and \u201c2\u201d for *n/*n genotypes (e.g., *2/*2, *3/*3, *3/*5) were used to correspond to the relative capacity of the CYP system to metabolize warfarin.\u201d",
+                "\u201cCombined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population. Moreover, this covariate was associated with a 13% reduction in the therapeutic warfarin dose per number of A alleles. The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.\u201d",
+                "\u201cSimilar to our previous pharmacogenetic-guided algorithm in Puerto Ricans [38], carrier status for VKORC1-1639G>A and loss-of-function CYP2C9 polymorphisms were significant predictors of therapeutic dose in the herein developed admixture-adjusted PGt algorithm of dose-refinement within Caribbean Hispanics. However, the CYP2C9 carrier status (i.e., combinatorial CYP2C9*2 plus *3 alleles, along with the *8 variant), was this time a better predictor of therapeutic doses in our derivation cohort.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*4, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*5",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "CYP2C9*5",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "In the multiple linear regression refinement model, CYP2C9*2, *3, and *8 carrier status were significant covariates (CYP2C9*2: \u03b2 = \u22120.245, p = 0.014; CYP2C9*3: \u03b2 = \u22120.544, p = 0.015; CYP2C9*8: \u03b2 = \u22121.00, p = 0.098) and combined loss-of-function CYP2C9 polymorphisms explained ~5% of dose variability and were associated with an average 18% decrease in therapeutic warfarin dose per variant allele.",
+              "Sentence": "Genotypes carrying CYP2C9 loss-of-function alleles (e.g., CYP2C9*2, CYP2C9*3, CYP2C9*8) are associated with decreased warfarin maintenance dose requirements in patients with thromboembolic indications as compared to the CYP2C9*1/*1 genotype.",
+              "Alleles": "CYP2C9*2 carriers + CYP2C9*3 carriers + CYP2C9*8 carriers",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CYP2C9*1/*1",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cThe numerical designations of \u201c0\u201d for the CYP2C9*1/*1 genotype (wild-type); \u201c1\u201d for the *1/*n genotypes (n stands for *3,*5,*6,*8,*11 \u201closs-of-function\u201d variants detected in the genotyping assay) and \u201c2\u201d for *n/*n genotypes (e.g., *2/*2, *3/*3, *3/*5) were used to correspond to the relative capacity of the CYP system to metabolize warfarin.\u201d",
+                "\u201cCombined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population. Moreover, this covariate was associated with a 13% reduction in the therapeutic warfarin dose per number of A alleles. The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.\u201d",
+                "\u201cSimilar to our previous pharmacogenetic-guided algorithm in Puerto Ricans [38], carrier status for VKORC1-1639G>A and loss-of-function CYP2C9 polymorphisms were significant predictors of therapeutic dose in the herein developed admixture-adjusted PGt algorithm of dose-refinement within Caribbean Hispanics. However, the CYP2C9 carrier status (i.e., combinatorial CYP2C9*2 plus *3 alleles, along with the *8 variant), was this time a better predictor of therapeutic doses in our derivation cohort.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*4, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*6",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "CYP2C9*6",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "In the multiple linear regression refinement model, CYP2C9*2, *3, and *8 carrier status were significant covariates (CYP2C9*2: \u03b2 = \u22120.245, p = 0.014; CYP2C9*3: \u03b2 = \u22120.544, p = 0.015; CYP2C9*8: \u03b2 = \u22121.00, p = 0.098) and combined loss-of-function CYP2C9 polymorphisms explained ~5% of dose variability and were associated with an average 18% decrease in therapeutic warfarin dose per variant allele.",
+              "Sentence": "Genotypes carrying CYP2C9 loss-of-function alleles (e.g., CYP2C9*2, CYP2C9*3, CYP2C9*8) are associated with decreased warfarin maintenance dose requirements in patients with thromboembolic indications as compared to the CYP2C9*1/*1 genotype.",
+              "Alleles": "CYP2C9*2 carriers + CYP2C9*3 carriers + CYP2C9*8 carriers",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CYP2C9*1/*1",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cThe numerical designations of \u201c0\u201d for the CYP2C9*1/*1 genotype (wild-type); \u201c1\u201d for the *1/*n genotypes (n stands for *3,*5,*6,*8,*11 \u201closs-of-function\u201d variants detected in the genotyping assay) and \u201c2\u201d for *n/*n genotypes (e.g., *2/*2, *3/*3, *3/*5) were used to correspond to the relative capacity of the CYP system to metabolize warfarin.\u201d",
+                "\u201cCombined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population. Moreover, this covariate was associated with a 13% reduction in the therapeutic warfarin dose per number of A alleles. The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.\u201d",
+                "\u201cSimilar to our previous pharmacogenetic-guided algorithm in Puerto Ricans [38], carrier status for VKORC1-1639G>A and loss-of-function CYP2C9 polymorphisms were significant predictors of therapeutic dose in the herein developed admixture-adjusted PGt algorithm of dose-refinement within Caribbean Hispanics. However, the CYP2C9 carrier status (i.e., combinatorial CYP2C9*2 plus *3 alleles, along with the *8 variant), was this time a better predictor of therapeutic doses in our derivation cohort.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*4, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*11",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "CYP2C9*11",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "In the multiple linear regression refinement model, CYP2C9*2, *3, and *8 carrier status were significant covariates (CYP2C9*2: \u03b2 = \u22120.245, p = 0.014; CYP2C9*3: \u03b2 = \u22120.544, p = 0.015; CYP2C9*8: \u03b2 = \u22121.00, p = 0.098) and combined loss-of-function CYP2C9 polymorphisms explained ~5% of dose variability and were associated with an average 18% decrease in therapeutic warfarin dose per variant allele.",
+              "Sentence": "Genotypes carrying CYP2C9 loss-of-function alleles (e.g., CYP2C9*2, CYP2C9*3, CYP2C9*8) are associated with decreased warfarin maintenance dose requirements in patients with thromboembolic indications as compared to the CYP2C9*1/*1 genotype.",
+              "Alleles": "CYP2C9*2 carriers + CYP2C9*3 carriers + CYP2C9*8 carriers",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CYP2C9*1/*1",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cThe numerical designations of \u201c0\u201d for the CYP2C9*1/*1 genotype (wild-type); \u201c1\u201d for the *1/*n genotypes (n stands for *3,*5,*6,*8,*11 \u201closs-of-function\u201d variants detected in the genotyping assay) and \u201c2\u201d for *n/*n genotypes (e.g., *2/*2, *3/*3, *3/*5) were used to correspond to the relative capacity of the CYP system to metabolize warfarin.\u201d",
+                "\u201cCombined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population. Moreover, this covariate was associated with a 13% reduction in the therapeutic warfarin dose per number of A alleles. The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.\u201d",
+                "\u201cSimilar to our previous pharmacogenetic-guided algorithm in Puerto Ricans [38], carrier status for VKORC1-1639G>A and loss-of-function CYP2C9 polymorphisms were significant predictors of therapeutic dose in the herein developed admixture-adjusted PGt algorithm of dose-refinement within Caribbean Hispanics. However, the CYP2C9 carrier status (i.e., combinatorial CYP2C9*2 plus *3 alleles, along with the *8 variant), was this time a better predictor of therapeutic doses in our derivation cohort.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*4, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*2",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "CYP2C9*2",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "In the refinement algorithm, CYP2C9*2 carrier status had a regression coefficient of \u22120.245 (SE 0.1654, p = 0.014), corresponding to an approximate 7% reduction in maintenance warfarin dose per *2 allele.",
+              "Sentence": "Genotype CYP2C9*2 carrier is associated with decreased warfarin maintenance dose requirements in patients with thromboembolic disorders as compared to CYP2C9*1/*1.",
+              "Alleles": "CYP2C9*1/*2 + CYP2C9*2/*2 + CYP2C9*2/*3 + CYP2C9*2/*5",
+              "Specialty Population": null,
+              "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "decreased",
-              "PD/PK terms": "dose of",
-              "Multiple drugs And/or": "",
-              "Multiple phenotypes or diseases And/or": "",
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CYP2C9*1/*1",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "Combined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population. Moreover, this covariate was associated with a 13% reduction in the therapeutic warfarin dose per number of A alleles.",
-                "The mean absolute error (MAE, mg/day, defined as the mean of the absolute values for the difference between the predicted and actual doses) was used to evaluate the model's predictive accuracy. We selected the final model as the one that had the lowest predictive MAE.",
-                "For patients at the highest risk who required either \u22643mg (~19.2% of the study cohorts) or \u22657 mg/day of warfarin per day (~11% of the study cohorts), 54.5% of the dose predictions using our developed model resulted within 20% of the actual dose ('ideal dose') as compared with only 29% when using the clinical non-genetic algorithm (p<0.001)."
-              ]
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "The respective regression coefficients, p-values, the percent of effect on dose requirements and the contribution to explain observed variability that is accounted for by the model, as measured by the partial R^2^ statistics, are presented in [Table 3](#pone.0145480.t003) for all the variables that were entered into the regression model.\n\n| Variablesa | Partial Regression Coefficient | Std. Error | Adjusted-R2 after entry | Effect on warfarin dose b | p-value |\n| --- | --- | --- | --- | --- | --- |\n| ...\n| CYP2C9*2 | -0.245 | 0.1654 | 0.613 | -7% | 0.014 |"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*2",
+                "variant_id": "PA165816543",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "CYP2C9*3",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "CYP2C9*3",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "CYP2C9*3 carrier status had a regression coefficient of \u22120.544 (SE 0.2224, p = 0.015) in the multivariable model, corresponding to approximately a 16% decrease in maintenance warfarin dose per *3 allele.",
+              "Sentence": "Genotype CYP2C9*3 carrier is associated with decreased warfarin maintenance dose requirements in patients with thromboembolic disorders as compared to CYP2C9*1/*1.",
+              "Alleles": "CYP2C9*1/*3 + CYP2C9*2/*3 + CYP2C9*3/*5 + CYP2C9*3/*6",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CYP2C9*1/*1",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cCYP2C9*3  -0.544  0.2224  0.625  -16%  0.015\u201d (Table 3. Summary of attributes of the pharmacogenetic equation for warfarin dosing refinement in Caribbean Hispanics.)",
+                "\u201cThe number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.\u201d",
+                "\u201cThe stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans\u2026 WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2026]"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*3",
+                "variant_id": "PA165816544",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "CYP2C9*8",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 4,
+              "Variant/Haplotypes": "CYP2C9*8",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "no",
+              "Notes": "CYP2C9*8 carrier status had a regression coefficient of \u22121.00 (SE 0.6014, p = 0.098) in the final model, corresponding to an estimated 31% decrease (or 18% when adjusted) in dose, but this did not reach conventional statistical significance (p\u22480.10) in this cohort.",
+              "Sentence": "Genotype CYP2C9*8 carrier is not associated with decreased warfarin maintenance dose requirements at the p<0.05 level in patients with thromboembolic disorders as compared to CYP2C9*1/*1.",
+              "Alleles": "CYP2C9*1/*8",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CYP2C9*1/*1",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cNotably, three patients were carriers of the *CYP2C9**8 allele (all heterozygous)\u2026 Additionally, the *8 allele has been identified in African-American patients [[39],[41]\u2013[42]] and also accounts for a decrease in CYP2C9 enzyme activity of 30% for S-warfarin [[43]].\u201d",
+                "\u201cThe respective regression coefficients, p-values, the percent of effect on dose requirements and the contribution to explain observed variability that is accounted for by the model, as measured by the partial R^2 statistics, are presented in [Table 3] for all the variables that were entered into the regression model.\u201d followed by Table 3 entry: \u201cCYP2C9*8 | -1.00 | 0.6014 | 0.638 | -31%; -18d | 0.098\u201d",
+                "\u201cCombined *VKORC1*-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population. Moreover, this covariate was associated with a 13% reduction in the therapeutic warfarin dose per number of A alleles. The number of loss-of-function *CYP2C9* polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*8",
+                "variant_id": "PA165816549",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs9923231",
+            "gene": "VKORC1",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 6,
+              "Variant/Haplotypes": "rs9923231",
+              "Gene": "VKORC1",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "In the refinement algorithm, VKORC1 -1639 AA carrier code (AA vs others) had \u03b2 = \u22120.896 (SE 0.2169, p < 0.0001), associated with about a 12% decrease in dose.",
+              "Sentence": "Genotype VKORC1 -1639 AA is associated with decreased warfarin maintenance dose requirements in patients with thromboembolic disorders as compared to VKORC1 -1639 GG.",
+              "Alleles": "AA",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cCombined *VKORC1*-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population. Moreover, this covariate was associated with a 13% reduction in the therapeutic warfarin dose per number of A alleles.\u201d",
+                "\u201cThe respective regression coefficients, p-values, the percent of effect on dose requirements and the contribution to explain observed variability that is accounted for by the model, as measured by the partial R^2 statistics, are presented in [Table 3] for all the variables that were entered into the regression model.\u201d \u2026 \u201cVKAA  -0.896  0.2169  0.641  -12%  <0.0001\u201d",
+                "\u201cWarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)]\u201d]}```**Note**: In the above excerpt, `VKORC1AA` is a carrier code for the VKORC1 -1639 AA genotype, which has a negative regression coefficient, indicating decreased warfarin maintenance dose compared to non-AA genotypes.```"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs9923231",
+                "variant_id": "PA166155091",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs9923231",
+            "gene": "VKORC1",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 7,
+              "Variant/Haplotypes": "rs9923231",
+              "Gene": "VKORC1",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "VKORC1 -1639 GA carrier code (GA vs others) had \u03b2 = \u22120.379 (SE 0.1391, p = 0.007) and was associated with ~14% reduction in dose; the authors also note an estimated 13% reduction in therapeutic dose per A allele overall.",
+              "Sentence": "Genotype VKORC1 -1639 GA is associated with decreased warfarin maintenance dose requirements in patients with thromboembolic disorders as compared to VKORC1 -1639 GG.",
+              "Alleles": "GA",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cCombined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population. Moreover, this covariate was associated with a 13% reduction in the therapeutic warfarin dose per number of A alleles.\u201d",
+                "\u201cVKGA -0.379 0.1391 0.659 -14%; -13e 0.007\u201d (Table 3: Summary of attributes of the pharmacogenetic equation for warfarin dosing refinement in Caribbean Hispanics, where VKGA is defined in the text as VKORC1 -1639 GA carrier status).",
+                "\u201cVKORC1 AA status is a carrier code, where 1 = AA and 0 = otherwise; VKORC1 GA status is another code, where 1 = GA and 0 = otherwise\u2026 Effect on the estimates of the maintenance warfarin dose was calculated per number of variant alleles (genetics)\u2026.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs9923231",
+                "variant_id": "PA166155091",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs104894540",
+            "gene": "VKORC1",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 8,
+              "Variant/Haplotypes": "rs104894540",
+              "Gene": "VKORC1",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "not stated",
+              "Notes": "A single patient was heterozygous for VKORC1 c.134T>C (p.V45A, rs104894540), described as an autosomal dominant warfarin resistance genotype. No formal regression statistics for this variant were provided, but it is labeled as a warfarin-resistant genotype.",
+              "Sentence": "Genotype VKORC1 c.134T>C (p.V45A) is associated with increased warfarin maintenance dose requirements in patients with thromboembolic disorders as compared to VKORC1 c.134 TT.",
+              "Alleles": "TC",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Moreover, one patient (# WPR274) was identified as heterozygous for the \u201crare\u201d missense variant c.134T>C transition in the *VKORC1* gene (*rs104894540*), which is an autosomal dominant warfarin resistance genotype resulting in a valine-to-alanine substitution at codon 45 (p.V45A).",
+                "VKORC1 (c.134T>C, p.V45A, rs104894540): Resistant |  | <0.001 |\n| TT | 254; 99.6% (97.6\u201399.9; 0.0129) |   |\n| TC | 1; 0.39% (0.01\u20132.42; 0.0129) |   |\n| T | 509; 99.8% (98.8\u201399.9; 0.0065) |   |\n| C | 1; 0.2% (0.01\u20131.22; 0.0065) |   |"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs104894540",
+                "variant_id": "PA166155138",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "NQO1*1",
+            "gene": "NQO1",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 10,
+              "Variant/Haplotypes": "NQO1*1",
+              "Gene": "NQO1",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "no",
+              "Notes": "The NQO1*2 (g.559C>T, p.P187S, rs1800566) variant had MAF ~0.10; 15.7% were C/T and 2% T/T. In the final model, NQO1*2 carrier status had \u03b2 = 0.346 (SE 0.2246, p = 0.125), corresponding to an estimated 10% increase in dose per variant allele, but this did not reach p<0.05.",
+              "Sentence": "Genotypes NQO1*1/*2 and NQO1*2/*2 are not associated with increased warfarin maintenance dose requirements at the p<0.05 level in patients with thromboembolic disorders as compared to NQO1*1/*1.",
+              "Alleles": "*1/*2 + *2/*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cThe frequencies of the CYP4F2*3 (g.18000G>A, p.V433M, rs2108622) and NQO1*2 (g.559C>T, p.P187S, rs1800566) \u201cresistant\u201d polymorphisms in the study population were 0.11 (95%CI: 0.09\u20130.14) and 0.10 (95%CI: 0.07\u20130.13), respectively. There are 18% heterozygous (G/A) for the CYP4F2*3 allele (95%CI: 0.14\u20130.23) and 2.4% homozygous (A/A) for this variant allele (95%CI: 0.01\u20130.05); whereas, about 15.7% of patients carried the C/T heterozygous genotype for the NQO1*2 SNP (95%CI: 0.12\u20130.21) and 2% were double carriers (T/T) of this variant (95%CI: 0.007\u20130.05).\u201d",
+                "\u201cNotably, CYP4F2*3 and NQO1*2 variants were independently associated with a 17% and 10% increase of the dose per variant allele, respectively; whereas, the admixed status of the admixture index decreases the dose by 7%.\u201d",
+                "\u201cThe respective regression coefficients, p-values, the percent of effect on dose requirements and the contribution to explain observed variability that is accounted for by the model, as measured by the partial R2 statistics, are presented in Table 3 for all the variables that were entered into the regression model.\u201d\n[Table 3 lists: \u201cNQO1*2 | 0.346 | 0.2246 | 0.689 | 10% | 0.125\u201d]"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "NQO1*1, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
             }
           },
           {
@@ -621,282 +1526,497 @@
             "gene": "NQO1",
             "drug": "warfarin",
             "annotation": {
+              "Variant Annotation ID": 10,
               "Variant/Haplotypes": "NQO1*2",
               "Gene": "NQO1",
               "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "no",
+              "Notes": "The NQO1*2 (g.559C>T, p.P187S, rs1800566) variant had MAF ~0.10; 15.7% were C/T and 2% T/T. In the final model, NQO1*2 carrier status had \u03b2 = 0.346 (SE 0.2246, p = 0.125), corresponding to an estimated 10% increase in dose per variant allele, but this did not reach p<0.05.",
+              "Sentence": "Genotypes NQO1*1/*2 and NQO1*2/*2 are not associated with increased warfarin maintenance dose requirements at the p<0.05 level in patients with thromboembolic disorders as compared to NQO1*1/*1.",
+              "Alleles": "*1/*2 + *2/*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cThe frequencies of the CYP4F2*3 (g.18000G>A, p.V433M, rs2108622) and NQO1*2 (g.559C>T, p.P187S, rs1800566) \u201cresistant\u201d polymorphisms in the study population were 0.11 (95%CI: 0.09\u20130.14) and 0.10 (95%CI: 0.07\u20130.13), respectively. There are 18% heterozygous (G/A) for the CYP4F2*3 allele (95%CI: 0.14\u20130.23) and 2.4% homozygous (A/A) for this variant allele (95%CI: 0.01\u20130.05); whereas, about 15.7% of patients carried the C/T heterozygous genotype for the NQO1*2 SNP (95%CI: 0.12\u20130.21) and 2% were double carriers (T/T) of this variant (95%CI: 0.007\u20130.05).\u201d",
+                "\u201cNotably, CYP4F2*3 and NQO1*2 variants were independently associated with a 17% and 10% increase of the dose per variant allele, respectively; whereas, the admixed status of the admixture index decreases the dose by 7%.\u201d",
+                "\u201cThe respective regression coefficients, p-values, the percent of effect on dose requirements and the contribution to explain observed variability that is accounted for by the model, as measured by the partial R2 statistics, are presented in Table 3 for all the variables that were entered into the regression model.\u201d\n[Table 3 lists: \u201cNQO1*2 | 0.346 | 0.2246 | 0.689 | 10% | 0.125\u201d]"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "NQO1*1, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*1",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "CYP2C9*1",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
               "Phenotype Category": "dosage",
               "Significance": "yes",
-              "Notes": "Presence of NQO1*2 variant has an effect on warfarin metabolism, requiring dosage adjustment.",
-              "Sentence": "NQO1*2 is associated with increased warfarin dose in Caribbean Hispanics.",
-              "Alleles": "*2",
-              "Metabolizer types": "normal metabolizer",
-              "isPlural": "Is",
+              "Notes": "The admixture-adjusted pharmacogenetic algorithm incorporating CYP2C9, VKORC1 (rs9923231), CYP4F2*3, NQO1*2, and admixture predicted 70% of warfarin dose variance in the derivation cohort (R2 = 0.70, MAE = 0.72 mg/day) compared with 60% (MAE = 0.99 mg/day) for a clinical algorithm excluding genotypes and admixture. The model also predicted 58\u201359% of dose variance in an external validation cohort, with lower MAE and bias than IWPC and Lenzini algorithms.",
+              "Sentence": "Combined carriage of pharmacogenetic variants in CYP2C9, VKORC1, CYP4F2 and NQO1 is associated with altered warfarin maintenance dose requirements and improved predictability of dose refinement in Caribbean Hispanic patients with thromboembolic disorders as compared to dosing based on clinical factors alone.",
+              "Alleles": "Carriers of any CYP2C9 loss-of-function allele and/or VKORC1 -1639A and/or CYP4F2*3 and/or NQO1*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "dose of",
-              "Multiple drugs And/or": "",
-              "Multiple phenotypes or diseases And/or": "",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "Non-carriers for all tested variants (wild-type genotypes using clinical algorithm only)",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "NQO1*2 variant has an effect on warfarin metabolism, requiring dosage adjustment.",
-                "The CYP4F2*3 and NQO1*2 variants were independently associated with a 17% and 10% increase of the dose per variant allele, respectively; whereas, the admixed status of the admixture index decreases the dose by 7%.",
-                "Combined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population."
-              ]
+                "Overall, this admixture-adjusted pharmacogenetic model in Caribbean Hispanics contained thirteen significant \u2018explanatory\u2019 variables. These independent predictors explained more than two-thirds of the observed variance in the therapeutic warfarin dose (R^2^ = 70%; MAE = 0.72mg/day; MSE = 0.99; p< 0.001), which is better than that of a clinical non-genetic algorithm in the same derivation cohort (R^2^ = 60%; MAE = 0.99mg/day; MSE = 1.26).",
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "As can be observed, our pharmacogenetic model predicted 59% of the variance in warfarin dose when externally validated in 55 genotyped individuals from the independent Hartford\u2019s patient cohort (MAE = 0.89 mg/day, 24% mean bias). On the contrary, the two others reference PGt algorithms showed poorer dose predictability in this independent cohort. \u2026 On the other hand, the clinical algorithm that excluded genotypes and admixture only accounted for 50% of dose variability in this independent cohort (MAE = 1.34 mg/day, 34% mean bias, [Fig 3D](#pone.0145480.g003))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, rs9923231, CYP4F2*3, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*2",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "CYP2C9*2",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "The admixture-adjusted pharmacogenetic algorithm incorporating CYP2C9, VKORC1 (rs9923231), CYP4F2*3, NQO1*2, and admixture predicted 70% of warfarin dose variance in the derivation cohort (R2 = 0.70, MAE = 0.72 mg/day) compared with 60% (MAE = 0.99 mg/day) for a clinical algorithm excluding genotypes and admixture. The model also predicted 58\u201359% of dose variance in an external validation cohort, with lower MAE and bias than IWPC and Lenzini algorithms.",
+              "Sentence": "Combined carriage of pharmacogenetic variants in CYP2C9, VKORC1, CYP4F2 and NQO1 is associated with altered warfarin maintenance dose requirements and improved predictability of dose refinement in Caribbean Hispanic patients with thromboembolic disorders as compared to dosing based on clinical factors alone.",
+              "Alleles": "Carriers of any CYP2C9 loss-of-function allele and/or VKORC1 -1639A and/or CYP4F2*3 and/or NQO1*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "Non-carriers for all tested variants (wild-type genotypes using clinical algorithm only)",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Overall, this admixture-adjusted pharmacogenetic model in Caribbean Hispanics contained thirteen significant \u2018explanatory\u2019 variables. These independent predictors explained more than two-thirds of the observed variance in the therapeutic warfarin dose (R^2^ = 70%; MAE = 0.72mg/day; MSE = 0.99; p< 0.001), which is better than that of a clinical non-genetic algorithm in the same derivation cohort (R^2^ = 60%; MAE = 0.99mg/day; MSE = 1.26).",
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "As can be observed, our pharmacogenetic model predicted 59% of the variance in warfarin dose when externally validated in 55 genotyped individuals from the independent Hartford\u2019s patient cohort (MAE = 0.89 mg/day, 24% mean bias). On the contrary, the two others reference PGt algorithms showed poorer dose predictability in this independent cohort. \u2026 On the other hand, the clinical algorithm that excluded genotypes and admixture only accounted for 50% of dose variability in this independent cohort (MAE = 1.34 mg/day, 34% mean bias, [Fig 3D](#pone.0145480.g003))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, rs9923231, CYP4F2*3, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*3",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "CYP2C9*3",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "The admixture-adjusted pharmacogenetic algorithm incorporating CYP2C9, VKORC1 (rs9923231), CYP4F2*3, NQO1*2, and admixture predicted 70% of warfarin dose variance in the derivation cohort (R2 = 0.70, MAE = 0.72 mg/day) compared with 60% (MAE = 0.99 mg/day) for a clinical algorithm excluding genotypes and admixture. The model also predicted 58\u201359% of dose variance in an external validation cohort, with lower MAE and bias than IWPC and Lenzini algorithms.",
+              "Sentence": "Combined carriage of pharmacogenetic variants in CYP2C9, VKORC1, CYP4F2 and NQO1 is associated with altered warfarin maintenance dose requirements and improved predictability of dose refinement in Caribbean Hispanic patients with thromboembolic disorders as compared to dosing based on clinical factors alone.",
+              "Alleles": "Carriers of any CYP2C9 loss-of-function allele and/or VKORC1 -1639A and/or CYP4F2*3 and/or NQO1*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "Non-carriers for all tested variants (wild-type genotypes using clinical algorithm only)",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Overall, this admixture-adjusted pharmacogenetic model in Caribbean Hispanics contained thirteen significant \u2018explanatory\u2019 variables. These independent predictors explained more than two-thirds of the observed variance in the therapeutic warfarin dose (R^2^ = 70%; MAE = 0.72mg/day; MSE = 0.99; p< 0.001), which is better than that of a clinical non-genetic algorithm in the same derivation cohort (R^2^ = 60%; MAE = 0.99mg/day; MSE = 1.26).",
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "As can be observed, our pharmacogenetic model predicted 59% of the variance in warfarin dose when externally validated in 55 genotyped individuals from the independent Hartford\u2019s patient cohort (MAE = 0.89 mg/day, 24% mean bias). On the contrary, the two others reference PGt algorithms showed poorer dose predictability in this independent cohort. \u2026 On the other hand, the clinical algorithm that excluded genotypes and admixture only accounted for 50% of dose variability in this independent cohort (MAE = 1.34 mg/day, 34% mean bias, [Fig 3D](#pone.0145480.g003))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, rs9923231, CYP4F2*3, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*5",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "CYP2C9*5",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "The admixture-adjusted pharmacogenetic algorithm incorporating CYP2C9, VKORC1 (rs9923231), CYP4F2*3, NQO1*2, and admixture predicted 70% of warfarin dose variance in the derivation cohort (R2 = 0.70, MAE = 0.72 mg/day) compared with 60% (MAE = 0.99 mg/day) for a clinical algorithm excluding genotypes and admixture. The model also predicted 58\u201359% of dose variance in an external validation cohort, with lower MAE and bias than IWPC and Lenzini algorithms.",
+              "Sentence": "Combined carriage of pharmacogenetic variants in CYP2C9, VKORC1, CYP4F2 and NQO1 is associated with altered warfarin maintenance dose requirements and improved predictability of dose refinement in Caribbean Hispanic patients with thromboembolic disorders as compared to dosing based on clinical factors alone.",
+              "Alleles": "Carriers of any CYP2C9 loss-of-function allele and/or VKORC1 -1639A and/or CYP4F2*3 and/or NQO1*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "Non-carriers for all tested variants (wild-type genotypes using clinical algorithm only)",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Overall, this admixture-adjusted pharmacogenetic model in Caribbean Hispanics contained thirteen significant \u2018explanatory\u2019 variables. These independent predictors explained more than two-thirds of the observed variance in the therapeutic warfarin dose (R^2^ = 70%; MAE = 0.72mg/day; MSE = 0.99; p< 0.001), which is better than that of a clinical non-genetic algorithm in the same derivation cohort (R^2^ = 60%; MAE = 0.99mg/day; MSE = 1.26).",
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "As can be observed, our pharmacogenetic model predicted 59% of the variance in warfarin dose when externally validated in 55 genotyped individuals from the independent Hartford\u2019s patient cohort (MAE = 0.89 mg/day, 24% mean bias). On the contrary, the two others reference PGt algorithms showed poorer dose predictability in this independent cohort. \u2026 On the other hand, the clinical algorithm that excluded genotypes and admixture only accounted for 50% of dose variability in this independent cohort (MAE = 1.34 mg/day, 34% mean bias, [Fig 3D](#pone.0145480.g003))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, rs9923231, CYP4F2*3, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*6",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "CYP2C9*6",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "The admixture-adjusted pharmacogenetic algorithm incorporating CYP2C9, VKORC1 (rs9923231), CYP4F2*3, NQO1*2, and admixture predicted 70% of warfarin dose variance in the derivation cohort (R2 = 0.70, MAE = 0.72 mg/day) compared with 60% (MAE = 0.99 mg/day) for a clinical algorithm excluding genotypes and admixture. The model also predicted 58\u201359% of dose variance in an external validation cohort, with lower MAE and bias than IWPC and Lenzini algorithms.",
+              "Sentence": "Combined carriage of pharmacogenetic variants in CYP2C9, VKORC1, CYP4F2 and NQO1 is associated with altered warfarin maintenance dose requirements and improved predictability of dose refinement in Caribbean Hispanic patients with thromboembolic disorders as compared to dosing based on clinical factors alone.",
+              "Alleles": "Carriers of any CYP2C9 loss-of-function allele and/or VKORC1 -1639A and/or CYP4F2*3 and/or NQO1*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "Non-carriers for all tested variants (wild-type genotypes using clinical algorithm only)",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Overall, this admixture-adjusted pharmacogenetic model in Caribbean Hispanics contained thirteen significant \u2018explanatory\u2019 variables. These independent predictors explained more than two-thirds of the observed variance in the therapeutic warfarin dose (R^2^ = 70%; MAE = 0.72mg/day; MSE = 0.99; p< 0.001), which is better than that of a clinical non-genetic algorithm in the same derivation cohort (R^2^ = 60%; MAE = 0.99mg/day; MSE = 1.26).",
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "As can be observed, our pharmacogenetic model predicted 59% of the variance in warfarin dose when externally validated in 55 genotyped individuals from the independent Hartford\u2019s patient cohort (MAE = 0.89 mg/day, 24% mean bias). On the contrary, the two others reference PGt algorithms showed poorer dose predictability in this independent cohort. \u2026 On the other hand, the clinical algorithm that excluded genotypes and admixture only accounted for 50% of dose variability in this independent cohort (MAE = 1.34 mg/day, 34% mean bias, [Fig 3D](#pone.0145480.g003))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, rs9923231, CYP4F2*3, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*8",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "CYP2C9*8",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "The admixture-adjusted pharmacogenetic algorithm incorporating CYP2C9, VKORC1 (rs9923231), CYP4F2*3, NQO1*2, and admixture predicted 70% of warfarin dose variance in the derivation cohort (R2 = 0.70, MAE = 0.72 mg/day) compared with 60% (MAE = 0.99 mg/day) for a clinical algorithm excluding genotypes and admixture. The model also predicted 58\u201359% of dose variance in an external validation cohort, with lower MAE and bias than IWPC and Lenzini algorithms.",
+              "Sentence": "Combined carriage of pharmacogenetic variants in CYP2C9, VKORC1, CYP4F2 and NQO1 is associated with altered warfarin maintenance dose requirements and improved predictability of dose refinement in Caribbean Hispanic patients with thromboembolic disorders as compared to dosing based on clinical factors alone.",
+              "Alleles": "Carriers of any CYP2C9 loss-of-function allele and/or VKORC1 -1639A and/or CYP4F2*3 and/or NQO1*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "Non-carriers for all tested variants (wild-type genotypes using clinical algorithm only)",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Overall, this admixture-adjusted pharmacogenetic model in Caribbean Hispanics contained thirteen significant \u2018explanatory\u2019 variables. These independent predictors explained more than two-thirds of the observed variance in the therapeutic warfarin dose (R^2^ = 70%; MAE = 0.72mg/day; MSE = 0.99; p< 0.001), which is better than that of a clinical non-genetic algorithm in the same derivation cohort (R^2^ = 60%; MAE = 0.99mg/day; MSE = 1.26).",
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "As can be observed, our pharmacogenetic model predicted 59% of the variance in warfarin dose when externally validated in 55 genotyped individuals from the independent Hartford\u2019s patient cohort (MAE = 0.89 mg/day, 24% mean bias). On the contrary, the two others reference PGt algorithms showed poorer dose predictability in this independent cohort. \u2026 On the other hand, the clinical algorithm that excluded genotypes and admixture only accounted for 50% of dose variability in this independent cohort (MAE = 1.34 mg/day, 34% mean bias, [Fig 3D](#pone.0145480.g003))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, rs9923231, CYP4F2*3, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*11",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "CYP2C9*11",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "The admixture-adjusted pharmacogenetic algorithm incorporating CYP2C9, VKORC1 (rs9923231), CYP4F2*3, NQO1*2, and admixture predicted 70% of warfarin dose variance in the derivation cohort (R2 = 0.70, MAE = 0.72 mg/day) compared with 60% (MAE = 0.99 mg/day) for a clinical algorithm excluding genotypes and admixture. The model also predicted 58\u201359% of dose variance in an external validation cohort, with lower MAE and bias than IWPC and Lenzini algorithms.",
+              "Sentence": "Combined carriage of pharmacogenetic variants in CYP2C9, VKORC1, CYP4F2 and NQO1 is associated with altered warfarin maintenance dose requirements and improved predictability of dose refinement in Caribbean Hispanic patients with thromboembolic disorders as compared to dosing based on clinical factors alone.",
+              "Alleles": "Carriers of any CYP2C9 loss-of-function allele and/or VKORC1 -1639A and/or CYP4F2*3 and/or NQO1*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "Non-carriers for all tested variants (wild-type genotypes using clinical algorithm only)",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Overall, this admixture-adjusted pharmacogenetic model in Caribbean Hispanics contained thirteen significant \u2018explanatory\u2019 variables. These independent predictors explained more than two-thirds of the observed variance in the therapeutic warfarin dose (R^2^ = 70%; MAE = 0.72mg/day; MSE = 0.99; p< 0.001), which is better than that of a clinical non-genetic algorithm in the same derivation cohort (R^2^ = 60%; MAE = 0.99mg/day; MSE = 1.26).",
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "As can be observed, our pharmacogenetic model predicted 59% of the variance in warfarin dose when externally validated in 55 genotyped individuals from the independent Hartford\u2019s patient cohort (MAE = 0.89 mg/day, 24% mean bias). On the contrary, the two others reference PGt algorithms showed poorer dose predictability in this independent cohort. \u2026 On the other hand, the clinical algorithm that excluded genotypes and admixture only accounted for 50% of dose variability in this independent cohort (MAE = 1.34 mg/day, 34% mean bias, [Fig 3D](#pone.0145480.g003))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, rs9923231, CYP4F2*3, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "rs9923231",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "rs9923231",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "The admixture-adjusted pharmacogenetic algorithm incorporating CYP2C9, VKORC1 (rs9923231), CYP4F2*3, NQO1*2, and admixture predicted 70% of warfarin dose variance in the derivation cohort (R2 = 0.70, MAE = 0.72 mg/day) compared with 60% (MAE = 0.99 mg/day) for a clinical algorithm excluding genotypes and admixture. The model also predicted 58\u201359% of dose variance in an external validation cohort, with lower MAE and bias than IWPC and Lenzini algorithms.",
+              "Sentence": "Combined carriage of pharmacogenetic variants in CYP2C9, VKORC1, CYP4F2 and NQO1 is associated with altered warfarin maintenance dose requirements and improved predictability of dose refinement in Caribbean Hispanic patients with thromboembolic disorders as compared to dosing based on clinical factors alone.",
+              "Alleles": "Carriers of any CYP2C9 loss-of-function allele and/or VKORC1 -1639A and/or CYP4F2*3 and/or NQO1*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "Non-carriers for all tested variants (wild-type genotypes using clinical algorithm only)",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Overall, this admixture-adjusted pharmacogenetic model in Caribbean Hispanics contained thirteen significant \u2018explanatory\u2019 variables. These independent predictors explained more than two-thirds of the observed variance in the therapeutic warfarin dose (R^2^ = 70%; MAE = 0.72mg/day; MSE = 0.99; p< 0.001), which is better than that of a clinical non-genetic algorithm in the same derivation cohort (R^2^ = 60%; MAE = 0.99mg/day; MSE = 1.26).",
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "As can be observed, our pharmacogenetic model predicted 59% of the variance in warfarin dose when externally validated in 55 genotyped individuals from the independent Hartford\u2019s patient cohort (MAE = 0.89 mg/day, 24% mean bias). On the contrary, the two others reference PGt algorithms showed poorer dose predictability in this independent cohort. \u2026 On the other hand, the clinical algorithm that excluded genotypes and admixture only accounted for 50% of dose variability in this independent cohort (MAE = 1.34 mg/day, 34% mean bias, [Fig 3D](#pone.0145480.g003))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, rs9923231, CYP4F2*3, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP4F2*3",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "CYP4F2*3",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "The admixture-adjusted pharmacogenetic algorithm incorporating CYP2C9, VKORC1 (rs9923231), CYP4F2*3, NQO1*2, and admixture predicted 70% of warfarin dose variance in the derivation cohort (R2 = 0.70, MAE = 0.72 mg/day) compared with 60% (MAE = 0.99 mg/day) for a clinical algorithm excluding genotypes and admixture. The model also predicted 58\u201359% of dose variance in an external validation cohort, with lower MAE and bias than IWPC and Lenzini algorithms.",
+              "Sentence": "Combined carriage of pharmacogenetic variants in CYP2C9, VKORC1, CYP4F2 and NQO1 is associated with altered warfarin maintenance dose requirements and improved predictability of dose refinement in Caribbean Hispanic patients with thromboembolic disorders as compared to dosing based on clinical factors alone.",
+              "Alleles": "Carriers of any CYP2C9 loss-of-function allele and/or VKORC1 -1639A and/or CYP4F2*3 and/or NQO1*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "Non-carriers for all tested variants (wild-type genotypes using clinical algorithm only)",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Overall, this admixture-adjusted pharmacogenetic model in Caribbean Hispanics contained thirteen significant \u2018explanatory\u2019 variables. These independent predictors explained more than two-thirds of the observed variance in the therapeutic warfarin dose (R^2^ = 70%; MAE = 0.72mg/day; MSE = 0.99; p< 0.001), which is better than that of a clinical non-genetic algorithm in the same derivation cohort (R^2^ = 60%; MAE = 0.99mg/day; MSE = 1.26).",
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "As can be observed, our pharmacogenetic model predicted 59% of the variance in warfarin dose when externally validated in 55 genotyped individuals from the independent Hartford\u2019s patient cohort (MAE = 0.89 mg/day, 24% mean bias). On the contrary, the two others reference PGt algorithms showed poorer dose predictability in this independent cohort. \u2026 On the other hand, the clinical algorithm that excluded genotypes and admixture only accounted for 50% of dose variability in this independent cohort (MAE = 1.34 mg/day, 34% mean bias, [Fig 3D](#pone.0145480.g003))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, rs9923231, CYP4F2*3, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "NQO1*2",
+            "gene": "CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "NQO1*2",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "The admixture-adjusted pharmacogenetic algorithm incorporating CYP2C9, VKORC1 (rs9923231), CYP4F2*3, NQO1*2, and admixture predicted 70% of warfarin dose variance in the derivation cohort (R2 = 0.70, MAE = 0.72 mg/day) compared with 60% (MAE = 0.99 mg/day) for a clinical algorithm excluding genotypes and admixture. The model also predicted 58\u201359% of dose variance in an external validation cohort, with lower MAE and bias than IWPC and Lenzini algorithms.",
+              "Sentence": "Combined carriage of pharmacogenetic variants in CYP2C9, VKORC1, CYP4F2 and NQO1 is associated with altered warfarin maintenance dose requirements and improved predictability of dose refinement in Caribbean Hispanic patients with thromboembolic disorders as compared to dosing based on clinical factors alone.",
+              "Alleles": "Carriers of any CYP2C9 loss-of-function allele and/or VKORC1 -1639A and/or CYP4F2*3 and/or NQO1*2",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose requirements of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Deep Vein Thrombosis, Disease:Pulmonary Embolism and other thromboembolic disorders",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "Non-carriers for all tested variants (wild-type genotypes using clinical algorithm only)",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Overall, this admixture-adjusted pharmacogenetic model in Caribbean Hispanics contained thirteen significant \u2018explanatory\u2019 variables. These independent predictors explained more than two-thirds of the observed variance in the therapeutic warfarin dose (R^2^ = 70%; MAE = 0.72mg/day; MSE = 0.99; p< 0.001), which is better than that of a clinical non-genetic algorithm in the same derivation cohort (R^2^ = 60%; MAE = 0.99mg/day; MSE = 1.26).",
+                "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in [Fig 2](#pone.0145480.g002)):\n\n| WarfarinDose(mgday)=[3.2463\u2212(0.0181\u2219Age)+(0.4246\u2219D1)+(0.5157\u2219tINR)\u2212(1.419\u2219INRD3)\u2212(0.2450\u2219CYP2C9*2)\u2212(0.5442\u2219CYP2C9*3)\u2212(1.00\u2219CYP2C9*8)\u2212(0.3793\u2219VKORC1GA)\u2212(0.8958\u2219VKORC1AA)+(0.5602\u2219CYP4F2*3)+(0.3457\u2219NQO1*2)\u2212(0.7948\u2219Amiodarone)\u2212(0.0932\u2219Admixture)] | (1) |",
+                "As can be observed, our pharmacogenetic model predicted 59% of the variance in warfarin dose when externally validated in 55 genotyped individuals from the independent Hartford\u2019s patient cohort (MAE = 0.89 mg/day, 24% mean bias). On the contrary, the two others reference PGt algorithms showed poorer dose predictability in this independent cohort. \u2026 On the other hand, the clinical algorithm that excluded genotypes and admixture only accounted for 50% of dose variability in this independent cohort (MAE = 1.34 mg/day, 34% mean bias, [Fig 3D](#pone.0145480.g003))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, rs9923231, CYP4F2*3, NQO1*2",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "warfarin",
+                "drug_id": "PA451906",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
             }
           }
         ]
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 19,
-        "fields": {
-          "Variant/Haplotypes": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Gene": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "PMID": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Phenotype Category": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Significance": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Alleles": {
-            "mean_score": 0.35985463857650757,
-            "scores": [
-              1.0,
-              0.9458000063896179,
-              0.9330371022224426,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Specialty Population": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Metabolizer types": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "isPlural": {
-            "mean_score": 0.125,
-            "scores": [
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Is/Is Not associated": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Direction of effect": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "PD/PK terms": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Multiple drugs And/or": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Population types": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Population Phenotypes or diseases": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Multiple phenotypes or diseases And/or": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Comparison Allele(s) or Genotype(s)": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Comparison Metabolizer types": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Drug(s)": {
-            "mean_score": 0.375,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          }
-        }
       }
     },
     "phenotype_annotations": {
@@ -911,56 +2031,32 @@
       "extra_predictions": {
         "count": 0,
         "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
-      }
-    },
-    "functional_analysis": {
-      "score": 0.0,
-      "total_samples": 0,
-      "ground_truth_annotations": {
-        "count": 0,
-        "matched_count": 0,
-        "unmatched_count": 0,
-        "items": []
-      },
-      "extra_predictions": {
-        "count": 0,
-        "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
       }
     },
     "study_parameters": {
-      "score": 0.3320746643202645,
+      "score": 0.5066980611710321,
       "total_samples": 7,
       "ground_truth_annotations": {
         "count": 7,
-        "matched_count": 4,
-        "unmatched_count": 3,
+        "matched_count": 6,
+        "unmatched_count": 1,
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.6674664581523222,
+            "overall_match_score": 0.5420616584665635,
             "annotation": {
-              "Study Parameters ID": 1447682693,
-              "Variant Annotation ID": 1447682688,
+              "Study Parameters ID": 1447682655,
+              "Variant Annotation ID": 1447682605,
               "Study Type": "cohort, retrospective",
               "Study Cases": 255.0,
               "Study Controls": null,
-              "Characteristics": "NCT01318057; VKORC1 rs9923231 AA partial reg. coeff. -0.896 (SE 0.2169), adj R sq .0.641",
+              "Characteristics": "NCT01318057; CYP2C9 *2 partial reg. coeff. -0.245 (SE 0.1654), adj R sq0.613",
               "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "< 0.0001",
+              "Frequency In Cases": 0.09,
+              "Allele Of Frequency In Cases": "*2",
+              "Frequency In Controls": 0.83,
+              "Allele Of Frequency In Controls": "*1",
+              "P Value": "= 0.014",
               "Ratio Stat Type": "OR",
               "Ratio Stat": null,
               "Confidence Interval Start": null,
@@ -969,140 +2065,13 @@
             },
             "field_comparison": {
               "Study Parameters ID": {
-                "ground_truth": 1447682693,
+                "ground_truth": 1447682655,
                 "prediction": null,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Variant Annotation ID": {
-                "ground_truth": 1447682688,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Type": {
-                "ground_truth": "cohort, retrospective",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Cases": {
-                "ground_truth": 255.0,
-                "prediction": 255,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Study Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Characteristics": {
-                "ground_truth": "NCT01318057; VKORC1 rs9923231 AA partial reg. coeff. -0.896 (SE 0.2169), adj R sq .0.641",
-                "prediction": "Patients at highest risk of adverse events",
-                "score": 0.8469297885894775,
-                "match_status": "partial_match"
-              },
-              "Characteristics Type": {
-                "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "P Value": {
-                "ground_truth": "< 0.0001",
-                "prediction": "< 0.001",
-                "score": 0.5,
-                "match_status": "partial_match"
-              },
-              "Ratio Stat Type": {
-                "ground_truth": "OR",
-                "prediction": "Unknown",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Ratio Stat": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Stop": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Biogeographical Groups": {
-                "ground_truth": "Latino",
-                "prediction": "Multiple Groups",
-                "score": 0.0,
-                "match_status": "no_match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.635397171272951,
-            "annotation": {
-              "Study Parameters ID": 1447682695,
-              "Variant Annotation ID": 1447682688,
-              "Study Type": "cohort, retrospective",
-              "Study Cases": 255.0,
-              "Study Controls": null,
-              "Characteristics": "NCT01318057; VKORC1 rs9923231 AG partial reg. coeff. -0.379 (SE 0.1391), adj R sq .0.659",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.007",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Unknown"
-            },
-            "field_comparison": {
-              "Study Parameters ID": {
-                "ground_truth": 1447682695,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Variant Annotation ID": {
-                "ground_truth": 1447682688,
+                "ground_truth": 1447682605,
                 "prediction": null,
                 "score": 0.0,
                 "match_status": "no_match"
@@ -1126,9 +2095,9 @@
                 "match_status": "match"
               },
               "Characteristics": {
-                "ground_truth": "NCT01318057; VKORC1 rs9923231 AG partial reg. coeff. -0.379 (SE 0.1391), adj R sq .0.659",
-                "prediction": "Caribbean Hispanic patients",
-                "score": 0.8017519116401672,
+                "ground_truth": "NCT01318057; CYP2C9 *2 partial reg. coeff. -0.245 (SE 0.1654), adj R sq0.613",
+                "prediction": "Caribbean Hispanic (mostly Puerto Rican) warfarin-treated outpatients in derivation cohort; association of NQO1*2 (g.559C>T, p.P187S, rs1800566) with therapeutic warfarin dose",
+                "score": 0.9194896221160889,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
@@ -1138,46 +2107,46 @@
                 "match_status": "match"
               },
               "Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "P Value": {
-                "ground_truth": "= 0.007",
-                "prediction": "< 0.001",
+                "ground_truth": 0.09,
+                "prediction": 0.902,
                 "score": 0.0,
                 "match_status": "no_match"
               },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*2",
+                "prediction": "NQO1*1 (C)",
+                "score": 0.8951795697212219,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.83,
+                "prediction": 0.098,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "*1",
+                "prediction": "NQO1*2 (T)",
+                "score": 0.9003790020942688,
+                "match_status": "partial_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.014",
+                "prediction": "= 3.09",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
-                "prediction": "HR",
+                "prediction": "Unknown",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Ratio Stat": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": 3.09,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Confidence Interval Start": {
                 "ground_truth": null,
@@ -1192,16 +2161,397 @@
                 "match_status": "match"
               },
               "Biogeographical Groups": {
-                "ground_truth": "Unknown",
-                "prediction": "Multiple Groups",
-                "score": 0.0,
-                "match_status": "no_match"
+                "ground_truth": "Latino",
+                "prediction": "Latino",
+                "score": 1.0,
+                "match_status": "match"
               }
             }
           },
           {
             "matched": true,
-            "overall_match_score": 0.4039437420227948,
+            "overall_match_score": 0.5413168563562281,
+            "annotation": {
+              "Study Parameters ID": 1447682664,
+              "Variant Annotation ID": 1447682605,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 255.0,
+              "Study Controls": null,
+              "Characteristics": "Study Cohort: NCT01318057; CYP2C9 *3 partial reg. coeff. -0.544 (SE 0.2224), adj R sq 0.625",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.05,
+              "Allele Of Frequency In Cases": "*3",
+              "Frequency In Controls": 0.83,
+              "Allele Of Frequency In Controls": "*1",
+              "P Value": "= 0.015",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1447682664,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1447682605,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 255.0,
+                "prediction": 255,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Study Cohort: NCT01318057; CYP2C9 *3 partial reg. coeff. -0.544 (SE 0.2224), adj R sq 0.625",
+                "prediction": "Caribbean Hispanic (mostly Puerto Rican) warfarin-treated outpatients in derivation cohort; association of CYP4F2*3 (g.18000G>A, p.V433M, rs2108622) with therapeutic warfarin dose",
+                "score": 0.9320588111877441,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.05,
+                "prediction": 0.885,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*3",
+                "prediction": "CYP4F2*1 (G)",
+                "score": 0.8769086003303528,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.83,
+                "prediction": 0.115,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "*1",
+                "prediction": "CYP4F2*3 (A)",
+                "score": 0.8934191465377808,
+                "match_status": "partial_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.015",
+                "prediction": "= 2.82",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": 2.82,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Latino",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.537556900697596,
+            "annotation": {
+              "Study Parameters ID": 1447682702,
+              "Variant Annotation ID": 1447682700,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 255.0,
+              "Study Controls": null,
+              "Characteristics": "NCT01318057; CYP4F3 *3 partial reg. coeff. 0.560 (SE 0.2274), adj R sq0.0.673",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.115,
+              "Allele Of Frequency In Cases": "*3",
+              "Frequency In Controls": 0.885,
+              "Allele Of Frequency In Controls": "*1",
+              "P Value": "= 0.014",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1447682702,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1447682700,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 255.0,
+                "prediction": 255,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "NCT01318057; CYP4F3 *3 partial reg. coeff. 0.560 (SE 0.2274), adj R sq0.0.673",
+                "prediction": "Caribbean Hispanic (mostly Puerto Rican) warfarin-treated outpatients in derivation cohort; genotype distribution of CYP2C9 star alleles and association with therapeutic warfarin dose",
+                "score": 0.8936150074005127,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.115,
+                "prediction": 0.83,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*3",
+                "prediction": "CYP2C9*1",
+                "score": 0.8689681887626648,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.885,
+                "prediction": 0.17,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "*1",
+                "prediction": "all variant CYP2C9 alleles combined (*2,*3,*4,*5,*6,*8,*11)",
+                "score": 0.8758841156959534,
+                "match_status": "partial_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.014",
+                "prediction": "= 3.74",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": 3.74,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Latino",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5373342668308931,
+            "annotation": {
+              "Study Parameters ID": 1447682687,
+              "Variant Annotation ID": 1447682605,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 255.0,
+              "Study Controls": null,
+              "Characteristics": "NCT01318057; CYP2C9 *8 partial reg. coeff. -1.00 (SE 0.6014), adj R sq 0.638",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.006,
+              "Allele Of Frequency In Cases": "*8",
+              "Frequency In Controls": 0.83,
+              "Allele Of Frequency In Controls": "*1",
+              "P Value": "= 0.098",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1447682687,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1447682605,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 255.0,
+                "prediction": 255,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "NCT01318057; CYP2C9 *8 partial reg. coeff. -1.00 (SE 0.6014), adj R sq 0.638",
+                "prediction": "Caribbean Hispanic (mostly Puerto Rican) warfarin-treated outpatients in derivation cohort; association of CYP2C9 promoter variant c.-1188T>C with therapeutic warfarin dose",
+                "score": 0.9209765195846558,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.006,
+                "prediction": 0.643,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*8",
+                "prediction": "T (CYP2C9 c.-1188)",
+                "score": 0.8418441414833069,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.83,
+                "prediction": 0.357,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "*1",
+                "prediction": "C (CYP2C9 c.-1188)",
+                "score": 0.8718618750572205,
+                "match_status": "partial_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.098",
+                "prediction": "= 1.18",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": 1.18,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Latino",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5345791543231291,
             "annotation": {
               "Study Parameters ID": 1447682724,
               "Variant Annotation ID": 1447682722,
@@ -1254,8 +2604,8 @@
               },
               "Characteristics": {
                 "ground_truth": "NCT01318057; NQO1 rs1800566 A allele partial reg. coeff. 0.346 (SE 0.2246), adj R sq .0.689",
-                "prediction": "Admixture-driven pharmacogenetic model used",
-                "score": 0.8670436143875122,
+                "prediction": "Caribbean Hispanic (mostly Puerto Rican) warfarin-treated outpatients in derivation cohort; association of VKORC1-1639 G>A genotype with therapeutic warfarin dose",
+                "score": 0.9025687575340271,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
@@ -1266,33 +2616,33 @@
               },
               "Frequency In Cases": {
                 "ground_truth": 0.098,
-                "prediction": 0.58,
+                "prediction": 0.63,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Allele Of Frequency In Cases": {
                 "ground_truth": "A",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "G (VKORC1-1639)",
+                "score": 0.8553057312965393,
+                "match_status": "partial_match"
               },
               "Frequency In Controls": {
                 "ground_truth": 0.902,
-                "prediction": null,
+                "prediction": 0.37,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Allele Of Frequency In Controls": {
                 "ground_truth": "G",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "A (VKORC1-1639)",
+                "score": 0.8299711346626282,
+                "match_status": "partial_match"
               },
               "P Value": {
                 "ground_truth": "= 0.125",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "= 0.41",
+                "score": 0.5,
+                "match_status": "partial_match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -1302,9 +2652,9 @@
               },
               "Ratio Stat": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": 0.41,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Confidence Interval Start": {
                 "ground_truth": null,
@@ -1320,28 +2670,28 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "Latino",
-                "prediction": "Multiple Groups",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "Latino",
+                "score": 1.0,
+                "match_status": "match"
               }
             }
           },
           {
             "matched": true,
-            "overall_match_score": 0.34424202582415414,
+            "overall_match_score": 0.43675683526431813,
             "annotation": {
-              "Study Parameters ID": 1447682664,
-              "Variant Annotation ID": 1447682605,
+              "Study Parameters ID": 1447682693,
+              "Variant Annotation ID": 1447682688,
               "Study Type": "cohort, retrospective",
               "Study Cases": 255.0,
               "Study Controls": null,
-              "Characteristics": "Study Cohort: NCT01318057; CYP2C9 *3 partial reg. coeff. -0.544 (SE 0.2224), adj R sq 0.625",
+              "Characteristics": "NCT01318057; VKORC1 rs9923231 AA partial reg. coeff. -0.896 (SE 0.2169), adj R sq .0.641",
               "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": 0.05,
-              "Allele Of Frequency In Cases": "*3",
-              "Frequency In Controls": 0.83,
-              "Allele Of Frequency In Controls": "*1",
-              "P Value": "= 0.015",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
               "Ratio Stat Type": "OR",
               "Ratio Stat": null,
               "Confidence Interval Start": null,
@@ -1350,13 +2700,13 @@
             },
             "field_comparison": {
               "Study Parameters ID": {
-                "ground_truth": 1447682664,
+                "ground_truth": 1447682693,
                 "prediction": null,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Variant Annotation ID": {
-                "ground_truth": 1447682605,
+                "ground_truth": 1447682688,
                 "prediction": null,
                 "score": 0.0,
                 "match_status": "no_match"
@@ -1375,14 +2725,14 @@
               },
               "Study Controls": {
                 "ground_truth": null,
-                "prediction": 55,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Characteristics": {
-                "ground_truth": "Study Cohort: NCT01318057; CYP2C9 *3 partial reg. coeff. -0.544 (SE 0.2224), adj R sq 0.625",
-                "prediction": "External validation cohort from Hartford Hospital",
-                "score": 0.8521144390106201,
+                "ground_truth": "NCT01318057; VKORC1 rs9923231 AA partial reg. coeff. -0.896 (SE 0.2169), adj R sq .0.641",
+                "prediction": "Caribbean Hispanic (mostly Puerto Rican) warfarin-treated outpatients in derivation cohort; association of VKORC1 c.134T>C (p.V45A, rs104894540) genotype with therapeutic warfarin dose",
+                "score": 0.9248661994934082,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
@@ -1392,34 +2742,34 @@
                 "match_status": "match"
               },
               "Frequency In Cases": {
-                "ground_truth": 0.05,
-                "prediction": null,
+                "ground_truth": null,
+                "prediction": 0.998,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Allele Of Frequency In Cases": {
-                "ground_truth": "*3",
-                "prediction": null,
+                "ground_truth": null,
+                "prediction": "T (VKORC1 c.134)",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Frequency In Controls": {
-                "ground_truth": 0.83,
-                "prediction": null,
+                "ground_truth": null,
+                "prediction": 0.002,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Allele Of Frequency In Controls": {
-                "ground_truth": "*1",
-                "prediction": null,
+                "ground_truth": null,
+                "prediction": "C (VKORC1 c.134)",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "P Value": {
-                "ground_truth": "= 0.015",
+                "ground_truth": "< 0.0001",
                 "prediction": "< 0.001",
-                "score": 0.0,
-                "match_status": "no_match"
+                "score": 0.5,
+                "match_status": "partial_match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -1429,9 +2779,9 @@
               },
               "Ratio Stat": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": 0.001,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Confidence Interval Start": {
                 "ground_truth": null,
@@ -1447,79 +2797,33 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "Latino",
-                "prediction": "Multiple Groups",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "Latino",
+                "score": 1.0,
+                "match_status": "match"
               }
             }
           },
           {
             "matched": false,
             "annotation": {
-              "Study Parameters ID": 1447682702,
-              "Variant Annotation ID": 1447682700,
+              "Study Parameters ID": 1447682695,
+              "Variant Annotation ID": 1447682688,
               "Study Type": "cohort, retrospective",
               "Study Cases": 255.0,
               "Study Controls": null,
-              "Characteristics": "NCT01318057; CYP4F3 *3 partial reg. coeff. 0.560 (SE 0.2274), adj R sq0.0.673",
+              "Characteristics": "NCT01318057; VKORC1 rs9923231 AG partial reg. coeff. -0.379 (SE 0.1391), adj R sq .0.659",
               "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": 0.115,
-              "Allele Of Frequency In Cases": "*3",
-              "Frequency In Controls": 0.885,
-              "Allele Of Frequency In Controls": "*1",
-              "P Value": "= 0.014",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.007",
               "Ratio Stat Type": "OR",
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Latino",
-              "Variant Annotation ID_norm": "1447682700"
-            }
-          },
-          {
-            "matched": false,
-            "annotation": {
-              "Study Parameters ID": 1447682655,
-              "Variant Annotation ID": 1447682605,
-              "Study Type": "cohort, retrospective",
-              "Study Cases": 255.0,
-              "Study Controls": null,
-              "Characteristics": "NCT01318057; CYP2C9 *2 partial reg. coeff. -0.245 (SE 0.1654), adj R sq0.613",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": 0.09,
-              "Allele Of Frequency In Cases": "*2",
-              "Frequency In Controls": 0.83,
-              "Allele Of Frequency In Controls": "*1",
-              "P Value": "= 0.014",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Latino",
-              "Variant Annotation ID_norm": "1447682605"
-            }
-          },
-          {
-            "matched": false,
-            "annotation": {
-              "Study Parameters ID": 1447682687,
-              "Variant Annotation ID": 1447682605,
-              "Study Type": "cohort, retrospective",
-              "Study Cases": 255.0,
-              "Study Controls": null,
-              "Characteristics": "NCT01318057; CYP2C9 *8 partial reg. coeff. -1.00 (SE 0.6014), adj R sq 0.638",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": 0.006,
-              "Allele Of Frequency In Cases": "*8",
-              "Frequency In Controls": 0.83,
-              "Allele Of Frequency In Controls": "*1",
-              "P Value": "= 0.098",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Latino",
-              "Variant Annotation ID_norm": "1447682605"
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": "1447682688"
             }
           }
         ]
@@ -1527,192 +2831,6 @@
       "extra_predictions": {
         "count": 0,
         "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 15,
-        "fields": {
-          "Study Type": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Study Cases": {
-            "mean_score": 0.5714285714285714,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Study Controls": {
-            "mean_score": 0.42857142857142855,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Characteristics": {
-            "mean_score": 0.4811199648039682,
-            "scores": [
-              0.8469297885894775,
-              0.8017519116401672,
-              0.8670436143875122,
-              0.8521144390106201,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Characteristics Type": {
-            "mean_score": 0.5714285714285714,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Frequency In Cases": {
-            "mean_score": 0.2857142857142857,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Allele Of Frequency In Cases": {
-            "mean_score": 0.2857142857142857,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Frequency In Controls": {
-            "mean_score": 0.2857142857142857,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Allele Of Frequency In Controls": {
-            "mean_score": 0.2857142857142857,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "P Value": {
-            "mean_score": 0.07142857142857142,
-            "scores": [
-              0.5,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Ratio Stat Type": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Ratio Stat": {
-            "mean_score": 0.5714285714285714,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Confidence Interval Start": {
-            "mean_score": 0.5714285714285714,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Confidence Interval Stop": {
-            "mean_score": 0.5714285714285714,
-            "scores": [
-              1.0,
-              1.0,
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          },
-          "Biogeographical Groups": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
-          }
-        }
       }
     }
   }

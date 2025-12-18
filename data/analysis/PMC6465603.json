@@ -2,7 +2,7 @@
   "pmcid": "PMC6465603",
   "pmid": "31024313",
   "title": "NUDT15 Polymorphism Confer Increased Susceptibility to Thiopurine-Induced Leukopenia in Patients With Autoimmune Hepatitis and Related Cirrhosis",
-  "overall_score": 0.19681194034715493,
+  "overall_score": 0.38952688922484713,
   "num_benchmarks": 4,
   "benchmarks": {
     "drug_annotations": {
@@ -15,61 +15,241 @@
         "items": []
       },
       "extra_predictions": {
-        "count": 1,
+        "count": 5,
         "items": [
           {
             "variant": "rs116855232",
             "gene": "NUDT15",
             "drug": "azathioprine",
             "annotation": {
+              "Variant Annotation ID": 1,
               "Variant/Haplotypes": "rs116855232",
               "Gene": "NUDT15",
               "Drug(s)": "azathioprine",
+              "PMID": 31024313,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "The T risk allele in NUDT15 is significantly associated with thiopurine-induced leukopenia in Chinese patients (P < 0.00001, odds ratio = 20.41).",
-              "Sentence": "The T allele is associated with increased risk of leukopenia in azathioprine context in Chinese patients with autoimmune hepatitis.",
-              "Alleles": "CC, CT, TT",
+              "Notes": "Therapy-induced leukopenia occurred in 9/24 (37.5%) CT, 2/2 (100%) TT, and 1/123 (0.8%) CC patients. Leukopenia was significantly associated with the T allele (OR 20.41, 95% CI 7.84\u201353.13; P < 0.00001) with sensitivity 91.67% and specificity 89.05%. All leukopenia developed within 60 days after therapy initiation or dose increase.",
+              "Sentence": "Genotypes CT + TT are associated with increased risk of leukopenia with azathioprine in patients with autoimmune hepatitis and related cirrhosis as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
               "Metabolizer types": null,
               "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
               "PD/PK terms": "risk of",
               "Multiple drugs And/or": null,
-              "Population types": "in patients with autoimmune hepatitis",
-              "Population Phenotypes or diseases": "Other:autoimmune hepatitis",
-              "Specialty Population": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune Hepatitis, Disease:Primary Biliary Cholangitis-autoimmune hepatitis overlap syndrome",
+              "Multiple phenotypes or diseases And/or": "and",
               "Comparison Allele(s) or Genotype(s)": "CC",
               "Comparison Metabolizer types": null,
-              "PMID": 31024313,
-              "Variant Annotation ID": 1,
-              "Variant Annotation ID_norm": "1",
               "Citations": [
-                "the T risk allele in NUDT15 is significantly associated with thiopurine-induced leukopenia in Chinese patients (P < 0.00001, odds ratio = 20.41)",
-                "the rs116855232 variant allele resulted in a 7.86-fold (P < 0.00001, 95% confidence interval (CI): 6.13-10.08) increased risk of developing leukopenia",
-                "When evaluated by rs116855232 genotype, leukopenia was significantly associated with the T allele [P < 0.00001, odds ratio = 20.41; 95% CI (7.84, 53.13)]"
-              ]
+                "Therapy-induced leukopenia was observed in 9/24 (37.5%) patients with the CT allele and 2/2 (100%) patients with the TT allele. However, only one patient with wild-type homozygote allele experienced leukopenia. All cases of leukopenia developed within the first 60 days following therapy initiation or dose increase.",
+                "When evaluated by rs116855232 genotype, leukopenia was significantly associated with the T allele [P < 0.00001, odds ratio = 20.41; 95% CI (7.84, 53.13)], with the sensitivity and specificity of 91.67 and 89.05%, respectively (Table 3).",
+                "We found that a NUDT15 polymorphism (rs116855232) was significantly associated with AZA-induced leukopenia in Chinese patients with AIH and related cirrhosis."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs116855232",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "rs116855232",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": 31024313,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Among 93 patients in biochemical remission on maintenance therapy, median azathioprine maintenance dosage was 1.23 (0.95, 1.53) mg\u00b7kg\u22121\u00b7d\u22121 for rs116855232 CC and 0.96 (0.83, 1.19) mg\u00b7kg\u22121\u00b7d\u22121 for CT (P = 0.028). One TT patient maintained therapy at 0.2 mg\u00b7kg\u22121\u00b7d\u22121 but numbers were too small for significance.",
+              "Sentence": "Genotype CT is associated with decreased azathioprine maintenance dose in patients with autoimmune hepatitis and related cirrhosis as compared to genotype CC.",
+              "Alleles": "CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "maintenance dose of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune Hepatitis, Disease:Primary Biliary Cholangitis-autoimmune hepatitis overlap syndrome",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "In total, 93 patients have achieved biochemical remission and began maintenance therapy as of February 2018. The AZA dose did not significantly differ between CC and CT genotypes (*P* = 0.22) when evaluated with a clinical therapeutic dose of 1.0 mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^. However, the median maintenance dosages for patients with the *NUDT15* CC and CT genotypes were 1.23 (0.95, 1.53) mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^ and 0.96 (0.83, 1.19) mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^, respectively (*P* = 0.028) ([Figure 2](#F2)).",
+                "The median maintenance dosages for patients with rs116855232 CC and CT genotypes were 1.23 (0.95, 1.53) mg \u22c5 kg\u22121 \u22c5 d\u22121 and 0.96 (0.83, 1.19) mg \u22c5 kg\u22121 \u22c5 d\u22121, respectively (P = 0.028).",
+                "For patients with the heterozygous variants, low-dose AZA (0.96 mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^) is safe for maintaining remission and achieving efficacy comparable to that observed in wild-type patients."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs116855232",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "rs116855232",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": 31024313,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "6-thioguanine nucleotide (6-TGN) concentrations were higher in patients with rs116855232 CT versus CC genotypes: 276.6 (150.9, 501.0) vs 145.3 (87.4, 199.0) pmol/8*10^8 RBC (P = 0.002). The median ratio of azathioprine dose to 6-TGN concentration was 0.007 (0.006, 0.015) for CC and 0.005 (0.003, 0.006) for CT (P = 0.001).",
+              "Sentence": "Genotype CT is associated with increased concentrations of 6-thioguanine nucleotide during azathioprine therapy in patients with autoimmune hepatitis and related cirrhosis as compared to genotype CC.",
+              "Alleles": "CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune Hepatitis, Disease:Primary Biliary Cholangitis-autoimmune hepatitis overlap syndrome",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "6-Thioguanine nucleotide concentrations were significantly higher in the patients of NUDT15 CT genotype [P = 0.002, 276.6(150.9, 501.0) vs. 145.3(87.4, 199.0) pmol/8\u2217108 RBC] (Figure 1 and Supplementary Table S1).",
+                "6-Thioguanine nucleotide concentrations for patients with rs116855232 CC and CT genotypes were 145.3(87.4, 199.0) pmol/8 \u2217108 RBC and 276.6(150.9, 501.0) pmol/8\u2217108 RBC, respectively (P = 0.002).",
+                "The ratio of AZA dose to 6-TGN concentration for the patients was compared between NUDT15 CC and CT genotypes and the results showed that patients with NUDT15 CT genotypes had much lower values (P = 0.013) (Figure 3)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs116855232",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 4,
+              "Variant/Haplotypes": "rs116855232",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": 31024313,
+              "Phenotype Category": "efficacy",
+              "Significance": "no",
+              "Notes": "Among 93 patients who achieved biochemical remission, 75 (80.6%) were CC and 17 (18.3%) were CT. No difference in percentage achieving biochemical remission (P = 0.361) or median time to biochemical remission (3.0 vs 4.0 months; P = 0.161) was observed between CC and CT genotypes.",
+              "Sentence": "Genotype CT is not associated with response to azathioprine, assessed as biochemical remission, in patients with autoimmune hepatitis and related cirrhosis as compared to genotype CC.",
+              "Alleles": "CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune Hepatitis, Disease:Primary Biliary Cholangitis-autoimmune hepatitis overlap syndrome",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Among the 93 patients who reached biochemical remission, 75 (80.6%) were wild-type homozygotes, and 17 (18.3%) subjects were heterozygotes. No differences were observed in the percentage of patients who achieved biochemical remission (P = 0.361) or the median time to biochemical remission (P = 0.161; 3.0 vs. 4.0 months, respectively) between the genotypes.",
+                "In total, 93 patients have achieved biochemical remission and began maintenance therapy as of February 2018. The AZA dose did not significantly differ between CC and CT genotypes (P = 0.22) when evaluated with a clinical therapeutic dose of 1.0 mg \u22c5 kg\u22121 \u22c5 d\u22121."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs1142345",
+            "gene": "TPMT",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 5,
+              "Variant/Haplotypes": "rs1142345",
+              "Gene": "TPMT",
+              "Drug(s)": "azathioprine",
+              "PMID": 31024313,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "TPMT*3C rs1142345 alleles were observed in four subjects (3 TC heterozygotes, 1 CC homozygote). Genotype distribution among leukopenia vs non-leukopenia groups (TT/TC/CC: 11/1/0 vs 134/2/1) showed no significant association with azathioprine-induced leukopenia (P = 0.283). Overall TPMT risk allele frequency was 1.7%.",
+              "Sentence": "Genotypes TC + CC of rs1142345 are not associated with risk of leukopenia with azathioprine in patients with autoimmune hepatitis and related cirrhosis as compared to genotype TT.",
+              "Alleles": "TC + CC",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune Hepatitis, Disease:Primary Biliary Cholangitis-autoimmune hepatitis overlap syndrome",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cOf the 149 analyzed subjects, 123 subjects displayed wild-type *NUDT15* (CC; 82.6%). Twenty-four subjects were *NUDT15* heterozygotes (CT; 16.1%), and two subjects were homozygotes (TT; 1.3%), respectively. The variant allelic frequency of rs116855232 was 9.4%, while *TPMT\u22173C* alleles were only observed in four subjects including 3 patients who were heterozygotes (TC) and 1 patient who was homozygous (CC).\u201d",
+                "\u201cOur results found that the rs116855232 but not the rs1142345 genotype was significantly associated with AZA-induced leukopenia and the maintenance dose in Chinese patients with AIH and related cirrhosis.\u201d",
+                "\u201cThe present study showed a 1.7% frequency of the risk *TPMT* allele in the analyzed population, which is similar to that reported in other studies involving Chinese IBD patients. \u2026 Hence, the lack of significance observed for rs1142345 in the present study is likely due to its low prevalence in East Asian populations and the small sample size of our cohort.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1142345",
+                "variant_id": "PA166156978",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              }
             }
           }
         ]
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
       }
     },
     "phenotype_annotations": {
-      "score": 0.49128347262740135,
+      "score": 0.9005643973747889,
       "total_samples": 2,
       "ground_truth_annotations": {
         "count": 2,
-        "matched_count": 1,
-        "unmatched_count": 1,
+        "matched_count": 2,
+        "unmatched_count": 0,
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.9855347514152527,
+            "overall_match_score": 0.9773584187030793,
             "annotation": {
               "Variant/Haplotypes": "rs116855232",
               "Gene": "NUDT15",
@@ -109,9 +289,9 @@
               },
               "Alleles": {
                 "ground_truth": "CT + TT",
-                "prediction": "CC, CT, TT",
-                "score": 0.9563269019126892,
-                "match_status": "match"
+                "prediction": "T",
+                "score": 0.9053432941436768,
+                "match_status": "partial_match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Associated with",
@@ -127,8 +307,8 @@
               },
               "Phenotype": {
                 "ground_truth": "Side Effect:Leukopenia",
-                "prediction": "leukopenia",
-                "score": 0.957292377948761,
+                "prediction": "Side Effect:Leukopenia",
+                "score": 1.0,
                 "match_status": "match"
               },
               "When treated with/exposed to/when assayed with": {
@@ -139,125 +319,596 @@
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "CC",
-                "prediction": "CC (wild-type)",
-                "score": 0.9417282342910767,
+                "prediction": "rs116855232 C",
+                "score": 0.8682408928871155,
                 "match_status": "partial_match"
               }
             }
           },
           {
-            "matched": false,
+            "matched": true,
+            "overall_match_score": 0.8887289702892304,
             "annotation": {
-              "Variant Annotation ID": 1451237464,
               "Variant/Haplotypes": "rs1142345",
               "Gene": "TPMT",
               "Drug(s)": "azathioprine",
-              "PMID": 31024313,
               "Phenotype Category": "Toxicity",
-              "Significance": "no",
-              "Notes": "TPMT\u22173C alleles were only observed in four subjects including 3 patients who were heterozygotes (TC) and 1 patient who was homozygous (CC).Authors state in discussion \"the lack of significance observed for rs1142345 in the present study is likely due to its low prevalence in East Asian populations and the small sample size of our cohort.",
-              "Sentence": "Allele C is not associated with increased likelihood of Leukopenia when treated with azathioprine in people with Hepatitis, Autoimmune as compared to allele T.",
               "Alleles": "C",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Is",
               "Is/Is Not associated": "Not associated with",
               "Direction of effect": "increased",
-              "Side effect/efficacy/other": "likelihood of",
               "Phenotype": "Side Effect:Leukopenia",
-              "Multiple phenotypes And/or": null,
               "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in people with",
-              "Population Phenotypes or diseases": "Other:Autoimmune hepatitis",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "T",
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "31024313",
-              "Variant Annotation ID_norm": "1451237464"
+              "Comparison Allele(s) or Genotype(s)": "T"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs1142345",
+                "prediction": "rs1142345",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "TPMT",
+                "prediction": "TPMT",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "azathioprine",
+                "prediction": "azathioprine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "C",
+                "prediction": "C",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Not associated with",
+                "prediction": "Not associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Leukopenia",
+                "prediction": "Side Effect:Leukopenia",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "T",
+                "prediction": "rs1142345 T",
+                "score": 0.8872897028923035,
+                "match_status": "partial_match"
+              }
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 0,
-        "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
         "count": 10,
-        "fields": {
-          "Variant/Haplotypes": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
+        "items": [
+          {
+            "variant": "T",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "T",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": "31024313",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "T risk allele in NUDT15 rs116855232 was significantly associated with azathioprine-induced leukopenia in Chinese AIH and related cirrhosis patients (P < 0.00001, OR = 20.41; 95% CI 7.84\u201353.13). 12/149 patients developed leukopenia, and the variant allele frequency was 9.4%.",
+              "Sentence": "rs116855232 T Is Associated with increased risk of Leukopenia when treated with azathioprine in people with Autoimmune hepatitis and related cirrhosis.",
+              "Alleles": "T",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Leukopenia",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune hepatitis and related cirrhosis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs116855232 C",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "\u201cTwelve patients developed leukopenia, and this adverse drug reaction was significantly associated with the T risk allele in NUDT15 [P < 0.00001, odds ratio = 20.41; 95% confidence interval (CI) (7.84, 53.13)], with the sensitivity and specificity of 91.67 and 89.05%, respectively.\u201d",
+                "\u201cOur results found that the rs116855232 but not the rs1142345 genotype was significantly associated with AZA-induced leukopenia and the maintenance dose in Chinese patients with AIH and related cirrhosis.\u201d",
+                "\u201cWe found that a NUDT15 polymorphism (rs116855232) was significantly associated with AZA-induced leukopenia in Chinese patients with AIH and related cirrhosis.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 0.9166666666666666
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
           },
-          "Gene": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
+          {
+            "variant": "rs116855232",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "rs116855232",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": "31024313",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Therapy-induced leukopenia was observed in 9/24 (37.5%) patients with the rs116855232 CT genotype compared with 1/123 (0.8%) in rs116855232 CC genotype carriers. All leukopenia occurred within 60 days of therapy initiation or dose increase.",
+              "Sentence": "rs116855232 CT Is Associated with increased risk of Leukopenia when treated with azathioprine in people with Autoimmune hepatitis and related cirrhosis.",
+              "Alleles": "CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Leukopenia",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune hepatitis and related cirrhosis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs116855232 CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "2",
+              "Citations": [
+                "Therapy-induced leukopenia was observed in 9/24 (37.5%) patients with the CT allele and 2/2 (100%) patients with the TT allele. However, only one patient with wild-type homozygote allele experienced leukopenia. All cases of leukopenia developed within the first 60 days following therapy initiation or dose increase.",
+                "Our results found that the rs116855232 but not the rs1142345 genotype was significantly associated with AZA-induced leukopenia and the maintenance dose in Chinese patients with AIH and related cirrhosis.",
+                "We found that a NUDT15 polymorphism (rs116855232) was significantly associated with AZA-induced leukopenia in Chinese patients with AIH and related cirrhosis."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 0.88
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
           },
-          "Drug(s)": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
+          {
+            "variant": "CT",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "CT",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": "31024313",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Therapy-induced leukopenia was observed in 9/24 (37.5%) patients with the rs116855232 CT genotype compared with 1/123 (0.8%) in rs116855232 CC genotype carriers. All leukopenia occurred within 60 days of therapy initiation or dose increase.",
+              "Sentence": "rs116855232 CT Is Associated with increased risk of Leukopenia when treated with azathioprine in people with Autoimmune hepatitis and related cirrhosis.",
+              "Alleles": "CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Leukopenia",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune hepatitis and related cirrhosis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs116855232 CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "2",
+              "Citations": [
+                "Therapy-induced leukopenia was observed in 9/24 (37.5%) patients with the CT allele and 2/2 (100%) patients with the TT allele. However, only one patient with wild-type homozygote allele experienced leukopenia. All cases of leukopenia developed within the first 60 days following therapy initiation or dose increase.",
+                "Our results found that the rs116855232 but not the rs1142345 genotype was significantly associated with AZA-induced leukopenia and the maintenance dose in Chinese patients with AIH and related cirrhosis.",
+                "We found that a NUDT15 polymorphism (rs116855232) was significantly associated with AZA-induced leukopenia in Chinese patients with AIH and related cirrhosis."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 0.88
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
           },
-          "Phenotype Category": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
+          {
+            "variant": "rs116855232",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "rs116855232",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": "31024313",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Leukopenia occurred in 2/2 (100%) patients with rs116855232 TT genotype. One TT patient experienced lethal grade 4 myelosuppression within 4 weeks on 1.09 mg\u00b7kg\u22121\u00b7d\u22121 azathioprine and required discontinuation; the other TT patient developed leukopenia at 0.9 mg\u00b7kg\u22121\u00b7d\u22121, improved after dose reduction to 0.2 mg\u00b7kg\u22121\u00b7d\u22121.",
+              "Sentence": "rs116855232 TT Is Associated with increased risk of Leukopenia when treated with azathioprine in people with Autoimmune hepatitis and related cirrhosis.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Leukopenia",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune hepatitis and related cirrhosis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs116855232 CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "3",
+              "Citations": [
+                "Therapy-induced leukopenia was observed in 9/24 (37.5%) patients with the CT allele and 2/2 (100%) patients with the TT allele. However, only one patient with wild-type homozygote allele experienced leukopenia. All cases of leukopenia developed within the first 60 days following therapy initiation or dose increase. \u2026 One patient with the TT genotype experienced lethal levels of myelosuppression in the first 4 weeks of remission induction with a 1.09 mg \u22c5 kg\u22121 \u22c5 d\u22121 prescription and reached the diagnostic criteria for grade 4 myelosuppression; this patient also carried a TPMTwt/risk genotype. \u2026 The other patient with the TT genotype was reduced to a 0.2 mg \u22c5 kg\u22121 \u22c5 d\u22121 prescription after the WBC count from 5.29 \u00d7 10^9/L dropped to 1.94 \u00d7 10^9/L at the 0.9 mg \u22c5 kg\u22121 \u22c5 d\u22121 prescription; also, WBC counts gradually increased to a satisfactory value (3\u20134.5 \u00d7 10^9/L) after the dosage adjustment.",
+                "The aim of this study was to investigate the influence of NUDT15 R139C and thiopurine S-methyltransferase (TPMT) on azathioprine (AZA) induced leukopenia in patients with autoimmune hepatitis (AIH) and related cirrhosis. \u2026 Therefore, NUDT15 polymorphism is significantly associated with thiopurine-induced leukopenia in Chinese patients with AIH and related cirrhosis. Adjusting the AZA dosage should be considered in patients according to the NUDT15 R139C genotypes.",
+                "We found that a NUDT15 polymorphism (rs116855232) was significantly associated with AZA-induced leukopenia in Chinese patients with AIH and related cirrhosis."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 0.88
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
           },
-          "Alleles": {
-            "mean_score": 0.4781634509563446,
-            "scores": [
-              0.9563269019126892,
-              0.0
-            ]
+          {
+            "variant": "TT",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "TT",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": "31024313",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Leukopenia occurred in 2/2 (100%) patients with rs116855232 TT genotype. One TT patient experienced lethal grade 4 myelosuppression within 4 weeks on 1.09 mg\u00b7kg\u22121\u00b7d\u22121 azathioprine and required discontinuation; the other TT patient developed leukopenia at 0.9 mg\u00b7kg\u22121\u00b7d\u22121, improved after dose reduction to 0.2 mg\u00b7kg\u22121\u00b7d\u22121.",
+              "Sentence": "rs116855232 TT Is Associated with increased risk of Leukopenia when treated with azathioprine in people with Autoimmune hepatitis and related cirrhosis.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Leukopenia",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune hepatitis and related cirrhosis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs116855232 CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "3",
+              "Citations": [
+                "Therapy-induced leukopenia was observed in 9/24 (37.5%) patients with the CT allele and 2/2 (100%) patients with the TT allele. However, only one patient with wild-type homozygote allele experienced leukopenia. All cases of leukopenia developed within the first 60 days following therapy initiation or dose increase. \u2026 One patient with the TT genotype experienced lethal levels of myelosuppression in the first 4 weeks of remission induction with a 1.09 mg \u22c5 kg\u22121 \u22c5 d\u22121 prescription and reached the diagnostic criteria for grade 4 myelosuppression; this patient also carried a TPMTwt/risk genotype. \u2026 The other patient with the TT genotype was reduced to a 0.2 mg \u22c5 kg\u22121 \u22c5 d\u22121 prescription after the WBC count from 5.29 \u00d7 10^9/L dropped to 1.94 \u00d7 10^9/L at the 0.9 mg \u22c5 kg\u22121 \u22c5 d\u22121 prescription; also, WBC counts gradually increased to a satisfactory value (3\u20134.5 \u00d7 10^9/L) after the dosage adjustment.",
+                "The aim of this study was to investigate the influence of NUDT15 R139C and thiopurine S-methyltransferase (TPMT) on azathioprine (AZA) induced leukopenia in patients with autoimmune hepatitis (AIH) and related cirrhosis. \u2026 Therefore, NUDT15 polymorphism is significantly associated with thiopurine-induced leukopenia in Chinese patients with AIH and related cirrhosis. Adjusting the AZA dosage should be considered in patients according to the NUDT15 R139C genotypes.",
+                "We found that a NUDT15 polymorphism (rs116855232) was significantly associated with AZA-induced leukopenia in Chinese patients with AIH and related cirrhosis."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 0.88
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
           },
-          "Is/Is Not associated": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
+          {
+            "variant": "rs116855232",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 4,
+              "Variant/Haplotypes": "rs116855232",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": "31024313",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Among patients in biochemical remission on maintenance therapy, median azathioprine maintenance dose for rs116855232 CT genotype was 0.96 (0.83, 1.19) mg\u00b7kg\u22121\u00b7d\u22121 vs 1.23 (0.95, 1.53) mg\u00b7kg\u22121\u00b7d\u22121 for CC (P = 0.028), indicating CT carriers require lower maintenance doses.",
+              "Sentence": "rs116855232 CT Is Associated with decreased Other:Dose requirement when treated with azathioprine in people with Autoimmune hepatitis and related cirrhosis.",
+              "Alleles": "CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": null,
+              "Phenotype": "Other:Dose requirement",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune hepatitis and related cirrhosis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs116855232 CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "4",
+              "Citations": [
+                "In total, 93 patients have achieved biochemical remission and began maintenance therapy as of February 2018. The AZA dose did not significantly differ between CC and CT genotypes (*P* = 0.22) when evaluated with a clinical therapeutic dose of 1.0 mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^. However, the median maintenance dosages for patients with the *NUDT15* CC and CT genotypes were 1.23 (0.95, 1.53) mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^ and 0.96 (0.83, 1.19) mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^, respectively (*P* = 0.028) ([Figure 2](#F2)).",
+                "Our results found that the rs116855232 but not the rs1142345 genotype was significantly associated with AZA-induced leukopenia and the maintenance dose in Chinese patients with AIH and related cirrhosis. Safety and efficacy can be maintained in most heterozygous genotype patients on AZA at lower doses of approximately 1 mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^.",
+                "We found that a *NUDT15* polymorphism (rs116855232) was significantly associated with AZA-induced leukopenia in Chinese patients with AIH and related cirrhosis. For patients with the heterozygous variants, low-dose AZA (0.96 mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^) is safe for maintaining remission and achieving efficacy comparable to that observed in wild-type patients."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 0.88
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
           },
-          "Direction of effect": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
+          {
+            "variant": "CT",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 4,
+              "Variant/Haplotypes": "CT",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": "31024313",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Among patients in biochemical remission on maintenance therapy, median azathioprine maintenance dose for rs116855232 CT genotype was 0.96 (0.83, 1.19) mg\u00b7kg\u22121\u00b7d\u22121 vs 1.23 (0.95, 1.53) mg\u00b7kg\u22121\u00b7d\u22121 for CC (P = 0.028), indicating CT carriers require lower maintenance doses.",
+              "Sentence": "rs116855232 CT Is Associated with decreased Other:Dose requirement when treated with azathioprine in people with Autoimmune hepatitis and related cirrhosis.",
+              "Alleles": "CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": null,
+              "Phenotype": "Other:Dose requirement",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune hepatitis and related cirrhosis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs116855232 CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "4",
+              "Citations": [
+                "In total, 93 patients have achieved biochemical remission and began maintenance therapy as of February 2018. The AZA dose did not significantly differ between CC and CT genotypes (*P* = 0.22) when evaluated with a clinical therapeutic dose of 1.0 mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^. However, the median maintenance dosages for patients with the *NUDT15* CC and CT genotypes were 1.23 (0.95, 1.53) mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^ and 0.96 (0.83, 1.19) mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^, respectively (*P* = 0.028) ([Figure 2](#F2)).",
+                "Our results found that the rs116855232 but not the rs1142345 genotype was significantly associated with AZA-induced leukopenia and the maintenance dose in Chinese patients with AIH and related cirrhosis. Safety and efficacy can be maintained in most heterozygous genotype patients on AZA at lower doses of approximately 1 mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^.",
+                "We found that a *NUDT15* polymorphism (rs116855232) was significantly associated with AZA-induced leukopenia in Chinese patients with AIH and related cirrhosis. For patients with the heterozygous variants, low-dose AZA (0.96 mg \u22c5 kg^\u22121^ \u22c5 d^\u22121^) is safe for maintaining remission and achieving efficacy comparable to that observed in wild-type patients."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 0.88
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
           },
-          "Phenotype": {
-            "mean_score": 0.4786461889743805,
-            "scores": [
-              0.957292377948761,
-              0.0
-            ]
+          {
+            "variant": "rs116855232",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 5,
+              "Variant/Haplotypes": "rs116855232",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": "31024313",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "6-thioguanine nucleotide (6-TGN) concentrations were significantly higher in rs116855232 CT vs CC patients: 276.6 (150.9, 501.0) vs 145.3 (87.4, 199.0) pmol/8*10^8 RBC (P = 0.002). The ratio of azathioprine dose to 6-TGN concentration was lower in CT vs CC (P = 0.001\u20130.013).",
+              "Sentence": "rs116855232 CT Is Associated with increased PK:6-thioguanine nucleotide concentration when treated with azathioprine in people with Autoimmune hepatitis and related cirrhosis.",
+              "Alleles": "CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": null,
+              "Phenotype": "PK:6-thioguanine nucleotide concentration",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune hepatitis and related cirrhosis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs116855232 CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "5",
+              "Citations": [
+                "6-Thioguanine nucleotide concentrations were significantly higher in the patients of NUDT15 CT genotype [P = 0.002, 276.6(150.9, 501.0) vs. 145.3(87.4, 199.0) pmol/8\u2217108 RBC] (Figure 1 and Supplementary Table S1).",
+                "6-Thioguanine nucleotide concentrations for patients with rs116855232 CC and CT genotypes were 145.3(87.4, 199.0) pmol/8 \u2217108 RBC and 276.6(150.9, 501.0) pmol/8\u2217108 RBC, respectively (P = 0.002).",
+                "The ratio of AZA dose to 6-TGN concentration for the patients was compared between NUDT15 CC and CT genotypes and the results showed that patients with NUDT15 CT genotypes had much lower values (P = 0.013) (Figure 3)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 0.88
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
           },
-          "When treated with/exposed to/when assayed with": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
+          {
+            "variant": "CT",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 5,
+              "Variant/Haplotypes": "CT",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "PMID": "31024313",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "6-thioguanine nucleotide (6-TGN) concentrations were significantly higher in rs116855232 CT vs CC patients: 276.6 (150.9, 501.0) vs 145.3 (87.4, 199.0) pmol/8*10^8 RBC (P = 0.002). The ratio of azathioprine dose to 6-TGN concentration was lower in CT vs CC (P = 0.001\u20130.013).",
+              "Sentence": "rs116855232 CT Is Associated with increased PK:6-thioguanine nucleotide concentration when treated with azathioprine in people with Autoimmune hepatitis and related cirrhosis.",
+              "Alleles": "CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": null,
+              "Phenotype": "PK:6-thioguanine nucleotide concentration",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune hepatitis and related cirrhosis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs116855232 CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "5",
+              "Citations": [
+                "6-Thioguanine nucleotide concentrations were significantly higher in the patients of NUDT15 CT genotype [P = 0.002, 276.6(150.9, 501.0) vs. 145.3(87.4, 199.0) pmol/8\u2217108 RBC] (Figure 1 and Supplementary Table S1).",
+                "6-Thioguanine nucleotide concentrations for patients with rs116855232 CC and CT genotypes were 145.3(87.4, 199.0) pmol/8 \u2217108 RBC and 276.6(150.9, 501.0) pmol/8\u2217108 RBC, respectively (P = 0.002).",
+                "The ratio of AZA dose to 6-TGN concentration for the patients was compared between NUDT15 CC and CT genotypes and the results showed that patients with NUDT15 CT genotypes had much lower values (P = 0.013) (Figure 3)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs116855232",
+                "variant_id": "PA166154759",
+                "confidence": 0.88
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
           },
-          "Comparison Allele(s) or Genotype(s)": {
-            "mean_score": 0.47086411714553833,
-            "scores": [
-              0.9417282342910767,
-              0.0
-            ]
+          {
+            "variant": "C",
+            "gene": "TPMT",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant Annotation ID": 6,
+              "Variant/Haplotypes": "C",
+              "Gene": "TPMT",
+              "Drug(s)": "azathioprine",
+              "PMID": "31024313",
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "No significant association was observed between TPMT*3C rs1142345 genotypes and azathioprine-induced leukopenia in this Chinese AIH cohort (P = 0.283). TPMT*3C alleles were rare (4 carriers out of 149).",
+              "Sentence": "rs1142345 C Is Not associated with Side Effect:Leukopenia when treated with azathioprine in people with Autoimmune hepatitis and related cirrhosis.",
+              "Alleles": "C",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "Side effect/efficacy/other": null,
+              "Phenotype": "Side Effect:Leukopenia",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Autoimmune hepatitis and related cirrhosis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs1142345 T",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "6",
+              "Citations": [
+                "In contrast, no significant association was observed for TPMT\u22173C genotypes.",
+                "The gene encoding the TPMT enzyme is highly polymorphic, thus leading to varying levels of enzyme activity in different individuals. However, only approximately 20% of leukopenia cases can be explained by TPMT genetic deficiencies. ... Hence, the lack of significance observed for rs1142345 in the present study is likely due to its low prevalence in East Asian populations and the small sample size of our cohort.",
+                "The present study showed a 1.7% frequency of the risk TPMT allele in the analyzed population, which is similar to that reported in other studies involving Chinese IBD patients. This TPMT polymorphism is rare in Asian populations, and the lowest frequencies have been observed in Chinese populations (\u223c0.9%). ... Hence, the lack of significance observed for rs1142345 in the present study is likely due to its low prevalence in East Asian populations and the small sample size of our cohort."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1142345",
+                "variant_id": "PA166156978",
+                "confidence": 0.9
+              },
+              "Drug(s)_normalized": {
+                "normalized": "azathioprine",
+                "drug_id": "PA448515",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
           }
-        }
+        ]
       }
     },
     "functional_analysis": {
@@ -272,24 +923,19 @@
       "extra_predictions": {
         "count": 0,
         "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
       }
     },
     "study_parameters": {
-      "score": 0.24713449279467264,
+      "score": 0.5967878500620524,
       "total_samples": 2,
       "ground_truth_annotations": {
         "count": 2,
-        "matched_count": 1,
-        "unmatched_count": 1,
+        "matched_count": 2,
+        "unmatched_count": 0,
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.4361196931670694,
+            "overall_match_score": 0.7025684083209318,
             "annotation": {
               "Study Parameters ID": 1451237506,
               "Variant Annotation ID": 1451237500,
@@ -312,7 +958,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1451237506,
-                "prediction": null,
+                "prediction": 6,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -330,27 +976,27 @@
               },
               "Study Cases": {
                 "ground_truth": 12.0,
-                "prediction": 149.0,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 12,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Study Controls": {
                 "ground_truth": 137.0,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 137,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Characteristics": {
                 "ground_truth": "AZA-induced leukopenia in Chinese patients with AIH",
-                "prediction": "Leukopenia observed in patients with NUDT15 CT genotype",
-                "score": 0.9140347838401794,
+                "prediction": "Association of NUDT15 rs116855232 genotypes (CT+TT vs CC, dominant model) with leukopenia during first 8 weeks of azathioprine therapy in Chinese AIH or AIH\u2013PBC patients",
+                "score": 0.9436629414558411,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "disease",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Frequency In Cases": {
                 "ground_truth": null,
@@ -378,9 +1024,9 @@
               },
               "P Value": {
                 "ground_truth": "< 0.0001",
-                "prediction": "< 0.00001",
-                "score": 0.5,
-                "match_status": "partial_match"
+                "prediction": "< 0.0001",
+                "score": 1.0,
+                "match_status": "match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -390,32 +1036,33 @@
               },
               "Ratio Stat": {
                 "ground_truth": 89.47,
-                "prediction": 20.41,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 89.47,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Confidence Interval Start": {
                 "ground_truth": 10.78,
-                "prediction": 7.84,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 10.78,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Confidence Interval Stop": {
                 "ground_truth": 742.53,
-                "prediction": 53.13,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 742.53,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Biogeographical Groups": {
                 "ground_truth": null,
-                "prediction": "Asian",
+                "prediction": "East Asian",
                 "score": 0.0,
                 "match_status": "no_match"
               }
             }
           },
           {
-            "matched": false,
+            "matched": true,
+            "overall_match_score": 0.3505866212003371,
             "annotation": {
               "Study Parameters ID": 1451237470,
               "Variant Annotation ID": 1451237464,
@@ -433,27 +1080,130 @@
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": null,
-              "Variant Annotation ID_norm": "1451237464"
+              "Biogeographical Groups": null
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1451237470,
+                "prediction": 1,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1451237464,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 12.0,
+                "prediction": 12,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": 137.0,
+                "prediction": 137,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "AZA-induced leukopenia in Chinese patients with AIH",
+                "prediction": "Chinese AIH or AIH\u2013PBC patients treated with azathioprine, comparison of leukopenia vs no leukopenia",
+                "score": 0.9599725604057312,
+                "match_status": "match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "disease",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.042,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "C",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.015,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "C",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.283",
+                "prediction": "< 0.001",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": null,
+                "prediction": "East Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 2,
+        "count": 11,
         "items": [
           {
             "variant": "N/A",
             "gene": "N/A",
             "drug": "N/A",
             "annotation": {
-              "Study Parameters ID": null,
+              "Study Parameters ID": 2,
               "Variant Annotation ID": null,
               "Study Type": "retrospective",
-              "Study Cases": 149.0,
-              "Study Controls": null,
-              "Characteristics": "Patients with autoimmune hepatitis treated with azathioprine",
-              "Characteristics Type": "Study Cohort",
+              "Study Cases": 12,
+              "Study Controls": 137,
+              "Characteristics": "Association of NUDT15 rs116855232 T allele with azathioprine-induced leukopenia in Chinese AIH or AIH\u2013PBC patients (overall allele model)",
+              "Characteristics Type": "disease",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
@@ -463,7 +1213,7 @@
               "Ratio Stat": 20.41,
               "Confidence Interval Start": 7.84,
               "Confidence Interval Stop": 53.13,
-              "Biogeographical Groups": "Asian",
+              "Biogeographical Groups": "East Asian",
               "Variant Annotation ID_norm": null
             }
           },
@@ -472,138 +1222,252 @@
             "gene": "N/A",
             "drug": "N/A",
             "annotation": {
-              "Study Parameters ID": null,
+              "Study Parameters ID": 3,
               "Variant Annotation ID": null,
               "Study Type": "retrospective",
-              "Study Cases": 149.0,
-              "Study Controls": null,
-              "Characteristics": "Patients with rs116855232 CC and CT genotypes",
-              "Characteristics Type": "Study Cohort",
+              "Study Cases": 12,
+              "Study Controls": 137,
+              "Characteristics": "Association of NUDT15 rs116855232 genotypes (CT+TT vs CC, dominant model) with azathioprine-induced leukopenia in Chinese AIH or AIH\u2013PBC patients",
+              "Characteristics Type": "disease",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
               "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.028",
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": 0.95,
-              "Confidence Interval Stop": 1.53,
-              "Biogeographical Groups": "Asian",
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 89.47,
+              "Confidence Interval Start": 10.78,
+              "Confidence Interval Stop": 742.53,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 4,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 12,
+              "Study Controls": 137,
+              "Characteristics": "Association of NUDT15 rs116855232 genotypes (TT vs CC+CT, recessive model) with azathioprine-induced leukopenia in Chinese AIH or AIH\u2013PBC patients",
+              "Characteristics Type": "disease",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.008",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 65.48,
+              "Confidence Interval Start": 2.95,
+              "Confidence Interval Stop": 1454.21,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 5,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 12,
+              "Study Controls": 137,
+              "Characteristics": "Association of NUDT15 rs116855232 T allele with leukopenia during first 8 weeks of azathioprine therapy in Chinese AIH or AIH\u2013PBC patients (allele model)",
+              "Characteristics Type": "disease",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.00001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 20.41,
+              "Confidence Interval Start": 7.84,
+              "Confidence Interval Stop": 53.13,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 7,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 12,
+              "Study Controls": 137,
+              "Characteristics": "Association of NUDT15 rs116855232 genotypes (TT vs CC+CT, recessive model) with leukopenia during first 8 weeks of azathioprine therapy in Chinese AIH or AIH\u2013PBC patients",
+              "Characteristics Type": "disease",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.008",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 65.48,
+              "Confidence Interval Start": 2.95,
+              "Confidence Interval Stop": 1454.21,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 8,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 93,
+              "Study Controls": null,
+              "Characteristics": "Association of NUDT15 rs116855232 variant (CT+TT vs CC, dominant model) with low azathioprine maintenance dose (\u22641.0 mg\u00b7kg\u22121\u00b7d\u22121) among Chinese AIH or AIH\u2013PBC patients in biochemical remission",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.08",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.33,
+              "Confidence Interval Start": 0.89,
+              "Confidence Interval Stop": 6.06,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 9,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 93,
+              "Study Controls": null,
+              "Characteristics": "Association of NUDT15 rs116855232 genotypes (CT+TT vs CC, dominant model) with low azathioprine maintenance dose (\u22641.0 mg\u00b7kg\u22121\u00b7d\u22121) among Chinese AIH or AIH\u2013PBC patients in biochemical remission",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.13",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.26,
+              "Confidence Interval Start": 0.79,
+              "Confidence Interval Stop": 6.44,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 10,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 93,
+              "Study Controls": null,
+              "Characteristics": "Association of NUDT15 rs116855232 genotypes (TT vs CC+CT, recessive model) with low azathioprine maintenance dose (\u22641.0 mg\u00b7kg\u22121\u00b7d\u22121) among Chinese AIH or AIH\u2013PBC patients in biochemical remission",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.28",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 5.86,
+              "Confidence Interval Start": 0.23,
+              "Confidence Interval Stop": 147.96,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 11,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 149,
+              "Study Controls": null,
+              "Characteristics": "Association of NUDT15 rs116855232 variant (CT+TT vs CC, dominant model) with azathioprine therapy interruption in Chinese AIH or AIH\u2013PBC patients",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.07",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3.05,
+              "Confidence Interval Start": 0.93,
+              "Confidence Interval Stop": 9.99,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 12,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 149,
+              "Study Controls": null,
+              "Characteristics": "Association of NUDT15 rs116855232 genotypes (CT+TT vs CC, dominant model) with azathioprine therapy interruption in Chinese AIH or AIH\u2013PBC patients",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.21",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.54,
+              "Confidence Interval Start": 0.59,
+              "Confidence Interval Stop": 10.91,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 13,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 149,
+              "Study Controls": null,
+              "Characteristics": "Association of NUDT15 rs116855232 genotypes (TT vs CC+CT, recessive model) with azathioprine therapy interruption in Chinese AIH or AIH\u2013PBC patients",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.05",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 17.38,
+              "Confidence Interval Start": 0.99,
+              "Confidence Interval Stop": 303.99,
+              "Biogeographical Groups": "East Asian",
               "Variant Annotation ID_norm": null
             }
           }
         ]
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 15,
-        "fields": {
-          "Study Type": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Study Cases": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Study Controls": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Characteristics": {
-            "mean_score": 0.4570173919200897,
-            "scores": [
-              0.9140347838401794,
-              0.0
-            ]
-          },
-          "Characteristics Type": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Frequency In Cases": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Allele Of Frequency In Cases": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Frequency In Controls": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Allele Of Frequency In Controls": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "P Value": {
-            "mean_score": 0.25,
-            "scores": [
-              0.5,
-              0.0
-            ]
-          },
-          "Ratio Stat Type": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Ratio Stat": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Confidence Interval Start": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Confidence Interval Stop": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Biogeographical Groups": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          }
-        }
       }
     }
   }

@@ -2,20 +2,20 @@
   "pmcid": "PMC12038368",
   "pmid": "40297930",
   "title": "Impacts of Pharmacokinetic Gene Polymorphisms on Steady\u2010State Plasma Concentrations of Simvastatin in Thai Population",
-  "overall_score": 0.24775856736459229,
+  "overall_score": 0.40918413241704304,
   "num_benchmarks": 4,
   "benchmarks": {
     "drug_annotations": {
-      "score": 0.30896531751281336,
+      "score": 0.8016332387924194,
       "total_samples": 2,
       "ground_truth_annotations": {
         "count": 2,
-        "matched_count": 1,
-        "unmatched_count": 1,
+        "matched_count": 2,
+        "unmatched_count": 0,
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.6179306350256267,
+            "overall_match_score": 0.8792594702620256,
             "annotation": {
               "Variant/Haplotypes": "rs4149056",
               "Gene": "SLCO1B1",
@@ -52,9 +52,9 @@
               },
               "PMID": {
                 "ground_truth": 40297930,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 40297930,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Phenotype Category": {
                 "ground_truth": "Metabolism/PK",
@@ -70,27 +70,27 @@
               },
               "Alleles": {
                 "ground_truth": "CC + CT",
-                "prediction": "TC/CC",
-                "score": 0.9394291639328003,
+                "prediction": "TC + CC",
+                "score": 0.9497967958450317,
                 "match_status": "partial_match"
               },
               "Specialty Population": {
                 "ground_truth": null,
-                "prediction": "",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Metabolizer types": {
                 "ground_truth": null,
-                "prediction": "decreased function",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "isPlural": {
                 "ground_truth": "Is",
-                "prediction": "Is",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Are",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Associated with",
@@ -106,33 +106,33 @@
               },
               "PD/PK terms": {
                 "ground_truth": "concentrations of",
-                "prediction": "concentrations of",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "steady-state plasma concentrations of",
+                "score": 0.9182835221290588,
+                "match_status": "partial_match"
               },
               "Multiple drugs And/or": {
                 "ground_truth": null,
-                "prediction": "",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Population types": {
                 "ground_truth": "in people with",
-                "prediction": "in patients with dyslipidemia or coronary artery disease",
-                "score": 0.8867008686065674,
+                "prediction": "in patients with",
+                "score": 0.8987551331520081,
                 "match_status": "partial_match"
               },
               "Population Phenotypes or diseases": {
                 "ground_truth": "Other:Cardiovascular Disease, Other:Dyslipidaemia",
-                "prediction": "Disease: coronary artery disease",
-                "score": 0.9145520329475403,
+                "prediction": "Disease:dyslipidemia, Disease:coronary artery disease",
+                "score": 0.9390944838523865,
                 "match_status": "partial_match"
               },
               "Multiple phenotypes or diseases And/or": {
                 "ground_truth": "or",
-                "prediction": "",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "or",
+                "score": 1.0,
+                "match_status": "match"
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "TT",
@@ -142,30 +142,27 @@
               },
               "Comparison Metabolizer types": {
                 "ground_truth": null,
-                "prediction": "normal metabolizer",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Drug(s)": {
                 "ground_truth": "simvastatin acid",
-                "prediction": "simvastatin",
+                "prediction": "simvastatin hydroxy acid",
                 "score": 0.0,
                 "match_status": "no_match"
               }
             }
           },
           {
-            "matched": false,
+            "matched": true,
+            "overall_match_score": 0.7240070073228133,
             "annotation": {
-              "Variant Annotation ID": 1454052282,
               "Variant/Haplotypes": "rs2306283",
               "Gene": "SLCO1B1",
-              "Drug(s)": "simvastatin acid",
               "PMID": 40297930,
               "Phenotype Category": "Metabolism/PK",
               "Significance": "yes",
-              "Notes": "Additionally, SLCO1B1 rs2306283 was associated with significantly higher SVA levels in patients carrying the G allele (AG+GG genotype) at the same dose (3.63 vs. 1.59 ng/mL, p = 0.04). ",
-              "Sentence": "Genotypes AG + GG is associated with increased concentrations of simvastatin acid in people with Cardiovascular Disease or Dyslipidaemia as compared to genotype AA.",
               "Alleles": "AG + GG",
               "Specialty Population": null,
               "Metabolizer types": null,
@@ -179,254 +176,1270 @@
               "Multiple phenotypes or diseases And/or": "or",
               "Comparison Allele(s) or Genotype(s)": "AA",
               "Comparison Metabolizer types": null,
-              "PMID_norm": "40297930",
-              "Variant Annotation ID_norm": "1454052282"
+              "Drug(s)": "simvastatin acid"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs2306283",
+                "prediction": "rs2306283",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "SLCO1B1",
+                "prediction": "SLCO1B1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 40297930,
+                "prediction": 40297930,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Metabolism/PK",
+                "prediction": "metabolism/PK",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "no",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Alleles": {
+                "ground_truth": "AG + GG",
+                "prediction": "AG + GG",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "isPlural": {
+                "ground_truth": "Is",
+                "prediction": "Are",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Not associated with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "concentrations of",
+                "prediction": "steady-state plasma concentrations of",
+                "score": 0.9182835221290588,
+                "match_status": "partial_match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Population types": {
+                "ground_truth": "in people with",
+                "prediction": "in patients with",
+                "score": 0.8987551331520081,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Other:Cardiovascular Disease, Other:Dyslipidaemia",
+                "prediction": "Disease:dyslipidemia, Disease:coronary artery disease",
+                "score": 0.9390944838523865,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": "or",
+                "prediction": "or",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "AA",
+                "prediction": "AA",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "simvastatin acid",
+                "prediction": "simvastatin hydroxy acid",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 3,
+        "count": 26,
         "items": [
           {
-            "variant": "c.521T>C",
+            "variant": "SLCO1B1*1a",
             "gene": "SLCO1B1",
-            "drug": "simvastatin",
+            "drug": "simvastatin hydroxy acid",
             "annotation": {
-              "Variant/Haplotypes": "c.521T>C",
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "SLCO1B1*1a",
               "Gene": "SLCO1B1",
-              "Drug(s)": "simvastatin",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
               "Phenotype Category": "metabolism/PK",
               "Significance": "yes",
-              "Notes": "The study confirms the association of SLCO1B1 rs4149056 with higher simvastatin plasma levels in Thai patients.",
-              "Standardized Sentence": "Genotype TC is associated with increased simvastatin acid levels in patients with dyslipidemia or coronary artery disease.",
-              "Alleles": "TC/CC",
-              "Metabolizer types": "decreased function",
-              "Comparison Allele(s) or Genotype(s)": "TT",
-              "Comparison Metabolizer types": "normal metabolizer",
-              "Specialty Population": "",
-              "Population types": "in patients with dyslipidemia or coronary artery disease",
-              "Population Phenotypes or diseases": "Disease: coronary artery disease",
+              "Notes": "The SLCO1B1*1b/*15 diplotype showed significantly higher SVA Css/Dose than *1a/*1a (0.58 vs 0.16 ng/mL, p<0.001). Decreased OATP1B1 function (including *1b/*5 and *1b/*15) tended to have higher SVA than normal function (0.53 vs 0.19 ng/mL, p=0.07).",
+              "Sentence": "Diplotype *1b/*15 is associated with increased steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to diplotype *1a/*1a.",
+              "Alleles": "*1b/*15",
+              "Specialty Population": null,
+              "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "concentrations of",
-              "Multiple drugs And/or": "",
-              "Multiple phenotypes or diseases And/or": "",
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "*1a/*1a",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "These findings suggest that SLCO1B1 c.521T>C, alone or with c.388A>G (SLCO1B1*1b/*15), reduces OATP1B1 function, leading to elevated simvastatin acid levels and increased myotoxicity risk.",
-                "This study confirms the association of SLCO1B1 rs4149056 (c.521T>C) with higher simvastatin plasma levels in Thai patients.",
-                "Patients with the SLCO1B1*1b/*15 genotype were associated with higher simvastatin acid levels than SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p < 0.001)."
+                "\"Among 10 SNPs from seven genes in the pharmacokinetic pathway of statins, patients with the *SLCO1B1* c.521TC+CC genotype had a significantly higher SVA compared to those with the c.521TT genotype (0.53 vs. 0.19 ng/mL, respectively) with a *p* value of 0.03 (Table [3](#cts70225-tbl-0003), Figure [1B](#cts70225-fig-0001)). According to the CPIC 2022 guidelines [[26](#cts70225-bib-0026)], the *SLCO1B1* loss\u2010of\u2010function alleles include **5* and **15*, while the normal function allele is **1*, comprising **1a* and **1b*. The diplotype\u2010predicted phenotypes are classified as follows: **1a/***1a*, **1a/***1b*, and **1b/***1b* are considered normal function, whereas **1* (**1a* or **1b*) combined with *5 or *15 is categorized as decreased function. *SLCO1B1***1b/***15* (decrease function) had significantly higher SVA concentrations compared to *SLCO1B1***1a/***1a* (0.58 vs. 0.16 ng/mL, *p* value < 0.001, Table [4](#cts70225-tbl-0004)). Moreover, patients with decreased OATP1B1 function, including those with **1b/***5* and **1b/***15*, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a *p* value trending towards significance (*p* = 0.07).\"",
+                "\"SLCO1B1***1b/***15* (decrease function) had significantly higher SVA concentrations compared to *SLCO1B1***1a/***1a* (0.58 vs. 0.16 ng/mL, *p* value < 0.001, Table [4](#cts70225-tbl-0004)).\"",
+                "\"Among pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function.\""
               ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "SLCO1B1*1a, SLCO1B1*1b, SLCO1B1*5, SLCO1B1*15",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              },
               "_expanded_from_multi_variant": true
             }
           },
           {
-            "variant": "or",
+            "variant": "SLCO1B1*1b",
             "gene": "SLCO1B1",
-            "drug": "simvastatin",
+            "drug": "simvastatin hydroxy acid",
             "annotation": {
-              "Variant/Haplotypes": "or",
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "SLCO1B1*1b",
               "Gene": "SLCO1B1",
-              "Drug(s)": "simvastatin",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
               "Phenotype Category": "metabolism/PK",
               "Significance": "yes",
-              "Notes": "The study confirms the association of SLCO1B1 rs4149056 with higher simvastatin plasma levels in Thai patients.",
-              "Standardized Sentence": "Genotype TC is associated with increased simvastatin acid levels in patients with dyslipidemia or coronary artery disease.",
-              "Alleles": "TC/CC",
-              "Metabolizer types": "decreased function",
-              "Comparison Allele(s) or Genotype(s)": "TT",
-              "Comparison Metabolizer types": "normal metabolizer",
-              "Specialty Population": "",
-              "Population types": "in patients with dyslipidemia or coronary artery disease",
-              "Population Phenotypes or diseases": "Disease: coronary artery disease",
+              "Notes": "The SLCO1B1*1b/*15 diplotype showed significantly higher SVA Css/Dose than *1a/*1a (0.58 vs 0.16 ng/mL, p<0.001). Decreased OATP1B1 function (including *1b/*5 and *1b/*15) tended to have higher SVA than normal function (0.53 vs 0.19 ng/mL, p=0.07).",
+              "Sentence": "Diplotype *1b/*15 is associated with increased steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to diplotype *1a/*1a.",
+              "Alleles": "*1b/*15",
+              "Specialty Population": null,
+              "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "concentrations of",
-              "Multiple drugs And/or": "",
-              "Multiple phenotypes or diseases And/or": "",
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "*1a/*1a",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "These findings suggest that SLCO1B1 c.521T>C, alone or with c.388A>G (SLCO1B1*1b/*15), reduces OATP1B1 function, leading to elevated simvastatin acid levels and increased myotoxicity risk.",
-                "This study confirms the association of SLCO1B1 rs4149056 (c.521T>C) with higher simvastatin plasma levels in Thai patients.",
-                "Patients with the SLCO1B1*1b/*15 genotype were associated with higher simvastatin acid levels than SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p < 0.001)."
+                "\"Among 10 SNPs from seven genes in the pharmacokinetic pathway of statins, patients with the *SLCO1B1* c.521TC+CC genotype had a significantly higher SVA compared to those with the c.521TT genotype (0.53 vs. 0.19 ng/mL, respectively) with a *p* value of 0.03 (Table [3](#cts70225-tbl-0003), Figure [1B](#cts70225-fig-0001)). According to the CPIC 2022 guidelines [[26](#cts70225-bib-0026)], the *SLCO1B1* loss\u2010of\u2010function alleles include **5* and **15*, while the normal function allele is **1*, comprising **1a* and **1b*. The diplotype\u2010predicted phenotypes are classified as follows: **1a/***1a*, **1a/***1b*, and **1b/***1b* are considered normal function, whereas **1* (**1a* or **1b*) combined with *5 or *15 is categorized as decreased function. *SLCO1B1***1b/***15* (decrease function) had significantly higher SVA concentrations compared to *SLCO1B1***1a/***1a* (0.58 vs. 0.16 ng/mL, *p* value < 0.001, Table [4](#cts70225-tbl-0004)). Moreover, patients with decreased OATP1B1 function, including those with **1b/***5* and **1b/***15*, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a *p* value trending towards significance (*p* = 0.07).\"",
+                "\"SLCO1B1***1b/***15* (decrease function) had significantly higher SVA concentrations compared to *SLCO1B1***1a/***1a* (0.58 vs. 0.16 ng/mL, *p* value < 0.001, Table [4](#cts70225-tbl-0004)).\"",
+                "\"Among pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function.\""
               ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "SLCO1B1*1a, SLCO1B1*1b, SLCO1B1*5, SLCO1B1*15",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              },
               "_expanded_from_multi_variant": true
             }
           },
           {
-            "variant": "*1b/*15",
+            "variant": "SLCO1B1*5",
             "gene": "SLCO1B1",
-            "drug": "simvastatin",
+            "drug": "simvastatin hydroxy acid",
             "annotation": {
-              "Variant/Haplotypes": "*1b/*15",
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "SLCO1B1*5",
               "Gene": "SLCO1B1",
-              "Drug(s)": "simvastatin",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
               "Phenotype Category": "metabolism/PK",
               "Significance": "yes",
-              "Notes": "The study confirms the association of SLCO1B1 rs4149056 with higher simvastatin plasma levels in Thai patients.",
-              "Standardized Sentence": "Genotype TC is associated with increased simvastatin acid levels in patients with dyslipidemia or coronary artery disease.",
-              "Alleles": "TC/CC",
-              "Metabolizer types": "decreased function",
-              "Comparison Allele(s) or Genotype(s)": "TT",
-              "Comparison Metabolizer types": "normal metabolizer",
-              "Specialty Population": "",
-              "Population types": "in patients with dyslipidemia or coronary artery disease",
-              "Population Phenotypes or diseases": "Disease: coronary artery disease",
+              "Notes": "The SLCO1B1*1b/*15 diplotype showed significantly higher SVA Css/Dose than *1a/*1a (0.58 vs 0.16 ng/mL, p<0.001). Decreased OATP1B1 function (including *1b/*5 and *1b/*15) tended to have higher SVA than normal function (0.53 vs 0.19 ng/mL, p=0.07).",
+              "Sentence": "Diplotype *1b/*15 is associated with increased steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to diplotype *1a/*1a.",
+              "Alleles": "*1b/*15",
+              "Specialty Population": null,
+              "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "concentrations of",
-              "Multiple drugs And/or": "",
-              "Multiple phenotypes or diseases And/or": "",
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "*1a/*1a",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "These findings suggest that SLCO1B1 c.521T>C, alone or with c.388A>G (SLCO1B1*1b/*15), reduces OATP1B1 function, leading to elevated simvastatin acid levels and increased myotoxicity risk.",
-                "This study confirms the association of SLCO1B1 rs4149056 (c.521T>C) with higher simvastatin plasma levels in Thai patients.",
-                "Patients with the SLCO1B1*1b/*15 genotype were associated with higher simvastatin acid levels than SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p < 0.001)."
+                "\"Among 10 SNPs from seven genes in the pharmacokinetic pathway of statins, patients with the *SLCO1B1* c.521TC+CC genotype had a significantly higher SVA compared to those with the c.521TT genotype (0.53 vs. 0.19 ng/mL, respectively) with a *p* value of 0.03 (Table [3](#cts70225-tbl-0003), Figure [1B](#cts70225-fig-0001)). According to the CPIC 2022 guidelines [[26](#cts70225-bib-0026)], the *SLCO1B1* loss\u2010of\u2010function alleles include **5* and **15*, while the normal function allele is **1*, comprising **1a* and **1b*. The diplotype\u2010predicted phenotypes are classified as follows: **1a/***1a*, **1a/***1b*, and **1b/***1b* are considered normal function, whereas **1* (**1a* or **1b*) combined with *5 or *15 is categorized as decreased function. *SLCO1B1***1b/***15* (decrease function) had significantly higher SVA concentrations compared to *SLCO1B1***1a/***1a* (0.58 vs. 0.16 ng/mL, *p* value < 0.001, Table [4](#cts70225-tbl-0004)). Moreover, patients with decreased OATP1B1 function, including those with **1b/***5* and **1b/***15*, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a *p* value trending towards significance (*p* = 0.07).\"",
+                "\"SLCO1B1***1b/***15* (decrease function) had significantly higher SVA concentrations compared to *SLCO1B1***1a/***1a* (0.58 vs. 0.16 ng/mL, *p* value < 0.001, Table [4](#cts70225-tbl-0004)).\"",
+                "\"Among pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function.\""
               ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "SLCO1B1*1a, SLCO1B1*1b, SLCO1B1*5, SLCO1B1*15",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              },
               "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "SLCO1B1*15",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "SLCO1B1*15",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "The SLCO1B1*1b/*15 diplotype showed significantly higher SVA Css/Dose than *1a/*1a (0.58 vs 0.16 ng/mL, p<0.001). Decreased OATP1B1 function (including *1b/*5 and *1b/*15) tended to have higher SVA than normal function (0.53 vs 0.19 ng/mL, p=0.07).",
+              "Sentence": "Diplotype *1b/*15 is associated with increased steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to diplotype *1a/*1a.",
+              "Alleles": "*1b/*15",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "*1a/*1a",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"Among 10 SNPs from seven genes in the pharmacokinetic pathway of statins, patients with the *SLCO1B1* c.521TC+CC genotype had a significantly higher SVA compared to those with the c.521TT genotype (0.53 vs. 0.19 ng/mL, respectively) with a *p* value of 0.03 (Table [3](#cts70225-tbl-0003), Figure [1B](#cts70225-fig-0001)). According to the CPIC 2022 guidelines [[26](#cts70225-bib-0026)], the *SLCO1B1* loss\u2010of\u2010function alleles include **5* and **15*, while the normal function allele is **1*, comprising **1a* and **1b*. The diplotype\u2010predicted phenotypes are classified as follows: **1a/***1a*, **1a/***1b*, and **1b/***1b* are considered normal function, whereas **1* (**1a* or **1b*) combined with *5 or *15 is categorized as decreased function. *SLCO1B1***1b/***15* (decrease function) had significantly higher SVA concentrations compared to *SLCO1B1***1a/***1a* (0.58 vs. 0.16 ng/mL, *p* value < 0.001, Table [4](#cts70225-tbl-0004)). Moreover, patients with decreased OATP1B1 function, including those with **1b/***5* and **1b/***15*, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a *p* value trending towards significance (*p* = 0.07).\"",
+                "\"SLCO1B1***1b/***15* (decrease function) had significantly higher SVA concentrations compared to *SLCO1B1***1a/***1a* (0.58 vs. 0.16 ng/mL, *p* value < 0.001, Table [4](#cts70225-tbl-0004)).\"",
+                "\"Among pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "SLCO1B1*1a, SLCO1B1*1b, SLCO1B1*5, SLCO1B1*15",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "SLCO1B1*1a",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "SLCO1B1*1a",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "When grouped by OATP1B1 function, decreased function diplotypes (*1b/*5, *1b/*15) had numerically higher SVA Css/Dose than normal function (*1a/*1a, *1a/*1b, *1b/*1b) (0.53 vs 0.19 ng/mL) but the difference only trended toward significance (p=0.07).",
+              "Sentence": "Decreased OATP1B1 function diplotypes (*1b/*5 and *1b/*15) are not associated with significantly increased steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to normal function diplotypes (*1a/*1a, *1a/*1b, *1b/*1b).",
+              "Alleles": "*1b/*5 + *1b/*15",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "*1a/*1a + *1a/*1b + *1b/*1b",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "According to the CPIC 2022 guidelines [26], the SLCO1B1 loss\u2010of\u2010function alleles include *5 and *15, while the normal function allele is *1, comprising *1a and *1b. The diplotype\u2010predicted phenotypes are classified as follows: *1a/*1a, *1a/*1b, and *1b/*1b are considered normal function, whereas *1 (*1a or *1b) combined with *5 or *15 is categorized as decreased function. SLCO1B1*1b/*15 (decrease function) had significantly higher SVA concentrations compared to SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p value < 0.001, Table 4). Moreover, patients with decreased OATP1B1 function, including those with *1b/*5 and *1b/*15, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a p value trending towards significance (p = 0.07).",
+                "In our study, 89.88% of participants exhibited normal function, while 10.12% had decreased function (*1b/*5, *1b/*15). No poor function phenotypes were observed. Consistent with the CPIC guideline and prior studies, participants with decreased OATP1B1 function (*1b/*15 and *1b/*5) showed higher simvastatin acid concentrations than those with normal function (0.53 vs. 0.19 ng/mL, p = 0.07)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "SLCO1B1*1a, SLCO1B1*1b, SLCO1B1*5, SLCO1B1*15",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "SLCO1B1*1b",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "SLCO1B1*1b",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "When grouped by OATP1B1 function, decreased function diplotypes (*1b/*5, *1b/*15) had numerically higher SVA Css/Dose than normal function (*1a/*1a, *1a/*1b, *1b/*1b) (0.53 vs 0.19 ng/mL) but the difference only trended toward significance (p=0.07).",
+              "Sentence": "Decreased OATP1B1 function diplotypes (*1b/*5 and *1b/*15) are not associated with significantly increased steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to normal function diplotypes (*1a/*1a, *1a/*1b, *1b/*1b).",
+              "Alleles": "*1b/*5 + *1b/*15",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "*1a/*1a + *1a/*1b + *1b/*1b",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "According to the CPIC 2022 guidelines [26], the SLCO1B1 loss\u2010of\u2010function alleles include *5 and *15, while the normal function allele is *1, comprising *1a and *1b. The diplotype\u2010predicted phenotypes are classified as follows: *1a/*1a, *1a/*1b, and *1b/*1b are considered normal function, whereas *1 (*1a or *1b) combined with *5 or *15 is categorized as decreased function. SLCO1B1*1b/*15 (decrease function) had significantly higher SVA concentrations compared to SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p value < 0.001, Table 4). Moreover, patients with decreased OATP1B1 function, including those with *1b/*5 and *1b/*15, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a p value trending towards significance (p = 0.07).",
+                "In our study, 89.88% of participants exhibited normal function, while 10.12% had decreased function (*1b/*5, *1b/*15). No poor function phenotypes were observed. Consistent with the CPIC guideline and prior studies, participants with decreased OATP1B1 function (*1b/*15 and *1b/*5) showed higher simvastatin acid concentrations than those with normal function (0.53 vs. 0.19 ng/mL, p = 0.07)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "SLCO1B1*1a, SLCO1B1*1b, SLCO1B1*5, SLCO1B1*15",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "SLCO1B1*5",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "SLCO1B1*5",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "When grouped by OATP1B1 function, decreased function diplotypes (*1b/*5, *1b/*15) had numerically higher SVA Css/Dose than normal function (*1a/*1a, *1a/*1b, *1b/*1b) (0.53 vs 0.19 ng/mL) but the difference only trended toward significance (p=0.07).",
+              "Sentence": "Decreased OATP1B1 function diplotypes (*1b/*5 and *1b/*15) are not associated with significantly increased steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to normal function diplotypes (*1a/*1a, *1a/*1b, *1b/*1b).",
+              "Alleles": "*1b/*5 + *1b/*15",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "*1a/*1a + *1a/*1b + *1b/*1b",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "According to the CPIC 2022 guidelines [26], the SLCO1B1 loss\u2010of\u2010function alleles include *5 and *15, while the normal function allele is *1, comprising *1a and *1b. The diplotype\u2010predicted phenotypes are classified as follows: *1a/*1a, *1a/*1b, and *1b/*1b are considered normal function, whereas *1 (*1a or *1b) combined with *5 or *15 is categorized as decreased function. SLCO1B1*1b/*15 (decrease function) had significantly higher SVA concentrations compared to SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p value < 0.001, Table 4). Moreover, patients with decreased OATP1B1 function, including those with *1b/*5 and *1b/*15, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a p value trending towards significance (p = 0.07).",
+                "In our study, 89.88% of participants exhibited normal function, while 10.12% had decreased function (*1b/*5, *1b/*15). No poor function phenotypes were observed. Consistent with the CPIC guideline and prior studies, participants with decreased OATP1B1 function (*1b/*15 and *1b/*5) showed higher simvastatin acid concentrations than those with normal function (0.53 vs. 0.19 ng/mL, p = 0.07)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "SLCO1B1*1a, SLCO1B1*1b, SLCO1B1*5, SLCO1B1*15",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "SLCO1B1*15",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "SLCO1B1*15",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "When grouped by OATP1B1 function, decreased function diplotypes (*1b/*5, *1b/*15) had numerically higher SVA Css/Dose than normal function (*1a/*1a, *1a/*1b, *1b/*1b) (0.53 vs 0.19 ng/mL) but the difference only trended toward significance (p=0.07).",
+              "Sentence": "Decreased OATP1B1 function diplotypes (*1b/*5 and *1b/*15) are not associated with significantly increased steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to normal function diplotypes (*1a/*1a, *1a/*1b, *1b/*1b).",
+              "Alleles": "*1b/*5 + *1b/*15",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "*1a/*1a + *1a/*1b + *1b/*1b",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "According to the CPIC 2022 guidelines [26], the SLCO1B1 loss\u2010of\u2010function alleles include *5 and *15, while the normal function allele is *1, comprising *1a and *1b. The diplotype\u2010predicted phenotypes are classified as follows: *1a/*1a, *1a/*1b, and *1b/*1b are considered normal function, whereas *1 (*1a or *1b) combined with *5 or *15 is categorized as decreased function. SLCO1B1*1b/*15 (decrease function) had significantly higher SVA concentrations compared to SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p value < 0.001, Table 4). Moreover, patients with decreased OATP1B1 function, including those with *1b/*5 and *1b/*15, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a p value trending towards significance (p = 0.07).",
+                "In our study, 89.88% of participants exhibited normal function, while 10.12% had decreased function (*1b/*5, *1b/*15). No poor function phenotypes were observed. Consistent with the CPIC guideline and prior studies, participants with decreased OATP1B1 function (*1b/*15 and *1b/*5) showed higher simvastatin acid concentrations than those with normal function (0.53 vs. 0.19 ng/mL, p = 0.07)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "SLCO1B1*1a, SLCO1B1*1b, SLCO1B1*5, SLCO1B1*15",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "rs2306283",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 5,
+              "Variant/Haplotypes": "rs2306283",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "In the subgroup receiving simvastatin 10 mg/day, AG+GG carriers had significantly higher steady-state plasma simvastatin acid levels than AA (3.63 vs 1.59 ng/mL, p=0.04).",
+              "Sentence": "Genotypes AG + GG are associated with increased steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease receiving simvastatin 10 mg/day as compared to genotype AA.",
+              "Alleles": "AG + GG",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "AA",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Additionally, *SLCO1B1* rs2306283 was associated with significantly higher SVA levels in patients carrying the G allele (AG+GG genotype) at the same dose (3.63 vs. 1.59 ng/mL, *p* = 0.04).",
+                "However, dose\u2010specific analysis revealed significantly higher SVA levels in G allele carriers (AG+GG) at 10 mg/day (3.63 vs. 1.59 ng/mL, *p* = 0.04).",
+                "The results showed that patients with the *SLCO1B1* c.521T>C (rs4149056) TC+CC genotype exhibited higher steady\u2010state plasma levels of simvastatin acid (SVA) compared to TT carriers at a dose of 10 mg/day (5.83 vs. 1.95 ng/mL, *p* = 0.06). Additionally, *SLCO1B1* rs2306283 was associated with significantly higher SVA levels in patients carrying the G allele (AG+GG genotype) at the same dose (3.63 vs. 1.59 ng/mL, *p* = 0.04)."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs2306283",
+                "variant_id": "PA166154547",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              }
+            }
+          },
+          {
+            "variant": "rs1045642",
+            "gene": "ABCB1",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 6,
+              "Variant/Haplotypes": "rs1045642",
+              "Gene": "ABCB1",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "ABCB1 rs1045642 CC vs CT+TT showed no significant difference in SVA Css/Dose (0.19 vs 0.25 ng/mL, p=1.00).",
+              "Sentence": "Genotypes CT + TT are not associated with steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Among 10 SNPs from seven genes in the pharmacokinetic pathway of statins, patients with the SLCO1B1 c.521TC+CC genotype had a significantly higher SVA compared to those with the c.521TT genotype (0.53 vs. 0.19 ng/mL, respectively) with a p value of 0.03 (Table [3](#cts70225-tbl-0003), Figure [1B](#cts70225-fig-0001)). \u2026 No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+                "Table 3 Caption: Impacts of PK gene polymorphisms on 12\u2010h simvastatin plasma concentrations (n = 89).\n\n| Gene | rs number | Alleles | Genotype | N (%) | Median Css/Dose (ng/mL) |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| SVL | p | SVA | p |  |  |  |  |  |\n| Efflux transporters |  |  |  |  |  |  |  |  |\n| ABCB1 | rs1045642 | 3435C>T | CC | 29 (32.58) | 0.02 (0.01\u20130.04) | 0.70 | 0.19 (0.13\u20130.45) | 1.00 |\n| CT+TT | 60 (67.42) | 0.02 (0.01\u20130.03) | 0.25 (0.12\u20130.44) |  |  |  |  |  |",
+                "Among pharmacokinetic gene polymorphisms affecting statin metabolism, SLCO1B1 c.521T>C and *1b/*15 diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function. In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1045642",
+                "variant_id": "PA166157284",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              }
+            }
+          },
+          {
+            "variant": "rs1045642",
+            "gene": "ABCB1",
+            "drug": "simvastatin lactone",
+            "annotation": {
+              "Variant Annotation ID": 7,
+              "Variant/Haplotypes": "rs1045642",
+              "Gene": "ABCB1",
+              "Drug(s)": "simvastatin lactone",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "ABCB1 rs1045642 CC vs CT+TT showed no significant difference in SVL Css/Dose (both medians 0.02 ng/mL, p=0.70).",
+              "Sentence": "Genotypes CT + TT are not associated with steady-state plasma concentrations of simvastatin lactone in patients with dyslipidemia or coronary artery disease as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Among pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function. In contrast, other SNPs, including *ABCB1* (rs1045642), *ABCC2* (rs717620, rs3740066), *ABCG2* (rs2231142), *SLCO1B3* (rs7311158, rs4149117), *CYP3A4***1G* (rs2242480), and *CYP3A5***3* (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+                "Table 3. Impacts of PK gene polymorphisms on 12\u2010h simvastatin plasma concentrations (n = 89).\n\n| Gene | rs number | Alleles | Genotype | N (%) | Median Css/Dose (ng/mL) |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| SVL | p | SVA | p |  |  |  |  |  |\n| Efflux transporters |  |  |  |  |  |  |  |  |\n| ABCB1 | rs1045642 | 3435C>T | CC | 29 (32.58) | 0.02 (0.01\u20130.04) | 0.70 | 0.19 (0.13\u20130.45) | 1.00 |\n| CT+TT | 60 (67.42) | 0.02 (0.01\u20130.03) | 0.25 (0.12\u20130.44) |  |  |  |  |  |",
+                "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1045642",
+                "variant_id": "PA166157284",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "lovastatin",
+                "drug_id": "PA450272",
+                "confidence": 0.8648648648648649
+              }
+            }
+          },
+          {
+            "variant": "rs717620",
+            "gene": "ABCC2",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 8,
+              "Variant/Haplotypes": "rs717620",
+              "Gene": "ABCC2",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "ABCC2 rs717620 CC vs CT+TT showed no significant difference in SVA Css/Dose (0.22 vs 0.20 ng/mL, p=0.67).",
+              "Sentence": "Genotypes CT + TT are not associated with steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cABCC2 | rs717620 | \u221224C>T | CC | 55 (61.79) | 0.02 (0.01\u20130.03) | 0.45 | 0.22 (0.13\u20130.48) | 0.67 |\n| CT+TT | 34 (38.21) | 0.02 (0.01\u20130.03) | 0.20 (0.12\u20130.42) |  |  |  |  |  |\u201d",
+                "\u201cAmong pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function. In contrast, other SNPs, including *ABCB1* (rs1045642), *ABCC2* (rs717620, rs3740066), *ABCG2* (rs2231142), *SLCO1B3* (rs7311158, rs4149117), *CYP3A4***1G* (rs2242480), and *CYP3A5***3* (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs717620",
+                "variant_id": "PA166153953",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              }
+            }
+          },
+          {
+            "variant": "rs717620",
+            "gene": "ABCC2",
+            "drug": "simvastatin lactone",
+            "annotation": {
+              "Variant Annotation ID": 9,
+              "Variant/Haplotypes": "rs717620",
+              "Gene": "ABCC2",
+              "Drug(s)": "simvastatin lactone",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "ABCC2 rs717620 CC vs CT+TT showed no significant difference in SVL Css/Dose (both medians 0.02 ng/mL, p=0.45).",
+              "Sentence": "Genotypes CT + TT are not associated with steady-state plasma concentrations of simvastatin lactone in patients with dyslipidemia or coronary artery disease as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Among pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function. In contrast, other SNPs, including *ABCB1* (rs1045642), *ABCC2* (rs717620, rs3740066), *ABCG2* (rs2231142), *SLCO1B3* (rs7311158, rs4149117), *CYP3A4***1G* (rs2242480), and *CYP3A5***3* (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+                "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+                "ABCC2 | rs717620 | \u221224C>T | CC | 55 (61.79) | 0.02 (0.01\u20130.03) | 0.45 | 0.22 (0.13\u20130.48) | 0.67 |\n| CT+TT | 34 (38.21) | 0.02 (0.01\u20130.03) | 0.20 (0.12\u20130.42) |  |  |  |  |  |"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs717620",
+                "variant_id": "PA166153953",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "lovastatin",
+                "drug_id": "PA450272",
+                "confidence": 0.8648648648648649
+              }
+            }
+          },
+          {
+            "variant": "rs3740066",
+            "gene": "ABCC2",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 10,
+              "Variant/Haplotypes": "rs3740066",
+              "Gene": "ABCC2",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "ABCC2 rs3740066 CC vs CT+TT showed no significant difference in SVA Css/Dose (0.21 vs 0.19 ng/mL, p=0.84).",
+              "Sentence": "Genotypes CT + TT are not associated with steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "ABCC2 rs3740066 3971C>T  CC  49 (55.05)  0.02 (0.01\u20130.03)  0.96  0.21 (0.12\u20130.49)  0.84 \nCT+TT  40 (44.95)  0.02 (0.01\u20130.03)  0.19 (0.12\u20130.44)",
+                "Among pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function. In contrast, other SNPs, including *ABCB1* (rs1045642), *ABCC2* (rs717620, rs3740066), *ABCG2* (rs2231142), *SLCO1B3* (rs7311158, rs4149117), *CYP3A4***1G* (rs2242480), and *CYP3A5***3* (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs3740066",
+                "variant_id": "PA166154028",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              }
+            }
+          },
+          {
+            "variant": "rs3740066",
+            "gene": "ABCC2",
+            "drug": "simvastatin lactone",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "rs3740066",
+              "Gene": "ABCC2",
+              "Drug(s)": "simvastatin lactone",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "ABCC2 rs3740066 CC vs CT+TT showed no significant difference in SVL Css/Dose (0.02 vs 0.02 ng/mL, p=0.96).",
+              "Sentence": "Genotypes CT + TT are not associated with steady-state plasma concentrations of simvastatin lactone in patients with dyslipidemia or coronary artery disease as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "ABCC2 rs3740066 3971C>T CC 49 (55.05) 0.02 (0.01\u20130.03) 0.96 0.21 (0.12\u20130.49) 0.84\nCT+TT 40 (44.95) 0.02 (0.01\u20130.03) 0.19 (0.12\u20130.44)",
+                "\"No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.\"",
+                "\"In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs3740066",
+                "variant_id": "PA166154028",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "lovastatin",
+                "drug_id": "PA450272",
+                "confidence": 0.8648648648648649
+              }
+            }
+          },
+          {
+            "variant": "rs2231142",
+            "gene": "ABCG2",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 12,
+              "Variant/Haplotypes": "rs2231142",
+              "Gene": "ABCG2",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "ABCG2 rs2231142 CC vs CA+AA showed no significant difference in SVA Css/Dose (0.26 vs 0.18 ng/mL, p=0.11).",
+              "Sentence": "Genotypes CA + AA are not associated with steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to genotype CC.",
+              "Alleles": "CA + AA",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cABCG2 | rs2231142 | 421C>A | CC | 49 (55.05) | 0.02 (0.01\u20130.03) | 0.54 | 0.26 (0.15\u20130.52) | 0.11 |\n| CA+AA | 40 (44.95) | 0.02 (0.01\u20130.03) | 0.18 (0.10\u20130.34) |  |  |  |  |  |\u201d",
+                "\u201cNo significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs2231142",
+                "variant_id": "PA166156544",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              }
+            }
+          },
+          {
+            "variant": "rs2231142",
+            "gene": "ABCG2",
+            "drug": "simvastatin lactone",
+            "annotation": {
+              "Variant Annotation ID": 13,
+              "Variant/Haplotypes": "rs2231142",
+              "Gene": "ABCG2",
+              "Drug(s)": "simvastatin lactone",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "ABCG2 rs2231142 CC vs CA+AA showed no significant difference in SVL Css/Dose (0.02 vs 0.02 ng/mL, p=0.54).",
+              "Sentence": "Genotypes CA + AA are not associated with steady-state plasma concentrations of simvastatin lactone in patients with dyslipidemia or coronary artery disease as compared to genotype CC.",
+              "Alleles": "CA + AA",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"ABCG2 | rs2231142 | 421C>A | CC | 49 (55.05) | 0.02 (0.01\u20130.03) | 0.54 | 0.26 (0.15\u20130.52) | 0.11 |\n| CA+AA | 40 (44.95) | 0.02 (0.01\u20130.03) | 0.18 (0.10\u20130.34) |  |  |  |  |  |\"\n",
+                "\"No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs2231142",
+                "variant_id": "PA166156544",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "lovastatin",
+                "drug_id": "PA450272",
+                "confidence": 0.8648648648648649
+              }
+            }
+          },
+          {
+            "variant": "rs7311158",
+            "gene": "SLCO1B3",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 14,
+              "Variant/Haplotypes": "rs7311158",
+              "Gene": "SLCO1B3",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "SLCO1B3 rs7311158 GG+GA vs AA showed no significant difference in SVA Css/Dose (0.19 vs 0.22 ng/mL, p=0.86).",
+              "Sentence": "Genotypes GG + GA are not associated with steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to genotype AA.",
+              "Alleles": "GG + GA",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "AA",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cSLCO1B3 | rs7311158 | 699G>A | GG+GA | 44 (49.44) | 0.02 (0.01\u20130.03) | 0.46 | 0.19 (0.11\u20130.46) | 0.86 |\n| AA | 45 (50.56) | 0.02 (0.01\u20130.04) | 0.22 (0.13\u20130.40) |  |  |  |  |  |\u201d",
+                "\u201cIn contrast, other SNPs, including *ABCB1* (rs1045642), *ABCC2* (rs717620, rs3740066), *ABCG2* (rs2231142), *SLCO1B3* (rs7311158, rs4149117), *CYP3A4**1G* (rs2242480), and *CYP3A5**3* (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs7311358",
+                "variant_id": "PA166154602",
+                "confidence": 0.8888888888888888
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              }
+            }
+          },
+          {
+            "variant": "rs7311158",
+            "gene": "SLCO1B3",
+            "drug": "simvastatin lactone",
+            "annotation": {
+              "Variant Annotation ID": 15,
+              "Variant/Haplotypes": "rs7311158",
+              "Gene": "SLCO1B3",
+              "Drug(s)": "simvastatin lactone",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "SLCO1B3 rs7311158 GG+GA vs AA showed no significant difference in SVL Css/Dose (0.02 vs 0.02 ng/mL, p=0.46).",
+              "Sentence": "Genotypes GG + GA are not associated with steady-state plasma concentrations of simvastatin lactone in patients with dyslipidemia or coronary artery disease as compared to genotype AA.",
+              "Alleles": "GG + GA",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "AA",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cSLCO1B3 | rs7311158 | 699G>A | GG+GA | 44 (49.44) | 0.02 (0.01\u20130.03) | 0.46 | 0.19 (0.11\u20130.46) | 0.86 |\n| AA | 45 (50.56) | 0.02 (0.01\u20130.04) | 0.22 (0.13\u20130.40) |  |  |  |  |  |\u201d",
+                "\u201cNo significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs7311358",
+                "variant_id": "PA166154602",
+                "confidence": 0.8888888888888888
+              },
+              "Drug(s)_normalized": {
+                "normalized": "lovastatin",
+                "drug_id": "PA450272",
+                "confidence": 0.8648648648648649
+              }
+            }
+          },
+          {
+            "variant": "rs4149117",
+            "gene": "SLCO1B3",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 16,
+              "Variant/Haplotypes": "rs4149117",
+              "Gene": "SLCO1B3",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "SLCO1B3 rs4149117 TT+TG vs GG showed no significant difference in SVA Css/Dose (0.19 vs 0.21 ng/mL, p=0.94).",
+              "Sentence": "Genotypes TT + TG are not associated with steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to genotype GG.",
+              "Alleles": "TT + TG",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "GG",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cSLCO1B3 | rs4149117 | 334T>G | TT+TG | 37 (41.57) | 0.02 (0.01\u20130.03) | 0.21 | 0.19 (0.07\u20130.45) | 0.94 |\n| GG | 52 (58.43) | 0.02 (0.01\u20130.04) | 0.21 (0.13\u20130.43) |  |  |  |  |  |\u201d",
+                "\u201cIn contrast, other SNPs, including *ABCB1* (rs1045642), *ABCC2* (rs717620, rs3740066), *ABCG2* (rs2231142), *SLCO1B3* (rs7311158, rs4149117), *CYP3A4***1G* (rs2242480), and *CYP3A5***3* (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs4149117",
+                "variant_id": "PA166154583",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              }
+            }
+          },
+          {
+            "variant": "rs4149117",
+            "gene": "SLCO1B3",
+            "drug": "simvastatin lactone",
+            "annotation": {
+              "Variant Annotation ID": 17,
+              "Variant/Haplotypes": "rs4149117",
+              "Gene": "SLCO1B3",
+              "Drug(s)": "simvastatin lactone",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "SLCO1B3 rs4149117 TT+TG vs GG showed no significant difference in SVL Css/Dose (0.02 vs 0.02 ng/mL, p=0.21).",
+              "Sentence": "Genotypes TT + TG are not associated with steady-state plasma concentrations of simvastatin lactone in patients with dyslipidemia or coronary artery disease as compared to genotype GG.",
+              "Alleles": "TT + TG",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "GG",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"SLCO1B3 | rs4149117 | 334T>G | TT+TG | 37 (41.57) | 0.02 (0.01\u20130.03) | 0.21 | 0.19 (0.07\u20130.45) | 0.94 |\n| GG | 52 (58.43) | 0.02 (0.01\u20130.04) | 0.21 (0.13\u20130.43) |  |  |  |  |  |\"\n",
+                "\"No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs4149117",
+                "variant_id": "PA166154583",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "lovastatin",
+                "drug_id": "PA450272",
+                "confidence": 0.8648648648648649
+              }
+            }
+          },
+          {
+            "variant": "rs2242480",
+            "gene": "CYP3A4",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 18,
+              "Variant/Haplotypes": "rs2242480",
+              "Gene": "CYP3A4",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "CYP3A4 rs2242480 GG vs GA+AA showed no significant difference in SVA Css/Dose (0.23 vs 0.19 ng/mL, p=0.16).",
+              "Sentence": "Genotypes GA + AA are not associated with steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to genotype GG.",
+              "Alleles": "GA + AA",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "GG",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"Drug\u2010metabolizing enzymes  \nCYP3A4*1G rs2242480 20230G>A GG 43 (48.31) 0.02 (0.01\u20130.04) 0.92 0.23 (0.15\u20130.53) 0.16  \nGA+AA 46 (51.69) 0.02 (0.01\u20130.03) 0.19 (0.07\u20130.41)\" (Table 3: Impacts of PK gene polymorphisms on 12\u2010h simvastatin plasma concentrations).",
+                "\"In contrast, other SNPs, including *ABCB1* (rs1045642), *ABCC2* (rs717620, rs3740066), *ABCG2* (rs2231142), *SLCO1B3* (rs7311158, rs4149117), *CYP3A4**1G* (rs2242480), and *CYP3A5**3* (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.\"",
+                "\"No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs2242480",
+                "variant_id": "PA166157345",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              }
+            }
+          },
+          {
+            "variant": "rs2242480",
+            "gene": "CYP3A4",
+            "drug": "simvastatin lactone",
+            "annotation": {
+              "Variant Annotation ID": 19,
+              "Variant/Haplotypes": "rs2242480",
+              "Gene": "CYP3A4",
+              "Drug(s)": "simvastatin lactone",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "CYP3A4 rs2242480 GG vs GA+AA showed no significant difference in SVL Css/Dose (0.02 vs 0.02 ng/mL, p=0.92).",
+              "Sentence": "Genotypes GA + AA are not associated with steady-state plasma concentrations of simvastatin lactone in patients with dyslipidemia or coronary artery disease as compared to genotype GG.",
+              "Alleles": "GA + AA",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "GG",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Drug\u2010metabolizing enzymes\nCYP3A4*1G rs2242480 20230G>A GG 43 (48.31) 0.02 (0.01\u20130.04) 0.92 0.23 (0.15\u20130.53) 0.16\nGA+AA 46 (51.69) 0.02 (0.01\u20130.03) 0.19 (0.07\u20130.41)",
+                "Among pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function. In contrast, other SNPs, including *ABCB1* (rs1045642), *ABCC2* (rs717620, rs3740066), *ABCG2* (rs2231142), *SLCO1B3* (rs7311158, rs4149117), *CYP3A4***1G* (rs2242480), and *CYP3A5***3* (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+                "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs2242480",
+                "variant_id": "PA166157345",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "lovastatin",
+                "drug_id": "PA450272",
+                "confidence": 0.8648648648648649
+              }
+            }
+          },
+          {
+            "variant": "rs776746",
+            "gene": "CYP3A5",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 20,
+              "Variant/Haplotypes": "rs776746",
+              "Gene": "CYP3A5",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "CYP3A5 rs776746 AA vs AG+GG showed no significant difference in SVA Css/Dose (0.17 vs 0.22 ng/mL, p=0.23).",
+              "Sentence": "Genotypes AG + GG are not associated with steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease as compared to genotype AA.",
+              "Alleles": "AG + GG",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "AA",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Among pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function. **In contrast, other SNPs, including *ABCB1* (rs1045642), *ABCC2* (rs717620, rs3740066), *ABCG2* (rs2231142), *SLCO1B3* (rs7311158, rs4149117), *CYP3A4***1G* (rs2242480), and *CYP3A5***3* (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.**",
+                "Drug\u2010metabolizing enzymes\n\n| CYP3A5*3 | rs776746 | 6986A>G | AA | 14 (15.73) | 0.02 (0.01\u20130.03) | 0.65 | **0.17 (0.05\u20130.44)** | **0.23** |\n| AG+GG | 75 (84.27) | 0.02 (0.01\u20130.04) | **0.22\u20130.13\u20100.45)** |  |  |  |  |  |",
+                "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs776746",
+                "variant_id": "PA166157267",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              }
+            }
+          },
+          {
+            "variant": "rs776746",
+            "gene": "CYP3A5",
+            "drug": "simvastatin lactone",
+            "annotation": {
+              "Variant Annotation ID": 21,
+              "Variant/Haplotypes": "rs776746",
+              "Gene": "CYP3A5",
+              "Drug(s)": "simvastatin lactone",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "CYP3A5 rs776746 AA vs AG+GG showed no significant difference in SVL Css/Dose (0.02 vs 0.02 ng/mL, p=0.65).",
+              "Sentence": "Genotypes AG + GG are not associated with steady-state plasma concentrations of simvastatin lactone in patients with dyslipidemia or coronary artery disease as compared to genotype AA.",
+              "Alleles": "AG + GG",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "AA",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Among pharmacokinetic gene polymorphisms affecting statin metabolism, *SLCO1B1* c.521T>C and **1b/***15* diplotype were significantly associated with increased steady\u2010state plasma concentrations of simvastatin acid, reflecting reduced OATP1B1 function. In contrast, other SNPs, including *ABCB1* (rs1045642), *ABCC2* (rs717620, rs3740066), *ABCG2* (rs2231142), *SLCO1B3* (rs7311158, rs4149117), *CYP3A4***1G* (rs2242480), and *CYP3A5***3* (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+                "CYP3A5*3 | rs776746 | 6986A>G | AA | 14 (15.73) | 0.02 (0.01\u20130.03) | 0.65 | 0.17 (0.05\u20130.44) | 0.23 |\n| AG+GG | 75 (84.27) | 0.02 (0.01\u20130.04) | 0.22\u20130.13\u20100.45) |  |  |  |  |  |",
+                "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs776746",
+                "variant_id": "PA166157267",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "lovastatin",
+                "drug_id": "PA450272",
+                "confidence": 0.8648648648648649
+              }
+            }
+          },
+          {
+            "variant": "rs4149056",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin hydroxy acid",
+            "annotation": {
+              "Variant Annotation ID": 22,
+              "Variant/Haplotypes": "rs4149056",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin hydroxy acid",
+              "PMID": 40297930,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "In the 10 mg/day simvastatin subgroup, SLCO1B1 rs4149056 TC+CC carriers had higher SVA levels than TT (5.83 vs 1.95 ng/mL, p=0.06), which did not reach p<0.05.",
+              "Sentence": "Genotypes TC + CC are not associated with significantly increased steady-state plasma concentrations of simvastatin hydroxy acid in patients with dyslipidemia or coronary artery disease receiving simvastatin 10 mg/day as compared to genotype TT.",
+              "Alleles": "TC + CC",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "steady-state plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:dyslipidemia, Disease:coronary artery disease",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"The influence of different simvastatin doses on plasma SVL and SVA levels was evaluated (Tables S2 and S3). The results showed that patients with the SLCO1B1 c.521T>C (rs4149056) TC+CC genotype exhibited higher steady\u2010state plasma levels of simvastatin acid (SVA) compared to TT carriers at a dose of 10 mg/day (5.83 vs. 1.95 ng/mL, p = 0.06).\"",
+                "\"Among 10 SNPs from seven genes in the pharmacokinetic pathway of statins, patients with the SLCO1B1 c.521TC+CC genotype had a significantly higher SVA compared to those with the c.521TT genotype (0.53 vs. 0.19 ng/mL, respectively) with a p value of 0.03 (Table 3, Figure 1B).\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs4149056",
+                "variant_id": "PA166154579",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "hetacillin",
+                "drug_id": "PA164746559",
+                "confidence": 0.9090909090909091
+              }
             }
           }
         ]
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 19,
-        "fields": {
-          "Variant/Haplotypes": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Gene": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "PMID": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Phenotype Category": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Significance": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Alleles": {
-            "mean_score": 0.46971458196640015,
-            "scores": [
-              0.9394291639328003,
-              0.0
-            ]
-          },
-          "Specialty Population": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Metabolizer types": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "isPlural": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Is/Is Not associated": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Direction of effect": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "PD/PK terms": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Multiple drugs And/or": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Population types": {
-            "mean_score": 0.4433504343032837,
-            "scores": [
-              0.8867008686065674,
-              0.0
-            ]
-          },
-          "Population Phenotypes or diseases": {
-            "mean_score": 0.45727601647377014,
-            "scores": [
-              0.9145520329475403,
-              0.0
-            ]
-          },
-          "Multiple phenotypes or diseases And/or": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Comparison Allele(s) or Genotype(s)": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Comparison Metabolizer types": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Drug(s)": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          }
-        }
       }
     },
     "phenotype_annotations": {
@@ -441,11 +1454,6 @@
       "extra_predictions": {
         "count": 0,
         "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
       }
     },
     "functional_analysis": {
@@ -460,15 +1468,10 @@
       "extra_predictions": {
         "count": 0,
         "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
       }
     },
     "study_parameters": {
-      "score": 0.7753448605537414,
+      "score": 0.8434708038965861,
       "total_samples": 2,
       "ground_truth_annotations": {
         "count": 2,
@@ -477,7 +1480,7 @@
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.7005138256970573,
+            "overall_match_score": 0.75881128802019,
             "annotation": {
               "Study Parameters ID": 1454052280,
               "Variant Annotation ID": 1454052260,
@@ -500,7 +1503,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1454052280,
-                "prediction": null,
+                "prediction": 5,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -530,13 +1533,13 @@
               },
               "Characteristics": {
                 "ground_truth": "12h simvastatin acid concentrations",
-                "prediction": "Thai patients with dyslipidemia or coronary artery disease on simvastatin treatment for at least 2 weeks",
-                "score": 0.9087350368499756,
+                "prediction": "Thai simvastatin-treated patients; SLCO1B1 rs4149056 521T>C, TT vs TC+CC genotypes, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+                "score": 0.8997918963432312,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
-                "prediction": "study cohort",
+                "prediction": "Study Cohort",
                 "score": 1.0,
                 "match_status": "match"
               },
@@ -572,7 +1575,7 @@
               },
               "Ratio Stat Type": {
                 "ground_truth": null,
-                "prediction": "HR",
+                "prediction": "Unknown",
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -596,15 +1599,15 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "East Asian",
-                "prediction": "Asian",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "East Asian",
+                "score": 1.0,
+                "match_status": "match"
               }
             }
           },
           {
             "matched": true,
-            "overall_match_score": 0.6677418105742511,
+            "overall_match_score": 0.7296666012090796,
             "annotation": {
               "Study Parameters ID": 1454052320,
               "Variant Annotation ID": 1454052282,
@@ -627,7 +1630,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1454052320,
-                "prediction": null,
+                "prediction": 9,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -657,13 +1660,13 @@
               },
               "Characteristics": {
                 "ground_truth": "12h simvastatin acid concentrations",
-                "prediction": "Patients with SLCO1B1 c.521TC+CC genotype",
-                "score": 0.8516107797622681,
+                "prediction": "Thai simvastatin-treated patients; CYP3A4*1G rs2242480 20230G>A, GG vs GA+AA genotypes, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+                "score": 0.9043322205543518,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
-                "prediction": "study cohort",
+                "prediction": "Study Cohort",
                 "score": 1.0,
                 "match_status": "match"
               },
@@ -693,7 +1696,7 @@
               },
               "P Value": {
                 "ground_truth": "= 0.04",
-                "prediction": "= 0.07",
+                "prediction": "= 0.16",
                 "score": 0.5,
                 "match_status": "partial_match"
               },
@@ -723,70 +1726,393 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "East Asian",
-                "prediction": "Asian",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "East Asian",
+                "score": 1.0,
+                "match_status": "match"
               }
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 1,
+        "count": 15,
         "items": [
           {
             "variant": "N/A",
             "gene": "N/A",
             "drug": "N/A",
             "annotation": {
-              "Study Parameters ID": null,
+              "Study Parameters ID": 1,
               "Variant Annotation ID": null,
               "Study Type": "cohort",
               "Study Cases": 89,
               "Study Controls": null,
-              "Characteristics": "Patients with SLCO1B1*1b/*15 genotype",
-              "Characteristics Type": "study cohort",
+              "Characteristics": "Thai simvastatin-treated patients; ABCB1 rs1045642 3435C>T, CC vs CT+TT genotypes, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 1.00",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 2,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; ABCC2 rs717620 \u221224C>T, CC vs CT+TT genotypes, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.67",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 3,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; ABCC2 rs3740066 3971C>T, CC vs CT+TT genotypes, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.84",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 4,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; ABCG2 rs2231142 421C>A, CC vs CA+AA genotypes, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.11",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 6,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; SLCO1B1 rs2306283 388A>G, AA vs AG+GG genotypes, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.13",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 7,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; SLCO1B3 rs7311158 699G>A, GG+GA vs AA genotypes, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.86",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 8,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; SLCO1B3 rs4149117 334T>G, TT+TG vs GG genotypes, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.94",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 10,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; CYP3A5*3 rs776746 6986A>G, AA vs AG+GG genotypes, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.23",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 11,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; SLCO1B1 diplotype *1a/*1a (reference) vs *1a/*1b, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.10",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 12,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; SLCO1B1 diplotype *1a/*1a (reference) vs *1b/*1b, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.37",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 13,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; SLCO1B1 diplotype *1a/*1a (reference) vs *1b/*5, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.57",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 14,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; SLCO1B1 diplotype *1a/*1a (reference) vs *1b/*15, comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
               "Allele Of Frequency In Controls": null,
               "P Value": "< 0.001",
-              "Ratio Stat Type": "HR",
+              "Ratio Stat Type": "Unknown",
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Asian",
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 15,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients; OATP1B1 function groups (SLCO1B1 normal function *1a/*1a, *1a/*1b, *1b/*1b) vs decreased function (*1b/*5, *1b/*15), comparison of steady-state simvastatin acid (SVA) Css/Dose",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.07",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 16,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients receiving 10 mg/day; SLCO1B1 rs4149056 521T>C, TT vs TC+CC genotypes, comparison of steady-state simvastatin acid (SVA) concentration at 12 h post-dose",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.06",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 17,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Thai simvastatin-treated patients receiving 10 mg/day; SLCO1B1 rs2306283 388A>G, AA vs AG+GG genotypes, comparison of steady-state simvastatin acid (SVA) concentration at 12 h post-dose",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.04",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
               "Variant Annotation ID_norm": null
             }
           }
         ]
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 3,
-        "fields": {
-          "Study Type": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Ratio Stat Type": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Biogeographical Groups": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          }
-        }
       }
     }
   }

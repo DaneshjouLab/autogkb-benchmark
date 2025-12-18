@@ -2,7 +2,7 @@
   "pmcid": "PMC2859392",
   "pmid": "20338069",
   "title": "Effects of CYP2B6 G516T polymorphisms on plasma efavirenz and nevirapine levels when co-administered with rifampicin in HIV/TB co-infected Thai adults",
-  "overall_score": 0.13763124267260235,
+  "overall_score": 0.13934486309687297,
   "num_benchmarks": 4,
   "benchmarks": {
     "drug_annotations": {
@@ -74,77 +74,541 @@
         ]
       },
       "extra_predictions": {
-        "count": 2,
+        "count": 12,
         "items": [
           {
-            "variant": "CYP2B6-G516T",
+            "variant": "CYP2B6",
             "gene": "CYP2B6",
-            "drug": "efavirenz, nevirapine",
+            "drug": "efavirenz",
             "annotation": {
-              "Variant/Haplotypes": "CYP2B6-G516T",
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "CYP2B6",
               "Gene": "CYP2B6",
-              "Drug(s)": "efavirenz, nevirapine",
+              "Drug(s)": "efavirenz",
+              "PMID": 20338069,
               "Phenotype Category": "metabolism/PK",
               "Significance": "yes",
-              "Notes": "Patients with TT genotype had significantly higher plasma efavirenz concentrations compared to GT and GG genotypes (p < 0.0001).",
-              "Sentence": "Genotype TT is associated with increased plasma efavirenz concentrations in HIV/TB co-infected Thai adults.",
+              "Notes": "In 65 HIV/TB adults on efavirenz plus rifampicin, mean 12-hour post-dose plasma efavirenz concentrations at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 10.97 \u00b1 2.32, 13.62 \u00b1 4.21 and 8.48 \u00b1 1.30 mg/L in TT patients, 3.43 \u00b1 0.29, 3.35 \u00b1 0.27 and 3.21 \u00b1 0.22 mg/L in GT patients, and 2.88 \u00b1 0.33, 2.45 \u00b1 0.26 and 2.08 \u00b1 0.16 mg/L in GG patients; TT vs GT or GG p < 0.0001 at all three time points.",
+              "Sentence": "Genotype TT is associated with increased 12-hour post-dose plasma efavirenz concentration in patients with HIV infectious disease and Tuberculosis as compared to genotypes GG + GT.",
               "Alleles": "TT",
-              "Metabolizer types": "poor metabolizer",
-              "Comparison Allele(s) or Genotype(s)": "GT, GG",
-              "Comparison Metabolizer types": "intermediate metabolizer",
-              "Specialty Population": "",
-              "Population types": "in people with HIV/TB co-infection",
-              "Population Phenotypes or diseases": "Disease:HIV/TB co-infection",
+              "Specialty Population": null,
+              "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "concentrations of",
-              "Multiple drugs And/or": "",
-              "Multiple phenotypes or diseases And/or": "",
+              "PD/PK terms": "12-hour post-dose plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG + GT",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "The mean 12-hour post-dose plasma efavirenz concentration in patients with TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (10.97 \u00b1 2.32, 13.62 \u00b1 4.21 and 8.48 \u00b1 1.30 mg/L, respectively) were significantly higher than those with GT (3.43 \u00b1 0.29, 3.35 \u00b1 0.27 and 3.21 \u00b1 0.22 mg/L, respectively) (p < 0.0001) or GG genotypes (2.88 \u00b1 0.33, 2.45 \u00b1 0.26 and 2.08 \u00b1 0.16 mg/L, respectively) (p < 0.0001).",
-                "This is the first report to demonstrate the effects of CYP2B6 G516T polymorphisms on plasma efavirenz and nevirapine concentrations when co-administered with rifampicin in HIV/TB co-infected Thai adults."
-              ]
+                "\"The mean 12-hour post-dose plasma efavirenz concentration in patients with TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (10.97 \u00b1 2.32, 13.62 \u00b1 4.21 and 8.48 \u00b1 1.30 mg/L, respectively) were significantly higher than those with GT (3.43 \u00b1 0.29, 3.35 \u00b1 0.27 and 3.21 \u00b1 0.22 mg/L, respectively) (p < 0.0001) or GG genotypes (2.88 \u00b1 0.33, 2.45 \u00b1 0.26 and 2.08 \u00b1 0.16 mg/L, respectively) (p < 0.0001).\"",
+                "\"The results indicated that the wide interindividual variability of efavirenz concentrations is strongly influenced by CYP2B6-516TT genotype by the finding of significantly higher plasma efavirenz concentration at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation compared to those with GT or GG genotype.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs28399499",
+                "variant_id": "PA166155478",
+                "confidence": 0.8
+              },
+              "Drug(s)_normalized": {
+                "normalized": "efavirenz",
+                "drug_id": "PA449441",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
             }
           },
           {
-            "variant": "CYP2B6-G516T",
+            "variant": "G516T",
             "gene": "CYP2B6",
-            "drug": "efavirenz, nevirapine",
+            "drug": "efavirenz",
             "annotation": {
-              "Variant/Haplotypes": "CYP2B6-G516T",
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "G516T",
               "Gene": "CYP2B6",
-              "Drug(s)": "efavirenz, nevirapine",
+              "Drug(s)": "efavirenz",
+              "PMID": 20338069,
               "Phenotype Category": "metabolism/PK",
               "Significance": "yes",
-              "Notes": "Plasma efavirenz concentrations were higher in patients with the TT genotype at all time points measured (weeks 6 and 12) compared to GT and GG genotypes.",
-              "Sentence": "Genotype TT is associated with increased plasma nevirapine concentrations in HIV/TB co-infected Thai adults.",
+              "Notes": "In 65 HIV/TB adults on efavirenz plus rifampicin, mean 12-hour post-dose plasma efavirenz concentrations at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 10.97 \u00b1 2.32, 13.62 \u00b1 4.21 and 8.48 \u00b1 1.30 mg/L in TT patients, 3.43 \u00b1 0.29, 3.35 \u00b1 0.27 and 3.21 \u00b1 0.22 mg/L in GT patients, and 2.88 \u00b1 0.33, 2.45 \u00b1 0.26 and 2.08 \u00b1 0.16 mg/L in GG patients; TT vs GT or GG p < 0.0001 at all three time points.",
+              "Sentence": "Genotype TT is associated with increased 12-hour post-dose plasma efavirenz concentration in patients with HIV infectious disease and Tuberculosis as compared to genotypes GG + GT.",
               "Alleles": "TT",
-              "Metabolizer types": "poor metabolizer",
-              "Comparison Allele(s) or Genotype(s)": "GT, GG",
-              "Comparison Metabolizer types": "intermediate metabolizer",
-              "Specialty Population": "",
-              "Population types": "in people with HIV/TB co-infection",
-              "Population Phenotypes or diseases": "Disease:HIV/TB co-infection",
+              "Specialty Population": null,
+              "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "concentrations of",
-              "Multiple drugs And/or": "",
-              "Multiple phenotypes or diseases And/or": "",
+              "PD/PK terms": "12-hour post-dose plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG + GT",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "The mean 12-hour post-dose plasma efavirenz concentration in patients with TT genotype at weeks 6 and 12 of ART... were significantly higher than those with GT... or GG genotypes (p < 0.0001).",
-                "Likewise, the mean 12-hour post-dose plasma nevirapine concentration in patients carrying TT genotype at weeks 6 and 12 of ART... tended to be higher than those carrying GT... or GG genotypes (p = 0.003).",
-                "This is the first report to demonstrate the effects of CYP2B6 G516T polymorphisms on plasma efavirenz and nevirapine concentrations when co-administered with rifampicin in HIV/TB co-infected Thai adults."
-              ]
+                "\"The mean 12-hour post-dose plasma efavirenz concentration in patients with TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (10.97 \u00b1 2.32, 13.62 \u00b1 4.21 and 8.48 \u00b1 1.30 mg/L, respectively) were significantly higher than those with GT (3.43 \u00b1 0.29, 3.35 \u00b1 0.27 and 3.21 \u00b1 0.22 mg/L, respectively) (p < 0.0001) or GG genotypes (2.88 \u00b1 0.33, 2.45 \u00b1 0.26 and 2.08 \u00b1 0.16 mg/L, respectively) (p < 0.0001).\"",
+                "\"The results indicated that the wide interindividual variability of efavirenz concentrations is strongly influenced by CYP2B6-516TT genotype by the finding of significantly higher plasma efavirenz concentration at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation compared to those with GT or GG genotype.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs28399499",
+                "variant_id": "PA166155478",
+                "confidence": 0.8
+              },
+              "Drug(s)_normalized": {
+                "normalized": "efavirenz",
+                "drug_id": "PA449441",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2B6",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "CYP2B6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "PMID": 20338069,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "In 59 HIV/TB adults on nevirapine plus rifampicin, mean 12-hour post-dose plasma nevirapine concentrations at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 14.09 \u00b1 9.49, 7.94 \u00b1 2.76 and 9.44 \u00b1 0.17 mg/L in TT patients, 5.65 \u00b1 0.54, 5.58 \u00b1 0.48 and 7.03 \u00b1 0.64 mg/L in GT patients, and 5.42 \u00b1 0.48, 5.34 \u00b1 0.50 and 6.43 \u00b1 0.64 mg/L in GG patients; overall TT vs others showed a trend, with p = 0.003 at week 6 and p = 0.409 and 0.448 at weeks 12 and post-rifampicin, respectively.",
+              "Sentence": "Genotype TT is associated with increased 12-hour post-dose plasma nevirapine concentration in patients with HIV infectious disease and Tuberculosis as compared to genotypes GG + GT.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "12-hour post-dose plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG + GT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"Likewise, the mean 12-hour post-dose plasma nevirapine concentration in patients carrying TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (14.09 \u00b1 9.49, 7.94 \u00b1 2.76 and 9.44 \u00b1 0.17 mg/L, respectively) tended to be higher than those carrying GT (5.65 \u00b1 0.54, 5.58 \u00b1 0.48 and 7.03 \u00b1 0.64 mg/L, respectively) or GG genotypes (5.42 \u00b1 0.48, 5.34 \u00b1 0.50 and 6.43 \u00b1 0.64 mg/L, respectively) (p = 0.003, p = 0.409 and p = 0.448, respectively).\"",
+                "\"Similar results were found in nevirapine group (Figure [1d, e, f](#F1)) in that the mean plasma drug concentration of patients with TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (14.09 \u00b1 9.49, 7.94 \u00b1 2.76 and 9.44 \u00b1 0.17 mg/L, respectively) tended to be higher than those with GT genotype (5.65 \u00b1 0.54, 5.58 \u00b1 0.48 and 7.03 \u00b1 0.64 mg/L, respectively) or GG genotype (5.42 \u00b1 0.48, 5.34 \u00b1 0.50 and 6.43 \u00b1 0.64 mg/L, respectively) (p = 0.003, p = 0.409 and p = 0.448, respectively).\"",
+                "\"CYP2B6-TT genotype had impact on plasma efavirenz and nevirapine concentrations, while rifampicin co-administration had only small effects.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs28399499",
+                "variant_id": "PA166155478",
+                "confidence": 0.8
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "G516T",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "G516T",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "PMID": 20338069,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "In 59 HIV/TB adults on nevirapine plus rifampicin, mean 12-hour post-dose plasma nevirapine concentrations at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 14.09 \u00b1 9.49, 7.94 \u00b1 2.76 and 9.44 \u00b1 0.17 mg/L in TT patients, 5.65 \u00b1 0.54, 5.58 \u00b1 0.48 and 7.03 \u00b1 0.64 mg/L in GT patients, and 5.42 \u00b1 0.48, 5.34 \u00b1 0.50 and 6.43 \u00b1 0.64 mg/L in GG patients; overall TT vs others showed a trend, with p = 0.003 at week 6 and p = 0.409 and 0.448 at weeks 12 and post-rifampicin, respectively.",
+              "Sentence": "Genotype TT is associated with increased 12-hour post-dose plasma nevirapine concentration in patients with HIV infectious disease and Tuberculosis as compared to genotypes GG + GT.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "12-hour post-dose plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG + GT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"Likewise, the mean 12-hour post-dose plasma nevirapine concentration in patients carrying TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (14.09 \u00b1 9.49, 7.94 \u00b1 2.76 and 9.44 \u00b1 0.17 mg/L, respectively) tended to be higher than those carrying GT (5.65 \u00b1 0.54, 5.58 \u00b1 0.48 and 7.03 \u00b1 0.64 mg/L, respectively) or GG genotypes (5.42 \u00b1 0.48, 5.34 \u00b1 0.50 and 6.43 \u00b1 0.64 mg/L, respectively) (p = 0.003, p = 0.409 and p = 0.448, respectively).\"",
+                "\"Similar results were found in nevirapine group (Figure [1d, e, f](#F1)) in that the mean plasma drug concentration of patients with TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (14.09 \u00b1 9.49, 7.94 \u00b1 2.76 and 9.44 \u00b1 0.17 mg/L, respectively) tended to be higher than those with GT genotype (5.65 \u00b1 0.54, 5.58 \u00b1 0.48 and 7.03 \u00b1 0.64 mg/L, respectively) or GG genotype (5.42 \u00b1 0.48, 5.34 \u00b1 0.50 and 6.43 \u00b1 0.64 mg/L, respectively) (p = 0.003, p = 0.409 and p = 0.448, respectively).\"",
+                "\"CYP2B6-TT genotype had impact on plasma efavirenz and nevirapine concentrations, while rifampicin co-administration had only small effects.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs28399499",
+                "variant_id": "PA166155478",
+                "confidence": 0.8
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2B6",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "CYP2B6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "PMID": 20338069,
+              "Phenotype Category": "efficacy",
+              "Significance": "no",
+              "Notes": "At week 12 of ART in the efavirenz group, 88.89% (8/9) of TT, 77.42% (24/31) of GT, and 68% (17/25) of GG patients achieved plasma HIV-1 RNA <50 copies/mL; p = 0.430 for comparison among genotypes.",
+              "Sentence": "Genotype TT is not associated with response to efavirenz in patients with HIV infectious disease and Tuberculosis as compared to genotypes GG + GT.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG + GT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "As shown in Table [2](#T2), when the proportion of patients with HIV-1 RNA level <50 copies/mL (log 1.69) were compared among *CYP2B6*-G516T genotypes at week 12 of ART, 88.89% (8/9) of patients with TT genotype in efavirenz group could achieve the HIV-1 RNA levels <50 copies/mL, which were higher than those with GT genotype (77.42%, 24/31) and GG genotype (68%, 17/25), although this difference was not statistically significant (p = 0.430).",
+                "With respect to possible correlation of the variations in plasma efavirenz and nevirapine levels with the treatment outcome, our results indicated that the patients with *CYP2B6 *516TT genotype had a higher frequency of viral load suppression at week 12 of ART than those with GT and GG genotype."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs28399499",
+                "variant_id": "PA166155478",
+                "confidence": 0.8
+              },
+              "Drug(s)_normalized": {
+                "normalized": "efavirenz",
+                "drug_id": "PA449441",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "G516T",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "G516T",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "PMID": 20338069,
+              "Phenotype Category": "efficacy",
+              "Significance": "no",
+              "Notes": "At week 12 of ART in the efavirenz group, 88.89% (8/9) of TT, 77.42% (24/31) of GT, and 68% (17/25) of GG patients achieved plasma HIV-1 RNA <50 copies/mL; p = 0.430 for comparison among genotypes.",
+              "Sentence": "Genotype TT is not associated with response to efavirenz in patients with HIV infectious disease and Tuberculosis as compared to genotypes GG + GT.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG + GT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "As shown in Table [2](#T2), when the proportion of patients with HIV-1 RNA level <50 copies/mL (log 1.69) were compared among *CYP2B6*-G516T genotypes at week 12 of ART, 88.89% (8/9) of patients with TT genotype in efavirenz group could achieve the HIV-1 RNA levels <50 copies/mL, which were higher than those with GT genotype (77.42%, 24/31) and GG genotype (68%, 17/25), although this difference was not statistically significant (p = 0.430).",
+                "With respect to possible correlation of the variations in plasma efavirenz and nevirapine levels with the treatment outcome, our results indicated that the patients with *CYP2B6 *516TT genotype had a higher frequency of viral load suppression at week 12 of ART than those with GT and GG genotype."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs28399499",
+                "variant_id": "PA166155478",
+                "confidence": 0.8
+              },
+              "Drug(s)_normalized": {
+                "normalized": "efavirenz",
+                "drug_id": "PA449441",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2B6",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 4,
+              "Variant/Haplotypes": "CYP2B6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "PMID": 20338069,
+              "Phenotype Category": "efficacy",
+              "Significance": "no",
+              "Notes": "At week 12 of ART in the nevirapine group, 100% (2/2) of TT, 70.97% (23/31) of GT, and 60% (15/26) of GG patients achieved plasma HIV-1 RNA <50 copies/mL; p = 0.288 for comparison among genotypes.",
+              "Sentence": "Genotype TT is not associated with response to nevirapine in patients with HIV infectious disease and Tuberculosis as compared to genotypes GG + GT.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG + GT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "As shown in Table [2](#T2), when the proportion of patients with HIV-1 RNA level <50 copies/mL (log 1.69) were compared among *CYP2B6*-G516T genotypes at week 12 of ART, 88.89% (8/9) of patients with TT genotype in efavirenz group could achieve the HIV-1 RNA levels <50 copies/mL, which were higher than those with GT genotype (77.42%, 24/31) and GG genotype (68%, 17/25), although this difference was not statistically significant (p = 0.430). Similarly, in nevirapine group, 100% (2/2) of those with TT genotype, 70.97% (23/31) of those with GT genotype and 60% (15/26) of those with GG genotype could achieve the HIV-1 RNA levels <50 copies/mL, but this difference also did not reach statistical significance (p = 0.288) due to small numbers of patients with homozygous TT genotype in this study.",
+                "Table 2 Caption: Number of patients with plasma HIV-1 RNA < 50 copies/ml at week 12 of ART."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs28399499",
+                "variant_id": "PA166155478",
+                "confidence": 0.8
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "G516T",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 4,
+              "Variant/Haplotypes": "G516T",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "PMID": 20338069,
+              "Phenotype Category": "efficacy",
+              "Significance": "no",
+              "Notes": "At week 12 of ART in the nevirapine group, 100% (2/2) of TT, 70.97% (23/31) of GT, and 60% (15/26) of GG patients achieved plasma HIV-1 RNA <50 copies/mL; p = 0.288 for comparison among genotypes.",
+              "Sentence": "Genotype TT is not associated with response to nevirapine in patients with HIV infectious disease and Tuberculosis as compared to genotypes GG + GT.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG + GT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "As shown in Table [2](#T2), when the proportion of patients with HIV-1 RNA level <50 copies/mL (log 1.69) were compared among *CYP2B6*-G516T genotypes at week 12 of ART, 88.89% (8/9) of patients with TT genotype in efavirenz group could achieve the HIV-1 RNA levels <50 copies/mL, which were higher than those with GT genotype (77.42%, 24/31) and GG genotype (68%, 17/25), although this difference was not statistically significant (p = 0.430). Similarly, in nevirapine group, 100% (2/2) of those with TT genotype, 70.97% (23/31) of those with GT genotype and 60% (15/26) of those with GG genotype could achieve the HIV-1 RNA levels <50 copies/mL, but this difference also did not reach statistical significance (p = 0.288) due to small numbers of patients with homozygous TT genotype in this study.",
+                "Table 2 Caption: Number of patients with plasma HIV-1 RNA < 50 copies/ml at week 12 of ART."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs28399499",
+                "variant_id": "PA166155478",
+                "confidence": 0.8
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP3A4",
+            "gene": "CYP3A4",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant Annotation ID": 5,
+              "Variant/Haplotypes": "CYP3A4",
+              "Gene": "CYP3A4",
+              "Drug(s)": "efavirenz",
+              "PMID": 20338069,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "not stated",
+              "Notes": "In the efavirenz group, mean plasma efavirenz concentrations at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 4.00 \u00b1 0.42, 4.20 \u00b1 0.72 and 3.48 \u00b1 0.34 mg/L in TT homozygotes (n=62) and 9.62 \u00b1 6.35, 8.97 \u00b1 6.33 and 3.87 \u00b1 1.69 mg/L in TC heterozygotes (n=3); authors noted a trend towards higher levels in TC, but did not perform formal statistical testing due to the small TC sample.",
+              "Sentence": "Genotype TC is associated with increased plasma efavirenz concentration in patients with HIV infectious disease and Tuberculosis as compared to genotype TT, although statistical significance was not evaluated.",
+              "Alleles": "TC",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"With respect to *CYP3A4*, the analysis was done in only *CYP3A4-*T878C, since there was no variation at the *CYP3A4*-T878C and -C1088T in our study subjects. The results showed that the mean plasma efavirenz concentration at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 4.00 \u00b1 0.42, 4.20 \u00b1 0.72 and 3.48 \u00b1 0.34 mg/L, respectively, in patients with homozygous TT genotype and 9.62 \u00b1 6.35, 8.97 \u00b1 6.33 and 3.87 \u00b1 1.69 mg/L, respectively, in those with heterozygous TC genotype.\"",
+                "\"Similarly, the mean plasma nevirapine concentration at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 5.85 \u00b1 0.48, 5.50 \u00b1 0.34 and 6.80 \u00b1 0.45 mg/L, respectively, in patients with homozygous TT genotype, and 4.8, 8.69 and 9.12 mg/L, respectively, in one patient with heterozygous mutant TC genotype. Although there was a trend towards higher plasma drug levels in patients with heterozygous mutant TC genotype, appropriate statistical evaluation of this difference was difficult due to small numbers of heterozygous mutant TC.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP3A4 T878C",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "efavirenz",
+                "drug_id": "PA449441",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "T878C",
+            "gene": "CYP3A4",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant Annotation ID": 5,
+              "Variant/Haplotypes": "T878C",
+              "Gene": "CYP3A4",
+              "Drug(s)": "efavirenz",
+              "PMID": 20338069,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "not stated",
+              "Notes": "In the efavirenz group, mean plasma efavirenz concentrations at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 4.00 \u00b1 0.42, 4.20 \u00b1 0.72 and 3.48 \u00b1 0.34 mg/L in TT homozygotes (n=62) and 9.62 \u00b1 6.35, 8.97 \u00b1 6.33 and 3.87 \u00b1 1.69 mg/L in TC heterozygotes (n=3); authors noted a trend towards higher levels in TC, but did not perform formal statistical testing due to the small TC sample.",
+              "Sentence": "Genotype TC is associated with increased plasma efavirenz concentration in patients with HIV infectious disease and Tuberculosis as compared to genotype TT, although statistical significance was not evaluated.",
+              "Alleles": "TC",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"With respect to *CYP3A4*, the analysis was done in only *CYP3A4-*T878C, since there was no variation at the *CYP3A4*-T878C and -C1088T in our study subjects. The results showed that the mean plasma efavirenz concentration at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 4.00 \u00b1 0.42, 4.20 \u00b1 0.72 and 3.48 \u00b1 0.34 mg/L, respectively, in patients with homozygous TT genotype and 9.62 \u00b1 6.35, 8.97 \u00b1 6.33 and 3.87 \u00b1 1.69 mg/L, respectively, in those with heterozygous TC genotype.\"",
+                "\"Similarly, the mean plasma nevirapine concentration at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 5.85 \u00b1 0.48, 5.50 \u00b1 0.34 and 6.80 \u00b1 0.45 mg/L, respectively, in patients with homozygous TT genotype, and 4.8, 8.69 and 9.12 mg/L, respectively, in one patient with heterozygous mutant TC genotype. Although there was a trend towards higher plasma drug levels in patients with heterozygous mutant TC genotype, appropriate statistical evaluation of this difference was difficult due to small numbers of heterozygous mutant TC.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP3A4 T878C",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "efavirenz",
+                "drug_id": "PA449441",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP3A4",
+            "gene": "CYP3A4",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 6,
+              "Variant/Haplotypes": "CYP3A4",
+              "Gene": "CYP3A4",
+              "Drug(s)": "nevirapine",
+              "PMID": 20338069,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "not stated",
+              "Notes": "In the nevirapine group, mean plasma nevirapine concentrations at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 5.85 \u00b1 0.48, 5.50 \u00b1 0.34 and 6.80 \u00b1 0.45 mg/L in TT homozygotes (n=58); in a single TC heterozygote, values were 4.8, 8.69 and 9.12 mg/L at the corresponding time points. Authors reported a trend towards higher plasma drug levels in TC but did not perform statistical analysis due to n=1.",
+              "Sentence": "Genotype TC is associated with increased plasma nevirapine concentration in patients with HIV infectious disease and Tuberculosis as compared to genotype TT, although statistical significance was not evaluated.",
+              "Alleles": "TC",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"For CYP3A4-T878C, there were 95.4% (62/65) of homozygous TT and 4.6% (3/65) of heterozygous TC, and 98.3% (58/59) of homozygous TT and 1.69% (1/59) of heterozygous TC in efavirenz and nevirapine groups, respectively.\"",
+                "\"Similarly, the mean plasma nevirapine concentration at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 5.85 \u00b1 0.48, 5.50 \u00b1 0.34 and 6.80 \u00b1 0.45 mg/L, respectively, in patients with homozygous TT genotype, and 4.8, 8.69 and 9.12 mg/L, respectively, in one patient with heterozygous mutant TC genotype.\"",
+                "\"Although there was a trend towards higher plasma drug levels in patients with heterozygous mutant TC genotype, appropriate statistical evaluation of this difference was difficult due to small numbers of heterozygous mutant TC.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP3A4 T878C",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "T878C",
+            "gene": "CYP3A4",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant Annotation ID": 6,
+              "Variant/Haplotypes": "T878C",
+              "Gene": "CYP3A4",
+              "Drug(s)": "nevirapine",
+              "PMID": 20338069,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "not stated",
+              "Notes": "In the nevirapine group, mean plasma nevirapine concentrations at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 5.85 \u00b1 0.48, 5.50 \u00b1 0.34 and 6.80 \u00b1 0.45 mg/L in TT homozygotes (n=58); in a single TC heterozygote, values were 4.8, 8.69 and 9.12 mg/L at the corresponding time points. Authors reported a trend towards higher plasma drug levels in TC but did not perform statistical analysis due to n=1.",
+              "Sentence": "Genotype TC is associated with increased plasma nevirapine concentration in patients with HIV infectious disease and Tuberculosis as compared to genotype TT, although statistical significance was not evaluated.",
+              "Alleles": "TC",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "plasma concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:HIV Infections, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"For CYP3A4-T878C, there were 95.4% (62/65) of homozygous TT and 4.6% (3/65) of heterozygous TC, and 98.3% (58/59) of homozygous TT and 1.69% (1/59) of heterozygous TC in efavirenz and nevirapine groups, respectively.\"",
+                "\"Similarly, the mean plasma nevirapine concentration at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation were 5.85 \u00b1 0.48, 5.50 \u00b1 0.34 and 6.80 \u00b1 0.45 mg/L, respectively, in patients with homozygous TT genotype, and 4.8, 8.69 and 9.12 mg/L, respectively, in one patient with heterozygous mutant TC genotype.\"",
+                "\"Although there was a trend towards higher plasma drug levels in patients with heterozygous mutant TC genotype, appropriate statistical evaluation of this difference was difficult due to small numbers of heterozygous mutant TC.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "CYP3A4 T878C",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "nevirapine",
+                "drug_id": "PA450616",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
             }
           }
         ]
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
       }
     },
     "phenotype_annotations": {
@@ -159,11 +623,6 @@
       "extra_predictions": {
         "count": 0,
         "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
       }
     },
     "functional_analysis": {
@@ -178,15 +637,10 @@
       "extra_predictions": {
         "count": 0,
         "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
       }
     },
     "study_parameters": {
-      "score": 0.6881562133630117,
+      "score": 0.6967243154843649,
       "total_samples": 2,
       "ground_truth_annotations": {
         "count": 2,
@@ -195,7 +649,7 @@
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.6375730668797213,
+            "overall_match_score": 0.6441713220932904,
             "annotation": {
               "Study Parameters ID": 1184988079,
               "Variant Annotation ID": 1184988061,
@@ -218,7 +672,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1184988079,
-                "prediction": null,
+                "prediction": 1,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -230,13 +684,13 @@
               },
               "Study Type": {
                 "ground_truth": "cohort",
-                "prediction": null,
+                "prediction": "clinical trial",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Study Cases": {
                 "ground_truth": 65.0,
-                "prediction": 65.0,
+                "prediction": 65,
                 "score": 1.0,
                 "match_status": "match"
               },
@@ -248,9 +702,9 @@
               },
               "Characteristics": {
                 "ground_truth": "HIV-1/TB co-infected receiving efavirenz-based ART and an anti-TB drug regimen.",
-                "prediction": "efavirenz group (CYP2B6-G516T genotypes)",
-                "score": 0.9128793478012085,
-                "match_status": "partial_match"
+                "prediction": "Thai adults with HIV/TB coinfection receiving efavirenz-based ART plus rifampicin, CYP2B6 516TT vs GT vs GG and plasma efavirenz C12 at week 6",
+                "score": 0.9509124755859375,
+                "match_status": "match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
@@ -260,15 +714,15 @@
               },
               "Frequency In Cases": {
                 "ground_truth": 0.62,
-                "prediction": 0.3846,
+                "prediction": null,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Allele Of Frequency In Cases": {
                 "ground_truth": "G",
-                "prediction": "GG",
-                "score": 0.9258627891540527,
-                "match_status": "partial_match"
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Frequency In Controls": {
                 "ground_truth": null,
@@ -314,15 +768,15 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "East Asian",
-                "prediction": "Asian",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "East Asian",
+                "score": 1.0,
+                "match_status": "match"
               }
             }
           },
           {
             "matched": true,
-            "overall_match_score": 0.5768202508197111,
+            "overall_match_score": 0.5853421758202946,
             "annotation": {
               "Study Parameters ID": 1448993668,
               "Variant Annotation ID": 1448993666,
@@ -345,7 +799,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1448993668,
-                "prediction": null,
+                "prediction": 2,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -357,13 +811,13 @@
               },
               "Study Type": {
                 "ground_truth": "cohort",
-                "prediction": null,
+                "prediction": "clinical trial",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Study Cases": {
                 "ground_truth": 65.0,
-                "prediction": 65.0,
+                "prediction": 65,
                 "score": 1.0,
                 "match_status": "match"
               },
@@ -375,9 +829,9 @@
               },
               "Characteristics": {
                 "ground_truth": "HIV-1/TB co-infected receiving efavirenz-based ART and an anti-TB drug regimen.",
-                "prediction": "efavirenz group (CYP2B6-G516T genotypes)",
-                "score": 0.9128793478012085,
-                "match_status": "partial_match"
+                "prediction": "Thai adults with HIV/TB coinfection receiving efavirenz-based ART plus rifampicin, CYP2B6 516TT vs GT vs GG and plasma efavirenz C12 at week 12",
+                "score": 0.9508169889450073,
+                "match_status": "match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
@@ -387,15 +841,15 @@
               },
               "Frequency In Cases": {
                 "ground_truth": 0.62,
-                "prediction": 0.4769,
+                "prediction": null,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Allele Of Frequency In Cases": {
                 "ground_truth": "G",
-                "prediction": "GT",
-                "score": 0.8930649161338806,
-                "match_status": "partial_match"
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Frequency In Controls": {
                 "ground_truth": null,
@@ -441,39 +895,39 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "East Asian",
-                "prediction": "Asian",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "East Asian",
+                "score": 1.0,
+                "match_status": "match"
               }
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 7,
+        "count": 8,
         "items": [
           {
             "variant": "N/A",
             "gene": "N/A",
             "drug": "N/A",
             "annotation": {
-              "Study Parameters ID": null,
+              "Study Parameters ID": 3,
               "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 124.0,
+              "Study Type": "clinical trial",
+              "Study Cases": 65,
               "Study Controls": null,
-              "Characteristics": "HIV/TB co-infected Thai adults receiving efavirenz or nevirapine",
-              "Characteristics Type": "Study Cohort",
+              "Characteristics": "Thai adults with HIV/TB coinfection receiving efavirenz-based ART; comparison of plasma efavirenz C12 at week 6 vs 1 month after rifampicin discontinuation (overall, not stratified by genotype)",
+              "Characteristics Type": "drug",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
               "Allele Of Frequency In Controls": null,
-              "P Value": "< 0.0001",
+              "P Value": "= 0.043",
               "Ratio Stat Type": "Unknown",
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Asian",
+              "Biogeographical Groups": "East Asian",
               "Variant Annotation ID_norm": null
             }
           },
@@ -482,123 +936,23 @@
             "gene": "N/A",
             "drug": "N/A",
             "annotation": {
-              "Study Parameters ID": null,
+              "Study Parameters ID": 4,
               "Variant Annotation ID": null,
-              "Study Type": null,
-              "Study Cases": 65.0,
+              "Study Type": "clinical trial",
+              "Study Cases": 65,
               "Study Controls": null,
-              "Characteristics": "efavirenz group (CYP2B6-G516T genotypes)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": 0.1385,
-              "Allele Of Frequency In Cases": "TT",
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "< 0.0001",
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Asian",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": null,
-              "Study Cases": 59.0,
-              "Study Controls": null,
-              "Characteristics": "nevirapine group (CYP2B6-G516T genotypes)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": 0.4407,
-              "Allele Of Frequency In Cases": "GG",
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": null,
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Asian",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": null,
-              "Study Cases": 59.0,
-              "Study Controls": null,
-              "Characteristics": "nevirapine group (CYP2B6-G516T genotypes)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": 0.5254,
-              "Allele Of Frequency In Cases": "GT",
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": null,
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Asian",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": null,
-              "Study Cases": 59.0,
-              "Study Controls": null,
-              "Characteristics": "nevirapine group (CYP2B6-G516T genotypes)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": 0.0339,
-              "Allele Of Frequency In Cases": "TT",
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": null,
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Asian",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": null,
-              "Study Cases": 124.0,
-              "Study Controls": null,
-              "Characteristics": "CYP2B6-TT genotype's impact on plasma efavirenz concentration",
-              "Characteristics Type": "disease",
+              "Characteristics": "Thai adults with HIV/TB coinfection receiving efavirenz-based ART; comparison of plasma efavirenz C12 at week 12 vs 1 month after rifampicin discontinuation (overall, not stratified by genotype)",
+              "Characteristics Type": "drug",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
               "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.025",
+              "P Value": "= 0.133",
               "Ratio Stat Type": "Unknown",
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Asian",
+              "Biogeographical Groups": "East Asian",
               "Variant Annotation ID_norm": null
             }
           },
@@ -607,13 +961,13 @@
             "gene": "N/A",
             "drug": "N/A",
             "annotation": {
-              "Study Parameters ID": null,
+              "Study Parameters ID": 5,
               "Variant Annotation ID": null,
-              "Study Type": null,
-              "Study Cases": 124.0,
+              "Study Type": "clinical trial",
+              "Study Cases": 59,
               "Study Controls": null,
-              "Characteristics": "CYP2B6-TT genotype's impact on plasma nevirapine concentration",
-              "Characteristics Type": "disease",
+              "Characteristics": "Thai adults with HIV/TB coinfection receiving nevirapine-based ART plus rifampicin, CYP2B6 516TT vs GT vs GG and plasma nevirapine C12 at week 6",
+              "Characteristics Type": "Study Cohort",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
@@ -623,52 +977,136 @@
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Asian",
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 6,
+              "Variant Annotation ID": null,
+              "Study Type": "clinical trial",
+              "Study Cases": 59,
+              "Study Controls": null,
+              "Characteristics": "Thai adults with HIV/TB coinfection receiving nevirapine-based ART plus rifampicin, CYP2B6 516TT vs GT vs GG and plasma nevirapine C12 at week 12",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.409",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 7,
+              "Variant Annotation ID": null,
+              "Study Type": "clinical trial",
+              "Study Cases": 59,
+              "Study Controls": null,
+              "Characteristics": "Thai adults with HIV/TB coinfection receiving nevirapine-based ART; comparison of plasma nevirapine C12 at week 6 vs 1 month after rifampicin discontinuation (overall, not stratified by genotype)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.034",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 8,
+              "Variant Annotation ID": null,
+              "Study Type": "clinical trial",
+              "Study Cases": 59,
+              "Study Controls": null,
+              "Characteristics": "Thai adults with HIV/TB coinfection receiving nevirapine-based ART; comparison of plasma nevirapine C12 at week 12 vs 1 month after rifampicin discontinuation (overall, not stratified by genotype)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.001",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 9,
+              "Variant Annotation ID": null,
+              "Study Type": "clinical trial",
+              "Study Cases": 65,
+              "Study Controls": null,
+              "Characteristics": "Thai adults with HIV/TB coinfection receiving efavirenz-based ART plus rifampicin; proportion with HIV-1 RNA <50 copies/mL at week 12 by CYP2B6 516 genotype (GG vs GT vs TT)",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.68,
+              "Allele Of Frequency In Cases": "HIV-1 RNA <50 copies/mL in CYP2B6 516GG",
+              "Frequency In Controls": 0.889,
+              "Allele Of Frequency In Controls": "HIV-1 RNA <50 copies/mL in CYP2B6 516TT",
+              "P Value": "= 0.430",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": 10,
+              "Variant Annotation ID": null,
+              "Study Type": "clinical trial",
+              "Study Cases": 59,
+              "Study Controls": null,
+              "Characteristics": "Thai adults with HIV/TB coinfection receiving nevirapine-based ART plus rifampicin; proportion with HIV-1 RNA <50 copies/mL at week 12 by CYP2B6 516 genotype (GG vs GT vs TT)",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.6,
+              "Allele Of Frequency In Cases": "HIV-1 RNA <50 copies/mL in CYP2B6 516GG",
+              "Frequency In Controls": 1.0,
+              "Allele Of Frequency In Controls": "HIV-1 RNA <50 copies/mL in CYP2B6 516TT",
+              "P Value": "= 0.288",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
               "Variant Annotation ID_norm": null
             }
           }
         ]
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 5,
-        "fields": {
-          "Study Type": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Frequency In Cases": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "P Value": {
-            "mean_score": 0.5,
-            "scores": [
-              1.0,
-              0.0
-            ]
-          },
-          "Ratio Stat Type": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          },
-          "Biogeographical Groups": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0
-            ]
-          }
-        }
       }
     }
   }

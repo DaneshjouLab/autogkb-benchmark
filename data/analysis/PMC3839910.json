@@ -2,8 +2,8 @@
   "pmcid": "PMC3839910",
   "pmid": "23588310",
   "title": "HLA-A*31:01 and HLA-B*15:02 as genetic markers for carbamazepine hypersensitivity in children",
-  "overall_score": 0.2396858867075708,
-  "num_benchmarks": 4,
+  "overall_score": 0.4803073602997594,
+  "num_benchmarks": 3,
   "benchmarks": {
     "drug_annotations": {
       "score": 0.0,
@@ -15,70 +15,313 @@
         "items": []
       },
       "extra_predictions": {
-        "count": 3,
+        "count": 21,
         "items": [
           {
             "variant": "HLA-A*31:01",
             "gene": "HLA-A",
             "drug": "carbamazepine",
             "annotation": {
+              "Variant Annotation ID": 1,
               "Variant/Haplotypes": "HLA-A*31:01",
               "Gene": "HLA-A",
               "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "Significantly associated with HSS (OR: 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037).",
-              "Sentence": "HLA-A*31:01 is associated with increased hypersensitivity reactions carbamazepine in children with diverse ancestries.",
-              "Alleles": "HLA-A*31:01",
-              "Metabolizer types": null,
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": null,
+              "Notes": "Three of six (50%) children with CBZ-induced hypersensitivity syndrome (HSS) carried HLA-A*31:01 vs 3 of 91 (3.3%) CBZ-tolerant controls; OR 26.4 (95% CI 2.53\u2013307.89), P=0.0025. Strong association replicated in pediatric, ancestrally diverse cohort.",
+              "Sentence": "Genotype HLA-A*31:01-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity syndrome in children with seizure disorders as compared to HLA-A*31:01-negative.",
+              "Alleles": "HLA-A*31:01-positive",
               "Specialty Population": "Pediatric",
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Side Effect:Hypersensitivity",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Multiple phenotypes or diseases And/or": null,
-              "Citations": [
-                "HLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037)",
-                "This study aimed to address these gaps by investigating HLA-B*15:02 and HLA-A*31:01, two important pharmacogenetic markers with consistent evidence from adult-based studies, in Canadian children with diverse ancestries.",
-                "We replicated important associations of two genetic risk factors, HLA-B*15:02 and HLA-A*31:01, in pediatric patients."
-              ]
-            }
-          },
-          {
-            "variant": "HLA-B*15:02",
-            "gene": "HLA-B",
-            "drug": "carbamazepine",
-            "annotation": {
-              "Variant/Haplotypes": "HLA-B*15:02",
-              "Gene": "HLA-B",
-              "Drug(s)": "carbamazepine",
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "Associated with SJS (OR: 38.6, p=0.002).",
-              "Sentence": "HLA-B*15:02 is associated with increased risk of Stevens-Johnson syndrome carbamazepine in children of Asian origin.",
-              "Alleles": "HLA-B*15:02",
               "Metabolizer types": null,
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": null,
-              "Specialty Population": "Pediatric",
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Side Effect:Stevens-Johnson syndrome",
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
               "PD/PK terms": "risk of",
               "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
               "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01-negative",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "HLA-B*15:02 was associated with CBZ-SJS (OR: 38.6, p=0.002)\".",
-                "Three of the nine patients with CBZ-SJS/TEN were carriers of HLA-B*15:02, resulting in a significant association of HLA-B*15:02 with CBZ-SJS/TEN (OR: 38.6; P=0.002; [Table 2](#T2)).",
-                "All three HLA-B*15:02-positive patients with CBZ-SJS/TEN were of Asian origin."
-              ]
+                "\u201cThree of six patients (50%) with CBZ-HSS carried HLA-A*31:01, whereas only three (3.3%) of the 91 CBZ-tolerant controls carried the allele, resulting in a very strong association with CBZ-HSS (OR: 26.4; P=0.0025; [Table 2](#T2)).\u201d",
+                "\u201cHLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037), but not with CBZ-SJS.\u201d",
+                "\u201cHLA-A*31:01 was associated with carbamazepine-induced hypersensitivity syndrome and maculopapular exanthems also in children with diverse ancestries.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Six of 26 (23.1%) CBZ-induced maculopapular exanthem (MPE) cases carried HLA-A*31:01 vs 3 of 91 (3.3%) CBZ-tolerant controls; OR 8.57 (95% CI 1.67\u201357.50), P=0.0037.",
+              "Sentence": "Genotype HLA-A*31:01-positive Is Associated with increased risk of carbamazepine-induced maculopapular exanthems in children with seizure disorders as compared to HLA-A*31:01-negative.",
+              "Alleles": "HLA-A*31:01-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cHLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037), but not with CBZ-SJS.\u201d",
+                "\u201cThree of six patients (50%) with CBZ-HSS carried HLA-A*31:01, whereas only three (3.3%) of the 91 CBZ-tolerant controls carried the allele, resulting in a very strong association with CBZ-HSS (OR: 26.4; P=0.0025; [Table 2](#T2)). A significant association was also observed with CBZ-induced MPE, with six of 26 (23.1%) CBZ-MPE cases carrying HLA-A*31:01 (OR: 8.6; P=0.0037; [Table 2](#T2)).\u201d",
+                "\u201cHLA-A*31:01 was associated with carbamazepine-induced hypersensitivity syndrome and maculopapular exanthems also in children with diverse ancestries.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "No HLA-A*31:01 carriers were detected among nine CBZ-induced SJS/TEN patients; OR 1.33 (95% CI 0.06\u201327.76), P=1.00, indicating no significant association in this pediatric cohort.",
+              "Sentence": "Genotype HLA-A*31:01-positive Is Not associated with risk of carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis in children with seizure disorders as compared to HLA-A*31:01-negative.",
+              "Alleles": "HLA-A*31:01-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cIn contrast to the strong associations with HSS and MPE, no HLA-A*31:01 or rs1061235T carriers were detected among the nine patients with CBZ-induced SJS/TEN, and no significant association with CBZ-SJS/TEN was observed (OR: 1.33; P=1.00; [Table 2](#T2)).\u201d",
+                "\u201cWe did not detect an association of HLA-A*31:01 with CBZ-SJS/TEN, which is in contrast to two previous studies that reported a stronger association with SJS/TEN compared to CBZ-HSS or MPE with odds ratios of 26 and 34 ([30](#R30), [31](#R31)).\u201d",
+                "\u201cHLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037), but not with CBZ-SJS.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 4,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Across all 42 CBZ hypersensitivity cases vs 91 controls, 9 (21.4%) vs 3 (3.3%) were HLA-A*31:01-positive; OR 7.85 (95% CI 1.82\u201347.80), P=0.0016, showing a significant overall association with CBZ-induced hypersensitivity reactions in children.",
+              "Sentence": "Genotype HLA-A*31:01-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity reactions in children with seizure disorders as compared to HLA-A*31:01-negative.",
+              "Alleles": "HLA-A*31:01-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "When considering all CBZ hypersensitivity reactions combined, a highly significant association of HLA-A*31:01 was observed (OR: 7.85; P=0.0016; [Table 2](#T2)), even though the effect size was reduced compared to an analysis only including HSS and MPE cases.",
+                "A total of 42 children experiencing CBZ-induced hypersensitivity reactions (CBZ cases) and 91 pediatric CBZ-tolerant control patients (CBZ controls) were genotyped.",
+                "Table 2 Caption: Association of HLA-A*31:01, proxy SNP rs1061235 and HLA-B*15:02 with CBZ hypersensitivity. ... All CBZ cases | 42 | 9 (21.4) | 7.85 (1.82\u201347.80) | 0.0016 ... CBZ-tolerant | 91/87c | 3 (3.3) | - | -"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 5,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "In combined analysis of CBZ-HSS and CBZ-MPE (32 cases), 9 (28.1%) carried HLA-A*31:01 vs 3 of 91 (3.3%) controls; OR 11.18 (95% CI 2.53\u201369.27), P=2.6\u00d710\u22124, indicating a strong association with these cutaneous hypersensitivity phenotypes.",
+              "Sentence": "Genotype HLA-A*31:01-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity syndrome or maculopapular exanthems in children with seizure disorders as compared to HLA-A*31:01-negative.",
+              "Alleles": "HLA-A*31:01-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "or",
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "HLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037), but not with CBZ-SJS.",
+                "Three of six patients (50%) with CBZ-HSS carried HLA-A*31:01, whereas only three (3.3%) of the 91 CBZ-tolerant controls carried the allele, resulting in a very strong association with CBZ-HSS (OR: 26.4; P=0.0025; [Table 2](#T2)). A significant association was also observed with CBZ-induced MPE, with six of 26 (23.1%) CBZ-MPE cases carrying HLA-A*31:01 (OR: 8.6; P=0.0037; [Table 2](#T2)). HLA-A*31:01 was thus very strongly associated with CBZ-HSS or MPE in a combined analysis of the two reactions (OR: 11.2; P=2.6\u00d710^\u22124^; [Table 2](#T2)), with nine (28.1%) of the cases carrying HLA-A*31:01.",
+                "HLA-A*31:01 was associated with carbamazepine-induced hypersensitivity syndrome and maculopapular exanthems also in children with diverse ancestries."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 6,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "European-only subgroup: among 20 CBZ hypersensitivity cases and 65 CBZ-tolerant controls with \u22653 European grandparents, 4 (20%) vs 2 (3.1%) carried HLA-A*31:01; OR 7.62 (95% CI 0.99\u201391.40), P=0.025.",
+              "Sentence": "Genotype HLA-A*31:01-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity reactions in European children with seizure disorders as compared to HLA-A*31:01-negative.",
+              "Alleles": "HLA-A*31:01-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "Given the differences in origin between CBZ cases and controls, we performed a subgroup analysis for HLA-A*31:01 in patients with three or more grandparents of European origin. Twenty CBZ cases and 65 controls were included in this analysis. The frequency of HLA-A*31:01 in European CBZ-tolerant children (3.1%; [Table 3](#T3)) was similar to the frequency reported previously in a European study (3.9%). Similar results were observed for the association of HLA-A*31:01 with CBZ hypersensitivity as for the full cohort, with 20% of CBZ cases carrying HLA-A*31:01 (OR: 7.62; P=0.025; [Table 3](#T3)). As in the full cohort, a stronger association was observed when only considering patients with CBZ-HSS or MPE (OR: 10.05; P=0.013; [Table 3](#T3)).",
+                "Table 3 Caption: Subgroup analysis of HLA-A*31:01 in European patients only.\n\n|   | Total N | N positive | OR (95% CI) | P-valuea |\n| --- | --- | --- | --- | --- |\n| CBZ-HSS | 2 | 1 (50.0) | 25.92 (0.27\u20132437.8) | 0.088 |\n| CBZ-MPE | 14 | 3 (21.4) | 8.23 (0.84\u2013109.23) | 0.037 |\n| CBZ-SJS/TEN | 4 | - | 2.82 (0.12\u201368.10)b | 1.000 |\n| CBZ-AGEP | - | - | - | - |\n| All CBZ cases | 20 | 4 (20.0) | 7.62 (0.99\u201391.40) | 0.025 |\n| HSS/MPE | 16 | 4 (25.0) | 10.05 (1.28\u2013122.88) | 0.013 |\n| CBZ-tolerant | 65 | 2 (3.1) | - | - |"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 7,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "European-only subgroup, combined CBZ-HSS/MPE: 4 of 16 (25%) HSS/MPE cases vs 2 of 65 (3.1%) controls carried HLA-A*31:01; OR 10.05 (95% CI 1.28\u2013122.88), P=0.013.",
+              "Sentence": "Genotype HLA-A*31:01-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity syndrome or maculopapular exanthems in European children with seizure disorders as compared to HLA-A*31:01-negative.",
+              "Alleles": "HLA-A*31:01-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "or",
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cGiven the differences in origin between CBZ cases and controls, we performed a subgroup analysis for HLA-A*31:01 in patients with three or more grandparents of European origin. Twenty CBZ cases and 65 controls were included in this analysis. The frequency of HLA-A*31:01 in European CBZ-tolerant children (3.1%; [Table 3](#T3)) was similar to the frequency reported previously in a European study (3.9%). Similar results were observed for the association of HLA-A*31:01 with CBZ hypersensitivity as for the full cohort, with 20% of CBZ cases carrying HLA-A*31:01 (OR: 7.62; P=0.025; [Table 3](#T3)). As in the full cohort, a stronger association was observed when only considering patients with CBZ-HSS or MPE (OR: 10.05; P=0.013; [Table 3](#T3)).\u201d",
+                "\u201cHSS/MPE\t16\t4 (25.0)\t10.05 (1.28\u2013122.88)\t0.013\nCBZ-tolerant\t65\t2 (3.1)\t-\t-\u201d",
+                "\u201cHLA-A*31:01 was associated with carbamazepine-induced hypersensitivity syndrome and maculopapular exanthems also in children with diverse ancestries.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
             }
           },
           {
@@ -86,52 +329,790 @@
             "gene": "HLA-A",
             "drug": "carbamazepine",
             "annotation": {
+              "Variant Annotation ID": 8,
               "Variant/Haplotypes": "rs1061235",
               "Gene": "HLA-A",
               "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "Strong association with CBZ-HSS (OR: 26.4, P=0.0025) and MPE (OR: 8.6, P=0.0037) also observed.",
-              "Sentence": "The rs1061235 T allele is associated with increased hypersensitivity reactions carbamazepine in children with diverse ancestries.",
-              "Alleles": "rs1061235 T",
-              "Metabolizer types": null,
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": null,
+              "Notes": "Proxy SNP rs1061235T: four of six (66.7%) CBZ-HSS cases vs 6 of 91 (6.6%) controls were T-allele carriers; OR 25.97 (95% CI 3.07\u2013340.87), P=8.2\u00d710\u22124.",
+              "Sentence": "Genotype rs1061235T-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity syndrome in children with seizure disorders as compared to rs1061235T-negative.",
+              "Alleles": "rs1061235T-positive",
               "Specialty Population": "Pediatric",
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Side Effect:Hypersensitivity",
+              "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "response to",
+              "PD/PK terms": "risk of",
               "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
               "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs1061235T-negative",
+              "Comparison Metabolizer types": null,
               "Citations": [
-                "HLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037)",
-                "Overall, 20 (15%) children treated with CBZ carried the T allele of rs1061235... HLA-A*31:01 was not observed in any of the children not carrying rs1061235T.",
-                "...rs1061235 was also overrepresented in hypersensitivity cases after excluding HLA-A*31:01-positive children (OR: 5.83; P=0.033)"
-              ]
+                "A highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6\u00d710^\u22125^; [Table 2](#T2)).",
+                "Table 2, row \"CBZ-HSS\": \"CBZ-HSS | 6 | ... rs1061235T ... N positive 4 (66.7) | OR (95% CI) 25.97 (3.07\u2013340.87) | P-value 8.2\u00d710\u22124 ... CBZ-tolerant | 91/87c | ... rs1061235T ... N positive 6 (6.6)\"",
+                "Overall, 20 (15%) children treated with CBZ carried the T allele of rs1061235, a single nucleotide polymorphism (SNP) previously shown to be in complete linkage disequilibrium with HLA-A*31:01 in Europeans ([30](#R30))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs1061235",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 9,
+              "Variant/Haplotypes": "rs1061235",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Proxy SNP rs1061235T: nine of 26 (34.6%) CBZ-MPE cases vs 6 of 91 (6.6%) controls were T-allele carriers; OR 7.32 (95% CI 2.03\u201328.65), P=7.4\u00d710\u22124.",
+              "Sentence": "Genotype rs1061235T-positive Is Associated with increased risk of carbamazepine-induced maculopapular exanthems in children with seizure disorders as compared to rs1061235T-negative.",
+              "Alleles": "rs1061235T-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs1061235T-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cA significant association was also observed with CBZ-induced MPE, with six of 26 (23.1%) CBZ-MPE cases carrying HLA-A*31:01 (OR: 8.6; P=0.0037; [Table 2](#T2)).\u201d",
+                "\u201cA highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6\u00d710^\u22125^; [Table 2](#T2)).\u201d",
+                "\u201cCBZ-MPE  | 26 | 6 (23.1) | 8.57 (1.67\u201357.50) | 0.0037 | 9 (34.6) | 7.32 (2.03\u201328.65) | 7.4\u00d710\u22124 | - | 1.09 (0.04\u201327.51)b | 1.000 | 6.09 (1.31\u201332.25) | 0.0095 \u2026 CBZ-tolerant | 91/87c | 3 (3.3) | - | - | 6 (6.6) | - | - | 1 (1.1) | - | - | - | -\u201d]}``` \ud83c\udf89 **Citation Extraction Complete!** \u2705 Here's what we found to back up your annotation about the **rs1061235T** variant and **carbamazepine-induced maculopapular exanthems (MPE)** in children with seizure disorders: --- ### \ud83d\udccc Key Supporting Passages from the Article 1. **Association of HLA-A*31:01 with CBZ-induced MPE** > \u201cA significant association was also observed with CBZ-induced MPE, with six of 26 (23.1%) CBZ-MPE cases carrying HLA-A*31:01 (OR: 8.6; P=0.0037; [Table 2](#T2)).\u201d 2. **rs1061235T as a Proxy SNP for HLA-A*31:01 in CBZ Hypersensitivity** > \u201cA highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6\u00d710^\u22125^; [Table 2](#T2)).\u201d 3. **Detailed Numbers for rs1061235T in CBZ-MPE vs Controls (from Table 2)** > \u201cCBZ-MPE  | 26 | 6 (23.1) | 8.57 (1.67\u201357.50) | 0.0037 | 9 (34.6) | 7.32 (2.03\u201328.65) | 7.4\u00d710\u22124 | - | 1.09 (0.04\u201327.51)b | 1.000 | 6.09 (1.31\u201332.25) | 0.0095 \u2026 CBZ-tolerant | 91/87c | 3 (3.3) | - | - | 6 (6.6) | - | - | 1 (1.1) | - | - | - | -\u201d These quotations directly support that **rs1061235T-positive genotypes** are associated with an **increased risk of carbamazepine-induced MPE** in children, with **9 of 26 (34.6%) CBZ-MPE cases vs 6 of 91 (6.6%) controls** carrying the T allele and an **OR of 7.32 (95% CI 2.03\u201328.65), P = 7.4\u00d710\u207b\u2074**. If you\u2019d like, I can also help you phrase a concise evidence statement based on these. \ud83c\udfaf"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs1061235",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 10,
+              "Variant/Haplotypes": "rs1061235",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "No rs1061235T carriers among nine CBZ-SJS/TEN cases; OR 0.69 (95% CI 0.04\u201313.27), P=1.00, indicating no significant association with SJS/TEN in this cohort.",
+              "Sentence": "Genotype rs1061235T-positive Is Not associated with risk of carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis in children with seizure disorders as compared to rs1061235T-negative.",
+              "Alleles": "rs1061235T-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs1061235T-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cA highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6\u00d710^\u22125^; [Table 2](#T2)).\u201d",
+                "\n\u201c### SJS/TEN\n\nIn contrast to the strong associations with HSS and MPE, no HLA-A*31:01 or rs1061235T carriers were detected among the nine patients with CBZ-induced SJS/TEN, and no significant association with CBZ-SJS/TEN was observed (OR: 1.33; P=1.00; [Table 2](#T2)).\u201d",
+                "\u201cCBZ-SJS/TEN | 9 | - | 1.33 (0.06\u201327.76)b | 1.000 | - | 0.69 (0.04\u201313.27)b | 1.000 | 3 (33.3) | 38.65 (2.68\u20132239.5) | 0.0022 | 9.87 (1.18\u201375.50) | 0.017\u201d]}``` \u0645\u0646\u062f\u0e40\u0e15\u0e2d\u0e23\u0e35\u0e48\u2640\u2640\u2640\u2640\u2640\u2640  Note: The third quote is the row from Table 2 showing the odds ratio and confidence interval for rs1061235T in CBZ-SJS/TEN (OR 0.69 (95% CI 0.04\u201313.27), P=1.00), supporting the lack of significant association.  \u0cae\u0cbe\u0c9c\u0cbf```**Note: The extra explanatory text after the JSON is not part of the required output.**"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs1061235",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 11,
+              "Variant/Haplotypes": "rs1061235",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Combined CBZ-HSS and CBZ-MPE (32 cases): 13 (40.6%) rs1061235T-positive vs 6 of 91 (6.6%) controls; OR 9.45 (95% CI 2.91\u201334.50), P=2.6\u00d710\u22125. Effect remained when excluding HLA-A*31:01 carriers (OR 5.83, P=0.033).",
+              "Sentence": "Genotype rs1061235T-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity syndrome or maculopapular exanthems in children with seizure disorders as compared to rs1061235T-negative.",
+              "Alleles": "rs1061235T-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "or",
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "rs1061235T-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cOverall, 20 (15%) children treated with CBZ carried the T allele of rs1061235, a single nucleotide polymorphism (SNP) previously shown to be in complete linkage disequilibrium with HLA-A*31:01 in Europeans (30).\u201d",
+                "\u201cHLA-A*31:01 was thus very strongly associated with CBZ-HSS or MPE in a combined analysis of the two reactions (OR: 11.2; P=2.6\u00d710\u22124; Table 2), with nine (28.1%) of the cases carrying HLA-A*31:01.\u201d",
+                "\u201cA highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6\u00d710\u22125; Table 2). Interestingly, rs1061235 was also overrepresented in hypersensitivity cases after excluding HLA-A*31:01-positive children (OR: 5.83; P=0.033; Supplementary Table 1), resulting in very similar effect sizes of the associations with HSS and MPE for HLA-A*31:01 and rs1061235.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs1061235",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 12,
+              "Variant/Haplotypes": "rs1061235",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Across all CBZ hypersensitivity phenotypes (42 cases), 14 (33.3%) were rs1061235T carriers vs 6 of 91 (6.6%) controls; OR 6.96 (95% CI 2.25\u201324.32), P=1.5\u00d710\u22124.",
+              "Sentence": "Genotype rs1061235T-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity reactions in children with seizure disorders as compared to rs1061235T-negative.",
+              "Alleles": "rs1061235T-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs1061235T-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "A highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6\u00d710^\u22125^; [Table 2](#T2)).",
+                "When considering all CBZ hypersensitivity reactions combined, a highly significant association of HLA-A*31:01 was observed (OR: 7.85; P=0.0016; [Table 2](#T2)), even though the effect size was reduced compared to an analysis only including HSS and MPE cases. On the other hand, HLA-B*15:02 was not significantly overrepresented in the CBZ cases overall. In a combined analysis of both risk variants, a strong association was observed with all CBZ-induced hypersensitivity reactions (OR: 8.14; P=2.6\u00d710^\u22124^; [Table 2](#T2)).",
+                "Overall, 20 (15%) children treated with CBZ carried the T allele of rs1061235, a single nucleotide polymorphism (SNP) previously shown to be in complete linkage disequilibrium with HLA-A*31:01 in Europeans ([30](#R30))."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs1061235",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 13,
+              "Variant/Haplotypes": "rs1061235",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "not stated",
+              "Notes": "The single patient with CBZ-induced acute generalized exanthematous pustulosis (AGEP) carried rs1061235T but not HLA-A*31:01. Authors note possible disagreement with previous suggestion that AGEP is associated with HLA-A*31:01; no OR or P-value calculated due to N=1.",
+              "Sentence": "Genotype rs1061235T-positive Is Associated with increased risk of carbamazepine-induced acute generalized exanthematous pustulosis in children with seizure disorders as compared to rs1061235T-negative.",
+              "Alleles": "rs1061235T-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs1061235T-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"Interestingly, the single patient with CBZ-induced AGEP tested positive for the proxy SNP rs1061235, but did not carry HLA-A*31:01 ([Supplementary Table 1](#SD1)).\"",
+                "\"CBZ cases included nine children with SJS/TEN, six patients with HSS, 26 children with MPE, and one patient with acute generalized exanthematous pustulosis (AGEP) ([Table 1](#T1)).\"",
+                "\"Rs1061235T has also been reported in one adult patient with CBZ-AGEP of European descent ([30](#R30)).\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-B*15:02",
+            "gene": "HLA-B",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 14,
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "None of the 6 CBZ-HSS cases and 26 CBZ-MPE cases carried HLA-B*15:02; compared with 1 of 87\u201391 controls. Reported ORs for HSS and MPE vs controls were 4.44 and 1.09 with P=1.000, indicating no significant association with these phenotypes.",
+              "Sentence": "Genotype HLA-B*15:02-positive Is Not associated with risk of carbamazepine-induced hypersensitivity syndrome or maculopapular exanthems in children with seizure disorders as compared to HLA-B*15:02-negative.",
+              "Alleles": "HLA-B*15:02-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "or",
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "HLA-B*15:02-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"None of the patients with CBZ-HSS or MPE carried HLA-B*15:02 (Table 2). Therefore, in agreement with previous studies (24, 31), no significant association of this risk variant with CBZ-HSS or MPE was observed.\"",
+                "\"Only four carriers of HLA-B*15:02 were observed. This was expected, given the low frequency of this variant in non-Asian populations, and the small number of patients with Asian origin in our study (9% of all patients).\"",
+                "From Table 2: \"CBZ-HSS ... HLA-B*15:02 ... N positive - ... OR (95% CI) 4.44 (0.16\u2013120.08)b P-value 1.000\" and \"CBZ-MPE ... HLA-B*15:02 ... N positive - ... OR (95% CI) 1.09 (0.04\u201327.51)b P-value 1.000.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-B*15:02",
+                "variant_id": "PA165954769",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-B*15:02",
+            "gene": "HLA-B",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 15,
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Three of nine (33.3%) CBZ-induced SJS/TEN cases vs 1 of 87\u201391 CBZ-tolerant controls carried HLA-B*15:02; OR 38.65 (95% CI 2.68\u20132239.5), P=0.0022. All HLA-B*15:02-positive SJS/TEN patients reported Asian ancestry.",
+              "Sentence": "Genotype HLA-B*15:02-positive Is Associated with increased risk of carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis in children with seizure disorders as compared to HLA-B*15:02-negative.",
+              "Alleles": "HLA-B*15:02-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-B*15:02-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cOn the other hand, three of the nine patients with CBZ-SJS/TEN were carriers of HLA-B*15:02, resulting in a significant association of HLA-B*15:02 with CBZ-SJS/TEN (OR: 38.6; P=0.002; [Table 2](#T2)).\u201d",
+                "\u201cCBZ-SJS/TEN | 9 | - | 1.33 (0.06\u201327.76)b | 1.000 | - | 0.69 (0.04\u201313.27)b | 1.000 | 3 (33.3) | 38.65 (2.68\u20132239.5) | 0.0022 | 9.87 (1.18\u201375.50) | 0.017\u201d",
+                "\u201cAll three HLA-B*15:02-positive patients with CBZ-SJS/TEN were of Asian origin and included the patient with concurrent Mycoplasma infection.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-B*15:02",
+                "variant_id": "PA165954769",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-B*15:02",
+            "gene": "HLA-B",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 16,
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "Considering all CBZ hypersensitivity cases (42) vs controls, 3 (7.1%) vs 1 (1.1%) carried HLA-B*15:02; OR 6.51 (95% CI 0.50\u2013350.5), P=0.101, not reaching statistical significance for overall hypersensitivity.",
+              "Sentence": "Genotype HLA-B*15:02-positive Is Not associated with overall risk of carbamazepine-induced hypersensitivity reactions in children with seizure disorders as compared to HLA-B*15:02-negative.",
+              "Alleles": "HLA-B*15:02-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-B*15:02-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"When considering all CBZ hypersensitivity reactions combined, a highly significant association of HLA-A*31:01 was observed (OR: 7.85; P=0.0016; [Table 2](#T2)), even though the effect size was reduced compared to an analysis only including HSS and MPE cases. On the other hand, HLA-B*15:02 was not significantly overrepresented in the CBZ cases overall.\"",
+                "\"All CBZ cases | 42 | 9 (21.4) | 7.85 (1.82\u201347.80) | 0.0016 | 14 (33.3) | 6.96 (2.25\u201324.32) | 1.5\u00d710\u22124 | 3 (7.1) | 6.51 (0.50\u2013350.5) | 0.101 | 8.14 (2.25\u201337.34) | 2.6\u00d710\u22124 | ... CBZ-tolerant | 91/87c | 3 (3.3) | - | - | 6 (6.6) | - | - | 1 (1.1) | - | - | - | - |\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-B*15:02",
+                "variant_id": "PA165954769",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 17,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Combined genetic test (HLA-A*31:01 or HLA-B*15:02 positive) across all CBZ hypersensitivity reactions: 12 of 42 (28.6%) cases vs 4 of 87\u201391 (4.6%) controls carried at least one risk allele; combined OR 8.14 (95% CI 2.25\u201337.34), P=2.6\u00d710\u22124; positive likelihood ratio 6.21 with estimated post-test risk for hypersensitivity of 25\u201341% at baseline risk 5\u201310%.",
+              "Sentence": "Genotype HLA-A*31:01- or HLA-B*15:02-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity reactions in children with seizure disorders as compared to HLA-A*31:01- and HLA-B*15:02-negative.",
+              "Alleles": "HLA-A*31:01- or HLA-B*15:02-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01- and HLA-B*15:02-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "In a combined analysis of both risk variants, a strong association was observed with all CBZ-induced hypersensitivity reactions (OR: 8.14; P=2.6\u00d710^\u22124^; [Table 2](#T2)). Overall, 12 of 42 (28.6%) CBZ cases carried HLA-A*31:01 or HLA-B*15:02, whereas only four (4.6%) CBZ-tolerant patients were positive for either risk variant. Using an estimated incidence of CBZ-induced hypersensitivity reactions (pre-test probability) of 5\u201310%, the positive post-test probability of a combined genetic test for both risk variants, based on the positive likelihood ratio of 6.21 observed here, was estimated as 25\u201341%, with a negative post-test probability of 3.8\u20137.7%.",
+                "In conclusion, these findings demonstrate that HLA-A*31:01 and HLA-B*15:02 are predictive of CBZ-induced hypersensitivity reactions in children and that HLA-A*31:01 is a relevant marker in patients of various ancestries.",
+                "Overall, our findings were in agreement with previous studies, suggesting similar genetic associations in children and adults and an increased risk of CBZ hypersensitivity in children carrying these risk variants."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01, HLA-B*15:02",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "HLA-B*15:02",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 17,
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Combined genetic test (HLA-A*31:01 or HLA-B*15:02 positive) across all CBZ hypersensitivity reactions: 12 of 42 (28.6%) cases vs 4 of 87\u201391 (4.6%) controls carried at least one risk allele; combined OR 8.14 (95% CI 2.25\u201337.34), P=2.6\u00d710\u22124; positive likelihood ratio 6.21 with estimated post-test risk for hypersensitivity of 25\u201341% at baseline risk 5\u201310%.",
+              "Sentence": "Genotype HLA-A*31:01- or HLA-B*15:02-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity reactions in children with seizure disorders as compared to HLA-A*31:01- and HLA-B*15:02-negative.",
+              "Alleles": "HLA-A*31:01- or HLA-B*15:02-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01- and HLA-B*15:02-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "In a combined analysis of both risk variants, a strong association was observed with all CBZ-induced hypersensitivity reactions (OR: 8.14; P=2.6\u00d710^\u22124^; [Table 2](#T2)). Overall, 12 of 42 (28.6%) CBZ cases carried HLA-A*31:01 or HLA-B*15:02, whereas only four (4.6%) CBZ-tolerant patients were positive for either risk variant. Using an estimated incidence of CBZ-induced hypersensitivity reactions (pre-test probability) of 5\u201310%, the positive post-test probability of a combined genetic test for both risk variants, based on the positive likelihood ratio of 6.21 observed here, was estimated as 25\u201341%, with a negative post-test probability of 3.8\u20137.7%.",
+                "In conclusion, these findings demonstrate that HLA-A*31:01 and HLA-B*15:02 are predictive of CBZ-induced hypersensitivity reactions in children and that HLA-A*31:01 is a relevant marker in patients of various ancestries.",
+                "Overall, our findings were in agreement with previous studies, suggesting similar genetic associations in children and adults and an increased risk of CBZ hypersensitivity in children carrying these risk variants."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01, HLA-B*15:02",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 18,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Combined genetic test (HLA-A*31:01 or HLA-B*15:02 positive) for CBZ-HSS/MPE (32 cases) vs controls: combined OR 7.94 (95% CI 2.00\u201338.55), P=8.9\u00d710\u22125, indicating strong association of either risk allele with these cutaneous hypersensitivity reactions.",
+              "Sentence": "Genotype HLA-A*31:01- or HLA-B*15:02-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity syndrome or maculopapular exanthems in children with seizure disorders as compared to HLA-A*31:01- and HLA-B*15:02-negative.",
+              "Alleles": "HLA-A*31:01- or HLA-B*15:02-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "or",
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01- and HLA-B*15:02-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cHLA-A*31:01 was thus very strongly associated with CBZ-HSS or MPE in a combined analysis of the two reactions (OR: 11.2; P=2.6\u00d710^\u22124^; [Table 2](#T2)), with nine (28.1%) of the cases carrying HLA-A*31:01.\u201d",
+                "\u201cIn a combined analysis of both risk variants, a strong association was observed with all CBZ-induced hypersensitivity reactions (OR: 8.14; P=2.6\u00d710^\u22124^; [Table 2](#T2)). Overall, 12 of 42 (28.6%) CBZ cases carried HLA-A*31:01 or HLA-B*15:02, whereas only four (4.6%) CBZ-tolerant patients were positive for either risk variant.\u201d",
+                "\u201cHSS/MPE | 32 | 9 (28.1) | 11.18 (2.53\u201369.27) | 2.6\u00d710\u22124 | 13 (40.6) | 9.45 (2.91\u201334.50) | 2.6\u00d710\u22125 | - | 0.86 (0.03\u201321.66)b | 1.000 | 7.94 (2.00\u201338.55) | 8.9\u00d710\u22125\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01, HLA-B*15:02",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "HLA-B*15:02",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 18,
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Combined genetic test (HLA-A*31:01 or HLA-B*15:02 positive) for CBZ-HSS/MPE (32 cases) vs controls: combined OR 7.94 (95% CI 2.00\u201338.55), P=8.9\u00d710\u22125, indicating strong association of either risk allele with these cutaneous hypersensitivity reactions.",
+              "Sentence": "Genotype HLA-A*31:01- or HLA-B*15:02-positive Is Associated with increased risk of carbamazepine-induced hypersensitivity syndrome or maculopapular exanthems in children with seizure disorders as compared to HLA-A*31:01- and HLA-B*15:02-negative.",
+              "Alleles": "HLA-A*31:01- or HLA-B*15:02-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "or",
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "HLA-A*31:01- and HLA-B*15:02-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\u201cHLA-A*31:01 was thus very strongly associated with CBZ-HSS or MPE in a combined analysis of the two reactions (OR: 11.2; P=2.6\u00d710^\u22124^; [Table 2](#T2)), with nine (28.1%) of the cases carrying HLA-A*31:01.\u201d",
+                "\u201cIn a combined analysis of both risk variants, a strong association was observed with all CBZ-induced hypersensitivity reactions (OR: 8.14; P=2.6\u00d710^\u22124^; [Table 2](#T2)). Overall, 12 of 42 (28.6%) CBZ cases carried HLA-A*31:01 or HLA-B*15:02, whereas only four (4.6%) CBZ-tolerant patients were positive for either risk variant.\u201d",
+                "\u201cHSS/MPE | 32 | 9 (28.1) | 11.18 (2.53\u201369.27) | 2.6\u00d710\u22124 | 13 (40.6) | 9.45 (2.91\u201334.50) | 2.6\u00d710\u22125 | - | 0.86 (0.03\u201321.66)b | 1.000 | 7.94 (2.00\u201338.55) | 8.9\u00d710\u22125\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01, HLA-B*15:02",
+                "variant_id": null,
+                "confidence": 0.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "rs1061235",
+            "gene": "HLA-A",
+            "drug": "oxcarbazepine",
+            "annotation": {
+              "Variant Annotation ID": 19,
+              "Variant/Haplotypes": "rs1061235",
+              "Gene": "HLA-A",
+              "Drug(s)": "oxcarbazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "toxicity",
+              "Significance": "not stated",
+              "Notes": "Exploratory analysis in 5 children with OXC-induced hypersensitivity: one of two OXC-SJS patients was rs1061235T-positive but HLA-A*31:01-negative; none of the three OXC-MPE cases carried rs1061235T. Authors concluded no evidence of a strong association of HLA-A*31:01 with OXC hypersensitivity, and did not report formal statistics for rs1061235.",
+              "Sentence": "Genotype rs1061235T-positive Is Associated with increased risk of oxcarbazepine-induced Stevens-Johnson syndrome in children with seizure disorders as compared to rs1061235T-negative.",
+              "Alleles": "rs1061235T-positive",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorders",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "rs1061235T-negative",
+              "Comparison Metabolizer types": null,
+              "Citations": [
+                "\"Of the five patients with OXC-induced hypersensitivity reactions, included for an exploratory analysis of potential genetic associations with this structurally similar drug, two were classified as SJS, and three as MPE.\"",
+                "\"In the five children with OXC-induced hypersensitivity, one of the two patients with OXC-SJS was positive for rs1061235T, but not HLA-A*31:01. None of the three children with OXC-MPE carried HLA-A*31:01 or rs1061235T.\"",
+                "\"Even though the number of cases is too small to draw any conclusions, we thus did not observe any evidence indicating a strong association of HLA-A*31:01 with OXC hypersensitivity.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "oxcarbazepine",
+                "drug_id": "PA450732",
+                "confidence": 1.0
+              }
             }
           }
         ]
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
       }
     },
     "phenotype_annotations": {
-      "score": 0.3158402227693134,
+      "score": 0.8533637639549042,
       "total_samples": 6,
       "ground_truth_annotations": {
         "count": 6,
-        "matched_count": 2,
-        "unmatched_count": 4,
+        "matched_count": 6,
+        "unmatched_count": 0,
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.998588365316391,
+            "overall_match_score": 0.8962396800518035,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*31:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Carbamazepine-induced hypersensitivity syndrome",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-A*31:01",
+                "prediction": "HLA-A*31:01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-A",
+                "prediction": "HLA-A",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "carbamazepine",
+                "prediction": "carbamazepine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*31:01",
+                "prediction": "*31:01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Carbamazepine-induced hypersensitivity syndrome",
+                "prediction": "Side Effect:Hypersensitivity syndrome",
+                "score": 0.9623968005180359,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": "non-carriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8962007105350495,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*31:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Disease:Maculopapular Exanthema",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-A*31:01",
+                "prediction": "HLA-A*31:01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-A",
+                "prediction": "HLA-A",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "carbamazepine",
+                "prediction": "carbamazepine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*31:01",
+                "prediction": "*31:01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Disease:Maculopapular Exanthema",
+                "prediction": "Side Effect:Maculopapular exanthema",
+                "score": 0.9620071053504944,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": "non-carriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8939773142337799,
             "annotation": {
               "Variant/Haplotypes": "HLA-B*15:02",
               "Gene": "HLA-B",
@@ -189,9 +1170,9 @@
               },
               "Phenotype": {
                 "ground_truth": "Disease:Stevens-Johnson Syndrome",
-                "prediction": "Stevens-Johnson Syndrome",
-                "score": 0.9858836531639099,
-                "match_status": "match"
+                "prediction": "Side Effect:Stevens-Johnson syndrome, Side Effect:Toxic epidermal necrolysis",
+                "score": 0.9397731423377991,
+                "match_status": "partial_match"
               },
               "When treated with/exposed to/when assayed with": {
                 "ground_truth": "when treated with",
@@ -201,24 +1182,24 @@
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "non-carriers",
+                "score": 0.0,
+                "match_status": "no_match"
               }
             }
           },
           {
             "matched": true,
-            "overall_match_score": 0.8884364366531372,
+            "overall_match_score": 0.8932424902915954,
             "annotation": {
               "Variant/Haplotypes": "HLA-A*31:01",
               "Gene": "HLA-A",
               "Drug(s)": "carbamazepine",
               "Phenotype Category": "Toxicity",
               "Alleles": "*31:01",
-              "Is/Is Not associated": "Not associated with",
+              "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "Phenotype": "Disease:Stevens-Johnson Syndrome",
+              "Phenotype": "Disease:Maculopapular Exanthema",
               "When treated with/exposed to/when assayed with": "when treated with",
               "Comparison Allele(s) or Genotype(s)": null
             },
@@ -254,10 +1235,10 @@
                 "match_status": "match"
               },
               "Is/Is Not associated": {
-                "ground_truth": "Not associated with",
+                "ground_truth": "Associated with",
                 "prediction": "Associated with",
-                "score": 0.0,
-                "match_status": "no_match"
+                "score": 1.0,
+                "match_status": "match"
               },
               "Direction of effect": {
                 "ground_truth": "increased",
@@ -266,9 +1247,9 @@
                 "match_status": "match"
               },
               "Phenotype": {
-                "ground_truth": "Disease:Stevens-Johnson Syndrome",
-                "prediction": "hypersensitivity syndrome",
-                "score": 0.8843643665313721,
+                "ground_truth": "Disease:Maculopapular Exanthema",
+                "prediction": "Side Effect:Hypersensitivity syndrome, Side Effect:Maculopapular exanthema",
+                "score": 0.9324249029159546,
                 "match_status": "partial_match"
               },
               "When treated with/exposed to/when assayed with": {
@@ -279,284 +1260,763 @@
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "non-carriers",
+                "score": 0.0,
+                "match_status": "no_match"
               }
             }
           },
           {
-            "matched": false,
+            "matched": true,
+            "overall_match_score": 0.7962486445903778,
             "annotation": {
-              "Variant Annotation ID": 994531642,
               "Variant/Haplotypes": "HLA-B*15:02",
               "Gene": "HLA-B",
               "Drug(s)": "carbamazepine",
-              "PMID": 23588310,
               "Phenotype Category": "Toxicity",
-              "Significance": "no",
-              "Notes": null,
-              "Sentence": "HLA-B *15:02 is not associated with increased risk of Maculopapular Exanthema when treated with carbamazepine in children.",
               "Alleles": "*15:02",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
               "Is/Is Not associated": "Not associated with",
               "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Disease:Maculopapular Exanthema",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children",
-              "Population Phenotypes or diseases": null,
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "23588310",
-              "Variant Annotation ID_norm": "994531642"
-            }
-          },
-          {
-            "matched": false,
-            "annotation": {
-              "Variant Annotation ID": 993813998,
-              "Variant/Haplotypes": "HLA-A*31:01",
-              "Gene": "HLA-A",
-              "Drug(s)": "carbamazepine",
-              "PMID": 23588310,
-              "Phenotype Category": "Toxicity",
-              "Significance": "yes",
-              "Notes": null,
-              "Sentence": "HLA-A *31:01 is associated with increased risk of Maculopapular Exanthema when treated with carbamazepine in children.",
-              "Alleles": "*31:01",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Disease:Maculopapular Exanthema",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children",
-              "Population Phenotypes or diseases": null,
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "23588310",
-              "Variant Annotation ID_norm": "993813998"
-            }
-          },
-          {
-            "matched": false,
-            "annotation": {
-              "Variant Annotation ID": 992282434,
-              "Variant/Haplotypes": "HLA-A*31:01",
-              "Gene": "HLA-A",
-              "Drug(s)": "carbamazepine",
-              "PMID": 23588310,
-              "Phenotype Category": "Toxicity",
-              "Significance": "yes",
-              "Notes": null,
-              "Sentence": "HLA-A *31:01 is associated with increased risk of Carbamazepine-induced hypersensitivity syndrome when treated with carbamazepine in children.",
-              "Alleles": "*31:01",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Carbamazepine-induced hypersensitivity syndrome",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children",
-              "Population Phenotypes or diseases": null,
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "23588310",
-              "Variant Annotation ID_norm": "992282434"
-            }
-          },
-          {
-            "matched": false,
-            "annotation": {
-              "Variant Annotation ID": 994398056,
-              "Variant/Haplotypes": "HLA-B*15:02",
-              "Gene": "HLA-B",
-              "Drug(s)": "carbamazepine",
-              "PMID": 23588310,
-              "Phenotype Category": "Toxicity",
-              "Significance": "no",
-              "Notes": null,
-              "Sentence": "HLA-B *15:02 is not associated with increased risk of Carbamazepine-induced hypersensitivity syndrome (HSS) when treated with carbamazepine in children.",
-              "Alleles": "*15:02",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
               "Phenotype": "Side Effect:Carbamazepine-induced hypersensitivity syndrome (HSS)",
-              "Multiple phenotypes And/or": null,
               "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children",
-              "Population Phenotypes or diseases": null,
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "23588310",
-              "Variant Annotation ID_norm": "994398056"
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-B*15:02",
+                "prediction": "HLA-B*15:02",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-B",
+                "prediction": "HLA-B",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "carbamazepine",
+                "prediction": "carbamazepine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*15:02",
+                "prediction": "*15:02",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Not associated with",
+                "prediction": "Not associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Carbamazepine-induced hypersensitivity syndrome (HSS)",
+                "prediction": "Side Effect:Hypersensitivity syndrome",
+                "score": 0.9624864459037781,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": "non-carriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7962007105350495,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "carbamazepine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*15:02",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Disease:Maculopapular Exanthema",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-B*15:02",
+                "prediction": "HLA-B*15:02",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-B",
+                "prediction": "HLA-B",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "carbamazepine",
+                "prediction": "carbamazepine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*15:02",
+                "prediction": "*15:02",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Not associated with",
+                "prediction": "Not associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Disease:Maculopapular Exanthema",
+                "prediction": "Side Effect:Maculopapular exanthema",
+                "score": 0.9620071053504944,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": "non-carriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 0,
-        "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 10,
-        "fields": {
-          "Variant/Haplotypes": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+        "count": 12,
+        "items": [
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 4,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "No HLA-A*31:01 carriers were detected among 9 CBZ-SJS/TEN cases (reported OR 1.33, p=1.0; likely reflecting small numbers; effectively no observed enrichment vs controls).",
+              "Sentence": "HLA-A*31:01 Is Not associated with risk of Stevens-Johnson syndrome or toxic epidermal necrolysis when treated with carbamazepine in children with Disease:Seizure disorder.",
+              "Alleles": "*31:01",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Stevens-Johnson syndrome, Side Effect:Toxic epidermal necrolysis",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "4",
+              "Citations": [
+                "In contrast to the strong associations with HSS and MPE, no HLA-A*31:01 or rs1061235T carriers were detected among the nine patients with CBZ-induced SJS/TEN, and no significant association with CBZ-SJS/TEN was observed (OR: 1.33; P=1.00; [Table 2](#T2)).",
+                "We did not detect an association of HLA-A*31:01 with CBZ-SJS/TEN, which is in contrast to two previous studies that reported a stronger association with SJS/TEN compared to CBZ-HSS or MPE with odds ratios of 26 and 34 ([30](#R30), [31](#R31)).",
+                "HLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037), but not with CBZ-SJS."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
           },
-          "Gene": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 5,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Considering all CBZ hypersensitivity reactions combined (HSS, SJS/TEN, MPE, AGEP), 9 of 42 (21.4%) cases vs 3 of 91 (3.3%) controls carried HLA-A*31:01 (OR 7.85, 95% CI 1.82\u201347.80, p=0.0016).",
+              "Sentence": "HLA-A*31:01 Is Associated with increased risk of Hypersensitivity reactions when treated with carbamazepine in children with Disease:Seizure disorder.",
+              "Alleles": "*31:01",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Hypersensitivity reactions",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "5",
+              "Citations": [
+                "\"When considering all CBZ hypersensitivity reactions combined, a highly significant association of HLA-A*31:01 was observed (OR: 7.85; P=0.0016; [Table 2](#T2)), even though the effect size was reduced compared to an analysis only including HSS and MPE cases.\"",
+                "\"All patients received CBZ for the treatment of a seizure disorder.\"",
+                "\"In conclusion, these findings demonstrate that HLA-A*31:01 and HLA-B*15:02 are predictive of CBZ-induced hypersensitivity reactions in children and that HLA-A*31:01 is a relevant marker in patients of various ancestries.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
           },
-          "Drug(s)": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "rs1061235T",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 6,
+              "Variant/Haplotypes": "rs1061235T",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Proxy SNP for HLA-A*31:01. Four of six (66.7%) CBZ-HSS cases vs 6 of 91 (6.6%) controls carried rs1061235T (OR 25.97, 95% CI 3.07\u2013340.87, p=8.2\u00d710\u22124).",
+              "Sentence": "rs1061235T Is Associated with increased risk of Hypersensitivity syndrome when treated with carbamazepine in children with Disease:Seizure disorder.",
+              "Alleles": "T",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Hypersensitivity syndrome",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers (non-T)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "6",
+              "Citations": [
+                "\u201cOverall, 20 (15%) children treated with CBZ carried the T allele of rs1061235, a single nucleotide polymorphism (SNP) previously shown to be in complete linkage disequilibrium with HLA-A*31:01 in Europeans (30).\u201d",
+                "\u201cA highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6\u00d710^\u22125; [Table 2](#T2)).\u201d",
+                "\u201cCBZ-HSS | 6 | \u2026 | 4 (66.7) | 25.97 (3.07\u2013340.87) | 8.2\u00d710\u22124 \u2026 | CBZ-tolerant | 91/87c | \u2026 | 6 (6.6) | - | -\u201d]}```json```**Note**: The last citation is taken from Table 2, under the rs1061235T column, showing that 4 of 6 (66.7%) CBZ-HSS cases and 6 of 91 (6.6%) CBZ-tolerant controls carried rs1061235T (OR 25.97, 95% CI 3.07\u2013340.87, p=8.2\u00d710\u22124).``` JSON to=python code```json```{}````\u0bf9``` JSON to=python code```json```{}````\u09cd``` JSON to=python code```json```{}``````json``` to=python code```json```{}````}\u200b```json``` to=python code```json```{}````",
+                "citations"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 0.9473684210526315
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
           },
-          "Phenotype Category": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "rs1061235T",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 7,
+              "Variant/Haplotypes": "rs1061235T",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Nine of 26 (34.6%) CBZ-MPE cases vs 6 of 91 (6.6%) controls carried rs1061235T (OR 7.32, 95% CI 2.03\u201328.65, p=7.4\u00d710\u22124).",
+              "Sentence": "rs1061235T Is Associated with increased risk of Maculopapular exanthema when treated with carbamazepine in children with Disease:Seizure disorder.",
+              "Alleles": "T",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Maculopapular exanthema",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers (non-T)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "7",
+              "Citations": [
+                "\u201cOverall, 20 (15%) children treated with CBZ carried the T allele of rs1061235, a single nucleotide polymorphism (SNP) previously shown to be in complete linkage disequilibrium with HLA-A*31:01 in Europeans (30).\u201d",
+                "\u201cA significant association was also observed with CBZ-induced MPE, with six of 26 (23.1%) CBZ-MPE cases carrying HLA-A*31:01 (OR: 8.6; P=0.0037; Table 2).\u201d",
+                "\u201cA highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6\u00d710\u22125; Table 2).\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 0.9473684210526315
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
           },
-          "Alleles": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "rs1061235T",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 8,
+              "Variant/Haplotypes": "rs1061235T",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "No rs1061235T carriers were detected among 9 CBZ-SJS/TEN cases (reported OR 0.69, p=1.0; no evidence of association).",
+              "Sentence": "rs1061235T Is Not associated with risk of Stevens-Johnson syndrome or toxic epidermal necrolysis when treated with carbamazepine in children with Disease:Seizure disorder.",
+              "Alleles": "T",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Stevens-Johnson syndrome, Side Effect:Toxic epidermal necrolysis",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers (non-T)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "8",
+              "Citations": [
+                "In contrast to the strong associations with HSS and MPE, no HLA-A*31:01 or rs1061235T carriers were detected among the nine patients with CBZ-induced SJS/TEN, and no significant association with CBZ-SJS/TEN was observed (OR: 1.33; P=1.00; [Table 2](#T2)).",
+                "A highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6\u00d710^\u22125^; [Table 2](#T2)).",
+                "All study participants were recruited through the Canadian Pharmacogenomics Network for Drug Safety (CPNDS) ([45](#R45)) in pediatric hospitals across Canada. ... All patients received CBZ for the treatment of a seizure disorder."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 0.9473684210526315
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
           },
-          "Is/Is Not associated": {
-            "mean_score": 0.16666666666666666,
-            "scores": [
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "rs1061235T",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 9,
+              "Variant/Haplotypes": "rs1061235T",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Considering all CBZ hypersensitivity reactions combined, 14 of 42 (33.3%) cases vs 6 of 91 (6.6%) controls carried rs1061235T (OR 6.96, 95% CI 2.25\u201324.32, p=1.5\u00d710\u22124).",
+              "Sentence": "rs1061235T Is Associated with increased risk of Hypersensitivity reactions when treated with carbamazepine in children with Disease:Seizure disorder.",
+              "Alleles": "T",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Hypersensitivity reactions",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers (non-T)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "9",
+              "Citations": [
+                "\u201cOverall, 20 (15%) children treated with CBZ carried the T allele of rs1061235, a single nucleotide polymorphism (SNP) previously shown to be in complete linkage disequilibrium with HLA-A*31:01 in Europeans ([30]).\u201d",
+                "\u201cA highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6\u00d710^\u22125; [Table 2]).\u201d",
+                "\u201cWhen considering all CBZ hypersensitivity reactions combined, a highly significant association of HLA-A*31:01 was observed (OR: 7.85; P=0.0016; [Table 2]), even though the effect size was reduced compared to an analysis only including HSS and MPE cases.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 0.9473684210526315
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
           },
-          "Direction of effect": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "HLA-B*15:02",
+            "gene": "HLA-B",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 13,
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "carbamazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "Considering all CBZ hypersensitivity reactions combined, 3 of 42 (7.1%) cases vs 1 of 91 (1.1%) controls carried HLA-B*15:02 (OR 6.51, 95% CI 0.50\u2013350.5, p=0.101); not statistically significant.",
+              "Sentence": "HLA-B*15:02 Is Not associated with risk of Hypersensitivity reactions when treated with carbamazepine in children with Disease:Seizure disorder.",
+              "Alleles": "*15:02",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Hypersensitivity reactions",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "13",
+              "Citations": [
+                "\u201cNone of the patients with CBZ-HSS or MPE carried HLA-B*15:02 (Table 2). Therefore, in agreement with previous studies (24, 31), no significant association of this risk variant with CBZ-HSS or MPE was observed.\u201d",
+                "\u201cWhen considering all CBZ hypersensitivity reactions combined, a highly significant association of HLA-A*31:01 was observed (OR: 7.85; P=0.0016; Table 2), even though the effect size was reduced compared to an analysis only including HSS and MPE cases. On the other hand, HLA-B*15:02 was not significantly overrepresented in the CBZ cases overall.\u201d",
+                "\u201cAll study participants\u2026 All patients received CBZ for the treatment of a seizure disorder.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-B*15:02",
+                "variant_id": "PA165954769",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
           },
-          "Phenotype": {
-            "mean_score": 0.311708003282547,
-            "scores": [
-              0.9858836531639099,
-              0.8843643665313721,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 14,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "In European-only subgroup, 4 of 20 (20.0%) CBZ hypersensitivity cases vs 2 of 65 (3.1%) CBZ-tolerant controls carried HLA-A*31:01 (OR 7.62, 95% CI 0.99\u201391.40, p=0.025).",
+              "Sentence": "HLA-A*31:01 Is Associated with increased risk of Hypersensitivity reactions when treated with carbamazepine in European children with Disease:Seizure disorder.",
+              "Alleles": "*31:01",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Hypersensitivity reactions",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "14",
+              "Citations": [
+                "\u201cGiven the differences in origin between CBZ cases and controls, we performed a subgroup analysis for HLA-A*31:01 in patients with three or more grandparents of European origin. Twenty CBZ cases and 65 controls were included in this analysis.\u201d",
+                "\u201cSimilar results were observed for the association of HLA-A*31:01 with CBZ hypersensitivity as for the full cohort, with 20% of CBZ cases carrying HLA-A*31:01 (OR: 7.62; P=0.025; [Table 3](#T3)).\u201d",
+                "\u201cAll patients received CBZ for the treatment of a seizure disorder.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
           },
-          "When treated with/exposed to/when assayed with": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant Annotation ID": 15,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "In European-only subgroup, among CBZ-HSS and MPE combined, 4 of 16 (25.0%) cases vs 2 of 65 (3.1%) controls carried HLA-A*31:01 (OR 10.05, 95% CI 1.28\u2013122.88, p=0.013).",
+              "Sentence": "HLA-A*31:01 Is Associated with increased risk of Hypersensitivity reactions (hypersensitivity syndrome or maculopapular exanthema) when treated with carbamazepine in European children with Disease:Seizure disorder.",
+              "Alleles": "*31:01",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Hypersensitivity syndrome, Side Effect:Maculopapular exanthema",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "15",
+              "Citations": [
+                "\u201cGiven the differences in origin between CBZ cases and controls, we performed a subgroup analysis for HLA-A*31:01 in patients with three or more grandparents of European origin. Twenty CBZ cases and 65 controls were included in this analysis. The frequency of HLA-A*31:01 in European CBZ-tolerant children (3.1%; [Table 3](#T3)) was similar to the frequency reported previously in a European study (3.9%). Similar results were observed for the association of HLA-A*31:01 with CBZ hypersensitivity as for the full cohort, with 20% of CBZ cases carrying HLA-A*31:01 (OR: 7.62; P=0.025; [Table 3](#T3)). As in the full cohort, a stronger association was observed when only considering patients with CBZ-HSS or MPE (OR: 10.05; P=0.013; [Table 3](#T3)).\u201d",
+                "\u201cHLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037), but not with CBZ-SJS.\u201d",
+                "\u201cThree of six patients (50%) with CBZ-HSS carried HLA-A*31:01, whereas only three (3.3%) of the 91 CBZ-tolerant controls carried the allele, resulting in a very strong association with CBZ-HSS (OR: 26.4; P=0.0025; [Table 2](#T2)). A significant association was also observed with CBZ-induced MPE, with six of 26 (23.1%) CBZ-MPE cases carrying HLA-A*31:01 (OR: 8.6; P=0.0037; [Table 2](#T2)). HLA-A*31:01 was thus very strongly associated with CBZ-HSS or MPE in a combined analysis of the two reactions (OR: 11.2; P=2.6\u00d710^\u22124^; [Table 2](#T2)), with nine (28.1%) of the cases carrying HLA-A*31:01.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "carbamazepine",
+                "drug_id": "PA448785",
+                "confidence": 1.0
+              }
+            }
           },
-          "Comparison Allele(s) or Genotype(s)": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "oxcarbazepine",
+            "annotation": {
+              "Variant Annotation ID": 16,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "oxcarbazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "In five OXC hypersensitivity cases (2 SJS, 3 MPE), no carriers of HLA-A*31:01 were observed; authors state they did not observe evidence of a strong association with OXC hypersensitivity.",
+              "Sentence": "HLA-A*31:01 Is Not associated with risk of Hypersensitivity reactions when treated with oxcarbazepine in children with Disease:Seizure disorder.",
+              "Alleles": "*31:01",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Hypersensitivity reactions",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "16",
+              "Citations": [
+                "\u201cOf the five patients with OXC-induced hypersensitivity reactions, included for an exploratory analysis of potential genetic associations with this structurally similar drug, two were classified as SJS, and three as MPE.\u201d",
+                "\u201cIn the five children with OXC-induced hypersensitivity, one of the two patients with OXC-SJS was positive for rs1061235T, but not HLA-A*31:01. None of the three children with OXC-MPE carried HLA-A*31:01 or rs1061235T.\u201d",
+                "\u201cEven though the number of cases is too small to draw any conclusions, we thus did not observe any evidence indicating a strong association of HLA-A*31:01 with OXC hypersensitivity.\u201d"
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-A*31:01",
+                "variant_id": "PA165954030",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "oxcarbazepine",
+                "drug_id": "PA450732",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "rs1061235T",
+            "gene": "HLA-A",
+            "drug": "oxcarbazepine",
+            "annotation": {
+              "Variant Annotation ID": 17,
+              "Variant/Haplotypes": "rs1061235T",
+              "Gene": "HLA-A",
+              "Drug(s)": "oxcarbazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "Among five OXC hypersensitivity cases, one of two OXC-SJS patients was rs1061235T-positive but not HLA-A*31:01; none of the three OXC-MPE carried HLA-A*31:01 or rs1061235T. Authors report no evidence indicating a strong association with OXC hypersensitivity.",
+              "Sentence": "rs1061235T Is Not associated with risk of Hypersensitivity reactions when treated with oxcarbazepine in children with Disease:Seizure disorder.",
+              "Alleles": "T",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Hypersensitivity reactions",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers (non-T)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "17",
+              "Citations": [
+                "\"In the five children with OXC-induced hypersensitivity, one of the two patients with OXC-SJS was positive for rs1061235T, but not HLA-A*31:01. None of the three children with OXC-MPE carried HLA-A*31:01 or rs1061235T. Even though the number of cases is too small to draw any conclusions, we thus did not observe any evidence indicating a strong association of HLA-A*31:01 with OXC hypersensitivity.\""
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "rs1061235",
+                "variant_id": "PA166156975",
+                "confidence": 0.9473684210526315
+              },
+              "Drug(s)_normalized": {
+                "normalized": "oxcarbazepine",
+                "drug_id": "PA450732",
+                "confidence": 1.0
+              }
+            }
+          },
+          {
+            "variant": "HLA-B*15:02",
+            "gene": "HLA-B",
+            "drug": "oxcarbazepine",
+            "annotation": {
+              "Variant Annotation ID": 18,
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "oxcarbazepine",
+              "PMID": "23588310",
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "No carriers of HLA-B*15:02 were observed among the five OXC hypersensitivity patients; sample size was small and no clear association was observed.",
+              "Sentence": "HLA-B*15:02 Is Not associated with risk of Hypersensitivity reactions when treated with oxcarbazepine in children with Disease:Seizure disorder.",
+              "Alleles": "*15:02",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Hypersensitivity reactions",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Disease:Seizure disorder",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "non-carriers",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "18",
+              "Citations": [
+                "In the five children with OXC-induced hypersensitivity, one of the two patients with OXC-SJS was positive for rs1061235T, but not HLA-A*31:01. None of the three children with OXC-MPE carried HLA-A*31:01 or rs1061235T. Even though the number of cases is too small to draw any conclusions, we thus did not observe any evidence indicating a strong association of HLA-A*31:01 with OXC hypersensitivity. Similarly, no carriers of HLA-B*15:02 were observed among the patients with OXC hypersensitivity. However, this was not unexpected, as none of the patients with OXC hypersensitivity reported Asian ancestry."
+              ],
+              "Variant/Haplotypes_normalized": {
+                "normalized": "HLA-B*15:02",
+                "variant_id": "PA165954769",
+                "confidence": 1.0
+              },
+              "Drug(s)_normalized": {
+                "normalized": "oxcarbazepine",
+                "drug_id": "PA450732",
+                "confidence": 1.0
+              }
+            }
           }
-        }
-      }
-    },
-    "functional_analysis": {
-      "score": 0.0,
-      "total_samples": 0,
-      "ground_truth_annotations": {
-        "count": 0,
-        "matched_count": 0,
-        "unmatched_count": 0,
-        "items": []
-      },
-      "extra_predictions": {
-        "count": 0,
-        "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 0,
-        "fields": {}
+        ]
       }
     },
     "study_parameters": {
-      "score": 0.724669099383884,
+      "score": 0.6411837952666812,
       "total_samples": 6,
       "ground_truth_annotations": {
         "count": 6,
@@ -565,134 +2025,7 @@
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.7598417120821336,
-            "annotation": {
-              "Study Parameters ID": 993728141,
-              "Variant Annotation ID": 992282434,
-              "Study Type": "case/control",
-              "Study Cases": 42.0,
-              "Study Controls": 91.0,
-              "Characteristics": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.0025",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 26.4,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Multiple groups"
-            },
-            "field_comparison": {
-              "Study Parameters ID": {
-                "ground_truth": 993728141,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Variant Annotation ID": {
-                "ground_truth": 992282434,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Type": {
-                "ground_truth": "case/control",
-                "prediction": "case/control",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Study Cases": {
-                "ground_truth": 42.0,
-                "prediction": 42,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Study Controls": {
-                "ground_truth": 91.0,
-                "prediction": 91,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Characteristics": {
-                "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
-                "prediction": "Children with carbamazepine hypersensitivity reactions",
-                "score": 0.9173091053962708,
-                "match_status": "partial_match"
-              },
-              "Characteristics Type": {
-                "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "P Value": {
-                "ground_truth": "= 0.0025",
-                "prediction": "= 0.0025",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat Type": {
-                "ground_truth": "OR",
-                "prediction": "OR",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat": {
-                "ground_truth": 26.4,
-                "prediction": 26.4,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": null,
-                "prediction": 2.53,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Confidence Interval Stop": {
-                "ground_truth": null,
-                "prediction": 307.89,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Biogeographical Groups": {
-                "ground_truth": "Multiple groups",
-                "prediction": "Multiple Groups",
-                "score": 1.0,
-                "match_status": "match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.7183408975601197,
+            "overall_match_score": 0.6612909955136916,
             "annotation": {
               "Study Parameters ID": 993818102,
               "Variant Annotation ID": 993813998,
@@ -745,15 +2078,15 @@
               },
               "Characteristics": {
                 "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
-                "prediction": "All CBZ cases",
-                "score": 0.9117952585220337,
+                "prediction": "All Canadian children with carbamazepine-induced hypersensitivity reactions (combined HSS, MPE, SJS/TEN, AGEP) vs carbamazepine-tolerant pediatric controls; combined genetic test HLA-A*31:01 or HLA-B*15:02",
+                "score": 0.9419469237327576,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "drug",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Frequency In Cases": {
                 "ground_truth": null,
@@ -781,7 +2114,7 @@
               },
               "P Value": {
                 "ground_truth": "= 0.0037",
-                "prediction": "= 2.6x10^\u22124",
+                "prediction": "= 2.6E-4",
                 "score": 0.5,
                 "match_status": "partial_match"
               },
@@ -819,7 +2152,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.7007010333678302,
+            "overall_match_score": 0.5555509363903719,
             "annotation": {
               "Study Parameters ID": 994166721,
               "Variant Annotation ID": 994166507,
@@ -860,7 +2193,7 @@
               },
               "Study Cases": {
                 "ground_truth": 42.0,
-                "prediction": 9,
+                "prediction": 6,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -872,15 +2205,15 @@
               },
               "Characteristics": {
                 "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
-                "prediction": "Children with CBZ-SJS/TEN",
-                "score": 0.9119175672531128,
+                "prediction": "Canadian children with carbamazepine-induced hypersensitivity syndrome (HSS) vs carbamazepine-tolerant pediatric controls; combined genetic test HLA-A*31:01 or HLA-B*15:02",
+                "score": 0.944365918636322,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "drug",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Frequency In Cases": {
                 "ground_truth": null,
@@ -908,9 +2241,9 @@
               },
               "P Value": {
                 "ground_truth": "= 0.002",
-                "prediction": "= 0.002",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "= 0.0048",
+                "score": 0.5,
+                "match_status": "partial_match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -920,19 +2253,19 @@
               },
               "Ratio Stat": {
                 "ground_truth": 38.6,
-                "prediction": 38.6,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": 19.05,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Confidence Interval Start": {
                 "ground_truth": null,
-                "prediction": 2.68,
+                "prediction": 1.95,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Confidence Interval Stop": {
                 "ground_truth": null,
-                "prediction": 2239.5,
+                "prediction": 197.65,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -946,7 +2279,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.6123072680305032,
+            "overall_match_score": 0.5550091406878304,
             "annotation": {
               "Study Parameters ID": 994531644,
               "Variant Annotation ID": 994531642,
@@ -999,15 +2332,15 @@
               },
               "Characteristics": {
                 "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
-                "prediction": "Children with hypersensitivity reactions",
-                "score": 0.9092235565185547,
+                "prediction": "Canadian children with carbamazepine-induced hypersensitivity syndrome (HSS) or maculopapular exanthems (MPE) combined vs carbamazepine-tolerant pediatric controls; combined genetic test HLA-A*31:01 or HLA-B*15:02",
+                "score": 0.9351553916931152,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "drug",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Frequency In Cases": {
                 "ground_truth": null,
@@ -1035,7 +2368,7 @@
               },
               "P Value": {
                 "ground_truth": "= 1.0",
-                "prediction": "= 2.6x10^\u22124",
+                "prediction": "= 8.9E-5",
                 "score": 0.5,
                 "match_status": "partial_match"
               },
@@ -1047,19 +2380,19 @@
               },
               "Ratio Stat": {
                 "ground_truth": 1.09,
-                "prediction": 11.2,
+                "prediction": 7.94,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Confidence Interval Start": {
                 "ground_truth": 0.04,
-                "prediction": 2.53,
+                "prediction": 2.0,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Confidence Interval Stop": {
                 "ground_truth": 27.5,
-                "prediction": 69.27,
+                "prediction": 38.55,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -1073,7 +2406,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.6091329805991229,
+            "overall_match_score": 0.5541773613761453,
             "annotation": {
               "Study Parameters ID": 993944507,
               "Variant Annotation ID": 993944301,
@@ -1114,7 +2447,7 @@
               },
               "Study Cases": {
                 "ground_truth": 42.0,
-                "prediction": 26,
+                "prediction": 9,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -1126,15 +2459,15 @@
               },
               "Characteristics": {
                 "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
-                "prediction": "Children with maculopapular exanthems",
-                "score": 0.8552606701850891,
+                "prediction": "Canadian children with carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN) vs carbamazepine-tolerant pediatric controls; combined genetic test HLA-A*31:01 or HLA-B*15:02",
+                "score": 0.9210151433944702,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "drug",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Frequency In Cases": {
                 "ground_truth": null,
@@ -1162,7 +2495,7 @@
               },
               "P Value": {
                 "ground_truth": "= 1.0",
-                "prediction": "= 0.0037",
+                "prediction": "= 0.017",
                 "score": 0.5,
                 "match_status": "partial_match"
               },
@@ -1174,19 +2507,19 @@
               },
               "Ratio Stat": {
                 "ground_truth": 1.33,
-                "prediction": 8.6,
+                "prediction": 9.87,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Confidence Interval Start": {
                 "ground_truth": null,
-                "prediction": 1.67,
+                "prediction": 1.18,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Confidence Interval Stop": {
                 "ground_truth": null,
-                "prediction": 57.5,
+                "prediction": 75.5,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -1200,7 +2533,134 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.43615957568673525,
+            "overall_match_score": 0.5541020140928381,
+            "annotation": {
+              "Study Parameters ID": 993728141,
+              "Variant Annotation ID": 992282434,
+              "Study Type": "case/control",
+              "Study Cases": 42.0,
+              "Study Controls": 91.0,
+              "Characteristics": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.0025",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 26.4,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 993728141,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 992282434,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 42.0,
+                "prediction": 26,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 91.0,
+                "prediction": 91,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+                "prediction": "Canadian children with carbamazepine-induced maculopapular exanthems (MPE) vs carbamazepine-tolerant pediatric controls; combined genetic test HLA-A*31:01 or HLA-B*15:02",
+                "score": 0.9197342395782471,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "drug",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.0025",
+                "prediction": "= 0.0095",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 26.4,
+                "prediction": 6.09,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": 1.31,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": 32.25,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5143719974686118,
             "annotation": {
               "Study Parameters ID": 994398281,
               "Variant Annotation ID": 994398056,
@@ -1235,63 +2695,63 @@
               },
               "Study Type": {
                 "ground_truth": "case/control",
-                "prediction": "cohort",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
               },
               "Study Cases": {
                 "ground_truth": 42.0,
-                "prediction": 20,
+                "prediction": 6,
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Study Controls": {
                 "ground_truth": 91.0,
-                "prediction": 65,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 87,
+                "score": 0.9,
+                "match_status": "partial_match"
               },
               "Characteristics": {
                 "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
-                "prediction": "European CBZ cases",
-                "score": 0.9147127866744995,
+                "prediction": "Canadian children with carbamazepine-induced hypersensitivity syndrome (HSS) vs carbamazepine-tolerant pediatric controls; association with HLA-B*15:02",
+                "score": 0.9443239569664001,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "drug",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Frequency In Cases": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": 0.0,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Allele Of Frequency In Cases": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "HLA-B*15:02 (carrier)",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Frequency In Controls": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": 0.011,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Allele Of Frequency In Controls": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "HLA-B*15:02 (carrier)",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "P Value": {
                 "ground_truth": "= 1.0",
-                "prediction": "= 0.025",
-                "score": 0.5,
-                "match_status": "partial_match"
+                "prediction": "= 1.000",
+                "score": 1.0,
+                "match_status": "match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -1301,96 +2761,536 @@
               },
               "Ratio Stat": {
                 "ground_truth": 4.44,
-                "prediction": 7.62,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 4.44,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Confidence Interval Start": {
                 "ground_truth": 0.16,
-                "prediction": 0.99,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 0.16,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Confidence Interval Stop": {
                 "ground_truth": 120.0,
-                "prediction": 91.4,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 120.08,
+                "score": 0.9,
+                "match_status": "partial_match"
               },
               "Biogeographical Groups": {
                 "ground_truth": "Multiple groups",
-                "prediction": "European",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
               }
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 0,
-        "items": []
-      },
-      "low_scoring_fields_summary": {
-        "threshold": 0.7,
-        "count": 5,
-        "fields": {
-          "Study Cases": {
-            "mean_score": 0.3333333333333333,
-            "scores": [
-              1.0,
-              1.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+        "count": 20,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 6,
+              "Study Controls": 91,
+              "Characteristics": "Canadian children with carbamazepine-induced hypersensitivity syndrome (HSS) vs carbamazepine-tolerant pediatric controls; association with HLA-A*31:01",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.5,
+              "Allele Of Frequency In Cases": "HLA-A*31:01 (carrier)",
+              "Frequency In Controls": 0.033,
+              "Allele Of Frequency In Controls": "HLA-A*31:01 (carrier)",
+              "P Value": "= 0.0025",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 26.36,
+              "Confidence Interval Start": 2.53,
+              "Confidence Interval Stop": 307.89,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
           },
-          "P Value": {
-            "mean_score": 0.6666666666666666,
-            "scores": [
-              1.0,
-              0.5,
-              1.0,
-              0.5,
-              0.5,
-              0.5
-            ]
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 6,
+              "Study Controls": 91,
+              "Characteristics": "Canadian children with carbamazepine-induced hypersensitivity syndrome (HSS) vs carbamazepine-tolerant pediatric controls; association with rs1061235T (proxy for HLA-A*31:01)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.667,
+              "Allele Of Frequency In Cases": "rs1061235 T (carrier)",
+              "Frequency In Controls": 0.066,
+              "Allele Of Frequency In Controls": "rs1061235 T (carrier)",
+              "P Value": "= 8.2E-4",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 25.97,
+              "Confidence Interval Start": 3.07,
+              "Confidence Interval Stop": 340.87,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
           },
-          "Ratio Stat": {
-            "mean_score": 0.4666666666666666,
-            "scores": [
-              1.0,
-              0.8,
-              1.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 26,
+              "Study Controls": 91,
+              "Characteristics": "Canadian children with carbamazepine-induced maculopapular exanthems (MPE) vs carbamazepine-tolerant pediatric controls; association with HLA-A*31:01",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.231,
+              "Allele Of Frequency In Cases": "HLA-A*31:01 (carrier)",
+              "Frequency In Controls": 0.033,
+              "Allele Of Frequency In Controls": "HLA-A*31:01 (carrier)",
+              "P Value": "= 0.0037",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 8.57,
+              "Confidence Interval Start": 1.67,
+              "Confidence Interval Stop": 57.5,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
           },
-          "Confidence Interval Start": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 26,
+              "Study Controls": 91,
+              "Characteristics": "Canadian children with carbamazepine-induced maculopapular exanthems (MPE) vs carbamazepine-tolerant pediatric controls; association with rs1061235T (proxy for HLA-A*31:01)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.346,
+              "Allele Of Frequency In Cases": "rs1061235 T (carrier)",
+              "Frequency In Controls": 0.066,
+              "Allele Of Frequency In Controls": "rs1061235 T (carrier)",
+              "P Value": "= 7.4E-4",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 7.32,
+              "Confidence Interval Start": 2.03,
+              "Confidence Interval Stop": 28.65,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
           },
-          "Confidence Interval Stop": {
-            "mean_score": 0.0,
-            "scores": [
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0,
-              0.0
-            ]
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 26,
+              "Study Controls": 87,
+              "Characteristics": "Canadian children with carbamazepine-induced maculopapular exanthems (MPE) vs carbamazepine-tolerant pediatric controls; association with HLA-B*15:02",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.0,
+              "Allele Of Frequency In Cases": "HLA-B*15:02 (carrier)",
+              "Frequency In Controls": 0.011,
+              "Allele Of Frequency In Controls": "HLA-B*15:02 (carrier)",
+              "P Value": "= 1.000",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.09,
+              "Confidence Interval Start": 0.04,
+              "Confidence Interval Stop": 27.51,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 9,
+              "Study Controls": 91,
+              "Characteristics": "Canadian children with carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN) vs carbamazepine-tolerant pediatric controls; association with HLA-A*31:01",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.0,
+              "Allele Of Frequency In Cases": "HLA-A*31:01 (carrier)",
+              "Frequency In Controls": 0.033,
+              "Allele Of Frequency In Controls": "HLA-A*31:01 (carrier)",
+              "P Value": "= 1.000",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.33,
+              "Confidence Interval Start": 0.06,
+              "Confidence Interval Stop": 27.76,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 9,
+              "Study Controls": 91,
+              "Characteristics": "Canadian children with carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN) vs carbamazepine-tolerant pediatric controls; association with rs1061235T (proxy for HLA-A*31:01)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.0,
+              "Allele Of Frequency In Cases": "rs1061235 T (carrier)",
+              "Frequency In Controls": 0.066,
+              "Allele Of Frequency In Controls": "rs1061235 T (carrier)",
+              "P Value": "= 1.000",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 0.69,
+              "Confidence Interval Start": 0.04,
+              "Confidence Interval Stop": 13.27,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 9,
+              "Study Controls": 87,
+              "Characteristics": "Canadian children with carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN) vs carbamazepine-tolerant pediatric controls; association with HLA-B*15:02",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.333,
+              "Allele Of Frequency In Cases": "HLA-B*15:02 (carrier)",
+              "Frequency In Controls": 0.011,
+              "Allele Of Frequency In Controls": "HLA-B*15:02 (carrier)",
+              "P Value": "= 0.0022",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 38.65,
+              "Confidence Interval Start": 2.68,
+              "Confidence Interval Stop": 2239.5,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 1,
+              "Study Controls": 91,
+              "Characteristics": "Canadian child with carbamazepine-induced acute generalized exanthematous pustulosis (AGEP) vs carbamazepine-tolerant pediatric controls; association with rs1061235T (proxy for HLA-A*31:01)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 1.0,
+              "Allele Of Frequency In Cases": "rs1061235 T (carrier)",
+              "Frequency In Controls": 0.066,
+              "Allele Of Frequency In Controls": "rs1061235 T (carrier)",
+              "P Value": null,
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 42,
+              "Study Controls": 91,
+              "Characteristics": "All Canadian children with carbamazepine-induced hypersensitivity reactions (combined HSS, MPE, SJS/TEN, AGEP) vs carbamazepine-tolerant pediatric controls; association with HLA-A*31:01",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.214,
+              "Allele Of Frequency In Cases": "HLA-A*31:01 (carrier)",
+              "Frequency In Controls": 0.033,
+              "Allele Of Frequency In Controls": "HLA-A*31:01 (carrier)",
+              "P Value": "= 0.0016",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 7.85,
+              "Confidence Interval Start": 1.82,
+              "Confidence Interval Stop": 47.8,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 42,
+              "Study Controls": 91,
+              "Characteristics": "All Canadian children with carbamazepine-induced hypersensitivity reactions (combined HSS, MPE, SJS/TEN, AGEP) vs carbamazepine-tolerant pediatric controls; association with rs1061235T (proxy for HLA-A*31:01)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.333,
+              "Allele Of Frequency In Cases": "rs1061235 T (carrier)",
+              "Frequency In Controls": 0.066,
+              "Allele Of Frequency In Controls": "rs1061235 T (carrier)",
+              "P Value": "= 1.5E-4",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 6.96,
+              "Confidence Interval Start": 2.25,
+              "Confidence Interval Stop": 24.32,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 42,
+              "Study Controls": 87,
+              "Characteristics": "All Canadian children with carbamazepine-induced hypersensitivity reactions (combined HSS, MPE, SJS/TEN, AGEP) vs carbamazepine-tolerant pediatric controls; association with HLA-B*15:02",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.071,
+              "Allele Of Frequency In Cases": "HLA-B*15:02 (carrier)",
+              "Frequency In Controls": 0.011,
+              "Allele Of Frequency In Controls": "HLA-B*15:02 (carrier)",
+              "P Value": "= 0.101",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 6.51,
+              "Confidence Interval Start": 0.5,
+              "Confidence Interval Stop": 350.5,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 32,
+              "Study Controls": 91,
+              "Characteristics": "Canadian children with carbamazepine-induced hypersensitivity syndrome (HSS) or maculopapular exanthems (MPE) combined vs carbamazepine-tolerant pediatric controls; association with HLA-A*31:01",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.281,
+              "Allele Of Frequency In Cases": "HLA-A*31:01 (carrier)",
+              "Frequency In Controls": 0.033,
+              "Allele Of Frequency In Controls": "HLA-A*31:01 (carrier)",
+              "P Value": "= 2.6E-4",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 11.18,
+              "Confidence Interval Start": 2.53,
+              "Confidence Interval Stop": 69.27,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 32,
+              "Study Controls": 91,
+              "Characteristics": "Canadian children with carbamazepine-induced hypersensitivity syndrome (HSS) or maculopapular exanthems (MPE) combined vs carbamazepine-tolerant pediatric controls; association with rs1061235T (proxy for HLA-A*31:01)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.406,
+              "Allele Of Frequency In Cases": "rs1061235 T (carrier)",
+              "Frequency In Controls": 0.066,
+              "Allele Of Frequency In Controls": "rs1061235 T (carrier)",
+              "P Value": "= 2.6E-5",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 9.45,
+              "Confidence Interval Start": 2.91,
+              "Confidence Interval Stop": 34.5,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 32,
+              "Study Controls": 87,
+              "Characteristics": "Canadian children with carbamazepine-induced hypersensitivity syndrome (HSS) or maculopapular exanthems (MPE) combined vs carbamazepine-tolerant pediatric controls; association with HLA-B*15:02",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.0,
+              "Allele Of Frequency In Cases": "HLA-B*15:02 (carrier)",
+              "Frequency In Controls": 0.011,
+              "Allele Of Frequency In Controls": "HLA-B*15:02 (carrier)",
+              "P Value": "= 1.000",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 0.86,
+              "Confidence Interval Start": 0.03,
+              "Confidence Interval Stop": 21.66,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 2,
+              "Study Controls": 65,
+              "Characteristics": "European-ancestry Canadian children with carbamazepine-induced hypersensitivity syndrome (HSS) vs European carbamazepine-tolerant pediatric controls; association with HLA-A*31:01 (subgroup analysis)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.5,
+              "Allele Of Frequency In Cases": "HLA-A*31:01 (carrier)",
+              "Frequency In Controls": 0.031,
+              "Allele Of Frequency In Controls": "HLA-A*31:01 (carrier)",
+              "P Value": "= 0.088",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 25.92,
+              "Confidence Interval Start": 0.27,
+              "Confidence Interval Stop": 2437.8,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 14,
+              "Study Controls": 65,
+              "Characteristics": "European-ancestry Canadian children with carbamazepine-induced maculopapular exanthems (MPE) vs European carbamazepine-tolerant pediatric controls; association with HLA-A*31:01 (subgroup analysis)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.214,
+              "Allele Of Frequency In Cases": "HLA-A*31:01 (carrier)",
+              "Frequency In Controls": 0.031,
+              "Allele Of Frequency In Controls": "HLA-A*31:01 (carrier)",
+              "P Value": "= 0.037",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 8.23,
+              "Confidence Interval Start": 0.84,
+              "Confidence Interval Stop": 109.23,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 4,
+              "Study Controls": 65,
+              "Characteristics": "European-ancestry Canadian children with carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN) vs European carbamazepine-tolerant pediatric controls; association with HLA-A*31:01 (subgroup analysis)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.0,
+              "Allele Of Frequency In Cases": "HLA-A*31:01 (carrier)",
+              "Frequency In Controls": 0.031,
+              "Allele Of Frequency In Controls": "HLA-A*31:01 (carrier)",
+              "P Value": "= 1.000",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.82,
+              "Confidence Interval Start": 0.12,
+              "Confidence Interval Stop": 68.1,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 20,
+              "Study Controls": 65,
+              "Characteristics": "All European-ancestry Canadian children with carbamazepine-induced hypersensitivity reactions (combined HSS, MPE, SJS/TEN; no AGEP) vs European carbamazepine-tolerant pediatric controls; association with HLA-A*31:01 (subgroup analysis)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.2,
+              "Allele Of Frequency In Cases": "HLA-A*31:01 (carrier)",
+              "Frequency In Controls": 0.031,
+              "Allele Of Frequency In Controls": "HLA-A*31:01 (carrier)",
+              "P Value": "= 0.025",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 7.62,
+              "Confidence Interval Start": 0.99,
+              "Confidence Interval Stop": 91.4,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 16,
+              "Study Controls": 65,
+              "Characteristics": "European-ancestry Canadian children with carbamazepine-induced hypersensitivity syndrome (HSS) or maculopapular exanthems (MPE) combined vs European carbamazepine-tolerant pediatric controls; association with HLA-A*31:01 (subgroup analysis)",
+              "Characteristics Type": "drug",
+              "Frequency In Cases": 0.25,
+              "Allele Of Frequency In Cases": "HLA-A*31:01 (carrier)",
+              "Frequency In Controls": 0.031,
+              "Allele Of Frequency In Controls": "HLA-A*31:01 (carrier)",
+              "P Value": "= 0.013",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 10.05,
+              "Confidence Interval Start": 1.28,
+              "Confidence Interval Stop": 122.88,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
           }
-        }
+        ]
       }
     }
   }

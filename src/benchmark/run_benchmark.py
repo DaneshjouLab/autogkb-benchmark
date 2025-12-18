@@ -6,29 +6,16 @@ Usage Examples:
 --------------
 
 1. Run benchmarks on all files and save results:
-   PYTHONPATH=src pixi run python -m benchmarks.run_benchmark
+   pixi run python -m src.benchmarks.run_benchmark
 
 2. Run benchmark on a single file (e.g., PMC384715):
-   PYTHONPATH=src pixi run python -m benchmarks.run_benchmark --single_file PMC384715
+   pixi run python -m src.benchmarks.run_benchmark --single_file PMC384715
 
 3. Generate detailed analysis JSON files for all results:
-   PYTHONPATH=src pixi run python -m benchmarks.run_benchmark --show_mismatches
+   pixi run python -m src.benchmarks.run_benchmark --save_analysis
 
-4. Generate analysis only for low-scoring files (score < 0.8):
-   PYTHONPATH=src pixi run python -m benchmarks.run_benchmark --show_mismatches --show_only_low_scores --score_threshold 0.8
-
-5. Run single file with detailed analysis:
-   PYTHONPATH=src pixi run python -m benchmarks.run_benchmark --single_file PMC384715 --show_mismatches
-
-6. Quiet mode (less verbose output):
-   PYTHONPATH=src pixi run python -m benchmarks.run_benchmark --quiet
-
-7. Custom directories:
-   PYTHONPATH=src pixi run python -m benchmarks.run_benchmark \
-     --ground_truth_dir data/benchmark_annotations \
-     --proposed_dir data/proposed_annotations \
-     --output_file results.json \
-     --analysis_dir data/analysis
+4. Run single file with detailed analysis:
+   pixi run python -m src.benchmarks.run_benchmark --single_file PMC384715 --save_analysis
 
 Analysis JSON Output Format:
 ---------------------------
@@ -39,15 +26,15 @@ The analysis JSONs in data/analysis/ have the following structure:
     - matched items include: overall_match_score, field_scores, and matched_prediction
     - unmatched items include: just the annotation
   - extra_predictions: Predictions not found in ground truth
-  - low_scoring_fields_summary: Aggregate statistics for poorly scoring fields
 """
 import json
 from pathlib import Path
 from typing import Dict, Any, List, Optional
-from benchmarks.drug_benchmark import evaluate_drug_annotations
-from benchmarks.fa_benchmark import evaluate_functional_analysis
-from benchmarks.pheno_benchmark import evaluate_phenotype_annotations
-from benchmarks.study_parameters_benchmark import evaluate_study_parameters
+from tqdm import tqdm
+from .drug_benchmark import evaluate_drug_annotations
+from .fa_benchmark import evaluate_functional_analysis, evaluate_fa_from_articles
+from .pheno_benchmark import evaluate_phenotype_annotations
+from .study_parameters_benchmark import evaluate_study_parameters
 
 
 def load_annotation_file(file_path: Path) -> Dict[str, Any]:
@@ -120,7 +107,6 @@ def run_single_benchmark(
         if gt_fa or prop_fa:
             try:
                 # Use evaluate_fa_from_articles for proper alignment
-                from benchmarks.fa_benchmark import evaluate_fa_from_articles
                 fa_results = evaluate_fa_from_articles(
                     {'var_fa_ann': gt_fa},
                     {'var_fa_ann': prop_fa}
@@ -177,7 +163,7 @@ def run_all_benchmarks(
     ground_truth_dir: Path,
     proposed_dir: Path,
     output_file: Optional[Path] = None,
-    verbose: bool = True
+    verbose: bool = False
 ) -> Dict[str, Any]:
     """
     Run benchmarks for all annotation pairs in the directories.
@@ -199,26 +185,20 @@ def run_all_benchmarks(
     all_results = []
     missing_proposed = []
 
-    for gt_file in gt_files:
+    # Use tqdm for progress bar
+    file_iterator = tqdm(gt_files, desc="Running benchmarks", disable=not verbose)
+    
+    for gt_file in file_iterator:
         pmcid = gt_file.stem
         prop_file = Path(proposed_dir) / f"{pmcid}.json"
 
         if not prop_file.exists():
-            if verbose:
-                print(f"\nWarning: Missing proposed annotation for {pmcid}")
             missing_proposed.append(pmcid)
             continue
 
-        if verbose:
-            print(f"\n{'='*60}")
-            print(f"Processing: {pmcid}")
-            print(f"{'='*60}")
-
-        result = run_single_benchmark(gt_file, prop_file, verbose=verbose)
+        file_iterator.set_postfix(file=pmcid)
+        result = run_single_benchmark(gt_file, prop_file, verbose=False)
         all_results.append(result)
-
-        if verbose:
-            print(f"Overall Score: {result['overall_score']:.3f}")
 
     # Calculate aggregate statistics
     all_scores = [r['overall_score'] for r in all_results]
@@ -280,22 +260,16 @@ def run_all_benchmarks(
     return aggregate_results
 
 
-def display_mismatches(
+def save_analysis(
     result: Dict[str, Any],
-    output_dir: Optional[Path] = None,
-    show_unmatched: bool = True,
-    show_low_scores: bool = True,
-    score_threshold: float = 0.7
+    output_dir: Optional[Path] = None
 ) -> Optional[Path]:
     """
-    Save detailed information about mismatches and low scores to a JSON file.
+    Save detailed analysis of benchmark results to a JSON file.
 
     Args:
         result: Result dict from run_single_benchmark or a single entry from run_all_benchmarks
         output_dir: Directory to save analysis JSON files (default: data/analysis)
-        show_unmatched: If True, include unmatched ground truth and predictions
-        show_low_scores: If True, include fields with scores below threshold
-        score_threshold: Threshold below which to include field scores
 
     Returns:
         Path to the saved JSON file, or None if PMCID is not available
@@ -409,24 +383,6 @@ def display_mismatches(
             ]
         }
 
-        # Add aggregate low-scoring fields summary
-        if show_low_scores:
-            field_scores = benchmark_result.get('field_scores', {})
-            low_scoring_fields = {
-                field: {
-                    'mean_score': stats['mean_score'],
-                    'scores': stats.get('scores', [])
-                }
-                for field, stats in field_scores.items()
-                if stats['mean_score'] < score_threshold
-            }
-
-            benchmark_analysis['low_scoring_fields_summary'] = {
-                'threshold': score_threshold,
-                'count': len(low_scoring_fields),
-                'fields': low_scoring_fields
-            }
-
         analysis['benchmarks'][benchmark_name] = benchmark_analysis
 
     # Save to JSON file
@@ -437,24 +393,18 @@ def display_mismatches(
     return output_file
 
 
-def display_all_mismatches(
+def save_all_analyses(
     aggregate_results: Dict[str, Any],
     output_dir: Optional[Path] = None,
-    show_only_low_scores: bool = False,
-    overall_score_threshold: float = 0.8,
-    verbose: bool = True,
-    **kwargs
+    verbose: bool = True
 ) -> List[Path]:
     """
-    Save mismatches for all files in aggregate results to JSON files.
+    Save detailed analysis for all files in aggregate results to JSON files.
 
     Args:
         aggregate_results: Results from run_all_benchmarks
         output_dir: Directory to save analysis JSON files (default: data/analysis)
-        show_only_low_scores: If True, only process files with overall score below threshold
-        overall_score_threshold: Threshold for filtering files (when show_only_low_scores=True)
         verbose: If True, print progress messages
-        **kwargs: Additional arguments to pass to display_mismatches
 
     Returns:
         List of paths to saved JSON files
@@ -464,25 +414,15 @@ def display_all_mismatches(
 
     individual_results = aggregate_results.get('individual_results', [])
 
-    if show_only_low_scores:
-        individual_results = [
-            r for r in individual_results
-            if r.get('overall_score', 1.0) < overall_score_threshold
-        ]
-        if verbose:
-            print(f"\nProcessing {len(individual_results)} files with overall score < {overall_score_threshold}")
-    elif verbose:
-        print(f"\nProcessing {len(individual_results)} files")
-
     saved_files = []
-    for result in individual_results:
-        output_file = display_mismatches(result, output_dir=output_dir, **kwargs)
+    result_iterator = tqdm(individual_results, desc="Saving analyses", disable=not verbose)
+    
+    for result in result_iterator:
+        pmcid = result.get('pmcid', 'Unknown')
+        result_iterator.set_postfix(file=pmcid)
+        output_file = save_analysis(result, output_dir=output_dir)
         if output_file:
             saved_files.append(output_file)
-            if verbose:
-                pmcid = result.get('pmcid', 'Unknown')
-                score = result.get('overall_score', 0.0)
-                print(f"  Saved analysis for {pmcid} (score: {score:.3f}) -> {output_file}")
 
     if verbose:
         print(f"\nSaved {len(saved_files)} analysis files to {output_dir}")
@@ -519,20 +459,9 @@ if __name__ == "__main__":
         help='Directory to save analysis JSON files (default: data/analysis)'
     )
     parser.add_argument(
-        '--show_mismatches',
+        '--save_analysis',
         action='store_true',
-        help='Save detailed mismatch analysis to JSON files'
-    )
-    parser.add_argument(
-        '--show_only_low_scores',
-        action='store_true',
-        help='Only show mismatches for low-scoring files'
-    )
-    parser.add_argument(
-        '--score_threshold',
-        type=float,
-        default=0.8,
-        help='Score threshold for filtering (default: 0.8)'
+        help='Save detailed analysis to JSON files in data/analysis/'
     )
     parser.add_argument(
         '--single_file',
@@ -561,11 +490,10 @@ if __name__ == "__main__":
 
         result = run_single_benchmark(gt_file, prop_file, verbose=not args.quiet)
 
-        if args.show_mismatches:
-            output_file = display_mismatches(
+        if args.save_analysis:
+            output_file = save_analysis(
                 result,
-                output_dir=args.analysis_dir,
-                score_threshold=args.score_threshold
+                output_dir=args.analysis_dir
             )
             if output_file:
                 print(f"\nAnalysis saved to: {output_file}")
@@ -580,13 +508,10 @@ if __name__ == "__main__":
             verbose=not args.quiet
         )
 
-        if args.show_mismatches:
-            saved_files = display_all_mismatches(
+        if args.save_analysis:
+            saved_files = save_all_analyses(
                 results,
                 output_dir=args.analysis_dir,
-                show_only_low_scores=args.show_only_low_scores,
-                overall_score_threshold=args.score_threshold,
-                score_threshold=0.7,
                 verbose=not args.quiet
             )
             if saved_files and not args.quiet:
