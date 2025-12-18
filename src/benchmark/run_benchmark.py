@@ -30,6 +30,7 @@ The analysis JSONs in data/analysis/ have the following structure:
 import json
 from pathlib import Path
 from typing import Dict, Any, List, Optional
+from datetime import datetime
 from tqdm import tqdm
 from .drug_benchmark import evaluate_drug_annotations
 from .fa_benchmark import evaluate_functional_analysis, evaluate_fa_from_articles
@@ -239,6 +240,9 @@ def run_all_benchmarks(
             print(f"\n{'='*60}")
             print(f"Results saved to: {output_file}")
 
+    # Always save a timestamped analysis summary
+    save_analysis_summary(aggregate_results, verbose=verbose)
+
     # Print summary
     if verbose:
         print(f"\n{'='*60}")
@@ -428,6 +432,70 @@ def save_all_analyses(
         print(f"\nSaved {len(saved_files)} analysis files to {output_dir}")
 
     return saved_files
+
+
+def save_analysis_summary(
+    aggregate_results: Dict[str, Any],
+    output_dir: Optional[Path] = None,
+    verbose: bool = True
+) -> Path:
+    """
+    Save a timestamped summary of overall scores from a benchmark run.
+
+    This creates a compact JSON file containing just the key metrics without
+    all the detailed per-article analysis.
+
+    Args:
+        aggregate_results: Results from run_all_benchmarks
+        output_dir: Directory to save summary (default: data/analysis_summaries)
+        verbose: If True, print confirmation message
+
+    Returns:
+        Path to the saved summary file
+    """
+    if output_dir is None:
+        output_dir = Path('data/analysis_summaries')
+
+    # Create output directory if it doesn't exist
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Generate timestamp for filename
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+
+    # Build summary with just the scores
+    summary = {
+        'timestamp': datetime.now().isoformat(),
+        'total_files': aggregate_results.get('total_files', 0),
+        'missing_proposed_files': aggregate_results.get('missing_proposed_files', 0),
+        'overall_statistics': {
+            'mean_score': aggregate_results.get('overall_mean_score', 0.0),
+            'min_score': aggregate_results.get('overall_min_score', 0.0),
+            'max_score': aggregate_results.get('overall_max_score', 0.0)
+        },
+        'per_benchmark_statistics': aggregate_results.get('per_benchmark_stats', {}),
+        'per_file_scores': [
+            {
+                'pmcid': result.get('pmcid'),
+                'overall_score': result.get('overall_score', 0.0),
+                'benchmark_scores': {
+                    name: benchmark.get('overall_score', 0.0)
+                    for name, benchmark in result.get('benchmarks', {}).items()
+                    if 'overall_score' in benchmark
+                }
+            }
+            for result in aggregate_results.get('individual_results', [])
+        ]
+    }
+
+    # Save to timestamped file
+    output_file = output_dir / f"summary_{timestamp}.json"
+    with open(output_file, 'w') as f:
+        json.dump(summary, f, indent=2)
+
+    if verbose:
+        print(f"\nAnalysis summary saved to: {output_file}")
+
+    return output_file
 
 
 if __name__ == "__main__":
