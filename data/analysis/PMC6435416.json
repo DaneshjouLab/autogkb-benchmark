@@ -2,8 +2,8 @@
   "pmcid": "PMC6435416",
   "pmid": "30661084",
   "title": "CYP2D6 genotype and adverse events to risperidone in children and adolescents",
-  "overall_score": 0.21542533834775288,
-  "num_benchmarks": 3,
+  "overall_score": 0.287879530787468,
+  "num_benchmarks": 4,
   "benchmarks": {
     "drug_annotations": {
       "score": 0.0,
@@ -15,50 +15,38 @@
         "items": []
       },
       "extra_predictions": {
-        "count": 6,
+        "count": 12,
         "items": [
           {
             "variant": "CYP2D6",
             "gene": "CYP2D6",
             "drug": "risperidone",
             "annotation": {
-              "Variant Annotation ID": 1,
               "Variant/Haplotypes": "CYP2D6",
               "Gene": "CYP2D6",
               "Drug(s)": "risperidone",
-              "PMID": 30661084,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In 257 children \u226418 years on risperidone \u22654 weeks, CYP2D6 poor/intermediate metabolizers (n=33) had adverse events in 15/33 (46%) vs 61/224 (27%) in normal/ultrarapid metabolizers (P=0.04). Multivariate logistic regression adjusting for age, sex, race, and initial risperidone dose showed increased AE risk in poor/intermediate metabolizers: adjusted OR 2.4 (95% CI 1.1\u20135.1, P=0.03).",
-              "Sentence": "CYP2D6 poor metabolizer and CYP2D6 intermediate metabolizer are associated with increased risk of adverse events to risperidone in children with various psychiatric indications as compared to CYP2D6 normal metabolizer and CYP2D6 ultrarapid metabolizer.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": "poor metabolizer, intermediate metabolizer",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
               "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "risk of adverse events to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:psychiatric and behavioral disorders (e.g., aggression, autism, ADHD)",
-              "Multiple phenotypes or diseases And/or": "and",
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": "normal metabolizer, ultrarapid metabolizer",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "For analysis, the 257 individuals were grouped as poor/intermediate metabolizers (n=33, 13%) and normal/ultrarapid metabolizers (n=224, 87%). AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04). In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
-                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs.",
-                "This study demonstrates that children who are CYP2D6 poor or intermediate metabolizers have increased incidence of AEs during risperidone treatment, with consistent results in both univariate and multivariate analyses."
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6 poor metabolizer, CYP2D6 intermediate metabolizer",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "risperidone",
-                "drug_id": "PA451257",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
@@ -67,88 +55,64 @@
             "gene": "CYP2D6",
             "drug": "risperidone",
             "annotation": {
-              "Variant Annotation ID": 1,
               "Variant/Haplotypes": "poor",
               "Gene": "CYP2D6",
               "Drug(s)": "risperidone",
-              "PMID": 30661084,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In 257 children \u226418 years on risperidone \u22654 weeks, CYP2D6 poor/intermediate metabolizers (n=33) had adverse events in 15/33 (46%) vs 61/224 (27%) in normal/ultrarapid metabolizers (P=0.04). Multivariate logistic regression adjusting for age, sex, race, and initial risperidone dose showed increased AE risk in poor/intermediate metabolizers: adjusted OR 2.4 (95% CI 1.1\u20135.1, P=0.03).",
-              "Sentence": "CYP2D6 poor metabolizer and CYP2D6 intermediate metabolizer are associated with increased risk of adverse events to risperidone in children with various psychiatric indications as compared to CYP2D6 normal metabolizer and CYP2D6 ultrarapid metabolizer.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": "poor metabolizer, intermediate metabolizer",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
               "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "risk of adverse events to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:psychiatric and behavioral disorders (e.g., aggression, autism, ADHD)",
-              "Multiple phenotypes or diseases And/or": "and",
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": "normal metabolizer, ultrarapid metabolizer",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "For analysis, the 257 individuals were grouped as poor/intermediate metabolizers (n=33, 13%) and normal/ultrarapid metabolizers (n=224, 87%). AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04). In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
-                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs.",
-                "This study demonstrates that children who are CYP2D6 poor or intermediate metabolizers have increased incidence of AEs during risperidone treatment, with consistent results in both univariate and multivariate analyses."
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6 poor metabolizer, CYP2D6 intermediate metabolizer",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "risperidone",
-                "drug_id": "PA451257",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
           {
-            "variant": "metabolizer",
+            "variant": "metabolizers",
             "gene": "CYP2D6",
             "drug": "risperidone",
             "annotation": {
-              "Variant Annotation ID": 1,
-              "Variant/Haplotypes": "metabolizer",
+              "Variant/Haplotypes": "metabolizers",
               "Gene": "CYP2D6",
               "Drug(s)": "risperidone",
-              "PMID": 30661084,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In 257 children \u226418 years on risperidone \u22654 weeks, CYP2D6 poor/intermediate metabolizers (n=33) had adverse events in 15/33 (46%) vs 61/224 (27%) in normal/ultrarapid metabolizers (P=0.04). Multivariate logistic regression adjusting for age, sex, race, and initial risperidone dose showed increased AE risk in poor/intermediate metabolizers: adjusted OR 2.4 (95% CI 1.1\u20135.1, P=0.03).",
-              "Sentence": "CYP2D6 poor metabolizer and CYP2D6 intermediate metabolizer are associated with increased risk of adverse events to risperidone in children with various psychiatric indications as compared to CYP2D6 normal metabolizer and CYP2D6 ultrarapid metabolizer.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": "poor metabolizer, intermediate metabolizer",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
               "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "risk of adverse events to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:psychiatric and behavioral disorders (e.g., aggression, autism, ADHD)",
-              "Multiple phenotypes or diseases And/or": "and",
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": "normal metabolizer, ultrarapid metabolizer",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "For analysis, the 257 individuals were grouped as poor/intermediate metabolizers (n=33, 13%) and normal/ultrarapid metabolizers (n=224, 87%). AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04). In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
-                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs.",
-                "This study demonstrates that children who are CYP2D6 poor or intermediate metabolizers have increased incidence of AEs during risperidone treatment, with consistent results in both univariate and multivariate analyses."
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6 poor metabolizer, CYP2D6 intermediate metabolizer",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "risperidone",
-                "drug_id": "PA451257",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
@@ -157,43 +121,31 @@
             "gene": "CYP2D6",
             "drug": "risperidone",
             "annotation": {
-              "Variant Annotation ID": 1,
               "Variant/Haplotypes": "CYP2D6",
               "Gene": "CYP2D6",
               "Drug(s)": "risperidone",
-              "PMID": 30661084,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In 257 children \u226418 years on risperidone \u22654 weeks, CYP2D6 poor/intermediate metabolizers (n=33) had adverse events in 15/33 (46%) vs 61/224 (27%) in normal/ultrarapid metabolizers (P=0.04). Multivariate logistic regression adjusting for age, sex, race, and initial risperidone dose showed increased AE risk in poor/intermediate metabolizers: adjusted OR 2.4 (95% CI 1.1\u20135.1, P=0.03).",
-              "Sentence": "CYP2D6 poor metabolizer and CYP2D6 intermediate metabolizer are associated with increased risk of adverse events to risperidone in children with various psychiatric indications as compared to CYP2D6 normal metabolizer and CYP2D6 ultrarapid metabolizer.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": "poor metabolizer, intermediate metabolizer",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
               "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "risk of adverse events to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:psychiatric and behavioral disorders (e.g., aggression, autism, ADHD)",
-              "Multiple phenotypes or diseases And/or": "and",
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": "normal metabolizer, ultrarapid metabolizer",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "For analysis, the 257 individuals were grouped as poor/intermediate metabolizers (n=33, 13%) and normal/ultrarapid metabolizers (n=224, 87%). AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04). In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
-                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs.",
-                "This study demonstrates that children who are CYP2D6 poor or intermediate metabolizers have increased incidence of AEs during risperidone treatment, with consistent results in both univariate and multivariate analyses."
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6 poor metabolizer, CYP2D6 intermediate metabolizer",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "risperidone",
-                "drug_id": "PA451257",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
@@ -202,88 +154,262 @@
             "gene": "CYP2D6",
             "drug": "risperidone",
             "annotation": {
-              "Variant Annotation ID": 1,
               "Variant/Haplotypes": "intermediate",
               "Gene": "CYP2D6",
               "Drug(s)": "risperidone",
-              "PMID": 30661084,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In 257 children \u226418 years on risperidone \u22654 weeks, CYP2D6 poor/intermediate metabolizers (n=33) had adverse events in 15/33 (46%) vs 61/224 (27%) in normal/ultrarapid metabolizers (P=0.04). Multivariate logistic regression adjusting for age, sex, race, and initial risperidone dose showed increased AE risk in poor/intermediate metabolizers: adjusted OR 2.4 (95% CI 1.1\u20135.1, P=0.03).",
-              "Sentence": "CYP2D6 poor metabolizer and CYP2D6 intermediate metabolizer are associated with increased risk of adverse events to risperidone in children with various psychiatric indications as compared to CYP2D6 normal metabolizer and CYP2D6 ultrarapid metabolizer.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": "poor metabolizer, intermediate metabolizer",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
               "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "risk of adverse events to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:psychiatric and behavioral disorders (e.g., aggression, autism, ADHD)",
-              "Multiple phenotypes or diseases And/or": "and",
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": "normal metabolizer, ultrarapid metabolizer",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "For analysis, the 257 individuals were grouped as poor/intermediate metabolizers (n=33, 13%) and normal/ultrarapid metabolizers (n=224, 87%). AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04). In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
-                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs.",
-                "This study demonstrates that children who are CYP2D6 poor or intermediate metabolizers have increased incidence of AEs during risperidone treatment, with consistent results in both univariate and multivariate analyses."
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6 poor metabolizer, CYP2D6 intermediate metabolizer",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "risperidone",
-                "drug_id": "PA451257",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
           {
-            "variant": "metabolizer",
+            "variant": "metabolizers",
             "gene": "CYP2D6",
             "drug": "risperidone",
             "annotation": {
-              "Variant Annotation ID": 1,
-              "Variant/Haplotypes": "metabolizer",
+              "Variant/Haplotypes": "metabolizers",
               "Gene": "CYP2D6",
               "Drug(s)": "risperidone",
-              "PMID": 30661084,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In 257 children \u226418 years on risperidone \u22654 weeks, CYP2D6 poor/intermediate metabolizers (n=33) had adverse events in 15/33 (46%) vs 61/224 (27%) in normal/ultrarapid metabolizers (P=0.04). Multivariate logistic regression adjusting for age, sex, race, and initial risperidone dose showed increased AE risk in poor/intermediate metabolizers: adjusted OR 2.4 (95% CI 1.1\u20135.1, P=0.03).",
-              "Sentence": "CYP2D6 poor metabolizer and CYP2D6 intermediate metabolizer are associated with increased risk of adverse events to risperidone in children with various psychiatric indications as compared to CYP2D6 normal metabolizer and CYP2D6 ultrarapid metabolizer.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": "poor metabolizer, intermediate metabolizer",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
               "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "risk of adverse events to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:psychiatric and behavioral disorders (e.g., aggression, autism, ADHD)",
-              "Multiple phenotypes or diseases And/or": "and",
-              "Comparison Allele(s) or Genotype(s)": null,
-              "Comparison Metabolizer types": "normal metabolizer, ultrarapid metabolizer",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "For analysis, the 257 individuals were grouped as poor/intermediate metabolizers (n=33, 13%) and normal/ultrarapid metabolizers (n=224, 87%). AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04). In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
-                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs.",
-                "This study demonstrates that children who are CYP2D6 poor or intermediate metabolizers have increased incidence of AEs during risperidone treatment, with consistent results in both univariate and multivariate analyses."
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6 poor metabolizer, CYP2D6 intermediate metabolizer",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "risperidone",
-                "drug_id": "PA451257",
-                "confidence": 1.0
-              },
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2D6",
+            "gene": "CYP2D6",
+            "drug": "risperidone",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2D6",
+              "Gene": "CYP2D6",
+              "Drug(s)": "risperidone",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "normal",
+            "gene": "CYP2D6",
+            "drug": "risperidone",
+            "annotation": {
+              "Variant/Haplotypes": "normal",
+              "Gene": "CYP2D6",
+              "Drug(s)": "risperidone",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "metabolizers",
+            "gene": "CYP2D6",
+            "drug": "risperidone",
+            "annotation": {
+              "Variant/Haplotypes": "metabolizers",
+              "Gene": "CYP2D6",
+              "Drug(s)": "risperidone",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2D6",
+            "gene": "CYP2D6",
+            "drug": "risperidone",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2D6",
+              "Gene": "CYP2D6",
+              "Drug(s)": "risperidone",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "ultrarapid",
+            "gene": "CYP2D6",
+            "drug": "risperidone",
+            "annotation": {
+              "Variant/Haplotypes": "ultrarapid",
+              "Gene": "CYP2D6",
+              "Drug(s)": "risperidone",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "metabolizers",
+            "gene": "CYP2D6",
+            "drug": "risperidone",
+            "annotation": {
+              "Variant/Haplotypes": "metabolizers",
+              "Gene": "CYP2D6",
+              "Drug(s)": "risperidone",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Poor/intermediate metabolizers had increased adverse event risk (adjusted odds ratio 2.4, 95% CI 1.1-5.1, P=0.03) during risperidone treatment.",
+              "Sentence": "CYP2D6 poor metabolizers are associated with increased adverse events during risperidone treatment in children.",
+              "Alleles": "",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer, normal metabolizer, ultrarapid metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "pediatric",
+              "Population types": "in children",
+              "Population Phenotypes or diseases": "Side Effect:adverse events",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "adverse events from",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In multivariate analysis adjusting for age, sex, race, and initial dose, poor/intermediate metabolizers had increased AE risk (adjusted odds ratio 2.4, 95% confidence interval 1.1-5.1, P=0.03).",
+                "AEs were more common in poor/intermediate versus normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04).",
+                "Children with CYP2D6 poor or intermediate metabolizer phenotypes are at greater risk for risperidone AEs."
+              ],
               "_expanded_from_multi_variant": true
             }
           }
@@ -291,16 +417,16 @@
       }
     },
     "phenotype_annotations": {
-      "score": 0.28929107454087993,
+      "score": 0.3855645398298899,
       "total_samples": 15,
       "ground_truth_annotations": {
         "count": 15,
-        "matched_count": 6,
-        "unmatched_count": 9,
+        "matched_count": 9,
+        "unmatched_count": 6,
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.7825352609157562,
+            "overall_match_score": 0.7841631889343261,
             "annotation": {
               "Variant/Haplotypes": "CYP2D6*1",
               "Gene": "CYP2D6",
@@ -358,8 +484,8 @@
               },
               "Phenotype": {
                 "ground_truth": "Side Effect:adverse events",
-                "prediction": "Side Effect:Adverse Events",
-                "score": 0.9551483988761902,
+                "prediction": "adverse events",
+                "score": 0.9714276790618896,
                 "match_status": "match"
               },
               "When treated with/exposed to/when assayed with": {
@@ -378,7 +504,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.7825352609157562,
+            "overall_match_score": 0.7841631889343261,
             "annotation": {
               "Variant/Haplotypes": "CYP2D6*1",
               "Gene": "CYP2D6",
@@ -436,8 +562,8 @@
               },
               "Phenotype": {
                 "ground_truth": "Side Effect:adverse events",
-                "prediction": "Side Effect:Adverse Events",
-                "score": 0.9551483988761902,
+                "prediction": "adverse events",
+                "score": 0.9714276790618896,
                 "match_status": "match"
               },
               "When treated with/exposed to/when assayed with": {
@@ -456,7 +582,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.6825352609157562,
+            "overall_match_score": 0.6841631889343261,
             "annotation": {
               "Variant/Haplotypes": "CYP2D6*1",
               "Gene": "CYP2D6",
@@ -514,8 +640,8 @@
               },
               "Phenotype": {
                 "ground_truth": "Side Effect:adverse events",
-                "prediction": "Side Effect:Adverse Events",
-                "score": 0.9551483988761902,
+                "prediction": "adverse events",
+                "score": 0.9714276790618896,
                 "match_status": "match"
               },
               "When treated with/exposed to/when assayed with": {
@@ -534,7 +660,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.6825352609157562,
+            "overall_match_score": 0.6841631889343261,
             "annotation": {
               "Variant/Haplotypes": "CYP2D6*1",
               "Gene": "CYP2D6",
@@ -550,7 +676,7 @@
             "field_comparison": {
               "Variant/Haplotypes": {
                 "ground_truth": "CYP2D6*1",
-                "prediction": "metabolizers",
+                "prediction": "metabolizer",
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -592,8 +718,8 @@
               },
               "Phenotype": {
                 "ground_truth": "Side Effect:adverse events",
-                "prediction": "Side Effect:Adverse Events",
-                "score": 0.9551483988761902,
+                "prediction": "adverse events",
+                "score": 0.9714276790618896,
                 "match_status": "match"
               },
               "When treated with/exposed to/when assayed with": {
@@ -612,7 +738,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.6825352609157562,
+            "overall_match_score": 0.6841631889343261,
             "annotation": {
               "Variant/Haplotypes": "CYP2D6*1",
               "Gene": "CYP2D6",
@@ -670,8 +796,8 @@
               },
               "Phenotype": {
                 "ground_truth": "Side Effect:adverse events",
-                "prediction": "Side Effect:Adverse Events",
-                "score": 0.9551483988761902,
+                "prediction": "adverse events",
+                "score": 0.9714276790618896,
                 "match_status": "match"
               },
               "When treated with/exposed to/when assayed with": {
@@ -690,7 +816,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.6825352609157562,
+            "overall_match_score": 0.6841631889343261,
             "annotation": {
               "Variant/Haplotypes": "CYP2D6*1",
               "Gene": "CYP2D6",
@@ -706,7 +832,7 @@
             "field_comparison": {
               "Variant/Haplotypes": {
                 "ground_truth": "CYP2D6*1",
-                "prediction": "metabolizers",
+                "prediction": "metabolizer",
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -748,8 +874,8 @@
               },
               "Phenotype": {
                 "ground_truth": "Side Effect:adverse events",
-                "prediction": "Side Effect:Adverse Events",
-                "score": 0.9551483988761902,
+                "prediction": "adverse events",
+                "score": 0.9714276790618896,
                 "match_status": "match"
               },
               "When treated with/exposed to/when assayed with": {
@@ -767,102 +893,237 @@
             }
           },
           {
-            "matched": false,
+            "matched": true,
+            "overall_match_score": 0.5841631889343262,
             "annotation": {
-              "Variant Annotation ID": 1450932846,
-              "Variant/Haplotypes": "CYP2D6*4xN",
+              "Variant/Haplotypes": "CYP2D6*1",
               "Gene": "CYP2D6",
               "Drug(s)": "risperidone",
-              "PMID": 30661084,
               "Phenotype Category": "Toxicity",
-              "Significance": "yes",
-              "Notes": "Normal metabolizer also included: *35/*35 + *2/*9 + *2/*3 + *2/*29 + *2/*10 + *1xN/*4 + *10/*46 + *10/*35 + *1/*6 + *1/*33 + *1/*10 + *4/*35. Most common AEs were weight change (9%), sedation (6%), and extrapyramidal symptoms (6%). Of the 224 normal/ultrarapid metabolizers, 20 (9%) were taking one or more concomitant drugs that are known strong inhibitors of CYP2D6. The frequency of AEs was not different among those with a strong concomitant CYP2D6 inhibitor (6/20, 30%) vs. those without (55/204, 27%, P= 0.8). CYP2D6 phenoconversion not considered in the PM+IM vs NM+UM analysis.",
-              "Sentence": "CYP2D6 *4/*4 + *3/*4 + *3/*5 + *4/*4xN + *4/*6 + *5/*41 + *4/*29 + *4/*17 + *5/*10 + *3/*41 + *4/*9 + *4/*41 + *4/*10 + *5/*17 (assigned as intermediate metabolizer and poor metabolizer phenotype) are associated with increased likelihood of adverse events due to risperidone in children as compared to CYP2D6 *1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1 (assigned as normal metabolizer and ultrarapid metabolizer phenotype) .",
               "Alleles": "*4/*4 + *3/*4 + *3/*5 + *4/*4xN + *4/*6 + *5/*41 + *4/*29 + *4/*17 + *5/*10 + *3/*41 + *4/*9 + *4/*41 + *4/*10 + *5/*17",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": "intermediate metabolizer and poor metabolizer",
-              "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "Side effect/efficacy/other": "likelihood of",
               "Phenotype": "Side Effect:adverse events",
-              "Multiple phenotypes And/or": null,
               "When treated with/exposed to/when assayed with": "due to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children",
-              "Population Phenotypes or diseases": null,
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "*1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1",
-              "Comparison Metabolizer types": "normal metabolizer and ultrarapid metabolizer",
-              "PMID_norm": "30661084",
-              "Variant Annotation ID_norm": "1450932846",
-              "_expanded_from_multi_variant": true
+              "Comparison Allele(s) or Genotype(s)": "*1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2D6*1",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2D6",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "risperidone",
+                "prediction": "risperidone",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*4/*4 + *3/*4 + *3/*5 + *4/*4xN + *4/*6 + *5/*41 + *4/*29 + *4/*17 + *5/*10 + *3/*41 + *4/*9 + *4/*41 + *4/*10 + *5/*17",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Not associated with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "decreased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:adverse events",
+                "prediction": "adverse events",
+                "score": 0.9714276790618896,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "due to",
+                "prediction": "when treated with",
+                "score": 0.8702042102813721,
+                "match_status": "partial_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
             }
           },
           {
-            "matched": false,
+            "matched": true,
+            "overall_match_score": 0.4841631889343262,
             "annotation": {
-              "Variant Annotation ID": 1450932846,
-              "Variant/Haplotypes": "CYP2D6*5",
+              "Variant/Haplotypes": "CYP2D6*1",
               "Gene": "CYP2D6",
               "Drug(s)": "risperidone",
-              "PMID": 30661084,
               "Phenotype Category": "Toxicity",
-              "Significance": "yes",
-              "Notes": "Normal metabolizer also included: *35/*35 + *2/*9 + *2/*3 + *2/*29 + *2/*10 + *1xN/*4 + *10/*46 + *10/*35 + *1/*6 + *1/*33 + *1/*10 + *4/*35. Most common AEs were weight change (9%), sedation (6%), and extrapyramidal symptoms (6%). Of the 224 normal/ultrarapid metabolizers, 20 (9%) were taking one or more concomitant drugs that are known strong inhibitors of CYP2D6. The frequency of AEs was not different among those with a strong concomitant CYP2D6 inhibitor (6/20, 30%) vs. those without (55/204, 27%, P= 0.8). CYP2D6 phenoconversion not considered in the PM+IM vs NM+UM analysis.",
-              "Sentence": "CYP2D6 *4/*4 + *3/*4 + *3/*5 + *4/*4xN + *4/*6 + *5/*41 + *4/*29 + *4/*17 + *5/*10 + *3/*41 + *4/*9 + *4/*41 + *4/*10 + *5/*17 (assigned as intermediate metabolizer and poor metabolizer phenotype) are associated with increased likelihood of adverse events due to risperidone in children as compared to CYP2D6 *1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1 (assigned as normal metabolizer and ultrarapid metabolizer phenotype) .",
               "Alleles": "*4/*4 + *3/*4 + *3/*5 + *4/*4xN + *4/*6 + *5/*41 + *4/*29 + *4/*17 + *5/*10 + *3/*41 + *4/*9 + *4/*41 + *4/*10 + *5/*17",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": "intermediate metabolizer and poor metabolizer",
-              "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "Side effect/efficacy/other": "likelihood of",
               "Phenotype": "Side Effect:adverse events",
-              "Multiple phenotypes And/or": null,
               "When treated with/exposed to/when assayed with": "due to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children",
-              "Population Phenotypes or diseases": null,
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "*1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1",
-              "Comparison Metabolizer types": "normal metabolizer and ultrarapid metabolizer",
-              "PMID_norm": "30661084",
-              "Variant Annotation ID_norm": "1450932846",
-              "_expanded_from_multi_variant": true
+              "Comparison Allele(s) or Genotype(s)": "*1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2D6*1",
+                "prediction": "normal/ultrarapid",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2D6",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "risperidone",
+                "prediction": "risperidone",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*4/*4 + *3/*4 + *3/*5 + *4/*4xN + *4/*6 + *5/*41 + *4/*29 + *4/*17 + *5/*10 + *3/*41 + *4/*9 + *4/*41 + *4/*10 + *5/*17",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Not associated with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "decreased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:adverse events",
+                "prediction": "adverse events",
+                "score": 0.9714276790618896,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "due to",
+                "prediction": "when treated with",
+                "score": 0.8702042102813721,
+                "match_status": "partial_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
             }
           },
           {
-            "matched": false,
+            "matched": true,
+            "overall_match_score": 0.4841631889343262,
             "annotation": {
-              "Variant Annotation ID": 1450932846,
-              "Variant/Haplotypes": "CYP2D6*6",
+              "Variant/Haplotypes": "CYP2D6*1",
               "Gene": "CYP2D6",
               "Drug(s)": "risperidone",
-              "PMID": 30661084,
               "Phenotype Category": "Toxicity",
-              "Significance": "yes",
-              "Notes": "Normal metabolizer also included: *35/*35 + *2/*9 + *2/*3 + *2/*29 + *2/*10 + *1xN/*4 + *10/*46 + *10/*35 + *1/*6 + *1/*33 + *1/*10 + *4/*35. Most common AEs were weight change (9%), sedation (6%), and extrapyramidal symptoms (6%). Of the 224 normal/ultrarapid metabolizers, 20 (9%) were taking one or more concomitant drugs that are known strong inhibitors of CYP2D6. The frequency of AEs was not different among those with a strong concomitant CYP2D6 inhibitor (6/20, 30%) vs. those without (55/204, 27%, P= 0.8). CYP2D6 phenoconversion not considered in the PM+IM vs NM+UM analysis.",
-              "Sentence": "CYP2D6 *4/*4 + *3/*4 + *3/*5 + *4/*4xN + *4/*6 + *5/*41 + *4/*29 + *4/*17 + *5/*10 + *3/*41 + *4/*9 + *4/*41 + *4/*10 + *5/*17 (assigned as intermediate metabolizer and poor metabolizer phenotype) are associated with increased likelihood of adverse events due to risperidone in children as compared to CYP2D6 *1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1 (assigned as normal metabolizer and ultrarapid metabolizer phenotype) .",
               "Alleles": "*4/*4 + *3/*4 + *3/*5 + *4/*4xN + *4/*6 + *5/*41 + *4/*29 + *4/*17 + *5/*10 + *3/*41 + *4/*9 + *4/*41 + *4/*10 + *5/*17",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": "intermediate metabolizer and poor metabolizer",
-              "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "Side effect/efficacy/other": "likelihood of",
               "Phenotype": "Side Effect:adverse events",
-              "Multiple phenotypes And/or": null,
               "When treated with/exposed to/when assayed with": "due to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children",
-              "Population Phenotypes or diseases": null,
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "*1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1",
-              "Comparison Metabolizer types": "normal metabolizer and ultrarapid metabolizer",
-              "PMID_norm": "30661084",
-              "Variant Annotation ID_norm": "1450932846",
-              "_expanded_from_multi_variant": true
+              "Comparison Allele(s) or Genotype(s)": "*1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2D6*1",
+                "prediction": "metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2D6",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "risperidone",
+                "prediction": "risperidone",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*4/*4 + *3/*4 + *3/*5 + *4/*4xN + *4/*6 + *5/*41 + *4/*29 + *4/*17 + *5/*10 + *3/*41 + *4/*9 + *4/*41 + *4/*10 + *5/*17",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Not associated with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "decreased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:adverse events",
+                "prediction": "adverse events",
+                "score": 0.9714276790618896,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "due to",
+                "prediction": "when treated with",
+                "score": 0.8702042102813721,
+                "match_status": "partial_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/ *2xN + *1/*1xN + *1xN/ *2 + *1/ *2 + *1/*4 + *2/*4 + *1/*41 + *1/*35 + *2/*41 + *1/*9 + *1/*17 + *1/*5 + *3/*35 + *2/*5 + *2/*35 + *2/*17 + *35/*41 + *2/*6 + *1/*29 + *2/*2 + *1/*3 + *1/*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
             }
           },
           {
@@ -1070,8 +1331,22 @@
         "items": []
       }
     },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
     "study_parameters": {
-      "score": 0.4277647415796916,
+      "score": 0.8610508441925049,
       "total_samples": 1,
       "ground_truth_annotations": {
         "count": 1,
@@ -1080,7 +1355,7 @@
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.3774394778644337,
+            "overall_match_score": 0.7597507448757396,
             "annotation": {
               "Study Parameters ID": 1450932850,
               "Variant Annotation ID": 1450932846,
@@ -1121,20 +1396,20 @@
               },
               "Study Cases": {
                 "ground_truth": 257.0,
-                "prediction": 33,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 257,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Study Controls": {
                 "ground_truth": null,
-                "prediction": 224,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Characteristics": {
                 "ground_truth": "multivariate analysis adjusted for age, sex, race, and initial risperidone dose",
-                "prediction": "CYP2D6 poor or intermediate metabolizers vs normal or ultrarapid metabolizers; outcome: any risperidone-related adverse event in children \u226418 years treated \u22654 weeks at Vanderbilt (BioVU)",
-                "score": 0.9164711236953735,
+                "prediction": "Children \u226418 years treated with risperidone for at least four weeks",
+                "score": 0.9157626628875732,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
@@ -1145,33 +1420,33 @@
               },
               "Frequency In Cases": {
                 "ground_truth": null,
-                "prediction": 0.455,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Allele Of Frequency In Cases": {
                 "ground_truth": null,
-                "prediction": "poor/intermediate CYP2D6 metabolizer phenotype (any AE)",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Frequency In Controls": {
                 "ground_truth": null,
-                "prediction": 0.272,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Allele Of Frequency In Controls": {
                 "ground_truth": null,
-                "prediction": "normal/ultrarapid CYP2D6 metabolizer phenotype (any AE)",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "P Value": {
                 "ground_truth": "= 0.03",
-                "prediction": "= 0.04",
-                "score": 0.5,
-                "match_status": "partial_match"
+                "prediction": "= 0.03",
+                "score": 1.0,
+                "match_status": "match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -1199,7 +1474,7 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "Multiple groups, White Hispanic, White non-Hispanic, African American, Asian/Pacific Islander, Native American or 'Unknown' ethnicities",
-                "prediction": "Multiple Groups",
+                "prediction": "Unknown",
                 "score": 0.0,
                 "match_status": "no_match"
               }
@@ -1218,20 +1493,20 @@
               "Study Parameters ID": null,
               "Variant Annotation ID": null,
               "Study Type": "cohort",
-              "Study Cases": 20,
-              "Study Controls": 204,
-              "Characteristics": "Among CYP2D6 normal/ultrarapid metabolizers only: concomitant use of \u22651 strong CYP2D6 inhibitor vs no strong inhibitor; outcome: any risperidone-related adverse event",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": 0.3,
-              "Allele Of Frequency In Cases": "strong CYP2D6 inhibitor co-medication (any AE)",
+              "Study Cases": 257,
+              "Study Controls": null,
+              "Characteristics": "Children \u226418 years treated with risperidone for at least four weeks",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.46,
+              "Allele Of Frequency In Cases": null,
               "Frequency In Controls": 0.27,
-              "Allele Of Frequency In Controls": "no strong CYP2D6 inhibitor (any AE)",
-              "P Value": "= 0.8",
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.04",
               "Ratio Stat Type": "OR",
-              "Ratio Stat": 1.2,
-              "Confidence Interval Start": 0.4,
-              "Confidence Interval Stop": 3.3,
-              "Biogeographical Groups": "Multiple Groups",
+              "Ratio Stat": 2.4,
+              "Confidence Interval Start": 1.1,
+              "Confidence Interval Stop": 5.1,
+              "Biogeographical Groups": "Unknown",
               "Variant Annotation ID_norm": null
             }
           }

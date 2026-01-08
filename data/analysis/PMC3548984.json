@@ -2,8 +2,8 @@
   "pmcid": "PMC3548984",
   "pmid": "23213055",
   "title": "CYP2D6 Metabolism and Patient Outcome in the Austrian Breast and Colorectal Cancer Study Group Trial (ABCSG) 8",
-  "overall_score": 0.4054206776536173,
-  "num_benchmarks": 3,
+  "overall_score": 0.18690876406100063,
+  "num_benchmarks": 4,
   "benchmarks": {
     "drug_annotations": {
       "score": 0.0,
@@ -15,1390 +15,38 @@
         "items": []
       },
       "extra_predictions": {
-        "count": 35,
+        "count": 5,
         "items": [
           {
             "variant": "CYP2D6*3",
             "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 1,
-              "Variant/Haplotypes": "CYP2D6*3",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "yes",
-              "Notes": "In Arm A (5 years tamoxifen), CYP2D6 poor metabolizers with 2 null alleles (PM/PM) had a significantly higher odds of a disease event (recurrence, contralateral breast cancer, second non-breast cancer, or death) compared with extensive metabolizers (EM/EM): OR=2.45, 95% CI: 1.05\u20135.73, p=0.04.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\u201cGenotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.\u201d",
-                "\u201cIn Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05\u20135.73, p=0.04) and women with one poor allele (PM/IM or PM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07) had a higher likelihood of an event than women with two extensive alleles (EM/EM).\u201d",
-                "\u201cAmong the post-menopausal women with ER positive breast cancer enrolled on ABCSG 8 who were randomized to 5 years of tamoxifen (Arm A), there was a significantly higher odds of a disease event for those with CYP2D6 PM/PM phenotype relative to those with the CYP2D6 EM/EM phenotype, but this was not observed in patients treated with anastrozole following tamoxifen (Arm B).\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*4",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 1,
-              "Variant/Haplotypes": "CYP2D6*4",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "yes",
-              "Notes": "In Arm A (5 years tamoxifen), CYP2D6 poor metabolizers with 2 null alleles (PM/PM) had a significantly higher odds of a disease event (recurrence, contralateral breast cancer, second non-breast cancer, or death) compared with extensive metabolizers (EM/EM): OR=2.45, 95% CI: 1.05\u20135.73, p=0.04.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\u201cGenotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.\u201d",
-                "\u201cIn Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05\u20135.73, p=0.04) and women with one poor allele (PM/IM or PM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07) had a higher likelihood of an event than women with two extensive alleles (EM/EM).\u201d",
-                "\u201cAmong the post-menopausal women with ER positive breast cancer enrolled on ABCSG 8 who were randomized to 5 years of tamoxifen (Arm A), there was a significantly higher odds of a disease event for those with CYP2D6 PM/PM phenotype relative to those with the CYP2D6 EM/EM phenotype, but this was not observed in patients treated with anastrozole following tamoxifen (Arm B).\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*6",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 1,
-              "Variant/Haplotypes": "CYP2D6*6",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "yes",
-              "Notes": "In Arm A (5 years tamoxifen), CYP2D6 poor metabolizers with 2 null alleles (PM/PM) had a significantly higher odds of a disease event (recurrence, contralateral breast cancer, second non-breast cancer, or death) compared with extensive metabolizers (EM/EM): OR=2.45, 95% CI: 1.05\u20135.73, p=0.04.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\u201cGenotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.\u201d",
-                "\u201cIn Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05\u20135.73, p=0.04) and women with one poor allele (PM/IM or PM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07) had a higher likelihood of an event than women with two extensive alleles (EM/EM).\u201d",
-                "\u201cAmong the post-menopausal women with ER positive breast cancer enrolled on ABCSG 8 who were randomized to 5 years of tamoxifen (Arm A), there was a significantly higher odds of a disease event for those with CYP2D6 PM/PM phenotype relative to those with the CYP2D6 EM/EM phenotype, but this was not observed in patients treated with anastrozole following tamoxifen (Arm B).\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*10",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 1,
-              "Variant/Haplotypes": "CYP2D6*10",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "yes",
-              "Notes": "In Arm A (5 years tamoxifen), CYP2D6 poor metabolizers with 2 null alleles (PM/PM) had a significantly higher odds of a disease event (recurrence, contralateral breast cancer, second non-breast cancer, or death) compared with extensive metabolizers (EM/EM): OR=2.45, 95% CI: 1.05\u20135.73, p=0.04.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\u201cGenotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.\u201d",
-                "\u201cIn Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05\u20135.73, p=0.04) and women with one poor allele (PM/IM or PM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07) had a higher likelihood of an event than women with two extensive alleles (EM/EM).\u201d",
-                "\u201cAmong the post-menopausal women with ER positive breast cancer enrolled on ABCSG 8 who were randomized to 5 years of tamoxifen (Arm A), there was a significantly higher odds of a disease event for those with CYP2D6 PM/PM phenotype relative to those with the CYP2D6 EM/EM phenotype, but this was not observed in patients treated with anastrozole following tamoxifen (Arm B).\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*41",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 1,
-              "Variant/Haplotypes": "CYP2D6*41",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "yes",
-              "Notes": "In Arm A (5 years tamoxifen), CYP2D6 poor metabolizers with 2 null alleles (PM/PM) had a significantly higher odds of a disease event (recurrence, contralateral breast cancer, second non-breast cancer, or death) compared with extensive metabolizers (EM/EM): OR=2.45, 95% CI: 1.05\u20135.73, p=0.04.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\u201cGenotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.\u201d",
-                "\u201cIn Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05\u20135.73, p=0.04) and women with one poor allele (PM/IM or PM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07) had a higher likelihood of an event than women with two extensive alleles (EM/EM).\u201d",
-                "\u201cAmong the post-menopausal women with ER positive breast cancer enrolled on ABCSG 8 who were randomized to 5 years of tamoxifen (Arm A), there was a significantly higher odds of a disease event for those with CYP2D6 PM/PM phenotype relative to those with the CYP2D6 EM/EM phenotype, but this was not observed in patients treated with anastrozole following tamoxifen (Arm B).\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*3",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 2,
-              "Variant/Haplotypes": "CYP2D6*3",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm A (5 years tamoxifen), women with one poor allele (PM/IM or PM/EM) had a non-significant trend toward higher odds of a disease event compared with EM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07.",
-              "Sentence": "CYP2D6 phenotypes PM/IM + PM/EM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/IM + PM/EM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\"In Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05\u20135.73, p=0.04) and women with one poor allele (PM/IM or PM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07) had a higher likelihood of an event than women with two extensive alleles (EM/EM).\"",
-                "\"In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM (Table 5). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event.\"",
-                "\"Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*4",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 2,
-              "Variant/Haplotypes": "CYP2D6*4",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm A (5 years tamoxifen), women with one poor allele (PM/IM or PM/EM) had a non-significant trend toward higher odds of a disease event compared with EM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07.",
-              "Sentence": "CYP2D6 phenotypes PM/IM + PM/EM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/IM + PM/EM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\"In Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05\u20135.73, p=0.04) and women with one poor allele (PM/IM or PM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07) had a higher likelihood of an event than women with two extensive alleles (EM/EM).\"",
-                "\"In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM (Table 5). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event.\"",
-                "\"Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*6",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 2,
-              "Variant/Haplotypes": "CYP2D6*6",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm A (5 years tamoxifen), women with one poor allele (PM/IM or PM/EM) had a non-significant trend toward higher odds of a disease event compared with EM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07.",
-              "Sentence": "CYP2D6 phenotypes PM/IM + PM/EM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/IM + PM/EM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\"In Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05\u20135.73, p=0.04) and women with one poor allele (PM/IM or PM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07) had a higher likelihood of an event than women with two extensive alleles (EM/EM).\"",
-                "\"In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM (Table 5). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event.\"",
-                "\"Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*10",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 2,
-              "Variant/Haplotypes": "CYP2D6*10",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm A (5 years tamoxifen), women with one poor allele (PM/IM or PM/EM) had a non-significant trend toward higher odds of a disease event compared with EM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07.",
-              "Sentence": "CYP2D6 phenotypes PM/IM + PM/EM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/IM + PM/EM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\"In Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05\u20135.73, p=0.04) and women with one poor allele (PM/IM or PM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07) had a higher likelihood of an event than women with two extensive alleles (EM/EM).\"",
-                "\"In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM (Table 5). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event.\"",
-                "\"Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*41",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 2,
-              "Variant/Haplotypes": "CYP2D6*41",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm A (5 years tamoxifen), women with one poor allele (PM/IM or PM/EM) had a non-significant trend toward higher odds of a disease event compared with EM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07.",
-              "Sentence": "CYP2D6 phenotypes PM/IM + PM/EM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/IM + PM/EM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\"In Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05\u20135.73, p=0.04) and women with one poor allele (PM/IM or PM/EM: OR=1.67, 95% CI: 0.95\u20132.93, p=0.07) had a higher likelihood of an event than women with two extensive alleles (EM/EM).\"",
-                "\"In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM (Table 5). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event.\"",
-                "\"Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*3",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 3,
-              "Variant/Haplotypes": "CYP2D6*3",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm A (5 years tamoxifen), women classified as EM/IM or IM/IM did not have increased odds of a disease event compared with EM/EM: OR=1.23, 95% CI: 0.58\u20132.61, p=0.60.",
-              "Sentence": "CYP2D6 phenotypes EM/IM + IM/IM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "EM/IM + IM/IM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\"CYP2D6 phenotype groups were defined as previously published (11) where \u2018extensive\u2019 metabolizers do not carry a null or reduced allele (EM/EM); those with one to two reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and \u2018poor\u2019 metabolizers, those with 2 null alleles (PM/PM).\"",
-                "\"In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM (Table 5). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event.\"",
-                "\"Tamoxifen is a weak anti-estrogen with agonistic properties that is extensively metabolized into potent anti-estrogens, 4-hydroxy tamoxifen and endoxifen\u2026 Endoxifen is formed by the CYP2D6-mediated oxidation of n-desmethyl tamoxifen\u2026 Common genetic variations in CYP2D6 and/or drug-induced inhibition of CYP2D6 enzyme activity are associated with significant reductions in endoxifen concentrations in tamoxifen treated humans (6\u20138).\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*4",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 3,
-              "Variant/Haplotypes": "CYP2D6*4",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm A (5 years tamoxifen), women classified as EM/IM or IM/IM did not have increased odds of a disease event compared with EM/EM: OR=1.23, 95% CI: 0.58\u20132.61, p=0.60.",
-              "Sentence": "CYP2D6 phenotypes EM/IM + IM/IM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "EM/IM + IM/IM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\"CYP2D6 phenotype groups were defined as previously published (11) where \u2018extensive\u2019 metabolizers do not carry a null or reduced allele (EM/EM); those with one to two reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and \u2018poor\u2019 metabolizers, those with 2 null alleles (PM/PM).\"",
-                "\"In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM (Table 5). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event.\"",
-                "\"Tamoxifen is a weak anti-estrogen with agonistic properties that is extensively metabolized into potent anti-estrogens, 4-hydroxy tamoxifen and endoxifen\u2026 Endoxifen is formed by the CYP2D6-mediated oxidation of n-desmethyl tamoxifen\u2026 Common genetic variations in CYP2D6 and/or drug-induced inhibition of CYP2D6 enzyme activity are associated with significant reductions in endoxifen concentrations in tamoxifen treated humans (6\u20138).\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*6",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 3,
-              "Variant/Haplotypes": "CYP2D6*6",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm A (5 years tamoxifen), women classified as EM/IM or IM/IM did not have increased odds of a disease event compared with EM/EM: OR=1.23, 95% CI: 0.58\u20132.61, p=0.60.",
-              "Sentence": "CYP2D6 phenotypes EM/IM + IM/IM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "EM/IM + IM/IM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\"CYP2D6 phenotype groups were defined as previously published (11) where \u2018extensive\u2019 metabolizers do not carry a null or reduced allele (EM/EM); those with one to two reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and \u2018poor\u2019 metabolizers, those with 2 null alleles (PM/PM).\"",
-                "\"In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM (Table 5). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event.\"",
-                "\"Tamoxifen is a weak anti-estrogen with agonistic properties that is extensively metabolized into potent anti-estrogens, 4-hydroxy tamoxifen and endoxifen\u2026 Endoxifen is formed by the CYP2D6-mediated oxidation of n-desmethyl tamoxifen\u2026 Common genetic variations in CYP2D6 and/or drug-induced inhibition of CYP2D6 enzyme activity are associated with significant reductions in endoxifen concentrations in tamoxifen treated humans (6\u20138).\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*10",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 3,
-              "Variant/Haplotypes": "CYP2D6*10",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm A (5 years tamoxifen), women classified as EM/IM or IM/IM did not have increased odds of a disease event compared with EM/EM: OR=1.23, 95% CI: 0.58\u20132.61, p=0.60.",
-              "Sentence": "CYP2D6 phenotypes EM/IM + IM/IM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "EM/IM + IM/IM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\"CYP2D6 phenotype groups were defined as previously published (11) where \u2018extensive\u2019 metabolizers do not carry a null or reduced allele (EM/EM); those with one to two reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and \u2018poor\u2019 metabolizers, those with 2 null alleles (PM/PM).\"",
-                "\"In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM (Table 5). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event.\"",
-                "\"Tamoxifen is a weak anti-estrogen with agonistic properties that is extensively metabolized into potent anti-estrogens, 4-hydroxy tamoxifen and endoxifen\u2026 Endoxifen is formed by the CYP2D6-mediated oxidation of n-desmethyl tamoxifen\u2026 Common genetic variations in CYP2D6 and/or drug-induced inhibition of CYP2D6 enzyme activity are associated with significant reductions in endoxifen concentrations in tamoxifen treated humans (6\u20138).\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*41",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 3,
-              "Variant/Haplotypes": "CYP2D6*41",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm A (5 years tamoxifen), women classified as EM/IM or IM/IM did not have increased odds of a disease event compared with EM/EM: OR=1.23, 95% CI: 0.58\u20132.61, p=0.60.",
-              "Sentence": "CYP2D6 phenotypes EM/IM + IM/IM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "EM/IM + IM/IM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "\"CYP2D6 phenotype groups were defined as previously published (11) where \u2018extensive\u2019 metabolizers do not carry a null or reduced allele (EM/EM); those with one to two reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and \u2018poor\u2019 metabolizers, those with 2 null alleles (PM/PM).\"",
-                "\"In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM (Table 5). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event.\"",
-                "\"Tamoxifen is a weak anti-estrogen with agonistic properties that is extensively metabolized into potent anti-estrogens, 4-hydroxy tamoxifen and endoxifen\u2026 Endoxifen is formed by the CYP2D6-mediated oxidation of n-desmethyl tamoxifen\u2026 Common genetic variations in CYP2D6 and/or drug-induced inhibition of CYP2D6 enzyme activity are associated with significant reductions in endoxifen concentrations in tamoxifen treated humans (6\u20138).\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*3",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 4,
-              "Variant/Haplotypes": "CYP2D6*3",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In the first 2 years of tamoxifen when all patients received tamoxifen, PM/PM showed a non-significant higher odds of a disease event relative to EM/EM: Arm A OR=2.54, p=0.25; Arm B OR=2.60, p=0.46.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with increased response to tamoxifen in terms of higher odds of a disease event during the first 2 years of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.",
-                "Conditional logistic regression modeling (CLRM) for matched triplets and pairs was used to examine whether the odds of a disease event differed with respect to CYP2D6 genotype in the following situations: 1) the first 5 years of treatment, for each arm separately 2) years 3\u20135 of treatment, for each arm separately, 3) in the first 2 years of treatment, (when all patients were assigned tamoxifen).",
-                "There were a limited number of events during years 1\u20132 (Table 3); however, a similar non-significant higher odds of a disease event was observed for PM/PM relative to EM/EM in the first 2 years of tamoxifen for both arms: Arm A: OR = 2.54, p = 0.25 and Arm B: OR = 2.60, p = 0.46."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*4",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 4,
-              "Variant/Haplotypes": "CYP2D6*4",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In the first 2 years of tamoxifen when all patients received tamoxifen, PM/PM showed a non-significant higher odds of a disease event relative to EM/EM: Arm A OR=2.54, p=0.25; Arm B OR=2.60, p=0.46.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with increased response to tamoxifen in terms of higher odds of a disease event during the first 2 years of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.",
-                "Conditional logistic regression modeling (CLRM) for matched triplets and pairs was used to examine whether the odds of a disease event differed with respect to CYP2D6 genotype in the following situations: 1) the first 5 years of treatment, for each arm separately 2) years 3\u20135 of treatment, for each arm separately, 3) in the first 2 years of treatment, (when all patients were assigned tamoxifen).",
-                "There were a limited number of events during years 1\u20132 (Table 3); however, a similar non-significant higher odds of a disease event was observed for PM/PM relative to EM/EM in the first 2 years of tamoxifen for both arms: Arm A: OR = 2.54, p = 0.25 and Arm B: OR = 2.60, p = 0.46."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*6",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 4,
-              "Variant/Haplotypes": "CYP2D6*6",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In the first 2 years of tamoxifen when all patients received tamoxifen, PM/PM showed a non-significant higher odds of a disease event relative to EM/EM: Arm A OR=2.54, p=0.25; Arm B OR=2.60, p=0.46.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with increased response to tamoxifen in terms of higher odds of a disease event during the first 2 years of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.",
-                "Conditional logistic regression modeling (CLRM) for matched triplets and pairs was used to examine whether the odds of a disease event differed with respect to CYP2D6 genotype in the following situations: 1) the first 5 years of treatment, for each arm separately 2) years 3\u20135 of treatment, for each arm separately, 3) in the first 2 years of treatment, (when all patients were assigned tamoxifen).",
-                "There were a limited number of events during years 1\u20132 (Table 3); however, a similar non-significant higher odds of a disease event was observed for PM/PM relative to EM/EM in the first 2 years of tamoxifen for both arms: Arm A: OR = 2.54, p = 0.25 and Arm B: OR = 2.60, p = 0.46."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*10",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 4,
-              "Variant/Haplotypes": "CYP2D6*10",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In the first 2 years of tamoxifen when all patients received tamoxifen, PM/PM showed a non-significant higher odds of a disease event relative to EM/EM: Arm A OR=2.54, p=0.25; Arm B OR=2.60, p=0.46.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with increased response to tamoxifen in terms of higher odds of a disease event during the first 2 years of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.",
-                "Conditional logistic regression modeling (CLRM) for matched triplets and pairs was used to examine whether the odds of a disease event differed with respect to CYP2D6 genotype in the following situations: 1) the first 5 years of treatment, for each arm separately 2) years 3\u20135 of treatment, for each arm separately, 3) in the first 2 years of treatment, (when all patients were assigned tamoxifen).",
-                "There were a limited number of events during years 1\u20132 (Table 3); however, a similar non-significant higher odds of a disease event was observed for PM/PM relative to EM/EM in the first 2 years of tamoxifen for both arms: Arm A: OR = 2.54, p = 0.25 and Arm B: OR = 2.60, p = 0.46."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*41",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 4,
-              "Variant/Haplotypes": "CYP2D6*41",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In the first 2 years of tamoxifen when all patients received tamoxifen, PM/PM showed a non-significant higher odds of a disease event relative to EM/EM: Arm A OR=2.54, p=0.25; Arm B OR=2.60, p=0.46.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with increased response to tamoxifen in terms of higher odds of a disease event during the first 2 years of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.",
-                "Conditional logistic regression modeling (CLRM) for matched triplets and pairs was used to examine whether the odds of a disease event differed with respect to CYP2D6 genotype in the following situations: 1) the first 5 years of treatment, for each arm separately 2) years 3\u20135 of treatment, for each arm separately, 3) in the first 2 years of treatment, (when all patients were assigned tamoxifen).",
-                "There were a limited number of events during years 1\u20132 (Table 3); however, a similar non-significant higher odds of a disease event was observed for PM/PM relative to EM/EM in the first 2 years of tamoxifen for both arms: Arm A: OR = 2.54, p = 0.25 and Arm B: OR = 2.60, p = 0.46."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*3",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 5,
-              "Variant/Haplotypes": "CYP2D6*3",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "During years 3\u20135 for women in Arm A who remained on tamoxifen, PM/PM had a non-significant trend toward increased odds of a disease event relative to EM/EM: OR=2.40, 95% CI: 0.86\u20136.66, p=0.09.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with increased response to tamoxifen in terms of higher odds of a disease event during years 3\u20135 of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "In years 3\u20135 when patients remained on tamoxifen (Arm A) or switched to anastrozole (Arm B), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86\u20136.66, p=0.09) among women on Arm A but not among women on Arm B (OR= 0.28; 95% CI: 0.03\u20132.30).",
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*4",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 5,
-              "Variant/Haplotypes": "CYP2D6*4",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "During years 3\u20135 for women in Arm A who remained on tamoxifen, PM/PM had a non-significant trend toward increased odds of a disease event relative to EM/EM: OR=2.40, 95% CI: 0.86\u20136.66, p=0.09.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with increased response to tamoxifen in terms of higher odds of a disease event during years 3\u20135 of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "In years 3\u20135 when patients remained on tamoxifen (Arm A) or switched to anastrozole (Arm B), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86\u20136.66, p=0.09) among women on Arm A but not among women on Arm B (OR= 0.28; 95% CI: 0.03\u20132.30).",
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*6",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 5,
-              "Variant/Haplotypes": "CYP2D6*6",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "During years 3\u20135 for women in Arm A who remained on tamoxifen, PM/PM had a non-significant trend toward increased odds of a disease event relative to EM/EM: OR=2.40, 95% CI: 0.86\u20136.66, p=0.09.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with increased response to tamoxifen in terms of higher odds of a disease event during years 3\u20135 of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "In years 3\u20135 when patients remained on tamoxifen (Arm A) or switched to anastrozole (Arm B), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86\u20136.66, p=0.09) among women on Arm A but not among women on Arm B (OR= 0.28; 95% CI: 0.03\u20132.30).",
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*10",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 5,
-              "Variant/Haplotypes": "CYP2D6*10",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "During years 3\u20135 for women in Arm A who remained on tamoxifen, PM/PM had a non-significant trend toward increased odds of a disease event relative to EM/EM: OR=2.40, 95% CI: 0.86\u20136.66, p=0.09.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with increased response to tamoxifen in terms of higher odds of a disease event during years 3\u20135 of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "In years 3\u20135 when patients remained on tamoxifen (Arm A) or switched to anastrozole (Arm B), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86\u20136.66, p=0.09) among women on Arm A but not among women on Arm B (OR= 0.28; 95% CI: 0.03\u20132.30).",
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*41",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 5,
-              "Variant/Haplotypes": "CYP2D6*41",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "During years 3\u20135 for women in Arm A who remained on tamoxifen, PM/PM had a non-significant trend toward increased odds of a disease event relative to EM/EM: OR=2.40, 95% CI: 0.86\u20136.66, p=0.09.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with increased response to tamoxifen in terms of higher odds of a disease event during years 3\u20135 of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "PM/PM",
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "In years 3\u20135 when patients remained on tamoxifen (Arm A) or switched to anastrozole (Arm B), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86\u20136.66, p=0.09) among women on Arm A but not among women on Arm B (OR= 0.28; 95% CI: 0.03\u20132.30).",
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*3",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 6,
-              "Variant/Haplotypes": "CYP2D6*3",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "During years 3\u20135 for women in Arm A on continued tamoxifen, patients with at least one poor allele (IM/PM or EM/PM) had a non-significant trend towards increased odds of a disease event relative to EM/EM: OR=1.70, 95% CI: 0.91\u20133.17, p=0.09.",
-              "Sentence": "CYP2D6 phenotypes EM/PM + PM/IM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event during years 3\u20135 of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "EM/PM + PM/IM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM.",
-                "In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM ([Table 5](#T5)). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*4",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 6,
-              "Variant/Haplotypes": "CYP2D6*4",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "During years 3\u20135 for women in Arm A on continued tamoxifen, patients with at least one poor allele (IM/PM or EM/PM) had a non-significant trend towards increased odds of a disease event relative to EM/EM: OR=1.70, 95% CI: 0.91\u20133.17, p=0.09.",
-              "Sentence": "CYP2D6 phenotypes EM/PM + PM/IM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event during years 3\u20135 of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "EM/PM + PM/IM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM.",
-                "In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM ([Table 5](#T5)). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*6",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 6,
-              "Variant/Haplotypes": "CYP2D6*6",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "During years 3\u20135 for women in Arm A on continued tamoxifen, patients with at least one poor allele (IM/PM or EM/PM) had a non-significant trend towards increased odds of a disease event relative to EM/EM: OR=1.70, 95% CI: 0.91\u20133.17, p=0.09.",
-              "Sentence": "CYP2D6 phenotypes EM/PM + PM/IM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event during years 3\u20135 of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "EM/PM + PM/IM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM.",
-                "In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM ([Table 5](#T5)). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*10",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 6,
-              "Variant/Haplotypes": "CYP2D6*10",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "During years 3\u20135 for women in Arm A on continued tamoxifen, patients with at least one poor allele (IM/PM or EM/PM) had a non-significant trend towards increased odds of a disease event relative to EM/EM: OR=1.70, 95% CI: 0.91\u20133.17, p=0.09.",
-              "Sentence": "CYP2D6 phenotypes EM/PM + PM/IM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event during years 3\u20135 of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "EM/PM + PM/IM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM.",
-                "In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM ([Table 5](#T5)). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*41",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen",
-            "annotation": {
-              "Variant Annotation ID": 6,
-              "Variant/Haplotypes": "CYP2D6*41",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "During years 3\u20135 for women in Arm A on continued tamoxifen, patients with at least one poor allele (IM/PM or EM/PM) had a non-significant trend towards increased odds of a disease event relative to EM/EM: OR=1.70, 95% CI: 0.91\u20133.17, p=0.09.",
-              "Sentence": "CYP2D6 phenotypes EM/PM + PM/IM Are Not associated with increased response to tamoxifen in terms of higher odds of a disease event during years 3\u20135 of therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
-              "Alleles": "EM/PM + PM/IM",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "EM/EM",
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "Citations": [
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM.",
-                "In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05\u20135.73; p=0.04) had a higher odds of a disease event relative to EM/EM ([Table 5](#T5)). There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95\u20132.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58\u20132.61, p=0.60) to have a higher odds of a disease event."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "tamoxifen",
-                "drug_id": "PA451581",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "CYP2D6*3",
-            "gene": "CYP2D6",
             "drug": "tamoxifen, anastrozole",
             "annotation": {
-              "Variant Annotation ID": 7,
               "Variant/Haplotypes": "CYP2D6*3",
               "Gene": "CYP2D6",
               "Drug(s)": "tamoxifen, anastrozole",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm B (2 years tamoxifen followed by 3 years anastrozole), no significant association was found between CYP2D6 phenotype and the likelihood of a disease event during the 5 years of treatment. Specifically, PM/PM vs EM/EM: OR=0.60, 95% CI: 0.15\u20132.37, p=0.47; EM/PM + PM/IM vs EM/EM: OR=0.76, 95% CI: 0.43\u20131.31, p=0.32; EM/IM + IM/IM vs EM/EM: OR=1.02, 95% CI: 0.52\u20132.01, p=0.96.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with response to tamoxifen and anastrozole in terms of odds of a disease event over 5 years of sequential therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "In Arm A during the first 5 years of therapy, women with 2 poor alleles had a higher likelihood of an event than women with two extensive alleles. In years 3-5, PM/PM tended towards a higher likelihood of a disease event relative to EM/EM among women on Arm A but not among women on Arm B.",
+              "Sentence": "Genotype PM/PM is associated with increased odds of a disease event during tamoxifen treatment in postmenopausal women with estrogen receptor positive breast cancer.",
               "Alleles": "PM/PM",
-              "Specialty Population": null,
               "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": "and",
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
               "Comparison Allele(s) or Genotype(s)": "EM/EM",
               "Comparison Metabolizer types": "extensive metabolizer",
+              "Specialty Population": "Geriatric",
+              "Population types": "in postmenopausal women",
+              "Population Phenotypes or diseases": "Disease:breast cancer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "Conversely in Arm B, no significant association was found between *CYP2D6* genotype and the likelihood of a disease event during the 5 years of treatment.",
-                "|   | Tamoxifen only (Arm A) |  | Tamoxifen followed by anastrozole (Arm B) |  |\n| --- | --- | --- | --- | --- |\n|   | Odds Ratio (95% CI) | p-value | Odds Ratio (95% CI) | p-value |\n| PM/PM relative to EM/EM | 2.45 (1.05, 5.73) | 0.04 | 0.60 (0.15, 2.37) | 0.47 |\n| EM/PM and PM/IM relative to EM/EM | 1.67 (0.95, 2.93) | 0.07 | 0.76 (0.43, 1.31) | 0.32 |\n| EM/IM and IM/IM relative to EM/EM | 1.23 (0.58, 2.61) | 0.60 | 1.02 (0.52, 2.01) | 0.96 |",
-                "For ABCSG 8 patients randomized to 2 years of tamoxifen followed by 3 years of anastrozole (Arm B), *CYP2D6* genotype was not associated with the odds of a disease event."
+                "In Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05-5.73, p=0.04) had a higher likelihood of an event than women with two extensive alleles (EM/EM).",
+                "In years 3-5 when patients remained on tamoxifen (Arm A), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86-6.66, p=0.09) among women on Arm A but not among women on Arm B.",
+                "The negative effects of reduced CYP2D6 metabolism were observed only during the period of tamoxifen administration, and not after switching to anastrozole."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "anastrozole",
-                "drug_id": "PA448432",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
@@ -1407,43 +55,31 @@
             "gene": "CYP2D6",
             "drug": "tamoxifen, anastrozole",
             "annotation": {
-              "Variant Annotation ID": 7,
               "Variant/Haplotypes": "CYP2D6*4",
               "Gene": "CYP2D6",
               "Drug(s)": "tamoxifen, anastrozole",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm B (2 years tamoxifen followed by 3 years anastrozole), no significant association was found between CYP2D6 phenotype and the likelihood of a disease event during the 5 years of treatment. Specifically, PM/PM vs EM/EM: OR=0.60, 95% CI: 0.15\u20132.37, p=0.47; EM/PM + PM/IM vs EM/EM: OR=0.76, 95% CI: 0.43\u20131.31, p=0.32; EM/IM + IM/IM vs EM/EM: OR=1.02, 95% CI: 0.52\u20132.01, p=0.96.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with response to tamoxifen and anastrozole in terms of odds of a disease event over 5 years of sequential therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "In Arm A during the first 5 years of therapy, women with 2 poor alleles had a higher likelihood of an event than women with two extensive alleles. In years 3-5, PM/PM tended towards a higher likelihood of a disease event relative to EM/EM among women on Arm A but not among women on Arm B.",
+              "Sentence": "Genotype PM/PM is associated with increased odds of a disease event during tamoxifen treatment in postmenopausal women with estrogen receptor positive breast cancer.",
               "Alleles": "PM/PM",
-              "Specialty Population": null,
               "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": "and",
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
               "Comparison Allele(s) or Genotype(s)": "EM/EM",
               "Comparison Metabolizer types": "extensive metabolizer",
+              "Specialty Population": "Geriatric",
+              "Population types": "in postmenopausal women",
+              "Population Phenotypes or diseases": "Disease:breast cancer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "Conversely in Arm B, no significant association was found between *CYP2D6* genotype and the likelihood of a disease event during the 5 years of treatment.",
-                "|   | Tamoxifen only (Arm A) |  | Tamoxifen followed by anastrozole (Arm B) |  |\n| --- | --- | --- | --- | --- |\n|   | Odds Ratio (95% CI) | p-value | Odds Ratio (95% CI) | p-value |\n| PM/PM relative to EM/EM | 2.45 (1.05, 5.73) | 0.04 | 0.60 (0.15, 2.37) | 0.47 |\n| EM/PM and PM/IM relative to EM/EM | 1.67 (0.95, 2.93) | 0.07 | 0.76 (0.43, 1.31) | 0.32 |\n| EM/IM and IM/IM relative to EM/EM | 1.23 (0.58, 2.61) | 0.60 | 1.02 (0.52, 2.01) | 0.96 |",
-                "For ABCSG 8 patients randomized to 2 years of tamoxifen followed by 3 years of anastrozole (Arm B), *CYP2D6* genotype was not associated with the odds of a disease event."
+                "In Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05-5.73, p=0.04) had a higher likelihood of an event than women with two extensive alleles (EM/EM).",
+                "In years 3-5 when patients remained on tamoxifen (Arm A), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86-6.66, p=0.09) among women on Arm A but not among women on Arm B.",
+                "The negative effects of reduced CYP2D6 metabolism were observed only during the period of tamoxifen administration, and not after switching to anastrozole."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "anastrozole",
-                "drug_id": "PA448432",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
@@ -1452,43 +88,31 @@
             "gene": "CYP2D6",
             "drug": "tamoxifen, anastrozole",
             "annotation": {
-              "Variant Annotation ID": 7,
               "Variant/Haplotypes": "CYP2D6*6",
               "Gene": "CYP2D6",
               "Drug(s)": "tamoxifen, anastrozole",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm B (2 years tamoxifen followed by 3 years anastrozole), no significant association was found between CYP2D6 phenotype and the likelihood of a disease event during the 5 years of treatment. Specifically, PM/PM vs EM/EM: OR=0.60, 95% CI: 0.15\u20132.37, p=0.47; EM/PM + PM/IM vs EM/EM: OR=0.76, 95% CI: 0.43\u20131.31, p=0.32; EM/IM + IM/IM vs EM/EM: OR=1.02, 95% CI: 0.52\u20132.01, p=0.96.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with response to tamoxifen and anastrozole in terms of odds of a disease event over 5 years of sequential therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "In Arm A during the first 5 years of therapy, women with 2 poor alleles had a higher likelihood of an event than women with two extensive alleles. In years 3-5, PM/PM tended towards a higher likelihood of a disease event relative to EM/EM among women on Arm A but not among women on Arm B.",
+              "Sentence": "Genotype PM/PM is associated with increased odds of a disease event during tamoxifen treatment in postmenopausal women with estrogen receptor positive breast cancer.",
               "Alleles": "PM/PM",
-              "Specialty Population": null,
               "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": "and",
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
               "Comparison Allele(s) or Genotype(s)": "EM/EM",
               "Comparison Metabolizer types": "extensive metabolizer",
+              "Specialty Population": "Geriatric",
+              "Population types": "in postmenopausal women",
+              "Population Phenotypes or diseases": "Disease:breast cancer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "Conversely in Arm B, no significant association was found between *CYP2D6* genotype and the likelihood of a disease event during the 5 years of treatment.",
-                "|   | Tamoxifen only (Arm A) |  | Tamoxifen followed by anastrozole (Arm B) |  |\n| --- | --- | --- | --- | --- |\n|   | Odds Ratio (95% CI) | p-value | Odds Ratio (95% CI) | p-value |\n| PM/PM relative to EM/EM | 2.45 (1.05, 5.73) | 0.04 | 0.60 (0.15, 2.37) | 0.47 |\n| EM/PM and PM/IM relative to EM/EM | 1.67 (0.95, 2.93) | 0.07 | 0.76 (0.43, 1.31) | 0.32 |\n| EM/IM and IM/IM relative to EM/EM | 1.23 (0.58, 2.61) | 0.60 | 1.02 (0.52, 2.01) | 0.96 |",
-                "For ABCSG 8 patients randomized to 2 years of tamoxifen followed by 3 years of anastrozole (Arm B), *CYP2D6* genotype was not associated with the odds of a disease event."
+                "In Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05-5.73, p=0.04) had a higher likelihood of an event than women with two extensive alleles (EM/EM).",
+                "In years 3-5 when patients remained on tamoxifen (Arm A), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86-6.66, p=0.09) among women on Arm A but not among women on Arm B.",
+                "The negative effects of reduced CYP2D6 metabolism were observed only during the period of tamoxifen administration, and not after switching to anastrozole."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "anastrozole",
-                "drug_id": "PA448432",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
@@ -1497,43 +121,31 @@
             "gene": "CYP2D6",
             "drug": "tamoxifen, anastrozole",
             "annotation": {
-              "Variant Annotation ID": 7,
               "Variant/Haplotypes": "CYP2D6*10",
               "Gene": "CYP2D6",
               "Drug(s)": "tamoxifen, anastrozole",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm B (2 years tamoxifen followed by 3 years anastrozole), no significant association was found between CYP2D6 phenotype and the likelihood of a disease event during the 5 years of treatment. Specifically, PM/PM vs EM/EM: OR=0.60, 95% CI: 0.15\u20132.37, p=0.47; EM/PM + PM/IM vs EM/EM: OR=0.76, 95% CI: 0.43\u20131.31, p=0.32; EM/IM + IM/IM vs EM/EM: OR=1.02, 95% CI: 0.52\u20132.01, p=0.96.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with response to tamoxifen and anastrozole in terms of odds of a disease event over 5 years of sequential therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "In Arm A during the first 5 years of therapy, women with 2 poor alleles had a higher likelihood of an event than women with two extensive alleles. In years 3-5, PM/PM tended towards a higher likelihood of a disease event relative to EM/EM among women on Arm A but not among women on Arm B.",
+              "Sentence": "Genotype PM/PM is associated with increased odds of a disease event during tamoxifen treatment in postmenopausal women with estrogen receptor positive breast cancer.",
               "Alleles": "PM/PM",
-              "Specialty Population": null,
               "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": "and",
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
               "Comparison Allele(s) or Genotype(s)": "EM/EM",
               "Comparison Metabolizer types": "extensive metabolizer",
+              "Specialty Population": "Geriatric",
+              "Population types": "in postmenopausal women",
+              "Population Phenotypes or diseases": "Disease:breast cancer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "Conversely in Arm B, no significant association was found between *CYP2D6* genotype and the likelihood of a disease event during the 5 years of treatment.",
-                "|   | Tamoxifen only (Arm A) |  | Tamoxifen followed by anastrozole (Arm B) |  |\n| --- | --- | --- | --- | --- |\n|   | Odds Ratio (95% CI) | p-value | Odds Ratio (95% CI) | p-value |\n| PM/PM relative to EM/EM | 2.45 (1.05, 5.73) | 0.04 | 0.60 (0.15, 2.37) | 0.47 |\n| EM/PM and PM/IM relative to EM/EM | 1.67 (0.95, 2.93) | 0.07 | 0.76 (0.43, 1.31) | 0.32 |\n| EM/IM and IM/IM relative to EM/EM | 1.23 (0.58, 2.61) | 0.60 | 1.02 (0.52, 2.01) | 0.96 |",
-                "For ABCSG 8 patients randomized to 2 years of tamoxifen followed by 3 years of anastrozole (Arm B), *CYP2D6* genotype was not associated with the odds of a disease event."
+                "In Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05-5.73, p=0.04) had a higher likelihood of an event than women with two extensive alleles (EM/EM).",
+                "In years 3-5 when patients remained on tamoxifen (Arm A), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86-6.66, p=0.09) among women on Arm A but not among women on Arm B.",
+                "The negative effects of reduced CYP2D6 metabolism were observed only during the period of tamoxifen administration, and not after switching to anastrozole."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "anastrozole",
-                "drug_id": "PA448432",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
@@ -1542,43 +154,31 @@
             "gene": "CYP2D6",
             "drug": "tamoxifen, anastrozole",
             "annotation": {
-              "Variant Annotation ID": 7,
               "Variant/Haplotypes": "CYP2D6*41",
               "Gene": "CYP2D6",
               "Drug(s)": "tamoxifen, anastrozole",
-              "PMID": 23213055,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm B (2 years tamoxifen followed by 3 years anastrozole), no significant association was found between CYP2D6 phenotype and the likelihood of a disease event during the 5 years of treatment. Specifically, PM/PM vs EM/EM: OR=0.60, 95% CI: 0.15\u20132.37, p=0.47; EM/PM + PM/IM vs EM/EM: OR=0.76, 95% CI: 0.43\u20131.31, p=0.32; EM/IM + IM/IM vs EM/EM: OR=1.02, 95% CI: 0.52\u20132.01, p=0.96.",
-              "Sentence": "CYP2D6 poor metabolizer phenotype PM/PM Is Not associated with response to tamoxifen and anastrozole in terms of odds of a disease event over 5 years of sequential therapy in patients with Disease:Breast Neoplasms as compared to CYP2D6 extensive metabolizer phenotype EM/EM.",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "In Arm A during the first 5 years of therapy, women with 2 poor alleles had a higher likelihood of an event than women with two extensive alleles. In years 3-5, PM/PM tended towards a higher likelihood of a disease event relative to EM/EM among women on Arm A but not among women on Arm B.",
+              "Sentence": "Genotype PM/PM is associated with increased odds of a disease event during tamoxifen treatment in postmenopausal women with estrogen receptor positive breast cancer.",
               "Alleles": "PM/PM",
-              "Specialty Population": null,
               "Metabolizer types": "poor metabolizer",
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": "and",
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
-              "Multiple phenotypes or diseases And/or": null,
               "Comparison Allele(s) or Genotype(s)": "EM/EM",
               "Comparison Metabolizer types": "extensive metabolizer",
+              "Specialty Population": "Geriatric",
+              "Population types": "in postmenopausal women",
+              "Population Phenotypes or diseases": "Disease:breast cancer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "Conversely in Arm B, no significant association was found between *CYP2D6* genotype and the likelihood of a disease event during the 5 years of treatment.",
-                "|   | Tamoxifen only (Arm A) |  | Tamoxifen followed by anastrozole (Arm B) |  |\n| --- | --- | --- | --- | --- |\n|   | Odds Ratio (95% CI) | p-value | Odds Ratio (95% CI) | p-value |\n| PM/PM relative to EM/EM | 2.45 (1.05, 5.73) | 0.04 | 0.60 (0.15, 2.37) | 0.47 |\n| EM/PM and PM/IM relative to EM/EM | 1.67 (0.95, 2.93) | 0.07 | 0.76 (0.43, 1.31) | 0.32 |\n| EM/IM and IM/IM relative to EM/EM | 1.23 (0.58, 2.61) | 0.60 | 1.02 (0.52, 2.01) | 0.96 |",
-                "For ABCSG 8 patients randomized to 2 years of tamoxifen followed by 3 years of anastrozole (Arm B), *CYP2D6* genotype was not associated with the odds of a disease event."
+                "In Arm A during the first 5 years of therapy, women with 2 poor alleles (PM/PM: OR=2.45, 95% CI: 1.05-5.73, p=0.04) had a higher likelihood of an event than women with two extensive alleles (EM/EM).",
+                "In years 3-5 when patients remained on tamoxifen (Arm A), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86-6.66, p=0.09) among women on Arm A but not among women on Arm B.",
+                "The negative effects of reduced CYP2D6 metabolism were observed only during the period of tamoxifen administration, and not after switching to anastrozole."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "anastrozole",
-                "drug_id": "PA448432",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           }
@@ -1586,16 +186,94 @@
       }
     },
     "phenotype_annotations": {
-      "score": 0.5956305851538976,
+      "score": 0.19024656265974046,
       "total_samples": 10,
       "ground_truth_annotations": {
         "count": 10,
-        "matched_count": 7,
-        "unmatched_count": 3,
+        "matched_count": 2,
+        "unmatched_count": 8,
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.972666883468628,
+            "overall_match_score": 0.9618964314460754,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2D6*1",
+              "Gene": "CYP2D6",
+              "Drug(s)": "tamoxifen",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*3/*3 + *4/*4",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Efficacy:Recurrence",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2D6*1",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2D6",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "tamoxifen",
+                "prediction": "tamoxifen",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "efficacy",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*3/*3 + *4/*4",
+                "prediction": "PM/PM, EM/EM",
+                "score": 0.893781840801239,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Efficacy:Recurrence",
+                "prediction": "disease events",
+                "score": 0.848938524723053,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "EM/EM",
+                "score": 0.8762439489364624,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.9618964314460754,
             "annotation": {
               "Variant/Haplotypes": "CYP2D6*4",
               "Gene": "CYP2D6",
@@ -1611,7 +289,7 @@
             "field_comparison": {
               "Variant/Haplotypes": {
                 "ground_truth": "CYP2D6*4",
-                "prediction": "CYP2D6*4",
+                "prediction": "*4",
                 "score": 1.0,
                 "match_status": "match"
               },
@@ -1635,9 +313,9 @@
               },
               "Alleles": {
                 "ground_truth": "*3/*3 + *4/*4",
-                "prediction": "*4",
-                "score": 0.9529426097869873,
-                "match_status": "match"
+                "prediction": "PM/PM, EM/EM",
+                "score": 0.893781840801239,
+                "match_status": "partial_match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Associated with",
@@ -1653,8 +331,8 @@
               },
               "Phenotype": {
                 "ground_truth": "Efficacy:Recurrence",
-                "prediction": "Efficacy:Disease event",
-                "score": 0.909725546836853,
+                "prediction": "disease events",
+                "score": 0.848938524723053,
                 "match_status": "partial_match"
               },
               "When treated with/exposed to/when assayed with": {
@@ -1665,478 +343,175 @@
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "*1/*1",
-                "prediction": "extensive metabolizer genotype (no null or reduced alleles)",
-                "score": 0.864000678062439,
+                "prediction": "EM/EM",
+                "score": 0.8762439489364624,
                 "match_status": "partial_match"
               }
             }
           },
           {
-            "matched": true,
-            "overall_match_score": 0.9718982398509979,
+            "matched": false,
             "annotation": {
+              "Variant Annotation ID": 1444933926,
               "Variant/Haplotypes": "CYP2D6*3",
               "Gene": "CYP2D6",
               "Drug(s)": "tamoxifen",
+              "PMID": 23213055,
               "Phenotype Category": "Efficacy",
+              "Significance": "yes",
+              "Notes": "Note: article did not report all genotypes; only *1/variant allele and homozygous variant allele but no combinations of variant alleles e.g. PM/IM even if phenotype grouping exist. Genotyped for null alleles [*3 (2549 del A),*4(1846G>A), and *6(1707T>del)] reduced alleles [*10 (100 C>T and 1846 G>A) and *41 (2988 G>A)] with Applied Biosystems Taqman assay; duplicated alleles could not be assayed. \"extensive\" metabolizers do not carry a null or reduced allele (EM/EM); those with 1 to 2 reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and \"poor\" metabolizers, those with 2 null alleles (PM/PM). Post-menopausal women with estrogen receptor positive breast cancer were treated 5 years with tamoxifen only. The study grouped cases (cancer recurrence) and controls (no recurrence). In a second study arm (tamoxifen+ anastrozole) the higher risk did not persist after switching to anastrozole. [postmenopausal] [adjuvant] [DNA source: paraffin-embedded tissue] [HWE: yes for *4, *6, *10; no for *3, *41]",
+              "Sentence": "CYP2D6 *3/*3 + *4/*4 are associated with increased likelihood of Recurrence when treated with tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1.",
               "Alleles": "*3/*3 + *4/*4",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
               "Phenotype": "Efficacy:Recurrence",
+              "Multiple phenotypes And/or": "and",
               "When treated with/exposed to/when assayed with": "when treated with",
-              "Comparison Allele(s) or Genotype(s)": "*1/*1"
-            },
-            "field_comparison": {
-              "Variant/Haplotypes": {
-                "ground_truth": "CYP2D6*3",
-                "prediction": "CYP2D6*3",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Gene": {
-                "ground_truth": "CYP2D6",
-                "prediction": "CYP2D6",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Drug(s)": {
-                "ground_truth": "tamoxifen",
-                "prediction": "tamoxifen",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype Category": {
-                "ground_truth": "Efficacy",
-                "prediction": "efficacy",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Alleles": {
-                "ground_truth": "*3/*3 + *4/*4",
-                "prediction": "*3",
-                "score": 0.9452561736106873,
-                "match_status": "partial_match"
-              },
-              "Is/Is Not associated": {
-                "ground_truth": "Associated with",
-                "prediction": "Associated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Direction of effect": {
-                "ground_truth": "increased",
-                "prediction": "increased",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype": {
-                "ground_truth": "Efficacy:Recurrence",
-                "prediction": "Efficacy:Disease event",
-                "score": 0.909725546836853,
-                "match_status": "partial_match"
-              },
-              "When treated with/exposed to/when assayed with": {
-                "ground_truth": "when treated with",
-                "prediction": "when treated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Comparison Allele(s) or Genotype(s)": {
-                "ground_truth": "*1/*1",
-                "prediction": "extensive metabolizer genotype (no null or reduced alleles)",
-                "score": 0.864000678062439,
-                "match_status": "partial_match"
-              }
+              "Multiple drugs And/or": null,
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23213055",
+              "Variant Annotation ID_norm": "1444933926",
+              "_expanded_from_multi_variant": true
             }
           },
           {
-            "matched": true,
-            "overall_match_score": 0.8693049550056458,
+            "matched": false,
             "annotation": {
+              "Variant Annotation ID": 1444933959,
+              "Variant/Haplotypes": "CYP2D6*1",
+              "Gene": "CYP2D6",
+              "Drug(s)": "tamoxifen",
+              "PMID": 23213055,
+              "Phenotype Category": "Efficacy",
+              "Significance": "no",
+              "Notes": "Note: PM/IM genotypes are missing; article did not report all genotypes; only *1/variant allele and homozygous variant allele but no combinations of variant alleles e.g. PM/IM even if phenotype grouping exist.Genotyped for null alleles [*3 (2549 del A),*4(1846G>A), and *6(1707T>del)] reduced alleles [*10 (100 C>T and 1846 G>A) and *41 (2988 G>A)] with Applied Biosystems Taqman assay; duplicated alleles could not be assayed. \"extensive\" metabolizers do not carry a null or reduced allele (EM/EM); those with 1 to 2 reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and \"poor\" metabolizers, those with 2 null alleles (PM/PM). Post-menopausal women with estrogen receptor positive breast cancer were treated 5 years with tamoxifen only. The study grouped cases (cancer recurrence) and controls (no recurrence). In a second study arm (tamoxifen+ anastrozole) the higher risk did not persist after switching to anastrozole. [postmenopausal] [adjuvant] [DNA source: paraffin-embedded tissue] [HWE: yes for *4, *6, *10; no for *3, *41]",
+              "Sentence": "CYP2D6 *1/*3 + *1/*4 + *1/*6 are not associated with increased likelihood of Recurrence when treated with tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1.",
+              "Alleles": "*1/*3 + *1/*4 + *1/*6",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Efficacy:Recurrence",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23213055",
+              "Variant Annotation ID_norm": "1444933959",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1444933959,
+              "Variant/Haplotypes": "CYP2D6*3",
+              "Gene": "CYP2D6",
+              "Drug(s)": "tamoxifen",
+              "PMID": 23213055,
+              "Phenotype Category": "Efficacy",
+              "Significance": "no",
+              "Notes": "Note: PM/IM genotypes are missing; article did not report all genotypes; only *1/variant allele and homozygous variant allele but no combinations of variant alleles e.g. PM/IM even if phenotype grouping exist.Genotyped for null alleles [*3 (2549 del A),*4(1846G>A), and *6(1707T>del)] reduced alleles [*10 (100 C>T and 1846 G>A) and *41 (2988 G>A)] with Applied Biosystems Taqman assay; duplicated alleles could not be assayed. \"extensive\" metabolizers do not carry a null or reduced allele (EM/EM); those with 1 to 2 reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and \"poor\" metabolizers, those with 2 null alleles (PM/PM). Post-menopausal women with estrogen receptor positive breast cancer were treated 5 years with tamoxifen only. The study grouped cases (cancer recurrence) and controls (no recurrence). In a second study arm (tamoxifen+ anastrozole) the higher risk did not persist after switching to anastrozole. [postmenopausal] [adjuvant] [DNA source: paraffin-embedded tissue] [HWE: yes for *4, *6, *10; no for *3, *41]",
+              "Sentence": "CYP2D6 *1/*3 + *1/*4 + *1/*6 are not associated with increased likelihood of Recurrence when treated with tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1.",
+              "Alleles": "*1/*3 + *1/*4 + *1/*6",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Efficacy:Recurrence",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23213055",
+              "Variant Annotation ID_norm": "1444933959",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1444933959,
+              "Variant/Haplotypes": "CYP2D6*4",
+              "Gene": "CYP2D6",
+              "Drug(s)": "tamoxifen",
+              "PMID": 23213055,
+              "Phenotype Category": "Efficacy",
+              "Significance": "no",
+              "Notes": "Note: PM/IM genotypes are missing; article did not report all genotypes; only *1/variant allele and homozygous variant allele but no combinations of variant alleles e.g. PM/IM even if phenotype grouping exist.Genotyped for null alleles [*3 (2549 del A),*4(1846G>A), and *6(1707T>del)] reduced alleles [*10 (100 C>T and 1846 G>A) and *41 (2988 G>A)] with Applied Biosystems Taqman assay; duplicated alleles could not be assayed. \"extensive\" metabolizers do not carry a null or reduced allele (EM/EM); those with 1 to 2 reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and \"poor\" metabolizers, those with 2 null alleles (PM/PM). Post-menopausal women with estrogen receptor positive breast cancer were treated 5 years with tamoxifen only. The study grouped cases (cancer recurrence) and controls (no recurrence). In a second study arm (tamoxifen+ anastrozole) the higher risk did not persist after switching to anastrozole. [postmenopausal] [adjuvant] [DNA source: paraffin-embedded tissue] [HWE: yes for *4, *6, *10; no for *3, *41]",
+              "Sentence": "CYP2D6 *1/*3 + *1/*4 + *1/*6 are not associated with increased likelihood of Recurrence when treated with tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1.",
+              "Alleles": "*1/*3 + *1/*4 + *1/*6",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Efficacy:Recurrence",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23213055",
+              "Variant Annotation ID_norm": "1444933959",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1444933959,
               "Variant/Haplotypes": "CYP2D6*6",
               "Gene": "CYP2D6",
               "Drug(s)": "tamoxifen",
+              "PMID": 23213055,
               "Phenotype Category": "Efficacy",
+              "Significance": "no",
+              "Notes": "Note: PM/IM genotypes are missing; article did not report all genotypes; only *1/variant allele and homozygous variant allele but no combinations of variant alleles e.g. PM/IM even if phenotype grouping exist.Genotyped for null alleles [*3 (2549 del A),*4(1846G>A), and *6(1707T>del)] reduced alleles [*10 (100 C>T and 1846 G>A) and *41 (2988 G>A)] with Applied Biosystems Taqman assay; duplicated alleles could not be assayed. \"extensive\" metabolizers do not carry a null or reduced allele (EM/EM); those with 1 to 2 reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and \"poor\" metabolizers, those with 2 null alleles (PM/PM). Post-menopausal women with estrogen receptor positive breast cancer were treated 5 years with tamoxifen only. The study grouped cases (cancer recurrence) and controls (no recurrence). In a second study arm (tamoxifen+ anastrozole) the higher risk did not persist after switching to anastrozole. [postmenopausal] [adjuvant] [DNA source: paraffin-embedded tissue] [HWE: yes for *4, *6, *10; no for *3, *41]",
+              "Sentence": "CYP2D6 *1/*3 + *1/*4 + *1/*6 are not associated with increased likelihood of Recurrence when treated with tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1.",
               "Alleles": "*1/*3 + *1/*4 + *1/*6",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
               "Is/Is Not associated": "Not associated with",
               "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
               "Phenotype": "Efficacy:Recurrence",
+              "Multiple phenotypes And/or": "and",
               "When treated with/exposed to/when assayed with": "when treated with",
-              "Comparison Allele(s) or Genotype(s)": "*1/*1"
-            },
-            "field_comparison": {
-              "Variant/Haplotypes": {
-                "ground_truth": "CYP2D6*6",
-                "prediction": "CYP2D6*6",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Gene": {
-                "ground_truth": "CYP2D6",
-                "prediction": "CYP2D6",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Drug(s)": {
-                "ground_truth": "tamoxifen",
-                "prediction": "tamoxifen",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype Category": {
-                "ground_truth": "Efficacy",
-                "prediction": "efficacy",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Alleles": {
-                "ground_truth": "*1/*3 + *1/*4 + *1/*6",
-                "prediction": "*6",
-                "score": 0.9193233251571655,
-                "match_status": "partial_match"
-              },
-              "Is/Is Not associated": {
-                "ground_truth": "Not associated with",
-                "prediction": "Associated with",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Direction of effect": {
-                "ground_truth": "increased",
-                "prediction": "increased",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype": {
-                "ground_truth": "Efficacy:Recurrence",
-                "prediction": "Efficacy:Disease event",
-                "score": 0.909725546836853,
-                "match_status": "partial_match"
-              },
-              "When treated with/exposed to/when assayed with": {
-                "ground_truth": "when treated with",
-                "prediction": "when treated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Comparison Allele(s) or Genotype(s)": {
-                "ground_truth": "*1/*1",
-                "prediction": "extensive metabolizer genotype (no null or reduced alleles)",
-                "score": 0.864000678062439,
-                "match_status": "partial_match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.8673673629760742,
-            "annotation": {
-              "Variant/Haplotypes": "CYP2D6*1",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "Phenotype Category": "Efficacy",
-              "Alleles": "*3/*3 + *4/*4",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Phenotype": "Efficacy:Recurrence",
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Comparison Allele(s) or Genotype(s)": "*1/*1"
-            },
-            "field_comparison": {
-              "Variant/Haplotypes": {
-                "ground_truth": "CYP2D6*1",
-                "prediction": "CYP2D6*10",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Gene": {
-                "ground_truth": "CYP2D6",
-                "prediction": "CYP2D6",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Drug(s)": {
-                "ground_truth": "tamoxifen",
-                "prediction": "tamoxifen",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype Category": {
-                "ground_truth": "Efficacy",
-                "prediction": "efficacy",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Alleles": {
-                "ground_truth": "*3/*3 + *4/*4",
-                "prediction": "*10",
-                "score": 0.8999474048614502,
-                "match_status": "partial_match"
-              },
-              "Is/Is Not associated": {
-                "ground_truth": "Associated with",
-                "prediction": "Associated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Direction of effect": {
-                "ground_truth": "increased",
-                "prediction": "increased",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype": {
-                "ground_truth": "Efficacy:Recurrence",
-                "prediction": "Efficacy:Disease event",
-                "score": 0.909725546836853,
-                "match_status": "partial_match"
-              },
-              "When treated with/exposed to/when assayed with": {
-                "ground_truth": "when treated with",
-                "prediction": "when treated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Comparison Allele(s) or Genotype(s)": {
-                "ground_truth": "*1/*1",
-                "prediction": "extensive metabolizer genotype (no null or reduced alleles)",
-                "score": 0.864000678062439,
-                "match_status": "partial_match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.8669262826442719,
-            "annotation": {
-              "Variant/Haplotypes": "CYP2D6*1",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "Phenotype Category": "Efficacy",
-              "Alleles": "*3/*3 + *4/*4",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Phenotype": "Efficacy:Recurrence",
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Comparison Allele(s) or Genotype(s)": "*1/*1"
-            },
-            "field_comparison": {
-              "Variant/Haplotypes": {
-                "ground_truth": "CYP2D6*1",
-                "prediction": "CYP2D6*41",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Gene": {
-                "ground_truth": "CYP2D6",
-                "prediction": "CYP2D6",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Drug(s)": {
-                "ground_truth": "tamoxifen",
-                "prediction": "tamoxifen",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype Category": {
-                "ground_truth": "Efficacy",
-                "prediction": "efficacy",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Alleles": {
-                "ground_truth": "*3/*3 + *4/*4",
-                "prediction": "*41",
-                "score": 0.8955366015434265,
-                "match_status": "partial_match"
-              },
-              "Is/Is Not associated": {
-                "ground_truth": "Associated with",
-                "prediction": "Associated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Direction of effect": {
-                "ground_truth": "increased",
-                "prediction": "increased",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype": {
-                "ground_truth": "Efficacy:Recurrence",
-                "prediction": "Efficacy:Disease event",
-                "score": 0.909725546836853,
-                "match_status": "partial_match"
-              },
-              "When treated with/exposed to/when assayed with": {
-                "ground_truth": "when treated with",
-                "prediction": "when treated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Comparison Allele(s) or Genotype(s)": {
-                "ground_truth": "*1/*1",
-                "prediction": "extensive metabolizer genotype (no null or reduced alleles)",
-                "score": 0.864000678062439,
-                "match_status": "partial_match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.6909725546836853,
-            "annotation": {
-              "Variant/Haplotypes": "CYP2D6*1",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "Phenotype Category": "Efficacy",
-              "Alleles": "*3/*3 + *4/*4",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Phenotype": "Efficacy:Recurrence",
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Comparison Allele(s) or Genotype(s)": "*1/*1"
-            },
-            "field_comparison": {
-              "Variant/Haplotypes": {
-                "ground_truth": "CYP2D6*1",
-                "prediction": "poor",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Gene": {
-                "ground_truth": "CYP2D6",
-                "prediction": "CYP2D6",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Drug(s)": {
-                "ground_truth": "tamoxifen",
-                "prediction": "tamoxifen",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype Category": {
-                "ground_truth": "Efficacy",
-                "prediction": "efficacy",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Alleles": {
-                "ground_truth": "*3/*3 + *4/*4",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Is/Is Not associated": {
-                "ground_truth": "Associated with",
-                "prediction": "Associated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Direction of effect": {
-                "ground_truth": "increased",
-                "prediction": "increased",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype": {
-                "ground_truth": "Efficacy:Recurrence",
-                "prediction": "Efficacy:Disease event",
-                "score": 0.909725546836853,
-                "match_status": "partial_match"
-              },
-              "When treated with/exposed to/when assayed with": {
-                "ground_truth": "when treated with",
-                "prediction": "when treated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Comparison Allele(s) or Genotype(s)": {
-                "ground_truth": "*1/*1",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.6909725546836853,
-            "annotation": {
-              "Variant/Haplotypes": "CYP2D6*1",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen",
-              "Phenotype Category": "Efficacy",
-              "Alleles": "*3/*3 + *4/*4",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Phenotype": "Efficacy:Recurrence",
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Comparison Allele(s) or Genotype(s)": "*1/*1"
-            },
-            "field_comparison": {
-              "Variant/Haplotypes": {
-                "ground_truth": "CYP2D6*1",
-                "prediction": "metabolizers",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Gene": {
-                "ground_truth": "CYP2D6",
-                "prediction": "CYP2D6",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Drug(s)": {
-                "ground_truth": "tamoxifen",
-                "prediction": "tamoxifen",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype Category": {
-                "ground_truth": "Efficacy",
-                "prediction": "efficacy",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Alleles": {
-                "ground_truth": "*3/*3 + *4/*4",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Is/Is Not associated": {
-                "ground_truth": "Associated with",
-                "prediction": "Associated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Direction of effect": {
-                "ground_truth": "increased",
-                "prediction": "increased",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype": {
-                "ground_truth": "Efficacy:Recurrence",
-                "prediction": "Efficacy:Disease event",
-                "score": 0.909725546836853,
-                "match_status": "partial_match"
-              },
-              "When treated with/exposed to/when assayed with": {
-                "ground_truth": "when treated with",
-                "prediction": "when treated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Comparison Allele(s) or Genotype(s)": {
-                "ground_truth": "*1/*1",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              }
+              "Multiple drugs And/or": null,
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23213055",
+              "Variant Annotation ID_norm": "1444933959",
+              "_expanded_from_multi_variant": true
             }
           },
           {
@@ -2241,113 +616,26 @@
         ]
       },
       "extra_predictions": {
-        "count": 2,
-        "items": [
-          {
-            "variant": "poor",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen, anastrozole",
-            "annotation": {
-              "Variant Annotation ID": 7,
-              "Variant/Haplotypes": "poor",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen, anastrozole",
-              "PMID": "23213055",
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm B (2 years tamoxifen then anastrozole), PM/PM phenotype showed no significant association with disease events over 5 years (OR 0.60, 95% CI 0.15\u20132.37; p=0.47) compared with EM/EM.",
-              "Sentence": "CYP2D6 poor metabolizers Are not associated with increased likelihood of a disease event when treated with tamoxifen and anastrozole in people with Disease:Breast Cancer.",
-              "Alleles": null,
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "Side effect/efficacy/other": "likelihood of",
-              "Phenotype": "Efficacy:Disease event",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": "and",
-              "Population types": "in people with",
-              "Population Phenotypes or diseases": "Disease:Breast Cancer",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Alleles or Genotype(s)": null,
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "PMID_norm": "23213055",
-              "Variant Annotation ID_norm": "7",
-              "Citations": [
-                "Conversely in Arm B, no significant association was found between *CYP2D6* genotype and the likelihood of a disease event during the 5 years of treatment.",
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM. In contrast, women on Arm B who remained event-free during the first 2 years of tamoxifen, the odds of disease event for PM/PM (OR 0.28, p = 0.23) and the IM/PM or EM/PM group (OR 0.63, p = 0.22) were found to be non-significantly decreased during years 3\u20135 relative to EM/EM.",
-                "In summary, in the ABCSG 8 clinical trial, the CYP2D6 PM/PM phenotype was associated with a higher likelihood of an early disease event in women treated with 5 years of tamoxifen, but not in patients treated with sequential tamoxifen followed by anastrozole."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "poor metabolizers",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "anastrozole",
-                "drug_id": "PA448432",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "metabolizers",
-            "gene": "CYP2D6",
-            "drug": "tamoxifen, anastrozole",
-            "annotation": {
-              "Variant Annotation ID": 7,
-              "Variant/Haplotypes": "metabolizers",
-              "Gene": "CYP2D6",
-              "Drug(s)": "tamoxifen, anastrozole",
-              "PMID": "23213055",
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "In Arm B (2 years tamoxifen then anastrozole), PM/PM phenotype showed no significant association with disease events over 5 years (OR 0.60, 95% CI 0.15\u20132.37; p=0.47) compared with EM/EM.",
-              "Sentence": "CYP2D6 poor metabolizers Are not associated with increased likelihood of a disease event when treated with tamoxifen and anastrozole in people with Disease:Breast Cancer.",
-              "Alleles": null,
-              "Specialty Population": null,
-              "Metabolizer types": "poor metabolizer",
-              "isPlural": "Are",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "Side effect/efficacy/other": "likelihood of",
-              "Phenotype": "Efficacy:Disease event",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": "and",
-              "Population types": "in people with",
-              "Population Phenotypes or diseases": "Disease:Breast Cancer",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Alleles or Genotype(s)": null,
-              "Comparison Metabolizer types": "extensive metabolizer",
-              "PMID_norm": "23213055",
-              "Variant Annotation ID_norm": "7",
-              "Citations": [
-                "Conversely in Arm B, no significant association was found between *CYP2D6* genotype and the likelihood of a disease event during the 5 years of treatment.",
-                "During years 3\u20135, for women on Arm A who remained event free during the first 2 years of tamoxifen therapy, PM/PM (OR 2.40, 95% CI: 0.86 to 6.66, p = 0.09) and IM/PM or EM/PM (OR 1.70, 95% CI: 0.91\u20133.17, p=0.09) had a trend towards an increased odds of a disease event relative to EM/EM. In contrast, women on Arm B who remained event-free during the first 2 years of tamoxifen, the odds of disease event for PM/PM (OR 0.28, p = 0.23) and the IM/PM or EM/PM group (OR 0.63, p = 0.22) were found to be non-significantly decreased during years 3\u20135 relative to EM/EM.",
-                "In summary, in the ABCSG 8 clinical trial, the CYP2D6 PM/PM phenotype was associated with a higher likelihood of an early disease event in women treated with 5 years of tamoxifen, but not in patients treated with sequential tamoxifen followed by anastrozole."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "poor metabolizers",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "anastrozole",
-                "drug_id": "PA448432",
-                "confidence": 1.0
-              },
-              "_expanded_from_multi_variant": true
-            }
-          }
-        ]
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
       }
     },
     "study_parameters": {
-      "score": 0.7282368328836228,
+      "score": 0.6491739763153924,
       "total_samples": 3,
       "ground_truth_annotations": {
         "count": 3,
@@ -2356,7 +644,134 @@
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.6426511687390944,
+            "overall_match_score": 0.6415345528546501,
+            "annotation": {
+              "Study Parameters ID": 1444933951,
+              "Variant Annotation ID": 1444933926,
+              "Study Type": "prospective",
+              "Study Cases": 166.0,
+              "Study Controls": 287.0,
+              "Characteristics": "endpoint: event (disease recurrence, contralateral breast cancer, second non-breast cancer, or death); PM/PM vs EM/EM",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.04",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.45,
+              "Confidence Interval Start": 1.05,
+              "Confidence Interval Stop": 5.73,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1444933951,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1444933926,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "prospective",
+                "prediction": "case/control",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 166.0,
+                "prediction": 319,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 287.0,
+                "prediction": 557,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "endpoint: event (disease recurrence, contralateral breast cancer, second non-breast cancer, or death); PM/PM vs EM/EM",
+                "prediction": "CYP2D6 genotype and treatment with tamoxifen or anastrozole in post-menopausal women with ER positive breast cancer",
+                "score": 0.9060873985290527,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "drug",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.04",
+                "prediction": "= 0.04",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 2.45,
+                "prediction": 2.45,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.05,
+                "prediction": 1.05,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 5.73,
+                "prediction": 5.73,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "European",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6415001189007479,
             "annotation": {
               "Study Parameters ID": 1444933961,
               "Variant Annotation ID": 1444933959,
@@ -2379,7 +794,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1444933961,
-                "prediction": 2,
+                "prediction": null,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -2409,8 +824,8 @@
               },
               "Characteristics": {
                 "ground_truth": "endpoint: event (disease recurrence, contralateral breast cancer, second non-breast cancer, or death); PM/IM and EM/PM vs EM/EM",
-                "prediction": "Postmenopausal Austrian women with estrogen receptor\u2013positive early breast cancer in ABCSG-8 randomized to 5 years of tamoxifen (Arm A); association of CYP2D6 EM/PM or PM/IM phenotypes vs EM/EM with disease event during 5 years of tamoxifen therapy",
-                "score": 0.9250698685646057,
+                "prediction": "CYP2D6 genotype and treatment with tamoxifen or anastrozole in post-menopausal women with ER positive breast cancer",
+                "score": 0.9055020213127136,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
@@ -2483,7 +898,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.6425851092619055,
+            "overall_match_score": 0.43536703025593476,
             "annotation": {
               "Study Parameters ID": 1444933989,
               "Variant Annotation ID": 1444933987,
@@ -2506,7 +921,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1444933989,
-                "prediction": 3,
+                "prediction": null,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -2536,8 +951,8 @@
               },
               "Characteristics": {
                 "ground_truth": "endpoint: event (disease recurrence, contralateral breast cancer, second non-breast cancer, or death); IM/IM and EM/IM vs EM/EM",
-                "prediction": "Postmenopausal Austrian women with estrogen receptor\u2013positive early breast cancer in ABCSG-8 randomized to 5 years of tamoxifen (Arm A); association of CYP2D6 EM/IM or IM/IM phenotypes vs EM/EM with disease event during 5 years of tamoxifen therapy",
-                "score": 0.9239468574523926,
+                "prediction": "CYP2D6 genotype and treatment with tamoxifen or anastrozole in post-menopausal women with ER positive breast cancer",
+                "score": 0.9012395143508911,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
@@ -2572,9 +987,9 @@
               },
               "P Value": {
                 "ground_truth": "= 0.6",
-                "prediction": "= 0.60",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "= 0.09",
+                "score": 0.5,
+                "match_status": "partial_match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -2584,148 +999,21 @@
               },
               "Ratio Stat": {
                 "ground_truth": 1.23,
-                "prediction": 1.23,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": 2.4,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Confidence Interval Start": {
                 "ground_truth": 0.58,
-                "prediction": 0.58,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": 0.86,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Confidence Interval Stop": {
                 "ground_truth": 2.61,
-                "prediction": 2.61,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Biogeographical Groups": {
-                "ground_truth": "European",
-                "prediction": "European",
-                "score": 1.0,
-                "match_status": "match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.6424494561027078,
-            "annotation": {
-              "Study Parameters ID": 1444933951,
-              "Variant Annotation ID": 1444933926,
-              "Study Type": "prospective",
-              "Study Cases": 166.0,
-              "Study Controls": 287.0,
-              "Characteristics": "endpoint: event (disease recurrence, contralateral breast cancer, second non-breast cancer, or death); PM/PM vs EM/EM",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.04",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 2.45,
-              "Confidence Interval Start": 1.05,
-              "Confidence Interval Stop": 5.73,
-              "Biogeographical Groups": "European"
-            },
-            "field_comparison": {
-              "Study Parameters ID": {
-                "ground_truth": 1444933951,
-                "prediction": 1,
+                "prediction": 6.66,
                 "score": 0.0,
                 "match_status": "no_match"
-              },
-              "Variant Annotation ID": {
-                "ground_truth": 1444933926,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Type": {
-                "ground_truth": "prospective",
-                "prediction": "case/control",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Cases": {
-                "ground_truth": 166.0,
-                "prediction": 319,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Controls": {
-                "ground_truth": 287.0,
-                "prediction": 557,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Characteristics": {
-                "ground_truth": "endpoint: event (disease recurrence, contralateral breast cancer, second non-breast cancer, or death); PM/PM vs EM/EM",
-                "prediction": "Postmenopausal Austrian women with estrogen receptor\u2013positive early breast cancer in ABCSG-8 randomized to 5 years of tamoxifen (Arm A); association of CYP2D6 PM/PM phenotype vs EM/EM with disease event during 5 years of tamoxifen therapy",
-                "score": 0.9216407537460327,
-                "match_status": "partial_match"
-              },
-              "Characteristics Type": {
-                "ground_truth": "Study Cohort",
-                "prediction": "drug",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "P Value": {
-                "ground_truth": "= 0.04",
-                "prediction": "= 0.04",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat Type": {
-                "ground_truth": "OR",
-                "prediction": "OR",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat": {
-                "ground_truth": 2.45,
-                "prediction": 2.45,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": 1.05,
-                "prediction": 1.05,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Stop": {
-                "ground_truth": 5.73,
-                "prediction": 5.73,
-                "score": 1.0,
-                "match_status": "match"
               },
               "Biogeographical Groups": {
                 "ground_truth": "European",
@@ -2738,179 +1026,29 @@
         ]
       },
       "extra_predictions": {
-        "count": 7,
+        "count": 1,
         "items": [
           {
             "variant": "N/A",
             "gene": "N/A",
             "drug": "N/A",
             "annotation": {
-              "Study Parameters ID": 4,
+              "Study Parameters ID": null,
               "Variant Annotation ID": null,
               "Study Type": "case/control",
               "Study Cases": 319,
               "Study Controls": 557,
-              "Characteristics": "Postmenopausal Austrian women with estrogen receptor\u2013positive early breast cancer in ABCSG-8 randomized to 2 years of tamoxifen followed by 3 years of anastrozole (Arm B); association of CYP2D6 PM/PM phenotype vs EM/EM with disease event during 5 years of sequential therapy",
+              "Characteristics": "CYP2D6 genotype and treatment with tamoxifen or anastrozole in post-menopausal women with ER positive breast cancer",
               "Characteristics Type": "drug",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
               "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.47",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.6,
-              "Confidence Interval Start": 0.15,
-              "Confidence Interval Stop": 2.37,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": 5,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 319,
-              "Study Controls": 557,
-              "Characteristics": "Postmenopausal Austrian women with estrogen receptor\u2013positive early breast cancer in ABCSG-8 randomized to 2 years of tamoxifen followed by 3 years of anastrozole (Arm B); association of CYP2D6 EM/PM or PM/IM phenotypes vs EM/EM with disease event during 5 years of sequential therapy",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.32",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.76,
-              "Confidence Interval Start": 0.43,
-              "Confidence Interval Stop": 1.31,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": 6,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 319,
-              "Study Controls": 557,
-              "Characteristics": "Postmenopausal Austrian women with estrogen receptor\u2013positive early breast cancer in ABCSG-8 randomized to 2 years of tamoxifen followed by 3 years of anastrozole (Arm B); association of CYP2D6 EM/IM or IM/IM phenotypes vs EM/EM with disease event during 5 years of sequential therapy",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.96",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 1.02,
-              "Confidence Interval Start": 0.52,
-              "Confidence Interval Stop": 2.01,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": 7,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 319,
-              "Study Controls": 557,
-              "Characteristics": "Postmenopausal Austrian women with estrogen receptor\u2013positive early breast cancer in ABCSG-8 Arm A; CYP2D6 PM/PM vs EM/EM and odds of disease event during years 3\u20135 while continuing tamoxifen (among women event-free in first 2 years)",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.09",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 2.4,
-              "Confidence Interval Start": 0.86,
-              "Confidence Interval Stop": 6.66,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": 8,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 319,
-              "Study Controls": 557,
-              "Characteristics": "Postmenopausal Austrian women with estrogen receptor\u2013positive early breast cancer in ABCSG-8 Arm A; CYP2D6 EM/PM or PM/IM vs EM/EM and odds of disease event during years 3\u20135 while continuing tamoxifen (among women event-free in first 2 years)",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.09",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 1.7,
-              "Confidence Interval Start": 0.91,
-              "Confidence Interval Stop": 3.17,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": 9,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 319,
-              "Study Controls": 557,
-              "Characteristics": "Postmenopausal Austrian women with estrogen receptor\u2013positive early breast cancer in ABCSG-8 Arm B; CYP2D6 PM/PM vs EM/EM and odds of disease event during years 3\u20135 while on anastrozole after 2 years of tamoxifen (among women event-free in first 2 years)",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.23",
+              "P Value": "> 0.05",
               "Ratio Stat Type": "OR",
               "Ratio Stat": 0.28,
               "Confidence Interval Start": 0.03,
               "Confidence Interval Stop": 2.3,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": 10,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 319,
-              "Study Controls": 557,
-              "Characteristics": "Postmenopausal Austrian women with estrogen receptor\u2013positive early breast cancer in ABCSG-8 Arm B; CYP2D6 EM/PM or PM/IM vs EM/EM and odds of disease event during years 3\u20135 while on anastrozole after 2 years of tamoxifen (among women event-free in first 2 years)",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.22",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.63,
-              "Confidence Interval Start": 0.31,
-              "Confidence Interval Stop": 1.28,
               "Biogeographical Groups": "European",
               "Variant Annotation ID_norm": null
             }

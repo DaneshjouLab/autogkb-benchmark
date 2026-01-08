@@ -2,8 +2,8 @@
   "pmcid": "PMC8790808",
   "pmid": "33768542",
   "title": "Class II HLA Variants Associate with Risk of Pegaspargase Hypersensitivity",
-  "overall_score": 0.5224542963753144,
-  "num_benchmarks": 3,
+  "overall_score": 0.38325290211290125,
+  "num_benchmarks": 4,
   "benchmarks": {
     "drug_annotations": {
       "score": 0.0,
@@ -15,922 +15,105 @@
         "items": []
       },
       "extra_predictions": {
-        "count": 24,
+        "count": 4,
         "items": [
           {
             "variant": "HLA-DQB1*02:02",
-            "gene": "HLA-DQB1",
+            "gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
             "drug": "pegaspargase",
             "annotation": {
-              "Variant Annotation ID": 1,
               "Variant/Haplotypes": "HLA-DQB1*02:02",
-              "Gene": "HLA-DQB1",
+              "Gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
               "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, the HLA-DQB1*02:02, HLA-DRB1*07:01, and HLA-DQA1*02:01 alleles \u2013 forming a single extended haplotype \u2013 had the strongest association with pegaspargase hypersensitivity (meta-analysis P < 5.0\u00d710\u22125; for DQB1*02:02 Pmeta = 3.8\u00d710\u22129, OR 2.13; for DRB1*07:01 Pmeta = 2.2\u00d710\u22125, OR 1.96; for DQA1*02:01 Pmeta = 2.7\u00d710\u22125, OR 1.96). All but one DQB1*02:02 carrier also had the full DRB1*07:01-DQA1*02:01-DQB1*02:02 haplotype. Patients with the full haplotype tended to have higher reaction risk than those with only DRB1*07:01-DQA1*02:01 (21.3% vs 13.7%, P = 0.061).",
-              "Sentence": "HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to patients without this haplotype.",
-              "Alleles": "HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02",
+              "Notes": "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry.",
+              "Standardized Sentence": "Genotype HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in pediatric patients with leukemia.",
+              "Alleles": "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
               "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
+              "Population types": "in people with leukemia",
+              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
+              "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02",
-              "Comparison Metabolizer types": null,
+              "PD/PK terms": "risk of hypersensitivity reactions to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "\u201cHLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0\u00d710\u22125) in patients with primarily European ancestry (EA), with the three alleles associating in a single haplotype.\u201d",
-                "\u201cIn a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01, and HLA-DRB1*04:02 had the strongest association with reactions to pegaspargase (Pmeta = 3.8\u00d710\u22129 OR 2.13, Pmeta = 2.2\u00d710\u22125 OR 1.96, Pmeta = 2.7\u00d710\u22125 OR 1.96, and Pmeta = 6.3\u00d710\u22125 OR 4.61 respectively, Table 2, Figure 1A); \u2026 Phasing data acquired through Beagle showed that the top three alleles represent an extended haplotype in EAs\u2026 All but one patient with HLA-DQB1*02:02 also had the extended haplotype HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02.\u201d",
-                "\u201cPatients harboring the full haplotype with all three of HLA-DRB1*07:01, -DQA1*02:01 and -DQB1*02:02 tended to be at higher risk for reactions than those who only had -DRB1*07:01 and -DQA1*02:01 but not -DQB1*02:02 (21.3% vs 13.7%, P = 0.061, Figure 3).\u201d"
+                "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry (EA), with the three alleles associating in a single haplotype.",
+                "Although predominantly mediated by antibodies against PEG, not the asparaginase protein, hypersensitivity reactions to pegaspargase were strongly associated with the same HLA haplotype as in the case of ASNase.",
+                "In a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02*, HLA-DRB1*07:01*, HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (P_meta_ = 3.8x10^\u22129^ OR 2.13, P_meta_ = 2.2x10^\u22125^ OR 1.96, P_meta_ = 2.7x10^\u22125^ OR 1.96, and P_meta_ = 6.3x10^\u22125^ OR 4.61 respectively)."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
           {
             "variant": "HLA-DRB1*07:01",
-            "gene": "HLA-DQB1",
+            "gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
             "drug": "pegaspargase",
             "annotation": {
-              "Variant Annotation ID": 1,
               "Variant/Haplotypes": "HLA-DRB1*07:01",
-              "Gene": "HLA-DQB1",
+              "Gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
               "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, the HLA-DQB1*02:02, HLA-DRB1*07:01, and HLA-DQA1*02:01 alleles \u2013 forming a single extended haplotype \u2013 had the strongest association with pegaspargase hypersensitivity (meta-analysis P < 5.0\u00d710\u22125; for DQB1*02:02 Pmeta = 3.8\u00d710\u22129, OR 2.13; for DRB1*07:01 Pmeta = 2.2\u00d710\u22125, OR 1.96; for DQA1*02:01 Pmeta = 2.7\u00d710\u22125, OR 1.96). All but one DQB1*02:02 carrier also had the full DRB1*07:01-DQA1*02:01-DQB1*02:02 haplotype. Patients with the full haplotype tended to have higher reaction risk than those with only DRB1*07:01-DQA1*02:01 (21.3% vs 13.7%, P = 0.061).",
-              "Sentence": "HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to patients without this haplotype.",
-              "Alleles": "HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02",
+              "Notes": "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry.",
+              "Standardized Sentence": "Genotype HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in pediatric patients with leukemia.",
+              "Alleles": "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
               "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
+              "Population types": "in people with leukemia",
+              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
+              "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02",
-              "Comparison Metabolizer types": null,
+              "PD/PK terms": "risk of hypersensitivity reactions to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "\u201cHLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0\u00d710\u22125) in patients with primarily European ancestry (EA), with the three alleles associating in a single haplotype.\u201d",
-                "\u201cIn a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01, and HLA-DRB1*04:02 had the strongest association with reactions to pegaspargase (Pmeta = 3.8\u00d710\u22129 OR 2.13, Pmeta = 2.2\u00d710\u22125 OR 1.96, Pmeta = 2.7\u00d710\u22125 OR 1.96, and Pmeta = 6.3\u00d710\u22125 OR 4.61 respectively, Table 2, Figure 1A); \u2026 Phasing data acquired through Beagle showed that the top three alleles represent an extended haplotype in EAs\u2026 All but one patient with HLA-DQB1*02:02 also had the extended haplotype HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02.\u201d",
-                "\u201cPatients harboring the full haplotype with all three of HLA-DRB1*07:01, -DQA1*02:01 and -DQB1*02:02 tended to be at higher risk for reactions than those who only had -DRB1*07:01 and -DQA1*02:01 but not -DQB1*02:02 (21.3% vs 13.7%, P = 0.061, Figure 3).\u201d"
+                "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry (EA), with the three alleles associating in a single haplotype.",
+                "Although predominantly mediated by antibodies against PEG, not the asparaginase protein, hypersensitivity reactions to pegaspargase were strongly associated with the same HLA haplotype as in the case of ASNase.",
+                "In a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02*, HLA-DRB1*07:01*, HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (P_meta_ = 3.8x10^\u22129^ OR 2.13, P_meta_ = 2.2x10^\u22125^ OR 1.96, P_meta_ = 2.7x10^\u22125^ OR 1.96, and P_meta_ = 6.3x10^\u22125^ OR 4.61 respectively)."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
             }
           },
           {
             "variant": "HLA-DQA1*02:01",
-            "gene": "HLA-DQB1",
+            "gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
             "drug": "pegaspargase",
             "annotation": {
-              "Variant Annotation ID": 1,
               "Variant/Haplotypes": "HLA-DQA1*02:01",
-              "Gene": "HLA-DQB1",
+              "Gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
               "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, the HLA-DQB1*02:02, HLA-DRB1*07:01, and HLA-DQA1*02:01 alleles \u2013 forming a single extended haplotype \u2013 had the strongest association with pegaspargase hypersensitivity (meta-analysis P < 5.0\u00d710\u22125; for DQB1*02:02 Pmeta = 3.8\u00d710\u22129, OR 2.13; for DRB1*07:01 Pmeta = 2.2\u00d710\u22125, OR 1.96; for DQA1*02:01 Pmeta = 2.7\u00d710\u22125, OR 1.96). All but one DQB1*02:02 carrier also had the full DRB1*07:01-DQA1*02:01-DQB1*02:02 haplotype. Patients with the full haplotype tended to have higher reaction risk than those with only DRB1*07:01-DQA1*02:01 (21.3% vs 13.7%, P = 0.061).",
-              "Sentence": "HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to patients without this haplotype.",
-              "Alleles": "HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02",
+              "Notes": "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry.",
+              "Standardized Sentence": "Genotype HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in pediatric patients with leukemia.",
+              "Alleles": "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
               "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
+              "Population types": "in people with leukemia",
+              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
+              "isPlural": "Are",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02",
-              "Comparison Metabolizer types": null,
+              "PD/PK terms": "risk of hypersensitivity reactions to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "\u201cHLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0\u00d710\u22125) in patients with primarily European ancestry (EA), with the three alleles associating in a single haplotype.\u201d",
-                "\u201cIn a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01, and HLA-DRB1*04:02 had the strongest association with reactions to pegaspargase (Pmeta = 3.8\u00d710\u22129 OR 2.13, Pmeta = 2.2\u00d710\u22125 OR 1.96, Pmeta = 2.7\u00d710\u22125 OR 1.96, and Pmeta = 6.3\u00d710\u22125 OR 4.61 respectively, Table 2, Figure 1A); \u2026 Phasing data acquired through Beagle showed that the top three alleles represent an extended haplotype in EAs\u2026 All but one patient with HLA-DQB1*02:02 also had the extended haplotype HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02.\u201d",
-                "\u201cPatients harboring the full haplotype with all three of HLA-DRB1*07:01, -DQA1*02:01 and -DQB1*02:02 tended to be at higher risk for reactions than those who only had -DRB1*07:01 and -DQA1*02:01 but not -DQB1*02:02 (21.3% vs 13.7%, P = 0.061, Figure 3).\u201d"
+                "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry (EA), with the three alleles associating in a single haplotype.",
+                "Although predominantly mediated by antibodies against PEG, not the asparaginase protein, hypersensitivity reactions to pegaspargase were strongly associated with the same HLA haplotype as in the case of ASNase.",
+                "In a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02*, HLA-DRB1*07:01*, HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (P_meta_ = 3.8x10^\u22129^ OR 2.13, P_meta_ = 2.2x10^\u22125^ OR 1.96, P_meta_ = 2.7x10^\u22125^ OR 1.96, and P_meta_ = 6.3x10^\u22125^ OR 4.61 respectively)."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              },
               "_expanded_from_multi_variant": true
-            }
-          },
-          {
-            "variant": "HLA-DQB1*02:02",
-            "gene": "HLA-DQB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 2,
-              "Variant/Haplotypes": "HLA-DQB1*02:02",
-              "Gene": "HLA-DQB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "Among 97 HLA alleles tested in European ancestry pediatric ALL patients, HLA-DQB1*02:02 had the strongest association with pegaspargase hypersensitivity (meta-analysis P = 3.8\u00d710\u22129, OR 2.13). In cohort-specific analyses: TXVI P = 1.44\u00d710\u22123, OR 2.38; AALL0232 P = 9.29\u00d710\u22125, OR 1.94; AALL0434 P = 1.53\u00d710\u22123, OR 2.47.",
-              "Sentence": "HLA-DQB1*02:02 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DQB1*02:02.",
-              "Alleles": "HLA-DQB1*02:02",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DQB1*02:02",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\"In a meta-analysis combining results from the three cohorts, among 97 HLA alleles, *HLA-DQB1*02:02*, *HLA-DRB1*07:01*, *HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (*P*_meta_ = 3.8\u00d710^\u22129^ OR 2.13, *P*_meta_ = 2.2\u00d710^\u22125^ OR 1.96, *P*_meta_ = 2.7\u00d710^\u22125^ OR 1.96, and *P*_meta_ = 6.3\u00d710^\u22125^ OR 4.61 respectively, [Table 2](#T2), [Figure 1A](#F1));\"",
-                "\"Analysis of our cohorts showed similar results ([Table 2](#T2), [Figure 1A](#F1), [2](#F2) & [3](#F3)): *HLA-DQB1*02:02* had a lower P value than the other two alleles ([Table 2](#T2), *P*_meta_ = 3.8\u00d710^\u22129^ vs. 2.2\u00d710^\u22125^ and 2.7\u00d710^\u22125^) and was the only allele significantly associated with reactions in all three cohorts.\"",
-                "\"In summary, the *HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02* haplotype was associated with hypersensitivity to pegaspargase.\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DQB1*02:02",
-                "variant_id": "PA165958162",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DRB1*07:01",
-            "gene": "HLA-DRB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 3,
-              "Variant/Haplotypes": "HLA-DRB1*07:01",
-              "Gene": "HLA-DRB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DRB1*07:01 was significantly associated with pegaspargase hypersensitivity (meta-analysis P = 2.2\u00d710\u22125, OR 1.96). In cohort-specific analyses: TXVI P = 3.28\u00d710\u22125, OR 2.91; AALL0232 P = 3.27\u00d710\u22124, OR 1.74; AALL0434 P = 5.78\u00d710\u22122, OR 1.70. DRB1*07:01 only increased risk when accompanied by DQB1*02:02 (P = 0.45 for DRB1*07:01 without DQB1*02:02 vs P = 2.0\u00d710\u22127 when DQB1*02:02 present).",
-              "Sentence": "HLA-DRB1*07:01 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DRB1*07:01.",
-              "Alleles": "HLA-DRB1*07:01",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DRB1*07:01",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\u201cIn a meta-analysis combining results from the three cohorts, among 97 HLA alleles, *HLA-DQB1*02:02*, *HLA-DRB1*07:01*, *HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (*P*_meta_ = 3.8\u00d710^\u22129^ OR 2.13, *P*_meta_ = 2.2\u00d710^\u22125^ OR 1.96, *P*_meta_ = 2.7\u00d710^\u22125^ OR 1.96, and *P*_meta_ = 6.3\u00d710^\u22125^ OR 4.61 respectively, [Table 2](#T2), [Figure 1A](#F1))\u2026\u201d",
-                "\u201cHLA-DRB1*07:01 | 2.22E-5 | 1.99 | 0.37 | 0.202 | 0.132 | 3.28E-5 | 2.91 | 0.133 | 3.27E-4 | 1.74 | 0.123 | 5.78E-2 | 1.70 | 0.149\u201d",
-                "\u201cIn summary, the *HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02* haplotype was associated with hypersensitivity to pegaspargase.\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DRB1*07:01",
-                "variant_id": "PA165951644",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DQA1*02:01",
-            "gene": "HLA-DQA1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 4,
-              "Variant/Haplotypes": "HLA-DQA1*02:01",
-              "Gene": "HLA-DQA1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DQA1*02:01 was significantly associated with pegaspargase hypersensitivity (meta-analysis P = 2.7\u00d710\u22125, OR 1.96). In cohort-specific analyses: TXVI P = 3.28\u00d710\u22125, OR 2.91; AALL0232 P = 3.93\u00d710\u22124, OR 1.73; AALL0434 P = 5.20\u00d710\u22122, OR 1.72.",
-              "Sentence": "HLA-DQA1*02:01 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DQA1*02:01.",
-              "Alleles": "HLA-DQA1*02:01",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DQA1*02:01",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\u201cIn a meta-analysis combining results from the three cohorts, among 97 HLA alleles, *HLA-DQB1*02:02*, *HLA-DRB1*07:01*, *HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (*P*_meta_ = 3.8\u00d710^\u22129^ OR 2.13, *P*_meta_ = 2.2\u00d710^\u22125^ OR 1.96, *P*_meta_ = 2.7\u00d710^\u22125^ OR 1.96, and *P*_meta_ = 6.3\u00d710^\u22125^ OR 4.61 respectively, [Table 2](#T2), [Figure 1A](#F1));\u201d",
-                "\u201cHLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0\u00d710\u22125) in patients with primarily European ancestry (EA), with the three alleles associating in a single haplotype.\u201d",
-                "\u201cIn summary, the *HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02* haplotype was associated with hypersensitivity to pegaspargase.\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DQA1*02:01",
-                "variant_id": "PA165951292",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DRB1*04:02",
-            "gene": "HLA-DRB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 5,
-              "Variant/Haplotypes": "HLA-DRB1*04:02",
-              "Gene": "HLA-DRB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DRB1*04:02 was associated with pegaspargase hypersensitivity (meta-analysis P = 6.3\u00d710\u22125, OR 4.49). Cohort-specific: TXVI P = 0.497, OR 2.22; AALL0232 P = 3.02\u00d710\u22123, OR 4.74; AALL0434 P = 7.48\u00d710\u22123, OR 5.01.",
-              "Sentence": "HLA-DRB1*04:02 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DRB1*04:02.",
-              "Alleles": "HLA-DRB1*04:02",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DRB1*04:02",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\u201cIn a meta-analysis combining results from the three cohorts, among 97 HLA alleles, *HLA-DQB1*02:02*, *HLA-DRB1*07:01*, *HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (*P*_meta_ = 3.8\u00d710^\u22129^ OR 2.13, *P*_meta_ = 2.2\u00d710^\u22125^ OR 1.96, *P*_meta_ = 2.7\u00d710^\u22125^ OR 1.96, and *P*_meta_ = 6.3\u00d710^\u22125^ OR 4.61 respectively, [Table 2](#T2), [Figure 1A](#F1));\u201d",
-                "Table 2 Caption: \u201cFour-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis.\u201d",
-                "From Table 2 (HLA-DRB1*04:02 row): \u201cHLA-DRB1*04:02 | 6.30E-5 | 4.49 | 0.00 | 0.819 | 0.008 | 4.97E-1 | 2.22 | 0.005 | 3.02E-3 | 4.74 | 0.006 | 7.48E-3 | 5.01 | 0.013\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DRB1*04:02",
-                "variant_id": "PA165951501",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DRB1*04:05",
-            "gene": "HLA-DRB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 6,
-              "Variant/Haplotypes": "HLA-DRB1*04:05",
-              "Gene": "HLA-DRB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DRB1*04:05 was associated with pegaspargase hypersensitivity (meta-analysis P = 5.44\u00d710\u22124, OR 3.75). Cohort-specific: TXVI P = 0.178, OR 3.39; AALL0232 P = 1.60\u00d710\u22122, OR 3.18; AALL0434 P = 2.50\u00d710\u22122, OR 7.22.",
-              "Sentence": "HLA-DRB1*04:05 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DRB1*04:05.",
-              "Alleles": "HLA-DRB1*04:05",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DRB1*04:05",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\u201cIn a meta-analysis combining results from the three cohorts, among 97 HLA alleles, *HLA-DQB1*02:02*, *HLA-DRB1*07:01*, *HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (*P*_meta_ = 3.8\u00d710^\u22129^ OR 2.13, *P*_meta_ = 2.2\u00d710^\u22125^ OR 1.96, *P*_meta_ = 2.7\u00d710^\u22125^ OR 1.96, and *P*_meta_ = 6.3\u00d710^\u22125^ OR 4.61 respectively, [Table 2](#T2), [Figure 1A](#F1));\u201d",
-                "\u201cHLA-DRB1*04:05 | 5.44E-4 | 3.75 | 0.00 | 0.711 | 0.007 | 1.78E-1 | 3.39 | 0.006 | 1.60E-2 | 3.18 | 0.009 | 2.50E-2 | 7.22 | 0.004 |\u201d",
-                "\u201cOn the HLA amino acid level, the top amino acid variant associated with reactions marks *HLA-DQB1*02:02*, while none of the top DRB1 amino acid variants mark *HLA1-DRB1*07:01*, further supporting the importance of the DQB1 over the DRB1 allele. After adjusting for *HLA-DQB1*02:02*, the top amino acid was no longer significant and no additional amino acid was significantly associated with reactions adjusting for multiple testing (alpha = 0.05/1041 of AA). Moreover, the top DRB1 amino acids are not shared by the top *HLA-DRB1* allele hits (*HLA-DRB1*07:01*, **04:02*, and **04:05*), and therefore the mechanism of association is not readily explained by the coded amino acids.\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DRB1*04:05",
-                "variant_id": "PA165951517",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-B*50:01",
-            "gene": "HLA-B",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 7,
-              "Variant/Haplotypes": "HLA-B*50:01",
-              "Gene": "HLA-B",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-B*50:01 showed an association with pegaspargase hypersensitivity (meta-analysis P = 5.06\u00d710\u22123, OR 3.13). Cohort-specific: TXVI P = 0.286, OR 2.53; AALL0232 P = 6.08\u00d710\u22123, OR 4.07; AALL0434 P = 0.755, OR 1.39. This did not meet the study-wide HLA significance cutoff (5.2\u00d710\u22124) but was nominally significant.",
-              "Sentence": "HLA-B*50:01 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-B*50:01.",
-              "Alleles": "HLA-B*50:01",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-B*50:01",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\"HLA-B*50:01 | 5.06E-3 | 3.13 | 0.00 | 0.636 | 0.008 | 2.86E-1 | 2.53 | 0.009 | 6.08E-3 | 4.07 | 0.007 | 7.55E-1 | 1.39 | 0.009 |\"\n\n(Table 2 Caption:) \"Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis. Association analysis was adjusted for induction intrathecal therapy in TXVI, and for sex in AALL0232. I2 indicates the heterogenicity of the effect of an allele across the three cohorts. P.het indicates the statistical significance of I2.\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-B*50:01",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DQA1*01:03",
-            "gene": "HLA-DQA1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 8,
-              "Variant/Haplotypes": "HLA-DQA1*01:03",
-              "Gene": "HLA-DQA1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DQA1*01:03 was associated with a reduced risk of pegaspargase hypersensitivity (meta-analysis P = 5.82\u00d710\u22123, OR 0.54). Cohort-specific: TXVI P = 9.16\u00d710\u22122, OR 0.41; AALL0232 P = 4.20\u00d710\u22122, OR 0.57; AALL0434 P = 3.31\u00d710\u22121, OR 0.56.",
-              "Sentence": "HLA-DQA1*01:03 is associated with decreased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DQA1*01:03.",
-              "Alleles": "HLA-DQA1*01:03",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "decreased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DQA1*01:03",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\u201cHLA-DQA1*01:03 | 5.82E-3 | 0.54 | 0.00 | 0.852 | 0.065 | 9.16E-2 | 0.41 | 0.066 | 4.20E-2 | 0.57 | 0.066 | 3.31E-1 | 0.56 | 0.063\u201d (Table 2: Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs).",
-                "\u201cFour-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis\u2026 HLA-DQA1*01:03 | 5.82E-3 | 0.54 \u2026\u201d (Table 2 caption and entry for HLA-DQA1*01:03)."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DQA1*01:03",
-                "variant_id": "PA165951282",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DQB1*06:02",
-            "gene": "HLA-DQB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 9,
-              "Variant/Haplotypes": "HLA-DQB1*06:02",
-              "Gene": "HLA-DQB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DQB1*06:02 was associated with a reduced risk of pegaspargase hypersensitivity (meta-analysis P = 6.74\u00d710\u22123, OR 0.66). Cohort-specific: TXVI P = 0.507, OR 0.81; AALL0232 P = 1.84\u00d710\u22122, OR 0.63; AALL0434 P = 0.154, OR 0.54.",
-              "Sentence": "HLA-DQB1*06:02 is associated with decreased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DQB1*06:02.",
-              "Alleles": "HLA-DQB1*06:02",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "decreased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DQB1*06:02",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\"HLA-DQB1*06:02 | 6.74E-3 | 0.66 | 0.00 | 0.708 | 0.125 | 5.07E-1 | 0.81 | 0.122 | 1.84E-2 | 0.63 | 0.124 | 1.54E-1 | 0.54 | 0.128 |\" (Table 2 Caption: \"Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis.\")"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DQB1*06:02",
-                "variant_id": "PA165958103",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-A*02:05",
-            "gene": "HLA-A",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 10,
-              "Variant/Haplotypes": "HLA-A*02:05",
-              "Gene": "HLA-A",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-A*02:05 was associated with increased risk of pegaspargase hypersensitivity (meta-analysis P = 1.18\u00d710\u22122, OR 3.03). Cohort-specific: TXVI P = 0.354, OR 3.08; AALL0232 P = 2.63\u00d710\u22122, OR 3.20; AALL0434 P = 0.437, OR 2.34.",
-              "Sentence": "HLA-A*02:05 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-A*02:05.",
-              "Alleles": "HLA-A*02:05",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-A*02:05",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\"HLA-A*02:05 | 1.18E-2 | 3.03 | 0.00 | 0.967 | 0.006 | 3.54E-1 | 3.08 | 0.006 | 2.63E-2 | 3.20 | 0.007 | 4.37E-1 | 2.34 | 0.006 |\" (Table 2: \"Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis.\")"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-A*02:05",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-B*38:01",
-            "gene": "HLA-B",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 11,
-              "Variant/Haplotypes": "HLA-B*38:01",
-              "Gene": "HLA-B",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "no",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-B*38:01 had a nominal association with pegaspargase hypersensitivity (meta-analysis P = 1.79\u00d710\u22122, OR 1.90) but did not meet the HLA-wide significance threshold.",
-              "Sentence": "HLA-B*38:01 is not associated with hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-B*38:01 at the predefined HLA-wide significance threshold.",
-              "Alleles": "HLA-B*38:01",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-B*38:01",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\u201cIn a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01, and HLA-DRB1*04:02 had the strongest association with reactions to pegaspargase (Pmeta = 3.8\u00d710\u22129 OR 2.13, Pmeta = 2.2\u00d710\u22125 OR 1.96, Pmeta = 2.7\u00d710\u22125 OR 1.96, and Pmeta = 6.3\u00d710\u22125 OR 4.61 respectively, Table 2, Figure 1A);\u201d",
-                "\u201cTable 2 Caption: Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis. \u2026 HLA-B*38:01  1.79E-2  1.9  0.00  0.952  0.020  3.69E-1  1.86  0.015  7.10E-2  1.82  0.022  2.01E-1  2.28  0.019 \u2026 P = 5.2\u00d710\u22124 was used as HLA allele-wide cut-off for statistical significance based on the total number of alleles in meta-analysis result (n = 97).\u201d",
-                "\u201cA) Association between imputed HLA alleles and hypersensitivity reactions to pegaspargase in EA patients (n = 2168): meta-analyses from individual analyses on TXVI (adjusting for number of intrathecal treatment doses during remission induction), AALL0232 (adjusting for sex), and AALL0434. P = 5.2\u00d710\u22124 was used as HLA allele-wide cut-off for statistical significance based on the total number of alleles in meta-analysis result (n = 97).\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-B*38:01",
-                "variant_id": "PA165955500",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DQA1*01:01",
-            "gene": "HLA-DQA1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 12,
-              "Variant/Haplotypes": "HLA-DQA1*01:01",
-              "Gene": "HLA-DQA1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DQA1*01:01 was associated with reduced risk of pegaspargase hypersensitivity (meta-analysis P = 1.81\u00d710\u22122, OR 0.71). Cohort-specific: TXVI P = 6.16\u00d710\u22122, OR 0.54; AALL0232 P = 3.71\u00d710\u22122, OR 0.69; AALL0434 P = 0.971, OR 1.01.",
-              "Sentence": "HLA-DQA1*01:01 is associated with decreased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DQA1*01:01.",
-              "Alleles": "HLA-DQA1*01:01",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "decreased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DQA1*01:01",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\"HLA-DQA1*01:01 | 1.81E-2 | 0.71 | 0.02 | 0.360 | 0.147 | 6.16E-2 | 0.54 | 0.144 | 3.71E-2 | 0.69 | 0.141 | 9.71E-1 | 1.01 | 0.161 |\" (Table 2: Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs).",
-                "\"Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis... HLA-DQA1*01:01 ... Meta-analysis P = 1.81E-2, ORa = 0.71 ... TXVI P = 6.16E-2, ORa = 0.54 ... AALL0232 P = 3.71E-2, ORa = 0.69 ... AALL0434 P = 9.71E-1, ORa = 1.01\" (Table 2 caption and HLA-DQA1*01:01 row, summarizing association with pegaspargase hypersensitivity)."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DQA1*01:01",
-                "variant_id": "PA165951273",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DPA1*02:02",
-            "gene": "HLA-DPA1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 13,
-              "Variant/Haplotypes": "HLA-DPA1*02:02",
-              "Gene": "HLA-DPA1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "no",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DPA1*02:02 had a nominal association with pegaspargase hypersensitivity (meta-analysis P = 3.14\u00d710\u22122, OR 1.59) but did not reach the HLA-wide significance cutoff.",
-              "Sentence": "HLA-DPA1*02:02 is not associated with hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DPA1*02:02 at the predefined HLA-wide significance threshold.",
-              "Alleles": "HLA-DPA1*02:02",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DPA1*02:02",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\u201cHLA-DPA1*02:02 | 3.14E-2 | 1.59 | 0.00 | 0.658 | 0.033 | 9.96E-1 | 1.00 | 0.032 | 2.62E-2 | 1.75 | 0.038 | 4.69E-1 | 1.58 | 0.025 |\u201d (Table 2: Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis.)",
-                "\u201cA) Association between imputed HLA alleles and hypersensitivity reactions to pegaspargase in EA patients (n = 2168)\u2026 P = 5.2\u00d710\u22124 was used as HLA allele-wide cut-off for statistical significance based on the total number of alleles in meta-analysis result (n = 97).\u201d",
-                "\u201cHLA-DPA1*02:02 had a nominal association with reactions (meta-analysis P = 3.14\u00d710\u22122, OR 1.59) but did not reach the HLA allele-wide significance threshold of 5.2\u00d710\u22124.\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DPA1*02:02",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DRB1*13:01",
-            "gene": "HLA-DRB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 14,
-              "Variant/Haplotypes": "HLA-DRB1*13:01",
-              "Gene": "HLA-DRB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DRB1*13:01 was associated with reduced risk of pegaspargase hypersensitivity (meta-analysis P = 3.17\u00d710\u22122, OR 0.61).",
-              "Sentence": "HLA-DRB1*13:01 is associated with decreased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DRB1*13:01.",
-              "Alleles": "HLA-DRB1*13:01",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "decreased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DRB1*13:01",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\"HLA-DRB1*13:01 | 3.17E-2 | 0.61 | 0.00 | 0.629 | 0.059 | 1.43E-1 | 0.46 | 0.058 | 1.88E-1 | 0.70 | 0.059 | 1.97E-1 | 0.39 | 0.058 |\" (Table 2: \"Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis.\")",
-                "\"Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis.\" (Table 2 Caption, which includes the row for \"HLA-DRB1*13:01\" with meta-analysis OR 0.61)."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DRB1*13:01",
-                "variant_id": "PA165951968",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DRB1*15:01",
-            "gene": "HLA-DRB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 15,
-              "Variant/Haplotypes": "HLA-DRB1*15:01",
-              "Gene": "HLA-DRB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "no",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DRB1*15:01 showed a modest protective association (meta-analysis P = 4.05\u00d710\u22122, OR 0.71) but did not reach the HLA-wide significance threshold.",
-              "Sentence": "HLA-DRB1*15:01 is not associated with hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DRB1*15:01 at the predefined HLA-wide significance threshold.",
-              "Alleles": "HLA-DRB1*15:01",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DRB1*15:01",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\u201cWe used the following for the alpha level for significance for association analyses: for HLA alleles, we used 5.2\u00d710^\u22124^ (0.05/97 [number of imputed HLA alleles])\u2026.\u201d\n\n\u201cIn a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01, and HLA-DRB1*04:02 had the strongest association with reactions to pegaspargase (P_meta = 3.8\u00d710^\u22129 OR 2.13, P_meta = 2.2\u00d710^\u22125 OR 1.96, P_meta = 2.7\u00d710^\u22125 OR 1.96, and P_meta = 6.3\u00d710^\u22125 OR 4.61 respectively, Table 2, Figure 1A)\u2026.\u201d\n\n\u201cTable 2 Caption: Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis.\u201d",
-                "From Table 2 (four\u2011digit HLA allele row for HLA-DRB1*15:01):\n\n\u201cHLA-DRB1*15:01 | 4.05E-2 | 0.71 | 0.14 | 0.313 | 0.132 | 9.49E-1 | 1.02 | 0.134 | 1.50E-2 | 0.63 | 0.134 | 1.57E-1 | 0.55 | 0.126\u201d\n\n(and the table legend indicating these values are the meta-analysis P value and odds ratio for association with hypersensitivity reactions to pegaspargase).",
-                "\u201cHLA alleles are known to be associated with hypersensitivity reactions to asparaginase and other drugs; we successfully imputed HLA alleles in EA patients \u2026 and analyzed associations between HLA alleles, amino acid variants in HLA genes, and reactions to pegaspargase among EAs including the protocol-specific covariates\u2026. In a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01, and HLA-DRB1*04:02 had the strongest association with reactions to pegaspargase (P_meta = 3.8\u00d710^\u22129 OR 2.13, P_meta = 2.2\u00d710^\u22125 OR 1.96, P_meta = 2.7\u00d710^\u22125 OR 1.96, and P_meta = 6.3\u00d710^\u22125 OR 4.61 respectively, Table 2, Figure 1A)\u2026.\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DRB1*15:01",
-                "variant_id": "PA165952269",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DQB1*06:03",
-            "gene": "HLA-DQB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 16,
-              "Variant/Haplotypes": "HLA-DQB1*06:03",
-              "Gene": "HLA-DQB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "no",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-DQB1*06:03 had a nominal protective association (meta-analysis P = 4.62\u00d710\u22122, OR 0.66) but did not meet the HLA-wide significance threshold.",
-              "Sentence": "HLA-DQB1*06:03 is not associated with hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-DQB1*06:03 at the predefined HLA-wide significance threshold.",
-              "Alleles": "HLA-DQB1*06:03",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-DQB1*06:03",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\u201cWe used the following for the alpha level for significance for association analyses: for HLA alleles, we used 5.2\u00d710^\u22124^ (0.05/97 [number of imputed HLA alleles])\u2026 and for GWAS of SNPs, we used 5\u00d710^\u22128^.\u201d",
-                "\u201cFour-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis\u2026 HLA-DQB1*06:03  4.62E-2  0.66  0.00  0.649  0.064  6.43E-1  0.84  0.072  7.96E-2  0.62  0.065  2.13E-1  0.40  0.057.\u201d",
-                "\u201cAssociation between imputed HLA alleles and hypersensitivity reactions to pegaspargase in EA patients (n = 2168)\u2026 P = 5.2\u00d710\u22124 was used as HLA allele-wide cut-off for statistical significance based on the total number of alleles in meta-analysis result (n = 97).\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DQB1*06:03",
-                "variant_id": "PA165958105",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-C*07:02",
-            "gene": "HLA-C",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 17,
-              "Variant/Haplotypes": "HLA-C*07:02",
-              "Gene": "HLA-C",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "no",
-              "Notes": "In European ancestry pediatric ALL patients, HLA-C*07:02 showed a weak protective trend (meta-analysis P = 4.87\u00d710\u22122, OR 0.78) but did not meet the HLA-wide significance threshold.",
-              "Sentence": "HLA-C*07:02 is not associated with hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without HLA-C*07:02 at the predefined HLA-wide significance threshold.",
-              "Alleles": "HLA-C*07:02",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "absence of HLA-C*07:02",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\"HLA-C*07:02 | 4.87E-2 | 0.78 | 0.00 | 0.829 | 0.160 | 6.62E-1 | 0.89 | 0.158 | 8.06E-2 | 0.75 | 0.157 | 3.14E-1 | 0.71 | 0.166\"\n\n(Table 2 Caption:) \"Four-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis. ... P = 5.2\u00d710\u22124 was used as HLA allele-wide cut-off for statistical significance based on the total number of alleles in meta-analysis result (n = 97).\"",
-                "(Figure 1 legend, panel A:) \"P = 5.2\u00d710\u22124 was used as HLA allele-wide cut-off for statistical significance based on the total number of alleles in meta-analysis result (n = 97).\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-C*07:02",
-                "variant_id": "PA165957396",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs1694129",
-            "gene": "HLA-DQB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 18,
-              "Variant/Haplotypes": "rs1694129",
-              "Gene": "HLA-DQB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In European ancestry pediatric ALL patients, rs1694129, located 1582 bp 5\u2019 of HLA-DQB1, was the top SNP in GWAS (meta-analysis P = 1.1\u00d710\u22128, OR 2.03) and tags HLA-DQB1*02:02 (r2 = 0.96). In non-European ancestry patients, rs1694129 was nominally associated with pegaspargase hypersensitivity (Pmeta = 0.013, OR 2.01).",
-              "Sentence": "The risk allele of rs1694129 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without the risk allele.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-risk allele at rs1694129",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "In a meta-analysis of EA patients in these protocols, all genome-wide significant variants fell in the *HLA-DQA1* and *-DQB1* locus on chromosome 6 (*P*_meta_ < 5\u00d710^\u22128^, [Table S11](#SD1), [Figure 1C](#F1)). The top hit rs1694129 (*P*_meta_ = 1.1\u00d710^\u22128^, OR 2.03) locates 1582 bp 5\u2019 of the *HLA-DQB1* gene in a histone-binding site. rs1694129 tags *HLA-DQB1*02:02*, the top hit among imputed 4-digit *HLA* alleles in EAs (r^2^ = 0.96, [Table S10B](#SD1)).",
-                "Next, we examined if the tagging SNPs for the significant imputed HLA alleles in EA patients were also significant in non-EAs. The top SNP rs1694129 in EAs remained nominally significantly associated with pegaspargase reactions in non-EA patients, adjusting for percent ancestry (*P*_meta_ = 0.013, OR 2.01, [Table S11](#SD1)).",
-                "When limited to SNPs (rather than alleles), the top SNP *HLA-DQB1* rs1694129 associated with pegaspargase hypersensitivity reactions in EAs also replicated in non-EAs (*P*_meta_ = 0.013 OR 2.01, [Table S11](#SD1))."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs1694129",
-                "variant_id": "PA166250681",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs28383308",
-            "gene": "HLA-DQA1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 19,
-              "Variant/Haplotypes": "rs28383308",
-              "Gene": "HLA-DQA1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In all ancestries combined, rs28383308, located 9173 bp 5\u2019 of HLA-DQA1, was the top genome-wide SNP associated with pegaspargase hypersensitivity (meta-analysis P = 4.9\u00d710\u221214, OR 1.95). Among European ancestry patients, rs28383308 tags HLA-DRB1*07:01 (r2 = 0.85) and HLA-DQB1*02:02 to a lesser extent (r2 = 0.62).",
-              "Sentence": "The risk allele of rs28383308 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without the risk allele.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-risk allele at rs28383308",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "In a meta-analysis combining results from the three cohorts, all genome-wide significant variants fell in the *HLA-DRB1* and *-DQA1* loci on chromosome 6 (*P*_meta_ < 5\u00d710^\u22128^, [Table S9](#SD1), [Figure 1B](#F1)). The top hit rs28383308 (*P*_meta_ = 4.9\u00d710^\u221214^ OR 1.95) locates 9173bp 5\u2019 of the *HLA-DQA1* gene.",
-                "Genome-wide association studies (GWAS) were performed on all patients and within different ancestry groups (EAs, non-EAs, AAs and AMRs) for each treatment protocol adjusting for protocol-specific covariates and ancestry. Meta-analyses were performed combining results from the same ancestry group across protocols ([Figure S2](#SD1)). Additional trans-ancestry meta-analysis was performed to combine the results across multiple ancestry groups. All GWAS were performed using PLINK 2.00 alpha.([14](#R14)) All meta-analyses were performed using generic inverse variance method in PLINK 1.9 ([Figure S2](#SD1)).([15](#R15)) Pooled odds ratios (ORs) were calculated using random effects models. An OR > 1 indicates that the presence of the HLA allele, or the amino acid variant, or the minor allele of the SNP, was associated with increased risk of hypersensitivity."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs13233308",
-                "variant_id": "PA166181264",
-                "confidence": 0.8
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
             }
           },
           {
@@ -938,136 +121,38 @@
             "gene": "ARHGAP28",
             "drug": "pegaspargase",
             "annotation": {
-              "Variant Annotation ID": 20,
               "Variant/Haplotypes": "rs9958628",
               "Gene": "ARHGAP28",
               "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In non-European ancestry pediatric ALL patients, rs9958628 in the 5\u2019-UTR of ARHGAP28 was the top non-HLA variant and reached genome-wide significance for association with pegaspargase hypersensitivity (meta-analysis P = 8.9\u00d710\u22129, OR 3.69). It was also the top non-HLA hit among all patients (Pmeta = 1.2\u00d710\u22127, OR 3.03) and was associated with reactions in African ancestry patients (Pmeta = 3.2\u00d710\u22125, OR 2.03) but not in Europeans or AMR, likely due to low minor allele frequency in those groups.",
-              "Sentence": "The risk allele of rs9958628 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without the risk allele.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
+              "Notes": "The rs9958628 variant had the strongest genetic association (P = 8.9x10\u22129) in non-EAs.",
+              "Standardized Sentence": "Variant rs9958628 is associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry patients with leukemia.",
+              "Alleles": "",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Population types": "in non-EA patients",
+              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-risk allele at rs9958628",
-              "Comparison Metabolizer types": null,
+              "PD/PK terms": "risk of hypersensitivity reactions to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "Among non-EAs, rs9958628, located in the 5\u2019-UTR of the Rho GTPase activating protein 28 (*ARHGAP28*) gene transcript, was the top genetic variant and reached genome-wide significance in its association with hypersensitivity (*P*_meta_ = 8.9\u00d710^\u22129^, OR 3.69, [Figure 1D](#F1), [Table S12](#SD1)).",
-                "This SNP was also the top non-HLA hit among all evaluable patients (*P*_meta_ = 1.2\u00d710^\u22127^, OR 3.03, [Figure 1B](#F1)) and was associated with reactions in a meta-analysis in AAs from the three cohorts (*P* = 0.010 in TXVI, *P* = 0.039 in AALL0232, and *P* = 0.0015 in AALL0434, *P*_meta_ = 3.2\u00d710^\u22125^, OR 2.03) but not in EAs or AMRs, plausibly due to low minor allele frequency (< 1%).",
-                "This study demonstrated for the first time the association between a non-HLA locus (*ARHGAP28*) and pegaspargase hypersensitivity with genome-wide significance in non-EAs."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs9958628",
-                "variant_id": "PA166250701",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs79377225",
-            "gene": "GPBP1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 21,
-              "Variant/Haplotypes": "rs79377225",
-              "Gene": "GPBP1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In non-European ancestry pediatric ALL patients, rs79377225, located 43 kb 3\u2019 of GPBP1, was genome-wide significantly associated with pegaspargase hypersensitivity (meta-analysis P = 2.5\u00d710\u22128, OR 2.70). In trans-ancestry meta-analysis, rs79377225 remained genome-wide significant (Pmeta = 1.6\u00d710\u22128, OR 2.74).",
-              "Sentence": "The risk allele of rs79377225 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without the risk allele.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-risk allele at rs79377225",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\"The other two genome-wide significant hits among non-EAs were rs79377225 and rs11739459, located 43kb and 39kb 3\u2019 of GC-rich promoter binding protein 1 (*GPBP1*) (*P*_meta_ = 2.5\u00d710^\u22128^, OR 2.70 and *P*_meta_ = 2.7\u00d710^\u22128^, OR 2.50 respectively, [Figure 1D](#F1), [Table S12](#SD1)).\"",
-                "\"In addition, we performed trans-ancestry meta-analysis based on the ancestry specific analyses. rs11739459 and rs79377225 remained genome-wide significant ([Table S15](#SD1), *P*_meta_ = 8.8\u00d710^\u22129^ OR 2.60 and *P*_meta_ = 1.6\u00d710^\u22128^ OR 2.74 respectively).\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs77913725",
-                "variant_id": "PA166156196",
-                "confidence": 0.8
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs11739459",
-            "gene": "GPBP1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 22,
-              "Variant/Haplotypes": "rs11739459",
-              "Gene": "GPBP1",
-              "Drug(s)": "pegaspargase",
-              "PMID": 33768542,
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In non-European ancestry pediatric ALL patients, rs11739459, located 39 kb 3\u2019 of GPBP1, was genome-wide significantly associated with pegaspargase hypersensitivity (meta-analysis P = 2.7\u00d710\u22128, OR 2.50). In trans-ancestry meta-analysis it remained genome-wide significant (Pmeta = 8.8\u00d710\u22129, OR 2.60).",
-              "Sentence": "The risk allele of rs11739459 is associated with increased hypersensitivity reactions to pegaspargase in children with Disease:Acute Lymphoblastic Leukemia as compared to children without the risk allele.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "hypersensitivity reactions to",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-risk allele at rs11739459",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\"Similar SNP-based GWAS and meta-analyses were conducted in combined non-EA (n = 1607), AA (n = 310), and AMR (n = 798) patients adjusting for genetic ancestry. Among non-EAs, rs9958628, located in the 5\u2019-UTR of the Rho GTPase activating protein 28 (*ARHGAP28*) gene transcript, was the top genetic variant and reached genome-wide significance in its association with hypersensitivity (*P*_meta_ = 8.9\u00d710^\u22129^, OR 3.69, [Figure 1D](#F1), [Table S12](#SD1)). ... The other two genome-wide significant hits among non-EAs were rs79377225 and rs11739459, located 43kb and 39kb 3\u2019 of GC-rich promoter binding protein 1 (*GPBP1*) (*P*_meta_ = 2.5\u00d710^\u22128^, OR 2.70 and *P*_meta_ = 2.7\u00d710^\u22128^, OR 2.50 respectively, [Figure 1D](#F1), [Table S12](#SD1)).\"",
-                "\"In addition, we performed trans-ancestry meta-analysis based on the ancestry specific analyses. rs11739459 and rs79377225 remained genome-wide significant ([Table S15](#SD1), *P*_meta_ = 8.8\u00d710^\u22129^ OR 2.60 and *P*_meta_ = 1.6\u00d710^\u22128^ OR 2.74 respectively).\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs3828913",
-                "variant_id": "PA166157089",
-                "confidence": 0.8571428571428571
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
+                "The rs9958628 variant, in ARHGAP28 (previously linked to immune response in children) had the strongest genetic association (P = 8.9x10\u22129) in non-EAs.",
+                "Among non-EAs, rs9958628, located in the 5'-UTR of the Rho GTPase activating protein 28 (ARHGAP28) gene transcript, was the top genetic variant and reached genome-wide significance in its association with hypersensitivity (P_meta_ = 8.9x10\u22129, OR 3.69).",
+                "This study demonstrated for the first time the association between a non-HLA locus (ARHGAP28) and pegaspargase hypersensitivity with genome-wide significance in non-EAs."
+              ]
             }
           }
         ]
       }
     },
     "phenotype_annotations": {
-      "score": 0.8935755789279938,
+      "score": 0.9582130381216606,
       "total_samples": 4,
       "ground_truth_annotations": {
         "count": 4,
@@ -1076,85 +161,7 @@
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.8942294120788574,
-            "annotation": {
-              "Variant/Haplotypes": "HLA-DQA1*02:01",
-              "Gene": "HLA-DQA1",
-              "Drug(s)": "pegaspargase",
-              "Phenotype Category": "Toxicity",
-              "Alleles": "*02:01",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Phenotype": "Side Effect:Hypersensitivity",
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Comparison Allele(s) or Genotype(s)": null
-            },
-            "field_comparison": {
-              "Variant/Haplotypes": {
-                "ground_truth": "HLA-DQA1*02:01",
-                "prediction": "HLA-DQA1*02:01",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Gene": {
-                "ground_truth": "HLA-DQA1",
-                "prediction": "HLA-DQA1",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Drug(s)": {
-                "ground_truth": "pegaspargase",
-                "prediction": "pegaspargase",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype Category": {
-                "ground_truth": "Toxicity",
-                "prediction": "toxicity",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Alleles": {
-                "ground_truth": "*02:01",
-                "prediction": "*02:01",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Is/Is Not associated": {
-                "ground_truth": "Associated with",
-                "prediction": "Associated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Direction of effect": {
-                "ground_truth": "increased",
-                "prediction": "increased",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Phenotype": {
-                "ground_truth": "Side Effect:Hypersensitivity",
-                "prediction": "Side Effect:Hypersensitivity reaction to pegaspargase",
-                "score": 0.9422941207885742,
-                "match_status": "partial_match"
-              },
-              "When treated with/exposed to/when assayed with": {
-                "ground_truth": "when treated with",
-                "prediction": "when treated with",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Comparison Allele(s) or Genotype(s)": {
-                "ground_truth": null,
-                "prediction": "non-carriers",
-                "score": 0.0,
-                "match_status": "no_match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.8942294120788574,
+            "overall_match_score": 0.9877970099449158,
             "annotation": {
               "Variant/Haplotypes": "HLA-DQB1*02:02",
               "Gene": "HLA-DQB1",
@@ -1194,9 +201,9 @@
               },
               "Alleles": {
                 "ground_truth": "*02:02",
-                "prediction": "*02:02",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "HLA-DQB1*02:02",
+                "score": 0.9215661287307739,
+                "match_status": "partial_match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Associated with",
@@ -1212,9 +219,9 @@
               },
               "Phenotype": {
                 "ground_truth": "Side Effect:Hypersensitivity",
-                "prediction": "Side Effect:Hypersensitivity reaction to pegaspargase",
-                "score": 0.9422941207885742,
-                "match_status": "partial_match"
+                "prediction": "hypersensitivity reactions",
+                "score": 0.9564039707183838,
+                "match_status": "match"
               },
               "When treated with/exposed to/when assayed with": {
                 "ground_truth": "when treated with",
@@ -1224,15 +231,15 @@
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": null,
-                "prediction": "non-carriers",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               }
             }
           },
           {
             "matched": true,
-            "overall_match_score": 0.8942294120788574,
+            "overall_match_score": 0.9874805510044098,
             "annotation": {
               "Variant/Haplotypes": "HLA-DRB1*07:01",
               "Gene": "HLA-DRB1",
@@ -1272,9 +279,9 @@
               },
               "Alleles": {
                 "ground_truth": "*07:01",
-                "prediction": "*07:01",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "HLA-DRB1*07:01",
+                "score": 0.9184015393257141,
+                "match_status": "partial_match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Associated with",
@@ -1290,9 +297,9 @@
               },
               "Phenotype": {
                 "ground_truth": "Side Effect:Hypersensitivity",
-                "prediction": "Side Effect:Hypersensitivity reaction to pegaspargase",
-                "score": 0.9422941207885742,
-                "match_status": "partial_match"
+                "prediction": "hypersensitivity reactions",
+                "score": 0.9564039707183838,
+                "match_status": "match"
               },
               "When treated with/exposed to/when assayed with": {
                 "ground_truth": "when treated with",
@@ -1302,15 +309,93 @@
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": null,
-                "prediction": "non-carriers",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               }
             }
           },
           {
             "matched": true,
-            "overall_match_score": 0.8795568943023682,
+            "overall_match_score": 0.9872826874256134,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-DQA1*02:01",
+              "Gene": "HLA-DQA1",
+              "Drug(s)": "pegaspargase",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*02:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Hypersensitivity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-DQA1*02:01",
+                "prediction": "HLA-DQA1*02:01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-DQA1",
+                "prediction": "HLA-DQA1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "pegaspargase",
+                "prediction": "pegaspargase",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*02:01",
+                "prediction": "HLA-DQA1*02:01",
+                "score": 0.9164229035377502,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Hypersensitivity",
+                "prediction": "hypersensitivity reactions",
+                "score": 0.9564039707183838,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.876200944185257,
             "annotation": {
               "Variant/Haplotypes": "rs9958628",
               "Gene": "ARHGAP28",
@@ -1350,9 +435,9 @@
               },
               "Alleles": {
                 "ground_truth": "T",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "ARHGAP28 rs9958628",
+                "score": 0.8056054711341858,
+                "match_status": "partial_match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Associated with",
@@ -1368,9 +453,9 @@
               },
               "Phenotype": {
                 "ground_truth": "Side Effect:Hypersensitivity",
-                "prediction": "Side Effect:Hypersensitivity reaction to pegaspargase",
-                "score": 0.9422941207885742,
-                "match_status": "partial_match"
+                "prediction": "hypersensitivity reactions",
+                "score": 0.9564039707183838,
+                "match_status": "match"
               },
               "When treated with/exposed to/when assayed with": {
                 "ground_truth": "when treated with",
@@ -1380,545 +465,85 @@
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "A",
-                "prediction": "non-carriers of the risk allele",
-                "score": 0.8532748222351074,
-                "match_status": "partial_match"
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
               }
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 8,
+        "count": 1,
         "items": [
           {
-            "variant": "HLA-DRB1*04:02",
-            "gene": "HLA-DRB1",
+            "variant": "ARHGAP28",
+            "gene": "ARHGAP28",
             "drug": "pegaspargase",
             "annotation": {
-              "Variant Annotation ID": 4,
-              "Variant/Haplotypes": "HLA-DRB1*04:02",
-              "Gene": "HLA-DRB1",
+              "Variant Annotation ID": 104,
+              "Variant/Haplotypes": "ARHGAP28",
+              "Gene": "ARHGAP28",
               "Drug(s)": "pegaspargase",
-              "PMID": "33768542",
+              "PMID": 33768542,
               "Phenotype Category": "toxicity",
               "Significance": "yes",
-              "Notes": "In EA meta-analysis, HLA-DRB1*04:02 was associated with increased risk of pegaspargase hypersensitivity (P_meta=6.3\u00d710\u22125, OR\u22484.5).",
-              "Sentence": "HLA-DRB1*04:02 Is Associated with increased risk of Hypersensitivity reactions when treated with pegaspargase in children with Acute Lymphoblastic Leukemia.",
-              "Alleles": "*04:02",
-              "Specialty Population": "Pediatric",
+              "Notes": "Top genetic association with pegaspargase hypersensitivity in non-EA patients with genome-wide significance.",
+              "Sentence": "ARHGAP28 rs9958628 is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in people with Acute Lymphoblastic Leukemia.",
+              "Alleles": "ARHGAP28 rs9958628",
+              "Specialty Population": "Non-European Ancestry",
               "Metabolizer types": null,
               "isPlural": "Is",
               "Is/Is Not associated": "Associated with",
               "Direction of effect": "increased",
               "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Hypersensitivity reaction to pegaspargase",
+              "Phenotype": "hypersensitivity reactions",
               "Multiple phenotypes And/or": null,
               "When treated with/exposed to/when assayed with": "when treated with",
               "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Acute Lymphoblastic Leukemia",
               "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-carriers",
+              "Comparison Allele(s) or Genotype(s)": null,
               "Comparison Metabolizer types": null,
               "PMID_norm": "33768542",
-              "Variant Annotation ID_norm": "4",
+              "Variant Annotation ID_norm": "104",
               "Citations": [
-                "In a meta-analysis combining results from the three cohorts, among 97 HLA alleles, *HLA-DQB1*02:02*, *HLA-DRB1*07:01*, *HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (*P*_meta_ = 3.8\u00d710^\u22129^ OR 2.13, *P*_meta_ = 2.2\u00d710^\u22125^ OR 1.96, *P*_meta_ = 2.7\u00d710^\u22125^ OR 1.96, and *P*_meta_ = 6.3\u00d710^\u22125^ OR 4.61 respectively, [Table 2](#T2), [Figure 1A](#F1));"
+                "The rs9958628 variant, in ARHGAP28 (previously linked to immune response in children) had the strongest genetic association (P = 8.9x10\u22129) in non-EAs.",
+                "We are the first to interrogate genetic risk factors for asparaginase hypersensitivity reactions in non-EA patients as separate ancestry groups. Our results identified ARHGAP28 rs9958628 as the top genetic variant associated with pegaspargase hypersensitivity in non-EAs with genome-wide significance.",
+                "This SNP was also the top non-HLA hit among all evaluable patients (P_meta_ = 1.2x10^\u22127^, OR 3.03)."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DRB1*04:02",
-                "variant_id": "PA165951501",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DRB1*04:05",
-            "gene": "HLA-DRB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 5,
-              "Variant/Haplotypes": "HLA-DRB1*04:05",
-              "Gene": "HLA-DRB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": "33768542",
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In EA meta-analysis, HLA-DRB1*04:05 was associated with increased risk of pegaspargase hypersensitivity (P_meta=5.4\u00d710\u22124, OR\u22483.8).",
-              "Sentence": "HLA-DRB1*04:05 Is Associated with increased risk of Hypersensitivity reactions when treated with pegaspargase in children with Acute Lymphoblastic Leukemia.",
-              "Alleles": "*04:05",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Hypersensitivity reaction to pegaspargase",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-carriers",
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "33768542",
-              "Variant Annotation ID_norm": "5",
-              "Citations": [
-                "\u201cIn a meta-analysis combining results from the three cohorts, among 97 HLA alleles, *HLA-DQB1*02:02*, *HLA-DRB1*07:01*, *HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (*P*_meta_ = 3.8\u00d710^\u22129^ OR 2.13, *P*_meta_ = 2.2\u00d710^\u22125^ OR 1.96, *P*_meta_ = 2.7\u00d710^\u22125^ OR 1.96, and *P*_meta_ = 6.3\u00d710^\u22125^ OR 4.61 respectively, [Table 2](#T2), [Figure 1A](#F1))\u2026\u201d",
-                "From Table 2 (captioned: \u201cFour-digit HLA alleles significantly (P < 0.05) associated with hypersensitivity reactions to pegaspargase in EAs (n = 2168) in meta-analysis.\u201d), the row for HLA-DRB1*04:05 shows: \u201cHLA-DRB1*04:05 | 5.44E-4 | 3.75 | 0.00 | 0.711 | 0.007 | 1.78E-1 | 3.39 | 0.006 | 1.60E-2 | 3.18 | 0.009 | 2.50E-2 | 7.22 | 0.004\u201d",
-                "\u201cThe top DRB1 amino acids do not mark *HLA-DRB1*07:01* and are not shared by the top *HLA-DRB1* allele hits (*DRB1*07:01, *04:02, and *04:05*).\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DRB1*04:05",
-                "variant_id": "PA165951517",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-B*50:01",
-            "gene": "HLA-B",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 6,
-              "Variant/Haplotypes": "HLA-B*50:01",
-              "Gene": "HLA-B",
-              "Drug(s)": "pegaspargase",
-              "PMID": "33768542",
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In EA meta-analysis, HLA-B*50:01 showed an association with increased risk of pegaspargase hypersensitivity (P_meta=5.1\u00d710\u22123, OR\u22483.1).",
-              "Sentence": "HLA-B*50:01 Is Associated with increased risk of Hypersensitivity reactions when treated with pegaspargase in children with Acute Lymphoblastic Leukemia.",
-              "Alleles": "*50:01",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Hypersensitivity reaction to pegaspargase",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-carriers",
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "33768542",
-              "Variant Annotation ID_norm": "6",
-              "Citations": [
-                "Among 97 HLA alleles, *HLA-DQB1*02:02*, *HLA-DRB1*07:01*, *HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (*P*_meta_ = 3.8\u00d710^\u22129^ OR 2.13, *P*_meta_ = 2.2\u00d710^\u22125^ OR 1.96, *P*_meta_ = 2.7\u00d710^\u22125^ OR 1.96, and *P*_meta_ = 6.3\u00d710^\u22125^ OR 4.61 respectively, [Table 2](#T2), [Figure 1A](#F1)); among 1041 amino acid variants, glycine at position 135 of *HLA-DQB1*, a marker for the *HLA-DQB1*02:02* allele, had the strongest association with reactions (*P*_meta_ = 3.8\u00d710^\u22129^ OR 2.13, [Table S4](#SD1)).",
-                "| HLA-B*50:01 | 5.06E-3 | 3.13 | 0.00 | 0.636 | 0.008 | 2.86E-1 | 2.53 | 0.009 | 6.08E-3 | 4.07 | 0.007 | 7.55E-1 | 1.39 | 0.009 |",
-                "In a meta-analysis combining results from the three cohorts, all genome-wide significant variants fell in the *HLA-DRB1* and *-DQA1* loci on chromosome 6 (*P*_meta_ < 5\u00d710^\u22128^, [Table S9](#SD1), [Figure 1B](#F1))."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-B*50:01",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "HLA-DPA1*02:02",
-            "gene": "HLA-DPA1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 7,
-              "Variant/Haplotypes": "HLA-DPA1*02:02",
-              "Gene": "HLA-DPA1",
-              "Drug(s)": "pegaspargase",
-              "PMID": "33768542",
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In EA meta-analysis, HLA-DPA1*02:02 was nominally associated with increased risk of pegaspargase hypersensitivity (P_meta=3.1\u00d710\u22122, OR\u22481.6).",
-              "Sentence": "HLA-DPA1*02:02 Is Associated with increased risk of Hypersensitivity reactions when treated with pegaspargase in children with Acute Lymphoblastic Leukemia.",
-              "Alleles": "*02:02",
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Hypersensitivity reaction to pegaspargase",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-carriers",
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "33768542",
-              "Variant Annotation ID_norm": "7",
-              "Citations": [
-                "In a meta-analysis combining results from the three cohorts, among 97 HLA alleles, *HLA-DQB1*02:02*, *HLA-DRB1*07:01*, *HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (*P*_meta_ = 3.8\u00d710^\u22129^ OR 2.13, *P*_meta_ = 2.2\u00d710^\u22125^ OR 1.96, *P*_meta_ = 2.7\u00d710^\u22125^ OR 1.96, and *P*_meta_ = 6.3\u00d710^\u22125^ OR 4.61 respectively, [Table 2](#T2), [Figure 1A](#F1));",
-                "| HLA-DPA1*02:02 | 3.14E-2 | 1.59 | 0.00 | 0.658 | 0.033 | 9.96E-1 | 1.00 | 0.032 | 2.62E-2 | 1.75 | 0.038 | 4.69E-1 | 1.58 | 0.025 |",
-                "None of the imputed alleles reached the significance threshold after multiple testing adjustment, but *HLA-DRB1*07:01*, *HLA-DQA1*02:01* and *HLA-DQB1*02:02* reached nominal significance in non-EA patients (*P*_meta_ = 0.011 OR 1.94, *P*_meta_ = 0.024 OR 2.09, and *P*_meta_ = 0.041 OR 1.75 respectively, [Table S8](#SD1))."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "HLA-DPA1*02:02",
-                "variant_id": null,
-                "confidence": 0.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs1694129",
-            "gene": "HLA-DQB1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 8,
-              "Variant/Haplotypes": "rs1694129",
-              "Gene": "HLA-DQB1",
-              "Drug(s)": "pegaspargase",
-              "PMID": "33768542",
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In EA GWAS, rs1694129 (5\u2032 of HLA-DQB1) was the top SNP associated with pegaspargase hypersensitivity (P_meta=1.1\u00d710\u22128, OR\u22482.0) and tags HLA-DQB1*02:02 (r2=0.96). OR>1 indicates the minor allele increases risk.",
-              "Sentence": "rs1694129 Is Associated with increased risk of Hypersensitivity reactions when treated with pegaspargase in children with Acute Lymphoblastic Leukemia.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Hypersensitivity reaction to pegaspargase",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-carriers of the risk allele",
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "33768542",
-              "Variant Annotation ID_norm": "8",
-              "Citations": [
-                "\u201cIn a meta-analysis of EA patients in these protocols, all genome-wide significant variants fell in the *HLA-DQA1* and *-DQB1* locus on chromosome 6 (*P*_meta_ < 5\u00d710^\u22128^, [Table S11](#SD1), [Figure 1C](#F1)). The top hit rs1694129 (*P*_meta_ = 1.1\u00d710^\u22128^, OR 2.03) locates 1582 bp 5\u2019 of the *HLA-DQB1* gene in a histone-binding site. rs1694129 tags *HLA-DQB1*02:02*, the top hit among imputed 4-digit *HLA* alleles in EAs (r^2^ = 0.96, [Table S10B](#SD1)).\u201d",
-                "\u201cAn OR > 1 indicates that the presence of the HLA allele, or the amino acid variant, or the minor allele of the SNP, was associated with increased risk of hypersensitivity.\u201d",
-                "\u201cWhen limited to SNPs (rather than alleles), the top SNP *HLA-DQB1* rs1694129 associated with pegaspargase hypersensitivity reactions in EAs also replicated in non-EAs (*P*_meta_ = 0.013 OR 2.01, [Table S11](#SD1)).\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs1694129",
-                "variant_id": "PA166250681",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs28383308",
-            "gene": "HLA-DQA1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 9,
-              "Variant/Haplotypes": "rs28383308",
-              "Gene": "HLA-DQA1",
-              "Drug(s)": "pegaspargase",
-              "PMID": "33768542",
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In all-ancestry GWAS meta-analysis, rs28383308 (5\u2032 of HLA-DQA1) was the top genome-wide SNP associated with pegaspargase hypersensitivity (P_meta=4.9\u00d710\u221214, OR\u22482.0); in EAs it tags HLA-DRB1*07:01 (r2=0.85) and HLA-DQB1*02:02 to a lesser extent (r2=0.62).",
-              "Sentence": "rs28383308 Is Associated with increased risk of Hypersensitivity reactions when treated with pegaspargase in children with Acute Lymphoblastic Leukemia.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Hypersensitivity reaction to pegaspargase",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-carriers of the risk allele",
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "33768542",
-              "Variant Annotation ID_norm": "9",
-              "Citations": [
-                "\"In a meta-analysis combining results from the three cohorts, all genome-wide significant variants fell in the *HLA-DRB1* and *-DQA1* loci on chromosome 6 (*P*_meta_ < 5\u00d710^\u22128^, [Table S9](#SD1), [Figure 1B](#F1)). The top hit rs28383308 (*P*_meta_ = 4.9\u00d710^\u221214^ OR 1.95) locates 9173bp 5\u2019 of the *HLA-DQA1* gene.\"",
-                "\"All GWAS were performed using PLINK 2.00 alpha.([14](#R14)) All meta-analyses were performed using generic inverse variance method in PLINK 1.9 ([Figure S2](#SD1)).([15](#R15)) Pooled odds ratios (ORs) were calculated using random effects models. An OR > 1 indicates that the presence of the HLA allele, or the amino acid variant, or the minor allele of the SNP, was associated with increased risk of hypersensitivity.\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs13233308",
-                "variant_id": "PA166181264",
-                "confidence": 0.8
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs79377225",
-            "gene": "GPBP1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 11,
-              "Variant/Haplotypes": "rs79377225",
-              "Gene": "GPBP1",
-              "Drug(s)": "pegaspargase",
-              "PMID": "33768542",
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In non-EA patients, rs79377225 located 3\u2032 of GPBP1 was genome-wide significantly associated with pegaspargase hypersensitivity (P_meta=2.5\u00d710\u22128, OR\u22482.7) and remained significant in trans-ancestry meta-analysis (P_meta=1.6\u00d710\u22128, OR\u22482.7).",
-              "Sentence": "rs79377225 Is Associated with increased risk of Hypersensitivity reactions when treated with pegaspargase in children with Acute Lymphoblastic Leukemia.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Hypersensitivity reaction to pegaspargase",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-carriers of the risk allele",
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "33768542",
-              "Variant Annotation ID_norm": "11",
-              "Citations": [
-                "\"The other two genome-wide significant hits among non-EAs were rs79377225 and rs11739459, located 43kb and 39kb 3\u2019 of GC-rich promoter binding protein 1 (*GPBP1*) (*P*_meta_ = 2.5\u00d710^\u22128^, OR 2.70 and *P*_meta_ = 2.7\u00d710^\u22128^, OR 2.50 respectively, [Figure 1D](#F1), [Table S12](#SD1)).\"",
-                "\"In addition, we performed trans-ancestry meta-analysis based on the ancestry specific analyses. rs11739459 and rs79377225 remained genome-wide significant ([Table S15](#SD1), *P*_meta_ = 8.8\u00d710^\u22129^ OR 2.60 and *P*_meta_ = 1.6\u00d710^\u22128^ OR 2.74 respectively).\""
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs77913725",
-                "variant_id": "PA166156196",
-                "confidence": 0.8
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs11739459",
-            "gene": "GPBP1",
-            "drug": "pegaspargase",
-            "annotation": {
-              "Variant Annotation ID": 12,
-              "Variant/Haplotypes": "rs11739459",
-              "Gene": "GPBP1",
-              "Drug(s)": "pegaspargase",
-              "PMID": "33768542",
-              "Phenotype Category": "toxicity",
-              "Significance": "yes",
-              "Notes": "In non-EA patients, rs11739459 located 3\u2032 of GPBP1 was genome-wide significantly associated with pegaspargase hypersensitivity (P_meta=2.7\u00d710\u22128, OR\u22482.5) and remained significant in trans-ancestry meta-analysis (P_meta=8.8\u00d710\u22129, OR\u22482.6).",
-              "Sentence": "rs11739459 Is Associated with increased risk of Hypersensitivity reactions when treated with pegaspargase in children with Acute Lymphoblastic Leukemia.",
-              "Alleles": null,
-              "Specialty Population": "Pediatric",
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "Side effect/efficacy/other": "risk of",
-              "Phenotype": "Side Effect:Hypersensitivity reaction to pegaspargase",
-              "Multiple phenotypes And/or": null,
-              "When treated with/exposed to/when assayed with": "when treated with",
-              "Multiple drugs And/or": null,
-              "Population types": "in children with",
-              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "non-carriers of the risk allele",
-              "Comparison Metabolizer types": null,
-              "PMID_norm": "33768542",
-              "Variant Annotation ID_norm": "12",
-              "Citations": [
-                "\u201cThe other two genome-wide significant hits among non-EAs were rs79377225 and rs11739459, located 43kb and 39kb 3\u2019 of GC-rich promoter binding protein 1 (*GPBP1*) (*P*_meta_ = 2.5\u00d710^\u22128^, OR 2.70 and *P*_meta_ = 2.7\u00d710^\u22128^, OR 2.50 respectively, [Figure 1D](#F1), [Table S12](#SD1)).\u201d",
-                "\u201cIn addition, we performed trans-ancestry meta-analysis based on the ancestry specific analyses. rs11739459 and rs79377225 remained genome-wide significant ([Table S15](#SD1), *P*_meta_ = 8.8\u00d710^\u22129^ OR 2.60 and *P*_meta_ = 1.6\u00d710^\u22128^ OR 2.74 respectively).\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs3828913",
-                "variant_id": "PA166157089",
-                "confidence": 0.8571428571428571
-              },
-              "Drug(s)_normalized": {
-                "normalized": "pegaspargase",
-                "drug_id": "PA164760860",
-                "confidence": 1.0
-              }
+              "_expanded_from_multi_variant": true
             }
           }
         ]
       }
     },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
     "study_parameters": {
-      "score": 0.7494538171092668,
+      "score": 0.47894495338201526,
       "total_samples": 8,
       "ground_truth_annotations": {
         "count": 8,
-        "matched_count": 8,
-        "unmatched_count": 0,
+        "matched_count": 5,
+        "unmatched_count": 3,
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.6958842277526855,
-            "annotation": {
-              "Study Parameters ID": 1451510941,
-              "Variant Annotation ID": 1451510891,
-              "Study Type": "meta-analysis, GWAS",
-              "Study Cases": 2168.0,
-              "Study Controls": null,
-              "Characteristics": "meta-analysis",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 2.22e-5",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 1.99,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European"
-            },
-            "field_comparison": {
-              "Study Parameters ID": {
-                "ground_truth": 1451510941,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Variant Annotation ID": {
-                "ground_truth": 1451510891,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Type": {
-                "ground_truth": "meta-analysis, GWAS",
-                "prediction": "case/control",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Cases": {
-                "ground_truth": 2168.0,
-                "prediction": 82,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Controls": {
-                "ground_truth": null,
-                "prediction": 516,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Characteristics": {
-                "ground_truth": "meta-analysis",
-                "prediction": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DRB1*07:01 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-                "score": 0.8300318717956543,
-                "match_status": "partial_match"
-              },
-              "Characteristics Type": {
-                "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "P Value": {
-                "ground_truth": "= 2.22e-5",
-                "prediction": "= 2.22E-5",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat Type": {
-                "ground_truth": "OR",
-                "prediction": "OR",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat": {
-                "ground_truth": 1.99,
-                "prediction": 1.99,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Stop": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Biogeographical Groups": {
-                "ground_truth": "European",
-                "prediction": "European",
-                "score": 1.0,
-                "match_status": "match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.6958590079756344,
+            "overall_match_score": 0.7479391182170195,
             "annotation": {
               "Study Parameters ID": 1451510920,
               "Variant Annotation ID": 1451510886,
@@ -1953,26 +578,26 @@
               },
               "Study Type": {
                 "ground_truth": "meta-analysis, GWAS",
-                "prediction": "case/control",
+                "prediction": "meta-analysis",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Study Cases": {
                 "ground_truth": 2168.0,
-                "prediction": 82,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 2168,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Study Controls": {
                 "ground_truth": null,
-                "prediction": 516,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Characteristics": {
                 "ground_truth": "meta-analysis",
-                "prediction": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DQB1*02:02 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-                "score": 0.8296031355857849,
+                "prediction": "European ancestry patients with hypersensitivity reactions to pegaspargase",
+                "score": 0.814965009689331,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
@@ -2007,9 +632,9 @@
               },
               "P Value": {
                 "ground_truth": "= 3.76e-9",
-                "prediction": "= 3.76E-9",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "< 5.0x10\u22125",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -2019,388 +644,7 @@
               },
               "Ratio Stat": {
                 "ground_truth": 2.14,
-                "prediction": 2.14,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Stop": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Biogeographical Groups": {
-                "ground_truth": "European",
-                "prediction": "European",
-                "score": 1.0,
-                "match_status": "match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.6958467118880328,
-            "annotation": {
-              "Study Parameters ID": 1451510724,
-              "Variant Annotation ID": 1451510720,
-              "Study Type": "meta-analysis, GWAS",
-              "Study Cases": 2168.0,
-              "Study Controls": null,
-              "Characteristics": "meta-analysis",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 2.74e-5",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 1.99,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European"
-            },
-            "field_comparison": {
-              "Study Parameters ID": {
-                "ground_truth": 1451510724,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Variant Annotation ID": {
-                "ground_truth": 1451510720,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Type": {
-                "ground_truth": "meta-analysis, GWAS",
-                "prediction": "case/control",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Cases": {
-                "ground_truth": 2168.0,
-                "prediction": 82,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Controls": {
-                "ground_truth": null,
-                "prediction": 516,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Characteristics": {
-                "ground_truth": "meta-analysis",
-                "prediction": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DQA1*02:01 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-                "score": 0.8293941020965576,
-                "match_status": "partial_match"
-              },
-              "Characteristics Type": {
-                "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "P Value": {
-                "ground_truth": "= 2.74e-5",
-                "prediction": "= 2.74E-5",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat Type": {
-                "ground_truth": "OR",
-                "prediction": "OR",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat": {
-                "ground_truth": 1.99,
-                "prediction": 1.99,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Stop": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Biogeographical Groups": {
-                "ground_truth": "European",
-                "prediction": "European",
-                "score": 1.0,
-                "match_status": "match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.6690879569334143,
-            "annotation": {
-              "Study Parameters ID": 1451510810,
-              "Variant Annotation ID": 1451510773,
-              "Study Type": "cohort, meta-analysis",
-              "Study Cases": 3897.0,
-              "Study Controls": null,
-              "Characteristics": "all patients",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 1.2e-7",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 3.03,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European"
-            },
-            "field_comparison": {
-              "Study Parameters ID": {
-                "ground_truth": 1451510810,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Variant Annotation ID": {
-                "ground_truth": 1451510773,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Type": {
-                "ground_truth": "cohort, meta-analysis",
-                "prediction": "case/control",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Cases": {
-                "ground_truth": 3897.0,
-                "prediction": 82,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Controls": {
-                "ground_truth": null,
-                "prediction": 516,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Characteristics": {
-                "ground_truth": "all patients",
-                "prediction": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-A*02:05 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-                "score": 0.874495267868042,
-                "match_status": "partial_match"
-              },
-              "Characteristics Type": {
-                "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "P Value": {
-                "ground_truth": "= 1.2e-7",
-                "prediction": "= 1.18E-2",
-                "score": 0.5,
-                "match_status": "partial_match"
-              },
-              "Ratio Stat Type": {
-                "ground_truth": "OR",
-                "prediction": "OR",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat": {
-                "ground_truth": 3.03,
-                "prediction": 3.03,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Stop": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Biogeographical Groups": {
-                "ground_truth": "European",
-                "prediction": "European",
-                "score": 1.0,
-                "match_status": "match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.6625190741875593,
-            "annotation": {
-              "Study Parameters ID": 1451510890,
-              "Variant Annotation ID": 1451510886,
-              "Study Type": "cohort",
-              "Study Cases": 593.0,
-              "Study Controls": null,
-              "Characteristics": "AALL0232 cohort",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 9.29e-5",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 1.94,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European"
-            },
-            "field_comparison": {
-              "Study Parameters ID": {
-                "ground_truth": 1451510890,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Variant Annotation ID": {
-                "ground_truth": 1451510886,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Type": {
-                "ground_truth": "cohort",
-                "prediction": "case/control",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Cases": {
-                "ground_truth": 593.0,
-                "prediction": 82,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Controls": {
-                "ground_truth": null,
-                "prediction": 516,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Characteristics": {
-                "ground_truth": "AALL0232 cohort",
-                "prediction": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-B*38:01 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-                "score": 0.8628242611885071,
-                "match_status": "partial_match"
-              },
-              "Characteristics Type": {
-                "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "P Value": {
-                "ground_truth": "= 9.29e-5",
-                "prediction": "= 1.79E-2",
-                "score": 0.5,
-                "match_status": "partial_match"
-              },
-              "Ratio Stat Type": {
-                "ground_truth": "OR",
-                "prediction": "OR",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat": {
-                "ground_truth": 1.94,
-                "prediction": 1.9,
+                "prediction": 2.13,
                 "score": 0.9,
                 "match_status": "partial_match"
               },
@@ -2426,7 +670,134 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.6572869307854596,
+            "overall_match_score": 0.728375701343312,
+            "annotation": {
+              "Study Parameters ID": 1451510821,
+              "Variant Annotation ID": 1451510773,
+              "Study Type": "meta-analysis, GWAS",
+              "Study Cases": 1607.0,
+              "Study Controls": null,
+              "Characteristics": "non European ancestry",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 8.9e-9",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3.69,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1451510821,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1451510773,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "meta-analysis, GWAS",
+                "prediction": "meta-analysis",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 1607.0,
+                "prediction": 1607,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "non European ancestry",
+                "prediction": "Non-European ancestry patients with hypersensitivity reactions to pegaspargase",
+                "score": 0.8823869228363037,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 8.9e-9",
+                "prediction": "8.9x10\u22129",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 3.69,
+                "prediction": 3.69,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Non-European",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6555286709000083,
             "annotation": {
               "Study Parameters ID": 1451510741,
               "Variant Annotation ID": 1451510720,
@@ -2467,20 +838,147 @@
               },
               "Study Cases": {
                 "ground_truth": 402.0,
-                "prediction": 82,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": 375,
+                "score": 0.8,
+                "match_status": "partial_match"
               },
               "Study Controls": {
                 "ground_truth": null,
-                "prediction": 516,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Characteristics": {
                 "ground_truth": "TXVI cohort",
-                "prediction": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-B*50:01 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-                "score": 0.8738778233528137,
+                "prediction": "Male patients treated for B-ALL",
+                "score": 0.8439874053001404,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "gender",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 3.28e-5",
+                "prediction": "= 0.025",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 2.91,
+                "prediction": 1.24,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "European",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6386934168198529,
+            "annotation": {
+              "Study Parameters ID": 1451510810,
+              "Variant Annotation ID": 1451510773,
+              "Study Type": "cohort, meta-analysis",
+              "Study Cases": 3897.0,
+              "Study Controls": null,
+              "Characteristics": "all patients",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 1.2e-7",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3.03,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1451510810,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1451510773,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, meta-analysis",
+                "prediction": "meta-analysis",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 3897.0,
+                "prediction": 3897,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "all patients",
+                "prediction": "Pediatric leukemia patients with hypersensitivity reactions to pegaspargase",
+                "score": 0.8577880859375,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
@@ -2514,10 +1012,10 @@
                 "match_status": "match"
               },
               "P Value": {
-                "ground_truth": "= 3.28e-5",
-                "prediction": "= 5.06E-3",
-                "score": 0.5,
-                "match_status": "partial_match"
+                "ground_truth": "= 1.2e-7",
+                "prediction": "< 5.0x10\u22125",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Ratio Stat Type": {
                 "ground_truth": "OR",
@@ -2526,10 +1024,10 @@
                 "match_status": "match"
               },
               "Ratio Stat": {
-                "ground_truth": 2.91,
-                "prediction": 3.13,
-                "score": 0.8,
-                "match_status": "partial_match"
+                "ground_truth": 3.03,
+                "prediction": 2.13,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Confidence Interval Start": {
                 "ground_truth": null,
@@ -2545,15 +1043,15 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "European",
-                "prediction": "European",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Multiple Groups",
+                "score": 0.0,
+                "match_status": "no_match"
               }
             }
           },
           {
             "matched": true,
-            "overall_match_score": 0.6101740002632141,
+            "overall_match_score": 0.6102509989457972,
             "annotation": {
               "Study Parameters ID": 1451510895,
               "Variant Annotation ID": 1451510891,
@@ -2600,19 +1098,19 @@
               },
               "Study Controls": {
                 "ground_truth": null,
-                "prediction": 516,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Characteristics": {
                 "ground_truth": "TXVI cohort",
-                "prediction": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DRB1*13:01 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-                "score": 0.8729580044746399,
+                "prediction": "Patients with hypersensitivity reactions to pegaspargase in TXVI cohort",
+                "score": 0.8742669820785522,
                 "match_status": "partial_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
+                "prediction": "study cohort",
                 "score": 1.0,
                 "match_status": "match"
               },
@@ -2642,7 +1140,7 @@
               },
               "P Value": {
                 "ground_truth": "= 3.289e-5",
-                "prediction": "= 3.17E-2",
+                "prediction": "= 6.4x10\u22125",
                 "score": 0.5,
                 "match_status": "partial_match"
               },
@@ -2654,7 +1152,7 @@
               },
               "Ratio Stat": {
                 "ground_truth": 2.91,
-                "prediction": 0.61,
+                "prediction": 0.73,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -2672,345 +1170,86 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "European",
-                "prediction": "European",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Mixed",
+                "score": 0.0,
+                "match_status": "no_match"
               }
             }
           },
           {
-            "matched": true,
-            "overall_match_score": 0.6036043286323548,
+            "matched": false,
             "annotation": {
-              "Study Parameters ID": 1451510821,
-              "Variant Annotation ID": 1451510773,
+              "Study Parameters ID": 1451510724,
+              "Variant Annotation ID": 1451510720,
               "Study Type": "meta-analysis, GWAS",
-              "Study Cases": 1607.0,
+              "Study Cases": 2168.0,
               "Study Controls": null,
-              "Characteristics": "non European ancestry",
+              "Characteristics": "meta-analysis",
               "Characteristics Type": "Study Cohort",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
               "Allele Of Frequency In Controls": null,
-              "P Value": "= 8.9e-9",
+              "P Value": "= 2.74e-5",
               "Ratio Stat Type": "OR",
-              "Ratio Stat": 3.69,
+              "Ratio Stat": 1.99,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Multiple groups"
-            },
-            "field_comparison": {
-              "Study Parameters ID": {
-                "ground_truth": 1451510821,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Variant Annotation ID": {
-                "ground_truth": 1451510773,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Type": {
-                "ground_truth": "meta-analysis, GWAS",
-                "prediction": "case/control",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Cases": {
-                "ground_truth": 1607.0,
-                "prediction": 82,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Controls": {
-                "ground_truth": null,
-                "prediction": 516,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Characteristics": {
-                "ground_truth": "non European ancestry",
-                "prediction": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DRB1*04:05 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-                "score": 0.8612735867500305,
-                "match_status": "partial_match"
-              },
-              "Characteristics Type": {
-                "ground_truth": "Study Cohort",
-                "prediction": "Study Cohort",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "P Value": {
-                "ground_truth": "= 8.9e-9",
-                "prediction": "= 5.44E-4",
-                "score": 0.5,
-                "match_status": "partial_match"
-              },
-              "Ratio Stat Type": {
-                "ground_truth": "OR",
-                "prediction": "OR",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat": {
-                "ground_truth": 3.69,
-                "prediction": 3.75,
-                "score": 0.9,
-                "match_status": "partial_match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Stop": {
-                "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Biogeographical Groups": {
-                "ground_truth": "Multiple groups",
-                "prediction": "European",
-                "score": 0.0,
-                "match_status": "no_match"
-              }
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1451510720"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1451510890,
+              "Variant Annotation ID": 1451510886,
+              "Study Type": "cohort",
+              "Study Cases": 593.0,
+              "Study Controls": null,
+              "Characteristics": "AALL0232 cohort",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 9.29e-5",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.94,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1451510886"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1451510941,
+              "Variant Annotation ID": 1451510891,
+              "Study Type": "meta-analysis, GWAS",
+              "Study Cases": 2168.0,
+              "Study Controls": null,
+              "Characteristics": "meta-analysis",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 2.22e-5",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.99,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1451510891"
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 8,
-        "items": [
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 82,
-              "Study Controls": 516,
-              "Characteristics": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DRB1*04:02 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 6.30E-5",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 4.49,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 82,
-              "Study Controls": 516,
-              "Characteristics": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DQA1*01:03 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 5.82E-3",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.54,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 82,
-              "Study Controls": 516,
-              "Characteristics": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DQB1*06:02 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 6.74E-3",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.66,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 82,
-              "Study Controls": 516,
-              "Characteristics": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DQA1*01:01 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 1.81E-2",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.71,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 82,
-              "Study Controls": 516,
-              "Characteristics": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DPA1*02:02 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 3.14E-2",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 1.59,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 82,
-              "Study Controls": 516,
-              "Characteristics": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DRB1*15:01 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 4.05E-2",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.71,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 82,
-              "Study Controls": 516,
-              "Characteristics": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-DQB1*06:03 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 4.62E-2",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.66,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "case/control",
-              "Study Cases": 82,
-              "Study Controls": 516,
-              "Characteristics": "TXVI protocol, European ancestry pediatric ALL patients treated with pegaspargase; association of HLA-C*07:02 with pegaspargase hypersensitivity (meta-analysis across TXVI, AALL0232, AALL0434)",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 4.87E-2",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.78,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "European",
-              "Variant Annotation ID_norm": null
-            }
-          }
-        ]
+        "count": 0,
+        "items": []
       }
     }
   }

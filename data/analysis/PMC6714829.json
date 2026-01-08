@@ -2,11 +2,11 @@
   "pmcid": "PMC6714829",
   "pmid": "30336686",
   "title": "Associations of the SLCO1B1 Polymorphisms With Hepatic Function, Baseline Lipid Levels, and Lipid-lowering Response to Simvastatin in Patients With Hyperlipidemia",
-  "overall_score": 0.3715811889736276,
+  "overall_score": 0.31090293886368736,
   "num_benchmarks": 4,
   "benchmarks": {
     "drug_annotations": {
-      "score": 0.7719372965787586,
+      "score": 0.580787573990069,
       "total_samples": 2,
       "ground_truth_annotations": {
         "count": 2,
@@ -15,7 +15,7 @@
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.72651249484012,
+            "overall_match_score": 0.5043345752515291,
             "annotation": {
               "Variant/Haplotypes": "rs4149056",
               "Gene": "SLCO1B1",
@@ -40,7 +40,7 @@
             "field_comparison": {
               "Variant/Haplotypes": {
                 "ground_truth": "rs4149056",
-                "prediction": "rs4149056",
+                "prediction": "(rs4149056)",
                 "score": 1.0,
                 "match_status": "match"
               },
@@ -52,15 +52,15 @@
               },
               "PMID": {
                 "ground_truth": 30336686,
-                "prediction": 30336686,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Phenotype Category": {
                 "ground_truth": "Efficacy",
-                "prediction": "efficacy",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "metabolism/PK",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Significance": {
                 "ground_truth": "yes",
@@ -70,9 +70,9 @@
               },
               "Alleles": {
                 "ground_truth": "TT",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "TT, TC, CC",
+                "score": 0.9347140192985535,
+                "match_status": "partial_match"
               },
               "Specialty Population": {
                 "ground_truth": null,
@@ -88,9 +88,9 @@
               },
               "isPlural": {
                 "ground_truth": "Is",
-                "prediction": "Is",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Are",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Associated with",
@@ -106,33 +106,33 @@
               },
               "PD/PK terms": {
                 "ground_truth": "response to",
-                "prediction": "response to",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "levels of",
+                "score": 0.8478798270225525,
+                "match_status": "partial_match"
               },
               "Multiple drugs And/or": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Population types": {
                 "ground_truth": "in people with",
-                "prediction": "in patients with",
-                "score": 0.8987551331520081,
+                "prediction": "in patients with hyperlipidemia",
+                "score": 0.8947808146476746,
                 "match_status": "partial_match"
               },
               "Population Phenotypes or diseases": {
                 "ground_truth": "Other:Hypercholesterolemia",
-                "prediction": "Disease:Hyperlipidemia",
+                "prediction": "Disease:hyperlipidemia",
                 "score": 0.9049822688102722,
                 "match_status": "partial_match"
               },
               "Multiple phenotypes or diseases And/or": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "CC + CT",
@@ -156,7 +156,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.8173620983173973,
+            "overall_match_score": 0.6572405727286088,
             "annotation": {
               "Variant/Haplotypes": "rs2306283",
               "Gene": "SLCO1B1",
@@ -181,7 +181,7 @@
             "field_comparison": {
               "Variant/Haplotypes": {
                 "ground_truth": "rs2306283",
-                "prediction": "rs2306283",
+                "prediction": "(rs2306283)",
                 "score": 1.0,
                 "match_status": "match"
               },
@@ -193,15 +193,15 @@
               },
               "PMID": {
                 "ground_truth": 30336686,
-                "prediction": 30336686,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Phenotype Category": {
                 "ground_truth": "Efficacy",
-                "prediction": "efficacy",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "metabolism/PK",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Significance": {
                 "ground_truth": "no",
@@ -211,8 +211,8 @@
               },
               "Alleles": {
                 "ground_truth": "AG + GG",
-                "prediction": "388G allele + 521TT",
-                "score": 0.8698933720588684,
+                "prediction": "AA, AG, GG",
+                "score": 0.949859082698822,
                 "match_status": "partial_match"
               },
               "Specialty Population": {
@@ -229,9 +229,9 @@
               },
               "isPlural": {
                 "ground_truth": "Are",
-                "prediction": "Is",
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
               },
               "Is/Is Not associated": {
                 "ground_truth": "Not associated with",
@@ -247,38 +247,38 @@
               },
               "PD/PK terms": {
                 "ground_truth": "response to",
-                "prediction": "response to",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "levels of",
+                "score": 0.8478798270225525,
+                "match_status": "partial_match"
               },
               "Multiple drugs And/or": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Population types": {
                 "ground_truth": "in people with",
-                "prediction": "in patients with",
-                "score": 0.8987551331520081,
+                "prediction": "in patients with hyperlipidemia",
+                "score": 0.8947808146476746,
                 "match_status": "partial_match"
               },
               "Population Phenotypes or diseases": {
                 "ground_truth": "Other:Hypercholesterolemia",
-                "prediction": "Disease:Hyperlipidemia",
+                "prediction": "Disease:hyperlipidemia",
                 "score": 0.9049822688102722,
                 "match_status": "partial_match"
               },
               "Multiple phenotypes or diseases And/or": {
                 "ground_truth": null,
-                "prediction": null,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "AA",
-                "prediction": "388G allele + 521C allele",
-                "score": 0.8562490940093994,
+                "prediction": "AG, GG",
+                "score": 0.8900688886642456,
                 "match_status": "partial_match"
               },
               "Comparison Metabolizer types": {
@@ -298,48 +298,72 @@
         ]
       },
       "extra_predictions": {
-        "count": 1,
+        "count": 2,
         "items": [
           {
-            "variant": "rs2306283",
+            "variant": "388A>G",
             "gene": "SLCO1B1",
             "drug": "simvastatin",
             "annotation": {
-              "Variant Annotation ID": 2,
-              "Variant/Haplotypes": "rs2306283",
+              "Variant/Haplotypes": "388A>G",
               "Gene": "SLCO1B1",
               "Drug(s)": "simvastatin",
-              "PMID": 30336686,
-              "Phenotype Category": "efficacy",
-              "Significance": "no",
-              "Notes": "The authors state that no significant associations were found between SLCO1B1 388A>G and the lipid-lowering effects of simvastatin after 8 weeks of 20 mg/day treatment (data not shown).",
-              "Sentence": "Genotype 388A>G is not associated with response to simvastatin in patients with hyperlipidemia as compared to other 388A>G genotypes after 8 weeks of treatment.",
-              "Alleles": null,
-              "Specialty Population": null,
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "Individuals with the 388AA genotype had higher ALT and AST levels than those with the 388AG or 388GG genotypes (P = .037 and P = .002, respectively). The interaction between the SLCO1B1 388A>G and 521T>C polymorphisms could be an important genetic determinant of hepatic function and the therapeutic efficiency of simvastatin.",
+              "Standardized Sentence": "Genotype AA is associated with increased ALT and AST levels in response to simvastatin in patients with hyperlipidemia.",
+              "Alleles": "AA, AG, GG",
               "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Not associated with",
-              "Direction of effect": null,
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Hyperlipidemia",
-              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "AG, GG",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in patients with hyperlipidemia",
+              "Population Phenotypes or diseases": "Disease:hyperlipidemia",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "levels of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Individuals with the 388AA genotype had higher ALT and AST levels than those with the 388AG or 388GG genotypes (P = .037 and P = .002, respectively).",
+                "the interaction between the SLCO1B1 388A>G and 521T>C polymorphisms could be an important genetic determinant of hepatic function and the therapeutic efficiency of simvastatin.",
+                "Our conclusion suggests that the interaction between the SLCO1B1 388A>G and 521T>C polymorphisms could be an important genetic determinant of hepatic function and the therapeutic efficiency of simvastatin in Chinese patients with hyperlipidemia."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "521T>C",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin",
+            "annotation": {
+              "Variant/Haplotypes": "521T>C",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "no",
+              "Notes": "No significant associations found between the 521T>C polymorphism and baseline ALT and AST levels",
+              "Standardized Sentence": "Genotype TT is not associated with altered ALT and AST levels in response to simvastatin in patients with hyperlipidemia.",
+              "Alleles": "TT, TC, CC",
+              "Metabolizer types": null,
               "Comparison Allele(s) or Genotype(s)": null,
               "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in patients with hyperlipidemia",
+              "Population Phenotypes or diseases": "Disease:hyperlipidemia",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "levels of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
               "Citations": [
-                "On the contrary, no significant associations were found between the 521T>C and 388A>G polymorphisms and the lipid-lowering effects of simvastatin treatment after 8 weeks (data not shown)."
+                "However, no significant relationships between the baseline plasma compounds measuring hepatic function and lipid levels and the SLCO1B1 521T>C polymorphism were found in either the unadjusted or the adjusted models (data not shown).",
+                "Compared to the participants in the normal subgroup of baseline AST levels, the adjusted odds of carrying the 388G allele (388AG or 388GG genotype) among the participants in the abnormal subgroup was 0.5 (95% CI, 0.2-1.0). However, no significant associations between the 521T>C polymorphism and baseline ALT and AST levels were found in either the unadjusted or adjusted models (data not shown).",
+                "In conclusion, our study revealed that the SLCO1B1 polymorphisms were related with ALT and AST concentrations and could further influence the efficacy of simvastatin treatment."
               ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs2306283",
-                "variant_id": "PA166154547",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "simvastatin",
-                "drug_id": "PA451363",
-                "confidence": 1.0
-              }
+              "_expanded_from_multi_variant": true
             }
           }
         ]
@@ -374,7 +398,7 @@
       }
     },
     "study_parameters": {
-      "score": 0.7,
+      "score": 0.6833333333333333,
       "total_samples": 2,
       "ground_truth_annotations": {
         "count": 2,
@@ -406,7 +430,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1451226980,
-                "prediction": 7,
+                "prediction": null,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -436,13 +460,13 @@
               },
               "Characteristics": {
                 "ground_truth": null,
-                "prediction": "Chinese patients with primary hyperlipidemia carrying SLCO1B1 388AA and 521TT genotypes vs carriers of 388G and/or 521C alleles (GG+AG with CC+TC) for baseline ALT levels (multiple regression, adjusted model)",
+                "prediction": "Patients with hyperlipidemia, experiencing lipid-lowering efficacy post-simvastatin.",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Unknown",
-                "prediction": "disease",
+                "prediction": "Study Cohort",
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -472,7 +496,7 @@
               },
               "P Value": {
                 "ground_truth": "= 0.016",
-                "prediction": "= 0.001",
+                "prediction": "= 0.049",
                 "score": 0.5,
                 "match_status": "partial_match"
               },
@@ -484,9 +508,9 @@
               },
               "Ratio Stat": {
                 "ground_truth": null,
-                "prediction": 2.628,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Confidence Interval Start": {
                 "ground_truth": null,
@@ -502,15 +526,15 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "East Asian",
-                "prediction": "East Asian",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Chinese",
+                "score": 0.0,
+                "match_status": "no_match"
               }
             }
           },
           {
             "matched": true,
-            "overall_match_score": 0.6176470588235294,
+            "overall_match_score": 0.5882352941176471,
             "annotation": {
               "Study Parameters ID": 1451227040,
               "Variant Annotation ID": 1451227020,
@@ -533,7 +557,7 @@
             "field_comparison": {
               "Study Parameters ID": {
                 "ground_truth": 1451227040,
-                "prediction": 8,
+                "prediction": null,
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -563,13 +587,13 @@
               },
               "Characteristics": {
                 "ground_truth": null,
-                "prediction": "Chinese patients with primary hyperlipidemia carrying SLCO1B1 388AA and 521TT genotypes vs carriers of 388G and/or 521C alleles (GG+AG with CC+TC) for baseline AST levels (multiple regression, adjusted model)",
+                "prediction": "Individuals with the 388A/521T genotypes showed higher concentrations of ALT and AST post-simvastatin treatment.",
                 "score": 0.0,
                 "match_status": "no_match"
               },
               "Characteristics Type": {
                 "ground_truth": "Unknown",
-                "prediction": "disease",
+                "prediction": "Study Cohort",
                 "score": 0.0,
                 "match_status": "no_match"
               },
@@ -599,9 +623,9 @@
               },
               "P Value": {
                 "ground_truth": "= 0.52",
-                "prediction": "= 0.001",
-                "score": 0.5,
-                "match_status": "partial_match"
+                "prediction": "< 0.001",
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Ratio Stat Type": {
                 "ground_truth": null,
@@ -611,9 +635,9 @@
               },
               "Ratio Stat": {
                 "ground_truth": null,
-                "prediction": 2.03,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
               },
               "Confidence Interval Start": {
                 "ground_truth": null,
@@ -629,39 +653,39 @@
               },
               "Biogeographical Groups": {
                 "ground_truth": "East Asian",
-                "prediction": "East Asian",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": "Chinese",
+                "score": 0.0,
+                "match_status": "no_match"
               }
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 6,
+        "count": 3,
         "items": [
           {
             "variant": "N/A",
             "gene": "N/A",
             "drug": "N/A",
             "annotation": {
-              "Study Parameters ID": 1,
+              "Study Parameters ID": null,
               "Variant Annotation ID": null,
               "Study Type": "cohort",
               "Study Cases": 542,
               "Study Controls": null,
-              "Characteristics": "Chinese patients with primary hyperlipidemia carrying SLCO1B1 388AG or 388GG genotypes vs 388AA, association with abnormal baseline ALT levels (ALT \u2265 40 U/L)",
-              "Characteristics Type": "disease",
-              "Frequency In Cases": 0.8333333333,
-              "Allele Of Frequency In Cases": "388G (AG+GG) in abnormal ALT subgroup",
-              "Frequency In Controls": 0.927027027,
-              "Allele Of Frequency In Controls": "388G (AG+GG) in normal ALT subgroup",
-              "P Value": "= 0.018",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.4,
-              "Confidence Interval Start": 0.2,
-              "Confidence Interval Stop": 0.9,
-              "Biogeographical Groups": "East Asian",
+              "Characteristics": "Patients with hyperlipidemia, including 166 men and 376 women.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.28,
+              "Allele Of Frequency In Cases": "A",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.419",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Chinese",
               "Variant Annotation ID_norm": null
             }
           },
@@ -670,123 +694,48 @@
             "gene": "N/A",
             "drug": "N/A",
             "annotation": {
-              "Study Parameters ID": 2,
+              "Study Parameters ID": null,
               "Variant Annotation ID": null,
               "Study Type": "cohort",
               "Study Cases": 542,
               "Study Controls": null,
-              "Characteristics": "Chinese patients with primary hyperlipidemia carrying SLCO1B1 388AG or 388GG genotypes vs 388AA, association with abnormal baseline AST levels (AST \u2265 40 U/L)",
-              "Characteristics Type": "disease",
-              "Frequency In Cases": 0.8522727273,
-              "Allele Of Frequency In Cases": "388G (AG+GG) in abnormal AST subgroup",
-              "Frequency In Controls": 0.925,
-              "Allele Of Frequency In Controls": "388G (AG+GG) in normal AST subgroup",
+              "Characteristics": "Patients with hyperlipidemia, with baseline ALT levels divided into normal and abnormal subgroups.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 0.4,
+              "Confidence Interval Start": 0.2,
+              "Confidence Interval Stop": 0.9,
+              "Biogeographical Groups": "Chinese",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 542,
+              "Study Controls": null,
+              "Characteristics": "Patients with hyperlipidemia, with baseline AST levels divided into normal and abnormal subgroups.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
               "P Value": "= 0.038",
               "Ratio Stat Type": "OR",
               "Ratio Stat": 0.5,
               "Confidence Interval Start": 0.2,
               "Confidence Interval Stop": 1.0,
-              "Biogeographical Groups": "East Asian",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": 3,
-              "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 542,
-              "Study Controls": null,
-              "Characteristics": "Chinese patients with primary hyperlipidemia, SLCO1B1 haplotype 388A/521T frequency in abnormal vs normal ALT subgroup",
-              "Characteristics Type": "disease",
-              "Frequency In Cases": 0.35,
-              "Allele Of Frequency In Cases": "388A/521T haplotype in abnormal ALT subgroup",
-              "Frequency In Controls": 0.27,
-              "Allele Of Frequency In Controls": "388A/521T haplotype in normal ALT subgroup",
-              "P Value": "= 0.038",
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "East Asian",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": 4,
-              "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 542,
-              "Study Controls": null,
-              "Characteristics": "Chinese patients with primary hyperlipidemia, SLCO1B1 haplotype 388A/521T frequency in abnormal vs normal AST subgroup",
-              "Characteristics Type": "disease",
-              "Frequency In Cases": 0.36,
-              "Allele Of Frequency In Cases": "388A/521T haplotype in abnormal AST subgroup",
-              "Frequency In Controls": 0.26,
-              "Allele Of Frequency In Controls": "388A/521T haplotype in normal AST subgroup",
-              "P Value": "= 0.007",
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "East Asian",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": 5,
-              "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 542,
-              "Study Controls": null,
-              "Characteristics": "Chinese patients with primary hyperlipidemia, SLCO1B1 haplotype 388G/521T frequency in abnormal vs normal ALT subgroup",
-              "Characteristics Type": "disease",
-              "Frequency In Cases": 0.54,
-              "Allele Of Frequency In Cases": "388G/521T haplotype in abnormal ALT subgroup",
-              "Frequency In Controls": 0.62,
-              "Allele Of Frequency In Controls": "388G/521T haplotype in normal ALT subgroup",
-              "P Value": "= 0.04",
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "East Asian",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": 6,
-              "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 542,
-              "Study Controls": null,
-              "Characteristics": "Chinese patients with primary hyperlipidemia, SLCO1B1 haplotype 388G/521T frequency in abnormal vs normal AST subgroup",
-              "Characteristics Type": "disease",
-              "Frequency In Cases": 0.54,
-              "Allele Of Frequency In Cases": "388G/521T haplotype in abnormal AST subgroup",
-              "Frequency In Controls": 0.62,
-              "Allele Of Frequency In Controls": "388G/521T haplotype in normal AST subgroup",
-              "P Value": "= 0.032",
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "East Asian",
+              "Biogeographical Groups": "Chinese",
               "Variant Annotation ID_norm": null
             }
           }

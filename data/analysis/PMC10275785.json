@@ -2,11 +2,11 @@
   "pmcid": "PMC10275785",
   "pmid": "37332933",
   "title": "Effect of NLRP3 inflammasome genes polymorphism on disease susceptibility and response to TNF-\u03b1 inhibitors in Iraqi patients with rheumatoid arthritis",
-  "overall_score": 0.3668647092057947,
+  "overall_score": 0.26571694643873917,
   "num_benchmarks": 4,
   "benchmarks": {
     "drug_annotations": {
-      "score": 0.9383547337431657,
+      "score": 0.8857231547957972,
       "total_samples": 2,
       "ground_truth_annotations": {
         "count": 2,
@@ -15,7 +15,7 @@
         "items": [
           {
             "matched": true,
-            "overall_match_score": 0.9383547337431657,
+            "overall_match_score": 0.8857231547957972,
             "annotation": {
               "Variant/Haplotypes": "rs2043211",
               "Gene": "CARD8",
@@ -52,9 +52,9 @@
               },
               "PMID": {
                 "ground_truth": 37332933,
-                "prediction": 37332933,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Phenotype Category": {
                 "ground_truth": "Efficacy",
@@ -112,9 +112,9 @@
               },
               "Multiple drugs And/or": {
                 "ground_truth": "or",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "or",
+                "score": 1.0,
+                "match_status": "match"
               },
               "Population types": {
                 "ground_truth": "in people with",
@@ -136,9 +136,9 @@
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "AA + AT",
-                "prediction": "AA + AT",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Comparison Metabolizer types": {
                 "ground_truth": null,
@@ -148,7 +148,7 @@
               },
               "Drug(s)": {
                 "ground_truth": "etanercept, infliximab",
-                "prediction": "etanercept",
+                "prediction": "Etanercept, Infliximab",
                 "score": 1.0,
                 "match_status": "match"
               }
@@ -156,7 +156,7 @@
           },
           {
             "matched": true,
-            "overall_match_score": 0.9383547337431657,
+            "overall_match_score": 0.8857231547957972,
             "annotation": {
               "Variant/Haplotypes": "rs4612666",
               "Gene": "NLRP3",
@@ -193,9 +193,9 @@
               },
               "PMID": {
                 "ground_truth": 37332933,
-                "prediction": 37332933,
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Phenotype Category": {
                 "ground_truth": "Efficacy",
@@ -253,9 +253,9 @@
               },
               "Multiple drugs And/or": {
                 "ground_truth": "or",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
+                "prediction": "or",
+                "score": 1.0,
+                "match_status": "match"
               },
               "Population types": {
                 "ground_truth": "in people with",
@@ -277,9 +277,9 @@
               },
               "Comparison Allele(s) or Genotype(s)": {
                 "ground_truth": "CC + CT",
-                "prediction": "CC + CT",
-                "score": 1.0,
-                "match_status": "match"
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
               },
               "Comparison Metabolizer types": {
                 "ground_truth": null,
@@ -289,7 +289,7 @@
               },
               "Drug(s)": {
                 "ground_truth": "etanercept, infliximab",
-                "prediction": "etanercept",
+                "prediction": "Etanercept, Infliximab",
                 "score": 1.0,
                 "match_status": "match"
               }
@@ -298,273 +298,8 @@
         ]
       },
       "extra_predictions": {
-        "count": 6,
-        "items": [
-          {
-            "variant": "rs2043211",
-            "gene": "CARD8",
-            "drug": "infliximab",
-            "annotation": {
-              "Variant Annotation ID": 2,
-              "Variant/Haplotypes": "rs2043211",
-              "Gene": "CARD8",
-              "Drug(s)": "infliximab",
-              "PMID": 37332933,
-              "Phenotype Category": "efficacy",
-              "Significance": "yes",
-              "Notes": "In the same 100 RA patients (52 etanercept, 48 infliximab), total non-responders were 34 (14 etanercept, 20 infliximab). CARD8 rs2043211 TT genotype was significantly more frequent in non-responders vs responders (15 vs 1 overall), P<0.0001. Dominant and recessive models showed strong associations with non-response as above. No significant difference in response rates between infliximab and etanercept (P=0.120), implying similar direction of genetic effect for both drugs.",
-              "Sentence": "Genotype TT is associated with decreased response to infliximab in patients with rheumatoid arthritis as compared to genotypes AA + AT.",
-              "Alleles": "TT",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "decreased",
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Rheumatoid Arthritis",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "AA + AT",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "\u201cThirty-four of 100 RA patients (14 etanercept and 20 infliximab) did not respond to anti-TNF-\u03b1 therapy, while 66 (38 and 28) did. [Table 4](#tbl4) shows that the difference in treatment response between the two drugs was not statistically significant (P = 0.120).\u201d",
-                "\u201cSignificant difference was observed in CARD8 (rs2043211) genotypes between responders and non-responders (P < 0.0001). As well as, NLRP3 genotypes (rs4612666) (P < 0.0001).\u201d",
-                "\u201cThe ANOVA test was performed to determine if the relationship of DAS-28 and SNPs was linked to dominant or recessive models ([Table 8](#tbl8)). Patients with CARD8 (rs2043211) A allele bearing genotypes (wild homozygous and heterozygous genotypes) associated with lower DAS- as compared to those with T allele bearing genotypes (Variant homozygous genotypes and heterozygous genotypes. This assume that CARD8 (rs2043211) variant genotypes are associated with lower response to anti-TNF-\u03b1 treatments in RA patients.\u201d"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs2043211",
-                "variant_id": "PA166305763",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "infliximab",
-                "drug_id": "PA452639",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs2043211",
-            "gene": "CARD8",
-            "drug": "etanercept",
-            "annotation": {
-              "Variant Annotation ID": 3,
-              "Variant/Haplotypes": "rs2043211",
-              "Gene": "CARD8",
-              "Drug(s)": "etanercept",
-              "PMID": 37332933,
-              "Phenotype Category": "other",
-              "Significance": "yes",
-              "Notes": "After 3 months of anti-TNF-\u03b1 therapy, TNF-\u03b1 and IL-1\u03b2 serum levels differed markedly by CARD8 rs2043211 genotype. TNF-\u03b1 means (pg/mL): AA 5.64\u00b13.56, AT 7.39\u00b15.59, TT 14.25\u00b14.67; P<0.0001. IL\u20111\u03b2 means (pg/mL): AA 1.05\u00b10.34, AT 2.25\u00b10.57, TT 4.55\u00b10.64; P<0.0001. Dominant model (AA+AT vs TT): TNF\u2011\u03b1 6.62\u00b14.85 vs 14.25\u00b14.67 (P<0.0001); IL\u20111\u03b2 1.72\u00b10.77 vs 4.55\u00b10.64 (P<0.0001). Recessive model (AA vs AT+TT): TNF\u2011\u03b1 6.99\u00b15.07 vs 14.74\u00b14.61 (P<0.0001); IL\u20111\u03b2 1.84\u00b10.90 vs 4.86\u00b10.50 (P<0.0001). Drug-specific cytokine data were pooled across etanercept and infliximab but both drugs had similar cytokine-lowering profiles.",
-              "Sentence": "Genotype TT is associated with increased serum concentrations of TNF-\u03b1 after etanercept treatment in patients with rheumatoid arthritis as compared to genotypes AA + AT.",
-              "Alleles": "TT",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "concentrations of",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Rheumatoid Arthritis",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "AA + AT",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "Comparing SNPs models reveal that lower TNF-\u03b1 and IL- 1\u03b2 serum level after 3 months of treatment were associated with dominant models of CARD8 (rs2043211) SNPs (P < 0.0001 for both), while higher cytokines level associated with recessive model (P < 0.0001 for both).",
-                "CytokinesMean (SD) | TNF-\u03b1 | 5.64 (3.56) | 7.39 (5.59) | 14.25 (4.67) | <0.0001 | \u2026 IL- 1\u03b2 | 1.05 (0.34) | 2.25 (0.57) | 4.55 (0.64) \u2026",
-                "CytokinesMean (SD) | TNF-\u03b1 | 6.62 (4.85)/14.25 (4.67) | <0.0001 | \u2026 IL- 1\u03b2 | 1.72 (0.77)/4.55 (0.64) | <0.0001 \u2026"
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs2043211",
-                "variant_id": "PA166305763",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "etanercept",
-                "drug_id": "PA449515",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs2043211",
-            "gene": "CARD8",
-            "drug": "infliximab",
-            "annotation": {
-              "Variant Annotation ID": 4,
-              "Variant/Haplotypes": "rs2043211",
-              "Gene": "CARD8",
-              "Drug(s)": "infliximab",
-              "PMID": 37332933,
-              "Phenotype Category": "other",
-              "Significance": "yes",
-              "Notes": "Same cytokine-genotype associations for CARD8 rs2043211 apply in infliximab-treated RA as in etanercept-treated RA, since TNF\u2011\u03b1 and IL\u20111\u03b2 levels after 3 months were analyzed across the anti\u2011TNF-\u03b1\u2013treated cohort and did not differ significantly between the two drugs (TNF\u2011\u03b1 P=0.088; IL\u20111\u03b2 P=0.168). TT carriers had substantially higher TNF\u2011\u03b1 and IL\u20111\u03b2 than AA+AT carriers (P<0.0001 for both).",
-              "Sentence": "Genotype TT is associated with increased serum concentrations of TNF-\u03b1 after infliximab treatment in patients with rheumatoid arthritis as compared to genotypes AA + AT.",
-              "Alleles": "TT",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "concentrations of",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Rheumatoid Arthritis",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "AA + AT",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "Etanercept and infliximab-treated RA patients had similar IL-1\u03b2 levels (P = 0.168). TNF-\u03b1 was higher in infliximab-treated patients, but not significant (P = 0.088). DAS-28 correlated positively with TNF-\u03b1 (r^2^ = 0.45, P < 0.0001) and IL- 1\u03b2 (r^2^ = 0.51, P < 0.0001).",
-                "Comparison of SNPs genotypes with pro-inflammatory cytokines. A significant difference in the CARD8 (rs2043211) genotypes (P < 0.0001 for TNF-\u03b1 and IL- 1\u03b2) as well as, NLRP3 (rs4612666) genotypes (P < 0.0001 for TNF-\u03b1 and IL- 1\u03b2), [Table 7](#tbl7).",
-                "ANOVA test was carried out to found out if the association between cytokines serum level and SNPs dominant or recessive model ([Table 8](#tbl8)). Comparing SNPs models reveal that lower TNF-\u03b1 and IL- 1\u03b2 serum level after 3 months of treatment were associated with dominant models of CARD8 (rs2043211) SNPs (P < 0.0001 for both), while higher cytokines level associated with recessive model (P < 0.0001 for both)."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs2043211",
-                "variant_id": "PA166305763",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "infliximab",
-                "drug_id": "PA452639",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs4612666",
-            "gene": "NLRP3",
-            "drug": "infliximab",
-            "annotation": {
-              "Variant Annotation ID": 6,
-              "Variant/Haplotypes": "rs4612666",
-              "Gene": "NLRP3",
-              "Drug(s)": "infliximab",
-              "PMID": 37332933,
-              "Phenotype Category": "efficacy",
-              "Significance": "yes",
-              "Notes": "Across the anti-TNF-\u03b1\u2013treated RA cohort, NLRP3 rs4612666 TT genotype was significantly enriched in non-responders (10/34) vs responders (1/66), P<0.0001. Dominant and recessive models showed strong association with non-response as above. Response rates did not significantly differ between infliximab and etanercept (P=0.120), indicating this effect applies to infliximab as well.",
-              "Sentence": "Genotype TT is associated with decreased response to infliximab in patients with rheumatoid arthritis as compared to genotypes CC + CT.",
-              "Alleles": "TT",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "decreased",
-              "PD/PK terms": "response to",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Rheumatoid Arthritis",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "CC + CT",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "Thirty-four of 100 RA patients (14 etanercept and 20 infliximab) did not respond to anti-TNF-\u03b1 therapy, while 66 (38 and 28) did. [Table 4](#tbl4) shows that the difference in treatment response between the two drugs was not statistically significant (P = 0.120).",
-                "Moreover, NLRP3 (rs4612666), C Allele bearing genotypes (wild homozygous and heterozygous genotypes) are associated with lower DAS-28 as compared with T allele bearing genotypes (Variant homozygous and heterozygous genotypes (P < 0.0001 and 0.003 respectively), this supposing that NLRP3 (rs4612666) variant genotypes are extremely associated with higher disease progression and lower response to anti-TNF-\u03b1 drugs.",
-                "The influence of CARD8 rs2043211 and NLRP3 rs4612666 polymorphisms was stated after 3 months of RA treatment. T allele bearing genotypes (Variant homozygous genotypes and heterozygous genotypes) for CARD8 rs2043211 NLRP3 rs4612666 polymorphism had significantly higher DAS-28. Consequently, variant genotypes of CARD8 rs2043211 and NLRP3 rs4612666 were related with higher disease activity and lower response to TNF-inhibitors, also higher concentration of TNF-\u03b1 and IL-1\u03b2."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs4612666",
-                "variant_id": "PA166305782",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "infliximab",
-                "drug_id": "PA452639",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs4612666",
-            "gene": "NLRP3",
-            "drug": "etanercept",
-            "annotation": {
-              "Variant Annotation ID": 7,
-              "Variant/Haplotypes": "rs4612666",
-              "Gene": "NLRP3",
-              "Drug(s)": "etanercept",
-              "PMID": 37332933,
-              "Phenotype Category": "other",
-              "Significance": "yes",
-              "Notes": "After 3 months of anti-TNF-\u03b1 therapy, NLRP3 rs4612666 genotypes showed significant association with cytokine levels. TNF\u2011\u03b1 (pg/mL): CC 5.56\u00b13.31, CT 8.58\u00b16.17, TT 14.74\u00b14.61; P<0.0001. IL\u20111\u03b2 (pg/mL): CC 1.18\u00b10.39, CT 2.59\u00b10.69, TT 4.86\u00b10.50. Dominant model (CC+CT vs TT): TNF\u2011\u03b1 7.75\u00b15.79 vs 8.16\u00b14.81, P=0.764 (not significant); IL\u20111\u03b2 2.27\u00b11.38 vs 1.86\u00b10.8, P=0.187. Recessive model (CC vs CT+TT): TNF\u2011\u03b1 5.64\u00b13.56 vs 9.13\u00b16.12 (P=0.002); IL\u20111\u03b2 1.05\u00b10.34 vs 2.84\u00b11.17 (P<0.0001). Cytokine analyses were pooled for both TNF inhibitors, and IL\u20111\u03b2/TNF\u2011\u03b1 did not differ significantly between etanercept and infliximab groups.",
-              "Sentence": "Genotype TT is associated with increased serum concentrations of TNF-\u03b1 after etanercept treatment in patients with rheumatoid arthritis as compared to genotypes CC + CT.",
-              "Alleles": "TT",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "concentrations of",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Rheumatoid Arthritis",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "CC + CT",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "Etanercept and infliximab-treated RA patients had similar IL-1\u03b2 levels (P = 0.168). TNF-\u03b1 was higher in infliximab-treated patients, but not significant (P = 0.088).",
-                "Comparison of SNPs genotypes with pro-inflammatory cytokines. A significant difference in the CARD8 (rs2043211) genotypes (P < 0.0001 for TNF-\u03b1 and IL- 1\u03b2) as well as, NLRP3 (rs4612666) genotypes (P < 0.0001 for TNF-\u03b1 and IL- 1\u03b2), [Table 7](#tbl7).",
-                "Recessive model of NLRP3 (rs4612666) was associated with higher TNF-\u03b1 and IL- 1\u03b2 serum level after 3 months of treatment (P = 0.002 and P < 0.0001 respectively), where T allele bearing genotypes (Variant homozygous and heterozygous) were significantly associated with higher cytokines level. In contrast, dominant model was not significantly correlated with TNF-\u03b1 and IL- 1\u03b2 serum level (P = 0.764 and 0.187 respectively), [Table 8](#tbl8)."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs4612666",
-                "variant_id": "PA166305782",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "etanercept",
-                "drug_id": "PA449515",
-                "confidence": 1.0
-              }
-            }
-          },
-          {
-            "variant": "rs4612666",
-            "gene": "NLRP3",
-            "drug": "infliximab",
-            "annotation": {
-              "Variant Annotation ID": 8,
-              "Variant/Haplotypes": "rs4612666",
-              "Gene": "NLRP3",
-              "Drug(s)": "infliximab",
-              "PMID": 37332933,
-              "Phenotype Category": "other",
-              "Significance": "yes",
-              "Notes": "In RA patients treated with infliximab or etanercept, NLRP3 rs4612666 T-allele\u2013bearing genotypes (CT+TT) were associated with higher post-treatment TNF\u2011\u03b1 and IL\u20111\u03b2 than CC (recessive model: TNF\u2011\u03b1 9.13\u00b16.12 vs 5.64\u00b13.56, P=0.002; IL\u20111\u03b2 2.84\u00b11.17 vs 1.05\u00b10.34, P<0.0001). Drug-specific cytokine differences were not significant (TNF\u2011\u03b1 P=0.088; IL\u20111\u03b2 P=0.168), indicating the genotype effect applies to infliximab as for etanercept.",
-              "Sentence": "Genotype TT is associated with increased serum concentrations of TNF-\u03b1 after infliximab treatment in patients with rheumatoid arthritis as compared to genotypes CC + CT.",
-              "Alleles": "TT",
-              "Specialty Population": null,
-              "Metabolizer types": null,
-              "isPlural": "Is",
-              "Is/Is Not associated": "Associated with",
-              "Direction of effect": "increased",
-              "PD/PK terms": "concentrations of",
-              "Multiple drugs And/or": null,
-              "Population types": "in patients with",
-              "Population Phenotypes or diseases": "Disease:Rheumatoid Arthritis",
-              "Multiple phenotypes or diseases And/or": null,
-              "Comparison Allele(s) or Genotype(s)": "CC + CT",
-              "Comparison Metabolizer types": null,
-              "Citations": [
-                "RA patients had higher TNF-\u03b1 levels than controls, with a mean concentration of 7.84 pg/mL versus 6.09 pg/mL, P = 0.0005. IL-1\u03b2 levels were also significantly higher in patients than controls, with a mean concentration of 2.18 pg/mL versus 1.21 pg/mL respectively (P < 0.0001). In RA patients taking infliximab or etanercept, serum TNF-\u03b1 and IL-1\u03b2 levels were measured. Etanercept and infliximab-treated RA patients had similar IL-1\u03b2 levels (P = 0.168). TNF-\u03b1 was higher in infliximab-treated patients, but not significant (P = 0.088).",
-                "Recessive model of NLRP3 (rs4612666) was associated with higher TNF-\u03b1 and IL- 1\u03b2 serum level after 3 months of treatment (P = 0.002 and P < 0.0001 respectively), where T allele bearing genotypes (Variant homozygous and heterozygous) were significantly associated with higher cytokines level.",
-                "Moreover, NLRP3 (rs4612666), C Allele bearing genotypes (wild homozygous and heterozygous genotypes) are associated with lower DAS-28 as compared with T allele bearing genotypes (Variant homozygous and heterozygous genotypes (P < 0.0001 and 0.003 respectively), this supposing that NLRP3 (rs4612666) variant genotypes are extremely associated with higher disease progression and lower response to anti-TNF-\u03b1 drugs."
-              ],
-              "Variant/Haplotypes_normalized": {
-                "normalized": "rs4612666",
-                "variant_id": "PA166305782",
-                "confidence": 1.0
-              },
-              "Drug(s)_normalized": {
-                "normalized": "infliximab",
-                "drug_id": "PA452639",
-                "confidence": 1.0
-              }
-            }
-          }
-        ]
+        "count": 0,
+        "items": []
       }
     },
     "phenotype_annotations": {
@@ -596,143 +331,15 @@
       }
     },
     "study_parameters": {
-      "score": 0.42679144541422526,
-      "total_samples": 2,
+      "score": 0.0,
+      "total_samples": 0,
       "ground_truth_annotations": {
         "count": 2,
-        "matched_count": 2,
-        "unmatched_count": 0,
+        "matched_count": 0,
+        "unmatched_count": 2,
         "items": [
           {
-            "matched": true,
-            "overall_match_score": 0.4057962894439697,
-            "annotation": {
-              "Study Parameters ID": 1452143420,
-              "Variant Annotation ID": 1452143400,
-              "Study Type": null,
-              "Study Cases": 66.0,
-              "Study Controls": 33.0,
-              "Characteristics": "Cases = responders, controls = non-responders",
-              "Characteristics Type": "Study Cohort",
-              "Frequency In Cases": 0.197,
-              "Allele Of Frequency In Cases": "T",
-              "Frequency In Controls": 0.559,
-              "Allele Of Frequency In Controls": "T",
-              "P Value": "< 0.0001",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.131,
-              "Confidence Interval Start": 0.047,
-              "Confidence Interval Stop": 0.36,
-              "Biogeographical Groups": "Near Eastern"
-            },
-            "field_comparison": {
-              "Study Parameters ID": {
-                "ground_truth": 1452143420,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Variant Annotation ID": {
-                "ground_truth": 1452143400,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Type": {
-                "ground_truth": null,
-                "prediction": "cohort",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Cases": {
-                "ground_truth": 66.0,
-                "prediction": 100,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Controls": {
-                "ground_truth": 33.0,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Characteristics": {
-                "ground_truth": "Cases = responders, controls = non-responders",
-                "prediction": "Iraqi rheumatoid arthritis patients on anti-TNF-\u03b1 therapy; comparison of NLRP3 rs4612666 recessive model (CC vs CT+TT) between responders and non-responders after 3 months",
-                "score": 0.8985369205474854,
-                "match_status": "partial_match"
-              },
-              "Characteristics Type": {
-                "ground_truth": "Study Cohort",
-                "prediction": "drug",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Frequency In Cases": {
-                "ground_truth": 0.197,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": "T",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": 0.559,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": "T",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "P Value": {
-                "ground_truth": "< 0.0001",
-                "prediction": "< 0.0001",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat Type": {
-                "ground_truth": "OR",
-                "prediction": "OR",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat": {
-                "ground_truth": 0.131,
-                "prediction": 0.131,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": 0.047,
-                "prediction": 0.047,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Stop": {
-                "ground_truth": 0.36,
-                "prediction": 0.36,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Biogeographical Groups": {
-                "ground_truth": "Near Eastern",
-                "prediction": "Near Eastern",
-                "score": 1.0,
-                "match_status": "match"
-              }
-            }
-          },
-          {
-            "matched": true,
-            "overall_match_score": 0.3473650848164278,
+            "matched": false,
             "annotation": {
               "Study Parameters ID": 1452143368,
               "Variant Annotation ID": 1452143360,
@@ -750,117 +357,37 @@
               "Ratio Stat": 0.183,
               "Confidence Interval Start": 0.063,
               "Confidence Interval Stop": 0.531,
-              "Biogeographical Groups": "Near Eastern"
-            },
-            "field_comparison": {
-              "Study Parameters ID": {
-                "ground_truth": 1452143368,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Variant Annotation ID": {
-                "ground_truth": 1452143360,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Type": {
-                "ground_truth": null,
-                "prediction": "cohort",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Cases": {
-                "ground_truth": 66.0,
-                "prediction": 100,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Study Controls": {
-                "ground_truth": 33.0,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Characteristics": {
-                "ground_truth": "Cases = responders, controls = non-responders",
-                "prediction": "Iraqi rheumatoid arthritis patients on anti-TNF-\u03b1 therapy; comparison of CARD8 rs2043211 recessive model (AA vs AT+TT) between responders and non-responders after 3 months",
-                "score": 0.9052064418792725,
-                "match_status": "partial_match"
-              },
-              "Characteristics Type": {
-                "ground_truth": "Study Cohort",
-                "prediction": "drug",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Frequency In Cases": {
-                "ground_truth": 0.265,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Allele Of Frequency In Cases": {
-                "ground_truth": "T",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Frequency In Controls": {
-                "ground_truth": 0.647,
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Allele Of Frequency In Controls": {
-                "ground_truth": "T",
-                "prediction": null,
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "P Value": {
-                "ground_truth": "< 0.0001",
-                "prediction": "= 0.001",
-                "score": 0.0,
-                "match_status": "no_match"
-              },
-              "Ratio Stat Type": {
-                "ground_truth": "OR",
-                "prediction": "OR",
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Ratio Stat": {
-                "ground_truth": 0.183,
-                "prediction": 0.183,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Start": {
-                "ground_truth": 0.063,
-                "prediction": 0.063,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Confidence Interval Stop": {
-                "ground_truth": 0.531,
-                "prediction": 0.531,
-                "score": 1.0,
-                "match_status": "match"
-              },
-              "Biogeographical Groups": {
-                "ground_truth": "Near Eastern",
-                "prediction": "Near Eastern",
-                "score": 1.0,
-                "match_status": "match"
-              }
+              "Biogeographical Groups": "Near Eastern",
+              "Variant Annotation ID_norm": "1452143360"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452143420,
+              "Variant Annotation ID": 1452143400,
+              "Study Type": null,
+              "Study Cases": 66.0,
+              "Study Controls": 33.0,
+              "Characteristics": "Cases = responders, controls = non-responders",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.197,
+              "Allele Of Frequency In Cases": "T",
+              "Frequency In Controls": 0.559,
+              "Allele Of Frequency In Controls": "T",
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 0.131,
+              "Confidence Interval Start": 0.047,
+              "Confidence Interval Stop": 0.36,
+              "Biogeographical Groups": "Near Eastern",
+              "Variant Annotation ID_norm": "1452143400"
             }
           }
         ]
       },
       "extra_predictions": {
-        "count": 10,
+        "count": 5,
         "items": [
           {
             "variant": "N/A",
@@ -870,20 +397,20 @@
               "Study Parameters ID": null,
               "Variant Annotation ID": null,
               "Study Type": "case/control",
-              "Study Cases": 100,
-              "Study Controls": 100,
-              "Characteristics": "Iraqi rheumatoid arthritis patients vs apparently healthy controls; CARD8 rs2043211 genotype distribution (AA, AT, TT) and allele frequencies",
-              "Characteristics Type": "disease",
+              "Study Cases": 100.0,
+              "Study Controls": 100.0,
+              "Characteristics": "Rheumatoid arthritis patients (88 females, 12 males)",
+              "Characteristics Type": "Study Cohort",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
               "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.17",
+              "P Value": "< 0.0001",
               "Ratio Stat Type": "Unknown",
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Near Eastern",
+              "Biogeographical Groups": "Unknown",
               "Variant Annotation ID_norm": null
             }
           },
@@ -895,20 +422,20 @@
               "Study Parameters ID": null,
               "Variant Annotation ID": null,
               "Study Type": "case/control",
-              "Study Cases": 100,
-              "Study Controls": 100,
-              "Characteristics": "Iraqi rheumatoid arthritis patients vs apparently healthy controls; CARD8 rs2043211 allele frequencies (A vs T): 121/79 in cases, 139/61 in controls",
-              "Characteristics Type": "disease",
-              "Frequency In Cases": 0.395,
-              "Allele Of Frequency In Cases": "T (minor allele)",
-              "Frequency In Controls": 0.305,
-              "Allele Of Frequency In Controls": "T (minor allele)",
-              "P Value": "= 0.059",
+              "Study Cases": 100.0,
+              "Study Controls": 100.0,
+              "Characteristics": "Patients with CARD8 (rs2043211) TT genotype",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
               "Ratio Stat Type": "Unknown",
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Near Eastern",
+              "Biogeographical Groups": "Unknown",
               "Variant Annotation ID_norm": null
             }
           },
@@ -920,20 +447,20 @@
               "Study Parameters ID": null,
               "Variant Annotation ID": null,
               "Study Type": "case/control",
-              "Study Cases": 100,
-              "Study Controls": 100,
-              "Characteristics": "Iraqi rheumatoid arthritis patients vs apparently healthy controls; NLRP3 rs4612666 genotype distribution (CC, CT, TT)",
-              "Characteristics Type": "disease",
+              "Study Cases": 100.0,
+              "Study Controls": 100.0,
+              "Characteristics": "Patients with NLRP3 (rs4612666) TT genotype",
+              "Characteristics Type": "Study Cohort",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
               "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.08",
+              "P Value": "< 0.0001",
               "Ratio Stat Type": "Unknown",
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Near Eastern",
+              "Biogeographical Groups": "Unknown",
               "Variant Annotation ID_norm": null
             }
           },
@@ -945,20 +472,20 @@
               "Study Parameters ID": null,
               "Variant Annotation ID": null,
               "Study Type": "case/control",
-              "Study Cases": 100,
-              "Study Controls": 100,
-              "Characteristics": "Iraqi rheumatoid arthritis patients vs apparently healthy controls; NLRP3 rs4612666 allele frequencies (C vs T): 68/32 in cases, 69/31 in controls",
-              "Characteristics Type": "disease",
-              "Frequency In Cases": 0.32,
-              "Allele Of Frequency In Cases": "T (minor allele)",
-              "Frequency In Controls": 0.31,
-              "Allele Of Frequency In Controls": "T (minor allele)",
-              "P Value": "= 0.879",
+              "Study Cases": 100.0,
+              "Study Controls": 100.0,
+              "Characteristics": "Elevated TNF-\u03b1 and IL-1\u03b2 serum levels in non-responders",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 7.84,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": 6.09,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "0.0005",
               "Ratio Stat Type": "Unknown",
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Near Eastern",
+              "Biogeographical Groups": "Unknown",
               "Variant Annotation ID_norm": null
             }
           },
@@ -969,11 +496,11 @@
             "annotation": {
               "Study Parameters ID": null,
               "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 100,
-              "Study Controls": null,
-              "Characteristics": "Iraqi rheumatoid arthritis patients treated with anti-TNF-\u03b1 (etanercept or infliximab); CARD8 rs2043211 genotypes AA, AT, TT compared for mean DAS-28 after 3 months",
-              "Characteristics Type": "drug",
+              "Study Type": "case/control",
+              "Study Cases": 100.0,
+              "Study Controls": 100.0,
+              "Characteristics": "Patients classified into responders and non-responders based on EULAR criteria",
+              "Characteristics Type": "Study Cohort",
               "Frequency In Cases": null,
               "Allele Of Frequency In Cases": null,
               "Frequency In Controls": null,
@@ -983,132 +510,7 @@
               "Ratio Stat": null,
               "Confidence Interval Start": null,
               "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Near Eastern",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 100,
-              "Study Controls": null,
-              "Characteristics": "Iraqi rheumatoid arthritis patients treated with anti-TNF-\u03b1; NLRP3 rs4612666 genotypes CC, CT, TT compared for mean DAS-28 after 3 months",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "< 0.0001",
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Near Eastern",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 100,
-              "Study Controls": null,
-              "Characteristics": "Iraqi rheumatoid arthritis patients on anti-TNF-\u03b1 therapy; CARD8 rs2043211 genotypes (AA, AT, TT) compared for distribution of EULAR disease activity categories after 3 months (remission, low, moderate, high)",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.033",
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Near Eastern",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 100,
-              "Study Controls": null,
-              "Characteristics": "Iraqi rheumatoid arthritis patients on anti-TNF-\u03b1 therapy; NLRP3 rs4612666 genotypes (CC, CT, TT) compared for distribution of EULAR disease activity categories after 3 months",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "= 0.008",
-              "Ratio Stat Type": "Unknown",
-              "Ratio Stat": null,
-              "Confidence Interval Start": null,
-              "Confidence Interval Stop": null,
-              "Biogeographical Groups": "Near Eastern",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 100,
-              "Study Controls": null,
-              "Characteristics": "Iraqi rheumatoid arthritis patients on anti-TNF-\u03b1 therapy; comparison of CARD8 rs2043211 genotypes (AA, AT, TT) between responders (n=66) and non-responders (n=34) after 3 months",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "< 0.0001",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.019,
-              "Confidence Interval Start": 0.002,
-              "Confidence Interval Stop": 0.157,
-              "Biogeographical Groups": "Near Eastern",
-              "Variant Annotation ID_norm": null
-            }
-          },
-          {
-            "variant": "N/A",
-            "gene": "N/A",
-            "drug": "N/A",
-            "annotation": {
-              "Study Parameters ID": null,
-              "Variant Annotation ID": null,
-              "Study Type": "cohort",
-              "Study Cases": 100,
-              "Study Controls": null,
-              "Characteristics": "Iraqi rheumatoid arthritis patients on anti-TNF-\u03b1 therapy; comparison of NLRP3 rs4612666 dominant model (CC+CT vs TT) between responders and non-responders after 3 months",
-              "Characteristics Type": "drug",
-              "Frequency In Cases": null,
-              "Allele Of Frequency In Cases": null,
-              "Frequency In Controls": null,
-              "Allele Of Frequency In Controls": null,
-              "P Value": "< 0.0001",
-              "Ratio Stat Type": "OR",
-              "Ratio Stat": 0.037,
-              "Confidence Interval Start": 0.004,
-              "Confidence Interval Stop": 0.304,
-              "Biogeographical Groups": "Near Eastern",
+              "Biogeographical Groups": "Unknown",
               "Variant Annotation ID_norm": null
             }
           }
