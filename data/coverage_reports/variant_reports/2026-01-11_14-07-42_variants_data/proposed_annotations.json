@@ -1,0 +1,836 @@
+{
+  "run_name": "data/proposed_annotations",
+  "timestamp": "2026-01-11_14-07-42",
+  "benchmark_variants": [
+    "HLA-C*04:07",
+    "HLA-DRB1*03:01",
+    "HLA-DRB1*07:01",
+    "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*8",
+    "rs116855232",
+    "HLA-B*15:12",
+    "rs2273697",
+    "HLA-B*13:01",
+    "CYP3A4*1, CYP3A4*11, CYP3A4*18, CYP3A4*33",
+    "HLA-C*05:09",
+    "rs56038477",
+    "rs1045642",
+    "HLA-B*35:05",
+    "CYP2D6*1, CYP2D6*3, CYP2D6*4, CYP2D6*6",
+    "rs2472677",
+    "CYP2B6*1, CYP2B6*6",
+    "HLA-DRB1*01:01",
+    "rs1695",
+    "HLA-DRB1*01:02",
+    "HLA-C*04:01",
+    "rs3745274",
+    "rs1801160",
+    "CYP4F2*1, CYP4F2*3",
+    "rs1594",
+    "rs2054675",
+    "HLA-B*15:27",
+    "HLA-B*51:01",
+    "rs2231142",
+    "HLA-DQB1*02:02",
+    "rs1142345",
+    "HLA-B*57:01",
+    "HLA-B*67:01",
+    "rs11280056",
+    "CYP2D6*1, CYP2D6*2, CYP2D6*5, CYP2D6*10, CYP2D6*41",
+    "rs9923231",
+    "rs2306283",
+    "HLA-B*56:01",
+    "HLA-B*35:10",
+    "rs4803419",
+    "UGT1A1*1, UGT1A1*6, UGT1A1*28",
+    "rs4612666",
+    "CYP2D6*1, CYP2D6*10, CYP2D6*41",
+    "rs9958628",
+    "HLA-DQA1*02:01",
+    "HLA-DRB1*08:01",
+    "HLA-DRB1*01:03",
+    "HLA-B*13:02",
+    "HLA-C*05:01",
+    "HLA-B*38:01",
+    "rs28399499",
+    "HLA-A*33:03",
+    "rs4244285",
+    "HLA-C*04:06",
+    "HLA-B*15:35",
+    "rs4149056",
+    "CYP2C9*1, CYP2C9*2, CYP2C9*3",
+    "rs9282564",
+    "HLA-DRB1*10:01",
+    "HLA-B*39:01",
+    "UGT1A1*1, UGT1A1*28",
+    "HLA-B*35:01",
+    "HLA-B*39:05",
+    "HLA-B*39:10",
+    "rs6311",
+    "HLA-B*15:25",
+    "HLA-B*38:02",
+    "CYP2C19*1, CYP2C19*2, CYP2C19*17",
+    "rs2297595",
+    "rs2740574",
+    "rs1801265",
+    "HLA-A*31:01",
+    "rs776746",
+    "rs1800566",
+    "HLA-C*03:02",
+    "HLA-B*55:02",
+    "NUDT15*3",
+    "CYP2C19 intermediate metabolizer",
+    "HLA-B*15:32",
+    "CYP2B6*1, CYP2B6*9",
+    "CYP2C19*1, CYP2C19*2, CYP2C19*3, CYP2C19*17",
+    "CYP2D6*1, CYP2D6*3, CYP2D6*4",
+    "HLA-B*39:06",
+    "HLA-B*15:24",
+    "rs887829",
+    "rs1800462",
+    "rs45445694",
+    "HLA-B*51:02",
+    "CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*4xN, CYP2D6*5, CYP2D6*6, CYP2D6*9, CYP2D6*10, CYP2D6*17, CYP2D6*29, CYP2D6*35, CYP2D6*41",
+    "rs2043211",
+    "rs2108622",
+    "HLA-B*39:09",
+    "rs1057910",
+    "HLA-DRB1*04:04",
+    "UGT1A1*1, UGT1A1*6",
+    "rs3786547",
+    "CYP2D6 poor metabolizer",
+    "HLA-B*55:01",
+    "HLA-B*15:01",
+    "HLA-B*58:01",
+    "CYP3A4*1, CYP3A4*2, CYP3A4*3, CYP3A4*4, CYP3A4*5, CYP3A4*9, CYP3A4*14, CYP3A4*15, CYP3A4*16, CYP3A4*17, CYP3A4*19, CYP3A4*24, CYP3A4*28, CYP3A4*29, CYP3A4*31",
+    "HLA-B*15:02",
+    "HLA-B*54:01",
+    "HLA-B*78:01",
+    "HLA-B*56:06",
+    "rs1800460",
+    "HLA-B*52:01",
+    "HLA-C*18:01",
+    "HLA-C*04:03"
+  ],
+  "proposed_variants": [
+    "ABCB1 3435TT",
+    "CYP2C19*3",
+    "HLA-DRB1*07:01",
+    "HLA-B*35",
+    "HLA-Cw*04",
+    "rs116855232",
+    "UGT1A1*6 or *28 (+/+)",
+    "CYP2D6 *3, *4, *6, *10, *41",
+    "NUDT15 *3/*3",
+    "c.1905+1G>A (DPYD*2A)",
+    "CYP2B6_rs3745274",
+    "CYP3A5*3",
+    "CYP3A4*1G",
+    "ARHGAP28 rs9958628",
+    "CYP2C9*3",
+    "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41",
+    "HLA-A*68:01",
+    "CYP2C9*2, CYP2C9*3, CYP2C9*8",
+    "HLA-B*13:01",
+    "CYP2B6 516GT/TT",
+    "UGT1A1*6 or *28 (+/+), UGT1A1*6 or *28 (-/-), UGT1A1*6 or *28 (+/-)",
+    "CYP2B6*6 (rs3745274, rs2279343)",
+    "CYP2B6*1/*6",
+    "CYP2C19 LOF allele",
+    "HLA-DRB1*01:01",
+    "rs1695",
+    "Cw*0302",
+    "HLA-DRB1*01",
+    "HLA-A*11:01",
+    "HLA-DRB*01",
+    "388A>G, 521T>C",
+    "HLA-C*04:01",
+    "HLA-C*05:01, HLA-C*18:01",
+    "CYP2D6 IM, PM",
+    "ABCC2_rs2273697",
+    "VKORC1-1639A",
+    "CYP3A4*18",
+    "*3/*3",
+    "VKORC1-1639G>A",
+    "VKORC1 \u2212 1639G > A",
+    "CYP2B6-G516T",
+    "CYP2D6*1/*41",
+    "CYP2B6-G516T (GT)",
+    "CYP3A4*2",
+    "CYP2D6 *1/*1",
+    "c.2846A>T",
+    "CYP2D6 *4",
+    "CYP3A4*24",
+    "rs2231142",
+    "HLA-DQB1*02:02",
+    "CYP2C19 IM",
+    "rs1142345",
+    "CYP2D6*1/*1",
+    "GSTP1 rs1695 G allele",
+    "CYP3A4*17",
+    "CYP3A4*11",
+    "CYP2B6 516G\u2192T",
+    "CYP2D6*10/*10",
+    "CYP2D6*1, CYP2D6*10, CYP2D6*2, CYP2D6*5, CYP2D6*3, CYP2D6*4, CYP2D6*41",
+    "CYP3A5 *3/*3",
+    "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
+    "rs11280056",
+    "CYP2B6 15582CT/TT",
+    "CARD8 rs2043211",
+    "ABCB1 rs9282564",
+    "HLA-A\u26053101",
+    "CYP2B6 rs3745274",
+    "CYP2C19*1/*1",
+    "CYP2C19 rs4244285",
+    "rs4612666",
+    "CYP4F2*3",
+    "rs9958628",
+    "CYP2D6 normal/ultrarapid metabolizer",
+    "HLA-DQA1*02:01",
+    "HTR2A A/A and A/G",
+    "SLCO1B1 c.521T>C",
+    "CYP2B6*6",
+    "SLCO1B1 c.521T>C, SLCO1B1*1b/*15",
+    "388A>G",
+    "HLA-C*05:01",
+    "388A/521T haplotype",
+    "ABCG2 c.421C>A",
+    "TYMS deletion genotype rs11280056",
+    "CYP2C19_rs4244285",
+    "521T>C",
+    "NR1I2 63396TT",
+    "CYP3A4*30",
+    "CYP3A5_rs776746",
+    "VKORC1 \u2212 1639G > A, CYP2C9*3",
+    "c.1679T>G (DPYD*13)",
+    "TYMS 5'UTR 3R genotype rs45445694",
+    "HLA-B*39:01",
+    "UGT1A1*6",
+    "MTHFR rs1801131 C allele",
+    "HLA-B*5701",
+    "c.521C/C",
+    "rs1057910, rs1799853",
+    "CYP2C19*2",
+    "CYP3A4*1",
+    "CYP2D6 *10/*10",
+    "DRB1*0301",
+    "HLA-B*38:02",
+    "CYP2D6 IM",
+    "ABCB1_rs9282564",
+    "SLCO1B1 c.521T/T",
+    "CYP2D6 *41/*41",
+    "CYP2C19*2, CYP2C19*17",
+    "rs1801265",
+    "HLA-A*31:01",
+    "388A>G (rs2306283)",
+    "UGT1A1 rs887829",
+    "c.1679T>G (DPYD*13, rs55886062)",
+    "CYP2D6 *4/*4",
+    "CYP2C19 IM, CYP2C19 NM, CYP2C19 RM, CYP2C19 UM",
+    "CARD8 (rs2043211)",
+    "HLA-A*3101",
+    "CYP2D6 poor metabolizers, CYP2D6 intermediate metabolizers, CYP2D6 normal metabolizers, CYP2D6 ultrarapid metabolizers",
+    "CYP3A4*33",
+    "NLRP3 rs4612666",
+    "CYP2C19*2 (rs4244285)",
+    "CYP2C19*17 (rs12248560)",
+    "UGT1A1 polymorphism",
+    "NQO1*2",
+    "HLA-A*3303",
+    "c.1905+1G>A (DPYD*2A, rs3918290)",
+    "CYP3A4*3",
+    "rs1800462",
+    "rs45445694",
+    "HLA-C*08:01",
+    "rs2043211",
+    "CYP2D6 IM, CYP2D6 NM",
+    "NUDT15 rs116855232 (R139C)",
+    "CYP2C9*2",
+    "CYP2B6-G516T (TT)",
+    "HLA-DRB1*04:04",
+    "CYP2D6 poor metabolizer",
+    "HLA-B*5801",
+    "c.2846A>T (rs67376798)",
+    "HLA-B*15:01",
+    "CYP2C19 IM, NM, RM",
+    "HTR2A A/A, HTR2A A/G",
+    "rs4149056 c.521T>C or *1b/*15",
+    "CYP2B6-G516T (GG)",
+    "HLA-B*15:02",
+    "UGT1A1*6 or *28 (+/+), UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+    "ABCC2 rs2273697",
+    "DPYD rs1801265 C at risk",
+    "HLA-B*5701, Hsp70-Hom M493T",
+    "SLCO1B1 c.521C/C",
+    "CYP4F2 rs2108622",
+    "CYP2B6 983TC/CC",
+    "CYP2D6 intermediate metabolizer",
+    "rs1061235",
+    "CYP2C19*1/*1, CYP2C19*1/*17, CYP2C19*17/*17 (extensive metabolizers)",
+    "NLRP3 (rs4612666)",
+    "VKORC1-1639 G>A",
+    "CYP2C19*17",
+    "521T>C (rs4149056)",
+    "CYP2D6*10",
+    "Dose",
+    "rs1800460",
+    "HTR2A A/G, A/A",
+    "CYP2D6 *10/*41",
+    "HLA-C*18:01",
+    "c.521T>C"
+  ],
+  "article_variant_breakdown": [
+    {
+      "title": "The impact of non-genetic and genetic factors on a stable warfarin dose in Thai patients",
+      "pmcid": "PMC5508045",
+      "benchmark_variants": [
+        "rs887829",
+        "rs2108622",
+        "rs1057910",
+        "rs9923231"
+      ],
+      "proposed_variants": [
+        "UGT1A1 rs887829",
+        "CYP2C9*3",
+        "VKORC1 \u2212 1639G > A, CYP2C9*3",
+        "CYP4F2 rs2108622",
+        "VKORC1 \u2212 1639G > A"
+      ]
+    },
+    {
+      "title": "Comprehensive Pharmacokinetic, Pharmacodynamic and Pharmacogenetic Evaluation of Once-Daily Efavirenz 400 and 600 mg in Treatment-Nai\u0308ve HIV-Infected Patients at 96 Weeks: Results of the ENCORE1 Study",
+      "pmcid": "PMC4916189",
+      "benchmark_variants": [
+        "CYP2B6*1, CYP2B6*9",
+        "rs28399499",
+        "rs4803419",
+        "rs3745274",
+        "rs1045642",
+        "rs2472677"
+      ],
+      "proposed_variants": [
+        "ABCB1 3435TT",
+        "CYP2B6 516GT/TT",
+        "Dose",
+        "CYP2B6 15582CT/TT",
+        "CYP2B6 983TC/CC",
+        "NR1I2 63396TT"
+      ]
+    },
+    {
+      "title": "The frequencies of CYP2C19*2, *3, and *17 alleles and their impact on the clinical efficacy of doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease",
+      "pmcid": "PMC12036300",
+      "benchmark_variants": [
+        "CYP2C19*1, CYP2C19*2, CYP2C19*17"
+      ],
+      "proposed_variants": [
+        "CYP2C19*3",
+        "CYP2C19*2",
+        "CYP2C19*17",
+        "CYP2C19*2 (rs4244285)",
+        "CYP2C19*17 (rs12248560)",
+        "CYP2C19*2, CYP2C19*17"
+      ]
+    },
+    {
+      "title": "HLA-B*5801 allele as a genetic marker for severe cutaneous adverse reactions caused by allopurinol",
+      "pmcid": "PMC554812",
+      "benchmark_variants": [
+        "HLA-DRB1*03:01",
+        "rs1594",
+        "HLA-A*33:03",
+        "HLA-B*58:01",
+        "HLA-C*03:02"
+      ],
+      "proposed_variants": [
+        "HLA-A*3303",
+        "Cw*0302",
+        "DRB1*0301",
+        "HLA-B*5801"
+      ]
+    },
+    {
+      "title": "Shared peptide binding of HLA Class I and II alleles associate with cutaneous nevirapine hypersensitivity and identify novel risk alleles",
+      "pmcid": "PMC5561238",
+      "benchmark_variants": [
+        "HLA-C*04:07",
+        "HLA-B*15:24",
+        "HLA-B*57:01",
+        "HLA-B*51:02",
+        "HLA-B*39:10",
+        "HLA-B*39:05",
+        "HLA-B*67:01",
+        "HLA-B*15:12",
+        "HLA-B*15:25",
+        "HLA-B*39:09",
+        "HLA-DRB1*04:04",
+        "HLA-B*38:02",
+        "HLA-B*56:01",
+        "HLA-B*35:10",
+        "HLA-B*55:01",
+        "HLA-B*15:01",
+        "HLA-C*05:09",
+        "HLA-DRB1*08:01",
+        "HLA-B*35:05",
+        "HLA-DRB1*01:03",
+        "HLA-DRB1*01:01",
+        "HLA-B*54:01",
+        "HLA-B*78:01",
+        "HLA-DRB1*01:02",
+        "HLA-B*13:02",
+        "HLA-C*05:01",
+        "HLA-B*38:01",
+        "rs28399499",
+        "HLA-C*04:01",
+        "rs3745274",
+        "HLA-B*56:06",
+        "HLA-C*04:06",
+        "HLA-B*15:35",
+        "HLA-B*55:02",
+        "HLA-C*18:01",
+        "HLA-B*15:32",
+        "HLA-B*15:27",
+        "HLA-DRB1*10:01",
+        "HLA-B*51:01",
+        "HLA-B*39:01",
+        "HLA-B*52:01",
+        "HLA-B*39:06",
+        "HLA-C*04:03"
+      ],
+      "proposed_variants": [
+        "HLA-DRB1*01:01",
+        "HLA-C*05:01",
+        "HLA-B*15:01",
+        "HLA-C*04:01",
+        "HLA-DRB1*04:04",
+        "HLA-C*05:01, HLA-C*18:01",
+        "HLA-C*18:01"
+      ]
+    },
+    {
+      "title": "Individual Irinotecan Therapy Under the Guidance of Pre-Treated UGT1A1*6 Genotyping in Gastric Cancer",
+      "pmcid": "PMC10946077",
+      "benchmark_variants": [
+        "UGT1A1*1, UGT1A1*28",
+        "UGT1A1*1, UGT1A1*6",
+        "UGT1A1*1, UGT1A1*6, UGT1A1*28"
+      ],
+      "proposed_variants": [
+        "UGT1A1*6"
+      ]
+    },
+    {
+      "title": "NUDT15 Polymorphism Confer Increased Susceptibility to Thiopurine-Induced Leukopenia in Patients With Autoimmune Hepatitis and Related Cirrhosis",
+      "pmcid": "PMC6465603",
+      "benchmark_variants": [
+        "rs1142345",
+        "rs116855232"
+      ],
+      "proposed_variants": [
+        "rs116855232",
+        "NUDT15 rs116855232 (R139C)"
+      ]
+    },
+    {
+      "title": "Impacts of Pharmacokinetic Gene Polymorphisms on Steady\u2010State Plasma Concentrations of Simvastatin in Thai Population",
+      "pmcid": "PMC12038368",
+      "benchmark_variants": [
+        "rs4149056",
+        "rs2306283"
+      ],
+      "proposed_variants": [
+        "SLCO1B1 c.521T>C",
+        "rs4149056 c.521T>C or *1b/*15",
+        "SLCO1B1 c.521T>C, SLCO1B1*1b/*15"
+      ]
+    },
+    {
+      "title": "Pharmacogenetic Factors Influence Escitalopram Pharmacokinetics and Adverse Events in Youth with a Family History of Bipolar Disorder: A Preliminary Study",
+      "pmcid": "PMC10880264",
+      "benchmark_variants": [
+        "CYP2C19 intermediate metabolizer",
+        "rs6311",
+        "CYP2D6 poor metabolizer"
+      ],
+      "proposed_variants": [
+        "CYP2D6 IM",
+        "HTR2A A/A, HTR2A A/G",
+        "CYP2C19 IM, NM, RM",
+        "CYP2D6 IM, PM",
+        "HTR2A A/G, A/A",
+        "CYP2C19 IM, CYP2C19 NM, CYP2C19 RM, CYP2C19 UM",
+        "CYP2D6 IM, CYP2D6 NM",
+        "HTR2A A/A and A/G",
+        "CYP2C19 IM"
+      ]
+    },
+    {
+      "title": "Genetic variants and clinical determinants affecting the response to 5-Fluorouracil-based treatment in Chilean patients with advanced colorectal cancer",
+      "pmcid": "PMC12331468",
+      "benchmark_variants": [
+        "rs1801265",
+        "rs1695",
+        "rs45445694",
+        "rs11280056"
+      ],
+      "proposed_variants": [
+        "rs1695",
+        "DPYD rs1801265 C at risk",
+        "GSTP1 rs1695 G allele",
+        "MTHFR rs1801131 C allele",
+        "rs45445694",
+        "TYMS 5'UTR 3R genotype rs45445694",
+        "rs11280056",
+        "TYMS deletion genotype rs11280056",
+        "rs1801265"
+      ]
+    },
+    {
+      "title": "CYP2D6 genotype and adverse events to risperidone in children and adolescents",
+      "pmcid": "PMC6435416",
+      "benchmark_variants": [
+        "CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*4xN, CYP2D6*5, CYP2D6*6, CYP2D6*9, CYP2D6*10, CYP2D6*17, CYP2D6*29, CYP2D6*35, CYP2D6*41"
+      ],
+      "proposed_variants": [
+        "CYP2D6 *4/*4",
+        "CYP2D6 poor metabolizer",
+        "CYP2D6 poor metabolizers, CYP2D6 intermediate metabolizers, CYP2D6 normal metabolizers, CYP2D6 ultrarapid metabolizers",
+        "CYP2D6 normal/ultrarapid metabolizer",
+        "CYP2D6 intermediate metabolizer"
+      ]
+    },
+    {
+      "title": "Pharmacogenetics association with long-term clinical evolution in a kidney transplant patients cohort",
+      "pmcid": "PMC12319246",
+      "benchmark_variants": [
+        "rs4149056",
+        "rs2306283",
+        "rs776746",
+        "rs4244285",
+        "rs9282564",
+        "rs2273697",
+        "rs3745274",
+        "rs2740574"
+      ],
+      "proposed_variants": [
+        "ABCB1 rs9282564",
+        "CYP3A5_rs776746",
+        "ABCC2 rs2273697",
+        "CYP2C19*2",
+        "ABCB1_rs9282564",
+        "CYP2B6 rs3745274",
+        "CYP3A5 *3/*3",
+        "CYP2C19 rs4244285",
+        "CYP3A5*3",
+        "ABCC2_rs2273697",
+        "CYP2B6_rs3745274",
+        "CYP2C19_rs4244285"
+      ]
+    },
+    {
+      "title": "CYP2D6 Metabolism and Patient Outcome in the Austrian Breast and Colorectal Cancer Study Group Trial (ABCSG) 8",
+      "pmcid": "PMC3548984",
+      "benchmark_variants": [
+        "CYP2D6*1, CYP2D6*3, CYP2D6*4, CYP2D6*6",
+        "CYP2D6*1, CYP2D6*3, CYP2D6*4",
+        "CYP2D6*1, CYP2D6*10, CYP2D6*41"
+      ],
+      "proposed_variants": [
+        "CYP2D6 *4",
+        "CYP2D6 *3, *4, *6, *10, *41",
+        "CYP2D6*3, CYP2D6*4, CYP2D6*6, CYP2D6*10, CYP2D6*41"
+      ]
+    },
+    {
+      "title": "Effect of NLRP3 inflammasome genes polymorphism on disease susceptibility and response to TNF-\u03b1 inhibitors in Iraqi patients with rheumatoid arthritis",
+      "pmcid": "PMC10275785",
+      "benchmark_variants": [
+        "rs2043211",
+        "rs4612666"
+      ],
+      "proposed_variants": [
+        "NLRP3 (rs4612666)",
+        "rs4612666",
+        "rs2043211",
+        "NLRP3 rs4612666",
+        "CARD8 (rs2043211)",
+        "CARD8 rs2043211"
+      ]
+    },
+    {
+      "title": "Cytochrome P450 2C19 Genotypes and Clopidogrel in Patients With Ischemic Stroke: A Nonrandomized Clinical Trial",
+      "pmcid": "PMC11971672",
+      "benchmark_variants": [
+        "CYP2C19*1, CYP2C19*2, CYP2C19*3, CYP2C19*17"
+      ],
+      "proposed_variants": [
+        "CYP2C19*1/*1, CYP2C19*1/*17, CYP2C19*17/*17 (extensive metabolizers)",
+        "CYP2C19*1/*1",
+        "CYP2C19 LOF allele"
+      ]
+    },
+    {
+      "title": "The effect of gene polymorphism on ticagrelor metabolism: an in vitro study of 22 CYP3A4 variants in Chinese Han population",
+      "pmcid": "PMC11430164",
+      "benchmark_variants": [
+        "CYP3A4*1, CYP3A4*11, CYP3A4*18, CYP3A4*33",
+        "CYP3A4*1, CYP3A4*2, CYP3A4*3, CYP3A4*4, CYP3A4*5, CYP3A4*9, CYP3A4*14, CYP3A4*15, CYP3A4*16, CYP3A4*17, CYP3A4*19, CYP3A4*24, CYP3A4*28, CYP3A4*29, CYP3A4*31"
+      ],
+      "proposed_variants": [
+        "CYP3A4*17",
+        "CYP3A4*3",
+        "CYP3A4*11",
+        "CYP3A4*2",
+        "CYP3A4*1",
+        "CYP3A4*33",
+        "CYP3A4*24",
+        "CYP3A4*18",
+        "CYP3A4*30",
+        "CYP3A4*1G"
+      ]
+    },
+    {
+      "title": "Class II HLA Variants Associate with Risk of Pegaspargase Hypersensitivity",
+      "pmcid": "PMC8790808",
+      "benchmark_variants": [
+        "HLA-DQA1*02:01",
+        "HLA-DRB1*07:01",
+        "rs9958628",
+        "HLA-DQB1*02:02"
+      ],
+      "proposed_variants": [
+        "HLA-DRB1*07:01",
+        "rs9958628",
+        "HLA-DQB1*02:02",
+        "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
+        "HLA-DQA1*02:01",
+        "ARHGAP28 rs9958628"
+      ]
+    },
+    {
+      "title": "Risk Factors for Adverse Events of Nanoliposomal Irinotecan Plus 5-Fluorouracil and L-leucovorin",
+      "pmcid": "PMC11062152",
+      "benchmark_variants": [
+        "UGT1A1*1, UGT1A1*6, UGT1A1*28"
+      ],
+      "proposed_variants": [
+        "UGT1A1 polymorphism",
+        "UGT1A1*6 or *28 (+/+), UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+        "UGT1A1*6 or *28 (+/+)",
+        "UGT1A1*6 or *28 (+/+), UGT1A1*6 or *28 (-/-), UGT1A1*6 or *28 (+/-)"
+      ]
+    },
+    {
+      "title": "HLA-A*31:01 and HLA-B*15:02 as genetic markers for carbamazepine hypersensitivity in children",
+      "pmcid": "PMC3839910",
+      "benchmark_variants": [
+        "HLA-A*31:01",
+        "HLA-B*15:02"
+      ],
+      "proposed_variants": [
+        "rs1061235",
+        "HLA-A*31:01",
+        "HLA-B*15:02"
+      ]
+    },
+    {
+      "title": "HLA-A\u26053101 and Carbamazepine-Induced Hypersensitivity Reactions in Europeans",
+      "pmcid": "PMC3113609",
+      "benchmark_variants": [
+        "HLA-A*31:01"
+      ],
+      "proposed_variants": [
+        "HLA-A\u26053101",
+        "HLA-A*3101"
+      ]
+    },
+    {
+      "title": "Integrating rare genetic variants into DPYD pharmacogenetic testing may help preventing fluoropyrimidine-induced toxicity",
+      "pmcid": "PMC10786722",
+      "benchmark_variants": [
+        "rs1801160",
+        "rs2297595",
+        "rs56038477"
+      ],
+      "proposed_variants": [
+        "c.1679T>G (DPYD*13, rs55886062)",
+        "c.1905+1G>A (DPYD*2A, rs3918290)",
+        "c.2846A>T (rs67376798)",
+        "c.1679T>G (DPYD*13)",
+        "c.2846A>T",
+        "c.1905+1G>A (DPYD*2A)"
+      ]
+    },
+    {
+      "title": "Predisposition to abacavir hypersensitivity conferred by HLA-B*5701 and a haplotypic Hsp70-Hom variant",
+      "pmcid": "PMC384715",
+      "benchmark_variants": [
+        "HLA-B*57:01"
+      ],
+      "proposed_variants": [
+        "HLA-B*5701, Hsp70-Hom M493T",
+        "HLA-B*5701"
+      ]
+    },
+    {
+      "title": "CYP2D6 genotypes, endoxifen levels, and disease recurrence in 224 Filipino and Vietnamese women receiving adjuvant tamoxifen for operable breast cancer",
+      "pmcid": "PMC3584248",
+      "benchmark_variants": [
+        "CYP2D6*1, CYP2D6*2, CYP2D6*5, CYP2D6*10, CYP2D6*41"
+      ],
+      "proposed_variants": [
+        "CYP2D6*1/*1",
+        "CYP2D6*1/*41",
+        "CYP2D6 *1/*1",
+        "CYP2D6*1, CYP2D6*10, CYP2D6*2, CYP2D6*5, CYP2D6*3, CYP2D6*4, CYP2D6*41",
+        "CYP2D6*10/*10",
+        "CYP2D6 *10/*10",
+        "CYP2D6*10",
+        "CYP2D6 *41/*41",
+        "CYP2D6 *10/*41"
+      ]
+    },
+    {
+      "title": "Severe myelosuppression and alopecia after thiopurine initiation in a patient with NUDT15 deficiency",
+      "pmcid": "PMC12035587",
+      "benchmark_variants": [
+        "NUDT15*3"
+      ],
+      "proposed_variants": [
+        "NUDT15 *3/*3",
+        "*3/*3"
+      ]
+    },
+    {
+      "title": "Human Leukocyte Antigens and Sulfamethoxazole/Cotrimoxazole-Induced Severe Cutaneous Adverse Reactions: A Systematic Review and Meta-Analysis",
+      "pmcid": "PMC10993165",
+      "benchmark_variants": [
+        "HLA-B*38:02",
+        "HLA-B*13:01",
+        "HLA-B*15:02"
+      ],
+      "proposed_variants": [
+        "HLA-B*38:02",
+        "HLA-A*11:01",
+        "HLA-A*68:01",
+        "HLA-C*08:01",
+        "HLA-B*13:01",
+        "HLA-B*39:01",
+        "HLA-B*15:02"
+      ]
+    },
+    {
+      "title": "Real-world pharmacogenetics of statin intolerance: effects of SLCO1B1, ABCG2, and CYP2C9 variants",
+      "pmcid": "PMC10399933",
+      "benchmark_variants": [
+        "rs4149056",
+        "CYP2C9*1, CYP2C9*2, CYP2C9*3",
+        "rs2231142"
+      ],
+      "proposed_variants": [
+        "SLCO1B1 c.521T>C",
+        "c.521C/C",
+        "rs1057910, rs1799853",
+        "SLCO1B1 c.521C/C",
+        "SLCO1B1 c.521T/T",
+        "rs2231142",
+        "ABCG2 c.421C>A",
+        "c.521T>C"
+      ]
+    },
+    {
+      "title": "A Novel Admixture-Based Pharmacogenetic Approach to Refine Warfarin Dosing in Caribbean Hispanics",
+      "pmcid": "PMC4706412",
+      "benchmark_variants": [
+        "CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*8",
+        "rs1800566",
+        "rs9923231",
+        "CYP4F2*1, CYP4F2*3"
+      ],
+      "proposed_variants": [
+        "CYP2C9*3",
+        "VKORC1-1639 G>A",
+        "VKORC1-1639G>A",
+        "CYP2C9*2, CYP2C9*3, CYP2C9*8",
+        "CYP4F2*3",
+        "VKORC1-1639A",
+        "CYP2C9*2",
+        "NQO1*2"
+      ]
+    },
+    {
+      "title": "Associations of the SLCO1B1 Polymorphisms With Hepatic Function, Baseline Lipid Levels, and Lipid-lowering Response to Simvastatin in Patients With Hyperlipidemia",
+      "pmcid": "PMC6714829",
+      "benchmark_variants": [
+        "rs4149056",
+        "rs2306283"
+      ],
+      "proposed_variants": [
+        "388A>G",
+        "388A/521T haplotype",
+        "521T>C (rs4149056)",
+        "388A>G, 521T>C",
+        "521T>C",
+        "388A>G (rs2306283)"
+      ]
+    },
+    {
+      "title": "Effects of CYP2B6 G516T polymorphisms on plasma efavirenz and nevirapine levels when co-administered with rifampicin in HIV/TB co-infected Thai adults",
+      "pmcid": "PMC2859392",
+      "benchmark_variants": [
+        "rs3745274"
+      ],
+      "proposed_variants": [
+        "CYP2B6-G516T (TT)",
+        "CYP2B6-G516T",
+        "CYP2B6-G516T (GT)",
+        "CYP2B6-G516T (GG)"
+      ]
+    },
+    {
+      "title": "Association between the CYP2B6 polymorphisms and nonnucleoside reverse transcriptase inhibitors drug-induced liver injury: a systematic review and meta-analysis",
+      "pmcid": "PMC11603346",
+      "benchmark_variants": [
+        "CYP2B6*1, CYP2B6*6"
+      ],
+      "proposed_variants": [
+        "CYP2B6*6 (rs3745274, rs2279343)",
+        "CYP2B6*6",
+        "CYP2B6*1/*6"
+      ]
+    },
+    {
+      "title": "Susceptibility to thiopurine toxicity by TPMT and NUDT15 variants in Colombian children with acute lymphoblastic leukemia",
+      "pmcid": "PMC8973308",
+      "benchmark_variants": [
+        "rs1800460",
+        "rs116855232",
+        "rs1800462"
+      ],
+      "proposed_variants": [
+        "rs1800460",
+        "rs116855232",
+        "rs1800462",
+        "rs1142345"
+      ]
+    },
+    {
+      "title": "Toxicogenomics of nevirapine-associated cutaneous and hepatic adverse events among populations of African, Asian, and European descent",
+      "pmcid": "PMC3387531",
+      "benchmark_variants": [
+        "HLA-DRB1*01:01",
+        "rs2054675",
+        "HLA-C*04:01",
+        "rs3745274",
+        "HLA-B*35:01",
+        "rs3786547"
+      ],
+      "proposed_variants": [
+        "HLA-DRB1*01",
+        "CYP2B6 516G\u2192T",
+        "HLA-B*35",
+        "HLA-DRB*01",
+        "HLA-Cw*04"
+      ]
+    }
+  ]
+}
