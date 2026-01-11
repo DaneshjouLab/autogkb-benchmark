@@ -87,7 +87,7 @@ def proposed_variant_summary(proposed_annotations_dir: str, benchmark_dir: str =
     output_file_name = timestamp
     if not run_name:
         run_name = proposed_annotations_dir
-    output_file_name += f"_variants_{run_name}.json"
+    output_file_name += f"_variant_report.json"
     output_path = Path("data") / "coverage_reports" / "variant_reports" / output_file_name
     output_path.parent.mkdir(parents=True, exist_ok=True)
     summary = VariantCoverageReport(
@@ -107,5 +107,6 @@ def proposed_variant_summary(proposed_annotations_dir: str, benchmark_dir: str =
 if __name__ == "__main__":
     proposed_annotations_dir = "data/proposed_annotations"
     proposed_variant_summary(proposed_annotations_dir)
+
 
 
