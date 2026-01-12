@@ -19,18 +19,19 @@ def variants_from_file(file_path: str) -> SingleArticleVariants:
     # from json file, extract all the variants from variant/haplotypes
     with open(file_path, 'r') as f:
         data = json.load(f)
-    variants: set[str] = set()
+    variants: list[str] = []
     pmcid = data['pmcid']
     article_title = data['title']
     for item in data['var_drug_ann']:
-        variants.add(item['Variant/Haplotypes'])
+        variants.append(item['Variant/Haplotypes'])
     for item in data['var_pheno_ann']:
-        variants.add(item['Variant/Haplotypes'])
+        variants.append(item['Variant/Haplotypes'])
     for item in data['var_fa_ann']:
-        variants.add(item['Variant/Haplotypes'])
-    return SingleArticleVariants(title=article_title, pmcid=pmcid, variants=list(variants))
+        variants.append(item['Variant/Haplotypes'])
 
-class SingleArticleReport(BaseModel):
+    return SingleArticleVariants(title=article_title, pmcid=pmcid, variants=variants)
+
+class SingleArticleVariantReport(BaseModel):
     title: str
     pmcid: str
     benchmark_variants: list[str]
@@ -41,7 +42,7 @@ class VariantCoverageReport(BaseModel):
     timestamp: str
     benchmark_variants: list[str]
     proposed_variants: list[str]
-    article_variant_breakdown: list[SingleArticleReport]
+    article_variant_breakdown: list[SingleArticleVariantReport]
 
 def get_variants_from_dir(dir_path: str) -> tuple[list[SingleArticleVariants], list[str]]:
     """Loops through variants_from_file for a whole directory
@@ -52,29 +53,35 @@ def get_variants_from_dir(dir_path: str) -> tuple[list[SingleArticleVariants], l
     if not directory.exists() or not directory.is_dir():
         raise ValueError(f"Directory {dir_path} does not exist or is not a directory.")
     variant_list: list[SingleArticleVariants] = []
-    all_variants: set[str] = set()
+    all_variants: list[str] = []
     for file in directory.glob("*.json"):
         try:
             article_variants = variants_from_file(str(file))
-            all_variants.update(article_variants.variants)
+            all_variants.extend(article_variants.variants)
             variant_list.append(article_variants)
         except Exception as e:
             logger.warning(f"Warning: Could not process file {file}: {e}")
-    return variant_list, list(all_variants)
+    all_variants = list(dict.fromkeys(all_variants))
+    return variant_list, all_variants
 
-def get_article_reports(benchmark_dir: str, proposed_dir: str) -> tuple[list[SingleArticleReport], list[str], list[str]]:
+def get_article_reports(benchmark_dir: str, proposed_dir: str) -> tuple[list[SingleArticleVariantReport], list[str], list[str]]:
     benchmark_variants, benchmark_all_variants = get_variants_from_dir(benchmark_dir)
     proposed_variants, proposed_all_variants = get_variants_from_dir(proposed_dir)
     proposed_by_pmcid = {article.pmcid: article.variants for article in proposed_variants}
-    article_reports: list[SingleArticleReport] = []
+    article_reports: list[SingleArticleVariantReport] = []
     for article in benchmark_variants:
-        article_report = SingleArticleReport(
+        article_report = SingleArticleVariantReport(
             title=article.title,
             pmcid=article.pmcid,
             benchmark_variants=article.variants,
             proposed_variants=proposed_by_pmcid.get(article.pmcid, []),
         )
         article_reports.append(article_report)
+    
+    # Deduplicate all variant lists
+    benchmark_all_variants = list(dict.fromkeys(benchmark_all_variants))
+    proposed_all_variants = list(dict.fromkeys(proposed_all_variants))
+    
     logger.info(f"Found {len(article_reports)} articles")
     logger.info(f"Found {len(benchmark_all_variants)} benchmark variants")
     logger.info(f"Found {len(proposed_all_variants)} proposed variants")
