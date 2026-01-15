@@ -97,14 +97,14 @@ def get_article_reports(benchmark_dir: str, proposed_dir: str) -> tuple[list[Sin
     return article_reports, benchmark_all_drugs, proposed_all_drugs
 
 def proposed_drug_summary(proposed_annotations_dir: str, benchmark_dir: str = "data/benchmark_annotations", run_name: str = "") -> dict[str]:
-    """Generates report for all drugs in data/coverage_reports/<time-stamp>_drugs_<run_name>.json"""
+    """Generates report for all drugs in data/coverage/<time-stamp>_drugs_<run_name>.json"""
     article_reports, benchmark_drugs, proposed_drugs = get_article_reports(benchmark_dir, proposed_annotations_dir)
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     output_file_name = timestamp
     if not run_name:
         run_name = proposed_annotations_dir
     output_file_name += f"_drug_report.json"
-    output_path = Path("data") / "coverage_reports" / "drug_reports" / output_file_name
+    output_path = Path("data") / "coverage" / "drug_reports" / output_file_name
     output_path.parent.mkdir(parents=True, exist_ok=True)
     summary = DrugCoverageReport(
         run_name=run_name,

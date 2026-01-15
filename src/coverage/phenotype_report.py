@@ -104,14 +104,14 @@ def get_article_reports(benchmark_dir: str, proposed_dir: str) -> tuple[list[Sin
     return article_reports, benchmark_all_phenotypes, proposed_all_phenotypes
 
 def proposed_phenotype_summary(proposed_annotations_dir: str, benchmark_dir: str = "data/benchmark_annotations", run_name: str = "") -> dict[str]:
-    """Generates report for all phenotypes in data/coverage_reports/<time-stamp>_phenotypes_<run_name>.json"""
+    """Generates report for all phenotypes in data/coverage/<time-stamp>_phenotypes_<run_name>.json"""
     article_reports, benchmark_phenotypes, proposed_phenotypes = get_article_reports(benchmark_dir, proposed_annotations_dir)
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     output_file_name = timestamp
     if not run_name:
         run_name = proposed_annotations_dir
     output_file_name += f"_phenotype_report.json"
-    output_path = Path("data") / "coverage_reports" / "phenotype_reports" / output_file_name
+    output_path = Path("data") / "coverage" / "phenotype_reports" / output_file_name
     output_path.parent.mkdir(parents=True, exist_ok=True)
     summary = PhenotypeCoverageReport(
         run_name=run_name,
