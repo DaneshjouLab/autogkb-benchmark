@@ -1,6 +1,11 @@
 """
-Goal:
-- benchmark jsons --> all variants mentioned
+Takes benchmark annotations from data/benchmark_annotations and creates a jsonl file data/benchmark_variants.jsonl
+Each row in the jsonl file contains:
+- pmcid: str
+- pmid: str
+- article_title: str
+- variants: list[str] - processed variant strings (deduplicated and ungrouped)
+- raw_variants: list[list[str]] - preserving the original groupings from annotations
 """
 
 import json
