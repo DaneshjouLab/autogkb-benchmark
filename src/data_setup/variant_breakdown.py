@@ -4,10 +4,12 @@ Goal:
 """
 
 import json
+import polars as pl
+import pyarrow.parquet as pq
 from pydantic import BaseModel
 from pathlib import Path
-from datetime import datetime
 from loguru import logger
+from datetime import datetime
 
 class SingleArticleVariants(BaseModel):
     """
@@ -17,36 +19,37 @@ class SingleArticleVariants(BaseModel):
         pmcid (str): The PubMed Central ID of the article.
         pmid (str): The PubMed ID of the article.
         article_title (str): The title of the article.
-        article_text (str): The full markdown text content of the article.
+        article_path (str): The path to the markdown file of the article.
         variants (list[str]): A list of processed variant strings found in the article.
         raw_variants (list[str]): A list of raw variant strings as extracted directly from annotations.
     """
     pmcid: str
     pmid: str    
     article_title: str
-    article_text: str
+    article_path: str
     variants: list[str]
     raw_variants: list[str]
 
 def get_markdown_from_pmcid(pmcid: str) -> str:
     """
-    Retrieves the markdown content of an article given its PubMed Central ID (PMCID).
+    Retrieves the markdown path in string format of an article given its PubMed Central ID (PMCID).
 
     Args:
         pmcid (str): The PubMed Central ID of the article.
 
     Returns:
-        str: The markdown text content of the article. Returns an empty string
+        str: The markdown path in string format of the article. Returns an empty string
              if the file cannot be found or processed, logging a warning.
     """
     markdown_path = Path("data") / "articles" / f"{pmcid}.md"
     try:
-        with open(markdown_path, 'r') as f:
-            markdown_text = f.read()
+        if not markdown_path.is_file():
+            logger.warning(f"Warning: Could not find file {markdown_path}")
+            return ""
+        return str(markdown_path)
     except Exception as e:
         logger.warning(f"Warning: Could not process file {markdown_path}: {e}")
         return ""
-    return markdown_text
 
 def get_file_variants(file_path: Path | str, deduplicate: bool = True, ungroup: bool = True) -> SingleArticleVariants:
     """
@@ -77,12 +80,12 @@ def get_file_variants(file_path: Path | str, deduplicate: bool = True, ungroup: 
             data = json.load(f)
     except Exception as e:
         logger.warning(f"Warning: Could not process file {file_path}: {e}")
-        return SingleArticleVariants(pmcid="", pmid="", article_title="", article_text="", variants=[], raw_variants=[])
+        return SingleArticleVariants(pmcid="", pmid="", article_title="", article_path="", variants=[], raw_variants=[])
     variants: list[str] = []
     pmcid = data['pmcid']
     pmid = data['pmid']
     article_title = data['title']
-    article_text = get_markdown_from_pmcid(pmcid)
+    article_path = get_markdown_from_pmcid(pmcid)
     for item in data['var_drug_ann']:
         variants.append(item['Variant/Haplotypes'])
     for item in data['var_pheno_ann']:
@@ -95,7 +98,7 @@ def get_file_variants(file_path: Path | str, deduplicate: bool = True, ungroup: 
     if ungroup:
         variants = [variant.split(',') for variant in variants]
         variants = [variant for sublist in variants for variant in sublist]
-    return SingleArticleVariants(pmcid=pmcid, pmid=pmid, article_title=article_title, article_text=article_text, variants=variants, raw_variants=variants)
+    return SingleArticleVariants(pmcid=pmcid, pmid=pmid, article_title=article_title, article_path=article_path, variants=variants, raw_variants=variants)
 
 def get_dir_variants(dir_path: str, deduplicate: bool = True, ungroup: bool = True) -> list[SingleArticleVariants]:
     """
@@ -133,32 +136,45 @@ def get_dir_variants(dir_path: str, deduplicate: bool = True, ungroup: bool = Tr
             logger.warning(f"Warning: Could not process file {file}: {e}")
     return variant_list
 
-def get_benchmark_variants() -> list[SingleArticleVariants]:
+def get_benchmark_variants(save_parquet: bool = True) -> list[SingleArticleVariants]:
     """
     Retrieves and processes variants from the benchmark annotation directory.
 
     This function specifically targets the 'data/benchmark_annotations' directory,
     deduplicating and ungrouping variants by default.
 
+    Args:
+        save_parquet (bool, optional): If True, saves the results to a parquet file
+                                       at 'data/benchmark_variants.parquet'. Defaults to True.
+
     Returns:
         list[SingleArticleVariants]: A list of `SingleArticleVariants` objects
                                      representing the processed benchmark variants.
     """
     benchmark_dir = "data/benchmark_annotations"
+    logger.info(f"Loading variants from benchmark dir {benchmark_dir}")
     benchmark_variants = get_dir_variants(benchmark_dir, deduplicate=True, ungroup=True)
+
+    if save_parquet:
+        # Convert list of SingleArticleVariants to a polars DataFrame
+        df = pl.DataFrame([variant.model_dump() for variant in benchmark_variants])
+        output_path = Path("data") / "benchmark_variants.parquet"
+        # Use pyarrow for writing parquet (more reliable)
+        pq.write_table(df.to_arrow(), output_path)
+        logger.info(f"Saved {len(benchmark_variants)} articles to {output_path}")
+
     return benchmark_variants
 
-if __name__ == "__main__":
 
-    benchmark_variants = get_benchmark_variants()
-    print(f"Found {len(benchmark_variants)} benchmark variants")
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    output_path = Path("scratch") / f"benchmark_variants_{timestamp}.json"
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump([variant.model_dump() for variant in benchmark_variants], f, indent=2, ensure_ascii=False)
-    print(f"Saved to {output_path}")
-    # pmcid4916189 is bad, prints to text like "Once-Daily Efavirenz 400 and 600\u00a0mg in Treatment-Na\u00efve HIV-Infected Patients"
+if __name__ == "__main__":
+    benchmark_variants = get_benchmark_variants(save_parquet=True)
+    print(f"Found {len(benchmark_variants)} articles with variants")
+
+    # Verify the parquet file is loadable
+    table = pq.read_table("data/benchmark_variants.parquet")
+    df = pl.from_arrow(table)
+    print(f"Loaded parquet with {len(df)} rows and columns: {df.columns}")
+    print(df)
 
 
 
