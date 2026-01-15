@@ -149,25 +149,17 @@ def get_benchmark_variants() -> list[SingleArticleVariants]:
     return benchmark_variants
 
 if __name__ == "__main__":
-    # benchmark_dir = "data/benchmark_annotations"
-    # benchmark_variants, benchmark_all_variants = get_variants_from_dir(benchmark_dir, deduplicate=True, ungroup=True)
-    # print(f"Found {len(benchmark_all_variants)} benchmark variants")
 
-    # # Save to data/coverage_reports/variant_reports/benchmark_variants.txt
-    # timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    # output_path = f"scratch/benchmark_variants_{timestamp}.txt"
-    # with open(output_path, "w") as f:
-    #     for variant in benchmark_all_variants:
-    #         f.write(variant + "\n")
-    # print(f"Saved to {output_path}")
     benchmark_variants = get_benchmark_variants()
     print(f"Found {len(benchmark_variants)} benchmark variants")
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     output_path = Path("scratch") / f"benchmark_variants_{timestamp}.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, "w") as f:
-        json.dump([variant.model_dump() for variant in benchmark_variants], f, indent=2)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump([variant.model_dump() for variant in benchmark_variants], f, indent=2, ensure_ascii=False)
     print(f"Saved to {output_path}")
+    # pmcid4916189 is bad, prints to text like "Once-Daily Efavirenz 400 and 600\u00a0mg in Treatment-Na\u00efve HIV-Infected Patients"
+
 
 
 
