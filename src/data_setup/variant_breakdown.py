@@ -7,7 +7,6 @@ import json
 from pydantic import BaseModel
 from pathlib import Path
 from loguru import logger
-from datetime import datetime
 
 class SingleArticleVariants(BaseModel):
     """
@@ -17,37 +16,14 @@ class SingleArticleVariants(BaseModel):
         pmcid (str): The PubMed Central ID of the article.
         pmid (str): The PubMed ID of the article.
         article_title (str): The title of the article.
-        article_path (str): The path to the markdown file of the article.
         variants (list[str]): A list of processed variant strings found in the article.
         raw_variants (list[list[str]]): A list of lists preserving the original groupings from annotations.
     """
     pmcid: str
     pmid: str
     article_title: str
-    article_path: str
     variants: list[str]
     raw_variants: list[list[str]]
-
-def get_markdown_from_pmcid(pmcid: str) -> str:
-    """
-    Retrieves the markdown path in string format of an article given its PubMed Central ID (PMCID).
-
-    Args:
-        pmcid (str): The PubMed Central ID of the article.
-
-    Returns:
-        str: The markdown path in string format of the article. Returns an empty string
-             if the file cannot be found or processed, logging a warning.
-    """
-    markdown_path = Path("data") / "articles" / f"{pmcid}.md"
-    try:
-        if not markdown_path.is_file():
-            logger.warning(f"Warning: Could not find file {markdown_path}")
-            return ""
-        return str(markdown_path)
-    except Exception as e:
-        logger.warning(f"Warning: Could not process file {markdown_path}: {e}")
-        return ""
 
 def get_file_variants(file_path: Path | str, deduplicate: bool = True, ungroup: bool = True) -> SingleArticleVariants:
     """
@@ -78,12 +54,11 @@ def get_file_variants(file_path: Path | str, deduplicate: bool = True, ungroup: 
             data = json.load(f)
     except Exception as e:
         logger.warning(f"Warning: Could not process file {file_path}: {e}")
-        return SingleArticleVariants(pmcid="", pmid="", article_title="", article_path="", variants=[], raw_variants=[])
+        return SingleArticleVariants(pmcid="", pmid="", article_title="", variants=[], raw_variants=[])
     variants: list[str] = []
     pmcid = data['pmcid']
     pmid = data['pmid']
     article_title = data['title']
-    article_path = get_markdown_from_pmcid(pmcid)
     for item in data['var_drug_ann']:
         variants.append(item['Variant/Haplotypes'])
     for item in data['var_pheno_ann']:
@@ -99,7 +74,7 @@ def get_file_variants(file_path: Path | str, deduplicate: bool = True, ungroup: 
     if ungroup:
         variants = [variant.split(',') for variant in variants]
         variants = [variant.strip() for sublist in variants for variant in sublist]
-    return SingleArticleVariants(pmcid=pmcid, pmid=pmid, article_title=article_title, article_path=article_path, variants=variants, raw_variants=raw_variants)
+    return SingleArticleVariants(pmcid=pmcid, pmid=pmid, article_title=article_title, variants=variants, raw_variants=raw_variants)
 
 def get_dir_variants(dir_path: str, deduplicate: bool = True, ungroup: bool = True) -> list[SingleArticleVariants]:
     """
