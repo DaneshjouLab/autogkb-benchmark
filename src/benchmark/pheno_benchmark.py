@@ -37,7 +37,7 @@ def align_pheno_annotations_by_variant(
 ) -> Tuple[
     List[Dict[str, Any]],  # aligned_gt
     List[Dict[str, Any]],  # aligned_pred
-    List[str],             # display_keys
+    List[str],  # display_keys
     List[Dict[str, Any]],  # unmatched_gt
     List[Dict[str, Any]],  # unmatched_pred
 ]:
@@ -81,15 +81,23 @@ def align_pheno_annotations_by_variant(
 
         # Priority 1: Match by normalized variant_id (highest confidence)
         if gt_variant_id:
-            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(pred_index):
-                if idx not in matched_pred_indices and pred_variant_id and gt_variant_id == pred_variant_id:
+            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(
+                pred_index
+            ):
+                if (
+                    idx not in matched_pred_indices
+                    and pred_variant_id
+                    and gt_variant_id == pred_variant_id
+                ):
                     match_idx = idx
                     match_rec = pred_rec
                     break
 
         # Priority 2: Match by rsID intersection
         if match_idx is None and gt_rs:
-            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(pred_index):
+            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(
+                pred_index
+            ):
                 if idx not in matched_pred_indices and rsids & gt_rs:
                     match_idx = idx
                     match_rec = pred_rec
@@ -97,8 +105,12 @@ def align_pheno_annotations_by_variant(
 
         # Priority 3: Match by normalized substring
         if match_idx is None and gt_norm:
-            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(pred_index):
-                if idx not in matched_pred_indices and (gt_norm in raw_norm or raw_norm in gt_norm):
+            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(
+                pred_index
+            ):
+                if idx not in matched_pred_indices and (
+                    gt_norm in raw_norm or raw_norm in gt_norm
+                ):
                     match_idx = idx
                     match_rec = pred_rec
                     break
@@ -108,7 +120,11 @@ def align_pheno_annotations_by_variant(
             aligned_pred.append(match_rec)
             matched_pred_indices.add(match_idx)
             # Use variant_id for display if available, else rsID, else normalized string
-            disp = gt_variant_id if gt_variant_id else (next(iter(gt_rs)) if gt_rs else gt_norm)
+            disp = (
+                gt_variant_id
+                if gt_variant_id
+                else (next(iter(gt_rs)) if gt_rs else gt_norm)
+            )
             display_keys.append(disp)
 
     # Second pass: for unmatched GT records, try Gene + Drug(s) matching
@@ -156,7 +172,8 @@ def align_pheno_annotations_by_variant(
     # Collect unmatched samples
     unmatched_gt = [rec for rec in gt_expanded if rec not in aligned_gt]
     unmatched_pred = [
-        pred_index[i][3] for i in range(len(pred_index))
+        pred_index[i][3]
+        for i in range(len(pred_index))
         if i not in matched_pred_indices
     ]
 
@@ -323,7 +340,9 @@ class PhenotypeAnnotationBenchmark:
             }
 
         # Align by variant first (similar to FA/Drug benchmarks)
-        aligned_gt, aligned_pred, display_keys, unmatched_gt, unmatched_pred = align_pheno_annotations_by_variant(gt_list, pred_list)
+        aligned_gt, aligned_pred, display_keys, unmatched_gt, unmatched_pred = (
+            align_pheno_annotations_by_variant(gt_list, pred_list)
+        )
 
         if not aligned_gt:
             return {
@@ -398,7 +417,7 @@ class PhenotypeAnnotationBenchmark:
             for field in self.CORE_FIELDS:
                 sample_result["field_values"][field] = {
                     "ground_truth": gt.get(field),
-                    "prediction": pred.get(field)
+                    "prediction": pred.get(field),
                 }
 
             results["detailed_results"].append(sample_result)

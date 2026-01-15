@@ -47,7 +47,7 @@ def download_variant_annotations(base_dir=Path("data"), override=False) -> Path:
             f.write(chunk)
 
     print(f"Download complete! File saved as {download_path}")
-    print(f"File size: {os.path.getsize(download_path) / (1024*1024):.2f} MB")
+    print(f"File size: {os.path.getsize(download_path) / (1024 * 1024):.2f} MB")
 
     # Unzip the file
     print(f"\nExtracting files to {extract_to}...")
@@ -73,7 +73,6 @@ def download_variant_annotations(base_dir=Path("data"), override=False) -> Path:
 
 
 if __name__ == "__main__":
-
     try:
         download_variant_annotations()
         print("\nSuccess!")

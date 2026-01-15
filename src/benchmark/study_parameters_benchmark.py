@@ -23,21 +23,35 @@ def _compute_study_parameters_similarity(
     """
     # Field evaluators (same as in evaluate_study_parameters, excluding ID fields)
     field_evaluators = {
-        'Study Type': category_equal,
-        'Study Cases': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Study Controls': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Characteristics': semantic_similarity,
-        'Characteristics Type': category_equal,
-        'Frequency In Cases': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Allele Of Frequency In Cases': semantic_similarity,
-        'Frequency In Controls': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Allele Of Frequency In Controls': semantic_similarity,
-        'P Value': p_value_match,
-        'Ratio Stat Type': category_equal,
-        'Ratio Stat': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Confidence Interval Start': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Confidence Interval Stop': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Biogeographical Groups': category_equal,
+        "Study Type": category_equal,
+        "Study Cases": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Study Controls": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Characteristics": semantic_similarity,
+        "Characteristics Type": category_equal,
+        "Frequency In Cases": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Allele Of Frequency In Cases": semantic_similarity,
+        "Frequency In Controls": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Allele Of Frequency In Controls": semantic_similarity,
+        "P Value": p_value_match,
+        "Ratio Stat Type": category_equal,
+        "Ratio Stat": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Confidence Interval Start": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Confidence Interval Stop": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Biogeographical Groups": category_equal,
     }
 
     scores = []
@@ -56,7 +70,7 @@ def align_study_parameters_by_similarity(
 ) -> Tuple[
     List[Dict[str, Any]],  # aligned_gt
     List[Dict[str, Any]],  # aligned_pred
-    List[str],             # display_keys
+    List[str],  # display_keys
     List[Dict[str, Any]],  # unmatched_gt
     List[Dict[str, Any]],  # unmatched_pred
 ]:
@@ -78,7 +92,7 @@ def align_study_parameters_by_similarity(
     # Build index by Variant Annotation ID
     pred_by_id: Dict[Any, List[Tuple[int, Dict[str, Any]]]] = {}
     for idx, pred_rec in enumerate(predictions_list):
-        variant_id = pred_rec.get('Variant Annotation ID')
+        variant_id = pred_rec.get("Variant Annotation ID")
         if variant_id is not None:
             if variant_id not in pred_by_id:
                 pred_by_id[variant_id] = []
@@ -86,7 +100,7 @@ def align_study_parameters_by_similarity(
 
     # Match by Variant Annotation ID first
     for gt_idx, gt_rec in enumerate(ground_truth_list):
-        variant_id = gt_rec.get('Variant Annotation ID')
+        variant_id = gt_rec.get("Variant Annotation ID")
         if variant_id is not None and variant_id in pred_by_id:
             # Use the first available prediction with this ID
             for pred_idx, pred_rec in pred_by_id[variant_id]:
@@ -100,11 +114,13 @@ def align_study_parameters_by_similarity(
 
     # For remaining unmatched records, use similarity-based matching
     remaining_gt = [
-        (idx, gt_rec) for idx, gt_rec in enumerate(ground_truth_list)
+        (idx, gt_rec)
+        for idx, gt_rec in enumerate(ground_truth_list)
         if idx not in matched_gt_indices
     ]
     remaining_pred = [
-        (idx, pred_rec) for idx, pred_rec in enumerate(predictions_list)
+        (idx, pred_rec)
+        for idx, pred_rec in enumerate(predictions_list)
         if idx not in matched_pred_indices
     ]
 
@@ -122,7 +138,10 @@ def align_study_parameters_by_similarity(
 
         # Greedily assign matches (one-to-one)
         for gt_idx, pred_idx, score in similarity_scores:
-            if gt_idx not in matched_gt_indices and pred_idx not in matched_pred_indices:
+            if (
+                gt_idx not in matched_gt_indices
+                and pred_idx not in matched_pred_indices
+            ):
                 gt_rec = ground_truth_list[gt_idx]
                 pred_rec = predictions_list[pred_idx]
                 aligned_gt.append(gt_rec)
@@ -130,18 +149,20 @@ def align_study_parameters_by_similarity(
                 matched_gt_indices.add(gt_idx)
                 matched_pred_indices.add(pred_idx)
                 # Use study type + characteristics as display key for similarity matches
-                study_type = gt_rec.get('Study Type', 'Unknown')
-                chars = gt_rec.get('Characteristics', '')
+                study_type = gt_rec.get("Study Type", "Unknown")
+                chars = gt_rec.get("Characteristics", "")
                 disp_key = f"{study_type}" + (f":{chars[:20]}" if chars else "")
                 display_keys.append(disp_key)
 
     # Collect unmatched samples
     unmatched_gt = [
-        ground_truth_list[i] for i in range(len(ground_truth_list))
+        ground_truth_list[i]
+        for i in range(len(ground_truth_list))
         if i not in matched_gt_indices
     ]
     unmatched_pred = [
-        predictions_list[i] for i in range(len(predictions_list))
+        predictions_list[i]
+        for i in range(len(predictions_list))
         if i not in matched_pred_indices
     ]
 
@@ -164,25 +185,25 @@ def align_study_parameters_by_variant_id(
     pred_by_id: Dict[Any, Dict[str, Any]] = {}
 
     for pred_rec in predictions_list:
-        variant_id = pred_rec.get('Variant Annotation ID')
+        variant_id = pred_rec.get("Variant Annotation ID")
         if variant_id is not None:
             pred_by_id[variant_id] = pred_rec
 
     # ground truth to predictions
     for gt_rec in ground_truth_list:
-        variant_id = gt_rec.get('Variant Annotation ID')
+        variant_id = gt_rec.get("Variant Annotation ID")
         if variant_id is not None and variant_id in pred_by_id:
             aligned_gt.append(gt_rec)
             aligned_pred.append(pred_by_id[variant_id])
 
     # If no matches found by ID, fall back to similarity-based alignment
     if not aligned_gt:
-        aligned_gt, aligned_pred, _, _, _ = align_study_parameters_by_similarity(ground_truth_list, predictions_list)
+        aligned_gt, aligned_pred, _, _, _ = align_study_parameters_by_similarity(
+            ground_truth_list, predictions_list
+        )
         return aligned_gt, aligned_pred
 
     return aligned_gt, aligned_pred
-
-
 
 
 def parse_p_value(pval_str: Any) -> Tuple[Optional[str], Optional[float]]:
@@ -195,11 +216,11 @@ def parse_p_value(pval_str: Any) -> Tuple[Optional[str], Optional[float]]:
         return None, None
 
     # Extract operator (<=, >=, <, >, =)
-    operator_match = re.search(r'([<>=≤≥]=?)', pval_str)
-    operator = operator_match.group(1) if operator_match else '='
+    operator_match = re.search(r"([<>=≤≥]=?)", pval_str)
+    operator = operator_match.group(1) if operator_match else "="
 
     # Extract numeric value
-    value_str = re.sub(r'[<>=≤≥\s]', '', pval_str)
+    value_str = re.sub(r"[<>=≤≥\s]", "", pval_str)
     value = parse_numeric(value_str)
 
     return operator, value
@@ -216,13 +237,17 @@ def p_value_match(gt_val: Any, pred_val: Any) -> float:
         return 0.0
 
     # Normalize operators for comparison
-    op_map = {'<=': '≤', '>=': '≥', '<': '<', '>': '>', '=': '='}
+    op_map = {"<=": "≤", ">=": "≥", "<": "<", ">": ">", "=": "="}
     gt_op_norm = op_map.get(gt_op, gt_op)
     pred_op_norm = op_map.get(pred_op, pred_op)
 
     operator_score = 1.0 if gt_op_norm == pred_op_norm else 0.0
     value_score = numeric_tolerance_match(
-        gt_val_num, pred_val_num, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.7
+        gt_val_num,
+        pred_val_num,
+        exact_weight=1.0,
+        tolerance_5pct=0.9,
+        tolerance_10pct=0.7,
     )
 
     # Combined: 50% operator, 50% value
@@ -329,7 +354,9 @@ def evaluate_study_parameters(
     """
 
     if not isinstance(samples, list) or len(samples) != 2:
-        raise ValueError("Expected a list with exactly two items: [ground_truth, prediction].")
+        raise ValueError(
+            "Expected a list with exactly two items: [ground_truth, prediction]."
+        )
     gt, pred = samples[0], samples[1]
 
     # Normalize to lists
@@ -348,45 +375,65 @@ def evaluate_study_parameters(
         raise ValueError("Prediction must be a dict or list of dicts.")
 
     # Use similarity-based alignment since predictions often have null Variant Annotation ID
-    gt_list, pred_list, display_keys, unmatched_gt, unmatched_pred = align_study_parameters_by_similarity(gt_list_raw, pred_list_raw)
+    gt_list, pred_list, display_keys, unmatched_gt, unmatched_pred = (
+        align_study_parameters_by_similarity(gt_list_raw, pred_list_raw)
+    )
 
     if not gt_list:
         return {
-            'total_samples': 0,
-            'field_scores': {},
-            'overall_score': 0.0,
-            'detailed_results': [],
-            'aligned_variants': [],
-            'unmatched_ground_truth': unmatched_gt,
-            'unmatched_predictions': unmatched_pred,
+            "total_samples": 0,
+            "field_scores": {},
+            "overall_score": 0.0,
+            "detailed_results": [],
+            "aligned_variants": [],
+            "unmatched_ground_truth": unmatched_gt,
+            "unmatched_predictions": unmatched_pred,
         }
 
     # Map evaluators to study parameters schema fields
     # CRITICAL FIX: Use Title Case field names to match ground truth
     field_evaluators = {
-        'Study Parameters ID': exact_match,
-        'Variant Annotation ID': exact_match,
-        'Study Type': category_equal,
-        'Study Cases': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Study Controls': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Characteristics': semantic_similarity,
-        'Characteristics Type': category_equal,
-        'Frequency In Cases': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Allele Of Frequency In Cases': semantic_similarity,
-        'Frequency In Controls': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Allele Of Frequency In Controls': semantic_similarity,
-        'P Value': p_value_match,
-        'Ratio Stat Type': category_equal,
-        'Ratio Stat': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Confidence Interval Start': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Confidence Interval Stop': lambda gt, pred: numeric_tolerance_match(gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8),
-        'Biogeographical Groups': category_equal,
+        "Study Parameters ID": exact_match,
+        "Variant Annotation ID": exact_match,
+        "Study Type": category_equal,
+        "Study Cases": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Study Controls": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Characteristics": semantic_similarity,
+        "Characteristics Type": category_equal,
+        "Frequency In Cases": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Allele Of Frequency In Cases": semantic_similarity,
+        "Frequency In Controls": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Allele Of Frequency In Controls": semantic_similarity,
+        "P Value": p_value_match,
+        "Ratio Stat Type": category_equal,
+        "Ratio Stat": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Confidence Interval Start": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Confidence Interval Stop": lambda gt, pred: numeric_tolerance_match(
+            gt, pred, exact_weight=1.0, tolerance_5pct=0.9, tolerance_10pct=0.8
+        ),
+        "Biogeographical Groups": category_equal,
     }
 
-    results: Dict[str, Any] = {'total_samples': len(gt_list), 'field_scores': {}, 'overall_score': 0.0}
+    results: Dict[str, Any] = {
+        "total_samples": len(gt_list),
+        "field_scores": {},
+        "overall_score": 0.0,
+    }
 
     # Exclude ID fields from field_scores (but still evaluate them for detailed_results)
-    excluded_fields = {'Study Parameters ID', 'Variant Annotation ID'}
+    excluded_fields = {"Study Parameters ID", "Variant Annotation ID"}
 
     for field, evaluator in field_evaluators.items():
         scores: List[float] = []
@@ -394,36 +441,45 @@ def evaluate_study_parameters(
             scores.append(evaluator(g.get(field), p.get(field)))
         # Only include non-ID fields in field_scores for analysis/display
         if field not in excluded_fields:
-            results['field_scores'][field] = {'mean_score': sum(scores) / len(scores), 'scores': scores}
+            results["field_scores"][field] = {
+                "mean_score": sum(scores) / len(scores),
+                "scores": scores,
+            }
 
-    results['detailed_results'] = []
+    results["detailed_results"] = []
     for i, (g, p) in enumerate(zip(gt_list, pred_list)):
-        sample_result: Dict[str, Any] = {'sample_id': i, 'field_scores': {}, 'field_values': {}}
+        sample_result: Dict[str, Any] = {
+            "sample_id": i,
+            "field_scores": {},
+            "field_values": {},
+        }
         for field, evaluator in field_evaluators.items():
-            sample_result['field_scores'][field] = evaluator(g.get(field), p.get(field))
+            sample_result["field_scores"][field] = evaluator(g.get(field), p.get(field))
             # Store actual values for display
-            sample_result['field_values'][field] = {
-                'ground_truth': g.get(field),
-                'prediction': p.get(field)
+            sample_result["field_values"][field] = {
+                "ground_truth": g.get(field),
+                "prediction": p.get(field),
             }
 
         # Dependency validation
         dependency_issues = []
-        dependency_issues.extend(validate_study_parameters_dependencies(p, related_annotations))
+        dependency_issues.extend(
+            validate_study_parameters_dependencies(p, related_annotations)
+        )
         dependency_issues.extend(validate_statistical_consistency(p))
-        sample_result['dependency_issues'] = dependency_issues
+        sample_result["dependency_issues"] = dependency_issues
 
         # Track penalty information
         penalty_info = {
-            'total_penalty': 0.0,
-            'penalized_fields': {},
-            'issues_by_field': {}
+            "total_penalty": 0.0,
+            "penalized_fields": {},
+            "issues_by_field": {},
         }
 
         if dependency_issues:
             penalty_per_issue = 0.05
             total_penalty = min(len(dependency_issues) * penalty_per_issue, 0.3)
-            penalty_info['total_penalty'] = total_penalty
+            penalty_info["total_penalty"] = total_penalty
             fields_to_penalize = set()
             for issue in dependency_issues:
                 affected_fields = []
@@ -432,7 +488,11 @@ def evaluate_study_parameters(
                 elif "P value" in issue.lower() or "ratio stat" in issue.lower():
                     affected_fields = ["P Value", "Ratio Stat", "Ratio Stat Type"]
                 elif "confidence interval" in issue.lower():
-                    affected_fields = ["Confidence Interval Start", "Confidence Interval Stop", "Ratio Stat"]
+                    affected_fields = [
+                        "Confidence Interval Start",
+                        "Confidence Interval Stop",
+                        "Ratio Stat",
+                    ]
                 elif "frequency" in issue.lower():
                     affected_fields = [
                         "Frequency In Cases",
@@ -441,54 +501,56 @@ def evaluate_study_parameters(
                         "Study Controls",
                     ]
                 else:
-                    affected_fields = list(sample_result['field_scores'].keys())
+                    affected_fields = list(sample_result["field_scores"].keys())
 
                 for field in affected_fields:
                     fields_to_penalize.add(field)
-                    if field not in penalty_info['issues_by_field']:
-                        penalty_info['issues_by_field'][field] = []
-                    penalty_info['issues_by_field'][field].append(issue)
+                    if field not in penalty_info["issues_by_field"]:
+                        penalty_info["issues_by_field"][field] = []
+                    penalty_info["issues_by_field"][field].append(issue)
 
             for field in fields_to_penalize:
-                if field in sample_result['field_scores']:
-                    original_score = sample_result['field_scores'][field]
+                if field in sample_result["field_scores"]:
+                    original_score = sample_result["field_scores"][field]
                     penalized_score = original_score * (1 - total_penalty)
-                    sample_result['field_scores'][field] = penalized_score
-                    penalty_info['penalized_fields'][field] = {
-                        'original_score': original_score,
-                        'penalized_score': penalized_score,
-                        'penalty_percentage': total_penalty * 100
+                    sample_result["field_scores"][field] = penalized_score
+                    penalty_info["penalized_fields"][field] = {
+                        "original_score": original_score,
+                        "penalized_score": penalized_score,
+                        "penalty_percentage": total_penalty * 100,
                     }
 
-        sample_result['penalty_info'] = penalty_info
-        results['detailed_results'].append(sample_result)
+        sample_result["penalty_info"] = penalty_info
+        results["detailed_results"].append(sample_result)
 
     # Recalculate field_scores from detailed_results, excluding ID fields
-    excluded_fields = {'Study Parameters ID', 'Variant Annotation ID'}
+    excluded_fields = {"Study Parameters ID", "Variant Annotation ID"}
     for field in list(field_evaluators.keys()):
         if field not in excluded_fields:
-            field_scores = [s['field_scores'][field] for s in results['detailed_results']]
-            results['field_scores'][field] = {'mean_score': sum(field_scores) / len(field_scores), 'scores': field_scores}
+            field_scores = [
+                s["field_scores"][field] for s in results["detailed_results"]
+            ]
+            results["field_scores"][field] = {
+                "mean_score": sum(field_scores) / len(field_scores),
+                "scores": field_scores,
+            }
 
     # Add zero scores for unmatched ground truth annotations
     num_unmatched_gt = len(unmatched_gt)
     if num_unmatched_gt > 0:
-        for field in results['field_scores']:
-            scores = results['field_scores'][field]['scores']
+        for field in results["field_scores"]:
+            scores = results["field_scores"][field]["scores"]
             scores.extend([0.0] * num_unmatched_gt)
-            results['field_scores'][field]['mean_score'] = sum(scores) / len(scores)
-        results['total_samples'] = len(gt_list) + num_unmatched_gt
+            results["field_scores"][field]["mean_score"] = sum(scores) / len(scores)
+        results["total_samples"] = len(gt_list) + num_unmatched_gt
 
     # Compute overall score with optional field weights (ID fields already excluded from field_scores)
-    field_mean_scores = {
-        k: v['mean_score']
-        for k, v in results['field_scores'].items()
-    }
-    results['overall_score'] = compute_weighted_score(field_mean_scores, field_weights)
+    field_mean_scores = {k: v["mean_score"] for k, v in results["field_scores"].items()}
+    results["overall_score"] = compute_weighted_score(field_mean_scores, field_weights)
 
     # Add aligned variants and unmatched samples
-    results['aligned_variants'] = display_keys
-    results['unmatched_ground_truth'] = unmatched_gt
-    results['unmatched_predictions'] = unmatched_pred
+    results["aligned_variants"] = display_keys
+    results["unmatched_ground_truth"] = unmatched_gt
+    results["unmatched_predictions"] = unmatched_pred
 
     return results

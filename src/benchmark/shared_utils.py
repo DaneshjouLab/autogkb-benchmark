@@ -1,4 +1,5 @@
 """Shared utilities for benchmark evaluation functions."""
+
 from typing import Any, Optional, Dict, List
 from difflib import SequenceMatcher
 import numpy as np
@@ -23,9 +24,7 @@ def exact_match(gt_val: Any, pred_val: Any) -> float:
         return 1.0
     if gt_val is None or pred_val is None:
         return 0.0
-    return (
-        1.0 if str(gt_val).strip().lower() == str(pred_val).strip().lower() else 0.0
-    )
+    return 1.0 if str(gt_val).strip().lower() == str(pred_val).strip().lower() else 0.0
 
 
 def semantic_similarity(gt_val: Any, pred_val: Any) -> float:
@@ -70,7 +69,7 @@ def parse_numeric(value: Any) -> Optional[float]:
     if isinstance(value, (int, float)):
         return float(value)
     if isinstance(value, str):
-        cleaned = re.sub(r'[,\s$]', '', value.strip())
+        cleaned = re.sub(r"[,\s$]", "", value.strip())
         try:
             return float(cleaned)
         except ValueError:
