@@ -4,8 +4,6 @@ Goal:
 """
 
 import json
-import polars as pl
-import pyarrow.parquet as pq
 from pydantic import BaseModel
 from pathlib import Path
 from loguru import logger
@@ -21,14 +19,14 @@ class SingleArticleVariants(BaseModel):
         article_title (str): The title of the article.
         article_path (str): The path to the markdown file of the article.
         variants (list[str]): A list of processed variant strings found in the article.
-        raw_variants (list[str]): A list of raw variant strings as extracted directly from annotations.
+        raw_variants (list[list[str]]): A list of lists preserving the original groupings from annotations.
     """
     pmcid: str
-    pmid: str    
+    pmid: str
     article_title: str
     article_path: str
     variants: list[str]
-    raw_variants: list[str]
+    raw_variants: list[list[str]]
 
 def get_markdown_from_pmcid(pmcid: str) -> str:
     """
@@ -93,12 +91,15 @@ def get_file_variants(file_path: Path | str, deduplicate: bool = True, ungroup: 
     for item in data['var_fa_ann']:
         variants.append(item['Variant/Haplotypes'])
 
+    # Preserve original groupings as list of lists (split each group by comma)
+    raw_variants: list[list[str]] = [[v.strip() for v in variant.split(',')] for variant in variants]
+
     if deduplicate:
         variants = list(set(variants))
     if ungroup:
         variants = [variant.split(',') for variant in variants]
-        variants = [variant for sublist in variants for variant in sublist]
-    return SingleArticleVariants(pmcid=pmcid, pmid=pmid, article_title=article_title, article_path=article_path, variants=variants, raw_variants=variants)
+        variants = [variant.strip() for sublist in variants for variant in sublist]
+    return SingleArticleVariants(pmcid=pmcid, pmid=pmid, article_title=article_title, article_path=article_path, variants=variants, raw_variants=raw_variants)
 
 def get_dir_variants(dir_path: str, deduplicate: bool = True, ungroup: bool = True) -> list[SingleArticleVariants]:
     """
@@ -136,7 +137,7 @@ def get_dir_variants(dir_path: str, deduplicate: bool = True, ungroup: bool = Tr
             logger.warning(f"Warning: Could not process file {file}: {e}")
     return variant_list
 
-def get_benchmark_variants(save_parquet: bool = True) -> list[SingleArticleVariants]:
+def get_benchmark_variants(save_jsonl: bool = True) -> list[SingleArticleVariants]:
     """
     Retrieves and processes variants from the benchmark annotation directory.
 
@@ -144,8 +145,8 @@ def get_benchmark_variants(save_parquet: bool = True) -> list[SingleArticleVaria
     deduplicating and ungrouping variants by default.
 
     Args:
-        save_parquet (bool, optional): If True, saves the results to a parquet file
-                                       at 'data/benchmark_variants.parquet'. Defaults to True.
+        save_jsonl (bool, optional): If True, saves the results to a JSONL file
+                                     at 'data/benchmark_variants.jsonl'. Defaults to True.
 
     Returns:
         list[SingleArticleVariants]: A list of `SingleArticleVariants` objects
@@ -155,26 +156,25 @@ def get_benchmark_variants(save_parquet: bool = True) -> list[SingleArticleVaria
     logger.info(f"Loading variants from benchmark dir {benchmark_dir}")
     benchmark_variants = get_dir_variants(benchmark_dir, deduplicate=True, ungroup=True)
 
-    if save_parquet:
-        # Convert list of SingleArticleVariants to a polars DataFrame
-        df = pl.DataFrame([variant.model_dump() for variant in benchmark_variants])
-        output_path = Path("data") / "benchmark_variants.parquet"
-        # Use pyarrow for writing parquet (more reliable)
-        pq.write_table(df.to_arrow(), output_path)
+    if save_jsonl:
+        output_path = Path("data") / "benchmark_variants.jsonl"
+        with open(output_path, 'w') as f:
+            for variant in benchmark_variants:
+                f.write(json.dumps(variant.model_dump()) + '\n')
         logger.info(f"Saved {len(benchmark_variants)} articles to {output_path}")
 
     return benchmark_variants
 
 
 if __name__ == "__main__":
-    benchmark_variants = get_benchmark_variants(save_parquet=True)
+    benchmark_variants = get_benchmark_variants(save_jsonl=True)
     print(f"Found {len(benchmark_variants)} articles with variants")
 
-    # Verify the parquet file is loadable
-    table = pq.read_table("data/benchmark_variants.parquet")
-    df = pl.from_arrow(table)
-    print(f"Loaded parquet with {len(df)} rows and columns: {df.columns}")
-    print(df)
+    # Verify the JSONL file is loadable
+    with open("data/benchmark_variants.jsonl", 'r') as f:
+        loaded_variants = [json.loads(line) for line in f]
+    print(f"Loaded JSONL with {len(loaded_variants)} rows")
+    print(f"First entry: {loaded_variants[0]}")
 
 
 
