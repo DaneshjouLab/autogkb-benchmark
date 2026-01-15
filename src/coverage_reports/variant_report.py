@@ -88,7 +88,7 @@ def get_article_reports(benchmark_dir: str, proposed_dir: str) -> tuple[list[Sin
     return article_reports, benchmark_all_variants, proposed_all_variants
 
 def proposed_variant_summary(proposed_annotations_dir: str, benchmark_dir: str = "data/benchmark_annotations", run_name: str = "") -> dict[str]:
-    """Generates report for all variants in data/coverage_reports/<time-stamp>_variants_<run_name>.json"""
+    """Generates report for all variants in data/coverage_reports/variant_reports/<time-stamp>_variants_<run_name>.json"""
     article_reports, benchmark_variants, proposed_variants = get_article_reports(benchmark_dir, proposed_annotations_dir)
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     output_file_name = timestamp
