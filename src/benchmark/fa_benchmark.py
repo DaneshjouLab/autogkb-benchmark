@@ -49,7 +49,7 @@ def align_fa_annotations_by_variant(
 ) -> Tuple[
     List[Dict[str, Any]],  # aligned_gt
     List[Dict[str, Any]],  # aligned_pred
-    List[str],             # display_keys
+    List[str],  # display_keys
     List[Dict[str, Any]],  # unmatched_gt
     List[Dict[str, Any]],  # unmatched_pred
 ]:
@@ -91,15 +91,23 @@ def align_fa_annotations_by_variant(
 
         # Priority 1: Match by normalized variant_id (highest confidence)
         if gt_variant_id:
-            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(pred_index):
-                if idx not in matched_pred_indices and pred_variant_id and gt_variant_id == pred_variant_id:
+            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(
+                pred_index
+            ):
+                if (
+                    idx not in matched_pred_indices
+                    and pred_variant_id
+                    and gt_variant_id == pred_variant_id
+                ):
                     match = pred_rec
                     match_idx = idx
                     break
 
         # Priority 2: Match by rsID intersection
         if match is None and gt_rs:
-            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(pred_index):
+            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(
+                pred_index
+            ):
                 if idx not in matched_pred_indices and rsids & gt_rs:
                     match = pred_rec
                     match_idx = idx
@@ -107,7 +115,9 @@ def align_fa_annotations_by_variant(
 
         # Priority 3: Match by normalized substring
         if match is None and gt_norm:
-            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(pred_index):
+            for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(
+                pred_index
+            ):
                 if idx not in matched_pred_indices and gt_norm in raw_norm:
                     match = pred_rec
                     match_idx = idx
@@ -118,13 +128,18 @@ def align_fa_annotations_by_variant(
             aligned_pred.append(match)
             matched_pred_indices.add(match_idx)
             # Use variant_id for display if available, else rsID, else normalized string
-            disp = gt_variant_id if gt_variant_id else (next(iter(gt_rs)) if gt_rs else gt_norm)
+            disp = (
+                gt_variant_id
+                if gt_variant_id
+                else (next(iter(gt_rs)) if gt_rs else gt_norm)
+            )
             display_keys.append(disp)
 
     # Collect unmatched samples
     unmatched_gt = [rec for rec in gt_expanded if rec not in aligned_gt]
     unmatched_pred = [
-        pred_index[i][3] for i in range(len(pred_index))
+        pred_index[i][3]
+        for i in range(len(pred_index))
         if i not in matched_pred_indices
     ]
 
@@ -152,7 +167,9 @@ def evaluate_fa_from_articles(
             "status": "missing_var_fa_ann",
         }
 
-    aligned_gt, aligned_pred, display, unmatched_gt, unmatched_pred = align_fa_annotations_by_variant(gt_fa, pred_fa)
+    aligned_gt, aligned_pred, display, unmatched_gt, unmatched_pred = (
+        align_fa_annotations_by_variant(gt_fa, pred_fa)
+    )
     if not aligned_gt:
         return {
             "total_samples": 0,
@@ -180,7 +197,9 @@ def evaluate_fa_from_articles(
             results["field_scores"][field]["mean_score"] = sum(scores) / len(scores)
         results["total_samples"] = len(aligned_gt) + num_unmatched_gt
         # Recompute overall score with updated field means
-        field_mean_scores = {k: v["mean_score"] for k, v in results["field_scores"].items()}
+        field_mean_scores = {
+            k: v["mean_score"] for k, v in results["field_scores"].items()
+        }
         results["overall_score"] = compute_weighted_score(field_mean_scores, None)
 
     return results
@@ -399,7 +418,11 @@ def _evaluate_functional_analysis_pairs(
 
     results["detailed_results"] = []
     for i, (gt, pred) in enumerate(zip(gt_list, pred_list)):
-        sample_result: Dict[str, Any] = {"sample_id": i, "field_scores": {}, "field_values": {}}
+        sample_result: Dict[str, Any] = {
+            "sample_id": i,
+            "field_scores": {},
+            "field_values": {},
+        }
         for field, evaluator in field_evaluators.items():
             sample_result["field_scores"][field] = evaluator(
                 gt.get(field), pred.get(field)
@@ -407,29 +430,32 @@ def _evaluate_functional_analysis_pairs(
             # Store actual values for display
             sample_result["field_values"][field] = {
                 "ground_truth": gt.get(field),
-                "prediction": pred.get(field)
+                "prediction": pred.get(field),
             }
         dependency_issues = validate_all_dependencies(pred, study_parameters)
         sample_result["dependency_issues"] = dependency_issues
 
         # Track penalty information
         penalty_info = {
-            'total_penalty': 0.0,
-            'penalized_fields': {},
-            'issues_by_field': {}
+            "total_penalty": 0.0,
+            "penalized_fields": {},
+            "issues_by_field": {},
         }
 
         if dependency_issues:
             penalty_per_issue = 0.05
             total_penalty = min(len(dependency_issues) * penalty_per_issue, 0.3)
-            penalty_info['total_penalty'] = total_penalty
+            penalty_info["total_penalty"] = total_penalty
             fields_to_penalize = set()
             for issue in dependency_issues:
                 affected_fields = []
                 if "Gene" in issue or "gene" in issue:
                     affected_fields = ["Gene", "Gene/gene product"]
                 elif "Variant" in issue or "variant" in issue:
-                    affected_fields = ["Variant/Haplotypes", "Comparison Allele(s) or Genotype(s)"]
+                    affected_fields = [
+                        "Variant/Haplotypes",
+                        "Comparison Allele(s) or Genotype(s)",
+                    ]
                 elif "Direction" in issue or "Associated" in issue:
                     affected_fields = ["Direction of effect", "Is/Is Not associated"]
                 elif "Functional" in issue:
@@ -441,22 +467,22 @@ def _evaluate_functional_analysis_pairs(
 
                 for field in affected_fields:
                     fields_to_penalize.add(field)
-                    if field not in penalty_info['issues_by_field']:
-                        penalty_info['issues_by_field'][field] = []
-                    penalty_info['issues_by_field'][field].append(issue)
+                    if field not in penalty_info["issues_by_field"]:
+                        penalty_info["issues_by_field"][field] = []
+                    penalty_info["issues_by_field"][field].append(issue)
 
             for field in fields_to_penalize:
                 if field in sample_result["field_scores"]:
                     original_score = sample_result["field_scores"][field]
                     penalized_score = original_score * (1 - total_penalty)
                     sample_result["field_scores"][field] = penalized_score
-                    penalty_info['penalized_fields'][field] = {
-                        'original_score': original_score,
-                        'penalized_score': penalized_score,
-                        'penalty_percentage': total_penalty * 100
+                    penalty_info["penalized_fields"][field] = {
+                        "original_score": original_score,
+                        "penalized_score": penalized_score,
+                        "penalty_percentage": total_penalty * 100,
                     }
 
-        sample_result['penalty_info'] = penalty_info
+        sample_result["penalty_info"] = penalty_info
         results["detailed_results"].append(sample_result)
 
     for field in list(field_evaluators.keys()):

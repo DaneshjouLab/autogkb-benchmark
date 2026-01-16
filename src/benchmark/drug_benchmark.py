@@ -37,7 +37,9 @@ def validate_drug_dependencies(annotation: Dict[str, Any]) -> List[str]:
     multiple_drugs_op = annotation.get("Multiple drugs And/or")
     drugs = annotation.get("Drug(s)")
     if multiple_drugs_op and not drugs:
-        issues.append("Drug(s) field should be present when Multiple drugs And/or is specified")
+        issues.append(
+            "Drug(s) field should be present when Multiple drugs And/or is specified"
+        )
 
     return issues
 
@@ -88,7 +90,7 @@ def evaluate_drug_annotations(
     ) -> Tuple[
         List[Dict[str, Any]],  # aligned_gt
         List[Dict[str, Any]],  # aligned_pred
-        List[str],             # display_keys
+        List[str],  # display_keys
         List[Dict[str, Any]],  # unmatched_gt
         List[Dict[str, Any]],  # unmatched_pred
     ]:
@@ -129,15 +131,23 @@ def evaluate_drug_annotations(
 
             # Priority 1: Match by normalized variant_id (highest confidence)
             if gt_variant_id:
-                for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(pred_index):
-                    if idx not in matched_pred_indices and pred_variant_id and gt_variant_id == pred_variant_id:
+                for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(
+                    pred_index
+                ):
+                    if (
+                        idx not in matched_pred_indices
+                        and pred_variant_id
+                        and gt_variant_id == pred_variant_id
+                    ):
                         match = pred_rec
                         match_idx = idx
                         break
 
             # Priority 2: Match by rsID intersection
             if match is None and gt_rs:
-                for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(pred_index):
+                for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(
+                    pred_index
+                ):
                     if idx not in matched_pred_indices and rsids & gt_rs:
                         match = pred_rec
                         match_idx = idx
@@ -145,7 +155,9 @@ def evaluate_drug_annotations(
 
             # Priority 3: Match by normalized substring
             if match is None and gt_norm:
-                for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(pred_index):
+                for idx, (pred_variant_id, rsids, raw_norm, pred_rec) in enumerate(
+                    pred_index
+                ):
                     if idx not in matched_pred_indices and gt_norm in raw_norm:
                         match = pred_rec
                         match_idx = idx
@@ -156,20 +168,27 @@ def evaluate_drug_annotations(
                 aligned_pred.append(match)
                 matched_pred_indices.add(match_idx)
                 # Use variant_id for display if available, else rsID, else normalized string
-                disp = gt_variant_id if gt_variant_id else (next(iter(gt_rs)) if gt_rs else gt_norm)
+                disp = (
+                    gt_variant_id
+                    if gt_variant_id
+                    else (next(iter(gt_rs)) if gt_rs else gt_norm)
+                )
                 display_keys.append(disp)
 
         # Collect unmatched samples
         unmatched_gt = [rec for rec in gt_expanded if rec not in aligned_gt]
         unmatched_pred = [
-            pred_index[i][3] for i in range(len(pred_index))
+            pred_index[i][3]
+            for i in range(len(pred_index))
             if i not in matched_pred_indices
         ]
 
         return aligned_gt, aligned_pred, display_keys, unmatched_gt, unmatched_pred
 
     # Prepare lists and align
-    gt_list, pred_list, display_keys, unmatched_gt, unmatched_pred = align_by_variant(gt_list_raw, pred_list_raw)
+    gt_list, pred_list, display_keys, unmatched_gt, unmatched_pred = align_by_variant(
+        gt_list_raw, pred_list_raw
+    )
     if not gt_list:
         # nothing aligned; return empty result structure
         return {
@@ -211,7 +230,9 @@ def evaluate_drug_annotations(
                 unique.append(t)
         return unique
 
-    def variant_substring_match_with_phenotype_groups(gt_val: Any, pred_val: Any) -> float:
+    def variant_substring_match_with_phenotype_groups(
+        gt_val: Any, pred_val: Any
+    ) -> float:
         """Return 1.0 if GT substring appears in prediction (case-insensitive).
         Also accept canonical gene-phenotype group labels via category equality.
         """
@@ -328,19 +349,23 @@ def evaluate_drug_annotations(
 
     results["detailed_results"] = []
     for i, (g, p) in enumerate(zip(gt_list, pred_list)):
-        sample_result: Dict[str, Any] = {"sample_id": i, "field_scores": {}, "field_values": {}}
+        sample_result: Dict[str, Any] = {
+            "sample_id": i,
+            "field_scores": {},
+            "field_values": {},
+        }
         for field, evaluator in field_evaluators.items():
             sample_result["field_scores"][field] = evaluator(g.get(field), p.get(field))
             # Store actual values for display
             sample_result["field_values"][field] = {
                 "ground_truth": g.get(field),
-                "prediction": p.get(field)
+                "prediction": p.get(field),
             }
         sample_result["field_scores"]["Drug(s)"] = drugs_coverage(g, p)
         # Also store Drug(s) values
         sample_result["field_values"]["Drug(s)"] = {
             "ground_truth": g.get("Drug(s)"),
-            "prediction": p.get("Drug(s)")
+            "prediction": p.get("Drug(s)"),
         }
 
         # Dependency validation
@@ -349,22 +374,25 @@ def evaluate_drug_annotations(
 
         # Track penalty information
         penalty_info = {
-            'total_penalty': 0.0,
-            'penalized_fields': {},
-            'issues_by_field': {}
+            "total_penalty": 0.0,
+            "penalized_fields": {},
+            "issues_by_field": {},
         }
 
         if dependency_issues:
             penalty_per_issue = 0.05
             total_penalty = min(len(dependency_issues) * penalty_per_issue, 0.3)
-            penalty_info['total_penalty'] = total_penalty
+            penalty_info["total_penalty"] = total_penalty
             fields_to_penalize = set()
             for issue in dependency_issues:
                 affected_fields = []
                 if "Direction" in issue or "Associated" in issue:
                     affected_fields = ["Direction of effect", "Is/Is Not associated"]
                 elif "Variant" in issue or "Comparison" in issue:
-                    affected_fields = ["Variant/Haplotypes", "Comparison Allele(s) or Genotype(s)"]
+                    affected_fields = [
+                        "Variant/Haplotypes",
+                        "Comparison Allele(s) or Genotype(s)",
+                    ]
                 elif "Drug" in issue or "Multiple drugs" in issue:
                     affected_fields = ["Drug(s)"]
                 else:
@@ -372,22 +400,22 @@ def evaluate_drug_annotations(
 
                 for field in affected_fields:
                     fields_to_penalize.add(field)
-                    if field not in penalty_info['issues_by_field']:
-                        penalty_info['issues_by_field'][field] = []
-                    penalty_info['issues_by_field'][field].append(issue)
+                    if field not in penalty_info["issues_by_field"]:
+                        penalty_info["issues_by_field"][field] = []
+                    penalty_info["issues_by_field"][field].append(issue)
 
             for field in fields_to_penalize:
                 if field in sample_result["field_scores"]:
                     original_score = sample_result["field_scores"][field]
                     penalized_score = original_score * (1 - total_penalty)
                     sample_result["field_scores"][field] = penalized_score
-                    penalty_info['penalized_fields'][field] = {
-                        'original_score': original_score,
-                        'penalized_score': penalized_score,
-                        'penalty_percentage': total_penalty * 100
+                    penalty_info["penalized_fields"][field] = {
+                        "original_score": original_score,
+                        "penalized_score": penalized_score,
+                        "penalty_percentage": total_penalty * 100,
                     }
 
-        sample_result['penalty_info'] = penalty_info
+        sample_result["penalty_info"] = penalty_info
         results["detailed_results"].append(sample_result)
 
     for field in list(field_evaluators.keys()) + ["Drug(s)"]:
