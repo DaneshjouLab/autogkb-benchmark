@@ -1,0 +1,160 @@
+"""
+Functions:
+- (proposed_variants: list[str], true_variants: list[str]) -> VariantBenchResult
+- (proposed_variants: list[str], pmcid: str) -> VariantBenchResult. Get's the true variants using the pmcid from data/benchmarks/variant_bench.jsonl
+- main function that tests this using the variant_bench.jsonl file for reference and some dummy proposed variants
+
+Currently uses exact matching, but could be extended to use fuzzy matching or other similarity metrics.
+"""
+
+import json
+from dataclasses import dataclass
+from pathlib import Path
+
+
+@dataclass
+class VariantBenchResult:
+    pmcid: str
+    match_rate: float
+    missed_variants: list[str]
+    matches: list[str]
+    mismatches: list[str]
+
+
+def load_variant_bench_data() -> dict[str, list[str]]:
+    """Load the variant benchmark data from the jsonl file.
+
+    Returns:
+        dict mapping pmcid to list of true variants
+    """
+    data_path = (
+        Path(__file__).parent.parent.parent
+        / "data"
+        / "benchmarks"
+        / "variant_bench.jsonl"
+    )
+    pmcid_to_variants: dict[str, list[str]] = {}
+
+    with open(data_path) as f:
+        for line in f:
+            record = json.loads(line)
+            pmcid_to_variants[record["pmcid"]] = record["variants"]
+
+    return pmcid_to_variants
+
+
+def score_variants(
+    proposed_variants: list[str],
+    true_variants: list[str],
+    pmcid: str = "",
+) -> VariantBenchResult:
+    """Score proposed variants against true variants.
+
+    Args:
+        proposed_variants: List of variant identifiers proposed by the model
+        true_variants: List of true variant identifiers (ground truth)
+        pmcid: Optional PMCID for the result
+
+    Returns:
+        VariantBenchResult with match statistics
+    """
+    proposed_set = {variant.strip().lower() for variant in proposed_variants}
+    true_set = {variant.strip().lower() for variant in true_variants}
+
+    matches = list(proposed_set & true_set)
+    mismatches = list(proposed_set - true_set)
+    missed_variants = list(true_set - proposed_set)
+
+    if len(true_set) > 0:
+        match_rate = len(matches) / len(true_set)
+    else:
+        match_rate = 1.0 if len(proposed_set) == 0 else 0.0
+
+    return VariantBenchResult(
+        pmcid=pmcid,
+        match_rate=match_rate,
+        missed_variants=missed_variants,
+        matches=matches,
+        mismatches=mismatches,
+    )
+
+
+def score_variants_by_pmcid(
+    proposed_variants: list[str],
+    pmcid: str,
+) -> VariantBenchResult:
+    """Score proposed variants against true variants looked up by PMCID.
+
+    Args:
+        proposed_variants: List of variant identifiers proposed by the model
+        pmcid: PMCID to look up true variants from variant_bench.jsonl
+
+    Returns:
+        VariantBenchResult with match statistics
+
+    Raises:
+        KeyError: If the pmcid is not found in the benchmark data
+    """
+    data = load_variant_bench_data()
+
+    if pmcid not in data:
+        raise KeyError(f"PMCID {pmcid} not found in variant benchmark data")
+
+    true_variants = data[pmcid]
+    return score_variants(proposed_variants, true_variants, pmcid)
+
+
+def main():
+    """Test the variant scoring functions using the benchmark data."""
+    data = load_variant_bench_data()
+
+    # Get the first entry from the benchmark data for testing
+    test_pmcid = "PMC5508045"
+    true_variants = data[test_pmcid]
+
+    print(f"Testing with PMCID: {test_pmcid}")
+    print(f"True variants: {true_variants}")
+
+    # Test case 1: Perfect match
+    print("\n--- Test 1: Perfect match ---")
+    proposed_variants = true_variants
+    result = score_variants(proposed_variants, true_variants, test_pmcid)
+    print(f"Proposed: {proposed_variants}")
+    print(f"Match rate: {result.match_rate:.2%}")
+    print(f"Matches: {result.matches}")
+    print(f"Mismatches: {result.mismatches}")
+    print(f"Missed: {result.missed_variants}")
+
+    # Test case 2: Partial match with some correct, some wrong, some missing
+    print("\n--- Test 2: Partial match ---")
+    proposed = ["rs9923231", "rs887829", "rs12345678"]  # 2 correct, 1 wrong
+    result = score_variants(proposed, true_variants, test_pmcid)
+    print(f"Proposed: {proposed}")
+    print(f"Match rate: {result.match_rate:.2%}")
+    print(f"Matches: {result.matches}")
+    print(f"Mismatches: {result.mismatches}")
+    print(f"Missed: {result.missed_variants}")
+
+    # Test case 3: Using score_variants_by_pmcid
+    print("\n--- Test 3: Score by PMCID ---")
+    proposed = ["rs9923231", "rs1057910", "rs2108622", "rs887829"]
+    result = score_variants_by_pmcid(proposed, test_pmcid)
+    print(f"Proposed: {proposed}")
+    print(f"Match rate: {result.match_rate:.2%}")
+    print(f"Matches: {result.matches}")
+    print(f"Mismatches: {result.mismatches}")
+    print(f"Missed: {result.missed_variants}")
+
+    # Test case 4: No matches
+    print("\n--- Test 4: No matches ---")
+    proposed = ["rs00000000", "rs11111111"]
+    result = score_variants_by_pmcid(proposed, test_pmcid)
+    print(f"Proposed: {proposed}")
+    print(f"Match rate: {result.match_rate:.2%}")
+    print(f"Matches: {result.matches}")
+    print(f"Mismatches: {result.mismatches}")
+    print(f"Missed: {result.missed_variants}")
+
+
+if __name__ == "__main__":
+    main()

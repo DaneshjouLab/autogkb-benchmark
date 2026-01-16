@@ -9,8 +9,9 @@ platforms = ["osx-64", "linux-64"]
 setup-repo = "pixi install && pixi run setup-data"
 setup-data = "python -m src.data_setup.main"
 benchmark = "python -m src.benchmark.run_benchmark --save_analysis"
-variant-bench = "python -m src.coverage.variant_report"
 variant-setup = "python -m src.data_setup.variant_bench_table"
+variants = "python -m src.benchmarkv2.variant_bench"
+
 
 [dependencies]
 seaborn = ">=0.13.2,<0.14"
