@@ -261,7 +261,7 @@ def score_generated_variants(
 
     Args:
         generated_variants_path: Path to the JSON file containing generated variants.
-            Expected format: {pmcid: {variants: [...]}, ...}
+            Expected format: {pmcid: [...], ...}
             e.g., "data/benchmarks/generated_variants/example.json"
         run_name: Name for this run. Defaults to the generated_variants_path filename.
 
@@ -307,10 +307,10 @@ def score_generated_variants(
 
     # Score each PMCID entry (skip non-PMCID keys like run_name)
     per_pmcid_scores = []
-    for pmcid, entry in generated_data.items():
+    for pmcid, variants in generated_data.items():
         if not pmcid.startswith("PMC"):
             continue
-        proposed_variants = entry.get("variants", [])
+        proposed_variants = variants if isinstance(variants, list) else []
         try:
             result = score_variants_by_pmcid(proposed_variants, pmcid)
             per_pmcid_scores.append(
