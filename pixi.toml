@@ -11,6 +11,7 @@ setup-data = "python -m src.data_setup.main"
 benchmark = "python -m src.benchmark.run_benchmark --save_analysis"
 variant-setup = "python -m src.data_setup.variant_bench_table"
 variants = "python -m src.benchmarkv2.variant_bench"
+fields = "python -m src.benchmarkv2.field_extractor"
 
 
 [dependencies]

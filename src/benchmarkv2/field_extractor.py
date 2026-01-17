@@ -6,9 +6,9 @@ function: (proposed_annotation: str | Path to json file (ex. data/proposed_annot
 """
 
 
+import json
 from enum import Enum
 from pydantic import BaseModel
-import json
 
 
 class FieldTypes(Enum):
@@ -31,7 +31,7 @@ def null_to_empty(value: str | None) -> str:
 
 def fields_from_file(file_path: str, field_type: str) -> SingleArticleFields:
     """Gets all the (unique) mentioned drugs in a file"""
-    if field_type not in FieldTypes.__members__:
+    if field_type not in [ft.value for ft in FieldTypes]:
         raise ValueError(f"Invalid field type: {field_type}")
 
     # from json file, extract all the drugs from variant/drug annotations
@@ -48,10 +48,21 @@ def fields_from_file(file_path: str, field_type: str) -> SingleArticleFields:
 
     field_key = field_map[field_type]
     for item in data.get("var_drug_ann", []) or []:
-        fields.append(null_to_empty(item[field_key]))
+        value = null_to_empty(item.get(field_key))
+        if value:
+            fields.append(value)
     for item in data.get("var_pheno_ann", []) or []:
-        fields.append(null_to_empty(item[field_key]))
+        value = null_to_empty(item.get(field_key))
+        if value:
+            fields.append(value)
     for item in data.get("var_fa_ann", []) or []:
-        fields.append(null_to_empty(item[field_key]))
+        value = null_to_empty(item.get(field_key))
+        if value:
+            fields.append(value)
 
-    return SingleArticleFields(pmcid=pmcid, type=FieldTypes[field_type], fields=fields)
+    return SingleArticleFields(pmcid=pmcid, type=FieldTypes(field_type), fields=fields)
+
+if __name__ == "__main__":
+    print(fields_from_file("data/proposed_annotations/PMC384715.json", "drug"))
+    print(fields_from_file("data/proposed_annotations/PMC384715.json", "variant"))
+    print(fields_from_file("data/proposed_annotations/PMC384715.json", "phenotype"))
