@@ -21,12 +21,13 @@ class VariantBenchResult:
     matches: list[str]
     extras: list[str]
 
+
 def load_pmcid_title(pmcid: str) -> str:
     """Load the title of an article given its PMCID.
-    
+
     Args:
         pmcid: PMCID of the article
-        
+
     Returns:
         Title of the article
     """
@@ -42,6 +43,7 @@ def load_pmcid_title(pmcid: str) -> str:
             if record["pmcid"] == pmcid:
                 return record["article_title"]
     return ""
+
 
 def load_variant_bench_data() -> dict[str, list[str]]:
     """Load the variant benchmark data from the jsonl file.
@@ -153,6 +155,7 @@ def score_annotation(proposed_annotation_path: str) -> VariantBenchResult:
     # Score against the true variants from benchmark data
     return score_variants_by_pmcid(proposed_variants, pmcid)
 
+
 def score_all_annotations(
     annotations_dir: str | Path = "data/proposed_annotations",
     output_path: str | Path | None = None,
@@ -209,14 +212,16 @@ def score_all_annotations(
     for annotation_file in sorted(annotations_dir.glob("*.json")):
         try:
             result = score_annotation(str(annotation_file))
-            per_annotation_scores.append({
-                "pmcid": result.pmcid,
-                "title": result.title,
-                "match_rate": result.match_rate,
-                "matches": result.matches,
-                "misses": result.misses,
-                "extras": result.extras,
-            })
+            per_annotation_scores.append(
+                {
+                    "pmcid": result.pmcid,
+                    "title": result.title,
+                    "match_rate": result.match_rate,
+                    "matches": result.matches,
+                    "misses": result.misses,
+                    "extras": result.extras,
+                }
+            )
         except KeyError as e:
             print(f"Warning: Skipping {annotation_file.name} - {e}")
             continue
@@ -246,6 +251,7 @@ def score_all_annotations(
     print(f"Scored {len(per_annotation_scores)} annotations")
 
     return results
+
 
 def score_generated_variants(
     generated_variants_path: str | Path,
@@ -307,14 +313,16 @@ def score_generated_variants(
         proposed_variants = entry.get("variants", [])
         try:
             result = score_variants_by_pmcid(proposed_variants, pmcid)
-            per_pmcid_scores.append({
-                "pmcid": result.pmcid,
-                "title": result.title,
-                "match_rate": result.match_rate,
-                "matches": result.matches,
-                "misses": result.misses,
-                "extras": result.extras,
-            })
+            per_pmcid_scores.append(
+                {
+                    "pmcid": result.pmcid,
+                    "title": result.title,
+                    "match_rate": result.match_rate,
+                    "matches": result.matches,
+                    "misses": result.misses,
+                    "extras": result.extras,
+                }
+            )
         except KeyError as e:
             print(f"Warning: Skipping {pmcid} - {e}")
             continue
