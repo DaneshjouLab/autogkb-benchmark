@@ -1,0 +1,1210 @@
+{
+  "pmcid": "PMC3839910",
+  "pmid": "23588310",
+  "title": "HLA-A*31:01 and HLA-B*15:02 as genetic markers for carbamazepine hypersensitivity in children",
+  "overall_score": 0.2396858867075708,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 3,
+        "items": [
+          {
+            "variant": "HLA-A*31:01",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Significantly associated with HSS (OR: 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037).",
+              "Sentence": "HLA-A*31:01 is associated with increased hypersensitivity reactions carbamazepine in children with diverse ancestries.",
+              "Alleles": "HLA-A*31:01",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "Specialty Population": "Pediatric",
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Side Effect:Hypersensitivity",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Citations": [
+                "HLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037)",
+                "This study aimed to address these gaps by investigating HLA-B*15:02 and HLA-A*31:01, two important pharmacogenetic markers with consistent evidence from adult-based studies, in Canadian children with diverse ancestries.",
+                "We replicated important associations of two genetic risk factors, HLA-B*15:02 and HLA-A*31:01, in pediatric patients."
+              ]
+            }
+          },
+          {
+            "variant": "HLA-B*15:02",
+            "gene": "HLA-B",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "carbamazepine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Associated with SJS (OR: 38.6, p=0.002).",
+              "Sentence": "HLA-B*15:02 is associated with increased risk of Stevens-Johnson syndrome carbamazepine in children of Asian origin.",
+              "Alleles": "HLA-B*15:02",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "Specialty Population": "Pediatric",
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Side Effect:Stevens-Johnson syndrome",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Citations": [
+                "HLA-B*15:02 was associated with CBZ-SJS (OR: 38.6, p=0.002)\".",
+                "Three of the nine patients with CBZ-SJS/TEN were carriers of HLA-B*15:02, resulting in a significant association of HLA-B*15:02 with CBZ-SJS/TEN (OR: 38.6; P=0.002; [Table 2](#T2)).",
+                "All three HLA-B*15:02-positive patients with CBZ-SJS/TEN were of Asian origin."
+              ]
+            }
+          },
+          {
+            "variant": "rs1061235",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant/Haplotypes": "rs1061235",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Strong association with CBZ-HSS (OR: 26.4, P=0.0025) and MPE (OR: 8.6, P=0.0037) also observed.",
+              "Sentence": "The rs1061235 T allele is associated with increased hypersensitivity reactions carbamazepine in children with diverse ancestries.",
+              "Alleles": "rs1061235 T",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "Specialty Population": "Pediatric",
+              "Population types": "in children with",
+              "Population Phenotypes or diseases": "Side Effect:Hypersensitivity",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Citations": [
+                "HLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037)",
+                "Overall, 20 (15%) children treated with CBZ carried the T allele of rs1061235... HLA-A*31:01 was not observed in any of the children not carrying rs1061235T.",
+                "...rs1061235 was also overrepresented in hypersensitivity cases after excluding HLA-A*31:01-positive children (OR: 5.83; P=0.033)"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.3158402227693134,
+      "total_samples": 6,
+      "ground_truth_annotations": {
+        "count": 6,
+        "matched_count": 2,
+        "unmatched_count": 4,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.998588365316391,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "carbamazepine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*15:02",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Disease:Stevens-Johnson Syndrome",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-B*15:02",
+                "prediction": "HLA-B*15:02",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-B",
+                "prediction": "HLA-B",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "carbamazepine",
+                "prediction": "carbamazepine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*15:02",
+                "prediction": "*15:02",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Disease:Stevens-Johnson Syndrome",
+                "prediction": "Stevens-Johnson Syndrome",
+                "score": 0.9858836531639099,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8884364366531372,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*31:01",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Disease:Stevens-Johnson Syndrome",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-A*31:01",
+                "prediction": "HLA-A*31:01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-A",
+                "prediction": "HLA-A",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "carbamazepine",
+                "prediction": "carbamazepine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*31:01",
+                "prediction": "*31:01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Not associated with",
+                "prediction": "Associated with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Disease:Stevens-Johnson Syndrome",
+                "prediction": "hypersensitivity syndrome",
+                "score": 0.8843643665313721,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 994531642,
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": null,
+              "Sentence": "HLA-B *15:02 is not associated with increased risk of Maculopapular Exanthema when treated with carbamazepine in children.",
+              "Alleles": "*15:02",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Disease:Maculopapular Exanthema",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children",
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "994531642"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 993813998,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": null,
+              "Sentence": "HLA-A *31:01 is associated with increased risk of Maculopapular Exanthema when treated with carbamazepine in children.",
+              "Alleles": "*31:01",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Disease:Maculopapular Exanthema",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children",
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "993813998"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 992282434,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": null,
+              "Sentence": "HLA-A *31:01 is associated with increased risk of Carbamazepine-induced hypersensitivity syndrome when treated with carbamazepine in children.",
+              "Alleles": "*31:01",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Carbamazepine-induced hypersensitivity syndrome",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children",
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "992282434"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 994398056,
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "carbamazepine",
+              "PMID": 23588310,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": null,
+              "Sentence": "HLA-B *15:02 is not associated with increased risk of Carbamazepine-induced hypersensitivity syndrome (HSS) when treated with carbamazepine in children.",
+              "Alleles": "*15:02",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Carbamazepine-induced hypersensitivity syndrome (HSS)",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in children",
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23588310",
+              "Variant Annotation ID_norm": "994398056"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.724669099383884,
+      "total_samples": 6,
+      "ground_truth_annotations": {
+        "count": 6,
+        "matched_count": 6,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.7598417120821336,
+            "annotation": {
+              "Study Parameters ID": 993728141,
+              "Variant Annotation ID": 992282434,
+              "Study Type": "case/control",
+              "Study Cases": 42.0,
+              "Study Controls": 91.0,
+              "Characteristics": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.0025",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 26.4,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 993728141,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 992282434,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 42.0,
+                "prediction": 42,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": 91.0,
+                "prediction": 91,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+                "prediction": "Children with carbamazepine hypersensitivity reactions",
+                "score": 0.9173091053962708,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.0025",
+                "prediction": "= 0.0025",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 26.4,
+                "prediction": 26.4,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": 2.53,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": 307.89,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7183408975601197,
+            "annotation": {
+              "Study Parameters ID": 993818102,
+              "Variant Annotation ID": 993813998,
+              "Study Type": "case/control",
+              "Study Cases": 42.0,
+              "Study Controls": 91.0,
+              "Characteristics": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.0037",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 8.6,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 993818102,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 993813998,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 42.0,
+                "prediction": 42,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": 91.0,
+                "prediction": 91,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+                "prediction": "All CBZ cases",
+                "score": 0.9117952585220337,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.0037",
+                "prediction": "= 2.6x10^\u22124",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 8.6,
+                "prediction": 8.14,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": 2.25,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": 37.34,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7007010333678302,
+            "annotation": {
+              "Study Parameters ID": 994166721,
+              "Variant Annotation ID": 994166507,
+              "Study Type": "case/control",
+              "Study Cases": 42.0,
+              "Study Controls": 91.0,
+              "Characteristics": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.002",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 38.6,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 994166721,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 994166507,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 42.0,
+                "prediction": 9,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 91.0,
+                "prediction": 91,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+                "prediction": "Children with CBZ-SJS/TEN",
+                "score": 0.9119175672531128,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.002",
+                "prediction": "= 0.002",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 38.6,
+                "prediction": 38.6,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": 2.68,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": 2239.5,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6123072680305032,
+            "annotation": {
+              "Study Parameters ID": 994531644,
+              "Variant Annotation ID": 994531642,
+              "Study Type": "case/control",
+              "Study Cases": 42.0,
+              "Study Controls": 91.0,
+              "Characteristics": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 1.0",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.09,
+              "Confidence Interval Start": 0.04,
+              "Confidence Interval Stop": 27.5,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 994531644,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 994531642,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 42.0,
+                "prediction": 32,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 91.0,
+                "prediction": 91,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+                "prediction": "Children with hypersensitivity reactions",
+                "score": 0.9092235565185547,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 1.0",
+                "prediction": "= 2.6x10^\u22124",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 1.09,
+                "prediction": 11.2,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 0.04,
+                "prediction": 2.53,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 27.5,
+                "prediction": 69.27,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6091329805991229,
+            "annotation": {
+              "Study Parameters ID": 993944507,
+              "Variant Annotation ID": 993944301,
+              "Study Type": "case/control",
+              "Study Cases": 42.0,
+              "Study Controls": 91.0,
+              "Characteristics": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 1.0",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.33,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 993944507,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 993944301,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 42.0,
+                "prediction": 26,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 91.0,
+                "prediction": 91,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+                "prediction": "Children with maculopapular exanthems",
+                "score": 0.8552606701850891,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 1.0",
+                "prediction": "= 0.0037",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 1.33,
+                "prediction": 8.6,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": 1.67,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": 57.5,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.43615957568673525,
+            "annotation": {
+              "Study Parameters ID": 994398281,
+              "Variant Annotation ID": 994398056,
+              "Study Type": "case/control",
+              "Study Cases": 42.0,
+              "Study Controls": 91.0,
+              "Characteristics": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 1.0",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 4.44,
+              "Confidence Interval Start": 0.16,
+              "Confidence Interval Stop": 120.0,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 994398281,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 994398056,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 42.0,
+                "prediction": 20,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 91.0,
+                "prediction": 65,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "pediatric patients from North America with a diverse ethnic background, 42 children with CBZ hypersensitivity and 91 CBZ-tolerant children from across Canada.",
+                "prediction": "European CBZ cases",
+                "score": 0.9147127866744995,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 1.0",
+                "prediction": "= 0.025",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 4.44,
+                "prediction": 7.62,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 0.16,
+                "prediction": 0.99,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 120.0,
+                "prediction": 91.4,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "European",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    }
+  }
+}

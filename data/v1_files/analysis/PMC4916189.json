@@ -1,0 +1,1731 @@
+{
+  "pmcid": "PMC4916189",
+  "pmid": "26715213",
+  "title": "Comprehensive Pharmacokinetic, Pharmacodynamic and Pharmacogenetic Evaluation of Once-Daily Efavirenz 400 and 600 mg in Treatment-Nai\u0308ve HIV-Infected Patients at 96 Weeks: Results of the ENCORE1 Study",
+  "overall_score": 0.3047649766270603,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 10,
+        "items": [
+          {
+            "variant": "CYP2B6",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Lower risk of CNS-related adverse events was associated with CYP2B6 983TC/CC (OR 0.35, 95 % CI 0.15-0.81, p = 0.015).",
+              "Sentence": "CYP2B6 983TC/CC is associated with decreased CNS-related adverse events efavirenz treated individuals.",
+              "Alleles": "TC/CC",
+              "Metabolizer types": "intermediate metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "CNS-related adverse events",
+              "Multiple drugs And/or": "",
+              "Population types": "",
+              "Population Phenotypes or diseases": "",
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6 983TT",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Lower risk of CNS-related adverse events was associated with CYP2B6 983TC/CC (OR 0.35, 95 % CI 0.15-0.81, p = 0.015) and higher risk was associated with CYP2B6 15582CT/TT and ABCB1 3435TT (OR 1.46, 95 % CI 1.02-2.09, p = 0.040; OR 2.31, 95 % CI 1.33-4.02, p = 0.003, respectively).",
+                "A decreased risk of CNS adverse events (Stocrin\u00ae product information) was associated with CYP2B6 983TC or CC carriers (OR 0.30, 95 % CI 0.12-0.75, p = 0.010) but an increased risk in patients with CYP2B6 15582CT or TT and ABCB1 3435TT carriers was observed (OR 1.59, 95 % CI 1.11-2.27, p = 0.011; and OR 2.14, 95 % CI 1.25-3.67, p = 0.006, respectively)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "983TC/CC",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "983TC/CC",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Lower risk of CNS-related adverse events was associated with CYP2B6 983TC/CC (OR 0.35, 95 % CI 0.15-0.81, p = 0.015).",
+              "Sentence": "CYP2B6 983TC/CC is associated with decreased CNS-related adverse events efavirenz treated individuals.",
+              "Alleles": "TC/CC",
+              "Metabolizer types": "intermediate metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "CNS-related adverse events",
+              "Multiple drugs And/or": "",
+              "Population types": "",
+              "Population Phenotypes or diseases": "",
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6 983TT",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Lower risk of CNS-related adverse events was associated with CYP2B6 983TC/CC (OR 0.35, 95 % CI 0.15-0.81, p = 0.015) and higher risk was associated with CYP2B6 15582CT/TT and ABCB1 3435TT (OR 1.46, 95 % CI 1.02-2.09, p = 0.040; OR 2.31, 95 % CI 1.33-4.02, p = 0.003, respectively).",
+                "A decreased risk of CNS adverse events (Stocrin\u00ae product information) was associated with CYP2B6 983TC or CC carriers (OR 0.30, 95 % CI 0.12-0.75, p = 0.010) but an increased risk in patients with CYP2B6 15582CT or TT and ABCB1 3435TT carriers was observed (OR 1.59, 95 % CI 1.11-2.27, p = 0.011; and OR 2.14, 95 % CI 1.25-3.67, p = 0.006, respectively)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2B6",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Higher risk of CNS-related adverse events was associated with CYP2B6 15582CT/TT (OR 1.46, 95 % CI 1.02-2.09, p = 0.040).",
+              "Sentence": "CYP2B6 15582CT/TT is associated with increased CNS-related adverse events efavirenz treated individuals.",
+              "Alleles": "CT/TT",
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "CNS-related adverse events",
+              "Multiple drugs And/or": "",
+              "Population types": "",
+              "Population Phenotypes or diseases": "",
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6 15582CC",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "higher risk was associated with CYP2B6 15582CT/TT and ABCB1 3435TT (OR 1.46, 95 % CI 1.02-2.09, p = 0.040; OR 2.31, 95 % CI 1.33-4.02, p = 0.003, respectively)",
+                "CNS adverse events were similar between doses (42 % EFV400 vs. 46 % EFV600, p = 0.287)",
+                "A higher rate of EFV-related adverse events and discontinuations due to these events for EFV600 were not driven by polymorphisms assessed."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "15582CT/TT",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "15582CT/TT",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Higher risk of CNS-related adverse events was associated with CYP2B6 15582CT/TT (OR 1.46, 95 % CI 1.02-2.09, p = 0.040).",
+              "Sentence": "CYP2B6 15582CT/TT is associated with increased CNS-related adverse events efavirenz treated individuals.",
+              "Alleles": "CT/TT",
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "CNS-related adverse events",
+              "Multiple drugs And/or": "",
+              "Population types": "",
+              "Population Phenotypes or diseases": "",
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6 15582CC",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "higher risk was associated with CYP2B6 15582CT/TT and ABCB1 3435TT (OR 1.46, 95 % CI 1.02-2.09, p = 0.040; OR 2.31, 95 % CI 1.33-4.02, p = 0.003, respectively)",
+                "CNS adverse events were similar between doses (42 % EFV400 vs. 46 % EFV600, p = 0.287)",
+                "A higher rate of EFV-related adverse events and discontinuations due to these events for EFV600 were not driven by polymorphisms assessed."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "ABCB1",
+            "gene": "ABCB1",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "ABCB1",
+              "Gene": "ABCB1",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Higher risk of CNS-related adverse events was associated with ABCB1 3435TT (OR 2.31, 95 % CI 1.33-4.02, p = 0.003).",
+              "Sentence": "ABCB1 3435TT is associated with increased CNS-related adverse events efavirenz treated individuals.",
+              "Alleles": "TT",
+              "Metabolizer types": "",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "CNS-related adverse events",
+              "Multiple drugs And/or": "",
+              "Population types": "",
+              "Population Phenotypes or diseases": "",
+              "Comparison Allele(s) or Genotype(s)": "ABCB1 3435CC",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "...higher risk was associated with CYP2B6 15582CT/TT and ABCB1 3435TT (OR 1.46, 95 % CI 1.02-2.09, p = 0.040; OR 2.31, 95 % CI 1.33-4.02, p = 0.003, respectively).",
+                "CNS adverse events were similar between doses (42 % EFV400 vs. 46 % EFV600, p = 0.287).",
+                "Despite concerns regarding lower plasma concentrations obtained with efavirenz 400 mg (EFV400) compared with 600 mg (EFV600) in ENCORE1, virological efficacy was not compromised..."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "3435TT",
+            "gene": "ABCB1",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "3435TT",
+              "Gene": "ABCB1",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Higher risk of CNS-related adverse events was associated with ABCB1 3435TT (OR 2.31, 95 % CI 1.33-4.02, p = 0.003).",
+              "Sentence": "ABCB1 3435TT is associated with increased CNS-related adverse events efavirenz treated individuals.",
+              "Alleles": "TT",
+              "Metabolizer types": "",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "CNS-related adverse events",
+              "Multiple drugs And/or": "",
+              "Population types": "",
+              "Population Phenotypes or diseases": "",
+              "Comparison Allele(s) or Genotype(s)": "ABCB1 3435CC",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "...higher risk was associated with CYP2B6 15582CT/TT and ABCB1 3435TT (OR 1.46, 95 % CI 1.02-2.09, p = 0.040; OR 2.31, 95 % CI 1.33-4.02, p = 0.003, respectively).",
+                "CNS adverse events were similar between doses (42 % EFV400 vs. 46 % EFV600, p = 0.287).",
+                "Despite concerns regarding lower plasma concentrations obtained with efavirenz 400 mg (EFV400) compared with 600 mg (EFV600) in ENCORE1, virological efficacy was not compromised..."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2B6",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Possession of the CYP2B6 516GT and TT variants and CYP2A6*9B CA/AA carriers was associated with a higher risk of overall EFV discontinuation (80, 166 and 100 %, respectively).",
+              "Sentence": "CYP2B6 516GT/TT is associated with increased risk of discontinuation of efavirenz in HIV-infected individuals.",
+              "Alleles": "GT/TT",
+              "Metabolizer types": "extensive metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "discontinuation",
+              "Multiple drugs And/or": "",
+              "Population types": "",
+              "Population Phenotypes or diseases": "",
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6 516GG",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Possession of the CYP2B6 516GT and TT variants and CYP2A6*9B CA/AA carriers was associated with a higher risk of overall EFV discontinuation (80, 166 and 100 %, respectively).",
+                "Following adjustment for age, sex and dose, and stratifying by country, CYP2B6 516GT, TT and CYP2A6*9B heterozygote or homozygous variant (CA or AA) patients had an 80, 166 and 100 % increased risk of overall discontinuation, respectively."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "516GT/TT",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "516GT/TT",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Possession of the CYP2B6 516GT and TT variants and CYP2A6*9B CA/AA carriers was associated with a higher risk of overall EFV discontinuation (80, 166 and 100 %, respectively).",
+              "Sentence": "CYP2B6 516GT/TT is associated with increased risk of discontinuation of efavirenz in HIV-infected individuals.",
+              "Alleles": "GT/TT",
+              "Metabolizer types": "extensive metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "discontinuation",
+              "Multiple drugs And/or": "",
+              "Population types": "",
+              "Population Phenotypes or diseases": "",
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6 516GG",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Possession of the CYP2B6 516GT and TT variants and CYP2A6*9B CA/AA carriers was associated with a higher risk of overall EFV discontinuation (80, 166 and 100 %, respectively).",
+                "Following adjustment for age, sex and dose, and stratifying by country, CYP2B6 516GT, TT and CYP2A6*9B heterozygote or homozygous variant (CA or AA) patients had an 80, 166 and 100 % increased risk of overall discontinuation, respectively."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "NR1I2",
+            "gene": "NR1I2",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "NR1I2",
+              "Gene": "NR1I2",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "NR1I2 63396TT carriers were at decreased risk of discontinuation by 22 %.",
+              "Sentence": "NR1I2 63396TT is associated with decreased risk of discontinuation of efavirenz in HIV-infected individuals.",
+              "Alleles": "TT",
+              "Metabolizer types": "",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "discontinuation",
+              "Multiple drugs And/or": "",
+              "Population types": "",
+              "Population Phenotypes or diseases": "",
+              "Comparison Allele(s) or Genotype(s)": "NR1I2 63396CC",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Posession of the CYP2B6 516GT and TT variants and CYP2A6*9B CA/AA carriers was associated with a higher risk of overall EFV discontinuation (80, 166 and 100 %, respectively), whereas NR1I2 63396TT carriers were at decreased risk (22 %).",
+                "Following adjustment for age, sex and dose, and stratifying by country, CYP2B6 516GT, TT and CYP2A6*9B heterozygote or homozygous variant (CA or AA) patients had an 80, 166 and 100 % increased risk of overall discontinuation, respectively, whereas NR1I2 63396TT carriers had a 22 % reduced risk."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "63396TT",
+            "gene": "NR1I2",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "63396TT",
+              "Gene": "NR1I2",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "NR1I2 63396TT carriers were at decreased risk of discontinuation by 22 %.",
+              "Sentence": "NR1I2 63396TT is associated with decreased risk of discontinuation of efavirenz in HIV-infected individuals.",
+              "Alleles": "TT",
+              "Metabolizer types": "",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "discontinuation",
+              "Multiple drugs And/or": "",
+              "Population types": "",
+              "Population Phenotypes or diseases": "",
+              "Comparison Allele(s) or Genotype(s)": "NR1I2 63396CC",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Posession of the CYP2B6 516GT and TT variants and CYP2A6*9B CA/AA carriers was associated with a higher risk of overall EFV discontinuation (80, 166 and 100 %, respectively), whereas NR1I2 63396TT carriers were at decreased risk (22 %).",
+                "Following adjustment for age, sex and dose, and stratifying by country, CYP2B6 516GT, TT and CYP2A6*9B heterozygote or homozygous variant (CA or AA) patients had an 80, 166 and 100 % increased risk of overall discontinuation, respectively, whereas NR1I2 63396TT carriers had a 22 % reduced risk."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.7130261125663916,
+      "total_samples": 8,
+      "ground_truth_annotations": {
+        "count": 8,
+        "matched_count": 7,
+        "unmatched_count": 1,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.7764724314212799,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6*1",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*9",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Efficacy:Discontinuation",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2B6*1",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "efavirenz",
+                "prediction": "efavirenz",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "dosage",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Alleles": {
+                "ground_truth": "*9",
+                "prediction": "GT/TT",
+                "score": 0.8314046263694763,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Efficacy:Discontinuation",
+                "prediction": "overall discontinuation",
+                "score": 0.9333196878433228,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7700040280818939,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6*1",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*9",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Efficacy:Discontinuation",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2B6*1",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "efavirenz",
+                "prediction": "efavirenz",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "toxicity",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Alleles": {
+                "ground_truth": "*9",
+                "prediction": "CT/TT",
+                "score": 0.8348969221115112,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Efficacy:Discontinuation",
+                "prediction": "CNS-related adverse events",
+                "score": 0.865143358707428,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7888509273529053,
+            "annotation": {
+              "Variant/Haplotypes": "rs4803419",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "CT + TT",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Central Nervous System Disorder",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "CC"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs4803419",
+                "prediction": "15582CT/TT",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "efavirenz",
+                "prediction": "efavirenz",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "CT + TT",
+                "prediction": "CT/TT",
+                "score": 0.9514200687408447,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Central Nervous System Disorder",
+                "prediction": "CNS-related adverse events",
+                "score": 0.937089204788208,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "CC",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7876518368721008,
+            "annotation": {
+              "Variant/Haplotypes": "rs28399499",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "CC + CT",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Phenotype": "Side Effect:Central Nervous System Disorder",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "TT"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs28399499",
+                "prediction": "CYP2B6",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "efavirenz",
+                "prediction": "efavirenz",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "CC + CT",
+                "prediction": "TC/CC",
+                "score": 0.9394291639328003,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Central Nervous System Disorder",
+                "prediction": "CNS-related adverse events",
+                "score": 0.937089204788208,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "TT",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7876518368721008,
+            "annotation": {
+              "Variant/Haplotypes": "rs28399499",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "CC + CT",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Phenotype": "Side Effect:Central Nervous System Disorder",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "TT"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs28399499",
+                "prediction": "983TC/CC",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "efavirenz",
+                "prediction": "efavirenz",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "CC + CT",
+                "prediction": "TC/CC",
+                "score": 0.9394291639328003,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Central Nervous System Disorder",
+                "prediction": "CNS-related adverse events",
+                "score": 0.937089204788208,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "TT",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.782331907749176,
+            "annotation": {
+              "Variant/Haplotypes": "rs1045642",
+              "Gene": "ABCB1",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "AA",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Central Nervous System Disorder",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "GG"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs1045642",
+                "prediction": "ABCB1",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "ABCB1",
+                "prediction": "ABCB1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "efavirenz",
+                "prediction": "efavirenz",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "AA",
+                "prediction": "TT",
+                "score": 0.8862298727035522,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Central Nervous System Disorder",
+                "prediction": "CNS-related adverse events",
+                "score": 0.937089204788208,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "GG",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6877328336238862,
+            "annotation": {
+              "Variant/Haplotypes": "rs3745274",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "GT + TT",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Efficacy:Discontinuation",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "GG"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs3745274",
+                "prediction": "516GT/TT",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "efavirenz",
+                "prediction": "efavirenz",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "dosage",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Alleles": {
+                "ground_truth": "GT + TT",
+                "prediction": "GT/TT",
+                "score": 0.9440086483955383,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Efficacy:Discontinuation",
+                "prediction": "overall discontinuation",
+                "score": 0.9333196878433228,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "GG",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1448993794,
+              "Variant/Haplotypes": "rs2472677",
+              "Gene": "NR1I2",
+              "Drug(s)": "efavirenz",
+              "PMID": 26715213,
+              "Phenotype Category": "Efficacy",
+              "Significance": "yes",
+              "Notes": null,
+              "Sentence": "Genotype TT is associated with decreased likelihood of discontinuation when treated with efavirenz in people with HIV Infections as compared to genotypes CC + CT.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Efficacy:Discontinuation",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "CC + CT",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "26715213",
+              "Variant Annotation ID_norm": "1448993794"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "3435TT",
+            "gene": "ABCB1",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "3435TT",
+              "Gene": "ABCB1",
+              "Drug(s)": "efavirenz",
+              "PMID": 26715213,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Higher risk of CNS-related adverse events found in ABCB1 3435TT carriers.",
+              "Sentence": "ABCB1 3435TT is associated with increased risk of CNS-related adverse events when treated with efavirenz in treatment-nai\u0308ve HIV-infected patients.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": "not stated",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "CNS-related adverse events",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Lower risk of CNS-related adverse events was associated with CYP2B6 983TC/CC (OR 0.35, 95 % CI 0.15-0.81, p = 0.015) and higher risk was associated with CYP2B6 15582CT/TT and ABCB1 3435TT (OR 1.46, 95 % CI 1.02-2.09, p = 0.040; OR 2.31, 95 % CI 1.33-4.02, p = 0.003, respectively).",
+                "Possession of the CYP2B6 516GT and TT variants and CYP2A6*9B CA/AA carriers was associated with a higher risk of overall EFV discontinuation (80, 166 and 100 %, respectively), whereas NR1I2 63396TT carriers were at decreased risk (22 %).",
+                "...CNS adverse events were not driven by EFV dose or concentrations; however, CYP2B6 15582CT/TT and ABCB1 3435TT carriers were at higher risk (46 and 131 %, respectively) of CNS-related adverse events compared with 35 % lower risk in CYP2B6 983TC/CC patients."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "Dose",
+            "gene": "N/A",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant Annotation ID": 4,
+              "Variant/Haplotypes": "Dose",
+              "Gene": "N/A",
+              "Drug(s)": "efavirenz",
+              "PMID": 26715213,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Discontinuation due to adverse events associated with dosage.",
+              "Sentence": "Higher dose (600 mg) is associated with increased discontinuation due to adverse events when treated with efavirenz in treatment-nai\u0308ve HIV-infected patients.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": "not stated",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "discontinuation due to adverse events",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Discontinuation due to adverse events (clinician decision) was independently associated with dose (OR 2.54, 95 % CI 1.19-5.43, p = 0.016).",
+                "A higher rate of EFV-related adverse events and discontinuations due to these events for EFV600 were not driven by polymorphisms assessed.",
+                "EFV-related adverse events and discontinuations due to these events were increased with dose."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.4542857142857143,
+      "total_samples": 7,
+      "ground_truth_annotations": {
+        "count": 7,
+        "matched_count": 5,
+        "unmatched_count": 2,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.6411764705882353,
+            "annotation": {
+              "Study Parameters ID": 1448993822,
+              "Variant Annotation ID": 1448993820,
+              "Study Type": "cohort, clinical trial",
+              "Study Cases": 606.0,
+              "Study Controls": null,
+              "Characteristics": null,
+              "Characteristics Type": "Unknown",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.011",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.59,
+              "Confidence Interval Start": 1.11,
+              "Confidence Interval Stop": 2.27,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1448993822,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1448993820,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, clinical trial",
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 606.0,
+                "prediction": 606,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": null,
+                "prediction": "CYP2B6 15582CT/TT and ABCB1 3435TT carriers experiencing CNS-related adverse events",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Unknown",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.011",
+                "prediction": "= 0.040",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 1.59,
+                "prediction": 1.46,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.11,
+                "prediction": 1.02,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 2.27,
+                "prediction": 2.09,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5764705882352942,
+            "annotation": {
+              "Study Parameters ID": 1448993785,
+              "Variant Annotation ID": 1448993783,
+              "Study Type": "cohort, clinical trial",
+              "Study Cases": 569.0,
+              "Study Controls": null,
+              "Characteristics": null,
+              "Characteristics Type": "Unknown",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.016",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1448993785,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1448993783,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, clinical trial",
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 569.0,
+                "prediction": 606,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": null,
+                "prediction": "C12 between 0.47 and 0.76 mg/L achieving pVL <200 copies/mL at 96 weeks",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Unknown",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.016",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5529411764705883,
+            "annotation": {
+              "Study Parameters ID": 1448993833,
+              "Variant Annotation ID": 1448993831,
+              "Study Type": "cohort, clinical trial",
+              "Study Cases": 606.0,
+              "Study Controls": null,
+              "Characteristics": null,
+              "Characteristics Type": "Unknown",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.006",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.14,
+              "Confidence Interval Start": 1.25,
+              "Confidence Interval Stop": 3.67,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1448993833,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1448993831,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, clinical trial",
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 606.0,
+                "prediction": 606,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": null,
+                "prediction": "Discontinuation due to adverse events (clinician decision)",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Unknown",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.006",
+                "prediction": "= 0.016",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 2.14,
+                "prediction": 2.54,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.25,
+                "prediction": 1.19,
+                "score": 0.9,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 3.67,
+                "prediction": 5.43,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5470588235294118,
+            "annotation": {
+              "Study Parameters ID": 1448993812,
+              "Variant Annotation ID": 1448993810,
+              "Study Type": "cohort, clinical trial",
+              "Study Cases": 606.0,
+              "Study Controls": null,
+              "Characteristics": null,
+              "Characteristics Type": "Unknown",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.01",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 0.3,
+              "Confidence Interval Start": 0.12,
+              "Confidence Interval Stop": 0.75,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1448993812,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1448993810,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, clinical trial",
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 606.0,
+                "prediction": 606,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": null,
+                "prediction": "CYP2B6 983TC/CC carriers experiencing CNS-related adverse events",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Unknown",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.01",
+                "prediction": "= 0.015",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 0.3,
+                "prediction": 0.35,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 0.12,
+                "prediction": 0.15,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 0.75,
+                "prediction": 0.81,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.4882352941176471,
+            "annotation": {
+              "Study Parameters ID": 1448993769,
+              "Variant Annotation ID": 1448993767,
+              "Study Type": "cohort, clinical trial",
+              "Study Cases": 573.0,
+              "Study Controls": null,
+              "Characteristics": null,
+              "Characteristics Type": "Unknown",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.01",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1448993769,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1448993767,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, clinical trial",
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 573.0,
+                "prediction": 606,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": null,
+                "prediction": "Treatment-nai\u0308ve HIV-infected adults, 32% female, 37% African, 33% Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Unknown",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.01",
+                "prediction": "= 0.204",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": 5.25,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": 0.41,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": 67.9,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1448993796,
+              "Variant Annotation ID": 1448993794,
+              "Study Type": "cohort, clinical trial",
+              "Study Cases": 570.0,
+              "Study Controls": null,
+              "Characteristics": null,
+              "Characteristics Type": "Unknown",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.008",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups",
+              "Variant Annotation ID_norm": "1448993794"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1448993766,
+              "Variant Annotation ID": 1448993759,
+              "Study Type": "cohort, clinical trial",
+              "Study Cases": 546.0,
+              "Study Controls": null,
+              "Characteristics": null,
+              "Characteristics Type": "Unknown",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.42",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups",
+              "Variant Annotation ID_norm": "1448993759"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    }
+  }
+}

@@ -1,0 +1,1323 @@
+{
+  "pmcid": "PMC10993165",
+  "pmid": "38568509",
+  "title": "Human Leukocyte Antigens and Sulfamethoxazole/Cotrimoxazole-Induced Severe Cutaneous Adverse Reactions: A Systematic Review and Meta-Analysis",
+  "overall_score": 0.40791070987184846,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 7,
+        "items": [
+          {
+            "variant": "HLA-A*11:01",
+            "gene": "HLA-A",
+            "drug": "sulfamethoxazole,cotrimoxazole",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-A*11:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "sulfamethoxazole,cotrimoxazole",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-A*11:01 was significantly associated with SMX/CTX-induced SCARs (OR, 2.10; 95% CI, 1.11-4.00) compared to tolerant controls.",
+              "Sentence": "HLA-A*11:01 is associated with increased risk of severe cutaneous adverse reactions in patients receiving sulfamethoxazole and cotrimoxazole.",
+              "Alleles": "HLA-A*11:01",
+              "Specialty Population": "",
+              "Population types": "in people with SCARs",
+              "Population Phenotypes or diseases": "Disease:Severe Cutaneous Adverse Reactions",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In this systematic review and meta-analysis of 6 studies involving 322 patients with SCARs, significant associations were identified between the HLA-A*11:01, HLA-B*13:01, HLA-B*15:02, HLA-B*38:02, and HLA-C*08:01 genotypes and SMX/CTX-induced SCARs.",
+                "Significant associations were found in HLA-A*11:01 (OR, 2.10; 95% CI, 1.11-4.00) compared with tolerant controls.",
+                "The results of this systematic review and meta-analysis suggest that multiple HLA alleles (HLA-A*11:01, HLA-B*13:01, HLA-B*15:02, HLA-B*38:02, and HLA-C*08:01) are associated with SMX/CTX-induced SCARs."
+              ]
+            }
+          },
+          {
+            "variant": "HLA-B*13:01",
+            "gene": "HLA-B",
+            "drug": "sulfamethoxazole,cotrimoxazole",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*13:01",
+              "Gene": "HLA-B",
+              "Drug(s)": "sulfamethoxazole,cotrimoxazole",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*13:01 showed a strong association with SMX/CTX-induced SCARs (OR, 5.96; 95% CI, 1.58-22.56) compared to tolerant controls.",
+              "Sentence": "HLA-B*13:01 is associated with increased risk of severe cutaneous adverse reactions in patients receiving sulfamethoxazole and cotrimoxazole.",
+              "Alleles": "HLA-B*13:01",
+              "Specialty Population": "",
+              "Population types": "in people with SCARs",
+              "Population Phenotypes or diseases": "Disease:Severe Cutaneous Adverse Reactions",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "the HLA-B*13:01 allele showed an association with SMX/CTX-induced SJS/TEN and drug reaction with eosinophilia and systemic symptoms.",
+                "Significant associations were found in HLA-A*11:01 (OR, 2.10; 95% CI, 1.11-4.00), HLA-B*13:01 (OR, 5.96; 95% CI, 1.58-22.56), HLA-B*15:02 (OR, 2.23; 95% CI, 1.20-4.14), HLA-B*38:02 (OR, 3.47; 95% CI, 1.42-8.48), and HLA-C*08:01 (OR, 2.63; 95% CI, 1.07-6.44) compared with tolerant controls.",
+                "The results of this systematic review and meta-analysis suggest that multiple HLA alleles (HLA-A*11:01, HLA-B*13:01, HLA-B*15:02, HLA-B*38:02, and HLA-C*08:01) are associated with SMX/CTX-induced SCARs."
+              ]
+            }
+          },
+          {
+            "variant": "HLA-B*15:02",
+            "gene": "HLA-B",
+            "drug": "sulfamethoxazole,cotrimoxazole",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "sulfamethoxazole,cotrimoxazole",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*15:02 was significantly associated with SMX/CTX-induced SJS/TEN (OR, 3.01; 95% CI, 1.56-5.80) compared to tolerant controls.",
+              "Sentence": "HLA-B*15:02 is associated with increased risk of Stevens-Johnson syndrome and toxic epidermal necrolysis in patients receiving sulfamethoxazole and cotrimoxazole.",
+              "Alleles": "HLA-B*15:02",
+              "Specialty Population": "",
+              "Population types": "in people with SCARs",
+              "Population Phenotypes or diseases": "Disease:Stevens-Johnson Syndrome",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The HLA-B*15:02 and HLA-B*38:02 genotypes were significantly associated with SMX/CTX-induced Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN), while...",
+                "In the Stevens-Johnson syndrome/toxic epidermal necrolysis subgroup, significant associations were found in HLA-B*15:02 (OR, 3.01; 95% CI, 1.56-5.80)...",
+                "...significant associations were found in HLA-B*15:02 (OR, 2.23; 95% CI, 1.20-4.14) compared with tolerant controls."
+              ]
+            }
+          },
+          {
+            "variant": "HLA-B*38:02",
+            "gene": "HLA-B",
+            "drug": "sulfamethoxazole,cotrimoxazole",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*38:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "sulfamethoxazole,cotrimoxazole",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*38:02 was significantly associated with SMX/CTX-induced SJS/TEN (OR, 5.13; 95% CI, 1.96-13.47).",
+              "Sentence": "HLA-B*38:02 is associated with increased risk of Stevens-Johnson syndrome and toxic epidermal necrolysis in patients receiving sulfamethoxazole and cotrimoxazole.",
+              "Alleles": "HLA-B*38:02",
+              "Specialty Population": "",
+              "Population types": "in people with SCARs",
+              "Population Phenotypes or diseases": "Disease:Stevens-Johnson Syndrome",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The HLA-B*15:02 and HLA-B*38:02 genotypes were significantly associated with SMX/CTX-induced Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN)...in the Stevens-Johnson syndrome/toxic epidermal necrolysis subgroup, significant associations were found in HLA-B*15:02 (OR, 3.01; 95% CI, 1.56-5.80) and HLA-B*38:02 (OR, 5.13; 95% CI, 1.96-13.47).",
+                "...the HLA-B*38:02 genotype was significantly associated with SMX/CTX-induced Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN), while the HLA-A*68:01 and HLA-B*39:01 genotypes were associated with SMX/CTX-induced drug reaction with eosinophilia and systemic symptoms.",
+                "...significant associations were found in HLA-B*38:02 (OR, 3.47; 95% CI, 1.42-8.48), and in the drug reaction with eosinophilia and systemic symptoms subgroup, significant associations were found in HLA-B*13:01 (OR, 23.09; 95% CI, 3.31-161.00)..."
+              ]
+            }
+          },
+          {
+            "variant": "HLA-C*08:01",
+            "gene": "HLA-C",
+            "drug": "sulfamethoxazole,cotrimoxazole",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-C*08:01",
+              "Gene": "HLA-C",
+              "Drug(s)": "sulfamethoxazole,cotrimoxazole",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-C*08:01 was associated with increased risk of SCARs (OR, 2.63; 95% CI, 1.07-6.44) compared to tolerant controls.",
+              "Sentence": "HLA-C*08:01 is associated with increased risk of severe cutaneous adverse reactions in patients receiving sulfamethoxazole and cotrimoxazole.",
+              "Alleles": "HLA-C*08:01",
+              "Specialty Population": "",
+              "Population types": "in people with SCARs",
+              "Population Phenotypes or diseases": "Disease:Severe Cutaneous Adverse Reactions",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "significant associations were identified between the *HLA-C*08:01* genotypes and SMX/CTX-induced SCARs.",
+                "HLA-C*08:01* was associated with increased risk of SCARs (OR, 2.63; 95% CI, 1.07-6.44) compared to tolerant controls.",
+                "In the results, we identified significant associations between the *HLA-C*08:01* genotype and SMX/CTX-induced SCARs."
+              ]
+            }
+          },
+          {
+            "variant": "HLA-A*68:01",
+            "gene": "HLA-A",
+            "drug": "sulfamethoxazole,cotrimoxazole",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-A*68:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "sulfamethoxazole,cotrimoxazole",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-A*68:01 was significantly associated with SMX/CTX-induced DRESS (OR, 12.86; 95% CI, 1.09-151.34) compared to tolerant controls.",
+              "Sentence": "HLA-A*68:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms in patients receiving sulfamethoxazole and cotrimoxazole.",
+              "Alleles": "HLA-A*68:01",
+              "Specialty Population": "",
+              "Population types": "in people with SCARs",
+              "Population Phenotypes or diseases": "Disease:Drug Reaction with Eosinophilia and Systemic Symptoms",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "the *HLA-A*68:01* and *HLA-B*39:01* genotypes were associated with SMX/CTX-induced drug reaction with eosinophilia and systemic symptoms;",
+                "the *HLA-A*68:01* (OR, 12.86; 95% CI, 1.09-151.34), *HLA-B*13:01* (OR, 23.09; 95% CI, 3.31-161.00), *HLA-B*39:01* (OR, 4.56; 95% CI, 1.31-15.82)",
+                "the results of this systematic review and meta-analysis suggest that multiple HLA alleles (*HLA-A*11:01*, *HLA-B*13:01*, *HLA-B*15:02*, *HLA-B*38:02*, and *HLA-C*08:01*) are associated with SMX/CTX-induced SCARs."
+              ]
+            }
+          },
+          {
+            "variant": "HLA-B*39:01",
+            "gene": "HLA-B",
+            "drug": "sulfamethoxazole,cotrimoxazole",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*39:01",
+              "Gene": "HLA-B",
+              "Drug(s)": "sulfamethoxazole,cotrimoxazole",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*39:01 was associated with SMX/CTX-induced DRESS (OR, 4.56; 95% CI, 1.31-15.82).",
+              "Sentence": "HLA-B*39:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms in patients receiving sulfamethoxazole and cotrimoxazole.",
+              "Alleles": "HLA-B*39:01",
+              "Specialty Population": "",
+              "Population types": "in people with SCARs",
+              "Population Phenotypes or diseases": "Disease:Drug Reaction with Eosinophilia and Systemic Symptoms",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "the HLA-A*68:01 and HLA-B*39:01 genotypes were associated with SMX/CTX-induced drug reaction with eosinophilia and systemic symptoms;",
+                "In the drug reaction with eosinophilia and systemic symptoms subgroup, significant associations were found in HLA-A*68:01 (OR, 12.86; 95% CI, 1.09-151.34), HLA-B*39:01 (OR, 4.56; 95% CI, 1.31-15.82).",
+                "The results of this systematic review and meta-analysis suggest that multiple HLA alleles (HLA-B*39:01) are associated with SMX/CTX-induced SCARs."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.8606273622976409,
+      "total_samples": 3,
+      "ground_truth_annotations": {
+        "count": 3,
+        "matched_count": 3,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.8934466063976287,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*15:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "sulfamethoxazole, sulfamethoxazole / trimethoprim",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*15:02",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Stevens-Johnson Syndrome, Side Effect:Toxic Epidermal Necrolysis, Side Effect:Severe Cutaneous Adverse Reactions",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-B*15:02",
+                "prediction": "HLA-B*15:02",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-B",
+                "prediction": "HLA-B",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "sulfamethoxazole, sulfamethoxazole / trimethoprim",
+                "prediction": "sulfamethoxazole, cotrimoxazole",
+                "score": 0.9615678191184998,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*15:02",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Stevens-Johnson Syndrome, Side Effect:Toxic Epidermal Necrolysis, Side Effect:Severe Cutaneous Adverse Reactions",
+                "prediction": "Stevens-Johnson syndrome/toxic epidermal necrolysis",
+                "score": 0.9728982448577881,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8934466063976287,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*38:02",
+              "Gene": "HLA-B",
+              "Drug(s)": "sulfamethoxazole, sulfamethoxazole / trimethoprim",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*38:02",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Stevens-Johnson Syndrome, Side Effect:Toxic Epidermal Necrolysis, Side Effect:Severe Cutaneous Adverse Reactions",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-B*38:02",
+                "prediction": "HLA-B*38:02",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-B",
+                "prediction": "HLA-B",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "sulfamethoxazole, sulfamethoxazole / trimethoprim",
+                "prediction": "sulfamethoxazole, cotrimoxazole",
+                "score": 0.9615678191184998,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*38:02",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Stevens-Johnson Syndrome, Side Effect:Toxic Epidermal Necrolysis, Side Effect:Severe Cutaneous Adverse Reactions",
+                "prediction": "Stevens-Johnson syndrome/toxic epidermal necrolysis",
+                "score": 0.9728982448577881,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8843536257743836,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*13:01",
+              "Gene": "HLA-B",
+              "Drug(s)": "sulfamethoxazole, sulfamethoxazole / trimethoprim",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*13:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Severe Cutaneous Adverse Reactions",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-B*13:01",
+                "prediction": "HLA-B*13:01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-B",
+                "prediction": "HLA-B",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "sulfamethoxazole, sulfamethoxazole / trimethoprim",
+                "prediction": "sulfamethoxazole, cotrimoxazole",
+                "score": 0.9615678191184998,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*13:01",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Severe Cutaneous Adverse Reactions",
+                "prediction": "Stevens-Johnson syndrome/toxic epidermal necrolysis",
+                "score": 0.8819684386253357,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 4,
+        "items": [
+          {
+            "variant": "HLA-A*11:01",
+            "gene": "HLA-A",
+            "drug": "sulfamethoxazole, cotrimoxazole",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "HLA-A*11:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "sulfamethoxazole, cotrimoxazole",
+              "PMID": 38568509,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Significantly associated with severe cutaneous adverse reactions (SCARs) in the Japanese population.",
+              "Sentence": "HLA-A *11:01 is associated with increased likelihood of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole in people of Japanese descent.",
+              "Alleles": null,
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "severe cutaneous adverse reactions",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people of Japanese descent",
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38568509",
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "Among Japanese individuals, a significant association has been identified between the HLA-A*11:01 allele and SMX-induced SCARs.",
+                "Significant associations were found in HLA-A*11:01 (OR, 2.10; 95% CI, 1.11-4.00) compared with tolerant controls.",
+                "The results of this systematic review and meta-analysis suggest that multiple HLA alleles (HLA-A*11:01, HLA-B*13:01, HLA-B*15:02, HLA-B*38:02, and HLA-C*08:01) are associated with SMX/CTX-induced SCARs."
+              ]
+            }
+          },
+          {
+            "variant": "HLA-C*08:01",
+            "gene": "HLA-C",
+            "drug": "sulfamethoxazole, cotrimoxazole",
+            "annotation": {
+              "Variant Annotation ID": 5,
+              "Variant/Haplotypes": "HLA-C*08:01",
+              "Gene": "HLA-C",
+              "Drug(s)": "sulfamethoxazole, cotrimoxazole",
+              "PMID": 38568509,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Associated with DRESS and SJS in Asian populations.",
+              "Sentence": "HLA-C *08:01 is associated with increased likelihood of DRESS when treated with sulfamethoxazole/cotrimoxazole in people of Asian descent.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "drug reaction with eosinophilia and systemic symptoms (DRESS)",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people of Asian descent",
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38568509",
+              "Variant Annotation ID_norm": "5",
+              "Citations": [
+                "the *HLA-C*08:01* genotype and SMX/CTX-induced SCARs.",
+                "significant associations were found in *HLA-C*08:01* (OR, 2.63; 95% CI, 1.07-6.44) compared with tolerant controls.",
+                "In Thai populations, significant associations were found in *HLA-C*08:01* (OR, 2.63; 95% CI, 1.07-6.44) compared with tolerant controls."
+              ]
+            }
+          },
+          {
+            "variant": "HLA-A*68:01",
+            "gene": "HLA-A",
+            "drug": "sulfamethoxazole, cotrimoxazole",
+            "annotation": {
+              "Variant Annotation ID": 6,
+              "Variant/Haplotypes": "HLA-A*68:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "sulfamethoxazole, cotrimoxazole",
+              "PMID": 38568509,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Significantly associated with DRESS in patients tolerant to SMX/CTX.",
+              "Sentence": "HLA-A *68:01 is associated with increased likelihood of DRESS when treated with sulfamethoxazole/cotrimoxazole.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "drug reaction with eosinophilia and systemic symptoms",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "null",
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38568509",
+              "Variant Annotation ID_norm": "6",
+              "Citations": [
+                "the HLA-A*68:01 and HLA-B*39:01 genotypes were associated with SMX/CTX-induced drug reaction with eosinophilia and systemic symptoms;",
+                "In the drug reaction with eosinophilia and systemic symptoms subgroup, significant associations were found in HLA-A*68:01 (OR, 12.86; 95% CI, 1.09-151.34)",
+                "The results of this systematic review and meta-analysis suggest that multiple HLA alleles (HLA-A*11:01, HLA-B*13:01, HLA-B*15:02, HLA-B*38:02, and HLA-C*08:01) are associated with SMX/CTX-induced SCARs."
+              ]
+            }
+          },
+          {
+            "variant": "HLA-B*39:01",
+            "gene": "HLA-B",
+            "drug": "sulfamethoxazole, cotrimoxazole",
+            "annotation": {
+              "Variant Annotation ID": 7,
+              "Variant/Haplotypes": "HLA-B*39:01",
+              "Gene": "HLA-B",
+              "Drug(s)": "sulfamethoxazole, cotrimoxazole",
+              "PMID": 38568509,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Significantly associated with DRESS in several populations.",
+              "Sentence": "HLA-B *39:01 is associated with increased likelihood of DRESS when treated with sulfamethoxazole/cotrimoxazole in Asian patients.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "drug reaction with eosinophilia and systemic symptoms (DRESS)",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in Asian patients",
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38568509",
+              "Variant Annotation ID_norm": "7",
+              "Citations": [
+                "... the HLA-A*68:01 and HLA-B*39:01 genotypes were associated with SMX/CTX-induced drug reaction with eosinophilia and systemic symptoms; the HLA-B*13:01 allele showed an association with SMX/CTX-induced SJS/TEN and drug reaction with eosinophilia and systemic symptoms.",
+                "In the drug reaction with eosinophilia and systemic symptoms subgroup, significant associations were found in HLA-A*68:01 (OR, 12.86; 95% CI, 1.09-151.34), HLA-B*13:01 (OR, 23.09; 95% CI, 3.31-161.00), HLA-B*39:01 (OR, 4.56; 95% CI, 1.31-15.82).",
+                "... the HLA-B*39:01 allele was significantly associated with SMX/CTX-induced DRESS."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.7486125059127808,
+      "total_samples": 5,
+      "ground_truth_annotations": {
+        "count": 5,
+        "matched_count": 5,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.7549295179984149,
+            "annotation": {
+              "Study Parameters ID": 1452438990,
+              "Variant Annotation ID": 1452439000,
+              "Study Type": "meta-analysis",
+              "Study Cases": null,
+              "Study Controls": null,
+              "Characteristics": "2 studies, SJS/TEN v tolerant controls",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": null,
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 5.13,
+              "Confidence Interval Start": 1.96,
+              "Confidence Interval Stop": 13.47,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452438990,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452439000,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "meta-analysis",
+                "prediction": "meta-analysis",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": null,
+                "prediction": 322,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "2 studies, SJS/TEN v tolerant controls",
+                "prediction": "HLA-B*38:02",
+                "score": 0.833801805973053,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": null,
+                "prediction": "< .001",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 5.13,
+                "prediction": 5.13,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.96,
+                "prediction": 1.96,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 13.47,
+                "prediction": 13.47,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6975113819627201,
+            "annotation": {
+              "Study Parameters ID": 1452438988,
+              "Variant Annotation ID": 1452438980,
+              "Study Type": "meta-analysis",
+              "Study Cases": 158.0,
+              "Study Controls": 226.0,
+              "Characteristics": "2 studies, SCAR v tolerant controls",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.01",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 5.96,
+              "Confidence Interval Start": 1.58,
+              "Confidence Interval Stop": 22.56,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452438988,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452438980,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "meta-analysis",
+                "prediction": "meta-analysis",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 158.0,
+                "prediction": 236,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 226.0,
+                "prediction": 8448,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "2 studies, SCAR v tolerant controls",
+                "prediction": "Patients with SJS/TEN",
+                "score": 0.8576934933662415,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.01",
+                "prediction": "< .001",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 5.96,
+                "prediction": 5.96,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.58,
+                "prediction": 1.58,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 22.56,
+                "prediction": 22.56,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6691498791470247,
+            "annotation": {
+              "Study Parameters ID": 1452437426,
+              "Variant Annotation ID": 1452437420,
+              "Study Type": "meta-analysis",
+              "Study Cases": 158.0,
+              "Study Controls": 226.0,
+              "Characteristics": "2 studies, SCAR v tolerant controls",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.01",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.23,
+              "Confidence Interval Start": 1.2,
+              "Confidence Interval Stop": 4.14,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452437426,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452437420,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "meta-analysis",
+                "prediction": "meta-analysis",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 158.0,
+                "prediction": 322,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 226.0,
+                "prediction": 8448,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "2 studies, SCAR v tolerant controls",
+                "prediction": "Patients with SCARs caused by SMX/CTX",
+                "score": 0.8755479454994202,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.01",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 2.23,
+                "prediction": 2.1,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.2,
+                "prediction": 1.11,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 4.14,
+                "prediction": 4.0,
+                "score": 0.9,
+                "match_status": "partial_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6611344092032488,
+            "annotation": {
+              "Study Parameters ID": 1452437520,
+              "Variant Annotation ID": 1452437420,
+              "Study Type": "meta-analysis",
+              "Study Cases": null,
+              "Study Controls": null,
+              "Characteristics": "2 studies, SJS/TEN v tolerant controls",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3.01,
+              "Confidence Interval Start": 1.56,
+              "Confidence Interval Stop": 5.8,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452437520,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452437420,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "meta-analysis",
+                "prediction": "meta-analysis",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": null,
+                "prediction": 322,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "2 studies, SJS/TEN v tolerant controls",
+                "prediction": "HLA-B*15:02",
+                "score": 0.8392849564552307,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.001",
+                "prediction": "< .001",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 3.01,
+                "prediction": 3.09,
+                "score": 0.9,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.56,
+                "prediction": 1.9,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 5.8,
+                "prediction": 5.02,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5199770436567419,
+            "annotation": {
+              "Study Parameters ID": 1452438989,
+              "Variant Annotation ID": 1452439000,
+              "Study Type": "meta-analysis",
+              "Study Cases": 158.0,
+              "Study Controls": 226.0,
+              "Characteristics": "2 studies, SCAR v tolerant controls",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.01",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3.47,
+              "Confidence Interval Start": 1.42,
+              "Confidence Interval Stop": 8.48,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452438989,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452439000,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "meta-analysis",
+                "prediction": "meta-analysis",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 158.0,
+                "prediction": 86,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 226.0,
+                "prediction": 8448,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "2 studies, SCAR v tolerant controls",
+                "prediction": "Patients with DRESS",
+                "score": 0.8396097421646118,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.01",
+                "prediction": "< .001",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 3.47,
+                "prediction": 23.09,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.42,
+                "prediction": 3.31,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 8.48,
+                "prediction": 161.0,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Multiple Groups",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 1,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "meta-analysis",
+              "Study Cases": 322,
+              "Study Controls": null,
+              "Characteristics": "HLA-C*08:01",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": null,
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.63,
+              "Confidence Interval Start": 1.07,
+              "Confidence Interval Stop": 6.44,
+              "Biogeographical Groups": "Multiple Groups",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

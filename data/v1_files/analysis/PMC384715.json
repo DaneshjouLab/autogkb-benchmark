@@ -1,0 +1,625 @@
+{
+  "pmcid": "PMC384715",
+  "pmid": "15024131",
+  "title": "Predisposition to abacavir hypersensitivity conferred by HLA-B*5701 and a haplotypic Hsp70-Hom variant",
+  "overall_score": 0.1683029544353485,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 3,
+        "items": [
+          {
+            "variant": "HLA-B*5701",
+            "gene": "HLA-B",
+            "drug": "abacavir",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*5701",
+              "Gene": "HLA-B",
+              "Drug(s)": "abacavir",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*5701 was present in 94.4% of hypersensitive cases compared with 1.7% of controls (odds ratio, 960; P < 0.00001).",
+              "Sentence": "HLA-B*5701 is associated with increased risk of abacavir hypersensitivity in people with HIV.",
+              "Alleles": "HLA-B*5701, Hsp70-Hom M493T",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Population types": "in people with HIV",
+              "Population Phenotypes or diseases": "Disease:Abacavir Hypersensitivity",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "HLA-B*5701 was present in 94.4% of hypersensitive cases compared with 1.7% of controls (odds ratio, 960; P < 0.00001).",
+                "A haplotypic nonsynonymous polymorphism of Hsp70-Hom (HspA1L, resulting from the substitution of residue M493T in the peptide-binding subunit) was found in combination with HLA-B*5701 in 94.4% of hypersensitive cases and 0.4% of controls (odds ratio, 3,893; P < 0.00001).",
+                "These data indicate that the concurrence of HLA-B*5701 and Hsp70-Hom M493T alleles is necessary for the development of abacavir hypersensitivity, which is likely to be mediated by an HLA-B*5701-restricted immune response to abacavir."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "Hsp70-Hom",
+            "gene": "HLA-B",
+            "drug": "abacavir",
+            "annotation": {
+              "Variant/Haplotypes": "Hsp70-Hom",
+              "Gene": "HLA-B",
+              "Drug(s)": "abacavir",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*5701 was present in 94.4% of hypersensitive cases compared with 1.7% of controls (odds ratio, 960; P < 0.00001).",
+              "Sentence": "HLA-B*5701 is associated with increased risk of abacavir hypersensitivity in people with HIV.",
+              "Alleles": "HLA-B*5701, Hsp70-Hom M493T",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Population types": "in people with HIV",
+              "Population Phenotypes or diseases": "Disease:Abacavir Hypersensitivity",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "HLA-B*5701 was present in 94.4% of hypersensitive cases compared with 1.7% of controls (odds ratio, 960; P < 0.00001).",
+                "A haplotypic nonsynonymous polymorphism of Hsp70-Hom (HspA1L, resulting from the substitution of residue M493T in the peptide-binding subunit) was found in combination with HLA-B*5701 in 94.4% of hypersensitive cases and 0.4% of controls (odds ratio, 3,893; P < 0.00001).",
+                "These data indicate that the concurrence of HLA-B*5701 and Hsp70-Hom M493T alleles is necessary for the development of abacavir hypersensitivity, which is likely to be mediated by an HLA-B*5701-restricted immune response to abacavir."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "M493T",
+            "gene": "HLA-B",
+            "drug": "abacavir",
+            "annotation": {
+              "Variant/Haplotypes": "M493T",
+              "Gene": "HLA-B",
+              "Drug(s)": "abacavir",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*5701 was present in 94.4% of hypersensitive cases compared with 1.7% of controls (odds ratio, 960; P < 0.00001).",
+              "Sentence": "HLA-B*5701 is associated with increased risk of abacavir hypersensitivity in people with HIV.",
+              "Alleles": "HLA-B*5701, Hsp70-Hom M493T",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Population types": "in people with HIV",
+              "Population Phenotypes or diseases": "Disease:Abacavir Hypersensitivity",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "HLA-B*5701 was present in 94.4% of hypersensitive cases compared with 1.7% of controls (odds ratio, 960; P < 0.00001).",
+                "A haplotypic nonsynonymous polymorphism of Hsp70-Hom (HspA1L, resulting from the substitution of residue M493T in the peptide-binding subunit) was found in combination with HLA-B*5701 in 94.4% of hypersensitive cases and 0.4% of controls (odds ratio, 3,893; P < 0.00001).",
+                "These data indicate that the concurrence of HLA-B*5701 and Hsp70-Hom M493T alleles is necessary for the development of abacavir hypersensitivity, which is likely to be mediated by an HLA-B*5701-restricted immune response to abacavir."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 1,
+        "matched_count": 0,
+        "unmatched_count": 1,
+        "items": [
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1444876870,
+              "Variant/Haplotypes": "HLA-B*57:01",
+              "Gene": "HLA-B",
+              "Drug(s)": "abacavir",
+              "PMID": 15024131,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "The HLA-B*57:01 allele was present in 94.4% of cases of definite abacavir hypersensitivity compared with 1.7% of abacavir-tolerant controls. When in combination with the rs2227956 T allele (Hsp70-Hom M493T), the strength of the association increased, with this combination being present in 94.4% of cases of abacavir hypersensitivity, compared with 0.43% of controls.",
+              "Sentence": "HLA-B *57:01 is associated with increased risk of Drug Hypersensitivity when treated with abacavir in people with HIV Infections.",
+              "Alleles": "*57:01",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Drug Hypersensitivity",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "15024131",
+              "Variant Annotation ID_norm": "1444876870"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 3,
+        "items": [
+          {
+            "variant": "HLA-B*5701",
+            "gene": "HLA-B, HSP70",
+            "drug": "abacavir",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "HLA-B*5701",
+              "Gene": "HLA-B, HSP70",
+              "Drug(s)": "abacavir",
+              "PMID": 15024131,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*5701 present in 94.4% of hypersensitive cases; odds ratio 960; significant p < 0.00001.",
+              "Sentence": "HLA-B*5701 and Hsp70-Hom M493T are associated with increased risk of abacavir hypersensitivity when treated with abacavir in people of Western Australian descent.",
+              "Alleles": "HLA-B*5701, Hsp70-Hom M493T",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "abacavir hypersensitivity",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people of Western Australian descent",
+              "Population Phenotypes or diseases": "HIV",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "15024131",
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "HLA-B*5701 was present in 94.4% of hypersensitive cases compared with 1.7% of controls (odds ratio, 960; P < 0.00001).",
+                "A haplotypic nonsynonymous polymorphism of Hsp70-Hom (HspA1L, resulting from the substitution of residue M493T in the peptide-binding subunit) was found in combination with HLA-B*5701 in 94.4% of hypersensitive cases and 0.4% of controls (odds ratio, 3,893; P < 0.00001).",
+                "These data indicate that the concurrence of HLA-B*5701 and Hsp70-Hom M493T alleles is necessary for the development of abacavir hypersensitivity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "Hsp70-Hom",
+            "gene": "HLA-B, HSP70",
+            "drug": "abacavir",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "Hsp70-Hom",
+              "Gene": "HLA-B, HSP70",
+              "Drug(s)": "abacavir",
+              "PMID": 15024131,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*5701 present in 94.4% of hypersensitive cases; odds ratio 960; significant p < 0.00001.",
+              "Sentence": "HLA-B*5701 and Hsp70-Hom M493T are associated with increased risk of abacavir hypersensitivity when treated with abacavir in people of Western Australian descent.",
+              "Alleles": "HLA-B*5701, Hsp70-Hom M493T",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "abacavir hypersensitivity",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people of Western Australian descent",
+              "Population Phenotypes or diseases": "HIV",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "15024131",
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "HLA-B*5701 was present in 94.4% of hypersensitive cases compared with 1.7% of controls (odds ratio, 960; P < 0.00001).",
+                "A haplotypic nonsynonymous polymorphism of Hsp70-Hom (HspA1L, resulting from the substitution of residue M493T in the peptide-binding subunit) was found in combination with HLA-B*5701 in 94.4% of hypersensitive cases and 0.4% of controls (odds ratio, 3,893; P < 0.00001).",
+                "These data indicate that the concurrence of HLA-B*5701 and Hsp70-Hom M493T alleles is necessary for the development of abacavir hypersensitivity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "M493T",
+            "gene": "HLA-B, HSP70",
+            "drug": "abacavir",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "M493T",
+              "Gene": "HLA-B, HSP70",
+              "Drug(s)": "abacavir",
+              "PMID": 15024131,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*5701 present in 94.4% of hypersensitive cases; odds ratio 960; significant p < 0.00001.",
+              "Sentence": "HLA-B*5701 and Hsp70-Hom M493T are associated with increased risk of abacavir hypersensitivity when treated with abacavir in people of Western Australian descent.",
+              "Alleles": "HLA-B*5701, Hsp70-Hom M493T",
+              "Specialty Population": "Pediatric",
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "abacavir hypersensitivity",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people of Western Australian descent",
+              "Population Phenotypes or diseases": "HIV",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "15024131",
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "HLA-B*5701 was present in 94.4% of hypersensitive cases compared with 1.7% of controls (odds ratio, 960; P < 0.00001).",
+                "A haplotypic nonsynonymous polymorphism of Hsp70-Hom (HspA1L, resulting from the substitution of residue M493T in the peptide-binding subunit) was found in combination with HLA-B*5701 in 94.4% of hypersensitive cases and 0.4% of controls (odds ratio, 3,893; P < 0.00001).",
+                "These data indicate that the concurrence of HLA-B*5701 and Hsp70-Hom M493T alleles is necessary for the development of abacavir hypersensitivity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.8415147721767425,
+      "total_samples": 2,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 2,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.7458302518900704,
+            "annotation": {
+              "Study Parameters ID": 1444877014,
+              "Variant Annotation ID": 1444876870,
+              "Study Type": "case/control",
+              "Study Cases": 18.0,
+              "Study Controls": 230.0,
+              "Characteristics": "Western Australian HIV Cohort Study; HLA-B*57:01 alone.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.944,
+              "Allele Of Frequency In Cases": "*57:01",
+              "Frequency In Controls": 0.017,
+              "Allele Of Frequency In Controls": "*57:01",
+              "P Value": "< 0.00001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 960.0,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups, European, Asian Indian, African, indigenous Australian, Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1444877014,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1444876870,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 18.0,
+                "prediction": 18,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": 230.0,
+                "prediction": 230,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Western Australian HIV Cohort Study; HLA-B*57:01 alone.",
+                "prediction": "Definite abacavir hypersensitivity cases",
+                "score": 0.851554811000824,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.944,
+                "prediction": 0.944,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*57:01",
+                "prediction": "HLA-B*5701",
+                "score": 0.9137797355651855,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.017,
+                "prediction": 0.017,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "*57:01",
+                "prediction": "HLA-B*5701",
+                "score": 0.9137797355651855,
+                "match_status": "partial_match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.00001",
+                "prediction": "< 0.00001",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 960.0,
+                "prediction": 960,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups, European, Asian Indian, African, indigenous Australian, Asian",
+                "prediction": "European",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7391958166571224,
+            "annotation": {
+              "Study Parameters ID": 1444877110,
+              "Variant Annotation ID": 1444876870,
+              "Study Type": "case/control",
+              "Study Cases": 18.0,
+              "Study Controls": 230.0,
+              "Characteristics": "Western Australian HIV Cohort Study; HLA-B*57:01 in combination with rs2227956.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.944,
+              "Allele Of Frequency In Cases": "*57:01",
+              "Frequency In Controls": 0.004,
+              "Allele Of Frequency In Controls": "*57:01",
+              "P Value": "< 0.00001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3893.0,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups, European, Asian Indian, African, indigenous Australian, Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1444877110,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1444876870,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 18.0,
+                "prediction": 18,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": 230.0,
+                "prediction": 230,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Western Australian HIV Cohort Study; HLA-B*57:01 in combination with rs2227956.",
+                "prediction": "Haplotype combination of HLA-B*5701 and Hsp70-Hom M493T",
+                "score": 0.9111999273300171,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.944,
+                "prediction": 0.944,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*57:01",
+                "prediction": "Hsp70-Hom M493T",
+                "score": 0.8275644779205322,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.004,
+                "prediction": 0.004,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "*57:01",
+                "prediction": "Hsp70-Hom M493T",
+                "score": 0.8275644779205322,
+                "match_status": "partial_match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.00001",
+                "prediction": "< 0.00001",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 3893.0,
+                "prediction": 3893,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups, European, Asian Indian, African, indigenous Australian, Asian",
+                "prediction": "European",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "prospective",
+              "Study Cases": 2,
+              "Study Controls": 46,
+              "Characteristics": "Abacavir hypersensitivity in HLA-B*5701 negative individuals",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.0,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": null,
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": 0,
+              "Confidence Interval Stop": 0.075,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 18,
+              "Study Controls": 230,
+              "Characteristics": "Combined presence of HLA-B*5701 and C4A6",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.778,
+              "Allele Of Frequency In Cases": "C4A6",
+              "Frequency In Controls": 0.03,
+              "Allele Of Frequency In Controls": "C4A6",
+              "P Value": "< 0.00001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 111,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

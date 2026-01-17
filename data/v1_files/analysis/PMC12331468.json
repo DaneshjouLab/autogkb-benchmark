@@ -1,0 +1,1328 @@
+{
+  "pmcid": "PMC12331468",
+  "pmid": "40786508",
+  "title": "Genetic variants and clinical determinants affecting the response to 5-Fluorouracil-based treatment in Chilean patients with advanced colorectal cancer",
+  "overall_score": 0.3618832509848807,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 4,
+        "items": [
+          {
+            "variant": "rs1801265",
+            "gene": "DPYD",
+            "drug": "5-fluorouracil",
+            "annotation": {
+              "Variant/Haplotypes": "rs1801265",
+              "Gene": "DPYD",
+              "Drug(s)": "5-fluorouracil",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "The C allele of DPYD (rs1801265) was linked to a higher neuropathy risk (OR = 4.58; p = 0.05).",
+              "Sentence": "The C allele is associated with increased risk of neuropathy in patients receiving 5-fluorouracil treatment.",
+              "Alleles": "C",
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Comparison Allele(s) or Genotype(s": "T/T",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:colorectal cancer",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The C allele of DPYD (rs1801265) was linked to a higher neuropathy risk (OR = 4.58; p = 0.05).",
+                "Further analysis of ungrouped ADRs indicated a higher risk of neuropathy in patients carrying the C allele of the DPYD rs1801265 polymorphism (codominant model T/C genotype OR = 30.0, p-value = 0.0049, dominant model OR = 4.583, p-value = 0.05).",
+                "This study aimed to establish a correlation between the patient's genotype and the risk of ADR in Chilean advanced CRC patients."
+              ]
+            }
+          },
+          {
+            "variant": "rs1695",
+            "gene": "GSTP1",
+            "drug": "5-fluorouracil",
+            "annotation": {
+              "Variant/Haplotypes": "rs1695",
+              "Gene": "GSTP1",
+              "Drug(s)": "5-fluorouracil",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "The G allele of GSTP1 (rs1695) was protective against neuropathy (OR = 0.147; p = 0.012) but increased mucositis risk (OR = 2.27; p = 0.036).",
+              "Sentence": "The G allele is associated with decreased risk of neuropathy but increased risk of mucositis in patients receiving 5-fluorouracil treatment.",
+              "Alleles": "G",
+              "Metabolizer types": "",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased,increased",
+              "PD/PK terms": "response to",
+              "Comparison Allele(s) or Genotype(s": "A",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:colorectal cancer",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The G allele of GSTP1 (rs1695) was protective against neuropathy (OR = 0.147; p = 0.012) but increased mucositis risk (OR = 2.27; p = 0.036).",
+                "Among the 16 variants analyzed in 82 patients, key findings included: The G allele of GSTP1 (rs1695) was protective against neuropathy (OR = 0.147; p = 0.012) but increased mucositis risk (OR = 2.27; p = 0.036).",
+                "The G allele of the GSTP1 rs1695 polymorphism was correlated with a lower risk of hematological and nervous system disorders in treated patients, including a reduced risk of neuropathy."
+              ]
+            }
+          },
+          {
+            "variant": "rs11280056",
+            "gene": "TYMS",
+            "drug": "5-fluorouracil",
+            "annotation": {
+              "Variant/Haplotypes": "rs11280056",
+              "Gene": "TYMS",
+              "Drug(s)": "5-fluorouracil",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "The TYMS deletion genotype (rs11280056) conferred protection against hematological adverse reactions (OR = 0.029; p = 0.001).",
+              "Sentence": "The deletion genotype is associated with decreased risk of hematological adverse reactions in patients receiving 5-fluorouracil treatment.",
+              "Alleles": "del/del",
+              "Metabolizer types": "poor metabolizer, intermediate metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "response to",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:colorectal cancer",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The TYMS deletion genotype (rs11280056) conferred protection against hematological adverse reactions (OR = 0.029; p = 0.001).",
+                "We identified a protective correlation between the 6bp deletion of the TYMS 3'UTR region (rs11280056) and a lower risk of gastrointestinal and hematological disorders in chemotherapy patients.",
+                "When analyzing the risk of grouped ADR while considering only severe reactions (Grade III-IV), we found that only the TYMS 3'UTR 6bp deletion (rs11280056) was the only polymorphism associated with a lower risk of severe hematological disorders (dominant model OR = 0,098, CI 95% 0.013 - 0.441, p-value =0.005)."
+              ]
+            }
+          },
+          {
+            "variant": "rs45445694",
+            "gene": "TYMS",
+            "drug": "5-fluorouracil",
+            "annotation": {
+              "Variant/Haplotypes": "rs45445694",
+              "Gene": "TYMS",
+              "Drug(s)": "5-fluorouracil",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "The 3R genotype of TYMS 5'UTR (rs45445694) is associated as a risk factor for skin and subcutaneous tissue disorders (OR = 6.40; p = 0.029).",
+              "Sentence": "The 3R genotype is associated with increased risk of skin and subcutaneous tissue disorders in patients receiving 5-fluorouracil treatment.",
+              "Alleles": "3R/3R",
+              "Metabolizer types": "",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Population types": "in patients with",
+              "Population Phenotypes or diseases": "Disease:colorectal cancer",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "On the other hand, the 3R genotype of TYMS 5'UTR (rs45445694) is associated as a risk factor for skin and subcutaneous tissue disorders (OR = 6.40; p = 0.029).",
+                "This study provides a foundation for developing pharmacogenetic-based predictive models for adverse reactions associated with 5-FU, including...skin and subcutaneous tissue disorders.",
+                "A retrospective nested case-control study was conducted on 82 advanced colorectal cancer patients. Sixteen genetic variants were analyzed to assess their association with adverse reactions and their severity using logistic regression."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.7243739535411199,
+      "total_samples": 5,
+      "ground_truth_annotations": {
+        "count": 5,
+        "matched_count": 4,
+        "unmatched_count": 1,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.9644537329673767,
+            "annotation": {
+              "Variant/Haplotypes": "rs11280056",
+              "Gene": "TYMS",
+              "Drug(s)": "FOLFOX, XELOX",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "TTA/TTA + TTA/TTAAAGTTA",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Phenotype": "Side Effect:Peripheral Nervous System Diseases, Side Effect:Myelosuppression",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs11280056",
+                "prediction": "rs11280056",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "TYMS",
+                "prediction": "TYMS",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "FOLFOX, XELOX",
+                "prediction": "5-fluorouracil",
+                "score": 0.8970961570739746,
+                "match_status": "partial_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "TTA/TTA + TTA/TTAAAGTTA",
+                "prediction": "del/ins",
+                "score": 0.8444317579269409,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Peripheral Nervous System Diseases, Side Effect:Myelosuppression",
+                "prediction": "hematological adverse reactions",
+                "score": 0.9030094146728516,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.9628472030162811,
+            "annotation": {
+              "Variant/Haplotypes": "rs45445694",
+              "Gene": "TYMS",
+              "Drug(s)": "FOLFOX, XELOX",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "(GGCCTGCCTCCGTCCCGCCGCGCCACTT)3/(GGCCTGCCTCCGTCCCGCCGCGCCACTT)3",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Hand-foot syndrome, Side Effect:Exanthema, Side Effect:Drug Toxicity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs45445694",
+                "prediction": "rs45445694",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "TYMS",
+                "prediction": "TYMS",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "FOLFOX, XELOX",
+                "prediction": "5-fluorouracil",
+                "score": 0.8970961570739746,
+                "match_status": "partial_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "(GGCCTGCCTCCGTCCCGCCGCGCCACTT)3/(GGCCTGCCTCCGTCCCGCCGCGCCACTT)3",
+                "prediction": "3R/2R",
+                "score": 0.8589097857475281,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Hand-foot syndrome, Side Effect:Exanthema, Side Effect:Drug Toxicity",
+                "prediction": "skin and subcutaneous tissue disorders",
+                "score": 0.8724660873413086,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8629363715648651,
+            "annotation": {
+              "Variant/Haplotypes": "rs1801265",
+              "Gene": "DPYD",
+              "Drug(s)": "FOLFOX, XELOX",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "AG + GG",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Peripheral Nervous System Diseases",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "AA"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs1801265",
+                "prediction": "rs1801265",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "DPYD",
+                "prediction": "DPYD",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "FOLFOX, XELOX",
+                "prediction": "5-fluorouracil",
+                "score": 0.8970961570739746,
+                "match_status": "partial_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "AG + GG",
+                "prediction": "C/T",
+                "score": 0.8306638598442078,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Peripheral Nervous System Diseases",
+                "prediction": "neuropathy",
+                "score": 0.9016036987304688,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "AA",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8499198019504547,
+            "annotation": {
+              "Variant/Haplotypes": "rs45445694",
+              "Gene": "TYMS",
+              "Drug(s)": "FOLFOX, XELOX",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "(GGCCTGCCTCCGTCCCGCCGCGCCACTT)3/(GGCCTGCCTCCGTCCCGCCGCGCCACTT)3",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Hand-foot syndrome, Side Effect:Exanthema, Side Effect:Drug Toxicity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs45445694",
+                "prediction": "rs1695",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "TYMS",
+                "prediction": "GSTP1",
+                "score": 0.8423991799354553,
+                "match_status": "partial_match"
+              },
+              "Drug(s)": {
+                "ground_truth": "FOLFOX, XELOX",
+                "prediction": "5-fluorouracil",
+                "score": 0.8970961570739746,
+                "match_status": "partial_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "(GGCCTGCCTCCGTCCCGCCGCGCCACTT)3/(GGCCTGCCTCCGTCCCGCCGCGCCACTT)3",
+                "prediction": "G/A",
+                "score": 0.8742215633392334,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Hand-foot syndrome, Side Effect:Exanthema, Side Effect:Drug Toxicity",
+                "prediction": "neuropathy, mucositis",
+                "score": 0.8854811191558838,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1454223701,
+              "Variant/Haplotypes": "rs1695",
+              "Gene": "GSTP1",
+              "Drug(s)": "FOLFOX, XELOX",
+              "PMID": 40786508,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "The G allele of the GSTP1 rs1695 polymorphism was correlated with a lower risk of hematological and nervous system disorders in treated patients, including a reduced risk of neuropathy. This was observed through the analysis of individual ADR using univariate logistic regression without CTCAE v5.0 grouping ( Supplementary Table 3 , OR = 0.01, p-value = 0.008). However, we observed a higher risk of mucositis in patients carrying this polymorphism ( Supplementary Table 3 , OR = 2.27, p-value = 0.036).",
+              "Sentence": "Genotype GG is associated with increased likelihood of Mucositis when treated with FOLFOX or XELOX in people with Colorectal Neoplasms as compared to genotypes AA + AG.",
+              "Alleles": "GG",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Side Effect:Mucositis",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": "or",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Colorectal Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "AA + AG",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "40786508",
+              "Variant Annotation ID_norm": "1454223701"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.7228553246127235,
+      "total_samples": 6,
+      "ground_truth_annotations": {
+        "count": 6,
+        "matched_count": 6,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.6862417655832627,
+            "annotation": {
+              "Study Parameters ID": 1454223659,
+              "Variant Annotation ID": 1454223625,
+              "Study Type": null,
+              "Study Cases": 82.0,
+              "Study Controls": null,
+              "Characteristics": "Skin and subcutaneous tissue disorders (recessive)",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.029",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1454223659,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1454223625,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "case/control",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 82.0,
+                "prediction": 82.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Skin and subcutaneous tissue disorders (recessive)",
+                "prediction": "Multivariate model predicting anemia",
+                "score": 0.8161100149154663,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.029",
+                "prediction": "= 0.027",
+                "score": 0.85,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6678880558294409,
+            "annotation": {
+              "Study Parameters ID": 1454223681,
+              "Variant Annotation ID": 1454223701,
+              "Study Type": null,
+              "Study Cases": 82.0,
+              "Study Controls": null,
+              "Characteristics": "Mucositis",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.036",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1454223681,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1454223701,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "case/control",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 82.0,
+                "prediction": 82.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Mucositis",
+                "prediction": "Multivariate model predicting pain with MTHFR and ERCC2 variants",
+                "score": 0.8540969491004944,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.036",
+                "prediction": "= 0.01",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6416001565316144,
+            "annotation": {
+              "Study Parameters ID": 1454223606,
+              "Variant Annotation ID": 1454223600,
+              "Study Type": null,
+              "Study Cases": 82.0,
+              "Study Controls": null,
+              "Characteristics": "neuropathy",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.05",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1454223606,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1454223600,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "case/control",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 82.0,
+                "prediction": 82.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "neuropathy",
+                "prediction": "C allele of DPYD variant rs1801265 linked to neuropathy risk",
+                "score": 0.9072026610374451,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.05",
+                "prediction": "= 0.05",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "OR",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": 4.58,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6117574292070725,
+            "annotation": {
+              "Study Parameters ID": 1454223622,
+              "Variant Annotation ID": 1454223640,
+              "Study Type": null,
+              "Study Cases": 82.0,
+              "Study Controls": null,
+              "Characteristics": "Hematological disorders",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.0005",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1454223622,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1454223640,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "case/control",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 82.0,
+                "prediction": 82.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Hematological disorders",
+                "prediction": "TYMS deletion genotype associated with protection against hematological adverse reactions",
+                "score": 0.8998762965202332,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.0005",
+                "prediction": "= 0.001",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "OR",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": 0.029,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6101194024085999,
+            "annotation": {
+              "Study Parameters ID": 1454223623,
+              "Variant Annotation ID": 1454223652,
+              "Study Type": null,
+              "Study Cases": 82.0,
+              "Study Controls": null,
+              "Characteristics": "Hematological disorders",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.005",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1454223623,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1454223652,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "case/control",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 82.0,
+                "prediction": 82.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Hematological disorders",
+                "prediction": "5-FU treatment causing mucositis",
+                "score": 0.8720298409461975,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.005",
+                "prediction": "= 0.036",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "OR",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": 2.27,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6092743207426632,
+            "annotation": {
+              "Study Parameters ID": 1454223621,
+              "Variant Annotation ID": 1454223640,
+              "Study Type": null,
+              "Study Cases": 82.0,
+              "Study Controls": null,
+              "Characteristics": "neuropathy",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.02",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1454223621,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1454223640,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "case/control",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 82.0,
+                "prediction": 82.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "neuropathy",
+                "prediction": "3R genotype of TYMS 5'UTR linked to skin and subcutaneous tissue disorders",
+                "score": 0.8576634526252747,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.02",
+                "prediction": "= 0.029",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "OR",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": 6.4,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 1,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 82.0,
+              "Study Controls": null,
+              "Characteristics": "Advanced colorectal cancer patients receiving 5-FU-based chemotherapy",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.012",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 0.147,
+              "Confidence Interval Start": 0.007,
+              "Confidence Interval Stop": 0.991,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

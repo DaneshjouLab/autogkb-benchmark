@@ -1,0 +1,413 @@
+{
+  "pmcid": "PMC6465603",
+  "pmid": "31024313",
+  "title": "NUDT15 Polymorphism Confer Increased Susceptibility to Thiopurine-Induced Leukopenia in Patients With Autoimmune Hepatitis and Related Cirrhosis",
+  "overall_score": 0.19681194034715493,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 1,
+        "items": [
+          {
+            "variant": "rs116855232",
+            "gene": "NUDT15",
+            "drug": "azathioprine",
+            "annotation": {
+              "Variant/Haplotypes": "rs116855232",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "The T risk allele in NUDT15 is significantly associated with thiopurine-induced leukopenia in Chinese patients (P < 0.00001, odds ratio = 20.41).",
+              "Sentence": "The T allele is associated with increased risk of leukopenia in azathioprine context in Chinese patients with autoimmune hepatitis.",
+              "Alleles": "CC, CT, TT",
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Population types": "in patients with autoimmune hepatitis",
+              "Population Phenotypes or diseases": "Other:autoimmune hepatitis",
+              "Specialty Population": null,
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "PMID": 31024313,
+              "Variant Annotation ID": 1,
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "the T risk allele in NUDT15 is significantly associated with thiopurine-induced leukopenia in Chinese patients (P < 0.00001, odds ratio = 20.41)",
+                "the rs116855232 variant allele resulted in a 7.86-fold (P < 0.00001, 95% confidence interval (CI): 6.13-10.08) increased risk of developing leukopenia",
+                "When evaluated by rs116855232 genotype, leukopenia was significantly associated with the T allele [P < 0.00001, odds ratio = 20.41; 95% CI (7.84, 53.13)]"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.49128347262740135,
+      "total_samples": 2,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 1,
+        "unmatched_count": 1,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.9855347514152527,
+            "annotation": {
+              "Variant/Haplotypes": "rs116855232",
+              "Gene": "NUDT15",
+              "Drug(s)": "azathioprine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "CT + TT",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Leukopenia",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "CC"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs116855232",
+                "prediction": "rs116855232",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "NUDT15",
+                "prediction": "NUDT15",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "azathioprine",
+                "prediction": "azathioprine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "CT + TT",
+                "prediction": "CC, CT, TT",
+                "score": 0.9563269019126892,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Leukopenia",
+                "prediction": "leukopenia",
+                "score": 0.957292377948761,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "CC",
+                "prediction": "CC (wild-type)",
+                "score": 0.9417282342910767,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1451237464,
+              "Variant/Haplotypes": "rs1142345",
+              "Gene": "TPMT",
+              "Drug(s)": "azathioprine",
+              "PMID": 31024313,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": "TPMT\u22173C alleles were only observed in four subjects including 3 patients who were heterozygotes (TC) and 1 patient who was homozygous (CC).Authors state in discussion \"the lack of significance observed for rs1142345 in the present study is likely due to its low prevalence in East Asian populations and the small sample size of our cohort.",
+              "Sentence": "Allele C is not associated with increased likelihood of Leukopenia when treated with azathioprine in people with Hepatitis, Autoimmune as compared to allele T.",
+              "Alleles": "C",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Side Effect:Leukopenia",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Autoimmune hepatitis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "T",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "31024313",
+              "Variant Annotation ID_norm": "1451237464"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.24713449279467264,
+      "total_samples": 2,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 1,
+        "unmatched_count": 1,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.4361196931670694,
+            "annotation": {
+              "Study Parameters ID": 1451237506,
+              "Variant Annotation ID": 1451237500,
+              "Study Type": "case/control",
+              "Study Cases": 12.0,
+              "Study Controls": 137.0,
+              "Characteristics": "AZA-induced leukopenia in Chinese patients with AIH",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 89.47,
+              "Confidence Interval Start": 10.78,
+              "Confidence Interval Stop": 742.53,
+              "Biogeographical Groups": null
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1451237506,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1451237500,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 12.0,
+                "prediction": 149.0,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 137.0,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "AZA-induced leukopenia in Chinese patients with AIH",
+                "prediction": "Leukopenia observed in patients with NUDT15 CT genotype",
+                "score": 0.9140347838401794,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.0001",
+                "prediction": "< 0.00001",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 89.47,
+                "prediction": 20.41,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 10.78,
+                "prediction": 7.84,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 742.53,
+                "prediction": 53.13,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": null,
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1451237470,
+              "Variant Annotation ID": 1451237464,
+              "Study Type": "case/control",
+              "Study Cases": 12.0,
+              "Study Controls": 137.0,
+              "Characteristics": "AZA-induced leukopenia in Chinese patients with AIH",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.042,
+              "Allele Of Frequency In Cases": "C",
+              "Frequency In Controls": 0.015,
+              "Allele Of Frequency In Controls": "C",
+              "P Value": "= 0.283",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": null,
+              "Variant Annotation ID_norm": "1451237464"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 149.0,
+              "Study Controls": null,
+              "Characteristics": "Patients with autoimmune hepatitis treated with azathioprine",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.00001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 20.41,
+              "Confidence Interval Start": 7.84,
+              "Confidence Interval Stop": 53.13,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "retrospective",
+              "Study Cases": 149.0,
+              "Study Controls": null,
+              "Characteristics": "Patients with rs116855232 CC and CT genotypes",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.028",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": 0.95,
+              "Confidence Interval Stop": 1.53,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

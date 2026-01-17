@@ -1,0 +1,1085 @@
+{
+  "pmcid": "PMC10946077",
+  "pmid": "38497131",
+  "title": "Individual Irinotecan Therapy Under the Guidance of Pre-Treated UGT1A1*6 Genotyping in Gastric Cancer",
+  "overall_score": 0.13069432428195363,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "UGT1A1*6",
+            "gene": "UGT1A1",
+            "drug": "irinotecan",
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "irinotecan",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with AA genotype had significantly higher grade 3/4 diarrhea (100%), neutropenia (100%), and leukopenia (100%) compared to GA and GG genotypes.",
+              "Standardized Sentence": "UGT1A1*6 is associated with increased toxicity of irinotecan in patients with gastric cancer.",
+              "Alleles": "AA",
+              "Metabolizer types": "poor metabolizer",
+              "Specialty Population": "",
+              "Population types": "in patients with gastric cancer",
+              "Population Phenotypes or diseases": "Disease:gastric cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The administration of intravenous irinotecan occurred every 3 weeks, with the selection of irinotecan dosage based on the polymorphism of UGT1A1 gene. This gene was categorized into 3 groups: UGT1A1*6 wild-type (GG type) with a dosage of 125 mg/m2, d1, d8, UGT1A1*6 mutant heterozygosity (GA type) with a dosage of 100 mg/m2, d1, d8 and UGT1A1*6 homozygosity mutation (AA type) with a dosage of 75 mg/m2, d1, d8 or paclitaxel 125 mg/m2, d1, d8.",
+                "Additionally, grade 3/4 diarrhea, neutropenia, and leukopenia were significantly more common in AA genotype patients compared to GG (2%, 19%, and 24%) or GA (23%, 31%, and 31%) genotype patients, suggesting that patients with the AA genotype could not tolerate severe toxicity even with reduced doses of irinotecan.",
+                "There was a significant difference in the risk of delayed diarrhea (p = 0.000), leukopenia (p = 0.003) and neutropenia (p = 0.000) in patients with different UGT1A1*6 genotypes."
+              ]
+            }
+          },
+          {
+            "variant": "UGT1A1*6",
+            "gene": "UGT1A1",
+            "drug": "irinotecan",
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "irinotecan",
+              "Phenotype Category": "efficacy",
+              "Significance": "no",
+              "Notes": "No significant difference in progression-free survival (PFS) and overall survival (OS) among GG, GA, and AA genotypes after dose adjustment.",
+              "Standardized Sentence": "UGT1A1*6 is not associated with decreased efficacy of irinotecan in patients with gastric cancer.",
+              "Alleles": "GG/GA/AA",
+              "Metabolizer types": "",
+              "Specialty Population": "",
+              "Population types": "in patients with gastric cancer",
+              "Population Phenotypes or diseases": "Disease:gastric cancer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "",
+              "PD/PK terms": "efficacy of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Among 107 patients, there were no significant differences in PFS (4.8 m vs 4.9 m vs 4.4 m; p = 0.5249) and OS (9.3 m vs 9.3 m vs NA; p = 0.6821) among patients with GG/GA/AA subtypes after dose adjustment.",
+                "There are no significant differences in PFS and OS among patients with different alleles or after dose adjustment (p > 0.05).",
+                "It proved that individual irinotecan treatment can have a good effect in patients with non-AA subtype under the guidance of UGT1A1*6 gene polymorphism."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.08287936200698216,
+      "total_samples": 7,
+      "ground_truth_annotations": {
+        "count": 7,
+        "matched_count": 1,
+        "unmatched_count": 6,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.5692411124706268,
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "irinotecan",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*6 + *28",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "Phenotype": "Efficacy:Overall survival, Efficacy:Progression-free survival",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "UGT1A1*6",
+                "prediction": "UGT1A1*6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "UGT1A1",
+                "prediction": "UGT1A1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "irinotecan",
+                "prediction": "irinotecan",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "toxicity",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Alleles": {
+                "ground_truth": "*6 + *28",
+                "prediction": "AA, GA, GG",
+                "score": 0.8459116816520691,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Not associated with",
+                "prediction": "Associated with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "increased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Efficacy:Overall survival, Efficacy:Progression-free survival",
+                "prediction": "delayed diarrhea, leukopenia, neutropenia",
+                "score": 0.8464994430541992,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452426860,
+              "Variant/Haplotypes": "UGT1A1*1",
+              "Gene": "UGT1A1",
+              "Drug(s)": "irinotecan",
+              "PMID": 38497131,
+              "Phenotype Category": "Efficacy",
+              "Significance": "no",
+              "Notes": "In this study, we calculated irinotecan dose according to UGT1A1*6 gene polymorphism based on BSA. For patients with GG type, irinotecan was used in full dose. For patients with GA type, irinotecan was used by 20% reduction. For patients with AA type, irinotecan was used by 40% reduction.\" \"Of the 8 patients with UGT1A1*6 AA subtype, 5 had severe toxicity and were subsequently switched to paclitaxel in the following treatment. Three patients received paclitaxel treatment directly.\" \"In the present study, univariable and multivariate analysis revealed no relation between PFS and UGT1A1*6 or UGT1A1*28",
+              "Sentence": "UGT1A1 *6 + *28 is not associated with decreased likelihood of overall survival or progression-free survival when treated with irinotecan in people with Stomach Neoplasms as compared to UGT1A1 *1.",
+              "Alleles": "*6 + *28",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Efficacy:Overall survival, Efficacy:Progression-free survival",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Stomach Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38497131",
+              "Variant Annotation ID_norm": "1452426860",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452426860,
+              "Variant/Haplotypes": "UGT1A1*28",
+              "Gene": "UGT1A1",
+              "Drug(s)": "irinotecan",
+              "PMID": 38497131,
+              "Phenotype Category": "Efficacy",
+              "Significance": "no",
+              "Notes": "In this study, we calculated irinotecan dose according to UGT1A1*6 gene polymorphism based on BSA. For patients with GG type, irinotecan was used in full dose. For patients with GA type, irinotecan was used by 20% reduction. For patients with AA type, irinotecan was used by 40% reduction.\" \"Of the 8 patients with UGT1A1*6 AA subtype, 5 had severe toxicity and were subsequently switched to paclitaxel in the following treatment. Three patients received paclitaxel treatment directly.\" \"In the present study, univariable and multivariate analysis revealed no relation between PFS and UGT1A1*6 or UGT1A1*28",
+              "Sentence": "UGT1A1 *6 + *28 is not associated with decreased likelihood of overall survival or progression-free survival when treated with irinotecan in people with Stomach Neoplasms as compared to UGT1A1 *1.",
+              "Alleles": "*6 + *28",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Efficacy:Overall survival, Efficacy:Progression-free survival",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Stomach Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38497131",
+              "Variant Annotation ID_norm": "1452426860",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452426882,
+              "Variant/Haplotypes": "UGT1A1*1",
+              "Gene": "UGT1A1",
+              "Drug(s)": "irinotecan",
+              "PMID": 38497131,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": "there were no significant differences in diarrhea (p = 0.136), neutropenia (p = 0.991), and leukopenia (p = 0.857) in UGT1A1*28 subgroups.\" \"The frequencies of TA6/TA6, TA6/TA7, TA7/TA7 for UGT1A1*28 and GG, GA, AA genotypes for UGT1A1*6 were 70.9%, 25.5%, 3.6% and 60.9%, 31.8%, 7.3%, respectively (Table 2). Three patients (2.7%) carried double heterozygosity (GA and TA6/TA7). No concurrent homozygous mutations were detected.",
+              "Sentence": "UGT1A1 *28 is not associated with increased severity of Neutropenia, Leukopenia or Diarrhea when treated with irinotecan in people with Stomach Neoplasms as compared to UGT1A1 *1.",
+              "Alleles": "*28",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "severity of",
+              "Phenotype": "Side Effect:Neutropenia, Side Effect:Leukopenia, Side Effect:Diarrhea",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Stomach Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38497131",
+              "Variant Annotation ID_norm": "1452426882",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452426882,
+              "Variant/Haplotypes": "UGT1A1*28",
+              "Gene": "UGT1A1",
+              "Drug(s)": "irinotecan",
+              "PMID": 38497131,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": "there were no significant differences in diarrhea (p = 0.136), neutropenia (p = 0.991), and leukopenia (p = 0.857) in UGT1A1*28 subgroups.\" \"The frequencies of TA6/TA6, TA6/TA7, TA7/TA7 for UGT1A1*28 and GG, GA, AA genotypes for UGT1A1*6 were 70.9%, 25.5%, 3.6% and 60.9%, 31.8%, 7.3%, respectively (Table 2). Three patients (2.7%) carried double heterozygosity (GA and TA6/TA7). No concurrent homozygous mutations were detected.",
+              "Sentence": "UGT1A1 *28 is not associated with increased severity of Neutropenia, Leukopenia or Diarrhea when treated with irinotecan in people with Stomach Neoplasms as compared to UGT1A1 *1.",
+              "Alleles": "*28",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "severity of",
+              "Phenotype": "Side Effect:Neutropenia, Side Effect:Leukopenia, Side Effect:Diarrhea",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Stomach Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38497131",
+              "Variant Annotation ID_norm": "1452426882",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452426961,
+              "Variant/Haplotypes": "UGT1A1*1",
+              "Gene": "UGT1A1",
+              "Drug(s)": "irinotecan",
+              "PMID": 38497131,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "diarrhea (p = 0.000), neutropenia (p = 0.000), and leukopenia (p = 0.003) were significantly different among UGT1A1*6 subgroups (Table 3). Additionally, grade 3/4 diarrhea, neutropenia, and leukopenia were significantly more common in AA genotype patients compared to GG (2%, 19%, and 24%) or GA (23%, 31%, and 31%) genotype patients, suggesting that that patients with the AA genotype could not tolerate severe toxicity even with reduced doses of irinotecan.diarrhea (p = 0.000), neutropenia (p = 0.000), and leukopenia (p = 0.003) were significantly different among UGT1A1*6 subgroups (Table 3). Additionally, grade 3/4 diarrhea, neutropenia, and leukopenia were significantly more common in AA genotype patients compared to GG (2%, 19%, and 24%) or GA (23%, 31%, and 31%) genotype patients, suggesting that that patients with the AA genotype could not tolerate severe toxicity even with reduced doses of irinotecan.\" \"The frequencies of TA6/TA6, TA6/TA7, TA7/TA7 for UGT1A1*28 and GG, GA, AA genotypes for UGT1A1*6 were 70.9%, 25.5%, 3.6% and 60.9%, 31.8%, 7.3%, respectively (Table 2). Three patients (2.7%) carried double heterozygosity (GA and TA6/TA7). No concurrent homozygous mutations were detected.",
+              "Sentence": "UGT1A1 *6 is associated with increased severity of Neutropenia, Leukopenia or Diarrhea when treated with irinotecan in people with Stomach Neoplasms as compared to UGT1A1 *1.",
+              "Alleles": "*6",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "severity of",
+              "Phenotype": "Side Effect:Neutropenia, Side Effect:Leukopenia, Side Effect:Diarrhea",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Stomach Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38497131",
+              "Variant Annotation ID_norm": "1452426961",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452426961,
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "irinotecan",
+              "PMID": 38497131,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "diarrhea (p = 0.000), neutropenia (p = 0.000), and leukopenia (p = 0.003) were significantly different among UGT1A1*6 subgroups (Table 3). Additionally, grade 3/4 diarrhea, neutropenia, and leukopenia were significantly more common in AA genotype patients compared to GG (2%, 19%, and 24%) or GA (23%, 31%, and 31%) genotype patients, suggesting that that patients with the AA genotype could not tolerate severe toxicity even with reduced doses of irinotecan.diarrhea (p = 0.000), neutropenia (p = 0.000), and leukopenia (p = 0.003) were significantly different among UGT1A1*6 subgroups (Table 3). Additionally, grade 3/4 diarrhea, neutropenia, and leukopenia were significantly more common in AA genotype patients compared to GG (2%, 19%, and 24%) or GA (23%, 31%, and 31%) genotype patients, suggesting that that patients with the AA genotype could not tolerate severe toxicity even with reduced doses of irinotecan.\" \"The frequencies of TA6/TA6, TA6/TA7, TA7/TA7 for UGT1A1*28 and GG, GA, AA genotypes for UGT1A1*6 were 70.9%, 25.5%, 3.6% and 60.9%, 31.8%, 7.3%, respectively (Table 2). Three patients (2.7%) carried double heterozygosity (GA and TA6/TA7). No concurrent homozygous mutations were detected.",
+              "Sentence": "UGT1A1 *6 is associated with increased severity of Neutropenia, Leukopenia or Diarrhea when treated with irinotecan in people with Stomach Neoplasms as compared to UGT1A1 *1.",
+              "Alleles": "*6",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "severity of",
+              "Phenotype": "Side Effect:Neutropenia, Side Effect:Leukopenia, Side Effect:Diarrhea",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Stomach Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38497131",
+              "Variant Annotation ID_norm": "1452426961",
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.5291525783992949,
+      "total_samples": 7,
+      "ground_truth_annotations": {
+        "count": 7,
+        "matched_count": 5,
+        "unmatched_count": 2,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.6928221099516925,
+            "annotation": {
+              "Study Parameters ID": 1452426880,
+              "Variant Annotation ID": 1452426860,
+              "Study Type": null,
+              "Study Cases": 110.0,
+              "Study Controls": null,
+              "Characteristics": "OS for *6",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.703",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452426880,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452426860,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 110.0,
+                "prediction": 110,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "OS for *6",
+                "prediction": "Patients treated with irinotecan, differentiated by UGT1A1 genotype.",
+                "score": 0.827975869178772,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.703",
+                "prediction": "= 0.6821",
+                "score": 0.95,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "HR",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "East Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6678813134922701,
+            "annotation": {
+              "Study Parameters ID": 1452426890,
+              "Variant Annotation ID": 1452426882,
+              "Study Type": null,
+              "Study Cases": 110.0,
+              "Study Controls": null,
+              "Characteristics": "Leukopenia grade 3-4",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.857",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452426890,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452426882,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 110.0,
+                "prediction": 110,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Leukopenia grade 3-4",
+                "prediction": "Patients with advanced gastric cancer receiving irinotecan treatment based on UGT1A1 genotype.",
+                "score": 0.8539823293685913,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.857",
+                "prediction": "= 0.5249",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "HR",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "East Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.663336236336652,
+            "annotation": {
+              "Study Parameters ID": 1452426980,
+              "Variant Annotation ID": 1452426961,
+              "Study Type": null,
+              "Study Cases": 110.0,
+              "Study Controls": null,
+              "Characteristics": "Neutropenia grade 3-4",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.001",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452426980,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452426961,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 110.0,
+                "prediction": 107,
+                "score": 0.9,
+                "match_status": "partial_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Neutropenia grade 3-4",
+                "prediction": "Patients with UGT1A1 genotype receiving irinotecan treatment and analysis of adverse events.",
+                "score": 0.8767160177230835,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.001",
+                "prediction": "< 0.000",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "East Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6626704699852888,
+            "annotation": {
+              "Study Parameters ID": 1452426968,
+              "Variant Annotation ID": 1452426961,
+              "Study Type": null,
+              "Study Cases": 110.0,
+              "Study Controls": null,
+              "Characteristics": "Leukopenia grade 3-4",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.003",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452426968,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452426961,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 110.0,
+                "prediction": 107,
+                "score": 0.9,
+                "match_status": "partial_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Leukopenia grade 3-4",
+                "prediction": "Patients with UGT1A1 genotype receiving irinotecan treatment and analysis of adverse events.",
+                "score": 0.8653979897499084,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.003",
+                "prediction": "< 0.003",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "East Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5815852074062123,
+            "annotation": {
+              "Study Parameters ID": 1452426889,
+              "Variant Annotation ID": 1452426882,
+              "Study Type": null,
+              "Study Cases": 110.0,
+              "Study Controls": null,
+              "Characteristics": "Neutopenia grade 3-4",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.136",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452426889,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452426882,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 110.0,
+                "prediction": 5,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Neutopenia grade 3-4",
+                "prediction": "Patients with UGT1A1*6 AA genotype switched to paclitaxel due to severe adverse events.",
+                "score": 0.8869485259056091,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.136",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "East Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452426891,
+              "Variant Annotation ID": 1452426882,
+              "Study Type": null,
+              "Study Cases": 110.0,
+              "Study Controls": null,
+              "Characteristics": "Diarrhea grade 3-4",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.136",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": "1452426882"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452426969,
+              "Variant Annotation ID": 1452426961,
+              "Study Type": null,
+              "Study Cases": 110.0,
+              "Study Controls": null,
+              "Characteristics": "Diarrhea grade 3-4",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.001",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": "1452426961"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    }
+  }
+}

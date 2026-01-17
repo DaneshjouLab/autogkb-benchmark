@@ -1,0 +1,921 @@
+{
+  "pmcid": "PMC10786722",
+  "pmid": "38216550",
+  "title": "Integrating rare genetic variants into DPYD pharmacogenetic testing may help preventing fluoropyrimidine-induced toxicity",
+  "overall_score": 0.1583013743824429,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 8,
+        "items": [
+          {
+            "variant": "c.1679T>G",
+            "gene": "DPYD",
+            "drug": "fluoropyrimidine",
+            "annotation": {
+              "Variant/Haplotypes": "c.1679T>G",
+              "Gene": "DPYD",
+              "Drug(s)": "fluoropyrimidine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Significant association with low DPD activity.",
+              "Sentence": "Genotype c.1679T>G is associated with increased toxicity to fluoropyrimidine in patients with cancer.",
+              "Alleles": "c.1679T>G",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "wild-type",
+              "Specialty Population": "",
+              "Population types": "in patients with cancer",
+              "Population Phenotypes or diseases": "Other: advanced solid tumors",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD*13, rs55886062), c.1905+1G>A (DPYD*2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil.",
+                "Our data showed a significant association between each of these genetic variants and low DPD activity.",
+                "Overall, our results indicate that rare DPYD genetic variants account for a significative part of the interindividual variability of DPD activity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(DPYD*13",
+            "gene": "DPYD",
+            "drug": "fluoropyrimidine",
+            "annotation": {
+              "Variant/Haplotypes": "(DPYD*13",
+              "Gene": "DPYD",
+              "Drug(s)": "fluoropyrimidine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Significant association with low DPD activity.",
+              "Sentence": "Genotype c.1679T>G is associated with increased toxicity to fluoropyrimidine in patients with cancer.",
+              "Alleles": "c.1679T>G",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "wild-type",
+              "Specialty Population": "",
+              "Population types": "in patients with cancer",
+              "Population Phenotypes or diseases": "Other: advanced solid tumors",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD*13, rs55886062), c.1905+1G>A (DPYD*2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil.",
+                "Our data showed a significant association between each of these genetic variants and low DPD activity.",
+                "Overall, our results indicate that rare DPYD genetic variants account for a significative part of the interindividual variability of DPD activity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "rs55886062)",
+            "gene": "DPYD",
+            "drug": "fluoropyrimidine",
+            "annotation": {
+              "Variant/Haplotypes": "rs55886062)",
+              "Gene": "DPYD",
+              "Drug(s)": "fluoropyrimidine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Significant association with low DPD activity.",
+              "Sentence": "Genotype c.1679T>G is associated with increased toxicity to fluoropyrimidine in patients with cancer.",
+              "Alleles": "c.1679T>G",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "wild-type",
+              "Specialty Population": "",
+              "Population types": "in patients with cancer",
+              "Population Phenotypes or diseases": "Other: advanced solid tumors",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD*13, rs55886062), c.1905+1G>A (DPYD*2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil.",
+                "Our data showed a significant association between each of these genetic variants and low DPD activity.",
+                "Overall, our results indicate that rare DPYD genetic variants account for a significative part of the interindividual variability of DPD activity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "c.1905+1G>A",
+            "gene": "DPYD",
+            "drug": "fluoropyrimidine",
+            "annotation": {
+              "Variant/Haplotypes": "c.1905+1G>A",
+              "Gene": "DPYD",
+              "Drug(s)": "fluoropyrimidine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Significant adverse drug reactions linked to this variant.",
+              "Sentence": "Genotype c.1905+1G>A is associated with increased toxicity to fluoropyrimidine in patients with cancer.",
+              "Alleles": "c.1905+1G>A",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "wild-type",
+              "Specialty Population": "",
+              "Population types": "in patients with cancer",
+              "Population Phenotypes or diseases": "Other: advanced solid tumors",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Dose adjustment based on pretreatment screening for the most clinically relevant *DPYD* defective variants, i.e. c.1679T>G (*DPYD*13*), c.1905+1G>A (*DPYD*2A*), and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil.",
+                "This is in agreement with results from sequencing data established in large distinct populations, which showed that the vast majority of variants among pharmacogenes are rare (MAF < 1%) or very rare (MAF \u2264 0.1%) and non-synonymous, with an estimated 30-40% of functional variability likely attributed to these rare variants.",
+                "Overall, our results indicate that rare *DPYD* genetic variants account for a significative part of the interindividual variability of DPD activity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(DPYD*2A",
+            "gene": "DPYD",
+            "drug": "fluoropyrimidine",
+            "annotation": {
+              "Variant/Haplotypes": "(DPYD*2A",
+              "Gene": "DPYD",
+              "Drug(s)": "fluoropyrimidine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Significant adverse drug reactions linked to this variant.",
+              "Sentence": "Genotype c.1905+1G>A is associated with increased toxicity to fluoropyrimidine in patients with cancer.",
+              "Alleles": "c.1905+1G>A",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "wild-type",
+              "Specialty Population": "",
+              "Population types": "in patients with cancer",
+              "Population Phenotypes or diseases": "Other: advanced solid tumors",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Dose adjustment based on pretreatment screening for the most clinically relevant *DPYD* defective variants, i.e. c.1679T>G (*DPYD*13*), c.1905+1G>A (*DPYD*2A*), and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil.",
+                "This is in agreement with results from sequencing data established in large distinct populations, which showed that the vast majority of variants among pharmacogenes are rare (MAF < 1%) or very rare (MAF \u2264 0.1%) and non-synonymous, with an estimated 30-40% of functional variability likely attributed to these rare variants.",
+                "Overall, our results indicate that rare *DPYD* genetic variants account for a significative part of the interindividual variability of DPD activity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "rs3918290)",
+            "gene": "DPYD",
+            "drug": "fluoropyrimidine",
+            "annotation": {
+              "Variant/Haplotypes": "rs3918290)",
+              "Gene": "DPYD",
+              "Drug(s)": "fluoropyrimidine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Significant adverse drug reactions linked to this variant.",
+              "Sentence": "Genotype c.1905+1G>A is associated with increased toxicity to fluoropyrimidine in patients with cancer.",
+              "Alleles": "c.1905+1G>A",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "wild-type",
+              "Specialty Population": "",
+              "Population types": "in patients with cancer",
+              "Population Phenotypes or diseases": "Other: advanced solid tumors",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Dose adjustment based on pretreatment screening for the most clinically relevant *DPYD* defective variants, i.e. c.1679T>G (*DPYD*13*), c.1905+1G>A (*DPYD*2A*), and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil.",
+                "This is in agreement with results from sequencing data established in large distinct populations, which showed that the vast majority of variants among pharmacogenes are rare (MAF < 1%) or very rare (MAF \u2264 0.1%) and non-synonymous, with an estimated 30-40% of functional variability likely attributed to these rare variants.",
+                "Overall, our results indicate that rare *DPYD* genetic variants account for a significative part of the interindividual variability of DPD activity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "c.2846A>T",
+            "gene": "DPYD",
+            "drug": "fluoropyrimidine",
+            "annotation": {
+              "Variant/Haplotypes": "c.2846A>T",
+              "Gene": "DPYD",
+              "Drug(s)": "fluoropyrimidine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Affects DPD activity and toxicity risk in fluoropyrimidine treatment.",
+              "Sentence": "Genotype c.2846A>T is associated with increased toxicity to fluoropyrimidine in patients with cancer.",
+              "Alleles": "c.2846A>T",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "wild-type",
+              "Specialty Population": "",
+              "Population types": "in patients with cancer",
+              "Population Phenotypes or diseases": "Other: advanced solid tumors",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Dose adjustment based on pretreatment screening for the most clinically relevant *DPYD* defective variants, i.e. c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil.",
+                "As expected, our data showed a significant association between each of these genetic variants and low DPD activity.",
+                "Overall, our results indicate that rare *DPYD* genetic variants account for a significative part of the interindividual variability of DPD activity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(rs67376798)",
+            "gene": "DPYD",
+            "drug": "fluoropyrimidine",
+            "annotation": {
+              "Variant/Haplotypes": "(rs67376798)",
+              "Gene": "DPYD",
+              "Drug(s)": "fluoropyrimidine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Affects DPD activity and toxicity risk in fluoropyrimidine treatment.",
+              "Sentence": "Genotype c.2846A>T is associated with increased toxicity to fluoropyrimidine in patients with cancer.",
+              "Alleles": "c.2846A>T",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "wild-type",
+              "Specialty Population": "",
+              "Population types": "in patients with cancer",
+              "Population Phenotypes or diseases": "Other: advanced solid tumors",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Dose adjustment based on pretreatment screening for the most clinically relevant *DPYD* defective variants, i.e. c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil.",
+                "As expected, our data showed a significant association between each of these genetic variants and low DPD activity.",
+                "Overall, our results indicate that rare *DPYD* genetic variants account for a significative part of the interindividual variability of DPD activity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 3,
+        "matched_count": 0,
+        "unmatched_count": 3,
+        "items": [
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452352260,
+              "Variant/Haplotypes": "rs56038477",
+              "Gene": "DPYD",
+              "Drug(s)": null,
+              "PMID": 38216550,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Notes": "Consistent with previous reports, the c.1236G>A (rs56038477) which is included in the risk haplotype B3 was significantly associated with low DPD activity [30, 31]. Nevertheless, compared to the most clinically relevant DPYD defective variants, the association of these three variants with DPD activity was rather modest (Fig. 2).\" NOTE: the HapB has two variants, and c.1129-5923C>G rs75017182 is the causative variant, a recent study has shown they are not in perfect LD in all populations [PMID: 38129972].",
+              "Sentence": "Genotypes CT + TT is associated with decreased activity of DPYD as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
+              "Assay type": "plasma dihydrouracil/uracil",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Functional terms": "activity of",
+              "Gene/gene product": "DPYD",
+              "When treated with/exposed to/when assayed with": null,
+              "Multiple drugs And/or": null,
+              "Cell type": null,
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38216550",
+              "Variant Annotation ID_norm": "1452352260"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452352325,
+              "Variant/Haplotypes": "rs1801160",
+              "Gene": "DPYD",
+              "Drug(s)": null,
+              "PMID": 38216550,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Notes": "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2. Among the seven genetic variants identified, three variants (c.1236G>A or rs56038477 p.Glu412Glu ; c.496A>G or rs2297595 p.Met166Val; DPYD*6 c.2194G>A or rs1801160 p.Val732Ile) were significantly more frequent in the group of patients exhibiting partial DPD deficiency. Consistent with previous reports, the c.1236G>A (rs56038477) which is included in the risk haplotype B3 was significantly associated with low DPD activity [30, 31]. Nevertheless, compared to the most clinically relevant DPYD defective variants, the association of these three variants with DPD activity was rather modest (Fig. 2).",
+              "Sentence": "Genotypes CT + TT is associated with decreased activity of DPYD as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
+              "Assay type": "plasma dihydrouracil/uracil",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Functional terms": "activity of",
+              "Gene/gene product": "DPYD",
+              "When treated with/exposed to/when assayed with": null,
+              "Multiple drugs And/or": null,
+              "Cell type": null,
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38216550",
+              "Variant Annotation ID_norm": "1452352325"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452352320,
+              "Variant/Haplotypes": "rs2297595",
+              "Gene": "DPYD",
+              "Drug(s)": null,
+              "PMID": 38216550,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Notes": "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2. Among the seven genetic variants identified, three variants (c.1236G>A or rs56038477 p.Glu412Glu ; c.496A>G or rs2297595 p.Met166Val; DPYD*6 c.2194G>A or rs1801160 p.Val732Ile) were significantly more frequent in the group of patients exhibiting partial DPD deficiency. Consistent with previous reports, the c.1236G>A (rs56038477) which is included in the risk haplotype B3 was significantly associated with low DPD activity [30, 31]. Nevertheless, compared to the most clinically relevant DPYD defective variants, the association of these three variants with DPD activity was rather modest (Fig. 2).",
+              "Sentence": "Genotypes CC + CT is associated with decreased activity of DPYD as compared to genotype TT.",
+              "Alleles": "CC + CT",
+              "Specialty Population": null,
+              "Assay type": "plasma dihydrouracil/uracil",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Functional terms": "activity of",
+              "Gene/gene product": "DPYD",
+              "When treated with/exposed to/when assayed with": null,
+              "Multiple drugs And/or": null,
+              "Cell type": null,
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38216550",
+              "Variant Annotation ID_norm": "1452352320"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "c.1905+1G>A",
+            "gene": "DPYD",
+            "drug": "5-fluorouracil",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "c.1905+1G>A",
+              "Gene": "DPYD",
+              "Drug(s)": "5-fluorouracil",
+              "PMID": 38216550,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with this variant experienced severe toxicity during treatment with 5-fluorouracil.",
+              "Sentence": "c.1905+1G>A (DPYD*2A) is associated with increased risk of severe toxicity when treated with 5-fluorouracil as compared to wild-type DPYD.",
+              "Alleles": "",
+              "Specialty Population": "",
+              "Assay type": "Next Generation Sequencing",
+              "Cell type": "plasma samples",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Functional terms": "risk of",
+              "Gene/gene product": "DPD",
+              "When treated with/exposed to/when assayed with": "",
+              "Multiple drugs And/or": "",
+              "Comparison Allele(s) or Genotype(s)": "wild-type DPYD",
+              "Comparison Metabolizer types": "",
+              "PMID_norm": "38216550",
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "Dose adjustment based on pretreatment screening for the most clinically relevant *DPYD* defective variants, i.e. c.1679T>G (*DPYD*13*), c.1905+1G>A (*DPYD*2A*), and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil.",
+                "As expected, our data showed a significant association between each of these genetic variants and low DPD activity.",
+                "Overall, our results indicate that rare *DPYD* genetic variants account for a significative part of the interindividual variability of DPD activity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(DPYD*2A)",
+            "gene": "DPYD",
+            "drug": "5-fluorouracil",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "(DPYD*2A)",
+              "Gene": "DPYD",
+              "Drug(s)": "5-fluorouracil",
+              "PMID": 38216550,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with this variant experienced severe toxicity during treatment with 5-fluorouracil.",
+              "Sentence": "c.1905+1G>A (DPYD*2A) is associated with increased risk of severe toxicity when treated with 5-fluorouracil as compared to wild-type DPYD.",
+              "Alleles": "",
+              "Specialty Population": "",
+              "Assay type": "Next Generation Sequencing",
+              "Cell type": "plasma samples",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Functional terms": "risk of",
+              "Gene/gene product": "DPD",
+              "When treated with/exposed to/when assayed with": "",
+              "Multiple drugs And/or": "",
+              "Comparison Allele(s) or Genotype(s)": "wild-type DPYD",
+              "Comparison Metabolizer types": "",
+              "PMID_norm": "38216550",
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "Dose adjustment based on pretreatment screening for the most clinically relevant *DPYD* defective variants, i.e. c.1679T>G (*DPYD*13*), c.1905+1G>A (*DPYD*2A*), and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil.",
+                "As expected, our data showed a significant association between each of these genetic variants and low DPD activity.",
+                "Overall, our results indicate that rare *DPYD* genetic variants account for a significative part of the interindividual variability of DPD activity."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "study_parameters": {
+      "score": 0.7915068719122146,
+      "total_samples": 3,
+      "ground_truth_annotations": {
+        "count": 3,
+        "matched_count": 3,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.6999883371240953,
+            "annotation": {
+              "Study Parameters ID": 1452352264,
+              "Variant Annotation ID": 1452352260,
+              "Study Type": null,
+              "Study Cases": 855.0,
+              "Study Controls": null,
+              "Characteristics": "plasma dihydrouracil/uracil",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.05",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452352264,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452352260,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 855.0,
+                "prediction": 628,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "plasma dihydrouracil/uracil",
+                "prediction": "patients with DPD deficiency identified by [U] and UH2/U ratio",
+                "score": 0.8998017311096191,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.05",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "European",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6977555015507866,
+            "annotation": {
+              "Study Parameters ID": 1452352360,
+              "Variant Annotation ID": 1452352325,
+              "Study Type": null,
+              "Study Cases": 1055.0,
+              "Study Controls": null,
+              "Characteristics": "plasma dihydrouracil/uracil",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.01",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452352360,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452352325,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 1055.0,
+                "prediction": 2928,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "plasma dihydrouracil/uracil",
+                "prediction": "All patients (non-deficient DPD)",
+                "score": 0.8618435263633728,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.01",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "European",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6974214105045095,
+            "annotation": {
+              "Study Parameters ID": 1452352324,
+              "Variant Annotation ID": 1452352320,
+              "Study Type": null,
+              "Study Cases": 1265.0,
+              "Study Controls": null,
+              "Characteristics": "plasma dihydrouracil/uracil",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.01",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452352324,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452352320,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 1265.0,
+                "prediction": 180,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "plasma dihydrouracil/uracil",
+                "prediction": "patients who may exhibit low DPD activity",
+                "score": 0.8561639785766602,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.01",
+                "prediction": "< 0.01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "European",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 2972,
+              "Study Controls": null,
+              "Characteristics": "patients eligible for an uracil analog-based chemotherapy",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": null,
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 580,
+              "Study Controls": null,
+              "Characteristics": "partial DPD deficiency (UH2/U plasma ratio \u2264 10)",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.00001",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

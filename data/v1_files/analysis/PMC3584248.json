@@ -1,0 +1,1393 @@
+{
+  "pmcid": "PMC3584248",
+  "pmid": "23476897",
+  "title": "CYP2D6 genotypes, endoxifen levels, and disease recurrence in 224 Filipino and Vietnamese women receiving adjuvant tamoxifen for operable breast cancer",
+  "overall_score": 0.19365675393949475,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.28248615013925654,
+      "total_samples": 10,
+      "ground_truth_annotations": {
+        "count": 10,
+        "matched_count": 5,
+        "unmatched_count": 5,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.5649723002785131,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2D6*1",
+              "Gene": "CYP2D6",
+              "PMID": 23476897,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Alleles": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *2/*2",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "endoxifen"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2D6*1",
+                "prediction": "CYP2D6*1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2D6",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 23476897,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Metabolism/PK",
+                "prediction": "metabolism/PK",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+                "prediction": "CYP2D6*1/*10, CYP2D6*1/*2, CYP2D6*10/*10, *1/*41, CYP2D6*2/*10",
+                "score": 0.9467630982398987,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "intermediate metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "isPlural": {
+                "ground_truth": "Are",
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "increased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "concentrations of",
+                "prediction": "concentrations of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": "in women with",
+                "prediction": "in people with operable breast cancer",
+                "score": 0.8749915957450867,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Disease:Breast Neoplasms",
+                "prediction": "Disease:breast cancer",
+                "score": 0.9428942203521729,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1 + *1/*2 + *2/*2",
+                "prediction": "*1/*1; *1/*10",
+                "score": 0.9698247909545898,
+                "match_status": "match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "normal metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Drug(s)": {
+                "ground_truth": "endoxifen",
+                "prediction": "tamoxifen",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5649723002785131,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2D6*2",
+              "Gene": "CYP2D6",
+              "PMID": 23476897,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Alleles": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *2/*2",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "endoxifen"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2D6*2",
+                "prediction": "CYP2D6*2",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2D6",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 23476897,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Metabolism/PK",
+                "prediction": "metabolism/PK",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+                "prediction": "CYP2D6*1/*10, CYP2D6*1/*2, CYP2D6*10/*10, *1/*41, CYP2D6*2/*10",
+                "score": 0.9467630982398987,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "intermediate metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "isPlural": {
+                "ground_truth": "Are",
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "increased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "concentrations of",
+                "prediction": "concentrations of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": "in women with",
+                "prediction": "in people with operable breast cancer",
+                "score": 0.8749915957450867,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Disease:Breast Neoplasms",
+                "prediction": "Disease:breast cancer",
+                "score": 0.9428942203521729,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1 + *1/*2 + *2/*2",
+                "prediction": "*1/*1; *1/*10",
+                "score": 0.9698247909545898,
+                "match_status": "match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "normal metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Drug(s)": {
+                "ground_truth": "endoxifen",
+                "prediction": "tamoxifen",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5649723002785131,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2D6*5",
+              "Gene": "CYP2D6",
+              "PMID": 23476897,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Alleles": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *2/*2",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "endoxifen"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2D6*5",
+                "prediction": "CYP2D6*5",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2D6",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 23476897,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Metabolism/PK",
+                "prediction": "metabolism/PK",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+                "prediction": "CYP2D6*1/*10, CYP2D6*1/*2, CYP2D6*10/*10, *1/*41, CYP2D6*2/*10",
+                "score": 0.9467630982398987,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "intermediate metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "isPlural": {
+                "ground_truth": "Are",
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "increased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "concentrations of",
+                "prediction": "concentrations of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": "in women with",
+                "prediction": "in people with operable breast cancer",
+                "score": 0.8749915957450867,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Disease:Breast Neoplasms",
+                "prediction": "Disease:breast cancer",
+                "score": 0.9428942203521729,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1 + *1/*2 + *2/*2",
+                "prediction": "*1/*1; *1/*10",
+                "score": 0.9698247909545898,
+                "match_status": "match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "normal metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Drug(s)": {
+                "ground_truth": "endoxifen",
+                "prediction": "tamoxifen",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5649723002785131,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2D6*10",
+              "Gene": "CYP2D6",
+              "PMID": 23476897,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Alleles": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *2/*2",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "endoxifen"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2D6*10",
+                "prediction": "CYP2D6*10",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2D6",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 23476897,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Metabolism/PK",
+                "prediction": "metabolism/PK",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+                "prediction": "CYP2D6*1/*10, CYP2D6*1/*2, CYP2D6*10/*10, *1/*41, CYP2D6*2/*10",
+                "score": 0.9467630982398987,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "intermediate metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "isPlural": {
+                "ground_truth": "Are",
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "increased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "concentrations of",
+                "prediction": "concentrations of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": "in women with",
+                "prediction": "in people with operable breast cancer",
+                "score": 0.8749915957450867,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Disease:Breast Neoplasms",
+                "prediction": "Disease:breast cancer",
+                "score": 0.9428942203521729,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1 + *1/*2 + *2/*2",
+                "prediction": "*1/*1; *1/*10",
+                "score": 0.9698247909545898,
+                "match_status": "match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "normal metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Drug(s)": {
+                "ground_truth": "endoxifen",
+                "prediction": "tamoxifen",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5649723002785131,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2D6*41",
+              "Gene": "CYP2D6",
+              "PMID": 23476897,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Alleles": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *2/*2",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "endoxifen"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2D6*41",
+                "prediction": "CYP2D6*41",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2D6",
+                "prediction": "CYP2D6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 23476897,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Metabolism/PK",
+                "prediction": "metabolism/PK",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+                "prediction": "CYP2D6*1/*10, CYP2D6*1/*2, CYP2D6*10/*10, *1/*41, CYP2D6*2/*10",
+                "score": 0.9467630982398987,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "intermediate metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "isPlural": {
+                "ground_truth": "Are",
+                "prediction": "Are",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "increased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "concentrations of",
+                "prediction": "concentrations of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": "in women with",
+                "prediction": "in people with operable breast cancer",
+                "score": 0.8749915957450867,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Disease:Breast Neoplasms",
+                "prediction": "Disease:breast cancer",
+                "score": 0.9428942203521729,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1 + *1/*2 + *2/*2",
+                "prediction": "*1/*1; *1/*10",
+                "score": 0.9698247909545898,
+                "match_status": "match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "normal metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Drug(s)": {
+                "ground_truth": "endoxifen",
+                "prediction": "tamoxifen",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1444930474,
+              "Variant/Haplotypes": "CYP2D6*1",
+              "Gene": "CYP2D6",
+              "Drug(s)": "4-hydroxytamoxifen, N-desmethyltamoxifen, tamoxifen",
+              "PMID": 23476897,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "no",
+              "Notes": "No information on menopausal status or if tamoxifen only treatment. No co-treatment with CYP2D6 inhibitors CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 are genotyped with predeveloped TaqMan Genotyping Assays. Genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2 -*1/*1, *1/*2, *2/*2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41-*1/*10, *2/*10, *1/*41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6-*10/*10, *10/*41, *1/*5, *2/*5, *5/*10). [pre-menopausal][post-menopausal] [adjuvant]  [DNA source: leukocytes] [HWE: Vietnamese *1, 2, 4, 5, 10, 41 yes Filipino *1 and *2 no rest yes]",
+              "Sentence": "CYP2D6 *10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10 are not associated with decreased concentrations of 4-hydroxytamoxifen, n-desmethyltamoxifen and tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1 + *1/*2 + *2/*2.",
+              "Alleles": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "and",
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *2/*2",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23476897",
+              "Variant Annotation ID_norm": "1444930474",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1444930474,
+              "Variant/Haplotypes": "CYP2D6*2",
+              "Gene": "CYP2D6",
+              "Drug(s)": "4-hydroxytamoxifen, N-desmethyltamoxifen, tamoxifen",
+              "PMID": 23476897,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "no",
+              "Notes": "No information on menopausal status or if tamoxifen only treatment. No co-treatment with CYP2D6 inhibitors CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 are genotyped with predeveloped TaqMan Genotyping Assays. Genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2 -*1/*1, *1/*2, *2/*2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41-*1/*10, *2/*10, *1/*41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6-*10/*10, *10/*41, *1/*5, *2/*5, *5/*10). [pre-menopausal][post-menopausal] [adjuvant]  [DNA source: leukocytes] [HWE: Vietnamese *1, 2, 4, 5, 10, 41 yes Filipino *1 and *2 no rest yes]",
+              "Sentence": "CYP2D6 *10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10 are not associated with decreased concentrations of 4-hydroxytamoxifen, n-desmethyltamoxifen and tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1 + *1/*2 + *2/*2.",
+              "Alleles": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "and",
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *2/*2",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23476897",
+              "Variant Annotation ID_norm": "1444930474",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1444930474,
+              "Variant/Haplotypes": "CYP2D6*5",
+              "Gene": "CYP2D6",
+              "Drug(s)": "4-hydroxytamoxifen, N-desmethyltamoxifen, tamoxifen",
+              "PMID": 23476897,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "no",
+              "Notes": "No information on menopausal status or if tamoxifen only treatment. No co-treatment with CYP2D6 inhibitors CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 are genotyped with predeveloped TaqMan Genotyping Assays. Genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2 -*1/*1, *1/*2, *2/*2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41-*1/*10, *2/*10, *1/*41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6-*10/*10, *10/*41, *1/*5, *2/*5, *5/*10). [pre-menopausal][post-menopausal] [adjuvant]  [DNA source: leukocytes] [HWE: Vietnamese *1, 2, 4, 5, 10, 41 yes Filipino *1 and *2 no rest yes]",
+              "Sentence": "CYP2D6 *10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10 are not associated with decreased concentrations of 4-hydroxytamoxifen, n-desmethyltamoxifen and tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1 + *1/*2 + *2/*2.",
+              "Alleles": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "and",
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *2/*2",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23476897",
+              "Variant Annotation ID_norm": "1444930474",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1444930474,
+              "Variant/Haplotypes": "CYP2D6*10",
+              "Gene": "CYP2D6",
+              "Drug(s)": "4-hydroxytamoxifen, N-desmethyltamoxifen, tamoxifen",
+              "PMID": 23476897,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "no",
+              "Notes": "No information on menopausal status or if tamoxifen only treatment. No co-treatment with CYP2D6 inhibitors CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 are genotyped with predeveloped TaqMan Genotyping Assays. Genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2 -*1/*1, *1/*2, *2/*2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41-*1/*10, *2/*10, *1/*41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6-*10/*10, *10/*41, *1/*5, *2/*5, *5/*10). [pre-menopausal][post-menopausal] [adjuvant]  [DNA source: leukocytes] [HWE: Vietnamese *1, 2, 4, 5, 10, 41 yes Filipino *1 and *2 no rest yes]",
+              "Sentence": "CYP2D6 *10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10 are not associated with decreased concentrations of 4-hydroxytamoxifen, n-desmethyltamoxifen and tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1 + *1/*2 + *2/*2.",
+              "Alleles": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "and",
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *2/*2",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23476897",
+              "Variant Annotation ID_norm": "1444930474",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1444930474,
+              "Variant/Haplotypes": "CYP2D6*41",
+              "Gene": "CYP2D6",
+              "Drug(s)": "4-hydroxytamoxifen, N-desmethyltamoxifen, tamoxifen",
+              "PMID": 23476897,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "no",
+              "Notes": "No information on menopausal status or if tamoxifen only treatment. No co-treatment with CYP2D6 inhibitors CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 are genotyped with predeveloped TaqMan Genotyping Assays. Genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2 -*1/*1, *1/*2, *2/*2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41-*1/*10, *2/*10, *1/*41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6-*10/*10, *10/*41, *1/*5, *2/*5, *5/*10). [pre-menopausal][post-menopausal] [adjuvant]  [DNA source: leukocytes] [HWE: Vietnamese *1, 2, 4, 5, 10, 41 yes Filipino *1 and *2 no rest yes]",
+              "Sentence": "CYP2D6 *10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10 are not associated with decreased concentrations of 4-hydroxytamoxifen, n-desmethyltamoxifen and tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1 + *1/*2 + *2/*2.",
+              "Alleles": "*10/*10 + *10/*41 + *1/*5 + *2/*5 + *5/*10",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "and",
+              "Population types": "in women with",
+              "Population Phenotypes or diseases": "Disease:Breast Neoplasms",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *2/*2",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "23476897",
+              "Variant Annotation ID_norm": "1444930474",
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "CYP2D6*3",
+            "gene": "CYP2D6",
+            "drug": "tamoxifen",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2D6*3",
+              "Gene": "CYP2D6",
+              "Drug(s)": "tamoxifen",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "High endoxifen concentrations were associated with higher risk of recurrence; significant association found with p-value of 0.002.",
+              "Standardized Sentence": "CYP2D6*10 is associated with decreased endoxifen concentrations in Filipino and Vietnamese women receiving tamoxifen for breast cancer.",
+              "Alleles": "CYP2D6*1/*10, CYP2D6*1/*2, CYP2D6*10/*10, *1/*41, CYP2D6*2/*10",
+              "Metabolizer types": "intermediate metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1; *1/*10",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with operable breast cancer",
+              "Population Phenotypes or diseases": "Disease:breast cancer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "We found a significant association of reduced endoxifen plasma concentrations with functionally important CYP2D6 genotypes.",
+                "High endoxifen concentrations were associated with higher risk of recurrence; with a quadratic trend fitted to a stratified Cox proportional hazards regression model, the likelihood ratio p-value was 0.002.",
+                "The trend also showed that in 8 out of 9 pairs with low endoxifen concentrations, the recurrent case had lower endoxifen levels than the matched control."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2D6*4",
+            "gene": "CYP2D6",
+            "drug": "tamoxifen",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2D6*4",
+              "Gene": "CYP2D6",
+              "Drug(s)": "tamoxifen",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "High endoxifen concentrations were associated with higher risk of recurrence; significant association found with p-value of 0.002.",
+              "Standardized Sentence": "CYP2D6*10 is associated with decreased endoxifen concentrations in Filipino and Vietnamese women receiving tamoxifen for breast cancer.",
+              "Alleles": "CYP2D6*1/*10, CYP2D6*1/*2, CYP2D6*10/*10, *1/*41, CYP2D6*2/*10",
+              "Metabolizer types": "intermediate metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1; *1/*10",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with operable breast cancer",
+              "Population Phenotypes or diseases": "Disease:breast cancer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "We found a significant association of reduced endoxifen plasma concentrations with functionally important CYP2D6 genotypes.",
+                "High endoxifen concentrations were associated with higher risk of recurrence; with a quadratic trend fitted to a stratified Cox proportional hazards regression model, the likelihood ratio p-value was 0.002.",
+                "The trend also showed that in 8 out of 9 pairs with low endoxifen concentrations, the recurrent case had lower endoxifen levels than the matched control."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.544554544488589,
+      "total_samples": 4,
+      "ground_truth_annotations": {
+        "count": 4,
+        "matched_count": 3,
+        "unmatched_count": 1,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.7283856973928564,
+            "annotation": {
+              "Study Parameters ID": 1444930476,
+              "Variant Annotation ID": 1444930474,
+              "Study Type": "clinical trial",
+              "Study Cases": 224.0,
+              "Study Controls": null,
+              "Characteristics": "endpoint: tamoxifen concentration after 4 month; slow vs normal metabolizer; p = 0.39 for trend: normal > intermediate > slow",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.39",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1444930476,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1444930474,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "clinical trial",
+                "prediction": "clinical trial",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 224.0,
+                "prediction": 224.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "endpoint: tamoxifen concentration after 4 month; slow vs normal metabolizer; p = 0.39 for trend: normal > intermediate > slow",
+                "prediction": "Filipino and Vietnamese women receiving adjuvant tamoxifen for operable breast cancer",
+                "score": 0.8825568556785583,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.39",
+                "prediction": "= 0.002",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "HR",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Multiple Groups",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6427209342227262,
+            "annotation": {
+              "Study Parameters ID": 1444930473,
+              "Variant Annotation ID": 1444930388,
+              "Study Type": "clinical trial",
+              "Study Cases": 224.0,
+              "Study Controls": null,
+              "Characteristics": "endpoint: endoxifen concentration after 4 month; slow vs normal metabolizer; p = 0.0001 for trend: normal > intermediate > slow",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.0001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1444930473,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1444930388,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "clinical trial",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 224.0,
+                "prediction": 224.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "endpoint: endoxifen concentration after 4 month; slow vs normal metabolizer; p = 0.0001 for trend: normal > intermediate > slow",
+                "prediction": "Endoxifen concentrations associated with likelihood of recurrence among participants",
+                "score": 0.9262558817863464,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.0001",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Multiple Groups",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5508505842264961,
+            "annotation": {
+              "Study Parameters ID": 1444930499,
+              "Variant Annotation ID": 1444930474,
+              "Study Type": "clinical trial",
+              "Study Cases": 224.0,
+              "Study Controls": null,
+              "Characteristics": "endpoint: N-desmethyltamoxifen concentration after 4 month; slow vs normal metabolizer; p = 0.06 for trend: normal > intermediate > slow",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.06",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1444930499,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1444930474,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "clinical trial",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 224.0,
+                "prediction": 48.0,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": 48.0,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "endpoint: N-desmethyltamoxifen concentration after 4 month; slow vs normal metabolizer; p = 0.06 for trend: normal > intermediate > slow",
+                "prediction": "Nested case-control study of women with and without disease recurrence",
+                "score": 0.8644599318504333,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.06",
+                "prediction": "= 0.002",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Multiple Groups",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1444930497,
+              "Variant Annotation ID": 1444930474,
+              "Study Type": "clinical trial",
+              "Study Cases": 224.0,
+              "Study Controls": null,
+              "Characteristics": "endpoint: 4-hydroxytamoxifen concentration after 4 month; slow vs normal metabolizer; p = 0.13 for trend: normal > intermediate > slow",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.13",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "1444930474"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    }
+  }
+}

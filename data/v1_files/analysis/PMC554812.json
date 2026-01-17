@@ -1,0 +1,838 @@
+{
+  "pmcid": "PMC554812",
+  "pmid": "15743917",
+  "title": "HLA-B*5801 allele as a genetic marker for severe cutaneous adverse reactions caused by allopurinol",
+  "overall_score": 0.07114707683523497,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 1,
+        "items": [
+          {
+            "variant": "HLA-B*5801",
+            "gene": "HLA-B",
+            "drug": "allopurinol",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "HLA-B*5801",
+              "Gene": "HLA-B",
+              "Drug(s)": "allopurinol",
+              "PMID": 15743917,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA-B*5801 allele was present in all (100%) 51 patients with allopurinol-SCAR, but only in 20 (15%) of 135 tolerant patients.",
+              "Sentence": "Allele HLA-B*5801 is associated with increased risk of severe cutaneous adverse reactions (SCAR) to allopurinol in Han Chinese populations.",
+              "Alleles": "HLA-B*5801",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:allopurinol-induced SCAR",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of",
+              "Multiple drugs And/or": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Citations": [
+                "The HLA-B*5801 allele was present in all (100%) 51 patients with allopurinol-SCAR, but only in 20 (15%) of 135 tolerant patients",
+                "Our results indicated that allopurinol-SCAR is strongly associated with a genetic predisposition in Han Chinese. In particular, HLA-B*5801 allele is an important genetic risk factor for this life-threatening condition.",
+                "This association was only seen with allopurinol-SCAR and not with the patients' underlying diseases, such as gout, renal insufficiency, or autoimmune disease, etc."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.18090472271045052,
+      "total_samples": 5,
+      "ground_truth_annotations": {
+        "count": 5,
+        "matched_count": 1,
+        "unmatched_count": 4,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.8908073484897614,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-B*58:01",
+              "Gene": "HLA-B",
+              "Drug(s)": "allopurinol",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*58:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Severe Cutaneous Adverse Reactions",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-B*58:01",
+                "prediction": "HLA-B*5801",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-B",
+                "prediction": "HLA-B",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "allopurinol",
+                "prediction": "allopurinol",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*58:01",
+                "prediction": "*5801",
+                "score": 0.9237272143363953,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Severe Cutaneous Adverse Reactions",
+                "prediction": "severe cutaneous adverse reactions",
+                "score": 0.9843462705612183,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1184755073,
+              "Variant/Haplotypes": "HLA-DRB1*03:01",
+              "Gene": "HLA-DRB1",
+              "Drug(s)": "allopurinol",
+              "PMID": 15743917,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "Note: Alleles HLA-A*3303, HLA-C*0302, HLA-DRB1*0301 were in LD and formed an extended haplotype with HLA-B*5801. Chronic renal insufficiency was seen at a significantly higher frequency in patients with allopurinol-induced SCAR compared to allopurinol-tolerant patients p<0.0001 (OR=4.7 (2.3-9.3)).",
+              "Sentence": "HLA-DRB1 *03:01 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol.",
+              "Alleles": "*03:01",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Severe Cutaneous Adverse Reactions",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "15743917",
+              "Variant Annotation ID_norm": "1184755073"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1184755032,
+              "Variant/Haplotypes": "HLA-C*03:02",
+              "Gene": "HLA-C",
+              "Drug(s)": "allopurinol",
+              "PMID": 15743917,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "Note: Alleles HLA-A*3303, HLA-C*0302, HLA-DRB1*0301 were in LD and formed an extended haplotype with HLA-B*5801. Chronic renal insufficiency was seen at a significantly higher frequency in patients with allopurinol-induced SCAR compared to allopurinol-tolerant patients p<0.0001 (OR=4.7 (2.3-9.3)).",
+              "Sentence": "HLA-C *03:02 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol.",
+              "Alleles": "*03:02",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Severe Cutaneous Adverse Reactions",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "15743917",
+              "Variant Annotation ID_norm": "1184755032"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1184755056,
+              "Variant/Haplotypes": "HLA-A*33:03",
+              "Gene": "HLA-A",
+              "Drug(s)": "allopurinol",
+              "PMID": 15743917,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "Note: Alleles HLA-A*3303, HLA-C*0302, HLA-DRB1*0301 were in LD and formed an extended haplotype with HLA-B*5801. Chronic renal insufficiency was seen at a significantly higher frequency in patients with allopurinol-induced SCAR compared to allopurinol-tolerant patients p<0.0001 (OR=4.7 (2.3-9.3)).",
+              "Sentence": "HLA-A *33:03 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol.",
+              "Alleles": "*33:03",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Severe Cutaneous Adverse Reactions",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "15743917",
+              "Variant Annotation ID_norm": "1184755056"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1184755144,
+              "Variant/Haplotypes": "rs1594",
+              "Gene": "CFLAR",
+              "Drug(s)": "allopurinol",
+              "PMID": 15743917,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "An initial screen of 823 SNPs in the MHC region or in genes related to drug metabolism and immune response for association with allopurinol-induced SCAR. The direction of the association (i.e. which allele was associated with increased risk of SCARs and which allele was associated with decreased risk) was not clear. Unclear whether this was corrected for multiple comparisons or not.",
+              "Sentence": "Allele A is associated with severe cutaneous adverse reactions when treated with allopurinol as compared to allele G.",
+              "Alleles": "A",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": null,
+              "Side effect/efficacy/other": null,
+              "Phenotype": "Side Effect:Severe Cutaneous Adverse Reactions",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "G",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "15743917",
+              "Variant Annotation ID_norm": "1184755144"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.08437830011049906,
+      "total_samples": 14,
+      "ground_truth_annotations": {
+        "count": 14,
+        "matched_count": 2,
+        "unmatched_count": 12,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.5481575201539433,
+            "annotation": {
+              "Study Parameters ID": 1184755147,
+              "Variant Annotation ID": 1184755144,
+              "Study Type": "case/control",
+              "Study Cases": 21.0,
+              "Study Controls": 75.0,
+              "Characteristics": "cases n= 21, controls = 75 general population.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.01",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 393.5,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1184755147,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1184755144,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 21.0,
+                "prediction": 51.0,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 75.0,
+                "prediction": 228.0,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "cases n= 21, controls = 75 general population.",
+                "prediction": "Patients with allopurinol-SCAR",
+                "score": 0.8186778426170349,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.01",
+                "prediction": "< 10-18",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 393.5,
+                "prediction": 393.5,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": 23.23,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": 6665.26,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Han Chinese",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.4941626576816334,
+            "annotation": {
+              "Study Parameters ID": 1184755146,
+              "Variant Annotation ID": 1184755144,
+              "Study Type": "case/control",
+              "Study Cases": 30.0,
+              "Study Controls": 60.0,
+              "Characteristics": "cases n= 30, controls = 60 tolerant to allopurinol.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.01",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1184755146,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1184755144,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 30.0,
+                "prediction": 51.0,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 60.0,
+                "prediction": 228.0,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "cases n= 30, controls = 60 tolerant to allopurinol.",
+                "prediction": "Patients with allopurinol-SCAR",
+                "score": 0.9007651805877686,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.01",
+                "prediction": "< 10-7",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": 580.3,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": 34.4,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": 9780.9,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Han Chinese",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 981345658,
+              "Variant Annotation ID": 981345654,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 135.0,
+              "Characteristics": "cases n= 51, controls = 135 tolerant to allopurinol",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 1.0,
+              "Allele Of Frequency In Cases": "*58:01",
+              "Frequency In Controls": 0.15,
+              "Allele Of Frequency In Controls": "*58:01",
+              "P Value": "= 4.7E-24",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 580.3,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "981345654"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184754937,
+              "Variant Annotation ID": 981345654,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 93.0,
+              "Characteristics": "cases n= 51, controls = 93 general population.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 1.0,
+              "Allele Of Frequency In Cases": "*58:01",
+              "Frequency In Controls": 0.2,
+              "Allele Of Frequency In Controls": "*58:01",
+              "P Value": "= 8.1E-18",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 393.5,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "981345654"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184755119,
+              "Variant Annotation ID": 981345654,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 135.0,
+              "Characteristics": "Cases n= 51, controls = 135 tolerant to allopurinol. Statistics and allele frequencies here are for the HLA-B*5801 extended haplotype: B*5801-C*0302-A*3303-DRB1*0301.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.41,
+              "Allele Of Frequency In Cases": "*58:01",
+              "Frequency In Controls": 0.07,
+              "Allele Of Frequency In Controls": "*58:01",
+              "P Value": "= 0.039",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 9.8,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "981345654"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184755075,
+              "Variant Annotation ID": 1184755073,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 135.0,
+              "Characteristics": "cases n= 51, controls = 135 tolerant to allopurinol",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.65,
+              "Allele Of Frequency In Cases": "*03:01",
+              "Frequency In Controls": 0.13,
+              "Allele Of Frequency In Controls": "*03:01",
+              "P Value": "= 2.8E-6",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 12.7,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "1184755073"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184755076,
+              "Variant Annotation ID": 1184755073,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 93.0,
+              "Characteristics": "cases n= 51, controls = 93 general population.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.65,
+              "Allele Of Frequency In Cases": "*03:01",
+              "Frequency In Controls": 0.15,
+              "Allele Of Frequency In Controls": "*03:01",
+              "P Value": "= 8.5E-4",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 10.3,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "1184755073"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184755134,
+              "Variant Annotation ID": 1184755073,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 93.0,
+              "Characteristics": "Cases n= 51, controls = 135 tolerant to allopurinol. Statistics and allele frequencies here are for the HLA-B*5801 extended haplotype: B*5801-C*0302-A*3303-DRB1*0301.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.41,
+              "Allele Of Frequency In Cases": "*03:01",
+              "Frequency In Controls": 0.07,
+              "Allele Of Frequency In Controls": "*03:01",
+              "P Value": "= 0.039",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 9.8,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "1184755073"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184755034,
+              "Variant Annotation ID": 1184755032,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 135.0,
+              "Characteristics": "cases n= 51, controls = 135 tolerant to allopurinol",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.94,
+              "Allele Of Frequency In Cases": "*03:02",
+              "Frequency In Controls": 0.14,
+              "Allele Of Frequency In Controls": "*03:02",
+              "P Value": "= 1.4E-19",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 97.7,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "1184755032"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184755035,
+              "Variant Annotation ID": 1184755032,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 93.0,
+              "Characteristics": "cases n= 51, controls = 93 general population.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.94,
+              "Allele Of Frequency In Cases": "*03:02",
+              "Frequency In Controls": 0.2,
+              "Allele Of Frequency In Controls": "*03:02",
+              "P Value": "= 2.5E-13",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 62.3,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "1184755032"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184755127,
+              "Variant Annotation ID": 1184755032,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 135.0,
+              "Characteristics": "Cases n= 51, controls = 135 tolerant to allopurinol. Statistics and allele frequencies here are for the HLA-B*5801 extended haplotype: B*5801-C*0302-A*3303-DRB1*0301.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.41,
+              "Allele Of Frequency In Cases": "*03:02",
+              "Frequency In Controls": 0.07,
+              "Allele Of Frequency In Controls": "*03:02",
+              "P Value": "= 0.39",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 9.8,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "1184755032"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184755058,
+              "Variant Annotation ID": 1184755056,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 135.0,
+              "Characteristics": "cases n= 51, controls = 135 tolerant to allopurinol",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.67,
+              "Allele Of Frequency In Cases": "*33:03",
+              "Frequency In Controls": 0.18,
+              "Allele Of Frequency In Controls": "*33:03",
+              "P Value": "= 2.2E-4",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 9.3,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "1184755056"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184755113,
+              "Variant Annotation ID": 1184755056,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 135.0,
+              "Characteristics": "cases n= 51, controls = 135 tolerant to allopurinol. Statistics and allele frequencies here are for the HLA-B*5801 extended haplotype: B*5801-C*0302-A*3303-DRB1*0301.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.41,
+              "Allele Of Frequency In Cases": "*33:03",
+              "Frequency In Controls": 0.07,
+              "Allele Of Frequency In Controls": "*33:03",
+              "P Value": "= 0.039",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 9.8,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "1184755056"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1184755059,
+              "Variant Annotation ID": 1184755056,
+              "Study Type": "case/control",
+              "Study Cases": 51.0,
+              "Study Controls": 93.0,
+              "Characteristics": "cases n= 51, controls = 93 general population.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.67,
+              "Allele Of Frequency In Cases": "*33:03",
+              "Frequency In Controls": 0.22,
+              "Allele Of Frequency In Controls": "*33:03",
+              "P Value": "= 4.7E-2",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 7.3,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian",
+              "Variant Annotation ID_norm": "1184755056"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    }
+  }
+}

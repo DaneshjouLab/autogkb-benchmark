@@ -1,0 +1,884 @@
+{
+  "pmcid": "PMC11971672",
+  "pmid": "40184070",
+  "title": "Cytochrome P450 2C19 Genotypes and Clopidogrel in Patients With Ischemic Stroke: A Nonrandomized Clinical Trial",
+  "overall_score": 0.33225304615994294,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 8,
+        "items": [
+          {
+            "variant": "CYP2C19",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "yes",
+              "Notes": "Patients who were carriers of the loss-of-function CYP2C19 allele exhibited a higher likelihood of experiencing cardiovascular events.",
+              "Sentence": "CYP2C19 LOF allele is associated with increased cardiovascular events clopidogrel patients with acute ischemic stroke.",
+              "Alleles": "CYP2C19 LOF allele",
+              "Metabolizer types": "poor metabolizers, intermediate metabolizers",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "patients who were carriers of the loss-of-function CYP2C19 allele exhibited a higher likelihood of experiencing cardiovascular events.",
+                "The primary outcome occurred more frequently in carriers of the LOF CYP2C19 allele than in noncarriers (2.7% [49 of 1785] vs 1.6% [18 of 1125]; log-rank P = .048).",
+                "In this prospective nonrandomized clinical trial, carriers of the CYP2C19 LOF allele genotype exhibited a higher likelihood of experiencing cardiovascular events."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "LOF",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "LOF",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "yes",
+              "Notes": "Patients who were carriers of the loss-of-function CYP2C19 allele exhibited a higher likelihood of experiencing cardiovascular events.",
+              "Sentence": "CYP2C19 LOF allele is associated with increased cardiovascular events clopidogrel patients with acute ischemic stroke.",
+              "Alleles": "CYP2C19 LOF allele",
+              "Metabolizer types": "poor metabolizers, intermediate metabolizers",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "patients who were carriers of the loss-of-function CYP2C19 allele exhibited a higher likelihood of experiencing cardiovascular events.",
+                "The primary outcome occurred more frequently in carriers of the LOF CYP2C19 allele than in noncarriers (2.7% [49 of 1785] vs 1.6% [18 of 1125]; log-rank P = .048).",
+                "In this prospective nonrandomized clinical trial, carriers of the CYP2C19 LOF allele genotype exhibited a higher likelihood of experiencing cardiovascular events."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "allele",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "allele",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "yes",
+              "Notes": "Patients who were carriers of the loss-of-function CYP2C19 allele exhibited a higher likelihood of experiencing cardiovascular events.",
+              "Sentence": "CYP2C19 LOF allele is associated with increased cardiovascular events clopidogrel patients with acute ischemic stroke.",
+              "Alleles": "CYP2C19 LOF allele",
+              "Metabolizer types": "poor metabolizers, intermediate metabolizers",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "patients who were carriers of the loss-of-function CYP2C19 allele exhibited a higher likelihood of experiencing cardiovascular events.",
+                "The primary outcome occurred more frequently in carriers of the LOF CYP2C19 allele than in noncarriers (2.7% [49 of 1785] vs 1.6% [18 of 1125]; log-rank P = .048).",
+                "In this prospective nonrandomized clinical trial, carriers of the CYP2C19 LOF allele genotype exhibited a higher likelihood of experiencing cardiovascular events."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C19*1/*1",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*1/*1",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "yes",
+              "Notes": "Noncarriers of the CYP2C19 LOF allele had a lower incidence of cardiovascular events compared to carriers.",
+              "Sentence": "CYP2C19*1/*1 is associated with decreased cardiovascular events in patients treated with clopidogrel after acute ischemic stroke.",
+              "Alleles": "CYP2C19*1/*1",
+              "Metabolizer types": "extensive metabolizers",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In this nonrandomized clinical trial that included 2925 patients with acute ischemic stroke treated with clopidogrel, patients who were carriers of the loss-of-function *CYP2C19* allele exhibited a higher likelihood of experiencing cardiovascular events.",
+                "The primary outcome of composite cardiovascular events occurred significantly more in the LOF allele carrier group (49 of 1785 [2.7%]) compared with the noncarrier group (18 of 1125 [1.6%]) (HR, 0.58; 95% CI, 0.34-1.00; *P* = .048 for log-rank test)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C19*1/*17",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*1/*17",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "yes",
+              "Notes": "Noncarriers of the CYP2C19 LOF allele had a lower incidence of cardiovascular events compared to carriers.",
+              "Sentence": "CYP2C19*1/*1 is associated with decreased cardiovascular events in patients treated with clopidogrel after acute ischemic stroke.",
+              "Alleles": "CYP2C19*1/*1",
+              "Metabolizer types": "extensive metabolizers",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In this nonrandomized clinical trial that included 2925 patients with acute ischemic stroke treated with clopidogrel, patients who were carriers of the loss-of-function *CYP2C19* allele exhibited a higher likelihood of experiencing cardiovascular events.",
+                "The primary outcome of composite cardiovascular events occurred significantly more in the LOF allele carrier group (49 of 1785 [2.7%]) compared with the noncarrier group (18 of 1125 [1.6%]) (HR, 0.58; 95% CI, 0.34-1.00; *P* = .048 for log-rank test)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C19*17/*17",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*17/*17",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "yes",
+              "Notes": "Noncarriers of the CYP2C19 LOF allele had a lower incidence of cardiovascular events compared to carriers.",
+              "Sentence": "CYP2C19*1/*1 is associated with decreased cardiovascular events in patients treated with clopidogrel after acute ischemic stroke.",
+              "Alleles": "CYP2C19*1/*1",
+              "Metabolizer types": "extensive metabolizers",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In this nonrandomized clinical trial that included 2925 patients with acute ischemic stroke treated with clopidogrel, patients who were carriers of the loss-of-function *CYP2C19* allele exhibited a higher likelihood of experiencing cardiovascular events.",
+                "The primary outcome of composite cardiovascular events occurred significantly more in the LOF allele carrier group (49 of 1785 [2.7%]) compared with the noncarrier group (18 of 1125 [1.6%]) (HR, 0.58; 95% CI, 0.34-1.00; *P* = .048 for log-rank test)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(extensive",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "(extensive",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "yes",
+              "Notes": "Noncarriers of the CYP2C19 LOF allele had a lower incidence of cardiovascular events compared to carriers.",
+              "Sentence": "CYP2C19*1/*1 is associated with decreased cardiovascular events in patients treated with clopidogrel after acute ischemic stroke.",
+              "Alleles": "CYP2C19*1/*1",
+              "Metabolizer types": "extensive metabolizers",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In this nonrandomized clinical trial that included 2925 patients with acute ischemic stroke treated with clopidogrel, patients who were carriers of the loss-of-function *CYP2C19* allele exhibited a higher likelihood of experiencing cardiovascular events.",
+                "The primary outcome of composite cardiovascular events occurred significantly more in the LOF allele carrier group (49 of 1785 [2.7%]) compared with the noncarrier group (18 of 1125 [1.6%]) (HR, 0.58; 95% CI, 0.34-1.00; *P* = .048 for log-rank test)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "metabolizers)",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "metabolizers)",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "yes",
+              "Notes": "Noncarriers of the CYP2C19 LOF allele had a lower incidence of cardiovascular events compared to carriers.",
+              "Sentence": "CYP2C19*1/*1 is associated with decreased cardiovascular events in patients treated with clopidogrel after acute ischemic stroke.",
+              "Alleles": "CYP2C19*1/*1",
+              "Metabolizer types": "extensive metabolizers",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In this nonrandomized clinical trial that included 2925 patients with acute ischemic stroke treated with clopidogrel, patients who were carriers of the loss-of-function *CYP2C19* allele exhibited a higher likelihood of experiencing cardiovascular events.",
+                "The primary outcome of composite cardiovascular events occurred significantly more in the LOF allele carrier group (49 of 1785 [2.7%]) compared with the noncarrier group (18 of 1125 [1.6%]) (HR, 0.58; 95% CI, 0.34-1.00; *P* = .048 for log-rank test)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.6675197420020899,
+      "total_samples": 4,
+      "ground_truth_annotations": {
+        "count": 4,
+        "matched_count": 3,
+        "unmatched_count": 1,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.9552555799484252,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*1",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*1/*2 + *1/*3 + *2/*17 + *3/*17 + *2/*2 + *2/*3 + *3/*3",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Efficacy:Stroke, Efficacy:Myocardial Infarction, Efficacy:Death",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*17 + *17/*17"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C19*1",
+                "prediction": "CYP2C19",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C19",
+                "prediction": "CYP2C19",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "clopidogrel",
+                "prediction": "clopidogrel",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "efficacy",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*1/*2 + *1/*3 + *2/*17 + *3/*17 + *2/*2 + *2/*3 + *3/*3",
+                "prediction": "LOF allele",
+                "score": 0.835845947265625,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Efficacy:Stroke, Efficacy:Myocardial Infarction, Efficacy:Death",
+                "prediction": "cardiovascular events",
+                "score": 0.8765037655830383,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1 + *1/*17 + *17/*17",
+                "prediction": "noncarrier of LOF allele",
+                "score": 0.8402060866355896,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8552555799484253,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*1",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*1/*2 + *1/*3 + *2/*17 + *3/*17 + *2/*2 + *2/*3 + *3/*3",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Efficacy:Stroke, Efficacy:Myocardial Infarction, Efficacy:Death",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*17 + *17/*17"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C19*1",
+                "prediction": "LOF",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C19",
+                "prediction": "CYP2C19",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "clopidogrel",
+                "prediction": "clopidogrel",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "efficacy",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*1/*2 + *1/*3 + *2/*17 + *3/*17 + *2/*2 + *2/*3 + *3/*3",
+                "prediction": "LOF allele",
+                "score": 0.835845947265625,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Efficacy:Stroke, Efficacy:Myocardial Infarction, Efficacy:Death",
+                "prediction": "cardiovascular events",
+                "score": 0.8765037655830383,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1 + *1/*17 + *17/*17",
+                "prediction": "noncarrier of LOF allele",
+                "score": 0.8402060866355896,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8552555799484253,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*1",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*1/*2 + *1/*3 + *2/*17 + *3/*17 + *2/*2 + *2/*3 + *3/*3",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Efficacy:Stroke, Efficacy:Myocardial Infarction, Efficacy:Death",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*17 + *17/*17"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C19*1",
+                "prediction": "allele",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C19",
+                "prediction": "CYP2C19",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "clopidogrel",
+                "prediction": "clopidogrel",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "efficacy",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*1/*2 + *1/*3 + *2/*17 + *3/*17 + *2/*2 + *2/*3 + *3/*3",
+                "prediction": "LOF allele",
+                "score": 0.835845947265625,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Efficacy:Stroke, Efficacy:Myocardial Infarction, Efficacy:Death",
+                "prediction": "cardiovascular events",
+                "score": 0.8765037655830383,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1 + *1/*17 + *17/*17",
+                "prediction": "noncarrier of LOF allele",
+                "score": 0.8402060866355896,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1453096120,
+              "Variant/Haplotypes": "CYP2C19*17",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "PMID": 40184070,
+              "Phenotype Category": "Efficacy",
+              "Significance": "yes",
+              "Notes": "Overall, 49 of 1785 LOF allele carriers (2.7%) and 18 of 1125 LOF allele noncarriers (1.6%) experienced cardiovascular events, defined as a composite of recurrent stroke, myocardial infarction, and all-cause mortality at 180 days...The primary outcome of composite cardiovascular events occurred significantly more in the LOF allele carrier group (49 of 1785 [2.7%]) compared with the noncarrier group (18 of 1125 [1.6%]) (HR, 0.58; 95% CI, 0.34-1.00; P = .048 for log-rank test).",
+              "Sentence": "CYP2C19 *1/*2 + *1/*3 + *2/*17 + *3/*17 + *2/*2 + *2/*3 + *3/*3 (assigned as intermediate metabolizer and poor metabolizer phenotype) is associated with increased likelihood of Stroke, Myocardial Infarction or Death when treated with clopidogrel in people with Stroke as compared to CYP2C19 *1/*1 + *1/*17 + *17/*17 (assigned as normal metabolizer phenotype) .",
+              "Alleles": "*1/*2 + *1/*3 + *2/*17 + *3/*17 + *2/*2 + *2/*3 + *3/*3",
+              "Specialty Population": null,
+              "Metabolizer types": "intermediate metabolizer and poor metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Efficacy:Stroke, Efficacy:Myocardial Infarction, Efficacy:Death",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Stroke",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*17 + *17/*17",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "PMID_norm": "40184070",
+              "Variant Annotation ID_norm": "1453096120",
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.65998561779658,
+      "total_samples": 2,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 2,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.5830166339874268,
+            "annotation": {
+              "Study Parameters ID": 1453096116,
+              "Variant Annotation ID": 1453096120,
+              "Study Type": "clinical trial",
+              "Study Cases": 2910.0,
+              "Study Controls": null,
+              "Characteristics": "PLATELET trial, composite outcome (recurrent stroke, myocardial infarction, and all-cause mortality at 180 days)",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.048",
+              "Ratio Stat Type": "HR",
+              "Ratio Stat": 0.58,
+              "Confidence Interval Start": 0.34,
+              "Confidence Interval Stop": 1.0,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1453096116,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1453096120,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "clinical trial",
+                "prediction": "clinical trial",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 2910.0,
+                "prediction": 2910,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "PLATELET trial, composite outcome (recurrent stroke, myocardial infarction, and all-cause mortality at 180 days)",
+                "prediction": "Patients with acute ischemic stroke treated with clopidogrel; 1785 LOF allele carriers and 1125 noncarriers",
+                "score": 0.9112827777862549,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": 0.027,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": "LOF allele carriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": 0.016,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": "LOF allele noncarriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.048",
+                "prediction": "= 0.048",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "HR",
+                "prediction": "HR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 0.58,
+                "prediction": 0.58,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 0.34,
+                "prediction": 0.34,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 1.0,
+                "prediction": 1.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5816638680065379,
+            "annotation": {
+              "Study Parameters ID": 1453096140,
+              "Variant Annotation ID": 1453096120,
+              "Study Type": "clinical trial",
+              "Study Cases": 2910.0,
+              "Study Controls": null,
+              "Characteristics": "PLATELET trial, Recurrent stroke",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.047",
+              "Ratio Stat Type": "HR",
+              "Ratio Stat": 0.56,
+              "Confidence Interval Start": 0.32,
+              "Confidence Interval Stop": 1.0,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1453096140,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1453096120,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "clinical trial",
+                "prediction": "clinical trial",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 2910.0,
+                "prediction": 2910,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "PLATELET trial, Recurrent stroke",
+                "prediction": "Recurrent stroke incidences; LOF allele carriers vs noncarriers",
+                "score": 0.888285756111145,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": 0.025,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": "LOF allele carriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": 0.014,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": "LOF allele noncarriers",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.047",
+                "prediction": "= 0.047",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "HR",
+                "prediction": "HR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 0.56,
+                "prediction": 0.56,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 0.32,
+                "prediction": 0.32,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 1.0,
+                "prediction": 1.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 3,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "clinical trial",
+              "Study Cases": 2910,
+              "Study Controls": null,
+              "Characteristics": "Patients with acute ischemic stroke treated with clopidogrel; major bleeding events",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.006,
+              "Allele Of Frequency In Cases": "LOF allele carriers",
+              "Frequency In Controls": 0.008,
+              "Allele Of Frequency In Controls": "LOF allele noncarriers",
+              "P Value": "= 0.56",
+              "Ratio Stat Type": "HR",
+              "Ratio Stat": 1.29,
+              "Confidence Interval Start": 0.53,
+              "Confidence Interval Stop": 3.13,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "clinical trial",
+              "Study Cases": 2910,
+              "Study Controls": null,
+              "Characteristics": "Patients with acute ischemic stroke treated with clopidogrel; all-cause mortality",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.003,
+              "Allele Of Frequency In Cases": "LOF allele carriers",
+              "Frequency In Controls": 0.001,
+              "Allele Of Frequency In Controls": "LOF allele noncarriers",
+              "P Value": "= 0.27",
+              "Ratio Stat Type": "HR",
+              "Ratio Stat": 0.31,
+              "Confidence Interval Start": 0.04,
+              "Confidence Interval Stop": 2.71,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "clinical trial",
+              "Study Cases": 2910,
+              "Study Controls": null,
+              "Characteristics": "Ischemic stroke events; patients treated with clopidogrel",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.024,
+              "Allele Of Frequency In Cases": "LOF allele carriers",
+              "Frequency In Controls": 0.014,
+              "Allele Of Frequency In Controls": "LOF allele noncarriers",
+              "P Value": "= 0.06",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

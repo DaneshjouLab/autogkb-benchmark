@@ -1,0 +1,1280 @@
+{
+  "pmcid": "PMC5508045",
+  "pmid": "28550460",
+  "title": "The impact of non-genetic and genetic factors on a stable warfarin dose in Thai patients",
+  "overall_score": 0.1973711749074752,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.35669126714530747,
+      "total_samples": 4,
+      "ground_truth_annotations": {
+        "count": 4,
+        "matched_count": 2,
+        "unmatched_count": 2,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.6645650393084476,
+            "annotation": {
+              "Variant/Haplotypes": "rs2108622",
+              "Gene": "CYP4F2",
+              "PMID": 28550460,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Heart valve replacement, Disease:Pulmonary Hypertension, Disease:Pulmonary Embolism, Disease:Venous Thrombosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "warfarin"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs2108622",
+                "prediction": "rs2108622",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP4F2",
+                "prediction": "CYP4F2",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 28550460,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Dosage",
+                "prediction": "dosage",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "no",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Alleles": {
+                "ground_truth": "TT",
+                "prediction": "TT, CT, CC",
+                "score": 0.9322953224182129,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "isPlural": {
+                "ground_truth": "Is",
+                "prediction": "Is",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Not associated with",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "dose of",
+                "prediction": "dose of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": "in people with",
+                "prediction": "in Thai patients",
+                "score": 0.8545992970466614,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Disease:Atrial Fibrillation, Disease:Heart valve replacement, Disease:Pulmonary Hypertension, Disease:Pulmonary Embolism, Disease:Venous Thrombosis",
+                "prediction": "Disease:warfarin dosing variability",
+                "score": 0.8930585980415344,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": "and",
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "CC",
+                "prediction": "CC genotype",
+                "score": 0.9467825293540955,
+                "match_status": "partial_match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "warfarin",
+                "prediction": "warfarin",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7622000292727822,
+            "annotation": {
+              "Variant/Haplotypes": "rs887829",
+              "Gene": "UGT1A1",
+              "PMID": 28550460,
+              "Phenotype Category": "Dosage",
+              "Significance": "no",
+              "Alleles": "C",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Heart valve replacement, Disease:Pulmonary Hypertension, Disease:Pulmonary Embolism, Disease:Venous Thrombosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "T",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "warfarin"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs887829",
+                "prediction": "rs887829",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "UGT1A1",
+                "prediction": "UGT1A1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 28550460,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Dosage",
+                "prediction": "dosage",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "no",
+                "prediction": "no",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "C",
+                "prediction": "TT, CT, CC",
+                "score": 0.8951146602630615,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "isPlural": {
+                "ground_truth": "Is",
+                "prediction": "Is",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Not associated with",
+                "prediction": "Not associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "dose of",
+                "prediction": "dose of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": "in people with",
+                "prediction": "in Thai patients",
+                "score": 0.8545992970466614,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Disease:Atrial Fibrillation, Disease:Heart valve replacement, Disease:Pulmonary Hypertension, Disease:Pulmonary Embolism, Disease:Venous Thrombosis",
+                "prediction": "Disease:warfarin dosing variability",
+                "score": 0.8930585980415344,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": "and",
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "T",
+                "prediction": "CC genotype",
+                "score": 0.839028000831604,
+                "match_status": "partial_match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "warfarin",
+                "prediction": "warfarin",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1448624157,
+              "Variant/Haplotypes": "rs9923231",
+              "Gene": "VKORC1",
+              "Drug(s)": "warfarin",
+              "PMID": 28550460,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Notes": "Please note: alleles have been complemented to the + strand.",
+              "Sentence": "Genotypes CT + TT are associated with decreased dose of warfarin in people with Atrial Fibrillation, heart valve replacement, Hypertension, Pulmonary, Pulmonary Embolism or Venous Thrombosis as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Heart valve replacement, Disease:Pulmonary Hypertension, Disease:Pulmonary Embolism, Disease:Venous Thrombosis",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "28550460",
+              "Variant Annotation ID_norm": "1448624157"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1448624168,
+              "Variant/Haplotypes": "rs1057910",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 28550460,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Notes": null,
+              "Sentence": "Genotypes AC + CC are associated with decreased dose of warfarin in people with Atrial Fibrillation, heart valve replacement, Hypertension, Pulmonary, Pulmonary Embolism and Venous Thrombosis as compared to genotype AA.",
+              "Alleles": "AC + CC",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:Atrial Fibrillation, Disease:Heart valve replacement, Disease:Pulmonary Hypertension, Disease:Pulmonary Embolism, Disease:Venous Thrombosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "AA",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "28550460",
+              "Variant Annotation ID_norm": "1448624168"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 8,
+        "items": [
+          {
+            "variant": "VKORC1",
+            "gene": "VKORC1, CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant/Haplotypes": "VKORC1",
+              "Gene": "VKORC1, CYP2C9",
+              "Drug(s)": "warfarin",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001). Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+              "Sentence": "VKORC1 \u2212 1639G > A, CYP2C9*3 is associated with decreased dosage of warfarin in Thai patients.",
+              "Alleles": "AA, GA",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "GG genotype",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in Thai patients",
+              "Population Phenotypes or diseases": "Disease:warfarin dosing variability",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001).",
+                "Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+                "VKORC1 \u2212 1639G > A, CYP2C9*3, and CYP4F2 rs2108622 polymorphisms together with age, body mass index, antiplatelet drug use, amiodarone use, and current smoker status explained 51.3% of individual variability in stable warfarin doses."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "\u2212",
+            "gene": "VKORC1, CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant/Haplotypes": "\u2212",
+              "Gene": "VKORC1, CYP2C9",
+              "Drug(s)": "warfarin",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001). Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+              "Sentence": "VKORC1 \u2212 1639G > A, CYP2C9*3 is associated with decreased dosage of warfarin in Thai patients.",
+              "Alleles": "AA, GA",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "GG genotype",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in Thai patients",
+              "Population Phenotypes or diseases": "Disease:warfarin dosing variability",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001).",
+                "Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+                "VKORC1 \u2212 1639G > A, CYP2C9*3, and CYP4F2 rs2108622 polymorphisms together with age, body mass index, antiplatelet drug use, amiodarone use, and current smoker status explained 51.3% of individual variability in stable warfarin doses."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "1639G",
+            "gene": "VKORC1, CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant/Haplotypes": "1639G",
+              "Gene": "VKORC1, CYP2C9",
+              "Drug(s)": "warfarin",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001). Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+              "Sentence": "VKORC1 \u2212 1639G > A, CYP2C9*3 is associated with decreased dosage of warfarin in Thai patients.",
+              "Alleles": "AA, GA",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "GG genotype",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in Thai patients",
+              "Population Phenotypes or diseases": "Disease:warfarin dosing variability",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001).",
+                "Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+                "VKORC1 \u2212 1639G > A, CYP2C9*3, and CYP4F2 rs2108622 polymorphisms together with age, body mass index, antiplatelet drug use, amiodarone use, and current smoker status explained 51.3% of individual variability in stable warfarin doses."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": ">",
+            "gene": "VKORC1, CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant/Haplotypes": ">",
+              "Gene": "VKORC1, CYP2C9",
+              "Drug(s)": "warfarin",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001). Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+              "Sentence": "VKORC1 \u2212 1639G > A, CYP2C9*3 is associated with decreased dosage of warfarin in Thai patients.",
+              "Alleles": "AA, GA",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "GG genotype",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in Thai patients",
+              "Population Phenotypes or diseases": "Disease:warfarin dosing variability",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001).",
+                "Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+                "VKORC1 \u2212 1639G > A, CYP2C9*3, and CYP4F2 rs2108622 polymorphisms together with age, body mass index, antiplatelet drug use, amiodarone use, and current smoker status explained 51.3% of individual variability in stable warfarin doses."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "A",
+            "gene": "VKORC1, CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant/Haplotypes": "A",
+              "Gene": "VKORC1, CYP2C9",
+              "Drug(s)": "warfarin",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001). Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+              "Sentence": "VKORC1 \u2212 1639G > A, CYP2C9*3 is associated with decreased dosage of warfarin in Thai patients.",
+              "Alleles": "AA, GA",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "GG genotype",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in Thai patients",
+              "Population Phenotypes or diseases": "Disease:warfarin dosing variability",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001).",
+                "Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+                "VKORC1 \u2212 1639G > A, CYP2C9*3, and CYP4F2 rs2108622 polymorphisms together with age, body mass index, antiplatelet drug use, amiodarone use, and current smoker status explained 51.3% of individual variability in stable warfarin doses."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C9*3",
+            "gene": "VKORC1, CYP2C9",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C9*3",
+              "Gene": "VKORC1, CYP2C9",
+              "Drug(s)": "warfarin",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001). Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+              "Sentence": "VKORC1 \u2212 1639G > A, CYP2C9*3 is associated with decreased dosage of warfarin in Thai patients.",
+              "Alleles": "AA, GA",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "GG genotype",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in Thai patients",
+              "Population Phenotypes or diseases": "Disease:warfarin dosing variability",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The patients with variant genotypes of VKORC1 \u2212 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001).",
+                "Similarly, the patients with CYP2C9*3 variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+                "VKORC1 \u2212 1639G > A, CYP2C9*3, and CYP4F2 rs2108622 polymorphisms together with age, body mass index, antiplatelet drug use, amiodarone use, and current smoker status explained 51.3% of individual variability in stable warfarin doses."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP4F2",
+            "gene": "CYP4F2",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant/Haplotypes": "CYP4F2",
+              "Gene": "CYP4F2",
+              "Drug(s)": "warfarin",
+              "Phenotype Category": "dosage",
+              "Significance": "no",
+              "Notes": "There were no significant differences in the SWDs between the patients who carried variant alleles of CYP4F2 rs2108622 and wild-type allele carriers (p=0.172). Multivariate analysis showed that CYP4F2 rs2108622 TT genotype accounted for a modest part of warfarin dose variability (1.2%).",
+              "Sentence": "CYP4F2 rs2108622 is not associated with dosage of warfarin in Thai patients.",
+              "Alleles": "TT, CT, CC",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "CC genotype",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in Thai patients",
+              "Population Phenotypes or diseases": "Disease:warfarin dosing variability",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In contrast, there were no significant differences in the SWDs between the patients who carried variant alleles of CYP4F2 rs2108622 and wild-type allele carriers (p=0.172).",
+                "Multivariate analysis, however, showed that CYP4F2 rs2108622 TT genotype accounted for a modest part of warfarin dose variability (1.2%).",
+                "...these results showed that the CYP4F2 gene also contributed to warfarin dose requirements in Thais at a modest level..."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "UGT1A1",
+            "gene": "UGT1A1",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1",
+              "Gene": "UGT1A1",
+              "Drug(s)": "warfarin",
+              "Phenotype Category": "dosage",
+              "Significance": "no",
+              "Notes": "The UGT1A1 rs887829 polymorphism did not contribute to dose variability.",
+              "Sentence": "UGT1A1 rs887829 is not associated with dosage of warfarin in Thai patients.",
+              "Alleles": "TT, CT, CC",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "CC genotype",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in Thai patients",
+              "Population Phenotypes or diseases": "Disease:warfarin dosing variability",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "In contrast, there were no significant differences in the SWDs between the patients who carried variant alleles of CYP4F2 rs2108622 and UGT1A1 rs887829 as compared to wild-type allele carriers.",
+                "In contrast, the UGT1A1 rs887829 polymorphism did not contribute to dose variability."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.45181897381941477,
+      "total_samples": 4,
+      "ground_truth_annotations": {
+        "count": 4,
+        "matched_count": 4,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.40674761112998514,
+            "annotation": {
+              "Study Parameters ID": 1448624170,
+              "Variant Annotation ID": 1448624168,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 250.0,
+              "Study Controls": null,
+              "Characteristics": "warfarin; CC genotype assoc. w/avg decrease of 25.9 mg, and AC of 7.9 mg vs AA",
+              "Characteristics Type": "Drug",
+              "Frequency In Cases": 0.976,
+              "Allele Of Frequency In Cases": "A",
+              "Frequency In Controls": 0.024,
+              "Allele Of Frequency In Controls": "C",
+              "P Value": "< 0.001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1448624170,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1448624168,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 250.0,
+                "prediction": 250,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "warfarin; CC genotype assoc. w/avg decrease of 25.9 mg, and AC of 7.9 mg vs AA",
+                "prediction": "VKORC1 \u2212 1639G > A genotype group AA",
+                "score": 0.9147093892097473,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Drug",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.976,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "A",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.024,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "C",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.001",
+                "prediction": "< 0.001",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.40637507859398336,
+            "annotation": {
+              "Study Parameters ID": 1448624180,
+              "Variant Annotation ID": 1448624178,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 250.0,
+              "Study Controls": null,
+              "Characteristics": "warfarin; TT genotype assoc. w/avg increase of 4.1 mg vs CC",
+              "Characteristics Type": "Drug",
+              "Frequency In Cases": 0.774,
+              "Allele Of Frequency In Cases": "C",
+              "Frequency In Controls": 0.226,
+              "Allele Of Frequency In Controls": "T",
+              "P Value": "= 0.016",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1448624180,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1448624178,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 250.0,
+                "prediction": 250,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "warfarin; TT genotype assoc. w/avg increase of 4.1 mg vs CC",
+                "prediction": "CYP4F2 rs2108622 TT genotype",
+                "score": 0.9083763360977173,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Drug",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.774,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "C",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.226,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "T",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.016",
+                "prediction": "0.016",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.4063686588231255,
+            "annotation": {
+              "Study Parameters ID": 1448624167,
+              "Variant Annotation ID": 1448624157,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 250.0,
+              "Study Controls": null,
+              "Characteristics": "warfarin; CT genotype assoc. w/avg decrease of 9.7 mg, and TT of 18.1 mg vs CC",
+              "Characteristics Type": "Drug",
+              "Frequency In Cases": 0.832,
+              "Allele Of Frequency In Cases": "T",
+              "Frequency In Controls": 0.168,
+              "Allele Of Frequency In Controls": "C",
+              "P Value": "< 0.001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1448624167,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1448624157,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 250.0,
+                "prediction": 250,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "warfarin; CT genotype assoc. w/avg decrease of 9.7 mg, and TT of 18.1 mg vs CC",
+                "prediction": "VKORC1 \u2212 1639G > A genotype group GG",
+                "score": 0.9082671999931335,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Drug",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.832,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "T",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.168,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "C",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.001",
+                "prediction": "< 0.001",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.37516385316848755,
+            "annotation": {
+              "Study Parameters ID": 1448624190,
+              "Variant Annotation ID": 1448624188,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 250.0,
+              "Study Controls": null,
+              "Characteristics": "warfarin",
+              "Characteristics Type": "Drug",
+              "Frequency In Cases": 0.88,
+              "Allele Of Frequency In Cases": "C",
+              "Frequency In Controls": 0.12,
+              "Allele Of Frequency In Controls": "T",
+              "P Value": "= 0.921",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1448624190,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1448624188,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 250.0,
+                "prediction": 250,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "warfarin",
+                "prediction": "CYP2C9 genotype group 1/3",
+                "score": 0.8777855038642883,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Drug",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.88,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "C",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.12,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "T",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.921",
+                "prediction": "= 0.006",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 4,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 250,
+              "Study Controls": null,
+              "Characteristics": "Thai patients with stable warfarin doses",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.001",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 250,
+              "Study Controls": null,
+              "Characteristics": "VKORC1 \u2212 1639G > A genotype group GA",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.001",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 250,
+              "Study Controls": null,
+              "Characteristics": "CYP2C9 genotype group 1/1",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.006",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 250,
+              "Study Controls": null,
+              "Characteristics": "CYP2C9 genotype group 3/3",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.006",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

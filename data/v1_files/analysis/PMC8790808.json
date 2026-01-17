@@ -1,0 +1,1256 @@
+{
+  "pmcid": "PMC8790808",
+  "pmid": "33768542",
+  "title": "Class II HLA Variants Associate with Risk of Pegaspargase Hypersensitivity",
+  "overall_score": 0.38325290211290125,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 4,
+        "items": [
+          {
+            "variant": "HLA-DQB1*02:02",
+            "gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
+            "drug": "pegaspargase",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-DQB1*02:02",
+              "Gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
+              "Drug(s)": "pegaspargase",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry.",
+              "Standardized Sentence": "Genotype HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in pediatric patients with leukemia.",
+              "Alleles": "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "Pediatric",
+              "Population types": "in people with leukemia",
+              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of hypersensitivity reactions to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry (EA), with the three alleles associating in a single haplotype.",
+                "Although predominantly mediated by antibodies against PEG, not the asparaginase protein, hypersensitivity reactions to pegaspargase were strongly associated with the same HLA haplotype as in the case of ASNase.",
+                "In a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02*, HLA-DRB1*07:01*, HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (P_meta_ = 3.8x10^\u22129^ OR 2.13, P_meta_ = 2.2x10^\u22125^ OR 1.96, P_meta_ = 2.7x10^\u22125^ OR 1.96, and P_meta_ = 6.3x10^\u22125^ OR 4.61 respectively)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "HLA-DRB1*07:01",
+            "gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
+            "drug": "pegaspargase",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-DRB1*07:01",
+              "Gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
+              "Drug(s)": "pegaspargase",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry.",
+              "Standardized Sentence": "Genotype HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in pediatric patients with leukemia.",
+              "Alleles": "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "Pediatric",
+              "Population types": "in people with leukemia",
+              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of hypersensitivity reactions to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry (EA), with the three alleles associating in a single haplotype.",
+                "Although predominantly mediated by antibodies against PEG, not the asparaginase protein, hypersensitivity reactions to pegaspargase were strongly associated with the same HLA haplotype as in the case of ASNase.",
+                "In a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02*, HLA-DRB1*07:01*, HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (P_meta_ = 3.8x10^\u22129^ OR 2.13, P_meta_ = 2.2x10^\u22125^ OR 1.96, P_meta_ = 2.7x10^\u22125^ OR 1.96, and P_meta_ = 6.3x10^\u22125^ OR 4.61 respectively)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "HLA-DQA1*02:01",
+            "gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
+            "drug": "pegaspargase",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-DQA1*02:01",
+              "Gene": "HLA-DQB1, HLA-DRB1, HLA-DQA1",
+              "Drug(s)": "pegaspargase",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry.",
+              "Standardized Sentence": "Genotype HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in pediatric patients with leukemia.",
+              "Alleles": "HLA-DQB1*02:02, HLA-DRB1*07:01, HLA-DQA1*02:01",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "Pediatric",
+              "Population types": "in people with leukemia",
+              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of hypersensitivity reactions to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "HLA alleles DQB1*02:02, DRB1*07:01, and DQA1*02:01 had the strongest associations with pegaspargase hypersensitivity (P < 5.0x10\u22125) in patients with primarily European ancestry (EA), with the three alleles associating in a single haplotype.",
+                "Although predominantly mediated by antibodies against PEG, not the asparaginase protein, hypersensitivity reactions to pegaspargase were strongly associated with the same HLA haplotype as in the case of ASNase.",
+                "In a meta-analysis combining results from the three cohorts, among 97 HLA alleles, HLA-DQB1*02:02*, HLA-DRB1*07:01*, HLA-DQA1*02:01, and HLA-DRB1*04:02* had the strongest association with reactions to pegaspargase (P_meta_ = 3.8x10^\u22129^ OR 2.13, P_meta_ = 2.2x10^\u22125^ OR 1.96, P_meta_ = 2.7x10^\u22125^ OR 1.96, and P_meta_ = 6.3x10^\u22125^ OR 4.61 respectively)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "rs9958628",
+            "gene": "ARHGAP28",
+            "drug": "pegaspargase",
+            "annotation": {
+              "Variant/Haplotypes": "rs9958628",
+              "Gene": "ARHGAP28",
+              "Drug(s)": "pegaspargase",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "The rs9958628 variant had the strongest genetic association (P = 8.9x10\u22129) in non-EAs.",
+              "Standardized Sentence": "Variant rs9958628 is associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry patients with leukemia.",
+              "Alleles": "",
+              "Metabolizer types": "",
+              "Comparison Allele(s) or Genotype(s": "",
+              "Comparison Metabolizer types": "",
+              "Specialty Population": "",
+              "Population types": "in non-EA patients",
+              "Population Phenotypes or diseases": "Disease:Acute Lymphoblastic Leukemia",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "risk of hypersensitivity reactions to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The rs9958628 variant, in ARHGAP28 (previously linked to immune response in children) had the strongest genetic association (P = 8.9x10\u22129) in non-EAs.",
+                "Among non-EAs, rs9958628, located in the 5'-UTR of the Rho GTPase activating protein 28 (ARHGAP28) gene transcript, was the top genetic variant and reached genome-wide significance in its association with hypersensitivity (P_meta_ = 8.9x10\u22129, OR 3.69).",
+                "This study demonstrated for the first time the association between a non-HLA locus (ARHGAP28) and pegaspargase hypersensitivity with genome-wide significance in non-EAs."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.9582130381216606,
+      "total_samples": 4,
+      "ground_truth_annotations": {
+        "count": 4,
+        "matched_count": 4,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.9877970099449158,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-DQB1*02:02",
+              "Gene": "HLA-DQB1",
+              "Drug(s)": "pegaspargase",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*02:02",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Hypersensitivity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-DQB1*02:02",
+                "prediction": "HLA-DQB1*02:02",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-DQB1",
+                "prediction": "HLA-DQB1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "pegaspargase",
+                "prediction": "pegaspargase",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*02:02",
+                "prediction": "HLA-DQB1*02:02",
+                "score": 0.9215661287307739,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Hypersensitivity",
+                "prediction": "hypersensitivity reactions",
+                "score": 0.9564039707183838,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.9874805510044098,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-DRB1*07:01",
+              "Gene": "HLA-DRB1",
+              "Drug(s)": "pegaspargase",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*07:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Hypersensitivity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-DRB1*07:01",
+                "prediction": "HLA-DRB1*07:01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-DRB1",
+                "prediction": "HLA-DRB1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "pegaspargase",
+                "prediction": "pegaspargase",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*07:01",
+                "prediction": "HLA-DRB1*07:01",
+                "score": 0.9184015393257141,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Hypersensitivity",
+                "prediction": "hypersensitivity reactions",
+                "score": 0.9564039707183838,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.9872826874256134,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-DQA1*02:01",
+              "Gene": "HLA-DQA1",
+              "Drug(s)": "pegaspargase",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*02:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Hypersensitivity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-DQA1*02:01",
+                "prediction": "HLA-DQA1*02:01",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-DQA1",
+                "prediction": "HLA-DQA1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "pegaspargase",
+                "prediction": "pegaspargase",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*02:01",
+                "prediction": "HLA-DQA1*02:01",
+                "score": 0.9164229035377502,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Hypersensitivity",
+                "prediction": "hypersensitivity reactions",
+                "score": 0.9564039707183838,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.876200944185257,
+            "annotation": {
+              "Variant/Haplotypes": "rs9958628",
+              "Gene": "ARHGAP28",
+              "Drug(s)": "pegaspargase",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "T",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Hypersensitivity",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "A"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs9958628",
+                "prediction": "rs9958628",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "ARHGAP28",
+                "prediction": "ARHGAP28",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "pegaspargase",
+                "prediction": "pegaspargase",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "T",
+                "prediction": "ARHGAP28 rs9958628",
+                "score": 0.8056054711341858,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Hypersensitivity",
+                "prediction": "hypersensitivity reactions",
+                "score": 0.9564039707183838,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "A",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 1,
+        "items": [
+          {
+            "variant": "ARHGAP28",
+            "gene": "ARHGAP28",
+            "drug": "pegaspargase",
+            "annotation": {
+              "Variant Annotation ID": 104,
+              "Variant/Haplotypes": "ARHGAP28",
+              "Gene": "ARHGAP28",
+              "Drug(s)": "pegaspargase",
+              "PMID": 33768542,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Top genetic association with pegaspargase hypersensitivity in non-EA patients with genome-wide significance.",
+              "Sentence": "ARHGAP28 rs9958628 is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in people with Acute Lymphoblastic Leukemia.",
+              "Alleles": "ARHGAP28 rs9958628",
+              "Specialty Population": "Non-European Ancestry",
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "hypersensitivity reactions",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Acute Lymphoblastic Leukemia",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "33768542",
+              "Variant Annotation ID_norm": "104",
+              "Citations": [
+                "The rs9958628 variant, in ARHGAP28 (previously linked to immune response in children) had the strongest genetic association (P = 8.9x10\u22129) in non-EAs.",
+                "We are the first to interrogate genetic risk factors for asparaginase hypersensitivity reactions in non-EA patients as separate ancestry groups. Our results identified ARHGAP28 rs9958628 as the top genetic variant associated with pegaspargase hypersensitivity in non-EAs with genome-wide significance.",
+                "This SNP was also the top non-HLA hit among all evaluable patients (P_meta_ = 1.2x10^\u22127^, OR 3.03)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.47894495338201526,
+      "total_samples": 8,
+      "ground_truth_annotations": {
+        "count": 8,
+        "matched_count": 5,
+        "unmatched_count": 3,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.7479391182170195,
+            "annotation": {
+              "Study Parameters ID": 1451510920,
+              "Variant Annotation ID": 1451510886,
+              "Study Type": "meta-analysis, GWAS",
+              "Study Cases": 2168.0,
+              "Study Controls": null,
+              "Characteristics": "meta-analysis",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 3.76e-9",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.14,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1451510920,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1451510886,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "meta-analysis, GWAS",
+                "prediction": "meta-analysis",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 2168.0,
+                "prediction": 2168,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "meta-analysis",
+                "prediction": "European ancestry patients with hypersensitivity reactions to pegaspargase",
+                "score": 0.814965009689331,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 3.76e-9",
+                "prediction": "< 5.0x10\u22125",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 2.14,
+                "prediction": 2.13,
+                "score": 0.9,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "European",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.728375701343312,
+            "annotation": {
+              "Study Parameters ID": 1451510821,
+              "Variant Annotation ID": 1451510773,
+              "Study Type": "meta-analysis, GWAS",
+              "Study Cases": 1607.0,
+              "Study Controls": null,
+              "Characteristics": "non European ancestry",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 8.9e-9",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3.69,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Multiple groups"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1451510821,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1451510773,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "meta-analysis, GWAS",
+                "prediction": "meta-analysis",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 1607.0,
+                "prediction": 1607,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "non European ancestry",
+                "prediction": "Non-European ancestry patients with hypersensitivity reactions to pegaspargase",
+                "score": 0.8823869228363037,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 8.9e-9",
+                "prediction": "8.9x10\u22129",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 3.69,
+                "prediction": 3.69,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups",
+                "prediction": "Non-European",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6555286709000083,
+            "annotation": {
+              "Study Parameters ID": 1451510741,
+              "Variant Annotation ID": 1451510720,
+              "Study Type": "cohort",
+              "Study Cases": 402.0,
+              "Study Controls": null,
+              "Characteristics": "TXVI cohort",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 3.28e-5",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.91,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1451510741,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1451510720,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort",
+                "prediction": "case/control",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 402.0,
+                "prediction": 375,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "TXVI cohort",
+                "prediction": "Male patients treated for B-ALL",
+                "score": 0.8439874053001404,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "gender",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 3.28e-5",
+                "prediction": "= 0.025",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 2.91,
+                "prediction": 1.24,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "European",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6386934168198529,
+            "annotation": {
+              "Study Parameters ID": 1451510810,
+              "Variant Annotation ID": 1451510773,
+              "Study Type": "cohort, meta-analysis",
+              "Study Cases": 3897.0,
+              "Study Controls": null,
+              "Characteristics": "all patients",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 1.2e-7",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 3.03,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1451510810,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1451510773,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, meta-analysis",
+                "prediction": "meta-analysis",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 3897.0,
+                "prediction": 3897,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "all patients",
+                "prediction": "Pediatric leukemia patients with hypersensitivity reactions to pegaspargase",
+                "score": 0.8577880859375,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 1.2e-7",
+                "prediction": "< 5.0x10\u22125",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 3.03,
+                "prediction": 2.13,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "Multiple Groups",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6102509989457972,
+            "annotation": {
+              "Study Parameters ID": 1451510895,
+              "Variant Annotation ID": 1451510891,
+              "Study Type": "cohort",
+              "Study Cases": 402.0,
+              "Study Controls": null,
+              "Characteristics": "TXVI cohort",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 3.289e-5",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 2.91,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1451510895,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1451510891,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort",
+                "prediction": "case/control",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 402.0,
+                "prediction": 82,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "TXVI cohort",
+                "prediction": "Patients with hypersensitivity reactions to pegaspargase in TXVI cohort",
+                "score": 0.8742669820785522,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "study cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 3.289e-5",
+                "prediction": "= 6.4x10\u22125",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 2.91,
+                "prediction": 0.73,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "Mixed",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1451510724,
+              "Variant Annotation ID": 1451510720,
+              "Study Type": "meta-analysis, GWAS",
+              "Study Cases": 2168.0,
+              "Study Controls": null,
+              "Characteristics": "meta-analysis",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 2.74e-5",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.99,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1451510720"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1451510890,
+              "Variant Annotation ID": 1451510886,
+              "Study Type": "cohort",
+              "Study Cases": 593.0,
+              "Study Controls": null,
+              "Characteristics": "AALL0232 cohort",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 9.29e-5",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.94,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1451510886"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1451510941,
+              "Variant Annotation ID": 1451510891,
+              "Study Type": "meta-analysis, GWAS",
+              "Study Cases": 2168.0,
+              "Study Controls": null,
+              "Characteristics": "meta-analysis",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 2.22e-5",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.99,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1451510891"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    }
+  }
+}

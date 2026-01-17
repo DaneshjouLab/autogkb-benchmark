@@ -1,0 +1,836 @@
+{
+  "pmcid": "PMC12036300",
+  "pmid": "40295977",
+  "title": "The frequencies of CYP2C19*2, *3, and *17 alleles and their impact on the clinical efficacy of doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease",
+  "overall_score": 0.2808175529291232,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 4,
+        "items": [
+          {
+            "variant": "CYP2C19*2",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*2",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "no",
+              "Notes": "No association observed between CYP2C19*2 allele and recurrent ischemic events or CYP2C19*17 allele and bleeding complications after treatment with a doubled maintenance dose of clopidogrel.",
+              "Sentence": "CYP2C19*2 and CYP2C19*17 alleles are not associated with increased ischemic events or bleeding complications in patients treated with clopidogrel after percutaneous coronary intervention in Syrian patients.",
+              "Alleles": "*2, *17",
+              "Metabolizer types": "intermediate metabolizer, normal metabolizer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "No association was found between the CYP2C19*2 allele and recurrent ischemic events or between the CYP2C19*17 allele and bleeding complications in patients treated with a doubled maintenance dose of clopidogrel.",
+                "The frequency of the CYP2C19*2 allele in our study population (8%) was found to be compatible with that of other populations... But the present study did not confirm an association between MACE incidence and the carrier status of the non-functional CYP2C19*2 allele...",
+                "In Syrian patients undergoing PCI, a doubled maintenance dose of clopidogrel (150 mg/day) may help mitigate variability in response due to CYP2C19*2 carrier status, offering potential benefits in optimizing antiplatelet therapy."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C19*17",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*17",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "no",
+              "Notes": "No association observed between CYP2C19*2 allele and recurrent ischemic events or CYP2C19*17 allele and bleeding complications after treatment with a doubled maintenance dose of clopidogrel.",
+              "Sentence": "CYP2C19*2 and CYP2C19*17 alleles are not associated with increased ischemic events or bleeding complications in patients treated with clopidogrel after percutaneous coronary intervention in Syrian patients.",
+              "Alleles": "*2, *17",
+              "Metabolizer types": "intermediate metabolizer, normal metabolizer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "No association was found between the CYP2C19*2 allele and recurrent ischemic events or between the CYP2C19*17 allele and bleeding complications in patients treated with a doubled maintenance dose of clopidogrel.",
+                "The frequency of the CYP2C19*2 allele in our study population (8%) was found to be compatible with that of other populations... But the present study did not confirm an association between MACE incidence and the carrier status of the non-functional CYP2C19*2 allele...",
+                "In Syrian patients undergoing PCI, a doubled maintenance dose of clopidogrel (150 mg/day) may help mitigate variability in response due to CYP2C19*2 carrier status, offering potential benefits in optimizing antiplatelet therapy."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2C19*3",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*3",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "efficacy",
+              "Significance": "not stated",
+              "Notes": "CYP2C19*3 allele was absent in the study population.",
+              "Sentence": "CYP2C19*3 is not associated with decreased response to clopidogrel in patients undergoing percutaneous coronary intervention in Syrian patients.",
+              "Alleles": "",
+              "Metabolizer types": "",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "",
+              "PD/PK terms": "",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The allele frequencies were 8% for CYP2C19*2, 0% for CYP2C19*3, and 17% for CYP2C19*17.",
+                "The *CYP2C19*3* allele was absent in our study population, which aligns with the low or diminished frequencies reported in European and Middle Eastern populations.",
+                "Overall, two of the 41 patients who were followed up in the study experienced at least one MACE after PCI. One case was from the *CYP2C19*2* allele carrier group and the other was from the non-carrier group."
+              ]
+            }
+          },
+          {
+            "variant": "CYP2C19*17",
+            "gene": "CYP2C19",
+            "drug": "clopidogrel",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*17",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "No significant association found between CYP2C19*17 allele and increased bleeding complications in patients treated with clopidogrel after PCI.",
+              "Sentence": "CYP2C19*17 is not associated with increased bleeding events in patients treated with clopidogrel in Syrian patients.",
+              "Alleles": "",
+              "Metabolizer types": "",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "",
+              "PD/PK terms": "bleeding events",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "No association was found between the CYP2C19*2 allele and recurrent ischemic events or between the CYP2C19*17 allele and bleeding complications in patients treated with a doubled maintenance dose of clopidogrel.",
+                "The frequency of CYP2C19*17 allele was found to be (17%), which is close to that reported in European and Middle Eastern populations but higher than those found in other studies on Asians (from 0.3% in Koreans to 1.3% in Japanese).",
+                "Despite 30% of the individuals carrying the gain-of-function CYP2C19*17 allele and receiving a double maintenance dose of clopidogrel after stent placement, the occurrence of hemorrhagic events remained relatively low, not exceeding (9.7%)."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.4954296155936187,
+      "total_samples": 6,
+      "ground_truth_annotations": {
+        "count": 6,
+        "matched_count": 4,
+        "unmatched_count": 2,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.8796256303787231,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*2",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*1/*2 + *2/*2 + *2/*17",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Major Adverse Cardiac Events (MACE)",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C19*2",
+                "prediction": "CYP2C19*2",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C19",
+                "prediction": "CYP2C19",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "clopidogrel",
+                "prediction": "Clopidogrel",
+                "score": 0.9729046821594238,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "efficacy",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*1/*2 + *2/*2 + *2/*17",
+                "prediction": "*1/*2",
+                "score": 0.9719905853271484,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Not associated with",
+                "prediction": "Not associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Major Adverse Cardiac Events (MACE)",
+                "prediction": "major adverse cardiovascular events",
+                "score": 0.9549291133880615,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "CYP2C19*1 (wild-type)",
+                "score": 0.8964319229125977,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7719752669334412,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*17",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*1/*2 + *2/*2 + *2/*17",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Major Adverse Cardiac Events (MACE)",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C19*17",
+                "prediction": "CYP2C19*17",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C19",
+                "prediction": "CYP2C19",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "clopidogrel",
+                "prediction": "Clopidogrel",
+                "score": 0.9729046821594238,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "toxicity",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Alleles": {
+                "ground_truth": "*1/*2 + *2/*2 + *2/*17",
+                "prediction": "*1/*17",
+                "score": 0.9709437489509583,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Not associated with",
+                "prediction": "Not associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Major Adverse Cardiac Events (MACE)",
+                "prediction": "bleeding events",
+                "score": 0.8794723153114319,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "CYP2C19*1 (wild-type)",
+                "score": 0.8964319229125977,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7796256303787231,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*1",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*1/*2 + *2/*2 + *2/*17",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Major Adverse Cardiac Events (MACE)",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C19*1",
+                "prediction": "(rs4244285)",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C19",
+                "prediction": "CYP2C19",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "clopidogrel",
+                "prediction": "Clopidogrel",
+                "score": 0.9729046821594238,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "efficacy",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*1/*2 + *2/*2 + *2/*17",
+                "prediction": "*1/*2",
+                "score": 0.9719905853271484,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Not associated with",
+                "prediction": "Not associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Major Adverse Cardiac Events (MACE)",
+                "prediction": "major adverse cardiovascular events",
+                "score": 0.9549291133880615,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "CYP2C19*1 (wild-type)",
+                "score": 0.8964319229125977,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.676228380203247,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C19*1",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "Phenotype Category": "Efficacy",
+              "Alleles": "*1/*17 + *17/*17 + *2/*17",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Hemorrhage",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C19*1",
+                "prediction": "(rs12248560)",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C19",
+                "prediction": "CYP2C19",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "clopidogrel",
+                "prediction": "Clopidogrel",
+                "score": 0.9729046821594238,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "toxicity",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Alleles": {
+                "ground_truth": "*1/*17 + *17/*17 + *2/*17",
+                "prediction": "*1/*17",
+                "score": 0.9783326387405396,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Not associated with",
+                "prediction": "Not associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Hemorrhage",
+                "prediction": "bleeding events",
+                "score": 0.9146145582199097,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "CYP2C19*1 (wild-type)",
+                "score": 0.8964319229125977,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1454052160,
+              "Variant/Haplotypes": "CYP2C19*2",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "PMID": 40295977,
+              "Phenotype Category": "Efficacy",
+              "Significance": "no",
+              "Notes": "Our results indicated that carriers of the CYP2C19*17 variant experienced a higher incidence of bleeding events (16.67%) compared to non-carriers (6.9%). Despite this observed difference, it is important to note that the statistical analysis found no significant difference between the two groups (P = 0.567; see Table 7). Similarly, there was no statistically significant difference in bleeding events between CYP2C19*2 carriers and non-carriers (P = 0.0952; see Table 7), although a higher proportion of bleeding events was observed among carriers.",
+              "Sentence": "CYP2C19 *1/*17 + *17/*17 + *2/*17 is not associated with increased likelihood of Hemorrhage when treated with clopidogrel as compared to CYP2C19 *1/*1.",
+              "Alleles": "*1/*17 + *17/*17 + *2/*17",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Side Effect:Hemorrhage",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "40295977",
+              "Variant Annotation ID_norm": "1454052160",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1454052160,
+              "Variant/Haplotypes": "CYP2C19*17",
+              "Gene": "CYP2C19",
+              "Drug(s)": "clopidogrel",
+              "PMID": 40295977,
+              "Phenotype Category": "Efficacy",
+              "Significance": "no",
+              "Notes": "Our results indicated that carriers of the CYP2C19*17 variant experienced a higher incidence of bleeding events (16.67%) compared to non-carriers (6.9%). Despite this observed difference, it is important to note that the statistical analysis found no significant difference between the two groups (P = 0.567; see Table 7). Similarly, there was no statistically significant difference in bleeding events between CYP2C19*2 carriers and non-carriers (P = 0.0952; see Table 7), although a higher proportion of bleeding events was observed among carriers.",
+              "Sentence": "CYP2C19 *1/*17 + *17/*17 + *2/*17 is not associated with increased likelihood of Hemorrhage when treated with clopidogrel as compared to CYP2C19 *1/*1.",
+              "Alleles": "*1/*17 + *17/*17 + *2/*17",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Side Effect:Hemorrhage",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "40295977",
+              "Variant Annotation ID_norm": "1454052160",
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.6609433412551879,
+      "total_samples": 2,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 2,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.6409457886920256,
+            "annotation": {
+              "Study Parameters ID": 1454052180,
+              "Variant Annotation ID": 1454052160,
+              "Study Type": null,
+              "Study Cases": 41.0,
+              "Study Controls": null,
+              "Characteristics": "Bleeding events, DAPT with a double maintenance dose of clopidogrel 150 mg/day (for at least one month after PCI).",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.17,
+              "Allele Of Frequency In Cases": "*17",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.567",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Near Eastern"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1454052180,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1454052160,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 41.0,
+                "prediction": 50,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Bleeding events, DAPT with a double maintenance dose of clopidogrel 150 mg/day (for at least one month after PCI).",
+                "prediction": "Syrian CAD patients treated with dual antiplatelet therapy (DAPT) using a doubled maintenance dose of clopidogrel (150 mg/day) after PCI",
+                "score": 0.9619601368904114,
+                "match_status": "match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.17,
+                "prediction": 0.17,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*17",
+                "prediction": "CYP2C19*17",
+                "score": 0.9341182708740234,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.567",
+                "prediction": "= 0.567",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Near Eastern",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5254248135230121,
+            "annotation": {
+              "Study Parameters ID": 1454052120,
+              "Variant Annotation ID": 1454052100,
+              "Study Type": null,
+              "Study Cases": 41.0,
+              "Study Controls": null,
+              "Characteristics": "MACE, DAPT with a double maintenance dose of clopidogrel 150 mg/day (for at least one month after PCI).",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.08,
+              "Allele Of Frequency In Cases": "*2",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.2744",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Near Eastern"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1454052120,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1454052100,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 41.0,
+                "prediction": 50,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "MACE, DAPT with a double maintenance dose of clopidogrel 150 mg/day (for at least one month after PCI).",
+                "prediction": "MAPC and bleeding complications in Syrian CAD patients treated with a doubled maintenance dose of clopidogrel",
+                "score": 0.9322218298912048,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.08,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*2",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.2744",
+                "prediction": "= 0.2744",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Near Eastern",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 1,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 50,
+              "Study Controls": null,
+              "Characteristics": "Syrian CAD patients treated with dual antiplatelet therapy (DAPT) using a doubled maintenance dose of clopidogrel (150 mg/day) after PCI",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.08,
+              "Allele Of Frequency In Cases": "CYP2C19*2",
+              "Frequency In Controls": 0,
+              "Allele Of Frequency In Controls": "CYP2C19*3",
+              "P Value": "> 0.9999",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,619 @@
+{
+  "pmcid": "PMC2859392",
+  "pmid": "20338069",
+  "title": "Effects of CYP2B6 G516T polymorphisms on plasma efavirenz and nevirapine levels when co-administered with rifampicin in HIV/TB co-infected Thai adults",
+  "overall_score": 0.13763124267260235,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 0,
+        "unmatched_count": 2,
+        "items": [
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1448993666,
+              "Variant/Haplotypes": "rs3745274",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "PMID": 20338069,
+              "Phenotype Category": "Efficacy",
+              "Significance": "no",
+              "Notes": "No significant difference in median CD4 T cell counts of each genotype at different time points was seen in efavirenz group (p = 0.818, 0.838, 0.783, 0.753 and 0.587 for baseline, weeks 12, 24, 36 and 48 of ART, respectively).",
+              "Sentence": "Genotype TT is not associated with response to efavirenz in people with HIV Infections and Tuberculosis as compared to genotypes GG + GT.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG + GT",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "20338069",
+              "Variant Annotation ID_norm": "1448993666"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1184988061,
+              "Variant/Haplotypes": "rs3745274",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "PMID": 20338069,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Notes": "Association with significantly increased efavirenz plasma levels. Was significant at week 6, 12 of treatment and 1 month after rifampicin discontinuation.",
+              "Sentence": "Genotype TT is associated with decreased metabolism of efavirenz in people with HIV Infections and Tuberculosis as compared to genotypes GG + GT.",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "metabolism of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:HIV infectious disease, Disease:Tuberculosis",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "GG + GT",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "20338069",
+              "Variant Annotation ID_norm": "1184988061"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "CYP2B6-G516T",
+            "gene": "CYP2B6",
+            "drug": "efavirenz, nevirapine",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6-G516T",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz, nevirapine",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "Patients with TT genotype had significantly higher plasma efavirenz concentrations compared to GT and GG genotypes (p < 0.0001).",
+              "Sentence": "Genotype TT is associated with increased plasma efavirenz concentrations in HIV/TB co-infected Thai adults.",
+              "Alleles": "TT",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "GT, GG",
+              "Comparison Metabolizer types": "intermediate metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with HIV/TB co-infection",
+              "Population Phenotypes or diseases": "Disease:HIV/TB co-infection",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The mean 12-hour post-dose plasma efavirenz concentration in patients with TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (10.97 \u00b1 2.32, 13.62 \u00b1 4.21 and 8.48 \u00b1 1.30 mg/L, respectively) were significantly higher than those with GT (3.43 \u00b1 0.29, 3.35 \u00b1 0.27 and 3.21 \u00b1 0.22 mg/L, respectively) (p < 0.0001) or GG genotypes (2.88 \u00b1 0.33, 2.45 \u00b1 0.26 and 2.08 \u00b1 0.16 mg/L, respectively) (p < 0.0001).",
+                "This is the first report to demonstrate the effects of CYP2B6 G516T polymorphisms on plasma efavirenz and nevirapine concentrations when co-administered with rifampicin in HIV/TB co-infected Thai adults."
+              ]
+            }
+          },
+          {
+            "variant": "CYP2B6-G516T",
+            "gene": "CYP2B6",
+            "drug": "efavirenz, nevirapine",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6-G516T",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz, nevirapine",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "Plasma efavirenz concentrations were higher in patients with the TT genotype at all time points measured (weeks 6 and 12) compared to GT and GG genotypes.",
+              "Sentence": "Genotype TT is associated with increased plasma nevirapine concentrations in HIV/TB co-infected Thai adults.",
+              "Alleles": "TT",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "GT, GG",
+              "Comparison Metabolizer types": "intermediate metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with HIV/TB co-infection",
+              "Population Phenotypes or diseases": "Disease:HIV/TB co-infection",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "The mean 12-hour post-dose plasma efavirenz concentration in patients with TT genotype at weeks 6 and 12 of ART... were significantly higher than those with GT... or GG genotypes (p < 0.0001).",
+                "Likewise, the mean 12-hour post-dose plasma nevirapine concentration in patients carrying TT genotype at weeks 6 and 12 of ART... tended to be higher than those carrying GT... or GG genotypes (p = 0.003).",
+                "This is the first report to demonstrate the effects of CYP2B6 G516T polymorphisms on plasma efavirenz and nevirapine concentrations when co-administered with rifampicin in HIV/TB co-infected Thai adults."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.6881562133630117,
+      "total_samples": 2,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 2,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.6375730668797213,
+            "annotation": {
+              "Study Parameters ID": 1184988079,
+              "Variant Annotation ID": 1184988061,
+              "Study Type": "cohort",
+              "Study Cases": 65.0,
+              "Study Controls": null,
+              "Characteristics": "HIV-1/TB co-infected receiving efavirenz-based ART and an anti-TB drug regimen.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.62,
+              "Allele Of Frequency In Cases": "G",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1184988079,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1184988061,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 65.0,
+                "prediction": 65.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "HIV-1/TB co-infected receiving efavirenz-based ART and an anti-TB drug regimen.",
+                "prediction": "efavirenz group (CYP2B6-G516T genotypes)",
+                "score": 0.9128793478012085,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.62,
+                "prediction": 0.3846,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "G",
+                "prediction": "GG",
+                "score": 0.9258627891540527,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.0001",
+                "prediction": "< 0.0001",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5768202508197111,
+            "annotation": {
+              "Study Parameters ID": 1448993668,
+              "Variant Annotation ID": 1448993666,
+              "Study Type": "cohort",
+              "Study Cases": 65.0,
+              "Study Controls": null,
+              "Characteristics": "HIV-1/TB co-infected receiving efavirenz-based ART and an anti-TB drug regimen.",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.62,
+              "Allele Of Frequency In Cases": "G",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "> 0.05",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1448993668,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1448993666,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 65.0,
+                "prediction": 65.0,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "HIV-1/TB co-infected receiving efavirenz-based ART and an anti-TB drug regimen.",
+                "prediction": "efavirenz group (CYP2B6-G516T genotypes)",
+                "score": 0.9128793478012085,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.62,
+                "prediction": 0.4769,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "G",
+                "prediction": "GT",
+                "score": 0.8930649161338806,
+                "match_status": "partial_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "> 0.05",
+                "prediction": "< 0.0001",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 7,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 124.0,
+              "Study Controls": null,
+              "Characteristics": "HIV/TB co-infected Thai adults receiving efavirenz or nevirapine",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 65.0,
+              "Study Controls": null,
+              "Characteristics": "efavirenz group (CYP2B6-G516T genotypes)",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.1385,
+              "Allele Of Frequency In Cases": "TT",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 59.0,
+              "Study Controls": null,
+              "Characteristics": "nevirapine group (CYP2B6-G516T genotypes)",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.4407,
+              "Allele Of Frequency In Cases": "GG",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": null,
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 59.0,
+              "Study Controls": null,
+              "Characteristics": "nevirapine group (CYP2B6-G516T genotypes)",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.5254,
+              "Allele Of Frequency In Cases": "GT",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": null,
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 59.0,
+              "Study Controls": null,
+              "Characteristics": "nevirapine group (CYP2B6-G516T genotypes)",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.0339,
+              "Allele Of Frequency In Cases": "TT",
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": null,
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 124.0,
+              "Study Controls": null,
+              "Characteristics": "CYP2B6-TT genotype's impact on plasma efavirenz concentration",
+              "Characteristics Type": "disease",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.025",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 124.0,
+              "Study Controls": null,
+              "Characteristics": "CYP2B6-TT genotype's impact on plasma nevirapine concentration",
+              "Characteristics Type": "disease",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.003",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

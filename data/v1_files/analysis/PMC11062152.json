@@ -1,0 +1,1680 @@
+{
+  "pmcid": "PMC11062152",
+  "pmid": "38707740",
+  "title": "Risk Factors for Adverse Events of Nanoliposomal Irinotecan Plus 5-Fluorouracil and L-leucovorin",
+  "overall_score": 0.3572030823098289,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 12,
+        "items": [
+          {
+            "variant": "UGT1A1*6",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "or",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "or",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "*28",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "*28",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(+/+)",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "(+/+)",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "UGT1A1*6",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "or",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "or",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "*28",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "*28",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(+/-)",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "(+/-)",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "UGT1A1*6",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "or",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "or",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "*28",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "*28",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(-/-)",
+            "gene": "UGT1A1",
+            "drug": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant/Haplotypes": "(-/-)",
+              "Gene": "UGT1A1",
+              "Drug(s)": "nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Genotype of UGT1A1*6 or *28 (+/+) was significantly associated with decreased white blood cell count (p=0.009) and neutrophil count (p=0.017).",
+              "Standardized Sentence": "Genotype *28/+ is associated with decreased leukopenia during nal-IRI/FL treatment in patients with metastatic pancreatic cancer.",
+              "Alleles": "(+/+)",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "UGT1A1*6 or *28 (+/-), UGT1A1*6 or *28 (-/-)",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Disease:metastatic pancreatic cancer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "counts of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... decreased neutrophil count was significantly related to the genotype of UGT1A1*6 or *28 (+/+) (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.6549006667402055,
+      "total_samples": 6,
+      "ground_truth_annotations": {
+        "count": 6,
+        "matched_count": 5,
+        "unmatched_count": 1,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.8737123966217041,
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "fluorouracil, irinotecan, leucovorin",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*6/*6 + *28/*28 + *6/*28",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "UGT1A1*6",
+                "prediction": "UGT1A1*6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "UGT1A1",
+                "prediction": "UGT1A1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "fluorouracil, irinotecan, leucovorin",
+                "prediction": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+                "score": 0.9550724029541016,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*6/*6 + *28/*28 + *6/*28",
+                "prediction": "(+/+), (-/-), (+/-)",
+                "score": 0.9041959643363953,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "decreased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+                "prediction": "leukopenia, neutropenia",
+                "score": 0.9623125195503235,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "(-/-), (+/-)",
+                "score": 0.9155430793762207,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8737123966217041,
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*28",
+              "Gene": "UGT1A1",
+              "Drug(s)": "fluorouracil, irinotecan, leucovorin",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*6/*6 + *28/*28 + *6/*28",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "UGT1A1*28",
+                "prediction": "*28",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "UGT1A1",
+                "prediction": "UGT1A1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "fluorouracil, irinotecan, leucovorin",
+                "prediction": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+                "score": 0.9550724029541016,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*6/*6 + *28/*28 + *6/*28",
+                "prediction": "(+/+), (-/-), (+/-)",
+                "score": 0.9041959643363953,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "decreased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+                "prediction": "leukopenia, neutropenia",
+                "score": 0.9623125195503235,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "(-/-), (+/-)",
+                "score": 0.9155430793762207,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8737123966217041,
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "fluorouracil, irinotecan, leucovorin",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*6/*6 + *28/*28 + *6/*28",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "UGT1A1*6",
+                "prediction": "UGT1A1*6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "UGT1A1",
+                "prediction": "UGT1A1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "fluorouracil, irinotecan, leucovorin",
+                "prediction": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+                "score": 0.9550724029541016,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*6/*6 + *28/*28 + *6/*28",
+                "prediction": "(+/+), (-/-), (+/-)",
+                "score": 0.9041959643363953,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "decreased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+                "prediction": "leukopenia, neutropenia",
+                "score": 0.9623125195503235,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "(-/-), (+/-)",
+                "score": 0.9155430793762207,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8737123966217041,
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*28",
+              "Gene": "UGT1A1",
+              "Drug(s)": "fluorouracil, irinotecan, leucovorin",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*6/*6 + *28/*28 + *6/*28",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "UGT1A1*28",
+                "prediction": "*28",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "UGT1A1",
+                "prediction": "UGT1A1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "fluorouracil, irinotecan, leucovorin",
+                "prediction": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+                "score": 0.9550724029541016,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*6/*6 + *28/*28 + *6/*28",
+                "prediction": "(+/+), (-/-), (+/-)",
+                "score": 0.9041959643363953,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "decreased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+                "prediction": "leukopenia, neutropenia",
+                "score": 0.9623125195503235,
+                "match_status": "match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "(-/-), (+/-)",
+                "score": 0.9155430793762207,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6807050764560699,
+            "annotation": {
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "fluorouracil, irinotecan, leucovorin",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*6/*6 + *28/*28 + *6/*28",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "UGT1A1*6",
+                "prediction": "UGT1A1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "UGT1A1",
+                "prediction": "UGT1A1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "fluorouracil, irinotecan, leucovorin",
+                "prediction": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+                "score": 0.9550724029541016,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "dosage",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Alleles": {
+                "ground_truth": "*6/*6 + *28/*28 + *6/*28",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+                "prediction": "dosage requirements",
+                "score": 0.8519783616065979,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452474678,
+              "Variant/Haplotypes": "UGT1A1*1",
+              "Gene": "UGT1A1",
+              "Drug(s)": "fluorouracil, irinotecan, leucovorin",
+              "PMID": 38707740,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": "Grade 3 or 4 leukopenia and neutropenia in the UGT1A1*6 or *28 (+/+) group demonstrated an incidence rate of 50.0%, indicating a higher tendency than those in UGT1A1*6 or *28 (-/-) and (+/-) groups at 7.1% and 12.5%, respectively (p=0.085 for each) (Figure 2C and D). Multiple regression analyses revealed that the UGT1A1*6 or *28 (+/+) genotype, high AST value before the nal-IRI/FL therapy, and pancreatic head cancer were significantly associated with decreased white blood cell count (p=0.009, 0.019, and 0.030, respectively) (Table III), and that of UGT1A1*6 or *28 (+/+) was significantly related to decreased neutrophil count (p=0.017)",
+              "Sentence": "UGT1A1 *6/*6 + *28/*28 + *6/*28 is associated with increased risk of Neutropenia or Leukopenia when treated with fluorouracil, irinotecan and leucovorin in people with Pancreatic Neoplasms and Neoplasm Metastasis as compared to UGT1A1 *1/*1.",
+              "Alleles": "*6/*6 + *28/*28 + *6/*28",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Neutropenia, Side Effect:Leukopenia",
+              "Multiple phenotypes And/or": "or",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": "and",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Pancreatic Neoplasms, Other:Metastatic neoplasm",
+              "Multiple phenotypes or diseases And/or": "and",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "38707740",
+              "Variant Annotation ID_norm": "1452474678",
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 9,
+        "items": [
+          {
+            "variant": "or",
+            "gene": "UGT1A1",
+            "drug": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "or",
+              "Gene": "UGT1A1",
+              "Drug(s)": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "PMID": 38707740,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells and neutrophils.",
+              "Sentence": "UGT1A1*6 or *28 (+/+) is associated with decreased white blood cell count and neutrophil count when treated with nanoliposomal irinotecan plus 5-fluorouracil and L-leucovorin in people with metastatic pancreatic cancer.",
+              "Alleles": "(+/+), (-/-), (+/-)",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "leukopenia, neutropenia",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "metastatic pancreatic cancer",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "(-/-), (+/-)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... and that of UGT1A1*6 or *28 (+/+) was significantly related to decreased neutrophil count (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(+/+)",
+            "gene": "UGT1A1",
+            "drug": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "(+/+)",
+              "Gene": "UGT1A1",
+              "Drug(s)": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "PMID": 38707740,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells and neutrophils.",
+              "Sentence": "UGT1A1*6 or *28 (+/+) is associated with decreased white blood cell count and neutrophil count when treated with nanoliposomal irinotecan plus 5-fluorouracil and L-leucovorin in people with metastatic pancreatic cancer.",
+              "Alleles": "(+/+), (-/-), (+/-)",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "leukopenia, neutropenia",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "metastatic pancreatic cancer",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "(-/-), (+/-)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... and that of UGT1A1*6 or *28 (+/+) was significantly related to decreased neutrophil count (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "or",
+            "gene": "UGT1A1",
+            "drug": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "or",
+              "Gene": "UGT1A1",
+              "Drug(s)": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "PMID": 38707740,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells and neutrophils.",
+              "Sentence": "UGT1A1*6 or *28 (+/+) is associated with decreased white blood cell count and neutrophil count when treated with nanoliposomal irinotecan plus 5-fluorouracil and L-leucovorin in people with metastatic pancreatic cancer.",
+              "Alleles": "(+/+), (-/-), (+/-)",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "leukopenia, neutropenia",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "metastatic pancreatic cancer",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "(-/-), (+/-)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... and that of UGT1A1*6 or *28 (+/+) was significantly related to decreased neutrophil count (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(-/-)",
+            "gene": "UGT1A1",
+            "drug": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "(-/-)",
+              "Gene": "UGT1A1",
+              "Drug(s)": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "PMID": 38707740,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells and neutrophils.",
+              "Sentence": "UGT1A1*6 or *28 (+/+) is associated with decreased white blood cell count and neutrophil count when treated with nanoliposomal irinotecan plus 5-fluorouracil and L-leucovorin in people with metastatic pancreatic cancer.",
+              "Alleles": "(+/+), (-/-), (+/-)",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "leukopenia, neutropenia",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "metastatic pancreatic cancer",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "(-/-), (+/-)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... and that of UGT1A1*6 or *28 (+/+) was significantly related to decreased neutrophil count (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "UGT1A1*6",
+            "gene": "UGT1A1",
+            "drug": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "UGT1A1*6",
+              "Gene": "UGT1A1",
+              "Drug(s)": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "PMID": 38707740,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells and neutrophils.",
+              "Sentence": "UGT1A1*6 or *28 (+/+) is associated with decreased white blood cell count and neutrophil count when treated with nanoliposomal irinotecan plus 5-fluorouracil and L-leucovorin in people with metastatic pancreatic cancer.",
+              "Alleles": "(+/+), (-/-), (+/-)",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "leukopenia, neutropenia",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "metastatic pancreatic cancer",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "(-/-), (+/-)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... and that of UGT1A1*6 or *28 (+/+) was significantly related to decreased neutrophil count (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "or",
+            "gene": "UGT1A1",
+            "drug": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "or",
+              "Gene": "UGT1A1",
+              "Drug(s)": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "PMID": 38707740,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells and neutrophils.",
+              "Sentence": "UGT1A1*6 or *28 (+/+) is associated with decreased white blood cell count and neutrophil count when treated with nanoliposomal irinotecan plus 5-fluorouracil and L-leucovorin in people with metastatic pancreatic cancer.",
+              "Alleles": "(+/+), (-/-), (+/-)",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "leukopenia, neutropenia",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "metastatic pancreatic cancer",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "(-/-), (+/-)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... and that of UGT1A1*6 or *28 (+/+) was significantly related to decreased neutrophil count (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "*28",
+            "gene": "UGT1A1",
+            "drug": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "*28",
+              "Gene": "UGT1A1",
+              "Drug(s)": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "PMID": 38707740,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells and neutrophils.",
+              "Sentence": "UGT1A1*6 or *28 (+/+) is associated with decreased white blood cell count and neutrophil count when treated with nanoliposomal irinotecan plus 5-fluorouracil and L-leucovorin in people with metastatic pancreatic cancer.",
+              "Alleles": "(+/+), (-/-), (+/-)",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "leukopenia, neutropenia",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "metastatic pancreatic cancer",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "(-/-), (+/-)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... and that of UGT1A1*6 or *28 (+/+) was significantly related to decreased neutrophil count (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(+/-)",
+            "gene": "UGT1A1",
+            "drug": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "(+/-)",
+              "Gene": "UGT1A1",
+              "Drug(s)": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "PMID": 38707740,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells and neutrophils.",
+              "Sentence": "UGT1A1*6 or *28 (+/+) is associated with decreased white blood cell count and neutrophil count when treated with nanoliposomal irinotecan plus 5-fluorouracil and L-leucovorin in people with metastatic pancreatic cancer.",
+              "Alleles": "(+/+), (-/-), (+/-)",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "leukopenia, neutropenia",
+              "Multiple phenotypes And/or": "and",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "metastatic pancreatic cancer",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "(-/-), (+/-)",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)... and that of UGT1A1*6 or *28 (+/+) was significantly related to decreased neutrophil count (p=0.017).",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "polymorphism",
+            "gene": "UGT1A1",
+            "drug": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+            "annotation": {
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "polymorphism",
+              "Gene": "UGT1A1",
+              "Drug(s)": "Nanoliposomal irinotecan, 5-fluorouracil, L-leucovorin",
+              "PMID": 38707740,
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Decreased white blood cell count was significantly associated with high AST values before therapy and pancreatic head cancer.",
+              "Sentence": "UGT1A1 polymorphism is associated with dosage requirements of nanoliposomal irinotecan when treated with 5-fluorouracil and L-leucovorin in people with metastatic pancreatic cancer.",
+              "Alleles": null,
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": null,
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "dosage",
+              "Phenotype": "dosage requirements",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": "and",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "metastatic pancreatic cancer",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": null,
+              "Variant Annotation ID_norm": null,
+              "Citations": [
+                "Patients with UGT1A1*6 or *28 (+/+) exhibited significantly lower nadir counts of white blood cells (p=0.033) and neutrophils (p=0.043).",
+                "Multiple regression analyses revealed that the decreased white blood cell count was significantly associated with the genotype of UGT1A1*6 or *28 (+/+) (p=0.009)",
+                "Patients with UGT1A1*6 or *28 (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.803664411438836,
+      "total_samples": 3,
+      "ground_truth_annotations": {
+        "count": 3,
+        "matched_count": 3,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.7593393045313218,
+            "annotation": {
+              "Study Parameters ID": 1452474677,
+              "Variant Annotation ID": 1452474670,
+              "Study Type": null,
+              "Study Cases": 29.0,
+              "Study Controls": null,
+              "Characteristics": "diarrhea greater than grade 1 during Nanoliposomal irinotecan +  5-fluorouracil (5-FU) and leucovorin treatment",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.943",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452474677,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452474670,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 29.0,
+                "prediction": 29,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "diarrhea greater than grade 1 during Nanoliposomal irinotecan +  5-fluorouracil (5-FU) and leucovorin treatment",
+                "prediction": "Patients with metastatic pancreatic cancer; incidence of grade \u22651 diarrhea",
+                "score": 0.9087681770324707,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.943",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6986827675034019,
+            "annotation": {
+              "Study Parameters ID": 1452474729,
+              "Variant Annotation ID": 1452474678,
+              "Study Type": null,
+              "Study Cases": 31.0,
+              "Study Controls": null,
+              "Characteristics": "predictive factors for leukopenia (multiple regression) during Nanoliposomal irinotecan +  5-fluorouracil (5-FU) and leucovorin treatment",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.009",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452474729,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452474678,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 31.0,
+                "prediction": 36,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "predictive factors for leukopenia (multiple regression) during Nanoliposomal irinotecan +  5-fluorouracil (5-FU) and leucovorin treatment",
+                "prediction": "Patients with metastatic pancreatic cancer; UGT1A1 homozygous (+/+) genotype",
+                "score": 0.8776070475578308,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.009",
+                "prediction": "= 0.009",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6693248994210187,
+            "annotation": {
+              "Study Parameters ID": 1452474688,
+              "Variant Annotation ID": 1452474678,
+              "Study Type": null,
+              "Study Cases": 31.0,
+              "Study Controls": null,
+              "Characteristics": "predictive factors for neutropenia (multiple regression) during Nanoliposomal irinotecan +  5-fluorouracil (5-FU) and leucovorin treatment",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.017",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452474688,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452474678,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 31.0,
+                "prediction": 36,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "predictive factors for neutropenia (multiple regression) during Nanoliposomal irinotecan +  5-fluorouracil (5-FU) and leucovorin treatment",
+                "prediction": "Patients with metastatic pancreatic cancer; UGT1A1 genotypes (wild-type, heterozygous, homozygous)",
+                "score": 0.8785232901573181,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.017",
+                "prediction": "= 0.033",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 36,
+              "Study Controls": null,
+              "Characteristics": "Patients with metastatic pancreatic cancer; high AST value before therapy",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.019",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": null,
+              "Study Cases": 36,
+              "Study Controls": null,
+              "Characteristics": "Patients with metastatic pancreatic cancer; pancreatic head cancer",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.030",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

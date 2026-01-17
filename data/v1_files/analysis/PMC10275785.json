@@ -1,0 +1,521 @@
+{
+  "pmcid": "PMC10275785",
+  "pmid": "37332933",
+  "title": "Effect of NLRP3 inflammasome genes polymorphism on disease susceptibility and response to TNF-\u03b1 inhibitors in Iraqi patients with rheumatoid arthritis",
+  "overall_score": 0.26571694643873917,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.8857231547957972,
+      "total_samples": 2,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 2,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.8857231547957972,
+            "annotation": {
+              "Variant/Haplotypes": "rs2043211",
+              "Gene": "CARD8",
+              "PMID": 37332933,
+              "Phenotype Category": "Efficacy",
+              "Significance": "yes",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "or",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Rheumatoid arthritis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "AA + AT",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "etanercept, infliximab"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs2043211",
+                "prediction": "rs2043211",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CARD8",
+                "prediction": "CARD8",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 37332933,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "efficacy",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "TT",
+                "prediction": "TT",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "isPlural": {
+                "ground_truth": "Is",
+                "prediction": "Is",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "response to",
+                "prediction": "response to",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": "or",
+                "prediction": "or",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Population types": {
+                "ground_truth": "in people with",
+                "prediction": "in patients with",
+                "score": 0.8987551331520081,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Other:Rheumatoid arthritis",
+                "prediction": "Disease:Rheumatoid Arthritis",
+                "score": 0.9299848079681396,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "AA + AT",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "etanercept, infliximab",
+                "prediction": "Etanercept, Infliximab",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8857231547957972,
+            "annotation": {
+              "Variant/Haplotypes": "rs4612666",
+              "Gene": "NLRP3",
+              "PMID": 37332933,
+              "Phenotype Category": "Efficacy",
+              "Significance": "yes",
+              "Alleles": "TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": "or",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Rheumatoid arthritis",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "CC + CT",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "etanercept, infliximab"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs4612666",
+                "prediction": "rs4612666",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "NLRP3",
+                "prediction": "NLRP3",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 37332933,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Efficacy",
+                "prediction": "efficacy",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "TT",
+                "prediction": "TT",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "isPlural": {
+                "ground_truth": "Is",
+                "prediction": "Is",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "response to",
+                "prediction": "response to",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": "or",
+                "prediction": "or",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Population types": {
+                "ground_truth": "in people with",
+                "prediction": "in patients with",
+                "score": 0.8987551331520081,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Other:Rheumatoid arthritis",
+                "prediction": "Disease:Rheumatoid Arthritis",
+                "score": 0.9299848079681396,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "CC + CT",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "etanercept, infliximab",
+                "prediction": "Etanercept, Infliximab",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 0,
+        "unmatched_count": 2,
+        "items": [
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452143368,
+              "Variant Annotation ID": 1452143360,
+              "Study Type": null,
+              "Study Cases": 66.0,
+              "Study Controls": 33.0,
+              "Characteristics": "Cases = responders, controls = non-responders",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.265,
+              "Allele Of Frequency In Cases": "T",
+              "Frequency In Controls": 0.647,
+              "Allele Of Frequency In Controls": "T",
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 0.183,
+              "Confidence Interval Start": 0.063,
+              "Confidence Interval Stop": 0.531,
+              "Biogeographical Groups": "Near Eastern",
+              "Variant Annotation ID_norm": "1452143360"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452143420,
+              "Variant Annotation ID": 1452143400,
+              "Study Type": null,
+              "Study Cases": 66.0,
+              "Study Controls": 33.0,
+              "Characteristics": "Cases = responders, controls = non-responders",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.197,
+              "Allele Of Frequency In Cases": "T",
+              "Frequency In Controls": 0.559,
+              "Allele Of Frequency In Controls": "T",
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 0.131,
+              "Confidence Interval Start": 0.047,
+              "Confidence Interval Stop": 0.36,
+              "Biogeographical Groups": "Near Eastern",
+              "Variant Annotation ID_norm": "1452143400"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 5,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 100.0,
+              "Study Controls": 100.0,
+              "Characteristics": "Rheumatoid arthritis patients (88 females, 12 males)",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 100.0,
+              "Study Controls": 100.0,
+              "Characteristics": "Patients with CARD8 (rs2043211) TT genotype",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 100.0,
+              "Study Controls": 100.0,
+              "Characteristics": "Patients with NLRP3 (rs4612666) TT genotype",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 100.0,
+              "Study Controls": 100.0,
+              "Characteristics": "Elevated TNF-\u03b1 and IL-1\u03b2 serum levels in non-responders",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 7.84,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": 6.09,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "0.0005",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": null
+            }
+          },
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 100.0,
+              "Study Controls": 100.0,
+              "Characteristics": "Patients classified into responders and non-responders based on EULAR criteria",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

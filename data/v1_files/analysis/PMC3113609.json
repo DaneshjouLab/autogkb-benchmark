@@ -1,0 +1,649 @@
+{
+  "pmcid": "PMC3113609",
+  "pmid": "21428769",
+  "title": "HLA-A\u26053101 and Carbamazepine-Induced Hypersensitivity Reactions in Europeans",
+  "overall_score": 0.1959677426285214,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 1,
+        "items": [
+          {
+            "variant": "HLA-A\u26053101",
+            "gene": "HLA-A",
+            "drug": "carbamazepine",
+            "annotation": {
+              "Variant/Haplotypes": "HLA-A\u26053101",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Association confirmed with odds ratio of 12.41 for hypersensitivity syndrome.",
+              "Standardized Sentence": "HLA-A\u26053101 is associated with increased hypersensitivity reactions carbamazepine in people of European descent.",
+              "Alleles": "HLA-A\u26053101",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "in people of European descent",
+              "Population Phenotypes or diseases": "Side Effect:hypersensitivity reactions",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "response to",
+              "Multiple drugs And/or": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Citations": [
+                "The HLA-A\u26053101 allele, which has a prevalence of 2 to 5% in Northern European populations, was significantly associated with the hypersensitivity syndrome (P = 3.5x10\u22128).",
+                "Follow-up genotyping confirmed the variant as a risk factor for the hypersensitivity syndrome (odds ratio, 12.41; 95% confidence interval [CI], 1.27 to 121.03), maculopapular exanthema (odds ratio, 8.33; 95% CI, 3.59 to 19.36), and SJS-TEN (odds ratio, 25.93; 95% CI, 4.93 to 116.18).",
+                "The presence of the HLA-A\u26053101 allele increased the risk from 5.0% to 26.0%, whereas its absence reduced the risk from 5.0% to 3.8%."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.2961887717247009,
+      "total_samples": 3,
+      "ground_truth_annotations": {
+        "count": 3,
+        "matched_count": 1,
+        "unmatched_count": 2,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.8803752958774567,
+            "annotation": {
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*31:01",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Disease:Severe Cutaneous Adverse Reactions",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": null
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "HLA-A*31:01",
+                "prediction": "HLA-A\u26053101",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "HLA-A",
+                "prediction": "HLA-A",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "carbamazepine",
+                "prediction": "carbamazepine",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*31:01",
+                "prediction": "HLA-A*3101",
+                "score": 0.8894202709197998,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Disease:Severe Cutaneous Adverse Reactions",
+                "prediction": "hypersensitivity syndrome, maculopapular exanthema, Stevens-Johnson Syndrome",
+                "score": 0.9143326878547668,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1184466916,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 21428769,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "Patients with carbamazepine-induced maculopapular exanthema had an increased frequency of *31:01, as compared to carbamazepine-tolerant controls.",
+              "Sentence": "HLA-A *31:01 is associated with increased risk of Maculopapular Exanthema when treated with carbamazepine.",
+              "Alleles": "*31:01",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Disease:Maculopapular Exanthema",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "21428769",
+              "Variant Annotation ID_norm": "1184466916"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1184466909,
+              "Variant/Haplotypes": "HLA-A*31:01",
+              "Gene": "HLA-A",
+              "Drug(s)": "carbamazepine",
+              "PMID": 21428769,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "Hypersensitivity syndrome defined as the presence of a rash or liver involvement within 3 months after initiation of carbamazepine treatment, along with a minimum of two of the following manifestations: prolonged recovery phase despite drug withdrawal, fever, involvement of other internal organs, or presence of hematologic abnormalities. Patients who experienced carbamazepine-induced hypersensitivity syndrome had an increased frequency of *31:01, as compared to carbamazepine-tolerant controls.",
+              "Sentence": "HLA-A *31:01 is associated with increased risk of Drug Hypersensitivity when treated with carbamazepine.",
+              "Alleles": "*31:01",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Disease:Drug Hypersensitivity",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "21428769",
+              "Variant Annotation ID_norm": "1184466909"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.5355555555555556,
+      "total_samples": 3,
+      "ground_truth_annotations": {
+        "count": 3,
+        "matched_count": 3,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.5352941176470588,
+            "annotation": {
+              "Study Parameters ID": 1184466918,
+              "Variant Annotation ID": 1184466916,
+              "Study Type": "case/control",
+              "Study Cases": 106.0,
+              "Study Controls": 257.0,
+              "Characteristics": null,
+              "Characteristics Type": "Unknown",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 8.0E-7",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 8.33,
+              "Confidence Interval Start": 3.59,
+              "Confidence Interval Stop": 19.36,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1184466918,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1184466916,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 106.0,
+                "prediction": 145,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 257.0,
+                "prediction": 257,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": null,
+                "prediction": "Carbamazepine-induced hypersensitivity reactions (pooled analysis)",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Unknown",
+                "prediction": "Study Cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 8.0E-7",
+                "prediction": "= 1.0x10^\u22127",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 8.33,
+                "prediction": 9.12,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 3.59,
+                "prediction": 4.03,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 19.36,
+                "prediction": 20.65,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "European",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.5,
+            "annotation": {
+              "Study Parameters ID": 1184466924,
+              "Variant Annotation ID": 1184466922,
+              "Study Type": "case/control",
+              "Study Cases": 12.0,
+              "Study Controls": 257.0,
+              "Characteristics": null,
+              "Characteristics Type": "Unknown",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 8.0E-5",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 25.93,
+              "Confidence Interval Start": 4.93,
+              "Confidence Interval Stop": 116.18,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1184466924,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1184466922,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 12.0,
+                "prediction": 12,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": 257.0,
+                "prediction": 257,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": null,
+                "prediction": "SJS-TEN (Stevens-Johnson syndrome and toxic epidermal necrolysis)",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Unknown",
+                "prediction": "disease",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": 0.417,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": "A",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": 0.039,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": "A",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "= 8.0E-5",
+                "prediction": "= 8.0x10^\u22125",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 25.93,
+                "prediction": 25.93,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 4.93,
+                "prediction": 4.93,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 116.18,
+                "prediction": 116.18,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "European",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.38235294117647056,
+            "annotation": {
+              "Study Parameters ID": 1184466915,
+              "Variant Annotation ID": 1184466909,
+              "Study Type": "case/control",
+              "Study Cases": 27.0,
+              "Study Controls": 257.0,
+              "Characteristics": null,
+              "Characteristics Type": "Unknown",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.03",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 12.41,
+              "Confidence Interval Start": 1.27,
+              "Confidence Interval Stop": 121.03,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1184466915,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1184466909,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "case/control",
+                "prediction": "case/control",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 27.0,
+                "prediction": 22,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": 257.0,
+                "prediction": 2691,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": null,
+                "prediction": "Carbamazepine-induced hypersensitivity syndrome",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Unknown",
+                "prediction": "disease",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": 0.4,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": "A",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": 0.049,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": "A",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.03",
+                "prediction": "= 3.5x10\u22128",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 12.41,
+                "prediction": 12.41,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.27,
+                "prediction": 1.27,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 121.03,
+                "prediction": 121.03,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "European",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 1,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "case/control",
+              "Study Cases": 106,
+              "Study Controls": 257,
+              "Characteristics": "Maculopapular exanthema",
+              "Characteristics Type": "disease",
+              "Frequency In Cases": 0.27,
+              "Allele Of Frequency In Cases": "A",
+              "Frequency In Controls": 0.04,
+              "Allele Of Frequency In Controls": "A",
+              "P Value": "= 8.0x10^\u22127",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 8.33,
+              "Confidence Interval Start": 3.59,
+              "Confidence Interval Stop": 19.36,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

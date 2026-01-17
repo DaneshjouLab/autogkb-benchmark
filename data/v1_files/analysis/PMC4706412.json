@@ -1,0 +1,1270 @@
+{
+  "pmcid": "PMC4706412",
+  "pmid": "26745506",
+  "title": "A Novel Admixture-Based Pharmacogenetic Approach to Refine Warfarin Dosing in Caribbean Hispanics",
+  "overall_score": 0.14512316399947145,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.2623607704513951,
+      "total_samples": 8,
+      "ground_truth_annotations": {
+        "count": 8,
+        "matched_count": 3,
+        "unmatched_count": 5,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.7368421052631579,
+            "annotation": {
+              "Variant/Haplotypes": "CYP4F2*3",
+              "Gene": "CYP4F2",
+              "PMID": 26745506,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Alleles": "*3",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "warfarin"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP4F2*3",
+                "prediction": "CYP4F2*3",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP4F2",
+                "prediction": "CYP4F2",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 26745506,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Dosage",
+                "prediction": "dosage",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*3",
+                "prediction": "*3",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "normal metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "isPlural": {
+                "ground_truth": "Is",
+                "prediction": "Is",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "dose of",
+                "prediction": "dose of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "warfarin",
+                "prediction": "warfarin",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6813578950731378,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C9*2",
+              "Gene": "CYP2C9",
+              "PMID": 26745506,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Alleles": "*2 + *3 + *8",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "warfarin"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C9*2",
+                "prediction": "CYP2C9*2",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C9",
+                "prediction": "CYP2C9",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 26745506,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Dosage",
+                "prediction": "dosage",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*2 + *3 + *8",
+                "prediction": "*2",
+                "score": 0.9458000063896179,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "poor metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "isPlural": {
+                "ground_truth": "Are",
+                "prediction": "Is",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "dose of",
+                "prediction": "dose of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "warfarin",
+                "prediction": "warfarin",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6806861632748654,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2C9*3",
+              "Gene": "CYP2C9",
+              "PMID": 26745506,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Alleles": "*2 + *3 + *8",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "warfarin"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2C9*3",
+                "prediction": "CYP2C9*3",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2C9",
+                "prediction": "CYP2C9",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 26745506,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Dosage",
+                "prediction": "dosage",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*2 + *3 + *8",
+                "prediction": "*3",
+                "score": 0.9330371022224426,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "poor metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "isPlural": {
+                "ground_truth": "Are",
+                "prediction": "Is",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "dose of",
+                "prediction": "dose of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "warfarin",
+                "prediction": "warfarin",
+                "score": 1.0,
+                "match_status": "match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1447682700,
+              "Variant/Haplotypes": "CYP4F2*1",
+              "Gene": "CYP4F2",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Notes": "The authors aimed to develop an admixture-adjusted (genetic ancestry) PGx dosing algorithm for warfarin in Caribbean Hispanics from Puerto Rico. [Algorithm R sq.=0.70, MAE = 0.72 mg/day]. When externally validated with 55 individuals from an independent cohort the novel algorithm predicted 58% of the warfarin dose variance [MAE = 0.89 mg/day, 24% mean bias]. Please note: the derivation cohort was 99% male.",
+              "Sentence": "CYP4F2 *3 is associated with increased dose of warfarin as compared to CYP4F2 *1.",
+              "Alleles": "*3",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "26745506",
+              "Variant Annotation ID_norm": "1447682700",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1447682605,
+              "Variant/Haplotypes": "CYP2C9*1",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Notes": "The authors aimed to develop an admixture-adjusted (genetic ancestry) PGx dosing algorithm for warfarin in Caribbean Hispanics from Puerto Rico. [Algorithm R sq.=0.70, MAE = 0.72 mg/day]. When externally validated with 55 individuals from an independent cohort the novel algorithm predicted 58% of the warfarin dose variance [MAE = 0.89 mg/day, 24% mean bias]. Please note: the derivation cohort was 99% male and  \"variables were included in final lin. reg model if p<0.05 or if association with daily warfarin dose was marginally significant 0.05 = p = 0.20 with strong biological plausibility\".",
+              "Sentence": "CYP2C9 *2 + *3 + *8 are associated with decreased dose of warfarin as compared to CYP2C9 *1.",
+              "Alleles": "*2 + *3 + *8",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "26745506",
+              "Variant Annotation ID_norm": "1447682605",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1447682605,
+              "Variant/Haplotypes": "CYP2C9*8",
+              "Gene": "CYP2C9",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Notes": "The authors aimed to develop an admixture-adjusted (genetic ancestry) PGx dosing algorithm for warfarin in Caribbean Hispanics from Puerto Rico. [Algorithm R sq.=0.70, MAE = 0.72 mg/day]. When externally validated with 55 individuals from an independent cohort the novel algorithm predicted 58% of the warfarin dose variance [MAE = 0.89 mg/day, 24% mean bias]. Please note: the derivation cohort was 99% male and  \"variables were included in final lin. reg model if p<0.05 or if association with daily warfarin dose was marginally significant 0.05 = p = 0.20 with strong biological plausibility\".",
+              "Sentence": "CYP2C9 *2 + *3 + *8 are associated with decreased dose of warfarin as compared to CYP2C9 *1.",
+              "Alleles": "*2 + *3 + *8",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "26745506",
+              "Variant Annotation ID_norm": "1447682605",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1447682688,
+              "Variant/Haplotypes": "rs9923231",
+              "Gene": "VKORC1",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Notes": "The authors aimed to develop an admixture-adjusted (genetic ancestry) PGx dosing algorithm for warfarin in Caribbean Hispanics from Puerto Rico. [Algorithm R sq.=0.70, MAE = 0.72 mg/day]. When externally validated with 55 individuals from an independent cohort the novel algorithm predicted 58% of the warfarin dose variance [MAE = 0.89 mg/day, 24% mean bias]. Please note: the derivation cohort was 99% male.",
+              "Sentence": "Genotypes CT + TT are associated with decreased dose of warfarin as compared to genotype CC.",
+              "Alleles": "CT + TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "CC",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "26745506",
+              "Variant Annotation ID_norm": "1447682688"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1447682722,
+              "Variant/Haplotypes": "rs1800566",
+              "Gene": "NQO1",
+              "Drug(s)": "warfarin",
+              "PMID": 26745506,
+              "Phenotype Category": "Dosage",
+              "Significance": "yes",
+              "Notes": "The authors aimed to develop an admixture-adjusted (genetic ancestry) PGx dosing algorithm for warfarin in Caribbean Hispanics from Puerto Rico. [Algorithm R sq.=0.70, MAE = 0.72 mg/day]. When externally validated with 55 individuals from an independent cohort the novel algorithm predicted 58% of the warfarin dose variance [MAE = 0.89 mg/day, 24% mean bias]. Please note: 1) the derivation cohort was 99% male 2) alleles have been complemented to the + chromosomal strand and 3) \"variables were included in final lin. reg model if p<0.05 or if association with daily warfarin dose was marginally significant 0.05 = p = 0.20 with strong biological plausability\".",
+              "Sentence": "Genotypes AA + AG are associated with increased dose of warfarin as compared to genotype GG.",
+              "Alleles": "AA + AG",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Are",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "GG",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "26745506",
+              "Variant Annotation ID_norm": "1447682722"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "VKORC1-1639A",
+            "gene": "VKORC1",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant/Haplotypes": "VKORC1-1639A",
+              "Gene": "VKORC1",
+              "Drug(s)": "warfarin",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Carriers of the VKORC1-1639AA genotype had reduced warfarin dose requirements.",
+              "Sentence": "VKORC1-1639A is associated with decreased warfarin dose in Caribbean Hispanics.",
+              "Alleles": "A",
+              "Metabolizer types": "normal metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Combined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population. Moreover, this covariate was associated with a 13% reduction in the therapeutic warfarin dose per number of A alleles.",
+                "The mean absolute error (MAE, mg/day, defined as the mean of the absolute values for the difference between the predicted and actual doses) was used to evaluate the model's predictive accuracy. We selected the final model as the one that had the lowest predictive MAE.",
+                "For patients at the highest risk who required either \u22643mg (~19.2% of the study cohorts) or \u22657 mg/day of warfarin per day (~11% of the study cohorts), 54.5% of the dose predictions using our developed model resulted within 20% of the actual dose ('ideal dose') as compared with only 29% when using the clinical non-genetic algorithm (p<0.001)."
+              ]
+            }
+          },
+          {
+            "variant": "NQO1*2",
+            "gene": "NQO1",
+            "drug": "warfarin",
+            "annotation": {
+              "Variant/Haplotypes": "NQO1*2",
+              "Gene": "NQO1",
+              "Drug(s)": "warfarin",
+              "Phenotype Category": "dosage",
+              "Significance": "yes",
+              "Notes": "Presence of NQO1*2 variant has an effect on warfarin metabolism, requiring dosage adjustment.",
+              "Sentence": "NQO1*2 is associated with increased warfarin dose in Caribbean Hispanics.",
+              "Alleles": "*2",
+              "Metabolizer types": "normal metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "dose of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "NQO1*2 variant has an effect on warfarin metabolism, requiring dosage adjustment.",
+                "The CYP4F2*3 and NQO1*2 variants were independently associated with a 17% and 10% increase of the dose per variant allele, respectively; whereas, the admixed status of the admixture index decreases the dose by 7%.",
+                "Combined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.3320746643202645,
+      "total_samples": 7,
+      "ground_truth_annotations": {
+        "count": 7,
+        "matched_count": 4,
+        "unmatched_count": 3,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.6674664581523222,
+            "annotation": {
+              "Study Parameters ID": 1447682693,
+              "Variant Annotation ID": 1447682688,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 255.0,
+              "Study Controls": null,
+              "Characteristics": "NCT01318057; VKORC1 rs9923231 AA partial reg. coeff. -0.896 (SE 0.2169), adj R sq .0.641",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.0001",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1447682693,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1447682688,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 255.0,
+                "prediction": 255,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "NCT01318057; VKORC1 rs9923231 AA partial reg. coeff. -0.896 (SE 0.2169), adj R sq .0.641",
+                "prediction": "Patients at highest risk of adverse events",
+                "score": 0.8469297885894775,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "< 0.0001",
+                "prediction": "< 0.001",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Multiple Groups",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.635397171272951,
+            "annotation": {
+              "Study Parameters ID": 1447682695,
+              "Variant Annotation ID": 1447682688,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 255.0,
+              "Study Controls": null,
+              "Characteristics": "NCT01318057; VKORC1 rs9923231 AG partial reg. coeff. -0.379 (SE 0.1391), adj R sq .0.659",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.007",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Unknown"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1447682695,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1447682688,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 255.0,
+                "prediction": 255,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "NCT01318057; VKORC1 rs9923231 AG partial reg. coeff. -0.379 (SE 0.1391), adj R sq .0.659",
+                "prediction": "Caribbean Hispanic patients",
+                "score": 0.8017519116401672,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.007",
+                "prediction": "< 0.001",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "HR",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Unknown",
+                "prediction": "Multiple Groups",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.4039437420227948,
+            "annotation": {
+              "Study Parameters ID": 1447682724,
+              "Variant Annotation ID": 1447682722,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 255.0,
+              "Study Controls": null,
+              "Characteristics": "NCT01318057; NQO1 rs1800566 A allele partial reg. coeff. 0.346 (SE 0.2246), adj R sq .0.689",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.098,
+              "Allele Of Frequency In Cases": "A",
+              "Frequency In Controls": 0.902,
+              "Allele Of Frequency In Controls": "G",
+              "P Value": "= 0.125",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1447682724,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1447682722,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 255.0,
+                "prediction": 255,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "NCT01318057; NQO1 rs1800566 A allele partial reg. coeff. 0.346 (SE 0.2246), adj R sq .0.689",
+                "prediction": "Admixture-driven pharmacogenetic model used",
+                "score": 0.8670436143875122,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.098,
+                "prediction": 0.58,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "A",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.902,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "G",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.125",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Multiple Groups",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.34424202582415414,
+            "annotation": {
+              "Study Parameters ID": 1447682664,
+              "Variant Annotation ID": 1447682605,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 255.0,
+              "Study Controls": null,
+              "Characteristics": "Study Cohort: NCT01318057; CYP2C9 *3 partial reg. coeff. -0.544 (SE 0.2224), adj R sq 0.625",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.05,
+              "Allele Of Frequency In Cases": "*3",
+              "Frequency In Controls": 0.83,
+              "Allele Of Frequency In Controls": "*1",
+              "P Value": "= 0.015",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1447682664,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1447682605,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "cohort, retrospective",
+                "prediction": "retrospective",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 255.0,
+                "prediction": 255,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": 55,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "Study Cohort: NCT01318057; CYP2C9 *3 partial reg. coeff. -0.544 (SE 0.2224), adj R sq 0.625",
+                "prediction": "External validation cohort from Hartford Hospital",
+                "score": 0.8521144390106201,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": 0.05,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": "*3",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": 0.83,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": "*1",
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.015",
+                "prediction": "< 0.001",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Latino",
+                "prediction": "Multiple Groups",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1447682702,
+              "Variant Annotation ID": 1447682700,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 255.0,
+              "Study Controls": null,
+              "Characteristics": "NCT01318057; CYP4F3 *3 partial reg. coeff. 0.560 (SE 0.2274), adj R sq0.0.673",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.115,
+              "Allele Of Frequency In Cases": "*3",
+              "Frequency In Controls": 0.885,
+              "Allele Of Frequency In Controls": "*1",
+              "P Value": "= 0.014",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino",
+              "Variant Annotation ID_norm": "1447682700"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1447682655,
+              "Variant Annotation ID": 1447682605,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 255.0,
+              "Study Controls": null,
+              "Characteristics": "NCT01318057; CYP2C9 *2 partial reg. coeff. -0.245 (SE 0.1654), adj R sq0.613",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.09,
+              "Allele Of Frequency In Cases": "*2",
+              "Frequency In Controls": 0.83,
+              "Allele Of Frequency In Controls": "*1",
+              "P Value": "= 0.014",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino",
+              "Variant Annotation ID_norm": "1447682605"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1447682687,
+              "Variant Annotation ID": 1447682605,
+              "Study Type": "cohort, retrospective",
+              "Study Cases": 255.0,
+              "Study Controls": null,
+              "Characteristics": "NCT01318057; CYP2C9 *8 partial reg. coeff. -1.00 (SE 0.6014), adj R sq 0.638",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": 0.006,
+              "Allele Of Frequency In Cases": "*8",
+              "Frequency In Controls": 0.83,
+              "Allele Of Frequency In Controls": "*1",
+              "P Value": "= 0.098",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Latino",
+              "Variant Annotation ID_norm": "1447682605"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    }
+  }
+}

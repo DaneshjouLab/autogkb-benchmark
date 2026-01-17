@@ -1,0 +1,1282 @@
+{
+  "pmcid": "PMC10399933",
+  "pmid": "37490620",
+  "title": "Real-world pharmacogenetics of statin intolerance: effects of SLCO1B1, ABCG2, and CYP2C9 variants",
+  "overall_score": 0.12318118544135773,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 6,
+        "items": [
+          {
+            "variant": "c.521C/C",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin",
+            "annotation": {
+              "Variant/Haplotypes": "c.521C/C",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Hazard ratio (HR) 1.88, 95% CI 1.08-3.25, P = 0.025, associated with simvastatin intolerance.",
+              "Sentence": "Genotype c.521C/C is associated with increased toxicity simvastatin in the general adult population.",
+              "Alleles": "C/C",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "T/T",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "general adult population",
+              "Population Phenotypes or diseases": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "We confirmed the association of SLCO1B1 c.521C/C genotype with simvastatin intolerance... [hazard ratio (HR) 1.88, 95% confidence interval (CI) 1.08-3.25, P = 0.025]...",
+                "The intolerance phenotype derived from statin switching alone or combined with CK measurement appears to be suitable to evaluate statin intolerance.",
+                "We included only statin switching in our phenotype, since in our preliminary analyses with simvastatin-*SLCO1B1* statin switching rather than statin discontinuation or statin dose reduction, best-represented statin intolerance."
+              ]
+            }
+          },
+          {
+            "variant": "c.521T>C",
+            "gene": "SLCO1B1",
+            "drug": "pravastatin",
+            "annotation": {
+              "Variant/Haplotypes": "c.521T>C",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "pravastatin",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Hazard ratio (HR) 2.11, 95% CI 1.01-4.39, P = 0.047, associated with pravastatin intolerance.",
+              "Sentence": "Genotype c.521T>C is associated with increased toxicity pravastatin in the general adult population.",
+              "Alleles": "T/C, C/C",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "T/T",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "general adult population",
+              "Population Phenotypes or diseases": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "SLCO1B1 c.521T>C carriers had an increased risk of pravastatin intolerance defined by statin switching when compared to homozygous reference T/T genotype (HR 2.11, 95% CI 1.01-4.39, P = 0.047).",
+                "In addition to simvastatin, we observed that heterozygous or homozygous *SLCO1B1* c.521T>C carriers had a higher risk of pravastatin intolerance based on statin switching phenotype when compared to reference allele homozygotes."
+              ]
+            }
+          },
+          {
+            "variant": "c.521T>C",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin",
+            "annotation": {
+              "Variant/Haplotypes": "c.521T>C",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin",
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "No significant association observed with atorvastatin-induced toxicity.",
+              "Sentence": "Genotype c.521T>C is not associated with toxicity simvastatin in the general adult population.",
+              "Alleles": "T/C, C/C",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "T/T",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "general adult population",
+              "Population Phenotypes or diseases": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "toxicity",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "We confirmed the association of SLCO1B1 c.521C/C genotype with simvastatin intolerance both by using phenotype of switching initial statin to another as a marker of statin intolerance [hazard ratio (HR) 1.88, 95% confidence interval (CI) 1.08-3.25, P = 0.025]",
+                "Neither the SLCO1B1 or ABCG2 genotypes nor atorvastatin dose were associated with the statin intolerance phenotypes",
+                "Moreover, we observed that heterozygous or homozygous SLCO1B1 c.521T>C carriers had a higher risk of pravastatin intolerance based on statin switching phenotype when compared to reference allele homozygotes."
+              ]
+            }
+          },
+          {
+            "variant": "rs2231142",
+            "gene": "ABCG2",
+            "drug": "rosuvastatin",
+            "annotation": {
+              "Variant/Haplotypes": "rs2231142",
+              "Gene": "ABCG2",
+              "Drug(s)": "rosuvastatin",
+              "Phenotype Category": "toxicity",
+              "Significance": "no",
+              "Notes": "No significant association for ABCG2 on rosuvastatin-induced toxicity was found.",
+              "Sentence": "Variant rs2231142 is not associated with toxicity rosuvastatin in the general adult population.",
+              "Alleles": "C/A, C/C",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": "C/C",
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "general adult population",
+              "Population Phenotypes or diseases": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "toxicity",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "No significant association was observed with atorvastatin and rosuvastatin.",
+                "The findings are in line with the JUPITER trial in which the *SLCO1B1* genotype was not associated with clinically reported myalgia in a clinical trial setting with rosuvastatin dose of 20 mg.",
+                "We observed no statistically significant increase in statin intolerance risk for atorvastatin, fluvastatin or rosuvastatin with the studied genotypes."
+              ]
+            }
+          },
+          {
+            "variant": "rs1057910",
+            "gene": "CYP2C9",
+            "drug": "fluvastatin",
+            "annotation": {
+              "Variant/Haplotypes": "rs1057910",
+              "Gene": "CYP2C9",
+              "Drug(s)": "fluvastatin",
+              "Phenotype Category": "toxicity",
+              "Significance": "not stated",
+              "Notes": "No statistically significant association was observed for fluvastatin.",
+              "Sentence": "Variants rs1057910 and rs1799853 are not associated with toxicity fluvastatin in the general adult population.",
+              "Alleles": "C/T, T/T",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "general adult population",
+              "Population Phenotypes or diseases": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "toxicity",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "No statistically significant association was found for fluvastatin.",
+                "We observed no statistically significant increase in statin intolerance risk for atorvastatin, fluvastatin or rosuvastatin with the studied genotypes.",
+                "For fluvastatin, there was a trend towards increased risk of statin intolerance with a point estimate of HR at 1.88 in carriers of 2-4 risk alleles, but perhaps due to low sample size, the finding was not statistically significant."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "rs1799853",
+            "gene": "CYP2C9",
+            "drug": "fluvastatin",
+            "annotation": {
+              "Variant/Haplotypes": "rs1799853",
+              "Gene": "CYP2C9",
+              "Drug(s)": "fluvastatin",
+              "Phenotype Category": "toxicity",
+              "Significance": "not stated",
+              "Notes": "No statistically significant association was observed for fluvastatin.",
+              "Sentence": "Variants rs1057910 and rs1799853 are not associated with toxicity fluvastatin in the general adult population.",
+              "Alleles": "C/T, T/T",
+              "Metabolizer types": null,
+              "Comparison Allele(s) or Genotype(s)": null,
+              "Comparison Metabolizer types": null,
+              "Specialty Population": null,
+              "Population types": "general adult population",
+              "Population Phenotypes or diseases": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "PD/PK terms": "toxicity",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "No statistically significant association was found for fluvastatin.",
+                "We observed no statistically significant increase in statin intolerance risk for atorvastatin, fluvastatin or rosuvastatin with the studied genotypes.",
+                "For fluvastatin, there was a trend towards increased risk of statin intolerance with a point estimate of HR at 1.88 in carriers of 2-4 risk alleles, but perhaps due to low sample size, the finding was not statistically significant."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.24742898132119853,
+      "total_samples": 7,
+      "ground_truth_annotations": {
+        "count": 7,
+        "matched_count": 2,
+        "unmatched_count": 5,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.8619258880615235,
+            "annotation": {
+              "Variant/Haplotypes": "rs4149056",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "CC",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Discontinuation",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "TT"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs4149056",
+                "prediction": "SLCO1B1",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "SLCO1B1",
+                "prediction": "SLCO1B1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "simvastatin",
+                "prediction": "simvastatin",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "CC",
+                "prediction": "C/C",
+                "score": 0.9050132036209106,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Discontinuation",
+                "prediction": "statin intolerance",
+                "score": 0.8498684167861938,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "TT",
+                "prediction": "SLCO1B1 c.521T/T",
+                "score": 0.8643772602081299,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8579769968986511,
+            "annotation": {
+              "Variant/Haplotypes": "rs4149056",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "pravastatin",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "CC + CT",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Phenotype": "Side Effect:Discontinuation",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "TT"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs4149056",
+                "prediction": "SLCO1B1",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "SLCO1B1",
+                "prediction": "SLCO1B1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "pravastatin",
+                "prediction": "pravastatin",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "CC + CT",
+                "prediction": "C/T",
+                "score": 0.8655242919921875,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Discontinuation",
+                "prediction": "statin intolerance",
+                "score": 0.8498684167861938,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "TT",
+                "prediction": "SLCO1B1 c.521T/T",
+                "score": 0.8643772602081299,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452196120,
+              "Variant/Haplotypes": "CYP2C9*1",
+              "Gene": "CYP2C9",
+              "Drug(s)": "fluvastatin",
+              "PMID": 37490620,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": "effect is described as \"Statin switch\" as measured by changes in prescription refills in the medical record, and attributed to muscle side effects (therefore tagged as toxicity). \"The sample sizes for fluvastatin and pravastatin were relatively small\"\"No statistically significant association was found for fluvastatin",
+              "Sentence": "CYP2C9 *2/*2 + *2/*3 + *3/*3 (assigned as poor metabolizer phenotype) is not associated with increased risk of discontinuation when treated with fluvastatin as compared to CYP2C9 *1/*1 + *1/*2 + *1/*3 (assigned as intermediate metabolizer and normal metabolizer phenotype) .",
+              "Alleles": "*2/*2 + *2/*3 + *3/*3",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Discontinuation",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *1/*3",
+              "Comparison Metabolizer types": "normal metabolizer and intermediate metabolizer",
+              "PMID_norm": "37490620",
+              "Variant Annotation ID_norm": "1452196120",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452196120,
+              "Variant/Haplotypes": "CYP2C9*2",
+              "Gene": "CYP2C9",
+              "Drug(s)": "fluvastatin",
+              "PMID": 37490620,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": "effect is described as \"Statin switch\" as measured by changes in prescription refills in the medical record, and attributed to muscle side effects (therefore tagged as toxicity). \"The sample sizes for fluvastatin and pravastatin were relatively small\"\"No statistically significant association was found for fluvastatin",
+              "Sentence": "CYP2C9 *2/*2 + *2/*3 + *3/*3 (assigned as poor metabolizer phenotype) is not associated with increased risk of discontinuation when treated with fluvastatin as compared to CYP2C9 *1/*1 + *1/*2 + *1/*3 (assigned as intermediate metabolizer and normal metabolizer phenotype) .",
+              "Alleles": "*2/*2 + *2/*3 + *3/*3",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Discontinuation",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *1/*3",
+              "Comparison Metabolizer types": "normal metabolizer and intermediate metabolizer",
+              "PMID_norm": "37490620",
+              "Variant Annotation ID_norm": "1452196120",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452196120,
+              "Variant/Haplotypes": "CYP2C9*3",
+              "Gene": "CYP2C9",
+              "Drug(s)": "fluvastatin",
+              "PMID": 37490620,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": "effect is described as \"Statin switch\" as measured by changes in prescription refills in the medical record, and attributed to muscle side effects (therefore tagged as toxicity). \"The sample sizes for fluvastatin and pravastatin were relatively small\"\"No statistically significant association was found for fluvastatin",
+              "Sentence": "CYP2C9 *2/*2 + *2/*3 + *3/*3 (assigned as poor metabolizer phenotype) is not associated with increased risk of discontinuation when treated with fluvastatin as compared to CYP2C9 *1/*1 + *1/*2 + *1/*3 (assigned as intermediate metabolizer and normal metabolizer phenotype) .",
+              "Alleles": "*2/*2 + *2/*3 + *3/*3",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Discontinuation",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1 + *1/*2 + *1/*3",
+              "Comparison Metabolizer types": "normal metabolizer and intermediate metabolizer",
+              "PMID_norm": "37490620",
+              "Variant Annotation ID_norm": "1452196120",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452196040,
+              "Variant/Haplotypes": "rs4149056",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "atorvastatin, fluvastatin, rosuvastatin",
+              "PMID": 37490620,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": "effect is described as \"Statin switch\" as measured by changes in prescription refills in the medical record, and attributed to muscle side effects (therefore tagged as toxicity). \"No significant association was observed with atorvastatin and rosuvastatin.\" \"The sample sizes for fluvastatin and pravastatin were relatively small\"\"No statistically significant association was found for fluvastatin",
+              "Sentence": "Genotypes CC + CT is not associated with increased risk of discontinuation when treated with atorvastatin, fluvastatin or rosuvastatin as compared to genotype TT.",
+              "Alleles": "CC + CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Discontinuation",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": "or",
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "37490620",
+              "Variant Annotation ID_norm": "1452196040"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452196080,
+              "Variant/Haplotypes": "rs2231142",
+              "Gene": "ABCG2",
+              "Drug(s)": "atorvastatin, fluvastatin, rosuvastatin",
+              "PMID": 37490620,
+              "Phenotype Category": "Toxicity",
+              "Significance": "no",
+              "Notes": "effect is described as \"Statin switch\" as measured by changes in prescription refills in the medical record, and attributed to muscle side effects (therefore tagged as toxicity). \"No significant association was observed with atorvastatin and rosuvastatin.\" \"The sample sizes for fluvastatin and pravastatin were relatively small\"\"No statistically significant association was found for fluvastatin\" Alleles complemented to plus chromosomal strand.",
+              "Sentence": "Genotypes GT + TT is not associated with increased risk of discontinuation when treated with atorvastatin, fluvastatin or rosuvastatin as compared to genotype GG.",
+              "Alleles": "GT + TT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "risk of",
+              "Phenotype": "Side Effect:Discontinuation",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": "or",
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "GG",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "37490620",
+              "Variant Annotation ID_norm": "1452196080"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 4,
+        "items": [
+          {
+            "variant": "c.521C/C",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "c.521C/C",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin",
+              "PMID": 37490620,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "Hazard ratio (HR) 1.88, 95% CI 1.08-3.25, P = 0.025 for statin switching as marker of intolerance",
+              "Sentence": "SLCO1B1 c.521C/C is associated with increased risk of statin intolerance when treated with simvastatin in patients initiating therapy.",
+              "Alleles": "C/C",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": null,
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "statin intolerance",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "SLCO1B1 c.521T/T",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": 37490620,
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "We confirmed the association of SLCO1B1 c.521C/C genotype with simvastatin intolerance both by using phenotype of switching initial statin to another as a marker of statin intolerance [hazard ratio (HR) 1.88, 95% confidence interval (CI) 1.08-3.25, P = 0.025] and statin switching along with creatine kinase measurement (HR 5.44, 95% CI 1.49-19.9, P = 0.011).",
+                "In the Cox proportional hazards model accounting for the statin dose, SLCO1B1 c.521C/C genotype was associated with an increased risk of simvastatin intolerance when compared to homozygous reference T/T genotype using both statin switcher [hazard ratio (HR) 1.88, 95% confidence interval (CI) 1.08-3.25, P = 0.025] and statin switcher with CK measurement (HR 5.44, 95% CI 1.49-19.9, P = 0.011) phenotypes.",
+                "The current study has several clinical implications. First, it corroborates the well-characterized association of SLCO1B1 genotype with simvastatin intolerance in a real-world setting."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "c.521T>C",
+            "gene": "SLCO1B1",
+            "drug": "pravastatin",
+            "annotation": {
+              "Variant Annotation ID": 2,
+              "Variant/Haplotypes": "c.521T>C",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "pravastatin",
+              "PMID": 37490620,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "HR 2.11, 95% CI 1.01-4.39, P = 0.047 for increased risk of pravastatin intolerance when compared to wild-type genotype",
+              "Sentence": "SLCO1B1 c.521T>C is associated with increased risk of statin intolerance when treated with pravastatin in patients initiating therapy.",
+              "Alleles": "C/T",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": null,
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "statin intolerance",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "SLCO1B1 c.521T/T",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": 37490620,
+              "Variant Annotation ID_norm": "2",
+              "Citations": [
+                "SLCO1B1 c.521T>C carriers had an increased risk of pravastatin intolerance defined by statin switching when compared to homozygous reference T/T genotype (HR 2.11, 95% CI 1.01-4.39, P = 0.047).",
+                "In addition to simvastatin, we observed that heterozygous or homozygous SLCO1B1 c.521T>C carriers had a higher risk of pravastatin intolerance based on statin switching phenotype when compared to reference allele homozygotes."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "ABCG2",
+            "gene": "ABCG2",
+            "drug": "none",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "ABCG2",
+              "Gene": "ABCG2",
+              "Drug(s)": "none",
+              "PMID": 37490620,
+              "Phenotype Category": "other",
+              "Significance": "not stated",
+              "Notes": "No significant association observed between ABCG2 and atorvastatin tolerance.",
+              "Sentence": "ABCG2 c.421C>A is not associated with statin intolerance in patients initiating therapy with atorvastatin.",
+              "Alleles": "C/A",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": null,
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "Side effect/efficacy/other": null,
+              "Phenotype": "statin intolerance",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "ABCG2 c.421C/C",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": 37490620,
+              "Variant Annotation ID_norm": "3",
+              "Citations": [
+                "Neither the SLCO1B1 or ABCG2 genotypes nor atorvastatin dose were associated with the statin intolerance phenotypes.",
+                "No significant association was observed with atorvastatin and rosuvastatin.",
+                "We observed no statistically significant increase in statin intolerance risk for atorvastatin, fluvastatin or rosuvastatin with the studied genotypes."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "c.421C>A",
+            "gene": "ABCG2",
+            "drug": "none",
+            "annotation": {
+              "Variant Annotation ID": 3,
+              "Variant/Haplotypes": "c.421C>A",
+              "Gene": "ABCG2",
+              "Drug(s)": "none",
+              "PMID": 37490620,
+              "Phenotype Category": "other",
+              "Significance": "not stated",
+              "Notes": "No significant association observed between ABCG2 and atorvastatin tolerance.",
+              "Sentence": "ABCG2 c.421C>A is not associated with statin intolerance in patients initiating therapy with atorvastatin.",
+              "Alleles": "C/A",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": null,
+              "Is/Is Not associated": "Not associated with",
+              "Direction of effect": null,
+              "Side effect/efficacy/other": null,
+              "Phenotype": "statin intolerance",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": null,
+              "Population Phenotypes or diseases": null,
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "ABCG2 c.421C/C",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": 37490620,
+              "Variant Annotation ID_norm": "3",
+              "Citations": [
+                "Neither the SLCO1B1 or ABCG2 genotypes nor atorvastatin dose were associated with the statin intolerance phenotypes.",
+                "No significant association was observed with atorvastatin and rosuvastatin.",
+                "We observed no statistically significant increase in statin intolerance risk for atorvastatin, fluvastatin or rosuvastatin with the studied genotypes."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.24476245522499082,
+      "total_samples": 10,
+      "ground_truth_annotations": {
+        "count": 10,
+        "matched_count": 3,
+        "unmatched_count": 7,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.7597943158710704,
+            "annotation": {
+              "Study Parameters ID": 1452195960,
+              "Variant Annotation ID": 1452195947,
+              "Study Type": null,
+              "Study Cases": 92.0,
+              "Study Controls": null,
+              "Characteristics": "Statin switch",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.047",
+              "Ratio Stat Type": "HR",
+              "Ratio Stat": 2.11,
+              "Confidence Interval Start": 1.01,
+              "Confidence Interval Stop": 4.39,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452195960,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452195947,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 92.0,
+                "prediction": 92,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Statin switch",
+                "prediction": "Pravastatin intolerance defined by statin switching",
+                "score": 0.916503369808197,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.047",
+                "prediction": "= 0.047",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "HR",
+                "prediction": "HR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 2.11,
+                "prediction": 2.11,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.01,
+                "prediction": 1.01,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 4.39,
+                "prediction": 4.39,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.7008362202083364,
+            "annotation": {
+              "Study Parameters ID": 1452195946,
+              "Variant Annotation ID": 1452195940,
+              "Study Type": null,
+              "Study Cases": 916.0,
+              "Study Controls": null,
+              "Characteristics": "Statin switch",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.011",
+              "Ratio Stat Type": "HR",
+              "Ratio Stat": 5.44,
+              "Confidence Interval Start": 1.49,
+              "Confidence Interval Stop": 19.9,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452195946,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452195940,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 916.0,
+                "prediction": 2042,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Statin switch",
+                "prediction": "Statin switchers with CK measurement for simvastatin",
+                "score": 0.9142157435417175,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.011",
+                "prediction": "= 0.011",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "HR",
+                "prediction": "HR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 5.44,
+                "prediction": 5.44,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.49,
+                "prediction": 1.49,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 19.9,
+                "prediction": 19.9,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6990381864940419,
+            "annotation": {
+              "Study Parameters ID": 1452195945,
+              "Variant Annotation ID": 1452195940,
+              "Study Type": null,
+              "Study Cases": 916.0,
+              "Study Controls": null,
+              "Characteristics": "Statin switch",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.025",
+              "Ratio Stat Type": "HR",
+              "Ratio Stat": 1.88,
+              "Confidence Interval Start": 1.08,
+              "Confidence Interval Stop": 3.25,
+              "Biogeographical Groups": "European"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452195945,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452195940,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 916.0,
+                "prediction": 2042,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "Statin switch",
+                "prediction": "Patients initiating statin therapy; including simvastatin users, heterozygous or homozygous SLCO1B1 c.521T>C carriers, and pravastatin users",
+                "score": 0.8836491703987122,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "Study Cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.025",
+                "prediction": "= 0.025",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "HR",
+                "prediction": "HR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 1.88,
+                "prediction": 1.88,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.08,
+                "prediction": 1.08,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 3.25,
+                "prediction": 3.25,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "European",
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452196130,
+              "Variant Annotation ID": 1452196120,
+              "Study Type": null,
+              "Study Cases": 70.0,
+              "Study Controls": null,
+              "Characteristics": "Statin switch, fluvastatin",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.394",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1452196120"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452196046,
+              "Variant Annotation ID": 1452196040,
+              "Study Type": null,
+              "Study Cases": 184.0,
+              "Study Controls": null,
+              "Characteristics": "Statin switch, rosuvastatin",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.301",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1452196040"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452196045,
+              "Variant Annotation ID": 1452196040,
+              "Study Type": null,
+              "Study Cases": 70.0,
+              "Study Controls": null,
+              "Characteristics": "Statin switch, fluvastatin",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.36",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1452196040"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452196060,
+              "Variant Annotation ID": 1452196040,
+              "Study Type": null,
+              "Study Cases": 780.0,
+              "Study Controls": null,
+              "Characteristics": "Statin switch, atorvastatin",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.759",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1452196040"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452196085,
+              "Variant Annotation ID": 1452196080,
+              "Study Type": null,
+              "Study Cases": 70.0,
+              "Study Controls": null,
+              "Characteristics": "Statin switch, fluvastatin",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.113",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1452196080"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452196100,
+              "Variant Annotation ID": 1452196080,
+              "Study Type": null,
+              "Study Cases": 184.0,
+              "Study Controls": null,
+              "Characteristics": "Statin switch, rosuvastatin",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.660",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1452196080"
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Study Parameters ID": 1452196101,
+              "Variant Annotation ID": 1452196080,
+              "Study Type": null,
+              "Study Cases": 780.0,
+              "Study Controls": null,
+              "Characteristics": "Statin switch, atorvastatin",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.877",
+              "Ratio Stat Type": "Unknown",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "European",
+              "Variant Annotation ID_norm": "1452196080"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    }
+  }
+}

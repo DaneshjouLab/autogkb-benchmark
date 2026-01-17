@@ -1,0 +1,617 @@
+{
+  "pmcid": "PMC12038368",
+  "pmid": "40297930",
+  "title": "Impacts of Pharmacokinetic Gene Polymorphisms on Steady\u2010State Plasma Concentrations of Simvastatin in Thai Population",
+  "overall_score": 0.24775856736459229,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.30896531751281336,
+      "total_samples": 2,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 1,
+        "unmatched_count": 1,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.6179306350256267,
+            "annotation": {
+              "Variant/Haplotypes": "rs4149056",
+              "Gene": "SLCO1B1",
+              "PMID": 40297930,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Alleles": "CC + CT",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Cardiovascular Disease, Other:Dyslipidaemia",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": null,
+              "Drug(s)": "simvastatin acid"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "rs4149056",
+                "prediction": "rs4149056",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "SLCO1B1",
+                "prediction": "SLCO1B1",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PMID": {
+                "ground_truth": 40297930,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Metabolism/PK",
+                "prediction": "metabolism/PK",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Significance": {
+                "ground_truth": "yes",
+                "prediction": "yes",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "CC + CT",
+                "prediction": "TC/CC",
+                "score": 0.9394291639328003,
+                "match_status": "partial_match"
+              },
+              "Specialty Population": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "decreased function",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "isPlural": {
+                "ground_truth": "Is",
+                "prediction": "Is",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "increased",
+                "prediction": "increased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "PD/PK terms": {
+                "ground_truth": "concentrations of",
+                "prediction": "concentrations of",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Multiple drugs And/or": {
+                "ground_truth": null,
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Population types": {
+                "ground_truth": "in people with",
+                "prediction": "in patients with dyslipidemia or coronary artery disease",
+                "score": 0.8867008686065674,
+                "match_status": "partial_match"
+              },
+              "Population Phenotypes or diseases": {
+                "ground_truth": "Other:Cardiovascular Disease, Other:Dyslipidaemia",
+                "prediction": "Disease: coronary artery disease",
+                "score": 0.9145520329475403,
+                "match_status": "partial_match"
+              },
+              "Multiple phenotypes or diseases And/or": {
+                "ground_truth": "or",
+                "prediction": "",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "TT",
+                "prediction": "TT",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Metabolizer types": {
+                "ground_truth": null,
+                "prediction": "normal metabolizer",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Drug(s)": {
+                "ground_truth": "simvastatin acid",
+                "prediction": "simvastatin",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1454052282,
+              "Variant/Haplotypes": "rs2306283",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin acid",
+              "PMID": 40297930,
+              "Phenotype Category": "Metabolism/PK",
+              "Significance": "yes",
+              "Notes": "Additionally, SLCO1B1 rs2306283 was associated with significantly higher SVA levels in patients carrying the G allele (AG+GG genotype) at the same dose (3.63 vs. 1.59 ng/mL, p = 0.04). ",
+              "Sentence": "Genotypes AG + GG is associated with increased concentrations of simvastatin acid in people with Cardiovascular Disease or Dyslipidaemia as compared to genotype AA.",
+              "Alleles": "AG + GG",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:Cardiovascular Disease, Other:Dyslipidaemia",
+              "Multiple phenotypes or diseases And/or": "or",
+              "Comparison Allele(s) or Genotype(s)": "AA",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "40297930",
+              "Variant Annotation ID_norm": "1454052282"
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 3,
+        "items": [
+          {
+            "variant": "c.521T>C",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin",
+            "annotation": {
+              "Variant/Haplotypes": "c.521T>C",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "The study confirms the association of SLCO1B1 rs4149056 with higher simvastatin plasma levels in Thai patients.",
+              "Standardized Sentence": "Genotype TC is associated with increased simvastatin acid levels in patients with dyslipidemia or coronary artery disease.",
+              "Alleles": "TC/CC",
+              "Metabolizer types": "decreased function",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in patients with dyslipidemia or coronary artery disease",
+              "Population Phenotypes or diseases": "Disease: coronary artery disease",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "These findings suggest that SLCO1B1 c.521T>C, alone or with c.388A>G (SLCO1B1*1b/*15), reduces OATP1B1 function, leading to elevated simvastatin acid levels and increased myotoxicity risk.",
+                "This study confirms the association of SLCO1B1 rs4149056 (c.521T>C) with higher simvastatin plasma levels in Thai patients.",
+                "Patients with the SLCO1B1*1b/*15 genotype were associated with higher simvastatin acid levels than SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p < 0.001)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "or",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin",
+            "annotation": {
+              "Variant/Haplotypes": "or",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "The study confirms the association of SLCO1B1 rs4149056 with higher simvastatin plasma levels in Thai patients.",
+              "Standardized Sentence": "Genotype TC is associated with increased simvastatin acid levels in patients with dyslipidemia or coronary artery disease.",
+              "Alleles": "TC/CC",
+              "Metabolizer types": "decreased function",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in patients with dyslipidemia or coronary artery disease",
+              "Population Phenotypes or diseases": "Disease: coronary artery disease",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "These findings suggest that SLCO1B1 c.521T>C, alone or with c.388A>G (SLCO1B1*1b/*15), reduces OATP1B1 function, leading to elevated simvastatin acid levels and increased myotoxicity risk.",
+                "This study confirms the association of SLCO1B1 rs4149056 (c.521T>C) with higher simvastatin plasma levels in Thai patients.",
+                "Patients with the SLCO1B1*1b/*15 genotype were associated with higher simvastatin acid levels than SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p < 0.001)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "*1b/*15",
+            "gene": "SLCO1B1",
+            "drug": "simvastatin",
+            "annotation": {
+              "Variant/Haplotypes": "*1b/*15",
+              "Gene": "SLCO1B1",
+              "Drug(s)": "simvastatin",
+              "Phenotype Category": "metabolism/PK",
+              "Significance": "yes",
+              "Notes": "The study confirms the association of SLCO1B1 rs4149056 with higher simvastatin plasma levels in Thai patients.",
+              "Standardized Sentence": "Genotype TC is associated with increased simvastatin acid levels in patients with dyslipidemia or coronary artery disease.",
+              "Alleles": "TC/CC",
+              "Metabolizer types": "decreased function",
+              "Comparison Allele(s) or Genotype(s)": "TT",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in patients with dyslipidemia or coronary artery disease",
+              "Population Phenotypes or diseases": "Disease: coronary artery disease",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "concentrations of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "These findings suggest that SLCO1B1 c.521T>C, alone or with c.388A>G (SLCO1B1*1b/*15), reduces OATP1B1 function, leading to elevated simvastatin acid levels and increased myotoxicity risk.",
+                "This study confirms the association of SLCO1B1 rs4149056 (c.521T>C) with higher simvastatin plasma levels in Thai patients.",
+                "Patients with the SLCO1B1*1b/*15 genotype were associated with higher simvastatin acid levels than SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p < 0.001)."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.7753448605537414,
+      "total_samples": 2,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 2,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.7005138256970573,
+            "annotation": {
+              "Study Parameters ID": 1454052280,
+              "Variant Annotation ID": 1454052260,
+              "Study Type": null,
+              "Study Cases": 89.0,
+              "Study Controls": null,
+              "Characteristics": "12h simvastatin acid concentrations",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.03",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1454052280,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1454052260,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 89.0,
+                "prediction": 89,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "12h simvastatin acid concentrations",
+                "prediction": "Thai patients with dyslipidemia or coronary artery disease on simvastatin treatment for at least 2 weeks",
+                "score": 0.9087350368499756,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "study cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.03",
+                "prediction": "= 0.03",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "HR",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6677418105742511,
+            "annotation": {
+              "Study Parameters ID": 1454052320,
+              "Variant Annotation ID": 1454052282,
+              "Study Type": null,
+              "Study Cases": 89.0,
+              "Study Controls": null,
+              "Characteristics": "12h simvastatin acid concentrations",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.04",
+              "Ratio Stat Type": null,
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "East Asian"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1454052320,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1454052282,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": null,
+                "prediction": "cohort",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Cases": {
+                "ground_truth": 89.0,
+                "prediction": 89,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Characteristics": {
+                "ground_truth": "12h simvastatin acid concentrations",
+                "prediction": "Patients with SLCO1B1 c.521TC+CC genotype",
+                "score": 0.8516107797622681,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "study cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.04",
+                "prediction": "= 0.07",
+                "score": 0.5,
+                "match_status": "partial_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": null,
+                "prediction": "Unknown",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "East Asian",
+                "prediction": "Asian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 1,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "cohort",
+              "Study Cases": 89,
+              "Study Controls": null,
+              "Characteristics": "Patients with SLCO1B1*1b/*15 genotype",
+              "Characteristics Type": "study cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.001",
+              "Ratio Stat Type": "HR",
+              "Ratio Stat": null,
+              "Confidence Interval Start": null,
+              "Confidence Interval Stop": null,
+              "Biogeographical Groups": "Asian",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

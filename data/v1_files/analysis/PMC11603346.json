@@ -1,0 +1,782 @@
+{
+  "pmcid": "PMC11603346",
+  "pmid": "39604537",
+  "title": "Association between the CYP2B6 polymorphisms and nonnucleoside reverse transcriptase inhibitors drug-induced liver injury: a systematic review and meta-analysis",
+  "overall_score": 0.2681928464273612,
+  "num_benchmarks": 4,
+  "benchmarks": {
+    "drug_annotations": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 4,
+        "items": [
+          {
+            "variant": "CYP2B6*6",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6*6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "CYP2B6*6 carriers were significantly more susceptible to EFV-induced liver injury with an odds ratio (OR) of 1.83 (1.15-2.90).",
+              "Sentence": "CYP2B6*6 is associated with increased risk of liver injury in efavirenz context in PLHIV.",
+              "Alleles": "CYP2B6*6",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6*1/*1",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other: HIV",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "CYP2B6 *6* carriers were significantly more susceptible to EFV-induced liver injury, with an odds ratio (OR) of 1.83 (1.15-2.90),...",
+                "The results illustrated that the ARVDILI was primarily involved in xenobiotic metabolism. Interestingly, the STRING database indicates that CYP2D6, CYP1A1, and CYP2B6 seem to be the center of the interaction among those proteins...",
+                "Our findings demonstrated that a genotype known as CYP2B6 *6*, which is related with a decreased ability to metabolize drugs, was linked to an increased risk of ARVDILI in PLHIV patients who were using EFV."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "(rs3745274",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "(rs3745274",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "CYP2B6*6 carriers were significantly more susceptible to EFV-induced liver injury with an odds ratio (OR) of 1.83 (1.15-2.90).",
+              "Sentence": "CYP2B6*6 is associated with increased risk of liver injury in efavirenz context in PLHIV.",
+              "Alleles": "CYP2B6*6",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6*1/*1",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other: HIV",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "CYP2B6 *6* carriers were significantly more susceptible to EFV-induced liver injury, with an odds ratio (OR) of 1.83 (1.15-2.90),...",
+                "The results illustrated that the ARVDILI was primarily involved in xenobiotic metabolism. Interestingly, the STRING database indicates that CYP2D6, CYP1A1, and CYP2B6 seem to be the center of the interaction among those proteins...",
+                "Our findings demonstrated that a genotype known as CYP2B6 *6*, which is related with a decreased ability to metabolize drugs, was linked to an increased risk of ARVDILI in PLHIV patients who were using EFV."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "rs2279343)",
+            "gene": "CYP2B6",
+            "drug": "efavirenz",
+            "annotation": {
+              "Variant/Haplotypes": "rs2279343)",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "CYP2B6*6 carriers were significantly more susceptible to EFV-induced liver injury with an odds ratio (OR) of 1.83 (1.15-2.90).",
+              "Sentence": "CYP2B6*6 is associated with increased risk of liver injury in efavirenz context in PLHIV.",
+              "Alleles": "CYP2B6*6",
+              "Metabolizer types": "poor metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6*1/*1",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other: HIV",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "CYP2B6 *6* carriers were significantly more susceptible to EFV-induced liver injury, with an odds ratio (OR) of 1.83 (1.15-2.90),...",
+                "The results illustrated that the ARVDILI was primarily involved in xenobiotic metabolism. Interestingly, the STRING database indicates that CYP2D6, CYP1A1, and CYP2B6 seem to be the center of the interaction among those proteins...",
+                "Our findings demonstrated that a genotype known as CYP2B6 *6*, which is related with a decreased ability to metabolize drugs, was linked to an increased risk of ARVDILI in PLHIV patients who were using EFV."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "CYP2B6*1/*6",
+            "gene": "CYP2B6",
+            "drug": "nevirapine",
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6*1/*6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "CYP2B6*1/*6 and *6/*6 genotypes showed a reduced susceptibility to nevirapine-induced liver injury with an OR of 0.44 (0.22-0.91).",
+              "Sentence": "CYP2B6*1/*6 is associated with decreased risk of liver injury in nevirapine context in PLHIV.",
+              "Alleles": "CYP2B6*1/*6",
+              "Metabolizer types": "intermediate metabolizer",
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6*1/*1",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "Specialty Population": "",
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other: HIV",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "PD/PK terms": "toxicity of",
+              "Multiple drugs And/or": "",
+              "Multiple phenotypes or diseases And/or": "",
+              "Citations": [
+                "Meta-analysis showed that *CYP2B6* *1/*6* allele and combination of *1/*6 and *6/*6 alleles were significantly associated with a reduction in susceptibility to NVP-induced liver injury, compared with normal metabolizer, with pooled OR and 95% CI of 0.44 (0.22-0.91) and 0.42 (0.21-0.84), respectively, as well as *P* value less than 0.05.",
+                "In contrast to the above findings, other previous studies unveiled no correlation between *CYP2B6*6* polymorphisms and susceptibility to ARVDILI due to efavirenz as well as nevirapine.",
+                "CYP2B6 *6* haplotype is characterized by the existence of two variants, G516T (rs3745274) and A785G (rs2279343), with or without promoter variants."
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "phenotype_annotations": {
+      "score": 0.42300520092248917,
+      "total_samples": 4,
+      "ground_truth_annotations": {
+        "count": 4,
+        "matched_count": 2,
+        "unmatched_count": 2,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.8817916095256806,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6*1",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*1/*6 + *6/*6",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Phenotype": "Side Effect:Drug-induced liver injury",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2B6*1",
+                "prediction": "CYP2B6*1/*6",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "nevirapine",
+                "prediction": "Nevirapine (NVP)",
+                "score": 0.9704786539077759,
+                "match_status": "match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*1/*6 + *6/*6",
+                "prediction": "*1/*6",
+                "score": 0.9890725016593933,
+                "match_status": "match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "decreased",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Drug-induced liver injury",
+                "prediction": "liver injury",
+                "score": 0.94615638256073,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "CYP2B6*1/*1",
+                "score": 0.9122085571289062,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.8695618450641632,
+            "annotation": {
+              "Variant/Haplotypes": "CYP2B6*6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "nevirapine",
+              "Phenotype Category": "Toxicity",
+              "Alleles": "*1/*6 + *6/*6",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "decreased",
+              "Phenotype": "Side Effect:Drug-induced liver injury",
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Comparison Allele(s) or Genotype(s)": "*1/*1"
+            },
+            "field_comparison": {
+              "Variant/Haplotypes": {
+                "ground_truth": "CYP2B6*6",
+                "prediction": "CYP2B6*6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Gene": {
+                "ground_truth": "CYP2B6",
+                "prediction": "CYP2B6",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Drug(s)": {
+                "ground_truth": "nevirapine",
+                "prediction": "Efavirenz (EFV)",
+                "score": 0.8891407251358032,
+                "match_status": "partial_match"
+              },
+              "Phenotype Category": {
+                "ground_truth": "Toxicity",
+                "prediction": "toxicity",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Alleles": {
+                "ground_truth": "*1/*6 + *6/*6",
+                "prediction": "*6",
+                "score": 0.9481127858161926,
+                "match_status": "partial_match"
+              },
+              "Is/Is Not associated": {
+                "ground_truth": "Associated with",
+                "prediction": "Associated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Direction of effect": {
+                "ground_truth": "decreased",
+                "prediction": "increased",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Phenotype": {
+                "ground_truth": "Side Effect:Drug-induced liver injury",
+                "prediction": "liver injury",
+                "score": 0.94615638256073,
+                "match_status": "partial_match"
+              },
+              "When treated with/exposed to/when assayed with": {
+                "ground_truth": "when treated with",
+                "prediction": "when treated with",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Comparison Allele(s) or Genotype(s)": {
+                "ground_truth": "*1/*1",
+                "prediction": "CYP2B6*1/*1",
+                "score": 0.9122085571289062,
+                "match_status": "partial_match"
+              }
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452721001,
+              "Variant/Haplotypes": "CYP2B6*1",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "PMID": 39604537,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "Compared with normal metabolizers, CYP2B6 *6 carriers were significantly more susceptible to EFV-induced liver injury, with an odds ratio (OR) and 95% confidence interval (CI) of 1.83 (1.15-2.90), 2.48 (1.28-4.79), and 1.94 (1.24-3.01) for heterozygous, homozygous, and combination of both alleles, respectively, as well as P value less than 0.05 (Table 2).",
+              "Sentence": "CYP2B6 *1/*6 + *6/*6 is associated with increased likelihood of Drug-induced liver injury when treated with efavirenz in people with HIV infectious disease as compared to CYP2B6 *1/*1.",
+              "Alleles": "*1/*6 + *6/*6",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Side Effect:Drug-induced liver injury",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "39604537",
+              "Variant Annotation ID_norm": "1452721001",
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "matched": false,
+            "annotation": {
+              "Variant Annotation ID": 1452721001,
+              "Variant/Haplotypes": "CYP2B6*6",
+              "Gene": "CYP2B6",
+              "Drug(s)": "efavirenz",
+              "PMID": 39604537,
+              "Phenotype Category": "Toxicity",
+              "Significance": "yes",
+              "Notes": "Compared with normal metabolizers, CYP2B6 *6 carriers were significantly more susceptible to EFV-induced liver injury, with an odds ratio (OR) and 95% confidence interval (CI) of 1.83 (1.15-2.90), 2.48 (1.28-4.79), and 1.94 (1.24-3.01) for heterozygous, homozygous, and combination of both alleles, respectively, as well as P value less than 0.05 (Table 2).",
+              "Sentence": "CYP2B6 *1/*6 + *6/*6 is associated with increased likelihood of Drug-induced liver injury when treated with efavirenz in people with HIV infectious disease as compared to CYP2B6 *1/*1.",
+              "Alleles": "*1/*6 + *6/*6",
+              "Specialty Population": null,
+              "Metabolizer types": null,
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "Side Effect:Drug-induced liver injury",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "Other:HIV infectious disease",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "*1/*1",
+              "Comparison Metabolizer types": null,
+              "PMID_norm": "39604537",
+              "Variant Annotation ID_norm": "1452721001",
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 2,
+        "items": [
+          {
+            "variant": "(rs3745274",
+            "gene": "CYP2B6",
+            "drug": "Efavirenz (EFV)",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "(rs3745274",
+              "Gene": "CYP2B6",
+              "Drug(s)": "Efavirenz (EFV)",
+              "PMID": 39604537,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "CYP2B6*6 carriers demonstrated increased susceptibility to EFV-induced liver injury in PLHIV, with OR of 1.83.",
+              "Sentence": "CYP2B6*6 is associated with increased likelihood of efavirenz-induced liver injury when treated with efavirenz in people living with HIV.",
+              "Alleles": "*6",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "liver injury",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "HIV",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6*1/*1",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "PMID_norm": "39604537",
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "According to several findings from previous studies as a putative mediator for liver disease in PLHIV, CYP2B6 is the most promising of numerous intriguing genes associated with ARVDILI. It is responsible for several drugs metabolism and synthesizing cholesterol, steroids, and other lipids. Interestingly, CYP2B6 enzymes are also the primary metabolizers of nevirapine and efavirenz.",
+                "Our findings demonstrated that a genotype known as CYP2B6*6, which is related with a decreased ability to metabolize drugs, was linked to an increased risk of ARVDILI in PLHIV patients who were using EFV.",
+                "The pooled effects of CYP2B6 polymorphisms on EFV-induced liver injury occurrences in PLHIV are summarized... Compared with normal metabolizers, CYP2B6 *6 carriers were significantly more susceptible to EFV-induced liver injury, with an odds ratio (OR) and 95% confidence interval (CI) of 1.83 (1.15-2.90), 2.48 (1.28-4.79), and 1.94 (1.24-3.01) for heterozygous, homozygous, and combination of both alleles, respectively, as well as P value less than 0.05."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          },
+          {
+            "variant": "rs2279343)",
+            "gene": "CYP2B6",
+            "drug": "Efavirenz (EFV)",
+            "annotation": {
+              "Variant Annotation ID": 1,
+              "Variant/Haplotypes": "rs2279343)",
+              "Gene": "CYP2B6",
+              "Drug(s)": "Efavirenz (EFV)",
+              "PMID": 39604537,
+              "Phenotype Category": "toxicity",
+              "Significance": "yes",
+              "Notes": "CYP2B6*6 carriers demonstrated increased susceptibility to EFV-induced liver injury in PLHIV, with OR of 1.83.",
+              "Sentence": "CYP2B6*6 is associated with increased likelihood of efavirenz-induced liver injury when treated with efavirenz in people living with HIV.",
+              "Alleles": "*6",
+              "Specialty Population": null,
+              "Metabolizer types": "poor metabolizer",
+              "isPlural": "Is",
+              "Is/Is Not associated": "Associated with",
+              "Direction of effect": "increased",
+              "Side effect/efficacy/other": "likelihood of",
+              "Phenotype": "liver injury",
+              "Multiple phenotypes And/or": null,
+              "When treated with/exposed to/when assayed with": "when treated with",
+              "Multiple drugs And/or": null,
+              "Population types": "in people with",
+              "Population Phenotypes or diseases": "HIV",
+              "Multiple phenotypes or diseases And/or": null,
+              "Comparison Allele(s) or Genotype(s)": "CYP2B6*1/*1",
+              "Comparison Metabolizer types": "normal metabolizer",
+              "PMID_norm": "39604537",
+              "Variant Annotation ID_norm": "1",
+              "Citations": [
+                "According to several findings from previous studies as a putative mediator for liver disease in PLHIV, CYP2B6 is the most promising of numerous intriguing genes associated with ARVDILI. It is responsible for several drugs metabolism and synthesizing cholesterol, steroids, and other lipids. Interestingly, CYP2B6 enzymes are also the primary metabolizers of nevirapine and efavirenz.",
+                "Our findings demonstrated that a genotype known as CYP2B6*6, which is related with a decreased ability to metabolize drugs, was linked to an increased risk of ARVDILI in PLHIV patients who were using EFV.",
+                "The pooled effects of CYP2B6 polymorphisms on EFV-induced liver injury occurrences in PLHIV are summarized... Compared with normal metabolizers, CYP2B6 *6 carriers were significantly more susceptible to EFV-induced liver injury, with an odds ratio (OR) and 95% confidence interval (CI) of 1.83 (1.15-2.90), 2.48 (1.28-4.79), and 1.94 (1.24-3.01) for heterozygous, homozygous, and combination of both alleles, respectively, as well as P value less than 0.05."
+              ],
+              "_expanded_from_multi_variant": true
+            }
+          }
+        ]
+      }
+    },
+    "functional_analysis": {
+      "score": 0.0,
+      "total_samples": 0,
+      "ground_truth_annotations": {
+        "count": 0,
+        "matched_count": 0,
+        "unmatched_count": 0,
+        "items": []
+      },
+      "extra_predictions": {
+        "count": 0,
+        "items": []
+      }
+    },
+    "study_parameters": {
+      "score": 0.7064564307530721,
+      "total_samples": 2,
+      "ground_truth_annotations": {
+        "count": 2,
+        "matched_count": 2,
+        "unmatched_count": 0,
+        "items": [
+          {
+            "matched": true,
+            "overall_match_score": 0.6374923201168284,
+            "annotation": {
+              "Study Parameters ID": 1452720988,
+              "Variant Annotation ID": 1452720980,
+              "Study Type": "meta-analysis",
+              "Study Cases": 504.0,
+              "Study Controls": null,
+              "Characteristics": "2 studies (Carr, Giacomelli): DILI",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.01",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 0.42,
+              "Confidence Interval Start": 0.21,
+              "Confidence Interval Stop": 0.84,
+              "Biogeographical Groups": "Multiple groups, \"The meta-analysis of the link between CYP2B6 genotypes and EFV-induced liver injury was only derived from the African population, as well as NVP-induced liver injury were obtained from only African and Caucasian populations. "
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452720988,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452720980,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "meta-analysis",
+                "prediction": "meta-analysis",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 504.0,
+                "prediction": 38,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": 782,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "2 studies (Carr, Giacomelli): DILI",
+                "prediction": "CYP2B6 polymorphisms associated with nevirapine-induced liver injury",
+                "score": 0.837369441986084,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "study cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.01",
+                "prediction": "< 0.05",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 0.42,
+                "prediction": 0.42,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 0.21,
+                "prediction": 0.21,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 0.84,
+                "prediction": 0.84,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Multiple groups, \"The meta-analysis of the link between CYP2B6 genotypes and EFV-induced liver injury was only derived from the African population, as well as NVP-induced liver injury were obtained from only African and Caucasian populations. ",
+                "prediction": "African/Caucasian",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          },
+          {
+            "matched": true,
+            "overall_match_score": 0.6091954988591811,
+            "annotation": {
+              "Study Parameters ID": 1452721009,
+              "Variant Annotation ID": 1452721001,
+              "Study Type": "meta-analysis",
+              "Study Cases": 795.0,
+              "Study Controls": null,
+              "Characteristics": "3 studies (Yimer 2011, Mugusi, Yimer 2012): DILI",
+              "Characteristics Type": "Study Cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "= 0.003",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 1.94,
+              "Confidence Interval Start": 1.24,
+              "Confidence Interval Stop": 3.01,
+              "Biogeographical Groups": "Sub-Saharan African"
+            },
+            "field_comparison": {
+              "Study Parameters ID": {
+                "ground_truth": 1452721009,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Variant Annotation ID": {
+                "ground_truth": 1452721001,
+                "prediction": null,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Type": {
+                "ground_truth": "meta-analysis",
+                "prediction": "meta-analysis",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Study Cases": {
+                "ground_truth": 795.0,
+                "prediction": 106,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Study Controls": {
+                "ground_truth": null,
+                "prediction": 795,
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Characteristics": {
+                "ground_truth": "3 studies (Yimer 2011, Mugusi, Yimer 2012): DILI",
+                "prediction": "CYP2B6 polymorphisms associated with efavirenz-induced liver injury",
+                "score": 0.8563234806060791,
+                "match_status": "partial_match"
+              },
+              "Characteristics Type": {
+                "ground_truth": "Study Cohort",
+                "prediction": "study cohort",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Cases": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Allele Of Frequency In Controls": {
+                "ground_truth": null,
+                "prediction": null,
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "P Value": {
+                "ground_truth": "= 0.003",
+                "prediction": "< 0.05",
+                "score": 0.0,
+                "match_status": "no_match"
+              },
+              "Ratio Stat Type": {
+                "ground_truth": "OR",
+                "prediction": "OR",
+                "score": 1.0,
+                "match_status": "match"
+              },
+              "Ratio Stat": {
+                "ground_truth": 1.94,
+                "prediction": 1.83,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Start": {
+                "ground_truth": 1.24,
+                "prediction": 1.15,
+                "score": 0.8,
+                "match_status": "partial_match"
+              },
+              "Confidence Interval Stop": {
+                "ground_truth": 3.01,
+                "prediction": 2.9,
+                "score": 0.9,
+                "match_status": "partial_match"
+              },
+              "Biogeographical Groups": {
+                "ground_truth": "Sub-Saharan African",
+                "prediction": "African",
+                "score": 0.0,
+                "match_status": "no_match"
+              }
+            }
+          }
+        ]
+      },
+      "extra_predictions": {
+        "count": 1,
+        "items": [
+          {
+            "variant": "N/A",
+            "gene": "N/A",
+            "drug": "N/A",
+            "annotation": {
+              "Study Parameters ID": null,
+              "Variant Annotation ID": null,
+              "Study Type": "meta-analysis",
+              "Study Cases": 41,
+              "Study Controls": 160,
+              "Characteristics": "CYP2B6 polymorphisms associated with nevirapine-induced liver injury",
+              "Characteristics Type": "study cohort",
+              "Frequency In Cases": null,
+              "Allele Of Frequency In Cases": null,
+              "Frequency In Controls": null,
+              "Allele Of Frequency In Controls": null,
+              "P Value": "< 0.05",
+              "Ratio Stat Type": "OR",
+              "Ratio Stat": 0.44,
+              "Confidence Interval Start": 0.22,
+              "Confidence Interval Stop": 0.91,
+              "Biogeographical Groups": "African",
+              "Variant Annotation ID_norm": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}
