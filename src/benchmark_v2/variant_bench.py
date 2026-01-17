@@ -145,7 +145,7 @@ def score_annotation(proposed_annotation_path: str) -> VariantBenchResult:
     Raises:
         KeyError: If the pmcid from the annotation is not found in the benchmark data
     """
-    from benchmarkv2.field_extractor import fields_from_file
+    from benchmark_v2.field_extractor import fields_from_file
 
     # Extract pmcid and variants from the proposed annotation
     extracted = fields_from_file(proposed_annotation_path, "variant")
