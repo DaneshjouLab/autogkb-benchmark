@@ -196,7 +196,7 @@ def score_all_annotations(
             / "data"
             / "benchmarks"
             / "variant_bench_results"
-            / f"variants_{timestamp}.json"
+            / f"annotation_variants_{timestamp}.json"
         )
     else:
         output_path = Path(output_path)
@@ -246,6 +246,106 @@ def score_all_annotations(
     print(f"Scored {len(per_annotation_scores)} annotations")
 
     return results
+
+def score_generated_variants(
+    generated_variants_path: str | Path,
+    run_name: str | None = None,
+) -> dict:
+    """Score generated variants from a JSON file against the benchmark data.
+
+    Args:
+        generated_variants_path: Path to the JSON file containing generated variants.
+            Expected format: {pmcid: {variants: [...]}, ...}
+            e.g., "data/benchmarks/generated_variants/example.json"
+        run_name: Name for this run. Defaults to the generated_variants_path filename.
+
+    Returns:
+        dict with the following structure:
+        {
+            "timestamp": "",
+            "run_name": "",
+            "source_file": "",
+            "total_match_rate": 0.0,
+            "per_pmcid_scores": [
+                {
+                    "pmcid": "PMC5508045",
+                    "title": "",
+                    "match_rate": 0.0,
+                    "matches": [],
+                    "misses": [],
+                    "extras": []
+                }
+            ]
+        }
+    """
+    from datetime import datetime
+
+    generated_variants_path = Path(generated_variants_path)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    # Load generated variants from the JSON file
+    with open(generated_variants_path) as f:
+        generated_data = json.load(f)
+
+    # Use run_name from file if available, otherwise use filename stem
+    if run_name is None:
+        run_name = generated_data.get("run_name", generated_variants_path.stem)
+
+    output_path = (
+        Path(__file__).parent.parent.parent
+        / "data"
+        / "benchmarks"
+        / "variant_bench_results"
+        / f"{run_name}_variants_{timestamp}.json"
+    )
+
+    # Score each PMCID entry (skip non-PMCID keys like run_name)
+    per_pmcid_scores = []
+    for pmcid, entry in generated_data.items():
+        if not pmcid.startswith("PMC"):
+            continue
+        proposed_variants = entry.get("variants", [])
+        try:
+            result = score_variants_by_pmcid(proposed_variants, pmcid)
+            per_pmcid_scores.append({
+                "pmcid": result.pmcid,
+                "title": result.title,
+                "match_rate": result.match_rate,
+                "matches": result.matches,
+                "misses": result.misses,
+                "extras": result.extras,
+            })
+        except KeyError as e:
+            print(f"Warning: Skipping {pmcid} - {e}")
+            continue
+
+    # Calculate total match rate as average across all PMCIDs
+    if per_pmcid_scores:
+        total_match_rate = sum(s["match_rate"] for s in per_pmcid_scores) / len(
+            per_pmcid_scores
+        )
+    else:
+        total_match_rate = 0.0
+
+    results = {
+        "timestamp": datetime.now().isoformat(),
+        "run_name": run_name,
+        "source_file": str(generated_variants_path),
+        "total_match_rate": total_match_rate,
+        "per_pmcid_scores": per_pmcid_scores,
+    }
+
+    # Ensure output directory exists and save results
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, "w") as f:
+        json.dump(results, f, indent=2)
+
+    print(f"Results saved to {output_path}")
+    print(f"Total match rate: {total_match_rate:.2%}")
+    print(f"Scored {len(per_pmcid_scores)} PMCIDs")
+
+    return results
+
 
 def main():
     """Test the variant scoring functions using the benchmark data."""
@@ -298,16 +398,26 @@ def main():
     print(f"Extras: {result.extras}")
     print(f"Misses: {result.misses}")
 
-    # Test case 5: Score a real annotation file
-    print("\n--- Test 5: Score annotation file ---")
-    annotation_path = "data/proposed_annotations/PMC5508045.json"
-    result = score_annotation(annotation_path)
-    print(f"Annotation file: {annotation_path}")
-    print(f"PMCID: {result.pmcid}")
-    print(f"Match rate: {result.match_rate:.2%}")
-    print(f"Matches: {result.matches}")
-    print(f"Extras: {result.extras}")
-    print(f"Misses: {result.misses}")
+    # Test case 5: Score generated variants from JSON file
+    print("\n--- Test 5: Score generated variants from JSON file ---")
+    generated_variants_path = (
+        Path(__file__).parent.parent.parent
+        / "data"
+        / "benchmarks"
+        / "generated_variants"
+        / "example.json"
+    )
+    print(f"Generated variants file: {generated_variants_path}")
+    results = score_generated_variants(generated_variants_path)
+    print(f"\nSummary:")
+    print(f"Total match rate: {results['total_match_rate']:.2%}")
+    print(f"Number of PMCIDs scored: {len(results['per_pmcid_scores'])}")
+    for score in results["per_pmcid_scores"]:
+        print(f"\n  {score['pmcid']}: {score['title'][:50]}...")
+        print(f"    Match rate: {score['match_rate']:.2%}")
+        print(f"    Matches: {score['matches']}")
+        print(f"    Extras: {score['extras']}")
+        print(f"    Misses: {score['misses']}")
 
 
 if __name__ == "__main__":
