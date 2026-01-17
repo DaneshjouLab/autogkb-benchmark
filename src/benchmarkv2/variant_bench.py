@@ -104,6 +104,30 @@ def score_variants_by_pmcid(
     return score_variants(proposed_variants, true_variants, pmcid)
 
 
+def score_annotation(proposed_annotation_path: str) -> VariantBenchResult:
+    """Score a proposed annotation file against the benchmark data.
+
+    Args:
+        proposed_annotation_path: Path to the proposed annotation JSON file
+            (e.g., data/proposed_annotations/PMC384715.json)
+
+    Returns:
+        VariantBenchResult with match statistics
+
+    Raises:
+        KeyError: If the pmcid from the annotation is not found in the benchmark data
+    """
+    from benchmarkv2.field_extractor import fields_from_file
+
+    # Extract pmcid and variants from the proposed annotation
+    extracted = fields_from_file(proposed_annotation_path, "variant")
+    pmcid = extracted.pmcid
+    proposed_variants = extracted.fields
+
+    # Score against the true variants from benchmark data
+    return score_variants_by_pmcid(proposed_variants, pmcid)
+
+
 def main():
     """Test the variant scoring functions using the benchmark data."""
     data = load_variant_bench_data()
@@ -150,6 +174,17 @@ def main():
     proposed = ["rs00000000", "rs11111111"]
     result = score_variants_by_pmcid(proposed, test_pmcid)
     print(f"Proposed: {proposed}")
+    print(f"Match rate: {result.match_rate:.2%}")
+    print(f"Matches: {result.matches}")
+    print(f"Mismatches: {result.mismatches}")
+    print(f"Missed: {result.missed_variants}")
+
+    # Test case 5: Score a real annotation file
+    print("\n--- Test 5: Score annotation file ---")
+    annotation_path = "data/proposed_annotations/PMC5508045.json"
+    result = score_annotation(annotation_path)
+    print(f"Annotation file: {annotation_path}")
+    print(f"PMCID: {result.pmcid}")
     print(f"Match rate: {result.match_rate:.2%}")
     print(f"Matches: {result.matches}")
     print(f"Mismatches: {result.mismatches}")
