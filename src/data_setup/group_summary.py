@@ -1,4 +1,9 @@
-# Check for benchmark annotation files where there are grouped variants
+"""
+Check for benchmark annotation files where there are grouped variants
+
+This is used for data exploration, not for scoring at the moment.
+"""
+
 import json
 import re
 import sys
