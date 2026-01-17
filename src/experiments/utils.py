@@ -22,6 +22,7 @@ def get_markdown_text(pmcid: str) -> str:
         logger.error(f"Article {pmcid} not found at {markdown_path}")
         return ""
 
+
 def _extract_section(markdown_text: str, section_patterns: list[str]) -> str:
     """
     Extract a section from markdown text based on header patterns.
@@ -37,7 +38,9 @@ def _extract_section(markdown_text: str, section_patterns: list[str]) -> str:
     # Match section headers (## or ### followed by optional numbering and the section name)
     header_pattern = rf"^(#{{2,3}})\s*(?:\d+\.?\s*)?({combined_pattern})\s*$"
 
-    matches = list(re.finditer(header_pattern, markdown_text, re.MULTILINE | re.IGNORECASE))
+    matches = list(
+        re.finditer(header_pattern, markdown_text, re.MULTILINE | re.IGNORECASE)
+    )
 
     if not matches:
         return ""

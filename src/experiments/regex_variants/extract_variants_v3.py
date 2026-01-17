@@ -14,6 +14,7 @@ import re
 from pathlib import Path
 
 import sys
+
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from experiments.utils import get_markdown_text
@@ -25,11 +26,11 @@ def normalize_hla(variant: str) -> str:
     variant = variant.upper()
 
     # Already normalized
-    if re.match(r'HLA-[A-Z]+\d*\*\d+:\d+', variant):
+    if re.match(r"HLA-[A-Z]+\d*\*\d+:\d+", variant):
         return variant
 
     # Handle formats like B*5801 -> HLA-B*58:01
-    match = re.match(r'(?:HLA-)?([A-Z]+\d*)\*(\d{2,})(\d{2})?', variant)
+    match = re.match(r"(?:HLA-)?([A-Z]+\d*)\*(\d{2,})(\d{2})?", variant)
     if match:
         gene = match.group(1)
         field1 = match.group(2)
@@ -53,13 +54,13 @@ def normalize_star_allele(gene: str, allele_num: str) -> str:
     """Normalize star allele format."""
     gene = gene.upper()
     # Remove trailing x/X for copy number variants but keep xN format
-    allele_num = re.sub(r'[xX×].*$', '', allele_num)
+    allele_num = re.sub(r"[xX×].*$", "", allele_num)
     return f"{gene}*{allele_num}"
 
 
 def extract_rsids(text: str) -> list[str]:
     """Extract rsID variants from text."""
-    pattern = r'\brs\d{4,}\b'
+    pattern = r"\brs\d{4,}\b"
     matches = re.findall(pattern, text, re.IGNORECASE)
     return [m.lower() for m in set(matches)]
 
@@ -76,31 +77,45 @@ def extract_star_alleles(text: str) -> list[str]:
 
     # Gene families that have star allele nomenclature
     pgx_genes = [
-        'CYP2D6', 'CYP2C9', 'CYP2C19', 'CYP2B6', 'CYP3A4', 'CYP3A5', 'CYP4F2',
-        'CYP2A6', 'CYP1A2',
-        'UGT1A1', 'UGT2B7', 'UGT2B15',
-        'NUDT15',
-        'DPYD',
-        'TPMT',
-        'NAT1', 'NAT2',
-        'SLCO1B1', 'SLCO1B3', 'SLCO2B1',
-        'ABCB1', 'ABCG2',
-        'VKORC1',
-        'IFNL3', 'IFNL4',
+        "CYP2D6",
+        "CYP2C9",
+        "CYP2C19",
+        "CYP2B6",
+        "CYP3A4",
+        "CYP3A5",
+        "CYP4F2",
+        "CYP2A6",
+        "CYP1A2",
+        "UGT1A1",
+        "UGT2B7",
+        "UGT2B15",
+        "NUDT15",
+        "DPYD",
+        "TPMT",
+        "NAT1",
+        "NAT2",
+        "SLCO1B1",
+        "SLCO1B3",
+        "SLCO2B1",
+        "ABCB1",
+        "ABCG2",
+        "VKORC1",
+        "IFNL3",
+        "IFNL4",
     ]
 
     # Create pattern for all genes
-    gene_pattern = '|'.join(pgx_genes)
+    gene_pattern = "|".join(pgx_genes)
 
     # Pattern 1: GENE*NUMBER format (standard)
-    pattern1 = rf'\b({gene_pattern})\*(\d+[xX×]?[nN]?)\b'
+    pattern1 = rf"\b({gene_pattern})\*(\d+[xX×]?[nN]?)\b"
     matches = re.findall(pattern1, text, re.IGNORECASE)
     for gene, allele in matches:
         normalized = normalize_star_allele(gene, allele)
         variants.append(normalized)
 
     # Pattern 2: GENE *NUMBER format (space between gene and asterisk)
-    pattern2 = rf'\b({gene_pattern})\s+\*(\d+[xX×]?[nN]?)\b'
+    pattern2 = rf"\b({gene_pattern})\s+\*(\d+[xX×]?[nN]?)\b"
     matches = re.findall(pattern2, text, re.IGNORECASE)
     for gene, allele in matches:
         normalized = normalize_star_allele(gene, allele)
@@ -108,16 +123,16 @@ def extract_star_alleles(text: str) -> list[str]:
 
     # Pattern 3: Standalone star alleles (*3, *4, etc.) - need gene context
     # Look for patterns like "*3, *4, *6" or "*3/*4" near gene names
-    standalone_pattern = r'\*(\d{1,2})\b'
+    standalone_pattern = r"\*(\d{1,2})\b"
 
     # Find all gene mentions and their positions
     gene_mentions = []
     for gene in pgx_genes:
-        for match in re.finditer(rf'\b{gene}\b', text, re.IGNORECASE):
+        for match in re.finditer(rf"\b{gene}\b", text, re.IGNORECASE):
             gene_mentions.append((match.start(), match.end(), gene.upper()))
 
     # Pattern for diplotypes like *1×N/*2, *1/*10×N (with unicode multiplication sign)
-    diplotype_pattern = r'\*(\d{1,2})[×xX]?[nN]?/\*(\d{1,2})[×xX]?[nN]?'
+    diplotype_pattern = r"\*(\d{1,2})[×xX]?[nN]?/\*(\d{1,2})[×xX]?[nN]?"
     for match in re.finditer(diplotype_pattern, text):
         allele1 = match.group(1)
         allele2 = match.group(2)
@@ -138,7 +153,7 @@ def extract_star_alleles(text: str) -> list[str]:
             variants.append(f"{nearest_gene}*{allele1}")
             variants.append(f"{nearest_gene}*{allele2}")
             # Also add xN variants if present
-            if '×' in match.group(0) or 'x' in match.group(0).lower():
+            if "×" in match.group(0) or "x" in match.group(0).lower():
                 variants.append(f"{nearest_gene}*{allele1}xN")
                 variants.append(f"{nearest_gene}*{allele2}xN")
 
@@ -164,7 +179,7 @@ def extract_star_alleles(text: str) -> list[str]:
             variants.append(normalized)
 
     # Pattern 4: Copy number variants with xN suffix
-    xn_pattern = rf'\b({gene_pattern})\*(\d+)[xX×][nN]?\b'
+    xn_pattern = rf"\b({gene_pattern})\*(\d+)[xX×][nN]?\b"
     matches = re.findall(xn_pattern, text, re.IGNORECASE)
     for gene, allele in matches:
         # Also add the base allele
@@ -190,10 +205,10 @@ def extract_hla_alleles(text: str) -> list[str]:
     variants = []
 
     # HLA genes
-    hla_genes = r'(?:A|B|C|Cw|DRB1|DRB3|DRB4|DRB5|DQA1|DQB1|DPA1|DPB1)'
+    hla_genes = r"(?:A|B|C|Cw|DRB1|DRB3|DRB4|DRB5|DQA1|DQB1|DPA1|DPB1)"
 
     # With HLA- prefix
-    pattern1 = r'\bHLA-([A-Z]+\d*)\*(\d{2,}):?(\d{2})?\b'
+    pattern1 = r"\bHLA-([A-Z]+\d*)\*(\d{2,}):?(\d{2})?\b"
     matches = re.findall(pattern1, text, re.IGNORECASE)
     for gene, f1, f2 in matches:
         if f2:
@@ -204,12 +219,12 @@ def extract_hla_alleles(text: str) -> list[str]:
             variants.append(f"HLA-{gene.upper()}*{f1}")
 
     # Without HLA- prefix
-    pattern2 = rf'\b({hla_genes})\*(\d{{2,}})(?::(\d{{2}}))?\b'
+    pattern2 = rf"\b({hla_genes})\*(\d{{2,}})(?::(\d{{2}}))?\b"
     matches = re.findall(pattern2, text, re.IGNORECASE)
     for gene, f1, f2 in matches:
         gene = gene.upper()
-        if gene == 'CW':
-            gene = 'C'
+        if gene == "CW":
+            gene = "C"
         if f2:
             variants.append(f"HLA-{gene}*{f1}:{f2}")
         elif len(f1) >= 4:
@@ -219,14 +234,14 @@ def extract_hla_alleles(text: str) -> list[str]:
 
     # Parenthetical notation: HLA-B*38:(01/02) or B*39:(01/05/06/09)
     # Pattern: (HLA-)?(gene)*field1:(allele1/allele2/...)
-    paren_pattern = rf'(?:HLA-)?({hla_genes})\*(\d{{2}}):?\(([/\d]+)\)'
+    paren_pattern = rf"(?:HLA-)?({hla_genes})\*(\d{{2}}):?\(([/\d]+)\)"
     matches = re.findall(paren_pattern, text, re.IGNORECASE)
     for gene, field1, alleles_str in matches:
         gene = gene.upper()
-        if gene == 'CW':
-            gene = 'C'
+        if gene == "CW":
+            gene = "C"
         # Split the alleles: "01/02" -> ["01", "02"]
-        allele_nums = alleles_str.split('/')
+        allele_nums = alleles_str.split("/")
         for allele_num in allele_nums:
             if allele_num.isdigit():
                 variants.append(f"HLA-{gene}*{field1}:{allele_num}")
@@ -285,20 +300,26 @@ def run_experiment():
         total_recall += result.match_rate
         total_precision += precision
 
-        per_article_results.append({
-            "pmcid": pmcid,
-            "recall": result.match_rate,
-            "precision": precision,
-            "true_count": len(true_variants),
-            "extracted_count": len(extracted_variants),
-            "matches": result.matches,
-            "misses": result.misses,
-            "extras": result.extras,
-        })
+        per_article_results.append(
+            {
+                "pmcid": pmcid,
+                "recall": result.match_rate,
+                "precision": precision,
+                "true_count": len(true_variants),
+                "extracted_count": len(extracted_variants),
+                "matches": result.matches,
+                "misses": result.misses,
+                "extras": result.extras,
+            }
+        )
 
-        status = "✓" if result.match_rate == 1.0 else "○" if result.match_rate > 0 else "✗"
-        print(f"  {status} {pmcid}: recall={result.match_rate:.0%} precision={precision:.0%} "
-              f"(found {len(result.matches)}/{len(true_variants)}, extras={len(result.extras)})")
+        status = (
+            "✓" if result.match_rate == 1.0 else "○" if result.match_rate > 0 else "✗"
+        )
+        print(
+            f"  {status} {pmcid}: recall={result.match_rate:.0%} precision={precision:.0%} "
+            f"(found {len(result.matches)}/{len(true_variants)}, extras={len(result.extras)})"
+        )
 
         if result.misses:
             print(f"      Missed: {result.misses}")
@@ -312,15 +333,15 @@ def run_experiment():
     results["articles_scored"] = n
     results["per_article_results"] = per_article_results
 
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print(f"SUMMARY")
-    print(f"{'='*60}")
+    print(f"{'=' * 60}")
     print(f"Articles scored: {n}")
     print(f"Average Recall: {avg_recall:.1%}")
     print(f"Average Precision: {avg_precision:.1%}")
 
     perfect_recalls = sum(1 for r in per_article_results if r["recall"] == 1.0)
-    print(f"Perfect recall: {perfect_recalls}/{n} articles ({perfect_recalls/n:.0%})")
+    print(f"Perfect recall: {perfect_recalls}/{n} articles ({perfect_recalls / n:.0%})")
 
     output_path = Path(__file__).parent / "results_v3.json"
     with open(output_path, "w") as f:
