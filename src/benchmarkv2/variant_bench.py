@@ -15,11 +15,33 @@ from pathlib import Path
 @dataclass
 class VariantBenchResult:
     pmcid: str
+    title: str
     match_rate: float
-    missed_variants: list[str]
+    misses: list[str]
     matches: list[str]
-    mismatches: list[str]
+    extras: list[str]
 
+def load_pmcid_title(pmcid: str) -> str:
+    """Load the title of an article given its PMCID.
+    
+    Args:
+        pmcid: PMCID of the article
+        
+    Returns:
+        Title of the article
+    """
+    data_path = (
+        Path(__file__).parent.parent.parent
+        / "data"
+        / "benchmarks"
+        / "variant_bench.jsonl"
+    )
+    with open(data_path) as f:
+        for line in f:
+            record = json.loads(line)
+            if record["pmcid"] == pmcid:
+                return record["article_title"]
+    return ""
 
 def load_variant_bench_data() -> dict[str, list[str]]:
     """Load the variant benchmark data from the jsonl file.
@@ -47,6 +69,7 @@ def score_variants(
     proposed_variants: list[str],
     true_variants: list[str],
     pmcid: str = "",
+    title: str = "",
 ) -> VariantBenchResult:
     """Score proposed variants against true variants.
 
@@ -54,6 +77,7 @@ def score_variants(
         proposed_variants: List of variant identifiers proposed by the model
         true_variants: List of true variant identifiers (ground truth)
         pmcid: Optional PMCID for the result
+        title: Optional title of the article
 
     Returns:
         VariantBenchResult with match statistics
@@ -72,10 +96,11 @@ def score_variants(
 
     return VariantBenchResult(
         pmcid=pmcid,
+        title=title,
         match_rate=match_rate,
-        missed_variants=missed_variants,
+        misses=missed_variants,
         matches=matches,
-        mismatches=mismatches,
+        extras=mismatches,
     )
 
 
@@ -101,7 +126,8 @@ def score_variants_by_pmcid(
         raise KeyError(f"PMCID {pmcid} not found in variant benchmark data")
 
     true_variants = data[pmcid]
-    return score_variants(proposed_variants, true_variants, pmcid)
+    title = load_pmcid_title(pmcid)
+    return score_variants(proposed_variants, true_variants, pmcid, title)
 
 
 def score_annotation(proposed_annotation_path: str) -> VariantBenchResult:
@@ -127,6 +153,99 @@ def score_annotation(proposed_annotation_path: str) -> VariantBenchResult:
     # Score against the true variants from benchmark data
     return score_variants_by_pmcid(proposed_variants, pmcid)
 
+def score_all_annotations(
+    annotations_dir: str | Path = "data/proposed_annotations",
+    output_path: str | Path | None = None,
+    run_name: str | None = None,
+) -> dict:
+    """Score all annotations in a directory against the benchmark data.
+
+    Args:
+        annotations_dir: Path to the directory containing proposed annotation JSON files.
+            Defaults to "data/proposed_annotations".
+        output_path: Path to save the results JSON file. If None, saves to
+            "data/benchmark_results/variant_bench_results.json".
+        run_name: Name for this run. Defaults to the annotations_dir path string.
+
+    Returns:
+        dict with the following structure:
+        {
+            "timestamp": "",
+            "run_name": "",
+            "total_match_rate": 0.0,
+            "per_annotation_scores": [
+                {
+                    "pmcid": "PMC5508045",
+                    "title": "",
+                    "match_rate": 0.0,
+                    "matches": [],
+                    "misses": [],
+                    "extras": []
+                }
+            ]
+        }
+    """
+    from datetime import datetime
+
+    annotations_dir = Path(annotations_dir)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    if output_path is None:
+        output_path = (
+            Path(__file__).parent.parent.parent
+            / "data"
+            / "benchmarks"
+            / "variant_bench_results"
+            / f"variants_{timestamp}.json"
+        )
+    else:
+        output_path = Path(output_path)
+
+    if run_name is None:
+        run_name = str(annotations_dir)
+
+    # Score each annotation file
+    per_annotation_scores = []
+    for annotation_file in sorted(annotations_dir.glob("*.json")):
+        try:
+            result = score_annotation(str(annotation_file))
+            per_annotation_scores.append({
+                "pmcid": result.pmcid,
+                "title": result.title,
+                "match_rate": result.match_rate,
+                "matches": result.matches,
+                "misses": result.misses,
+                "extras": result.extras,
+            })
+        except KeyError as e:
+            print(f"Warning: Skipping {annotation_file.name} - {e}")
+            continue
+
+    # Calculate total match rate as average across all annotations
+    if per_annotation_scores:
+        total_match_rate = sum(s["match_rate"] for s in per_annotation_scores) / len(
+            per_annotation_scores
+        )
+    else:
+        total_match_rate = 0.0
+
+    results = {
+        "timestamp": datetime.now().isoformat(),
+        "run_name": run_name,
+        "total_match_rate": total_match_rate,
+        "per_annotation_scores": per_annotation_scores,
+    }
+
+    # Ensure output directory exists and save results
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, "w") as f:
+        json.dump(results, f, indent=2)
+
+    print(f"Results saved to {output_path}")
+    print(f"Total match rate: {total_match_rate:.2%}")
+    print(f"Scored {len(per_annotation_scores)} annotations")
+
+    return results
 
 def main():
     """Test the variant scoring functions using the benchmark data."""
@@ -146,8 +265,8 @@ def main():
     print(f"Proposed: {proposed_variants}")
     print(f"Match rate: {result.match_rate:.2%}")
     print(f"Matches: {result.matches}")
-    print(f"Mismatches: {result.mismatches}")
-    print(f"Missed: {result.missed_variants}")
+    print(f"Extras: {result.extras}")
+    print(f"Misses: {result.misses}")
 
     # Test case 2: Partial match with some correct, some wrong, some missing
     print("\n--- Test 2: Partial match ---")
@@ -156,8 +275,8 @@ def main():
     print(f"Proposed: {proposed}")
     print(f"Match rate: {result.match_rate:.2%}")
     print(f"Matches: {result.matches}")
-    print(f"Mismatches: {result.mismatches}")
-    print(f"Missed: {result.missed_variants}")
+    print(f"Extras: {result.extras}")
+    print(f"Misses: {result.misses}")
 
     # Test case 3: Using score_variants_by_pmcid
     print("\n--- Test 3: Score by PMCID ---")
@@ -166,8 +285,8 @@ def main():
     print(f"Proposed: {proposed}")
     print(f"Match rate: {result.match_rate:.2%}")
     print(f"Matches: {result.matches}")
-    print(f"Mismatches: {result.mismatches}")
-    print(f"Missed: {result.missed_variants}")
+    print(f"Extras: {result.extras}")
+    print(f"Misses: {result.misses}")
 
     # Test case 4: No matches
     print("\n--- Test 4: No matches ---")
@@ -176,8 +295,8 @@ def main():
     print(f"Proposed: {proposed}")
     print(f"Match rate: {result.match_rate:.2%}")
     print(f"Matches: {result.matches}")
-    print(f"Mismatches: {result.mismatches}")
-    print(f"Missed: {result.missed_variants}")
+    print(f"Extras: {result.extras}")
+    print(f"Misses: {result.misses}")
 
     # Test case 5: Score a real annotation file
     print("\n--- Test 5: Score annotation file ---")
@@ -187,8 +306,8 @@ def main():
     print(f"PMCID: {result.pmcid}")
     print(f"Match rate: {result.match_rate:.2%}")
     print(f"Matches: {result.matches}")
-    print(f"Mismatches: {result.mismatches}")
-    print(f"Missed: {result.missed_variants}")
+    print(f"Extras: {result.extras}")
+    print(f"Misses: {result.misses}")
 
 
 if __name__ == "__main__":
