@@ -1,0 +1,55 @@
+{
+  "model": "claude-3-5-sonnet-20241022",
+  "prompt_version": "v1",
+  "prompt_name": "Basic extraction",
+  "timestamp": "2026-01-17T18:28:54.462777",
+  "per_article_results": [
+    {
+      "pmcid": "PMC5508045",
+      "recall": 0.0,
+      "precision": 0.0,
+      "matches": [],
+      "extras": [],
+      "misses": [
+        "rs1057910",
+        "rs9923231",
+        "rs2108622",
+        "rs887829"
+      ],
+      "true_count": 4,
+      "proposed_count": 0
+    },
+    {
+      "pmcid": "PMC4916189",
+      "recall": 0.0,
+      "precision": 0.0,
+      "matches": [],
+      "extras": [],
+      "misses": [
+        "rs1045642",
+        "rs3745274",
+        "rs2472677",
+        "cyp2b6*1, cyp2b6*9",
+        "rs28399499",
+        "rs4803419"
+      ],
+      "true_count": 6,
+      "proposed_count": 0
+    },
+    {
+      "pmcid": "PMC12036300",
+      "recall": 0.0,
+      "precision": 0.0,
+      "matches": [],
+      "extras": [],
+      "misses": [
+        "cyp2c19*1, cyp2c19*2, cyp2c19*17"
+      ],
+      "true_count": 1,
+      "proposed_count": 0
+    }
+  ],
+  "avg_recall": 0.0,
+  "avg_precision": 0.0,
+  "articles_processed": 3
+}

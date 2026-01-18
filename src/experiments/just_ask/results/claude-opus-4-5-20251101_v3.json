@@ -1,0 +1,737 @@
+{
+  "model": "claude-opus-4-5-20251101",
+  "prompt_version": "v3",
+  "prompt_name": "Comprehensive with normalization rules",
+  "timestamp": "2026-01-17T18:35:44.694991",
+  "per_article_results": [
+    {
+      "pmcid": "PMC5508045",
+      "recall": 1.0,
+      "precision": 0.5714285714285714,
+      "matches": [
+        "rs1057910",
+        "rs887829",
+        "rs9923231",
+        "rs2108622"
+      ],
+      "extras": [
+        "cyp2c9*2",
+        "cyp2c9*3",
+        "cyp2c9*1"
+      ],
+      "misses": [],
+      "true_count": 4,
+      "proposed_count": 7
+    },
+    {
+      "pmcid": "PMC4916189",
+      "recall": 0.7142857142857143,
+      "precision": 0.35714285714285715,
+      "matches": [
+        "rs3745274",
+        "rs4803419",
+        "rs28399499",
+        "rs1045642",
+        "rs2472677"
+      ],
+      "extras": [
+        "rs3003596",
+        "rs28399454",
+        "rs8192726",
+        "rs2307424",
+        "rs35599367",
+        "rs6785049",
+        "cyp2a6*9b",
+        "cyp3a4*22",
+        "cyp2a6*17"
+      ],
+      "misses": [
+        "cyp2b6*9",
+        "cyp2b6*1"
+      ],
+      "true_count": 7,
+      "proposed_count": 14
+    },
+    {
+      "pmcid": "PMC12036300",
+      "recall": 1.0,
+      "precision": 0.1875,
+      "matches": [
+        "cyp2c19*1",
+        "cyp2c19*17",
+        "cyp2c19*2"
+      ],
+      "extras": [
+        "rs4986893",
+        "cyp2c19*3",
+        "rs4244285",
+        "rs1045642",
+        "rs12248560",
+        "rs375781227",
+        "rs6413438",
+        "cyp2c19*10",
+        "cyp2c19*33",
+        "cyp2c19*26",
+        "rs140278421",
+        "cyp2c19*22",
+        "rs370803989"
+      ],
+      "misses": [],
+      "true_count": 3,
+      "proposed_count": 16
+    },
+    {
+      "pmcid": "PMC554812",
+      "recall": 0.2,
+      "precision": 0.06666666666666667,
+      "matches": [
+        "hla-b*58:01"
+      ],
+      "extras": [
+        "hla-b*59",
+        "hla-a*29",
+        "hla-b*12",
+        "hla-b*57:01",
+        "hla-dr7",
+        "hla-a*02",
+        "hla-bw58",
+        "hla-b*15:02",
+        "rs1264440",
+        "rs589428",
+        "hla-aw33",
+        "rs1264314",
+        "hla-b*17",
+        "rs1755038"
+      ],
+      "misses": [
+        "hla-c*03:02",
+        "rs1594",
+        "hla-a*33:03",
+        "hla-drb1*03:01"
+      ],
+      "true_count": 5,
+      "proposed_count": 15
+    },
+    {
+      "pmcid": "PMC5561238",
+      "recall": 0.2558139534883721,
+      "precision": 0.6470588235294118,
+      "matches": [
+        "hla-b*35:05",
+        "hla-b*57:01",
+        "hla-b*52:01",
+        "hla-c*04:01",
+        "hla-drb1*01:01",
+        "hla-c*18:01",
+        "hla-drb1*01:03",
+        "hla-b*15:01",
+        "hla-c*05:01",
+        "hla-drb1*01:02",
+        "hla-drb1*04:04"
+      ],
+      "extras": [
+        "hla-drb1*04:10",
+        "hla-drb1*15:01",
+        "hla-drb1*04:08",
+        "hla-drb1*04:05",
+        "hla-drb1*04:01",
+        "hla-drb1*04:15"
+      ],
+      "misses": [
+        "rs28399499",
+        "hla-b*56:06",
+        "hla-b*13:02",
+        "hla-c*05:09",
+        "hla-drb1*08:01",
+        "hla-b*15:32",
+        "hla-b*56:01",
+        "hla-b*39:09",
+        "hla-c*04:03",
+        "hla-b*67:01",
+        "hla-b*15:25",
+        "hla-b*15:12",
+        "hla-b*54:01",
+        "hla-b*39:05",
+        "hla-b*51:01",
+        "hla-b*55:02",
+        "rs3745274",
+        "hla-b*39:06",
+        "hla-b*15:35",
+        "hla-b*35:10",
+        "hla-b*15:24",
+        "hla-b*51:02",
+        "hla-c*04:07",
+        "hla-b*78:01",
+        "hla-b*38:02",
+        "hla-c*04:06",
+        "hla-b*39:10",
+        "hla-drb1*10:01",
+        "hla-b*39:01",
+        "hla-b*15:27",
+        "hla-b*55:01",
+        "hla-b*38:01"
+      ],
+      "true_count": 43,
+      "proposed_count": 17
+    },
+    {
+      "pmcid": "PMC10946077",
+      "recall": 0.6666666666666666,
+      "precision": 1.0,
+      "matches": [
+        "ugt1a1*28",
+        "ugt1a1*6"
+      ],
+      "extras": [],
+      "misses": [
+        "ugt1a1*1"
+      ],
+      "true_count": 3,
+      "proposed_count": 2
+    },
+    {
+      "pmcid": "PMC6465603",
+      "recall": 1.0,
+      "precision": 0.4,
+      "matches": [
+        "rs1142345",
+        "rs116855232"
+      ],
+      "extras": [
+        "nudt15*3",
+        "tpmt*3a",
+        "rs147390019"
+      ],
+      "misses": [],
+      "true_count": 2,
+      "proposed_count": 5
+    },
+    {
+      "pmcid": "PMC12038368",
+      "recall": 1.0,
+      "precision": 0.125,
+      "matches": [
+        "rs4149056",
+        "rs2306283"
+      ],
+      "extras": [
+        "rs717620",
+        "rs1045642",
+        "rs2231142",
+        "rs776746",
+        "slco1b1*1b",
+        "rs4149117",
+        "slco1b1*15",
+        "rs2242480",
+        "slco1b1*1a",
+        "rs3740066",
+        "cyp3a4*1g",
+        "cyp3a5*3",
+        "slco1b1*5",
+        "rs7311358"
+      ],
+      "misses": [],
+      "true_count": 2,
+      "proposed_count": 16
+    },
+    {
+      "pmcid": "PMC10880264",
+      "recall": 0.3333333333333333,
+      "precision": 0.037037037037037035,
+      "matches": [
+        "rs6311"
+      ],
+      "extras": [
+        "cyp2d6*14",
+        "cyp2c19*3",
+        "cyp2c19*7",
+        "cyp2c19*6",
+        "cyp2d6*4",
+        "cyp2d6*6",
+        "cyp2d6*2a",
+        "cyp2c19*1",
+        "cyp2c19*8",
+        "cyp2d6*7",
+        "cyp2d6*8",
+        "cyp2c19*5",
+        "cyp2d6*17",
+        "cyp2d6*1",
+        "cyp2c19*17",
+        "cyp2d6*15",
+        "cyp2d6*12",
+        "cyp2d6*41",
+        "cyp2c19*2",
+        "cyp2c19*4",
+        "cyp2d6*5",
+        "cyp2d6*11",
+        "cyp2d6*9",
+        "cyp2d6*10",
+        "cyp2d6*3",
+        "cyp2d6*2"
+      ],
+      "misses": [
+        "cyp2d6 poor metabolizer",
+        "cyp2c19 intermediate metabolizer"
+      ],
+      "true_count": 3,
+      "proposed_count": 27
+    },
+    {
+      "pmcid": "PMC12331468",
+      "recall": 1.0,
+      "precision": 0.4444444444444444,
+      "matches": [
+        "rs11280056",
+        "rs1801265",
+        "rs45445694",
+        "rs1695"
+      ],
+      "extras": [
+        "rs717620",
+        "rs13181",
+        "rs1801019",
+        "rs11479",
+        "rs1801133"
+      ],
+      "misses": [],
+      "true_count": 4,
+      "proposed_count": 9
+    },
+    {
+      "pmcid": "PMC6435416",
+      "recall": 0.0,
+      "precision": 0.0,
+      "matches": [],
+      "extras": [],
+      "misses": [
+        "cyp2d6*1xn",
+        "cyp2d6*17",
+        "cyp2d6*35",
+        "cyp2d6*1",
+        "cyp2d6*41",
+        "cyp2d6*4",
+        "cyp2d6*4xn",
+        "cyp2d6*6",
+        "cyp2d6*2xn",
+        "cyp2d6*29",
+        "cyp2d6*5",
+        "cyp2d6*9",
+        "cyp2d6*10",
+        "cyp2d6*3",
+        "cyp2d6*2"
+      ],
+      "true_count": 15,
+      "proposed_count": 0
+    },
+    {
+      "pmcid": "PMC12319246",
+      "recall": 1.0,
+      "precision": 0.36363636363636365,
+      "matches": [
+        "rs9282564",
+        "rs3745274",
+        "rs4244285",
+        "rs4149056",
+        "rs776746",
+        "rs2740574",
+        "rs2306283",
+        "rs2273697"
+      ],
+      "extras": [
+        "rs717620",
+        "rs2066844",
+        "rs72551330",
+        "rs1045642",
+        "rs2032582",
+        "rs17868320",
+        "rs6714486",
+        "rs3740066",
+        "cyp2c19*2",
+        "cyp3a5*3",
+        "cyp3a5*1",
+        "rs3832043",
+        "cyp3a4*1b",
+        "rs2235013"
+      ],
+      "misses": [],
+      "true_count": 8,
+      "proposed_count": 22
+    },
+    {
+      "pmcid": "PMC3548984",
+      "recall": 0.8333333333333334,
+      "precision": 0.8333333333333334,
+      "matches": [
+        "cyp2d6*41",
+        "cyp2d6*6",
+        "cyp2d6*4",
+        "cyp2d6*3",
+        "cyp2d6*10"
+      ],
+      "extras": [
+        "cyp2d6*5"
+      ],
+      "misses": [
+        "cyp2d6*1"
+      ],
+      "true_count": 6,
+      "proposed_count": 6
+    },
+    {
+      "pmcid": "PMC10275785",
+      "recall": 1.0,
+      "precision": 1.0,
+      "matches": [
+        "rs4612666",
+        "rs2043211"
+      ],
+      "extras": [],
+      "misses": [],
+      "true_count": 2,
+      "proposed_count": 2
+    },
+    {
+      "pmcid": "PMC11971672",
+      "recall": 1.0,
+      "precision": 1.0,
+      "matches": [
+        "cyp2c19*1",
+        "cyp2c19*17",
+        "cyp2c19*2",
+        "cyp2c19*3"
+      ],
+      "extras": [],
+      "misses": [],
+      "true_count": 4,
+      "proposed_count": 4
+    },
+    {
+      "pmcid": "PMC11430164",
+      "recall": 1.0,
+      "precision": 0.8571428571428571,
+      "matches": [
+        "cyp3a4*9",
+        "cyp3a4*16",
+        "cyp3a4*11",
+        "cyp3a4*2",
+        "cyp3a4*3",
+        "cyp3a4*1",
+        "cyp3a4*19",
+        "cyp3a4*28",
+        "cyp3a4*4",
+        "cyp3a4*17",
+        "cyp3a4*29",
+        "cyp3a4*31",
+        "cyp3a4*5",
+        "cyp3a4*18",
+        "cyp3a4*14",
+        "cyp3a4*33",
+        "cyp3a4*24",
+        "cyp3a4*15"
+      ],
+      "extras": [
+        "cyp3a4*30",
+        "rs35599367",
+        "cyp3a4*22"
+      ],
+      "misses": [],
+      "true_count": 18,
+      "proposed_count": 21
+    },
+    {
+      "pmcid": "PMC8790808",
+      "recall": 1.0,
+      "precision": 0.4444444444444444,
+      "matches": [
+        "rs9958628",
+        "hla-drb1*07:01",
+        "hla-dqa1*02:01",
+        "hla-dqb1*02:02"
+      ],
+      "extras": [
+        "hla-drb1*04:02",
+        "rs28383172",
+        "hla-drb1*04:05",
+        "rs1694129",
+        "rs7775228"
+      ],
+      "misses": [],
+      "true_count": 4,
+      "proposed_count": 9
+    },
+    {
+      "pmcid": "PMC11062152",
+      "recall": 0.6666666666666666,
+      "precision": 1.0,
+      "matches": [
+        "ugt1a1*28",
+        "ugt1a1*6"
+      ],
+      "extras": [],
+      "misses": [
+        "ugt1a1*1"
+      ],
+      "true_count": 3,
+      "proposed_count": 2
+    },
+    {
+      "pmcid": "PMC3839910",
+      "recall": 1.0,
+      "precision": 0.5,
+      "matches": [
+        "hla-a*31:01",
+        "hla-b*15:02"
+      ],
+      "extras": [
+        "hla-a*33:03",
+        "rs1061235"
+      ],
+      "misses": [],
+      "true_count": 2,
+      "proposed_count": 4
+    },
+    {
+      "pmcid": "PMC3113609",
+      "recall": 1.0,
+      "precision": 0.25,
+      "matches": [
+        "hla-a*31:01"
+      ],
+      "extras": [
+        "hla-b*15:02",
+        "rs1061235",
+        "hla-b*57:01"
+      ],
+      "misses": [],
+      "true_count": 1,
+      "proposed_count": 4
+    },
+    {
+      "pmcid": "PMC10786722",
+      "recall": 0.0,
+      "precision": 0.0,
+      "matches": [],
+      "extras": [],
+      "misses": [
+        "rs2297595",
+        "rs1801160",
+        "rs56038477"
+      ],
+      "true_count": 3,
+      "proposed_count": 0
+    },
+    {
+      "pmcid": "PMC384715",
+      "recall": 1.0,
+      "precision": 0.5,
+      "matches": [
+        "hla-b*57:01"
+      ],
+      "extras": [
+        "hla-drb1*07:01"
+      ],
+      "misses": [],
+      "true_count": 1,
+      "proposed_count": 2
+    },
+    {
+      "pmcid": "PMC3584248",
+      "recall": 0.0,
+      "precision": 0.0,
+      "matches": [],
+      "extras": [],
+      "misses": [
+        "cyp2d6*5",
+        "cyp2d6*41",
+        "cyp2d6*10",
+        "cyp2d6*1",
+        "cyp2d6*2"
+      ],
+      "true_count": 5,
+      "proposed_count": 0
+    },
+    {
+      "pmcid": "PMC12035587",
+      "recall": 1.0,
+      "precision": 0.2,
+      "matches": [
+        "nudt15*3"
+      ],
+      "extras": [
+        "tpmt*3a",
+        "tpmt*3b",
+        "tpmt*3c",
+        "tpmt*2"
+      ],
+      "misses": [],
+      "true_count": 1,
+      "proposed_count": 5
+    },
+    {
+      "pmcid": "PMC10993165",
+      "recall": 1.0,
+      "precision": 0.17647058823529413,
+      "matches": [
+        "hla-b*15:02",
+        "hla-b*38:02",
+        "hla-b*13:01"
+      ],
+      "extras": [
+        "hla-c*07:27",
+        "hla-c*08:01",
+        "hla-a*11:01",
+        "hla-b*07:05",
+        "hla-a*31:01",
+        "hla-dqb1*02:01",
+        "hla-dqb1*03:01",
+        "hla-drb1*12:02",
+        "hla-dqb1*05:01",
+        "hla-c*03:04",
+        "hla-c*04:06",
+        "hla-a*68:01",
+        "hla-b*39:01",
+        "hla-b*38:01"
+      ],
+      "misses": [],
+      "true_count": 3,
+      "proposed_count": 17
+    },
+    {
+      "pmcid": "PMC10399933",
+      "recall": 0.8,
+      "precision": 0.6666666666666666,
+      "matches": [
+        "rs4149056",
+        "cyp2c9*2",
+        "rs2231142",
+        "cyp2c9*3"
+      ],
+      "extras": [
+        "rs1057910",
+        "rs1799853"
+      ],
+      "misses": [
+        "cyp2c9*1"
+      ],
+      "true_count": 5,
+      "proposed_count": 6
+    },
+    {
+      "pmcid": "PMC4706412",
+      "recall": 0.75,
+      "precision": 0.5454545454545454,
+      "matches": [
+        "cyp2c9*3",
+        "cyp2c9*1",
+        "cyp4f2*3",
+        "cyp2c9*2",
+        "cyp4f2*1",
+        "cyp2c9*8"
+      ],
+      "extras": [
+        "nqo1*1",
+        "cyp2c9*11",
+        "nqo1*2",
+        "cyp2c9*6",
+        "cyp2c9*5"
+      ],
+      "misses": [
+        "rs1800566",
+        "rs9923231"
+      ],
+      "true_count": 8,
+      "proposed_count": 11
+    },
+    {
+      "pmcid": "PMC6714829",
+      "recall": 0.0,
+      "precision": 0.0,
+      "matches": [],
+      "extras": [],
+      "misses": [
+        "rs4149056",
+        "rs2306283"
+      ],
+      "true_count": 2,
+      "proposed_count": 0
+    },
+    {
+      "pmcid": "PMC2859392",
+      "recall": 0.0,
+      "precision": 0.0,
+      "matches": [],
+      "extras": [],
+      "misses": [
+        "rs3745274"
+      ],
+      "true_count": 1,
+      "proposed_count": 0
+    },
+    {
+      "pmcid": "PMC11603346",
+      "recall": 1.0,
+      "precision": 0.5,
+      "matches": [
+        "cyp2b6*6",
+        "cyp2b6*1"
+      ],
+      "extras": [
+        "hla-cw*04",
+        "ugt1a1*28"
+      ],
+      "misses": [],
+      "true_count": 2,
+      "proposed_count": 4
+    },
+    {
+      "pmcid": "PMC8973308",
+      "recall": 1.0,
+      "precision": 0.3333333333333333,
+      "matches": [
+        "rs1800462",
+        "rs1800460",
+        "rs116855232"
+      ],
+      "extras": [
+        "tpmt*3b",
+        "tpmt*3c",
+        "tpmt*2",
+        "rs1142345",
+        "tpmt*3a",
+        "tpmt*1"
+      ],
+      "misses": [],
+      "true_count": 3,
+      "proposed_count": 9
+    },
+    {
+      "pmcid": "PMC3387531",
+      "recall": 0.5,
+      "precision": 0.3,
+      "matches": [
+        "hla-drb1*01:01",
+        "rs3745274",
+        "hla-b*35:01"
+      ],
+      "extras": [
+        "hla-b*35:05",
+        "hla-b*35",
+        "hla-cw*08",
+        "hla-drb1*01",
+        "hla-dqb1*05",
+        "hla-cw*04",
+        "hla-cw*04:01"
+      ],
+      "misses": [
+        "hla-c*04:01",
+        "rs3786547",
+        "rs2054675"
+      ],
+      "true_count": 6,
+      "proposed_count": 10
+    }
+  ],
+  "avg_recall": 0.7100031146179402,
+  "avg_precision": 0.4158362666404945,
+  "articles_processed": 32
+}
