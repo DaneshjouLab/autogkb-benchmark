@@ -1,7 +1,7 @@
 """
 Functions:
 - (proposed_variants: list[str], true_variants: list[str]) -> VariantBenchResult
-- (proposed_variants: list[str], pmcid: str) -> VariantBenchResult. Get's the true variants using the pmcid from data/benchmarks/variant_bench.jsonl
+- (proposed_variants: list[str], pmcid: str) -> VariantBenchResult. Get's the true variants using the pmcid from data/benchmark_v2/variant_bench.jsonl
 - main function that tests this using the variant_bench.jsonl file for reference and some dummy proposed variants
 
 Currently uses exact matching, but could be extended to use fuzzy matching or other similarity metrics.
@@ -34,7 +34,7 @@ def load_pmcid_title(pmcid: str) -> str:
     data_path = (
         Path(__file__).parent.parent.parent
         / "data"
-        / "benchmarks"
+        / "benchmark_v2"
         / "variant_bench.jsonl"
     )
     with open(data_path) as f:
@@ -54,7 +54,7 @@ def load_variant_bench_data() -> dict[str, list[str]]:
     data_path = (
         Path(__file__).parent.parent.parent
         / "data"
-        / "benchmarks"
+        / "benchmark_v2"
         / "variant_bench.jsonl"
     )
     pmcid_to_variants: dict[str, list[str]] = {}
@@ -197,7 +197,7 @@ def score_all_annotations(
         output_path = (
             Path(__file__).parent.parent.parent
             / "data"
-            / "benchmarks"
+            / "benchmark_v2"
             / "variant_bench_results"
             / f"annotation_variants_{timestamp}.json"
         )
@@ -262,7 +262,7 @@ def score_generated_variants(
     Args:
         generated_variants_path: Path to the JSON file containing generated variants.
             Expected format: {pmcid: [...], ...}
-            e.g., "data/benchmarks/generated_variants/example.json"
+            e.g., "data/benchmark_v2/generated_variants/example.json"
         run_name: Name for this run. Defaults to the generated_variants_path filename.
 
     Returns:
@@ -300,7 +300,7 @@ def score_generated_variants(
     output_path = (
         Path(__file__).parent.parent.parent
         / "data"
-        / "benchmarks"
+        / "benchmark_v2"
         / "variant_bench_results"
         / f"{run_name}_variants_{timestamp}.json"
     )
@@ -411,7 +411,7 @@ def main():
     generated_variants_path = (
         Path(__file__).parent.parent.parent
         / "data"
-        / "benchmarks"
+        / "benchmark_v2"
         / "generated_variants"
         / "example.json"
     )

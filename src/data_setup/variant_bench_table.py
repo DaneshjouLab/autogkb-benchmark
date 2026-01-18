@@ -158,7 +158,7 @@ def get_benchmark_variants(save_jsonl: bool = True) -> list[SingleArticleVariant
     benchmark_variants = get_dir_variants(benchmark_dir, deduplicate=True, ungroup=True)
 
     if save_jsonl:
-        output_path = Path("data") / "benchmarks" / "variant_bench.jsonl"
+        output_path = Path("data") / "benchmark_v2" / "variant_bench.jsonl"
         with open(output_path, "w") as f:
             for variant in benchmark_variants:
                 f.write(json.dumps(variant.model_dump()) + "\n")
@@ -172,7 +172,7 @@ if __name__ == "__main__":
     print(f"Found {len(benchmark_variants)} articles with variants")
 
     # Verify the JSONL file is loadable
-    with open("data/benchmarks/variant_bench.jsonl", "r") as f:
+    with open("data/benchmark_v2/variant_bench.jsonl", "r") as f:
         loaded_variants = [json.loads(line) for line in f]
     print(f"Loaded JSONL with {len(loaded_variants)} rows")
     print(f"First entry: {loaded_variants[0]}")

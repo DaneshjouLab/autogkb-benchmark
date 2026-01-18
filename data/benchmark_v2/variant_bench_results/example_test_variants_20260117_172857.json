@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-01-16T18:34:03.670637",
+  "timestamp": "2026-01-17T17:28:57",
   "run_name": "example_test",
-  "source_file": "/Users/shloknatarajan/stanford/research/daneshjou/autogkb-benchmark/data/benchmarks/generated_variants/example.json",
+  "source_file": "/Users/shloknatarajan/stanford/research/daneshjou/autogkb-benchmark/data/benchmark_v2/generated_variants/example.json",
   "total_match_rate": 0.875,
   "per_pmcid_scores": [
     {
