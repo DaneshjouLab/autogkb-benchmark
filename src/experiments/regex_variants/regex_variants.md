@@ -1,6 +1,6 @@
 # Regex Variants Experiment Log
 
-Started: 2023-06-28 10:21 PST
+Started: 2025-01-16 7:21 PST
 
 ## Overview
 Trying to extract variants from articles using regex patterns and seeing if that at least gets full coverage of the variants. This is a bit more deterministic than LLM-based extraction which is nice and will be much faster/cheaper.
