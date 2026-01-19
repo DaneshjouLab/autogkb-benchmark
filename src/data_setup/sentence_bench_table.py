@@ -1,9 +1,7 @@
 """
-Goal:
-- Create a dataset of (pmcid, variant, summary sentence)
-- Should follow the same variants that are created in the variant bench table
-- Summary sentence should be the sentence that contains the variant from the benchmark annotations
-- Should be a jsonl file stored in data/benchmark_v2/sentence_bench.jsonl
+Creates a dataset of (pmcid, variant, summary sentence, association_type)
+
+Saves to data/benchmark_v2/sentence_bench.jsonl
 """
 
 import json
@@ -135,7 +133,9 @@ def get_benchmark_sentences(save_jsonl: bool = True) -> list[SingleSentenceEntry
         with open(output_path, "w") as f:
             for entry in benchmark_sentences:
                 f.write(json.dumps(entry.model_dump()) + "\n")
-        logger.info(f"Saved {len(benchmark_sentences)} sentence entries to {output_path}")
+        logger.info(
+            f"Saved {len(benchmark_sentences)} sentence entries to {output_path}"
+        )
 
     return benchmark_sentences
 
