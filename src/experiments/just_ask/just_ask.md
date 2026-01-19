@@ -15,7 +15,7 @@ Models to try:
 
 Note: For some reason claude, ignored this and just used GPT-4o instead of the GPT 5 models but I think we have enough information to move on to different experiments.
 
-## Process
+## Process Hypothesis
 1. Get the markdown for the article but only the methods and conclusions sections (functions already defined to do this in utils.py)
 2. Ask the model to extract the variants
 3. Do 4-5 rounds of prompt iteration based on results (or end when reasonable)
