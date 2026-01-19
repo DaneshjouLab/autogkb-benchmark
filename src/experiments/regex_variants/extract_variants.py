@@ -2,6 +2,19 @@
 Regex-based variant extraction experiment.
 
 Extract variants from article markdown using regex patterns and evaluate coverage.
+
+The pipeline works as follows:
+1. Load the benchmark dataset, which includes ground-truth variants for a list of articles.
+2. For each article, read the full text from the corresponding markdown file.
+3. Reduce the text to only the "Methods" and "Conclusions" sections, which are most
+   likely to contain variant information.
+4. Apply a set of regular expressions to the filtered text to extract potential
+   variant mentions, including rsIDs, star alleles (e.g., CYP2C9*3), and HLA alleles.
+5. Compare the extracted variants against the ground-truth annotations to calculate
+   recall (coverage) and precision.
+6. Aggregate the results across all articles to compute the average recall and
+   precision of the regex-based approach.
+7. Save the detailed per-article and summary results to a JSON file for analysis.
 """
 
 import json

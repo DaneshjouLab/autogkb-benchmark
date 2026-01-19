@@ -83,3 +83,43 @@ Trying to extract variants from articles using regex patterns and seeing if that
 1. Add cDNA change pattern matching (G516T, -1639G>A) with variant-to-rsID mapping
 2. Consider pharmacogene-specific patterns for wild-type detection
 3. Explore PDF supplemental table extraction
+
+---
+
+## Detailed Breakdown
+
+### Version 1 (v1) Process
+
+1.  **Load Benchmark Data**: The process starts by loading the ground-truth data from `benchmark_v2`, which contains a dictionary mapping PMCIDs to a list of known variant annotations for each article.
+2.  **Filter Article Text**: For each article (PMCID), the system reads the corresponding markdown file. It then extracts only the text from the "Methods" and "Conclusions" sections. This was done to focus on the most relevant parts of the article where variants are typically discussed.
+3.  **Apply Regex Patterns**: A set of basic regular expressions are applied to the filtered text to find variant mentions:
+    *   **rsIDs**: `\brs\d{4,}\b` - Matches "rs" followed by four or more digits.
+    *   **Star Alleles**: `\b(CYP\w+)\*(\d+)\b` - Specifically targets star alleles for genes starting with "CYP".
+    *   **HLA Alleles**: `\bHLA-[A-Z]+\d*\*\d+:\d+\b` - Matches formal HLA allele notation that includes the "HLA-" prefix.
+4.  **Score and Evaluate**: The variants extracted by the regex patterns are compared against the ground-truth variants for that article. The evaluation calculates:
+    *   **Recall (Match Rate)**: The percentage of ground-truth variants that were successfully found by the regex patterns.
+    *   **Precision**: The percentage of extracted variants that were correct (i.e., present in the ground-truth).
+5.  **Aggregate Results**: The recall and precision are calculated for each article, and then an average is taken across all articles in the benchmark to produce the final summary statistics (Average Recall: 42.0%, Average Precision: 31.4%).
+
+### Version 2 (v2) Process
+
+1.  **Load Benchmark Data**: Same as v1, the process begins by loading the ground-truth data.
+2.  **Use Full Article Text**: Unlike v1, this version uses the **entire text** of the article markdown, not just the "Methods" and "Conclusions" sections. This was a key change to improve coverage, as variants can be mentioned in any part of the text.
+3.  **Apply Enhanced Regex Patterns**: The regex patterns were expanded and improved:
+    *   **Broader Gene List for Star Alleles**: The pattern was updated to include more gene families beyond `CYP`, such as `UGT`, `NUDT`, `DPYD`, `TPMT`, `NAT`, `SLCO`, and `ABCB`.
+    *   **Flexible HLA Allele Matching**: A new pattern was introduced to handle HLA alleles that are written without the "HLA-" prefix (e.g., `B*5801`). The system then normalizes these finds into the standard `HLA-B*58:01` format.
+    *   **rsIDs**: The rsID pattern remained the same.
+4.  **Normalize and Score**: After extraction, the found variants are normalized to a standard format to ensure accurate comparison with the ground-truth data. The scoring and evaluation process for recall and precision is the same as in v1.
+5.  **Aggregate Results**: The final statistics are aggregated across all articles, showing a significant improvement in recall (Average Recall: 69.9%, Average Precision: 37.5%). The increase in recall was primarily due to using the full text and the broader set of regex patterns.
+
+### Version 3 (v3) Process
+
+1.  **Load Data and Use Full Text**: This version continues to use the full text of the articles, similar to v2.
+2.  **Advanced Regex and Contextual Analysis**: V3 introduces much more sophisticated patterns and contextual analysis to handle complex and implicit variant mentions.
+    *   **Expanded Pharmacogene List**: The list of target genes was expanded to over 25 pharmacogenes, significantly broadening the search space for star alleles.
+    *   **Standalone Star Alleles**: To find mentions like `*3` or `*4` that are not directly attached to a gene name, the system searches for the nearest gene name within a 200-character window. If a relevant gene is found, the allele is associated with it (e.g., finding "NUDT15" near "*3" results in "NUDT15*3").
+    *   **Spaced Star Alleles**: Handles cases where a space exists between the gene and the allele (e.g., "NUDT15 *3").
+    *   **Diplotype and Copy Number Variants**: New patterns were added to recognize diplotypes (e.g., `*1×N/*2` or `*1/*10×N`) and copy number variations (e.g., `*1xN`, `*2xN`), often searching within a larger 800-character window to link them correctly.
+    *   **HLA Parenthetical Notation**: A specific pattern was developed to parse complex HLA notations where multiple alleles are grouped, such as `HLA-B*38:(01/02)` or `B*39:(01/05/06/09)`.
+3.  **Normalize, Score, and Evaluate**: The extracted variants, including those inferred from context, are normalized and then scored against the ground truth for recall and precision.
+4.  **Aggregate Results**: This version achieved the highest performance, with an average recall of 87.8% and an average precision of 42.8%. Crucially, it achieved perfect recall on 69% of the articles (22 out of 32), demonstrating the effectiveness of the advanced contextual patterns.
