@@ -257,3 +257,36 @@ The remaining 14 misses fall into predictable categories that require algorithmi
 - **SNP-to-star mapping** for indirect variant references
 
 The BioC API integration is complete and working. Future improvements should focus on the algorithmic enhancements outlined above.
+
+---
+
+## Star Allele Assignment Differences - Expert Review Table
+
+This table summarizes star allele discrepancies for expert human annotator review. **Example sentences are from the original article text** (not the mapped benchmark annotations).
+
+### SNP-to-Star Allele Mapping Discrepancy
+
+| PMCID | Expected Allele(s) | Our Extraction | Issue | Original Text Example(s) |
+|-------|-------------------|----------------|-------|--------------------------|
+| PMC4916189 | `CYP2B6*9`, `CYP2B6*1` | `rs3745274` (via 516G>T expansion) | PharmGKB maps 516G>T → CYP2B6*36, not *9. Data source disagreement. | "The SNPs *CYP2B6* **516 G>T (rs3745274)**..." / "Possession of the **CYP2B6 516GT and TT variants** ... was associated with a higher risk of overall EFV discontinuation" |
+
+### Wildtype Inference (Implicit *1 Alleles)
+
+| PMCID | Expected Allele | Explicitly Found Alleles | Issue | Original Text Example(s) |
+|-------|-----------------|-------------------------|-------|--------------------------|
+| PMC10946077 | `UGT1A1*1` | `UGT1A1*6`, `UGT1A1*28` | Article uses "GG type" / "wild-type" instead of *1 notation | "The dose of irinotecan was determined by polymorphism of the UGT1A1 gene, which was divided into three groups (125 mg/m²: **GG type**; 100 mg/m²: GA type; 75 mg/m²: AA type)" / "*UGT1A1*6* **wild-type (GG type)** with a dosage of 125 mg/m²" |
+| PMC11062152 | `UGT1A1*1` | `UGT1A1*6`, `UGT1A1*28` | Article uses "wild-type (–/–)" instead of *1 notation | "16, 16, and 4 with UGT1A1*6 or *28 **wild-type (–/–)**, heterozygous (+/–), and homozygous (+/+)" / "The incidence of grade ≥1 diarrhea in patients with UGT1A1*6 or *28 **(-/-)**, (+/-), and (+/+) were 27.3%, 21.4%, and 25.0%" |
+| PMC3548984 | `CYP2D6*1` | `CYP2D6*3`, `*4`, `*6`, `*10`, `*41` | Article uses "EM/EM" (extensive metabolizer) and "absence of these alleles" instead of *1 | "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (**EM: absence of these alleles**) CYP2D6 metabolism" / "women with two extensive alleles (**EM/EM**)" |
+| PMC10399933 | `CYP2C9*1` | `CYP2C9*2`, `CYP2C9*3` | Article uses "normal metabolizers" and "non-carriers" instead of *1 | "Homozygotes or compound heterozygotes for *CYP2C9*2* or **3* were classified as poor CYP2C9 metabolizers (PM), heterozygotes as intermediate metabolizers, and **non-carriers as normal metabolizers**" |
+
+### Summary for Review
+
+| Category | Count | PMCIDs | Recommendation |
+|----------|-------|--------|----------------|
+| SNP→Star mapping discrepancy | 2 alleles | PMC4916189 | Verify if CYP2B6*9 should be mapped from 516G>T or if PharmGKB's *36 assignment is correct |
+| Implicit wildtype (*1) | 4 alleles | PMC10946077, PMC11062152, PMC3548984, PMC10399933 | Decide if wildtype inference is appropriate when other star alleles are present |
+
+**Questions for Expert Annotators:**
+1. Should `*1` alleles be inferred when articles use terms like "wild-type", "GG type", "EM/EM", or "normal metabolizer" instead of explicit `*1` notation?
+2. For CYP2B6 516G>T: Is the correct star allele assignment `*9` (benchmark) or `*36` (PharmGKB)?
+3. Should articles using only SNP notation (e.g., "516G>T") have star alleles added automatically via mapping?
