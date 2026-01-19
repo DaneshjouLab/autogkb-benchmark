@@ -24,7 +24,9 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from experiments.utils import get_methods_and_conclusions_text
 
 # Path to benchmark annotations
-BENCHMARK_DIR = Path(__file__).parent.parent.parent.parent / "data" / "benchmark_annotations"
+BENCHMARK_DIR = (
+    Path(__file__).parent.parent.parent.parent / "data" / "benchmark_annotations"
+)
 PROMPTS_FILE = Path(__file__).parent / "prompts.yaml"
 RESULTS_DIR = Path(__file__).parent / "results"
 
@@ -64,7 +66,7 @@ def load_benchmark_variants() -> dict[str, list[str]]:
 def extract_json_array(text: str) -> list[str]:
     """Extract JSON array from LLM response."""
     # Try to find JSON array in the response
-    match = re.search(r'\[.*?\]', text, re.DOTALL)
+    match = re.search(r"\[.*?\]", text, re.DOTALL)
     if match:
         try:
             return json.loads(match.group())
@@ -96,9 +98,7 @@ def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
     return response.choices[0].message.content
 
 
-def score_variants(
-    proposed: list[str], true_variants: list[str]
-) -> dict:
+def score_variants(proposed: list[str], true_variants: list[str]) -> dict:
     """Score proposed variants against ground truth."""
     proposed_set = {v.strip().lower() for v in proposed}
 
@@ -113,7 +113,11 @@ def score_variants(
     misses = list(true_set - proposed_set)
 
     recall = len(matches) / len(true_set) if true_set else 1.0
-    precision = len(matches) / len(proposed_set) if proposed_set else (1.0 if not true_set else 0.0)
+    precision = (
+        len(matches) / len(proposed_set)
+        if proposed_set
+        else (1.0 if not true_set else 0.0)
+    )
 
     return {
         "recall": recall,
@@ -189,7 +193,9 @@ def run_experiment(
         processed += 1
 
         # Print progress
-        status = "✓" if scores["recall"] == 1.0 else ("○" if scores["recall"] > 0 else "✗")
+        status = (
+            "✓" if scores["recall"] == 1.0 else ("○" if scores["recall"] > 0 else "✗")
+        )
         print(
             f"  {status} {pmcid}: recall={scores['recall']:.0%} precision={scores['precision']:.0%} "
             f"(found {len(scores['matches'])}/{scores['true_count']}, extras={len(scores['extras'])})"
@@ -206,7 +212,9 @@ def run_experiment(
     results["articles_processed"] = processed
 
     # Count perfect recalls
-    perfect_recalls = sum(1 for r in results["per_article_results"] if r["recall"] == 1.0)
+    perfect_recalls = sum(
+        1 for r in results["per_article_results"] if r["recall"] == 1.0
+    )
 
     print(f"\n{'=' * 60}")
     print(f"SUMMARY: {model} - {prompt_version}")
@@ -214,7 +222,11 @@ def run_experiment(
     print(f"Articles processed: {processed}")
     print(f"Average Recall: {avg_recall:.1%}")
     print(f"Average Precision: {avg_precision:.1%}")
-    print(f"Perfect recall: {perfect_recalls}/{processed} ({perfect_recalls / processed:.0%})" if processed else "N/A")
+    print(
+        f"Perfect recall: {perfect_recalls}/{processed} ({perfect_recalls / processed:.0%})"
+        if processed
+        else "N/A"
+    )
 
     # Save results
     RESULTS_DIR.mkdir(exist_ok=True)
@@ -231,9 +243,13 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Run variant extraction experiment")
-    parser.add_argument("--model", default="claude-3-5-sonnet-20241022", help="Model to use")
+    parser.add_argument(
+        "--model", default="claude-3-5-sonnet-20241022", help="Model to use"
+    )
     parser.add_argument("--prompt", default="v1", help="Prompt version (v1, v2, v3)")
-    parser.add_argument("--max-articles", type=int, default=None, help="Max articles to process")
+    parser.add_argument(
+        "--max-articles", type=int, default=None, help="Max articles to process"
+    )
 
     args = parser.parse_args()
     run_experiment(args.model, args.prompt, args.max_articles)

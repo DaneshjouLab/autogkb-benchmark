@@ -5,7 +5,7 @@ Started: 2025-01-16 7:21 PST
 ## Overview
 Trying to extract variants from articles using regex patterns and seeing if that at least gets full coverage of the variants. This is a bit more deterministic than LLM-based extraction which is nice and will be much faster/cheaper.
 
-## Process
+## Process Hypothesis
 1. Get the markdown for the article but only the methods and conclusions sections
 2. Extract variants using regex patterns
 3. Evaluate coverage against ground truth using benchmark_v2/variant_bench.py
