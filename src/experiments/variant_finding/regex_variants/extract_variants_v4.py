@@ -1,25 +1,18 @@
 """
-Regex-based variant extraction experiment - Version 5.
+Regex-based variant extraction experiment - Version 4.
 
-Improvements over v4:
-- Integrates BioC API to fetch supplementary material text
-- Extracts variants from BOTH main article AND supplement text
-- Uses cached BioC responses for efficiency
-
-This addresses the major gap identified in v4 analysis: variants listed in
-supplementary tables (like CYP2D6 star alleles in PMC6435416) are now captured.
+Improvements over v3:
+- Integrates SNP notation expansion (516G>T -> rs3745274)
+- Extracts informal SNP notations from text
+- Uses PharmGKB-derived mappings for SNP-to-rsID conversion
+- Handles various SNP notation formats: 516G>T, G516T, -1639G>A
 """
 
 import json
 import re
 from pathlib import Path
 
-import sys
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
-
 from src.experiments.utils import get_markdown_text
-from src.experiments.utils_bioc import fetch_bioc_supplement, prefetch_bioc_supplements
 from src.benchmark_v2.variant_bench import load_variant_bench_data, score_variants
 from src.term_normalization.snp_expansion import SNPExpander
 
@@ -318,28 +311,10 @@ def extract_all_variants(text: str) -> list[str]:
     """Extract all variant types from text."""
     variants = []
     variants.extend(extract_rsids(text))
-    variants.extend(extract_snp_notations(text))
+    variants.extend(extract_snp_notations(text))  # NEW in v4
     variants.extend(extract_star_alleles(text))
     variants.extend(extract_hla_alleles(text))
     return list(set(variants))
-
-
-def get_combined_text(pmcid: str) -> tuple[str, str | None]:
-    """
-    Get combined article + supplement text for extraction.
-
-    Returns:
-        Tuple of (combined_text, supplement_text_or_none)
-    """
-    article_text = get_markdown_text(pmcid)
-    supplement_text = fetch_bioc_supplement(pmcid, use_cache=True)
-
-    if supplement_text:
-        combined_text = article_text + "\n\n--- SUPPLEMENTARY MATERIAL ---\n\n" + supplement_text
-    else:
-        combined_text = article_text
-
-    return combined_text, supplement_text
 
 
 def run_experiment():
@@ -349,59 +324,47 @@ def run_experiment():
     expander = get_snp_expander()
     stats = expander.stats()
     print(f"  Loaded {stats['total_mappings']} SNP notation mappings")
-    print(f"  Covering {stats['unique_rsids']} unique rsIDs across {len(stats['genes'])} genes\n")
+    print(
+        f"  Covering {stats['unique_rsids']} unique rsIDs across {len(stats['genes'])} genes\n"
+    )
 
     benchmark_data = load_variant_bench_data()
     pmcids = list(benchmark_data.keys())
 
-    # Prefetch BioC supplements
-    print("Prefetching BioC supplements...")
-    bioc_availability = prefetch_bioc_supplements(pmcids, delay=0.2)
-    bioc_available_count = sum(1 for v in bioc_availability.values() if v)
-    print(f"  {bioc_available_count}/{len(pmcids)} articles have BioC supplements\n")
-
-    print(f"Running regex extraction v5 on {len(pmcids)} articles...\n")
+    print(f"Running regex extraction v4 on {len(pmcids)} articles...\n")
 
     results = {
-        "run_name": "regex_extraction_v5",
+        "run_name": "regex_extraction_v4",
         "improvements": [
-            "All v4 improvements",
-            "BioC API integration for supplementary materials",
-            "Extracts variants from article + supplement text",
-            f"{bioc_available_count} articles with supplement data",
+            "All v3 improvements",
+            "SNP notation expansion (516G>T -> rs3745274)",
+            "Handles various SNP formats: GENE 516G>T, GENE-G516T",
+            "PharmGKB-derived mappings for 739 SNP notations",
+            "Covers CYP2B6, CYP2C9, CYP2C19, CYP2D6, VKORC1, etc.",
         ],
         "snp_expansion_stats": stats,
-        "bioc_stats": {
-            "articles_with_supplements": bioc_available_count,
-            "articles_without_supplements": len(pmcids) - bioc_available_count,
-        },
     }
 
     total_recall = 0
     total_precision = 0
     per_article_results = []
 
-    # Track improvements from supplements
-    supplement_improvements = []
+    # Track SNP notation expansions for analysis
+    snp_expansions_used = []
 
     for pmcid in pmcids:
-        combined_text, supplement_text = get_combined_text(pmcid)
+        text = get_markdown_text(pmcid)
 
-        if not combined_text:
+        if not text:
             print(f"  {pmcid}: No text found (skipping)")
             continue
 
-        extracted_variants = extract_all_variants(combined_text)
+        extracted_variants = extract_all_variants(text)
 
-        # Also extract from article only (for comparison)
-        article_only_text = get_markdown_text(pmcid)
-        article_only_variants = extract_all_variants(article_only_text)
-
-        # Track which variants came from supplements
-        supplement_only_variants = set(extracted_variants) - set(article_only_variants)
-
-        # Track SNP notation expansions
-        snp_rsids = extract_snp_notations(combined_text)
+        # Track which SNP notations were expanded
+        snp_rsids = extract_snp_notations(text)
+        if snp_rsids:
+            snp_expansions_used.append({"pmcid": pmcid, "expanded_rsids": snp_rsids})
 
         true_variants = benchmark_data[pmcid]
         result = score_variants(extracted_variants, true_variants, pmcid)
@@ -414,19 +377,6 @@ def run_experiment():
         total_recall += result.match_rate
         total_precision += precision
 
-        # Check if supplement helped
-        supplement_helped = False
-        supplement_recovered = []
-        if supplement_text and supplement_only_variants:
-            # Check which supplement-only variants are matches
-            supplement_recovered = [v for v in supplement_only_variants if v.lower() in [m.lower() for m in result.matches]]
-            if supplement_recovered:
-                supplement_helped = True
-                supplement_improvements.append({
-                    "pmcid": pmcid,
-                    "recovered": supplement_recovered
-                })
-
         per_article_results.append(
             {
                 "pmcid": pmcid,
@@ -438,19 +388,16 @@ def run_experiment():
                 "misses": result.misses,
                 "extras": result.extras,
                 "snp_expansions": snp_rsids,
-                "has_supplement": supplement_text is not None,
-                "supplement_recovered": supplement_recovered,
             }
         )
 
         status = (
             "✓" if result.match_rate == 1.0 else "○" if result.match_rate > 0 else "✗"
         )
-        supp_note = f" [+{len(supplement_recovered)} from supp]" if supplement_recovered else ""
-        snp_note = f" [+{len(snp_rsids)} SNP exp]" if snp_rsids else ""
+        snp_note = f" [+{len(snp_rsids)} from SNP notation]" if snp_rsids else ""
         print(
             f"  {status} {pmcid}: recall={result.match_rate:.0%} precision={precision:.0%} "
-            f"(found {len(result.matches)}/{len(true_variants)}, extras={len(result.extras)}){supp_note}{snp_note}"
+            f"(found {len(result.matches)}/{len(true_variants)}, extras={len(result.extras)}){snp_note}"
         )
 
         if result.misses:
@@ -464,10 +411,9 @@ def run_experiment():
     results["avg_precision"] = avg_precision
     results["articles_scored"] = n
     results["per_article_results"] = per_article_results
-    results["supplement_improvements"] = {
-        "articles_helped": len(supplement_improvements),
-        "total_variants_recovered": sum(len(s["recovered"]) for s in supplement_improvements),
-        "details": supplement_improvements
+    results["snp_expansions_summary"] = {
+        "articles_with_expansions": len(snp_expansions_used),
+        "details": snp_expansions_used,
     }
 
     print(f"\n{'=' * 60}")
@@ -480,18 +426,12 @@ def run_experiment():
     perfect_recalls = sum(1 for r in per_article_results if r["recall"] == 1.0)
     print(f"Perfect recall: {perfect_recalls}/{n} articles ({perfect_recalls / n:.0%})")
 
-    print(f"\nBioC Supplement Integration:")
-    print(f"  Articles with supplements: {bioc_available_count}")
-    print(f"  Articles helped by supplements: {len(supplement_improvements)}")
-    total_supp_variants = sum(len(s["recovered"]) for s in supplement_improvements)
-    print(f"  Total variants recovered from supplements: {total_supp_variants}")
+    print(f"\nSNP Notation Expansion:")
+    print(f"  Articles benefiting: {len(snp_expansions_used)}")
+    total_snp_rsids = sum(len(e["expanded_rsids"]) for e in snp_expansions_used)
+    print(f"  Total rsIDs from SNP notation: {total_snp_rsids}")
 
-    if supplement_improvements:
-        print(f"\n  Supplement recoveries:")
-        for s in supplement_improvements:
-            print(f"    {s['pmcid']}: {s['recovered']}")
-
-    output_path = Path(__file__).parent / "results_v5.json"
+    output_path = Path(__file__).parent / "results_v4.json"
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\nResults saved to {output_path}")

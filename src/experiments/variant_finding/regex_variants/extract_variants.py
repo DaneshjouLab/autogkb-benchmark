@@ -21,13 +21,8 @@ import json
 import re
 from pathlib import Path
 
-# Import from sibling modules
-import sys
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-
-from experiments.utils import get_methods_and_conclusions_text
-from benchmark_v2.variant_bench import load_variant_bench_data, score_variants
+from src.experiments.utils import get_methods_and_conclusions_text
+from src.benchmark_v2.variant_bench import load_variant_bench_data, score_variants
 
 
 # Regex patterns for different variant types

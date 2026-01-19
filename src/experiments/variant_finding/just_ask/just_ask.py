@@ -16,17 +16,10 @@ from loguru import logger
 
 load_dotenv()
 
-# Import from sibling modules
-import sys
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-
-from experiments.utils import get_methods_and_conclusions_text
+from src.experiments.utils import get_methods_and_conclusions_text
 
 # Path to benchmark annotations
-BENCHMARK_DIR = (
-    Path(__file__).parent.parent.parent.parent / "data" / "benchmark_annotations"
-)
+BENCHMARK_DIR = Path(__file__).resolve().parents[4] / "data" / "benchmark_annotations"
 PROMPTS_FILE = Path(__file__).parent / "prompts.yaml"
 RESULTS_DIR = Path(__file__).parent / "results"
 
