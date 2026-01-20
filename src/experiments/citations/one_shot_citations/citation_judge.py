@@ -4,8 +4,8 @@ Citation Judge - Evaluate quality of citations for pharmacogenomic associations.
 This script evaluates how well the found citations support the pharmacogenomic
 association claims. It uses an LLM as a judge to score each citation set.
 
-The evaluation is done in batches per PMCID, where all variants for a given
-PMCID are evaluated together for consistency.
+The evaluation is done in batches per PMCID, where all association sentences
+for a given PMCID are evaluated together for consistency.
 """
 
 from __future__ import annotations
@@ -57,47 +57,62 @@ Scoring guidelines:
 
 JUDGE_USER_PROMPT_TEMPLATE = """Evaluate the citation quality for the following pharmacogenomic associations from PMCID {pmcid}.
 
-For each variant, I will provide:
+For each numbered association, I will provide:
 1. The pharmacogenomic claim (association sentence)
 2. The citations found to support this claim
 
-Please score each variant's citation set on a 0-100 scale and provide a brief justification.
+Note: The same variant may appear multiple times with different association sentences. Please score EACH association separately based on how well the citations support that specific claim.
+
+Please score each association's citation set on a 0-100 scale and provide a brief justification.
 
 {associations_and_citations}
 
 OUTPUT FORMAT:
-For each variant, provide:
-VARIANT: [variant_id]
+For each association (using the same number from the input), provide:
+ASSOCIATION: [number]
 SCORE: [0-100]
 JUSTIFICATION: [1-2 sentence explanation of the score]
 
-Then a blank line before the next variant.
+Then a blank line before the next association.
 
 Example:
-VARIANT: rs9923231
+ASSOCIATION: 1
 SCORE: 85
 JUSTIFICATION: Citations provide strong statistical evidence (p-values) and effect sizes. Table reference is appropriate. Missing explicit sample size but overall well-supported.
 
-VARIANT: rs1057910
+ASSOCIATION: 2
 SCORE: 72
 JUSTIFICATION: Citations support the general association but lack specific statistical significance values. Effect direction is clear.
 """
 
 
-def load_citations(citations_path: Path) -> dict[str, dict[str, list[str]]]:
+def load_citations(citations_path: Path) -> tuple[dict[str, list[dict]], dict[str, Any]]:
     """Load citation data from JSON file.
 
     Args:
         citations_path: Path to citations JSON file
 
     Returns:
-        Dictionary with structure {pmcid: {variant: [citations]}}
+        Tuple of (citations_dict, metadata_dict)
+        - citations_dict: {pmcid: [{variant, sentence, explanation, citations}, ...]}
+        - metadata_dict: metadata about the citation generation (model, prompt, etc.)
     """
     logger.debug(f"Loading citations from {citations_path}")
     with open(citations_path) as f:
         data = json.load(f)
-    logger.info(f"Loaded citations for {len(data)} PMCID(s)")
-    return data
+
+    # Handle both old format (direct dict) and new format (with metadata)
+    if "citations" in data and "metadata" in data:
+        citations = data["citations"]
+        metadata = data["metadata"]
+        logger.info(f"Loaded citations for {len(citations)} PMCID(s) with metadata")
+    else:
+        # Old format - data is directly the citations dict
+        citations = data
+        metadata = {}
+        logger.info(f"Loaded citations for {len(citations)} PMCID(s) (legacy format without metadata)")
+
+    return citations, metadata
 
 
 def load_sentence_bench(sentence_bench_path: Path) -> dict[str, dict[str, dict]]:
@@ -141,24 +156,24 @@ def load_sentence_bench(sentence_bench_path: Path) -> dict[str, dict[str, dict]]
     return pmcid_data
 
 
-def parse_judge_output(output: str) -> dict[str, dict[str, Any]]:
-    """Parse judge LLM output into variant scores.
+def parse_judge_output(output: str) -> dict[int, dict[str, Any]]:
+    """Parse judge LLM output into association scores.
 
     Expected format:
-        VARIANT: rs9923231
+        ASSOCIATION: 1
         SCORE: 85
         JUSTIFICATION: Citations provide strong evidence...
 
-        VARIANT: rs1057910
+        ASSOCIATION: 2
         SCORE: 72
         JUSTIFICATION: Citations support the general association...
     """
-    result: dict[str, dict[str, Any]] = {}
+    result: dict[int, dict[str, Any]] = {}
 
-    # Split by VARIANT: markers
-    variant_blocks = re.split(r'\n\s*VARIANT:\s*', output)
+    # Split by ASSOCIATION: markers
+    assoc_blocks = re.split(r'\n\s*ASSOCIATION:\s*', output)
 
-    for block in variant_blocks:
+    for block in assoc_blocks:
         if not block.strip():
             continue
 
@@ -166,10 +181,17 @@ def parse_judge_output(output: str) -> dict[str, dict[str, Any]]:
         if not lines:
             continue
 
-        variant_id = lines[0].strip()
-        # Remove "VARIANT:" prefix if present (happens for first variant in output)
-        if variant_id.upper().startswith('VARIANT:'):
-            variant_id = variant_id[8:].strip()  # Remove "VARIANT:" and any whitespace
+        assoc_line = lines[0].strip()
+        # Remove "ASSOCIATION:" prefix if present (happens for first association in output)
+        if assoc_line.upper().startswith('ASSOCIATION:'):
+            assoc_line = assoc_line[12:].strip()
+
+        # Parse the association index
+        try:
+            assoc_idx = int(assoc_line)
+        except ValueError:
+            logger.warning(f"Could not parse association index: {assoc_line}")
+            continue
 
         score = None
         justification = ""
@@ -188,12 +210,12 @@ def parse_judge_output(output: str) -> dict[str, dict[str, Any]]:
                 # Continue multi-line justification
                 justification += " " + line
 
-        if variant_id and score is not None:
-            result[variant_id] = {
+        if score is not None:
+            result[assoc_idx] = {
                 "score": score,
                 "justification": justification.strip()
             }
-            logger.debug(f"Parsed score {score} for {variant_id}")
+            logger.debug(f"Parsed score {score} for association {assoc_idx}")
 
     if not result:
         logger.warning("Failed to parse any scores from judge output")
@@ -204,32 +226,32 @@ def parse_judge_output(output: str) -> dict[str, dict[str, Any]]:
 
 def evaluate_pmcid(
     pmcid: str,
-    citations: dict[str, list[str]],
-    sentence_data: dict[str, dict],
+    associations: list[dict],
     judge_model: str,
-) -> dict[str, dict[str, Any]]:
+) -> list[dict[str, Any]]:
     """Evaluate citations for a single PMCID.
 
     Args:
         pmcid: PMCID identifier
-        citations: Dictionary mapping variant -> list of citations
-        sentence_data: Dictionary mapping variant -> {sentence, explanation}
+        associations: List of {variant, sentence, explanation, citations} dicts
         judge_model: Model name for judge LLM
 
     Returns:
-        Dictionary mapping variant -> {score, justification}
+        List of {variant, sentence, score, justification} dicts (one per association)
     """
-    logger.info(f"Evaluating citations for PMCID: {pmcid}")
+    logger.info(f"Evaluating citations for PMCID: {pmcid} ({len(associations)} associations)")
 
-    # Format associations and citations for the prompt
+    # Format associations and citations for the prompt (1-indexed)
     associations_text_parts = []
-    for variant, cites in citations.items():
-        sent_info = sentence_data.get(variant, {})
-        sentence = sent_info.get("sentence", "")
+    for i, assoc in enumerate(associations):
+        variant = assoc["variant"]
+        sentence = assoc.get("sentence", "")
+        cites = assoc.get("citations", [])
 
-        cite_text = "\n   ".join([f"{i+1}. {c}" for i, c in enumerate(cites)])
+        cite_text = "\n   ".join([f"{j+1}. {c}" for j, c in enumerate(cites)])
 
         associations_text_parts.append(
+            f"ASSOCIATION {i+1}:\n"
             f"VARIANT: {variant}\n"
             f"CLAIM: {sentence}\n"
             f"CITATIONS:\n   {cite_text if cites else '(No citations found)'}"
@@ -245,31 +267,49 @@ def evaluate_pmcid(
 
     # Call judge LLM
     try:
-        logger.debug(f"Calling judge LLM for {len(citations)} variant(s)")
+        logger.debug(f"Calling judge LLM for {len(associations)} association(s)")
         output = call_llm(judge_model, JUDGE_SYSTEM_PROMPT, user_prompt)
     except Exception as e:
         logger.error(f"Error calling judge for {pmcid}: {e}")
-        # Return empty scores
-        return {variant: {"score": 0, "justification": "Error during evaluation"} for variant in citations}
-
-    # Parse scores
-    scores = parse_judge_output(output)
-
-    # Ensure all variants have scores
-    for variant in citations:
-        if variant not in scores:
-            scores[variant] = {
+        # Return empty scores for all associations
+        return [
+            {
+                "variant": assoc["variant"],
+                "sentence": assoc.get("sentence", ""),
                 "score": 0,
-                "justification": "No score provided by judge"
+                "justification": "Error during evaluation"
             }
-            logger.warning(f"Missing score for {variant}, defaulting to 0")
+            for assoc in associations
+        ]
 
-    return scores
+    # Parse scores (returns {assoc_idx: {score, justification}})
+    parsed_scores = parse_judge_output(output)
+
+    # Build result list matching associations
+    result: list[dict[str, Any]] = []
+    for i, assoc in enumerate(associations):
+        assoc_idx = i + 1  # 1-indexed
+        score_info = parsed_scores.get(assoc_idx, {
+            "score": 0,
+            "justification": "No score provided by judge"
+        })
+
+        if assoc_idx not in parsed_scores:
+            logger.warning(f"Missing score for association {assoc_idx}, defaulting to 0")
+
+        result.append({
+            "variant": assoc["variant"],
+            "sentence": assoc.get("sentence", ""),
+            "score": score_info["score"],
+            "justification": score_info["justification"]
+        })
+
+    return result
 
 
 def evaluate_citations(
     citations_path: Path,
-    sentence_bench_path: Path,
+    sentence_bench_path: Path,  # Kept for API compatibility but not used
     judge_model: str,
     output_path: Path,
 ) -> dict[str, Any]:
@@ -277,43 +317,39 @@ def evaluate_citations(
 
     Args:
         citations_path: Path to citations JSON file
-        sentence_bench_path: Path to sentence_bench.jsonl
+        sentence_bench_path: Path to sentence_bench.jsonl (kept for API compatibility, not used)
         judge_model: Model name for judge LLM
         output_path: Path to save evaluation results
 
     Returns:
         Dictionary with evaluation summary
     """
-    # Load data
-    citations_data = load_citations(citations_path)
-    sentence_data = load_sentence_bench(sentence_bench_path)
+    # Load citation data (now includes sentences directly)
+    citations_data, citation_metadata = load_citations(citations_path)
 
     # Evaluate each PMCID
-    all_results: dict[str, dict[str, dict[str, Any]]] = {}
+    all_results: dict[str, list[dict[str, Any]]] = {}
     pmcid_summaries = []
     all_scores = []
 
-    for pmcid, pmcid_citations in citations_data.items():
-        # Get sentence data for this PMCID
-        pmcid_sentences = sentence_data.get(pmcid, {})
-
-        if not pmcid_sentences:
-            logger.warning(f"No sentence data found for {pmcid}, skipping evaluation")
+    for pmcid, pmcid_associations in citations_data.items():
+        if not pmcid_associations:
+            logger.warning(f"No associations found for {pmcid}, skipping evaluation")
             continue
 
         # Evaluate this PMCID
-        scores = evaluate_pmcid(pmcid, pmcid_citations, pmcid_sentences, judge_model)
+        scores = evaluate_pmcid(pmcid, pmcid_associations, judge_model)
 
         all_results[pmcid] = scores
 
         # Calculate average for this PMCID
-        variant_scores = [s["score"] for s in scores.values()]
-        avg_score = sum(variant_scores) / len(variant_scores) if variant_scores else 0
-        all_scores.extend(variant_scores)
+        assoc_scores = [s["score"] for s in scores]
+        avg_score = sum(assoc_scores) / len(assoc_scores) if assoc_scores else 0
+        all_scores.extend(assoc_scores)
 
         pmcid_summaries.append({
             "pmcid": pmcid,
-            "num_variants": len(scores),
+            "num_associations": len(scores),
             "avg_score": avg_score,
             "scores": scores
         })
@@ -325,17 +361,19 @@ def evaluate_citations(
 
     # Create summary result
     result = {
+        "citation_metadata": citation_metadata,  # Include original citation generation metadata
+        "judge_model": judge_model,  # Add judge model used
         "overall_avg_score": overall_avg,
         "num_pmcids": len(pmcid_summaries),
-        "num_total_variants": len(all_scores),
+        "num_total_associations": len(all_scores),
         "per_pmcid": pmcid_summaries,
         "details": all_results
     }
 
     # Save results
     logger.debug(f"Saving evaluation results to {output_path}")
-    with open(output_path, "w") as f:
-        json.dump(result, f, indent=2)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)
     logger.success(f"Saved evaluation results to {output_path}")
 
     return result
@@ -383,7 +421,7 @@ def main():
     logger.info("Evaluation Summary")
     logger.info(f"Overall Average Score: {result['overall_avg_score']:.3f}")
     logger.info(f"Number of PMCIDs: {result['num_pmcids']}")
-    logger.info(f"Total Variants Evaluated: {result['num_total_variants']}")
+    logger.info(f"Total Associations Evaluated: {result['num_total_associations']}")
 
 
 if __name__ == "__main__":

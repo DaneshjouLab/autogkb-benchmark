@@ -77,7 +77,9 @@ def load_sentence_data(num_pmcids: int | None = None) -> dict[str, list[dict]]:
         num_pmcids: Optional limit on number of PMCIDs to load
 
     Returns:
-        Dictionary mapping pmcid -> list of {variant, sentences, explanation} dicts
+        Dictionary mapping pmcid -> list of {variant, sentence, explanation} dicts.
+        Each association sentence is a separate entry (variants with multiple
+        sentences will have multiple entries).
     """
     logger.debug(f"Loading sentence data from {SENTENCE_BENCH_PATH}")
     pmcid_data: dict[str, list[dict]] = {}
@@ -94,64 +96,74 @@ def load_sentence_data(num_pmcids: int | None = None) -> dict[str, list[dict]]:
 
             # Handle both formats: sentences can be list of strings or list of dicts
             sentences = rec.get("sentences", [])
-            if sentences and isinstance(sentences[0], dict):
-                # Format: [{"sentence": "...", "explanation": "..."}]
-                entry = {
-                    "variant": rec["variant"],
-                    "sentence": sentences[0]["sentence"],
-                    "explanation": sentences[0].get("explanation", "")
-                }
-            else:
-                # Format: ["sentence string"]
-                entry = {
-                    "variant": rec["variant"],
-                    "sentence": sentences[0] if sentences else "",
-                    "explanation": ""
-                }
 
-            pmcid_data[pmcid].append(entry)
+            # Create an entry for EACH sentence (not just the first one)
+            for sent in sentences:
+                if isinstance(sent, dict):
+                    # Format: {"sentence": "...", "explanation": "..."}
+                    entry = {
+                        "variant": rec["variant"],
+                        "sentence": sent["sentence"],
+                        "explanation": sent.get("explanation", "")
+                    }
+                else:
+                    # Format: plain string
+                    entry = {
+                        "variant": rec["variant"],
+                        "sentence": sent,
+                        "explanation": ""
+                    }
+                pmcid_data[pmcid].append(entry)
 
     # Limit to num_pmcids if specified
     if num_pmcids is not None:
         pmcid_data = dict(list(pmcid_data.items())[:num_pmcids])
 
-    logger.info(f"Loaded data for {len(pmcid_data)} PMCID(s)")
+    total_associations = sum(len(v) for v in pmcid_data.values())
+    logger.info(f"Loaded {total_associations} association(s) for {len(pmcid_data)} PMCID(s)")
     return pmcid_data
 
 
-def parse_citation_output(output: str) -> dict[str, list[str]]:
-    """Parse LLM output into a dict mapping variant -> list of citations.
+def parse_citation_output(output: str) -> dict[int, list[str]]:
+    """Parse LLM output into a dict mapping association index -> list of citations.
 
     Expected format:
-        VARIANT: rs9923231
+        ASSOCIATION: 1
         CITATIONS:
         1. First citation sentence
         2. Second citation sentence
         3. Third citation sentence
 
-        VARIANT: rs1057910
+        ASSOCIATION: 2
         CITATIONS:
         1. First citation sentence
         2. Second citation sentence
     """
-    result: dict[str, list[str]] = {}
+    result: dict[int, list[str]] = {}
 
-    # Split by VARIANT: markers
-    variant_blocks = re.split(r'\n\s*VARIANT:\s*', output)
+    # Split by ASSOCIATION: markers
+    assoc_blocks = re.split(r'\n\s*ASSOCIATION:\s*', output)
 
-    for block in variant_blocks:
+    for block in assoc_blocks:
         if not block.strip():
             continue
 
-        # First line should be variant ID, rest is citations
+        # First line should be association index, rest is citations
         lines = block.strip().split('\n')
         if not lines:
             continue
 
-        variant_id = lines[0].strip()
-        # Remove "VARIANT:" prefix if present (happens for first variant in output)
-        if variant_id.upper().startswith('VARIANT:'):
-            variant_id = variant_id[8:].strip()  # Remove "VARIANT:" and any whitespace
+        assoc_line = lines[0].strip()
+        # Remove "ASSOCIATION:" prefix if present (happens for first association in output)
+        if assoc_line.upper().startswith('ASSOCIATION:'):
+            assoc_line = assoc_line[12:].strip()
+
+        # Parse the association index
+        try:
+            assoc_idx = int(assoc_line)
+        except ValueError:
+            logger.warning(f"Could not parse association index: {assoc_line}")
+            continue
 
         # Find CITATIONS: section
         citations = []
@@ -166,12 +178,16 @@ def parse_citation_output(output: str) -> dict[str, list[str]]:
             if in_citations and line:
                 # Remove leading numbers like "1. " or "1) "
                 citation = re.sub(r'^\d+[\.)]\s*', '', line)
+                # Clean up common artifacts from LLM output
+                citation = citation.strip().strip('"').strip("'").strip('\\')
+                # Remove escaped quotes that may appear at start/end
+                citation = re.sub(r'^[\\\"\']+|[\\\"\']+$', '', citation)
                 if citation:
                     citations.append(citation)
 
-        if variant_id and citations:
-            result[variant_id] = citations
-            logger.debug(f"Parsed {len(citations)} citation(s) for {variant_id}")
+        if citations:
+            result[assoc_idx] = citations
+            logger.debug(f"Parsed {len(citations)} citation(s) for association {assoc_idx}")
 
     if not result:
         logger.warning("Failed to parse any citations from output")
@@ -186,7 +202,7 @@ def process_pmcid(
     model: str,
     prompt_cfg: dict,
     prompt_name: str,
-) -> dict[str, dict[str, list[str]]]:
+) -> dict[str, list[dict]]:
     """Process a single PMCID: find citations for all associations.
 
     Args:
@@ -197,7 +213,8 @@ def process_pmcid(
         prompt_name: Name of the prompt being used
 
     Returns:
-        Dictionary with structure {pmcid: {variant: [citations]}}
+        Dictionary with structure {pmcid: [{variant, sentence, explanation, citations}, ...]}
+        Each association sentence gets its own entry with corresponding citations.
     """
     logger.info(
         f"Processing PMCID: {pmcid} with {len(associations)} association(s)"
@@ -210,18 +227,18 @@ def process_pmcid(
             f"No article text found for {pmcid}. Citations may be empty."
         )
 
-    # Format associations for the prompt
+    # Format associations for the prompt with numbered indices (1-indexed)
     if prompt_name == "v2":
         # Include explanations
-        associations_text = "\n".join([
-            f"- Variant: {a['variant']}\n  Sentence: {a['sentence']}\n  Explanation: {a['explanation']}"
-            for a in associations
+        associations_text = "\n\n".join([
+            f"ASSOCIATION {i+1}:\n- Variant: {a['variant']}\n- Sentence: {a['sentence']}\n- Explanation: {a['explanation']}"
+            for i, a in enumerate(associations)
         ])
     else:
         # Just sentences
-        associations_text = "\n".join([
-            f"- Variant: {a['variant']}\n  Sentence: {a['sentence']}"
-            for a in associations
+        associations_text = "\n\n".join([
+            f"ASSOCIATION {i+1}:\n- Variant: {a['variant']}\n- Sentence: {a['sentence']}"
+            for i, a in enumerate(associations)
         ])
 
     # Create the prompt
@@ -239,26 +256,35 @@ def process_pmcid(
         output = ""
         logger.error(f"Error generating citations for {pmcid}: {e}")
 
-    # Parse the output
-    variant_citations = parse_citation_output(output)
+    # Parse the output (returns {association_idx: [citations]})
+    assoc_citations = parse_citation_output(output)
 
-    # Build result structure
-    result: dict[str, dict[str, list[str]]] = {pmcid: {}}
+    # Build result structure - list of associations with their citations
+    result_associations: list[dict] = []
 
-    # Ensure all requested variants are in the result
-    for assoc in associations:
-        variant = assoc["variant"]
-        if variant in variant_citations:
-            result[pmcid][variant] = variant_citations[variant]
+    for i, assoc in enumerate(associations):
+        # Association indices in output are 1-indexed
+        assoc_idx = i + 1
+        citations = assoc_citations.get(assoc_idx, [])
+
+        result_entry = {
+            "variant": assoc["variant"],
+            "sentence": assoc["sentence"],
+            "explanation": assoc.get("explanation", ""),
+            "citations": citations,
+        }
+        result_associations.append(result_entry)
+
+        if citations:
             logger.info(
-                f"✓ {variant}: {len(variant_citations[variant])} citation(s) found"
+                f"✓ Association {assoc_idx} ({assoc['variant']}): {len(citations)} citation(s) found"
             )
         else:
-            # Variant not found in parsed output
-            result[pmcid][variant] = []
-            logger.warning(f"✗ {variant}: no citations found in output")
+            logger.warning(
+                f"✗ Association {assoc_idx} ({assoc['variant']}): no citations found"
+            )
 
-    return result
+    return {pmcid: result_associations}
 
 
 def main():
@@ -312,7 +338,8 @@ def main():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     # Collect results from all PMCIDs
-    all_results: dict[str, dict[str, list[str]]] = {}
+    # Structure: {pmcid: [{variant, sentence, explanation, citations}, ...]}
+    all_results: dict[str, list[dict]] = {}
 
     # Process each PMCID
     for pmcid, associations in pmcid_data.items():
@@ -331,10 +358,29 @@ def main():
     safe_model = args.model.replace("/", "_").replace(":", "_")
     out_path = OUTPUTS_DIR / f"citations_{safe_model}_{args.prompt}_{timestamp}.json"
 
+    # Count total associations
+    total_associations = sum(len(assocs) for assocs in all_results.values())
+
+    # Add metadata to output
+    output_data = {
+        "metadata": {
+            "model": args.model,
+            "prompt_name": args.prompt,
+            "prompt_description": prompt_cfg.get("name", ""),
+            "timestamp": timestamp,
+            "num_pmcids": len(all_results),
+            "num_associations": total_associations,
+        },
+        "citations": all_results,
+    }
+
     logger.debug(f"Saving citations to {out_path}")
-    with open(out_path, "w") as f:
-        json.dump(all_results, f, indent=2)
-    logger.success(f"Saved citations for {len(all_results)} PMCID(s) to {out_path}")
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(output_data, f, indent=2, ensure_ascii=False)
+    logger.success(
+        f"Saved citations for {total_associations} association(s) "
+        f"across {len(all_results)} PMCID(s) to {out_path}"
+    )
 
     # Evaluate citations if requested
     if not args.no_eval:
@@ -365,7 +411,7 @@ def main():
             for pmcid_result in eval_result['per_pmcid']:
                 logger.info(
                     f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} "
-                    f"({pmcid_result['num_variants']} variants)"
+                    f"({pmcid_result['num_associations']} associations)"
                 )
 
         except ImportError:
