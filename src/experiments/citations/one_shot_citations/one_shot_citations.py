@@ -104,14 +104,14 @@ def load_sentence_data(num_pmcids: int | None = None) -> dict[str, list[dict]]:
                     entry = {
                         "variant": rec["variant"],
                         "sentence": sent["sentence"],
-                        "explanation": sent.get("explanation", "")
+                        "explanation": sent.get("explanation", ""),
                     }
                 else:
                     # Format: plain string
                     entry = {
                         "variant": rec["variant"],
                         "sentence": sent,
-                        "explanation": ""
+                        "explanation": "",
                     }
                 pmcid_data[pmcid].append(entry)
 
@@ -120,7 +120,9 @@ def load_sentence_data(num_pmcids: int | None = None) -> dict[str, list[dict]]:
         pmcid_data = dict(list(pmcid_data.items())[:num_pmcids])
 
     total_associations = sum(len(v) for v in pmcid_data.values())
-    logger.info(f"Loaded {total_associations} association(s) for {len(pmcid_data)} PMCID(s)")
+    logger.info(
+        f"Loaded {total_associations} association(s) for {len(pmcid_data)} PMCID(s)"
+    )
     return pmcid_data
 
 
@@ -142,20 +144,20 @@ def parse_citation_output(output: str) -> dict[int, list[str]]:
     result: dict[int, list[str]] = {}
 
     # Split by ASSOCIATION: markers
-    assoc_blocks = re.split(r'\n\s*ASSOCIATION:\s*', output)
+    assoc_blocks = re.split(r"\n\s*ASSOCIATION:\s*", output)
 
     for block in assoc_blocks:
         if not block.strip():
             continue
 
         # First line should be association index, rest is citations
-        lines = block.strip().split('\n')
+        lines = block.strip().split("\n")
         if not lines:
             continue
 
         assoc_line = lines[0].strip()
         # Remove "ASSOCIATION:" prefix if present (happens for first association in output)
-        if assoc_line.upper().startswith('ASSOCIATION:'):
+        if assoc_line.upper().startswith("ASSOCIATION:"):
             assoc_line = assoc_line[12:].strip()
 
         # Parse the association index
@@ -171,23 +173,25 @@ def parse_citation_output(output: str) -> dict[int, list[str]]:
 
         for line in lines[1:]:
             line = line.strip()
-            if line.upper().startswith('CITATIONS:'):
+            if line.upper().startswith("CITATIONS:"):
                 in_citations = True
                 continue
 
             if in_citations and line:
                 # Remove leading numbers like "1. " or "1) "
-                citation = re.sub(r'^\d+[\.)]\s*', '', line)
+                citation = re.sub(r"^\d+[\.)]\s*", "", line)
                 # Clean up common artifacts from LLM output
-                citation = citation.strip().strip('"').strip("'").strip('\\')
+                citation = citation.strip().strip('"').strip("'").strip("\\")
                 # Remove escaped quotes that may appear at start/end
-                citation = re.sub(r'^[\\\"\']+|[\\\"\']+$', '', citation)
+                citation = re.sub(r"^[\\\"\']+|[\\\"\']+$", "", citation)
                 if citation:
                     citations.append(citation)
 
         if citations:
             result[assoc_idx] = citations
-            logger.debug(f"Parsed {len(citations)} citation(s) for association {assoc_idx}")
+            logger.debug(
+                f"Parsed {len(citations)} citation(s) for association {assoc_idx}"
+            )
 
     if not result:
         logger.warning("Failed to parse any citations from output")
@@ -216,35 +220,34 @@ def process_pmcid(
         Dictionary with structure {pmcid: [{variant, sentence, explanation, citations}, ...]}
         Each association sentence gets its own entry with corresponding citations.
     """
-    logger.info(
-        f"Processing PMCID: {pmcid} with {len(associations)} association(s)"
-    )
+    logger.info(f"Processing PMCID: {pmcid} with {len(associations)} association(s)")
 
     # Get article text
     article_text = get_markdown_text(pmcid)
     if not article_text:
-        logger.warning(
-            f"No article text found for {pmcid}. Citations may be empty."
-        )
+        logger.warning(f"No article text found for {pmcid}. Citations may be empty.")
 
     # Format associations for the prompt with numbered indices (1-indexed)
     if prompt_name == "v2":
         # Include explanations
-        associations_text = "\n\n".join([
-            f"ASSOCIATION {i+1}:\n- Variant: {a['variant']}\n- Sentence: {a['sentence']}\n- Explanation: {a['explanation']}"
-            for i, a in enumerate(associations)
-        ])
+        associations_text = "\n\n".join(
+            [
+                f"ASSOCIATION {i + 1}:\n- Variant: {a['variant']}\n- Sentence: {a['sentence']}\n- Explanation: {a['explanation']}"
+                for i, a in enumerate(associations)
+            ]
+        )
     else:
         # Just sentences
-        associations_text = "\n\n".join([
-            f"ASSOCIATION {i+1}:\n- Variant: {a['variant']}\n- Sentence: {a['sentence']}"
-            for i, a in enumerate(associations)
-        ])
+        associations_text = "\n\n".join(
+            [
+                f"ASSOCIATION {i + 1}:\n- Variant: {a['variant']}\n- Sentence: {a['sentence']}"
+                for i, a in enumerate(associations)
+            ]
+        )
 
     # Create the prompt
     user_prompt = prompt_cfg["user"].format(
-        associations=associations_text,
-        article_text=article_text
+        associations=associations_text, article_text=article_text
     )
     system_prompt = prompt_cfg["system"]
 
@@ -387,7 +390,7 @@ def main():
         logger.info("Running citation quality evaluation")
         try:
             from src.experiments.citations.one_shot_citations.citation_judge import (
-                evaluate_citations
+                evaluate_citations,
             )
 
             RESULTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -405,10 +408,12 @@ def main():
             )
 
             logger.info("Evaluation Summary")
-            logger.info(f"Overall Average Score: {eval_result['overall_avg_score']:.3f}")
+            logger.info(
+                f"Overall Average Score: {eval_result['overall_avg_score']:.3f}"
+            )
             logger.info(f"Number of PMCIDs: {len(eval_result['per_pmcid'])}")
             logger.info("Per-PMCID Scores:")
-            for pmcid_result in eval_result['per_pmcid']:
+            for pmcid_result in eval_result["per_pmcid"]:
                 logger.info(
                     f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} "
                     f"({pmcid_result['num_associations']} associations)"

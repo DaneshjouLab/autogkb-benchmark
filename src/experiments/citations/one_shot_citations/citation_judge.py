@@ -86,7 +86,9 @@ JUSTIFICATION: Citations support the general association but lack specific stati
 """
 
 
-def load_citations(citations_path: Path) -> tuple[dict[str, list[dict]], dict[str, Any]]:
+def load_citations(
+    citations_path: Path,
+) -> tuple[dict[str, list[dict]], dict[str, Any]]:
     """Load citation data from JSON file.
 
     Args:
@@ -110,7 +112,9 @@ def load_citations(citations_path: Path) -> tuple[dict[str, list[dict]], dict[st
         # Old format - data is directly the citations dict
         citations = data
         metadata = {}
-        logger.info(f"Loaded citations for {len(citations)} PMCID(s) (legacy format without metadata)")
+        logger.info(
+            f"Loaded citations for {len(citations)} PMCID(s) (legacy format without metadata)"
+        )
 
     return citations, metadata
 
@@ -149,7 +153,7 @@ def load_sentence_bench(sentence_bench_path: Path) -> dict[str, dict[str, dict]]
 
             pmcid_data[pmcid][variant] = {
                 "sentence": sentence,
-                "explanation": explanation
+                "explanation": explanation,
             }
 
     logger.info(f"Loaded sentence data for {len(pmcid_data)} PMCID(s)")
@@ -171,19 +175,19 @@ def parse_judge_output(output: str) -> dict[int, dict[str, Any]]:
     result: dict[int, dict[str, Any]] = {}
 
     # Split by ASSOCIATION: markers
-    assoc_blocks = re.split(r'\n\s*ASSOCIATION:\s*', output)
+    assoc_blocks = re.split(r"\n\s*ASSOCIATION:\s*", output)
 
     for block in assoc_blocks:
         if not block.strip():
             continue
 
-        lines = block.strip().split('\n')
+        lines = block.strip().split("\n")
         if not lines:
             continue
 
         assoc_line = lines[0].strip()
         # Remove "ASSOCIATION:" prefix if present (happens for first association in output)
-        if assoc_line.upper().startswith('ASSOCIATION:'):
+        if assoc_line.upper().startswith("ASSOCIATION:"):
             assoc_line = assoc_line[12:].strip()
 
         # Parse the association index
@@ -198,23 +202,20 @@ def parse_judge_output(output: str) -> dict[int, dict[str, Any]]:
 
         for line in lines[1:]:
             line = line.strip()
-            if line.upper().startswith('SCORE:'):
-                score_text = line.split(':', 1)[1].strip()
+            if line.upper().startswith("SCORE:"):
+                score_text = line.split(":", 1)[1].strip()
                 try:
                     score = float(score_text)
                 except ValueError:
                     logger.warning(f"Could not parse score: {score_text}")
-            elif line.upper().startswith('JUSTIFICATION:'):
-                justification = line.split(':', 1)[1].strip()
+            elif line.upper().startswith("JUSTIFICATION:"):
+                justification = line.split(":", 1)[1].strip()
             elif justification:
                 # Continue multi-line justification
                 justification += " " + line
 
         if score is not None:
-            result[assoc_idx] = {
-                "score": score,
-                "justification": justification.strip()
-            }
+            result[assoc_idx] = {"score": score, "justification": justification.strip()}
             logger.debug(f"Parsed score {score} for association {assoc_idx}")
 
     if not result:
@@ -239,7 +240,9 @@ def evaluate_pmcid(
     Returns:
         List of {variant, sentence, score, justification} dicts (one per association)
     """
-    logger.info(f"Evaluating citations for PMCID: {pmcid} ({len(associations)} associations)")
+    logger.info(
+        f"Evaluating citations for PMCID: {pmcid} ({len(associations)} associations)"
+    )
 
     # Format associations and citations for the prompt (1-indexed)
     associations_text_parts = []
@@ -248,10 +251,10 @@ def evaluate_pmcid(
         sentence = assoc.get("sentence", "")
         cites = assoc.get("citations", [])
 
-        cite_text = "\n   ".join([f"{j+1}. {c}" for j, c in enumerate(cites)])
+        cite_text = "\n   ".join([f"{j + 1}. {c}" for j, c in enumerate(cites)])
 
         associations_text_parts.append(
-            f"ASSOCIATION {i+1}:\n"
+            f"ASSOCIATION {i + 1}:\n"
             f"VARIANT: {variant}\n"
             f"CLAIM: {sentence}\n"
             f"CITATIONS:\n   {cite_text if cites else '(No citations found)'}"
@@ -261,8 +264,7 @@ def evaluate_pmcid(
 
     # Create prompt
     user_prompt = JUDGE_USER_PROMPT_TEMPLATE.format(
-        pmcid=pmcid,
-        associations_and_citations=associations_and_citations
+        pmcid=pmcid, associations_and_citations=associations_and_citations
     )
 
     # Call judge LLM
@@ -277,7 +279,7 @@ def evaluate_pmcid(
                 "variant": assoc["variant"],
                 "sentence": assoc.get("sentence", ""),
                 "score": 0,
-                "justification": "Error during evaluation"
+                "justification": "Error during evaluation",
             }
             for assoc in associations
         ]
@@ -289,20 +291,23 @@ def evaluate_pmcid(
     result: list[dict[str, Any]] = []
     for i, assoc in enumerate(associations):
         assoc_idx = i + 1  # 1-indexed
-        score_info = parsed_scores.get(assoc_idx, {
-            "score": 0,
-            "justification": "No score provided by judge"
-        })
+        score_info = parsed_scores.get(
+            assoc_idx, {"score": 0, "justification": "No score provided by judge"}
+        )
 
         if assoc_idx not in parsed_scores:
-            logger.warning(f"Missing score for association {assoc_idx}, defaulting to 0")
+            logger.warning(
+                f"Missing score for association {assoc_idx}, defaulting to 0"
+            )
 
-        result.append({
-            "variant": assoc["variant"],
-            "sentence": assoc.get("sentence", ""),
-            "score": score_info["score"],
-            "justification": score_info["justification"]
-        })
+        result.append(
+            {
+                "variant": assoc["variant"],
+                "sentence": assoc.get("sentence", ""),
+                "score": score_info["score"],
+                "justification": score_info["justification"],
+            }
+        )
 
     return result
 
@@ -347,12 +352,14 @@ def evaluate_citations(
         avg_score = sum(assoc_scores) / len(assoc_scores) if assoc_scores else 0
         all_scores.extend(assoc_scores)
 
-        pmcid_summaries.append({
-            "pmcid": pmcid,
-            "num_associations": len(scores),
-            "avg_score": avg_score,
-            "scores": scores
-        })
+        pmcid_summaries.append(
+            {
+                "pmcid": pmcid,
+                "num_associations": len(scores),
+                "avg_score": avg_score,
+                "scores": scores,
+            }
+        )
 
         logger.info(f"✓ {pmcid}: avg score = {avg_score:.2f}")
 
@@ -367,7 +374,7 @@ def evaluate_citations(
         "num_pmcids": len(pmcid_summaries),
         "num_total_associations": len(all_scores),
         "per_pmcid": pmcid_summaries,
-        "details": all_results
+        "details": all_results,
     }
 
     # Save results
