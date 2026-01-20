@@ -35,21 +35,20 @@ class VariantSentenceScore:
     best_similarity: float
     best_gt: str
     best_gen: str
+    critique: str
 
 
 @dataclass
 class SentenceBenchResult:
-    """Overall result for sentence benchmarking."""
+    """Overall result for sentence benchmarking across multiple PMCIDs."""
 
     timestamp: str
-    pmcid: str
     method: str
     judge_model: str | None
     source_file: str
-    avg_score: float
-    num_variants: int
-    per_variant: list[dict]
-    generated_extras: list[str]
+    overall_avg_score: float
+    num_pmcids: int
+    per_pmcid: list[dict]  # Each dict contains: pmcid, avg_score, num_variants, per_variant, generated_extras
 
 
 def load_sentence_bench_data() -> dict[str, dict[str, list[str]]]:
@@ -144,9 +143,12 @@ Evaluate whether the generated sentences capture the same pharmacogenomic associ
 Provide a similarity score from 0 to 1:
 - 1.0: Perfect match - all key associations are captured correctly
 - 0.7-0.9: Most associations captured, minor differences in specificity or wording
-- 0.4-0.6: Some associations captured but missing key details or has inaccuracies
-- 0.1-0.3: Associations are mostly incorrect or contradictory
+- 0.4-0.6: Some associations captured but missing key details or has inaccuracies.
+- 0.1-0.3: Associations are mostly incorrect or contradictory. Opposite/incorrect associations should be here.
 - 0.0: Completely incorrect or contradictory associations
+
+Don't be generous with your scoring. Missing drug, phenotype, or key genotype information is a major issue
+that should lower your score. You can also return a score that is specific to 2 decimal places.
 
 Provide your response in this exact JSON format:
 {{"score": <float between 0 and 1>, "explanation": "<brief explanation of your scoring>"}}"""
@@ -190,7 +192,7 @@ def score_variant_sentences(
         VariantSentenceScore with detailed metrics
     """
     # Get LLM judge score
-    llm_score, _explanation = llm_judge_score(ground_truth, generated, variant, model)
+    llm_score, critique = llm_judge_score(ground_truth, generated, variant, model)
 
     # Calculate best Jaccard similarity
     best_similarity = 0.0
@@ -219,26 +221,48 @@ def score_variant_sentences(
         best_similarity=best_similarity,
         best_gt=best_gt,
         best_gen=best_gen,
+        critique=critique,
     )
+
+
+def extract_sentences_from_generated(generated_data: list[str] | list[dict[str, str]]) -> list[str]:
+    """Extract sentences from generated data, handling both old and new formats.
+
+    Args:
+        generated_data: Either list of strings (old format) or list of dicts with 'sentence' key (new format)
+
+    Returns:
+        List of sentence strings
+    """
+    if not generated_data:
+        return []
+
+    # Check if first element is a dict (new format with explanations)
+    if isinstance(generated_data[0], dict):
+        return [item.get("sentence", "") for item in generated_data]
+    else:
+        # Old format: list of strings
+        return generated_data
 
 
 def score_generated_sentences(
     generated_sentences_path: str | Path,
-    pmcid: str | None = None,
     method: str = "llm",
     model: str = "claude-sonnet-4-20250514",
 ) -> SentenceBenchResult:
     """Score generated sentences from a JSON file against ground truth.
 
+    Processes all PMCIDs found in the generated sentences file.
+
     Args:
         generated_sentences_path: Path to JSON file with generated sentences.
             Expected format: {pmcid: {variant: [sentences], ...}, ...}
-        pmcid: Optional PMCID to score. If None, scores the first PMCID in file.
+            OR {pmcid: {variant: [{"sentence": ..., "explanation": ...}], ...}, ...}
         method: Method name for this evaluation
         model: LLM model to use for judging
 
     Returns:
-        SentenceBenchResult with detailed scoring
+        SentenceBenchResult with detailed scoring for all PMCIDs
     """
     generated_sentences_path = Path(generated_sentences_path)
 
@@ -246,81 +270,104 @@ def score_generated_sentences(
     with open(generated_sentences_path) as f:
         generated_data = json.load(f)
 
-    # Get PMCID to evaluate
-    if pmcid is None:
-        # Get first PMCID in file
-        pmcid = next(k for k in generated_data.keys() if k.startswith("PMC"))
-
-    if pmcid not in generated_data:
-        raise ValueError(f"PMCID {pmcid} not found in generated sentences file")
-
     # Load ground truth data
     ground_truth_data = load_sentence_bench_data()
 
-    if pmcid not in ground_truth_data:
-        raise ValueError(f"PMCID {pmcid} not found in ground truth data")
+    # Get all PMCIDs from generated data
+    pmcids = [k for k in generated_data.keys() if k.startswith("PMC")]
 
-    # Get sentences for this PMCID
-    generated_variants = generated_data[pmcid]
-    ground_truth_variants = ground_truth_data[pmcid]
+    if not pmcids:
+        raise ValueError("No PMCIDs found in generated sentences file")
 
-    # Score each variant
-    per_variant_scores = []
-    total_score = 0.0
-    num_variants = 0
+    # Process each PMCID
+    per_pmcid_results = []
+    total_score_across_pmcids = 0.0
+    num_pmcids_scored = 0
 
-    for variant, gt_sentences in ground_truth_variants.items():
-        gen_sentences = generated_variants.get(variant, [])
+    for pmcid in pmcids:
+        if pmcid not in ground_truth_data:
+            print(f"Warning: PMCID {pmcid} not found in ground truth data, skipping")
+            continue
 
-        variant_score = score_variant_sentences(variant, gt_sentences, gen_sentences, model)
+        # Get sentences for this PMCID
+        generated_variants = generated_data[pmcid]
+        ground_truth_variants = ground_truth_data[pmcid]
 
-        per_variant_scores.append(
+        # Score each variant for this PMCID
+        per_variant_scores = []
+        total_score = 0.0
+        num_variants = 0
+
+        for variant, gt_sentences in ground_truth_variants.items():
+            gen_data = generated_variants.get(variant, [])
+            # Extract sentences only (ignore explanations for evaluation)
+            gen_sentences = extract_sentences_from_generated(gen_data)
+
+            variant_score = score_variant_sentences(variant, gt_sentences, gen_sentences, model)
+
+            per_variant_scores.append(
+                {
+                    "variant": variant,
+                    "ground_truth": variant_score.ground_truth,
+                    "generated": variant_score.generated,
+                    "score": variant_score.score,
+                    "best_similarity": variant_score.best_similarity,
+                    "best_gt": variant_score.best_gt,
+                    "best_gen": variant_score.best_gen,
+                    "critique": variant_score.critique,
+                }
+            )
+
+            total_score += variant_score.score
+            num_variants += 1
+
+        # Calculate average score for this PMCID
+        pmcid_avg_score = total_score / num_variants if num_variants > 0 else 0.0
+
+        # Find extra variants in generated that aren't in ground truth
+        generated_extras = [v for v in generated_variants.keys() if v not in ground_truth_variants]
+
+        # Add to per_pmcid results
+        per_pmcid_results.append(
             {
-                "variant": variant,
-                "ground_truth": variant_score.ground_truth,
-                "generated": variant_score.generated,
-                "score": variant_score.score,
-                "best_similarity": variant_score.best_similarity,
-                "best_gt": variant_score.best_gt,
-                "best_gen": variant_score.best_gen,
+                "pmcid": pmcid,
+                "avg_score": round(pmcid_avg_score, 3),
+                "num_variants": num_variants,
+                "per_variant": per_variant_scores,
+                "generated_extras": generated_extras,
             }
         )
 
-        total_score += variant_score.score
-        num_variants += 1
+        total_score_across_pmcids += pmcid_avg_score
+        num_pmcids_scored += 1
 
-    # Calculate average score
-    avg_score = total_score / num_variants if num_variants > 0 else 0.0
-
-    # Find extra variants in generated that aren't in ground truth
-    generated_extras = [v for v in generated_variants.keys() if v not in ground_truth_variants]
+    # Calculate overall average score across all PMCIDs
+    overall_avg_score = total_score_across_pmcids / num_pmcids_scored if num_pmcids_scored > 0 else 0.0
 
     # Create result
     return SentenceBenchResult(
         timestamp=datetime.now().isoformat(),
-        pmcid=pmcid,
         method=method,
         judge_model=model,
         source_file=str(generated_sentences_path),
-        avg_score=round(avg_score, 3),
-        num_variants=num_variants,
-        per_variant=per_variant_scores,
-        generated_extras=generated_extras,
+        overall_avg_score=round(overall_avg_score, 3),
+        num_pmcids=num_pmcids_scored,
+        per_pmcid=per_pmcid_results,
     )
 
 
 def score_and_save(
     generated_sentences_path: str | Path,
-    pmcid: str | None = None,
     method: str = "llm",
     model: str = "claude-sonnet-4-20250514",
     output_path: str | Path | None = None,
 ) -> SentenceBenchResult:
     """Score generated sentences and save results to a JSON file.
 
+    Processes all PMCIDs found in the generated sentences file.
+
     Args:
         generated_sentences_path: Path to JSON file with generated sentences
-        pmcid: Optional PMCID to score
         method: Method name for this evaluation
         model: LLM model to use for judging
         output_path: Path to save results. If None, auto-generates name.
@@ -328,7 +375,7 @@ def score_and_save(
     Returns:
         SentenceBenchResult
     """
-    result = score_generated_sentences(generated_sentences_path, pmcid, method, model)
+    result = score_generated_sentences(generated_sentences_path, method, model)
 
     # Generate output path if not provided
     if output_path is None:
@@ -339,7 +386,7 @@ def score_and_save(
             / "data"
             / "benchmark_v2"
             / "sentence_bench_results"
-            / f"sentence_scores_{result.pmcid}_{method}_{model_safe}_{timestamp}.json"
+            / f"sentence_scores_{method}_{model_safe}_{timestamp}.json"
         )
     else:
         output_path = Path(output_path)
@@ -350,22 +397,24 @@ def score_and_save(
     # Save results
     result_dict = {
         "timestamp": result.timestamp,
-        "pmcid": result.pmcid,
         "method": result.method,
         "judge_model": result.judge_model,
         "source_file": result.source_file,
-        "avg_score": result.avg_score,
-        "num_variants": result.num_variants,
-        "per_variant": result.per_variant,
-        "generated_extras": result.generated_extras,
+        "overall_avg_score": result.overall_avg_score,
+        "num_pmcids": result.num_pmcids,
+        "per_pmcid": result.per_pmcid,
     }
 
     with open(output_path, "w") as f:
         json.dump(result_dict, f, indent=2)
 
     print(f"Results saved to {output_path}")
-    print(f"Average score: {result.avg_score:.3f}")
-    print(f"Number of variants: {result.num_variants}")
+    print(f"\nOverall Statistics:")
+    print(f"  Overall Average Score: {result.overall_avg_score:.3f}")
+    print(f"  Number of PMCIDs: {result.num_pmcids}")
+    print(f"\nPer-PMCID Scores:")
+    for pmcid_result in result.per_pmcid:
+        print(f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} ({pmcid_result['num_variants']} variants)")
 
     return result
 
@@ -385,22 +434,21 @@ def main():
 
     print(f"Scoring sentences from: {generated_file}")
 
-    # Score for PMC5508045
+    # Score all PMCIDs in file
     result = score_and_save(
         generated_sentences_path=generated_file,
-        pmcid="PMC5508045",
         method="llm",
         model="gpt-4o-mini",
     )
 
-    # Print detailed results
+    # Print detailed results for each PMCID
     print("\n=== Detailed Results ===")
-    for variant_result in result.per_variant:
-        print(f"\nVariant: {variant_result['variant']}")
-        print(f"  Score: {variant_result['score']:.3f}")
-        print(f"  Jaccard Similarity: {variant_result['best_similarity']:.3f}")
-        print(f"  Ground Truth: {variant_result['best_gt'][:100]}...")
-        print(f"  Generated: {variant_result['best_gen'][:100]}...")
+    for pmcid_result in result.per_pmcid:
+        print(f"\n{pmcid_result['pmcid']} (Avg: {pmcid_result['avg_score']:.3f})")
+        for variant_result in pmcid_result['per_variant']:
+            print(f"  {variant_result['variant']}: {variant_result['score']:.3f}")
+            print(f"    GT: {variant_result['best_gt'][:80]}...")
+            print(f"    Gen: {variant_result['best_gen'][:80]}...")
 
 
 if __name__ == "__main__":
