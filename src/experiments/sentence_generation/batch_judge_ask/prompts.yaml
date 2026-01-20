@@ -183,5 +183,7 @@ v5:
     - **SEARCH THOROUGHLY for patient population/condition information - this is often found in the Methods, Results, or Patient Demographics sections**
     - Always follow the exact format with VARIANT, SENTENCE, and EXPLANATION labels
 
+    If the variant is mentioned in the article but not studied by the paper itself (i.e. mentioned as a reference), simply state "<Variant> mentioned in article but not studied by paper."
+
     Article text:
     {article_text}
