@@ -1,5 +1,6 @@
 # Prompts for raw sentence generation experiment
 # Each prompt version includes the system prompt and user prompt template
+# Use v3 for experiments. v1 and v2 are kept for reference.
 
 v1:
   name: "Basic sentence generation"
