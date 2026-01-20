@@ -98,7 +98,9 @@ def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
     """Call LLM via litellm.completion and return content string."""
     logger.debug(f"Calling LLM with model: {model}")
     # Some models disallow explicit temperature=0; set only when supported
-    no_temp_models = model.startswith("o1") or model.startswith("o3") or model.startswith("gpt-5")
+    no_temp_models = (
+        model.startswith("o1") or model.startswith("o3") or model.startswith("gpt-5")
+    )
 
     kwargs: dict = {
         "model": model,
@@ -111,11 +113,15 @@ def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
         kwargs["temperature"] = 0
 
     resp = completion(**kwargs)
-    logger.debug(f"LLM response received ({len(resp.choices[0].message.content)} chars)")
+    logger.debug(
+        f"LLM response received ({len(resp.choices[0].message.content)} chars)"
+    )
     return resp.choices[0].message.content
 
 
-def parse_batch_output(output: str, use_explanations: bool) -> dict[str, list[str] | list[dict[str, str]]]:
+def parse_batch_output(
+    output: str, use_explanations: bool
+) -> dict[str, list[str] | list[dict[str, str]]]:
     """Parse batch LLM output into a dict mapping variant -> sentence(s) or parsed dicts.
 
     Expected format for v3:
@@ -177,7 +183,9 @@ def process_pmcid(
     no_eval: bool,
 ) -> None:
     """Process a single PMCID: generate sentences for all variants in batch and optionally evaluate."""
-    logger.info(f"Processing PMCID: {pmcid} with {len(variants)} variant(s) in batch mode")
+    logger.info(
+        f"Processing PMCID: {pmcid} with {len(variants)} variant(s) in batch mode"
+    )
 
     # Get article text; reuse utils for markdown content
     try:
@@ -210,8 +218,7 @@ def process_pmcid(
 
     # Create the batch prompt
     user_prompt = prompt_cfg["user"].format(
-        variants_list=variants_list,
-        article_text=article_text
+        variants_list=variants_list, article_text=article_text
     )
     system_prompt = prompt_cfg["system"]
 
@@ -234,10 +241,20 @@ def process_pmcid(
         if variant in variant_results:
             result[pmcid][variant] = variant_results[variant]
             if use_explanations:
-                preview = variant_results[variant][0]["sentence"] if variant_results[variant] else "<no output>"
+                preview = (
+                    variant_results[variant][0]["sentence"]
+                    if variant_results[variant]
+                    else "<no output>"
+                )
             else:
-                preview = variant_results[variant][0] if variant_results[variant] else "<no output>"
-            logger.info(f"✓ {variant}: {preview[:90]}{'...' if len(preview) > 90 else ''}")
+                preview = (
+                    variant_results[variant][0]
+                    if variant_results[variant]
+                    else "<no output>"
+                )
+            logger.info(
+                f"✓ {variant}: {preview[:90]}{'...' if len(preview) > 90 else ''}"
+            )
         else:
             # Variant not found in parsed output
             if use_explanations:
@@ -263,7 +280,9 @@ def process_pmcid(
         try:
             RESULTS_DIR.mkdir(parents=True, exist_ok=True)
             safe_judge_model = judge_model.replace("/", "_").replace(":", "_")
-            eval_path = RESULTS_DIR / f"sentence_scores_llm_{safe_judge_model}_{timestamp}.json"
+            eval_path = (
+                RESULTS_DIR / f"sentence_scores_llm_{safe_judge_model}_{timestamp}.json"
+            )
 
             logger.debug(f"Running evaluation with judge model: {judge_model}")
             eval_result = score_and_save(
@@ -278,11 +297,15 @@ def process_pmcid(
             logger.info(f"Number of PMCIDs: {eval_result.num_pmcids}")
             logger.info("Per-PMCID Scores:")
             for pmcid_result in eval_result.per_pmcid:
-                logger.info(f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} ({pmcid_result['num_variants']} variants)")
+                logger.info(
+                    f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} ({pmcid_result['num_variants']} variants)"
+                )
 
         except Exception as e:
             logger.warning(f"Evaluation failed: {e}")
-            logger.info("Generated sentences were saved successfully, but evaluation could not be completed.")
+            logger.info(
+                "Generated sentences were saved successfully, but evaluation could not be completed."
+            )
     elif no_eval:
         logger.info("Skipping evaluation (--no-eval flag set)")
     elif score_and_save is None:
