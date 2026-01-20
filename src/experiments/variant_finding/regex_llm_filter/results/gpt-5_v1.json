@@ -2,21 +2,21 @@
   "model": "gpt-5",
   "prompt_version": "v1",
   "prompt_name": "Basic false positive filter",
-  "timestamp": "2026-01-20T10:17:43.234226",
-  "articles_processed": 1,
+  "timestamp": "2026-01-20T10:44:48.987928",
+  "articles_processed": 32,
   "regex_results": {
-    "avg_recall": 1.0,
-    "avg_precision": 0.5,
-    "perfect_recalls": 1
+    "avg_recall": 0.9335859634551495,
+    "avg_precision": 0.4192929224161178,
+    "perfect_recalls": 25
   },
   "filtered_results": {
-    "avg_recall": 1.0,
-    "avg_precision": 0.8,
-    "perfect_recalls": 1
+    "avg_recall": 0.8990050526024363,
+    "avg_precision": 0.561545033759823,
+    "perfect_recalls": 22
   },
   "improvement": {
-    "recall_change": 0.0,
-    "precision_change": 0.30000000000000004
+    "recall_change": -0.0345809108527132,
+    "precision_change": 0.1422521113437052
   },
   "per_article_results": [
     {
@@ -30,22 +30,22 @@
       "filtered_precision": 0.8,
       "regex_matches": [
         "rs2108622",
-        "rs1057910",
         "rs887829",
-        "rs9923231"
+        "rs9923231",
+        "rs1057910"
       ],
       "regex_misses": [],
       "regex_extras": [
-        "cyp2c9*2",
         "cyp2c9*3",
+        "cyp2c9*2",
         "cyp2c9*1",
         "rs8175347"
       ],
       "filtered_matches": [
         "rs2108622",
-        "rs1057910",
         "rs887829",
-        "rs9923231"
+        "rs9923231",
+        "rs1057910"
       ],
       "filtered_misses": [],
       "filtered_extras": [
@@ -53,11 +53,1852 @@
       ],
       "removed_total": 3,
       "removed_false_positives": [
-        "CYP2C9*1",
         "CYP2C9*2",
-        "rs8175347"
+        "rs8175347",
+        "CYP2C9*1"
       ],
       "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC4916189",
+      "true_count": 7,
+      "regex_extracted_count": 13,
+      "filtered_extracted_count": 13,
+      "regex_recall": 0.7142857142857143,
+      "regex_precision": 0.38461538461538464,
+      "filtered_recall": 0.7142857142857143,
+      "filtered_precision": 0.38461538461538464,
+      "regex_matches": [
+        "rs28399499",
+        "rs1045642",
+        "rs4803419",
+        "rs2472677",
+        "rs3745274"
+      ],
+      "regex_misses": [
+        "cyp2b6*9",
+        "cyp2b6*1"
+      ],
+      "regex_extras": [
+        "cyp2a6*17",
+        "rs35599367",
+        "rs6785049",
+        "rs3003596",
+        "rs8192726",
+        "cyp3a4*22",
+        "rs2307424",
+        "rs28399454"
+      ],
+      "filtered_matches": [
+        "rs28399499",
+        "rs1045642",
+        "rs4803419",
+        "rs2472677",
+        "rs3745274"
+      ],
+      "filtered_misses": [
+        "cyp2b6*9",
+        "cyp2b6*1"
+      ],
+      "filtered_extras": [
+        "cyp2a6*17",
+        "rs35599367",
+        "rs6785049",
+        "rs3003596",
+        "rs8192726",
+        "cyp3a4*22",
+        "rs2307424",
+        "rs28399454"
+      ],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC12036300",
+      "true_count": 3,
+      "regex_extracted_count": 18,
+      "filtered_extracted_count": 14,
+      "regex_recall": 1.0,
+      "regex_precision": 0.16666666666666666,
+      "filtered_recall": 0.6666666666666666,
+      "filtered_precision": 0.14285714285714285,
+      "regex_matches": [
+        "cyp2c19*1",
+        "cyp2c19*2",
+        "cyp2c19*17"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "cyp2c19*3",
+        "cyp2c9*17",
+        "rs1045642",
+        "rs4244285",
+        "cyp2c19*33",
+        "rs6413438",
+        "rs375781227",
+        "rs4986893",
+        "rs12248560",
+        "cyp2c19*22",
+        "rs370803989",
+        "rs140278421",
+        "cyp2c19*10",
+        "cyp2c19*26",
+        "cyp3a5*3"
+      ],
+      "filtered_matches": [
+        "cyp2c19*2",
+        "cyp2c19*17"
+      ],
+      "filtered_misses": [
+        "cyp2c19*1"
+      ],
+      "filtered_extras": [
+        "cyp2c19*3",
+        "rs12248560",
+        "cyp2c19*22",
+        "rs4244285",
+        "rs370803989",
+        "rs140278421",
+        "cyp2c19*10",
+        "cyp2c19*33",
+        "cyp2c19*26",
+        "rs6413438",
+        "rs375781227",
+        "rs4986893"
+      ],
+      "removed_total": 4,
+      "removed_false_positives": [
+        "CYP3A5*3",
+        "rs1045642",
+        "CYP2C19*1",
+        "CYP2C9*17"
+      ],
+      "removed_true_positives": [
+        "cyp2c19*1"
+      ]
+    },
+    {
+      "pmcid": "PMC554812",
+      "true_count": 5,
+      "regex_extracted_count": 16,
+      "filtered_extracted_count": 10,
+      "regex_recall": 1.0,
+      "regex_precision": 0.3125,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.5,
+      "regex_matches": [
+        "rs1594",
+        "hla-drb1*03:01",
+        "hla-c*03:02",
+        "hla-b*58:01",
+        "hla-a*33:03"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs589428",
+        "rs1150793",
+        "rs1264314",
+        "rs2268791",
+        "hla-b*57:01",
+        "rs1264440",
+        "rs2304224",
+        "hla-b*15:02",
+        "rs2855804",
+        "rs3117583",
+        "rs1755038"
+      ],
+      "filtered_matches": [
+        "rs1594",
+        "hla-drb1*03:01",
+        "hla-c*03:02",
+        "hla-b*58:01",
+        "hla-a*33:03"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "rs1150793",
+        "rs2268791",
+        "rs2304224",
+        "rs2855804",
+        "rs3117583"
+      ],
+      "removed_total": 6,
+      "removed_false_positives": [
+        "rs589428",
+        "rs1264314",
+        "HLA-B*15:02",
+        "HLA-B*57:01",
+        "rs1264440",
+        "rs1755038"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC5561238",
+      "true_count": 43,
+      "regex_extracted_count": 79,
+      "filtered_extracted_count": 69,
+      "regex_recall": 0.8604651162790697,
+      "regex_precision": 0.46835443037974683,
+      "filtered_recall": 0.8372093023255814,
+      "filtered_precision": 0.5217391304347826,
+      "regex_matches": [
+        "hla-b*39:05",
+        "hla-b*39:06",
+        "hla-c*04:01",
+        "hla-c*18:01",
+        "hla-b*13:02",
+        "hla-b*15:32",
+        "hla-b*15:25",
+        "hla-b*52:01",
+        "hla-b*54:01",
+        "hla-drb1*04:04",
+        "hla-b*55:01",
+        "hla-b*35:05",
+        "hla-b*15:24",
+        "hla-drb1*01:03",
+        "hla-b*15:27",
+        "hla-c*05:09",
+        "hla-c*04:03",
+        "hla-b*15:01",
+        "hla-c*04:06",
+        "hla-b*38:02",
+        "hla-b*39:10",
+        "hla-b*51:01",
+        "hla-b*38:01",
+        "hla-b*39:09",
+        "hla-b*78:01",
+        "hla-b*15:12",
+        "hla-b*56:01",
+        "hla-drb1*01:01",
+        "hla-b*15:35",
+        "hla-b*51:02",
+        "hla-drb1*01:02",
+        "hla-b*57:01",
+        "hla-b*67:01",
+        "hla-c*05:01",
+        "hla-c*04:07",
+        "hla-b*55:02",
+        "hla-b*39:01"
+      ],
+      "regex_misses": [
+        "hla-drb1*08:01",
+        "rs28399499",
+        "hla-b*35:10",
+        "hla-drb1*10:01",
+        "rs3745274",
+        "hla-b*56:06"
+      ],
+      "regex_extras": [
+        "hla-b*56:04",
+        "hla-b*14",
+        "hla-cw*04",
+        "hla-drb1*04",
+        "hla-b*57:02",
+        "hla-b*51:07",
+        "hla-b*27",
+        "hla-drb1*04:15",
+        "hla-c*07:01",
+        "hla-c*04",
+        "hla-b*15",
+        "hla-b*46:01",
+        "hla-b*56",
+        "hla-c*08",
+        "hla-drb1*15:01",
+        "hla-drb1*04:05",
+        "hla-c*14:02",
+        "hla-drb1*04:10",
+        "hla-b*54",
+        "hla-b*51",
+        "hla-b*35",
+        "hla-a*02:01",
+        "hla-drb1*04:01",
+        "hla-drb1*04:08",
+        "hla-b*18",
+        "hla-b*08",
+        "hla-drb1*01",
+        "hla-b*55",
+        "hla-b*38",
+        "hla-b*57",
+        "hla-c*17:01",
+        "hla-c*05",
+        "hla-b*39",
+        "hla-b*58:01",
+        "hla-b*37",
+        "hla-b*15:02",
+        "hla-b*13",
+        "hla-b*52",
+        "hla-c*06:02",
+        "hla-b*15:11",
+        "hla-b*46",
+        "hla-b*07"
+      ],
+      "filtered_matches": [
+        "hla-b*39:05",
+        "hla-b*39:06",
+        "hla-c*04:01",
+        "hla-c*18:01",
+        "hla-b*13:02",
+        "hla-b*15:32",
+        "hla-b*15:25",
+        "hla-b*52:01",
+        "hla-b*54:01",
+        "hla-drb1*04:04",
+        "hla-b*55:01",
+        "hla-b*35:05",
+        "hla-b*15:24",
+        "hla-drb1*01:03",
+        "hla-b*15:27",
+        "hla-c*05:09",
+        "hla-c*04:03",
+        "hla-b*15:01",
+        "hla-c*04:06",
+        "hla-b*38:02",
+        "hla-b*39:10",
+        "hla-b*51:01",
+        "hla-b*38:01",
+        "hla-b*39:09",
+        "hla-b*78:01",
+        "hla-b*15:12",
+        "hla-b*56:01",
+        "hla-drb1*01:01",
+        "hla-b*15:35",
+        "hla-b*51:02",
+        "hla-drb1*01:02",
+        "hla-b*67:01",
+        "hla-c*05:01",
+        "hla-c*04:07",
+        "hla-b*55:02",
+        "hla-b*39:01"
+      ],
+      "filtered_misses": [
+        "hla-drb1*08:01",
+        "rs28399499",
+        "hla-b*35:10",
+        "hla-b*57:01",
+        "hla-drb1*10:01",
+        "rs3745274",
+        "hla-b*56:06"
+      ],
+      "filtered_extras": [
+        "hla-b*56:04",
+        "hla-b*14",
+        "hla-drb1*04",
+        "hla-b*51:07",
+        "hla-drb1*04:15",
+        "hla-c*07:01",
+        "hla-c*04",
+        "hla-b*15",
+        "hla-b*46:01",
+        "hla-b*56",
+        "hla-drb1*04:05",
+        "hla-c*14:02",
+        "hla-drb1*04:10",
+        "hla-b*54",
+        "hla-b*51",
+        "hla-b*35",
+        "hla-drb1*04:08",
+        "hla-drb1*04:01",
+        "hla-b*18",
+        "hla-b*08",
+        "hla-drb1*01",
+        "hla-b*55",
+        "hla-b*38",
+        "hla-b*57",
+        "hla-c*17:01",
+        "hla-b*39",
+        "hla-b*37",
+        "hla-b*15:02",
+        "hla-b*13",
+        "hla-b*52",
+        "hla-c*06:02",
+        "hla-b*15:11",
+        "hla-b*46"
+      ],
+      "removed_total": 10,
+      "removed_false_positives": [
+        "HLA-DRB1*15:01",
+        "HLA-B*27",
+        "HLA-B*57:02",
+        "HLA-C*05",
+        "HLA-CW*04",
+        "HLA-B*07",
+        "HLA-C*08",
+        "HLA-A*02:01",
+        "HLA-B*57:01",
+        "HLA-B*58:01"
+      ],
+      "removed_true_positives": [
+        "hla-b*57:01"
+      ]
+    },
+    {
+      "pmcid": "PMC10946077",
+      "true_count": 7,
+      "regex_extracted_count": 2,
+      "filtered_extracted_count": 2,
+      "regex_recall": 0.6666666666666666,
+      "regex_precision": 1.0,
+      "filtered_recall": 0.6666666666666666,
+      "filtered_precision": 1.0,
+      "regex_matches": [
+        "ugt1a1*6",
+        "ugt1a1*28"
+      ],
+      "regex_misses": [
+        "ugt1a1*1"
+      ],
+      "regex_extras": [],
+      "filtered_matches": [
+        "ugt1a1*6",
+        "ugt1a1*28"
+      ],
+      "filtered_misses": [
+        "ugt1a1*1"
+      ],
+      "filtered_extras": [],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC6465603",
+      "true_count": 2,
+      "regex_extracted_count": 3,
+      "filtered_extracted_count": 2,
+      "regex_recall": 1.0,
+      "regex_precision": 0.6666666666666666,
+      "filtered_recall": 1.0,
+      "filtered_precision": 1.0,
+      "regex_matches": [
+        "rs116855232",
+        "rs1142345"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs147390019"
+      ],
+      "filtered_matches": [
+        "rs116855232",
+        "rs1142345"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [],
+      "removed_total": 1,
+      "removed_false_positives": [
+        "rs147390019"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC12038368",
+      "true_count": 2,
+      "regex_extracted_count": 16,
+      "filtered_extracted_count": 14,
+      "regex_recall": 1.0,
+      "regex_precision": 0.125,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.14285714285714285,
+      "regex_matches": [
+        "rs2306283",
+        "rs4149056"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs2242480",
+        "rs1045642",
+        "rs4149117",
+        "rs776746",
+        "rs7311358",
+        "slco1b1*1",
+        "slco1b1*15",
+        "rs7311158",
+        "rs3740066",
+        "rs717620",
+        "rs2231142",
+        "slco1b1*5",
+        "cyp3a4*22",
+        "cyp3a5*3"
+      ],
+      "filtered_matches": [
+        "rs2306283",
+        "rs4149056"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "rs2242480",
+        "rs1045642",
+        "rs4149117",
+        "rs776746",
+        "slco1b1*1",
+        "rs717620",
+        "slco1b1*15",
+        "rs2231142",
+        "rs7311158",
+        "slco1b1*5",
+        "rs3740066",
+        "cyp3a5*3"
+      ],
+      "removed_total": 2,
+      "removed_false_positives": [
+        "CYP3A4*22",
+        "rs7311358"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC10880264",
+      "true_count": 3,
+      "regex_extracted_count": 26,
+      "filtered_extracted_count": 26,
+      "regex_recall": 0.3333333333333333,
+      "regex_precision": 0.038461538461538464,
+      "filtered_recall": 0.3333333333333333,
+      "filtered_precision": 0.038461538461538464,
+      "regex_matches": [
+        "rs6311"
+      ],
+      "regex_misses": [
+        "cyp2d6 poor metabolizer",
+        "cyp2c19 intermediate metabolizer"
+      ],
+      "regex_extras": [
+        "cyp2c19*3",
+        "cyp2d6*2",
+        "cyp2c19*4",
+        "cyp2d6*17",
+        "cyp2d6*7",
+        "cyp2d6*3",
+        "cyp2d6*14",
+        "cyp2d6*1",
+        "cyp2d6*11",
+        "cyp2c19*7",
+        "cyp2d6*15",
+        "cyp2d6*41",
+        "cyp2d6*9",
+        "cyp2d6*5",
+        "cyp2d6*10",
+        "cyp2c19*8",
+        "cyp2c19*17",
+        "cyp2d6*8",
+        "cyp2c19*5",
+        "cyp2d6*4",
+        "cyp2d6*12",
+        "cyp2c19*2",
+        "cyp2c19*6",
+        "cyp2c19*1",
+        "cyp2d6*6"
+      ],
+      "filtered_matches": [
+        "rs6311"
+      ],
+      "filtered_misses": [
+        "cyp2d6 poor metabolizer",
+        "cyp2c19 intermediate metabolizer"
+      ],
+      "filtered_extras": [
+        "cyp2c19*3",
+        "cyp2d6*2",
+        "cyp2c19*4",
+        "cyp2d6*17",
+        "cyp2d6*7",
+        "cyp2d6*3",
+        "cyp2d6*14",
+        "cyp2d6*1",
+        "cyp2d6*11",
+        "cyp2c19*7",
+        "cyp2d6*15",
+        "cyp2d6*41",
+        "cyp2d6*9",
+        "cyp2d6*5",
+        "cyp2d6*10",
+        "cyp2c19*8",
+        "cyp2c19*17",
+        "cyp2d6*8",
+        "cyp2c19*5",
+        "cyp2d6*4",
+        "cyp2d6*12",
+        "cyp2c19*2",
+        "cyp2c19*6",
+        "cyp2c19*1",
+        "cyp2d6*6"
+      ],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC12331468",
+      "true_count": 4,
+      "regex_extracted_count": 30,
+      "filtered_extracted_count": 19,
+      "regex_recall": 1.0,
+      "regex_precision": 0.13333333333333333,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.21052631578947367,
+      "regex_matches": [
+        "rs1801265",
+        "rs45445694",
+        "rs11280056",
+        "rs1695"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs55886062",
+        "rs1045642",
+        "rs1801131",
+        "rs56038477",
+        "dpyd*13",
+        "rs1128503",
+        "rs1801019",
+        "rs1801133",
+        "rs13181",
+        "rs1801159",
+        "dpyd*9",
+        "rs1044642",
+        "rs67376798",
+        "rs3742106",
+        "rs4544694",
+        "rs11479",
+        "rs717620",
+        "rs1665",
+        "rs3918290",
+        "rs2231142",
+        "rs9561778",
+        "rs180131",
+        "rs16430",
+        "rs6737679",
+        "dpyd*2",
+        "dpyd*5"
+      ],
+      "filtered_matches": [
+        "rs1801265",
+        "rs45445694",
+        "rs11280056",
+        "rs1695"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "rs67376798",
+        "rs55886062",
+        "rs1045642",
+        "rs11479",
+        "rs717620",
+        "rs1801131",
+        "rs1128503",
+        "dpyd*13",
+        "rs2231142",
+        "rs9561778",
+        "dpyd*9",
+        "rs3918290",
+        "dpyd*2",
+        "rs1801133",
+        "rs13181"
+      ],
+      "removed_total": 11,
+      "removed_false_positives": [
+        "rs1044642",
+        "rs3742106",
+        "rs4544694",
+        "rs1665",
+        "rs56038477",
+        "rs180131",
+        "DPYD*5",
+        "rs16430",
+        "rs6737679",
+        "rs1801019",
+        "rs1801159"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC6435416",
+      "true_count": 15,
+      "regex_extracted_count": 31,
+      "filtered_extracted_count": 31,
+      "regex_recall": 1.0,
+      "regex_precision": 0.4838709677419355,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.4838709677419355,
+      "regex_matches": [
+        "cyp2d6*2",
+        "cyp2d6*10",
+        "cyp2d6*29",
+        "cyp2d6*17",
+        "cyp2d6*2xn",
+        "cyp2d6*3",
+        "cyp2d6*1",
+        "cyp2d6*1xn",
+        "cyp2d6*4",
+        "cyp2d6*4xn",
+        "cyp2d6*41",
+        "cyp2d6*35",
+        "cyp2d6*9",
+        "cyp2d6*5",
+        "cyp2d6*6"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "cyp2d6*10xn",
+        "rs28371",
+        "rs77467",
+        "rs35742",
+        "rs7692",
+        "rs3892",
+        "rs50308",
+        "rs1065",
+        "rs59421",
+        "rs5030",
+        "cyp2d6*33",
+        "cyp2d6*46",
+        "rs1694",
+        "rs1135",
+        "rs72549",
+        "rs20137"
+      ],
+      "filtered_matches": [
+        "cyp2d6*2",
+        "cyp2d6*10",
+        "cyp2d6*29",
+        "cyp2d6*17",
+        "cyp2d6*2xn",
+        "cyp2d6*3",
+        "cyp2d6*1",
+        "cyp2d6*1xn",
+        "cyp2d6*4",
+        "cyp2d6*4xn",
+        "cyp2d6*41",
+        "cyp2d6*35",
+        "cyp2d6*9",
+        "cyp2d6*5",
+        "cyp2d6*6"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "cyp2d6*10xn",
+        "rs28371",
+        "rs77467",
+        "rs35742",
+        "rs7692",
+        "rs3892",
+        "rs50308",
+        "rs1065",
+        "rs59421",
+        "rs5030",
+        "cyp2d6*33",
+        "cyp2d6*46",
+        "rs1694",
+        "rs1135",
+        "rs72549",
+        "rs20137"
+      ],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC12319246",
+      "true_count": 8,
+      "regex_extracted_count": 27,
+      "filtered_extracted_count": 16,
+      "regex_recall": 1.0,
+      "regex_precision": 0.2962962962962963,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.5,
+      "regex_matches": [
+        "rs776746",
+        "rs9282564",
+        "rs2306283",
+        "rs4244285",
+        "rs2740574",
+        "rs4149056",
+        "rs3745274",
+        "rs2273697"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs2032582",
+        "rs3832043",
+        "rs2235013",
+        "rs3745275",
+        "rs6714486",
+        "rs3740066",
+        "rs2066844",
+        "rs2279343",
+        "rs717620",
+        "rs1800872",
+        "rs2745074",
+        "rs2235033",
+        "rs72551330",
+        "rs1045642",
+        "rs1799853",
+        "rs1800896",
+        "rs1142345",
+        "rs17868320",
+        "rs1800871"
+      ],
+      "filtered_matches": [
+        "rs776746",
+        "rs9282564",
+        "rs2306283",
+        "rs4244285",
+        "rs2740574",
+        "rs4149056",
+        "rs3745274",
+        "rs2273697"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "rs2066844",
+        "rs1045642",
+        "rs1799853",
+        "rs2235013",
+        "rs2279343",
+        "rs1142345",
+        "rs2235033",
+        "rs6714486"
+      ],
+      "removed_total": 11,
+      "removed_false_positives": [
+        "rs2032582",
+        "rs3832043",
+        "rs17868320",
+        "rs717620",
+        "rs1800872",
+        "rs2745074",
+        "rs1800871",
+        "rs1800896",
+        "rs3745275",
+        "rs72551330",
+        "rs3740066"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC3548984",
+      "true_count": 10,
+      "regex_extracted_count": 6,
+      "filtered_extracted_count": 5,
+      "regex_recall": 0.8333333333333334,
+      "regex_precision": 0.8333333333333334,
+      "filtered_recall": 0.8333333333333334,
+      "filtered_precision": 1.0,
+      "regex_matches": [
+        "cyp2d6*10",
+        "cyp2d6*3",
+        "cyp2d6*4",
+        "cyp2d6*41",
+        "cyp2d6*6"
+      ],
+      "regex_misses": [
+        "cyp2d6*1"
+      ],
+      "regex_extras": [
+        "cyp2d6*5"
+      ],
+      "filtered_matches": [
+        "cyp2d6*10",
+        "cyp2d6*3",
+        "cyp2d6*4",
+        "cyp2d6*41",
+        "cyp2d6*6"
+      ],
+      "filtered_misses": [
+        "cyp2d6*1"
+      ],
+      "filtered_extras": [],
+      "removed_total": 1,
+      "removed_false_positives": [
+        "CYP2D6*5"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC10275785",
+      "true_count": 2,
+      "regex_extracted_count": 10,
+      "filtered_extracted_count": 2,
+      "regex_recall": 1.0,
+      "regex_precision": 0.2,
+      "filtered_recall": 1.0,
+      "filtered_precision": 1.0,
+      "regex_matches": [
+        "rs4612666",
+        "rs2043211"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs4925659",
+        "rs4925648",
+        "rs35829419",
+        "rs10925026",
+        "rs10403848",
+        "rs10159239",
+        "rs11672725",
+        "rs10754558"
+      ],
+      "filtered_matches": [
+        "rs4612666",
+        "rs2043211"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [],
+      "removed_total": 8,
+      "removed_false_positives": [
+        "rs4925659",
+        "rs4925648",
+        "rs35829419",
+        "rs10925026",
+        "rs10403848",
+        "rs10159239",
+        "rs11672725",
+        "rs10754558"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC11971672",
+      "true_count": 4,
+      "regex_extracted_count": 4,
+      "filtered_extracted_count": 4,
+      "regex_recall": 1.0,
+      "regex_precision": 1.0,
+      "filtered_recall": 1.0,
+      "filtered_precision": 1.0,
+      "regex_matches": [
+        "cyp2c19*3",
+        "cyp2c19*1",
+        "cyp2c19*2",
+        "cyp2c19*17"
+      ],
+      "regex_misses": [],
+      "regex_extras": [],
+      "filtered_matches": [
+        "cyp2c19*3",
+        "cyp2c19*1",
+        "cyp2c19*2",
+        "cyp2c19*17"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC11430164",
+      "true_count": 19,
+      "regex_extracted_count": 25,
+      "filtered_extracted_count": 23,
+      "regex_recall": 1.0,
+      "regex_precision": 0.72,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.782608695652174,
+      "regex_matches": [
+        "cyp3a4*15",
+        "cyp3a4*17",
+        "cyp3a4*5",
+        "cyp3a4*1",
+        "cyp3a4*31",
+        "cyp3a4*33",
+        "cyp3a4*3",
+        "cyp3a4*9",
+        "cyp3a4*16",
+        "cyp3a4*4",
+        "cyp3a4*14",
+        "cyp3a4*24",
+        "cyp3a4*28",
+        "cyp3a4*2",
+        "cyp3a4*19",
+        "cyp3a4*11",
+        "cyp3a4*18",
+        "cyp3a4*29"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs35599367",
+        "cyp3a4*30",
+        "cyp3a4*32",
+        "cyp3a4*34",
+        "cyp3a4*10",
+        "cyp3a4*22",
+        "cyp3a4*23"
+      ],
+      "filtered_matches": [
+        "cyp3a4*15",
+        "cyp3a4*17",
+        "cyp3a4*5",
+        "cyp3a4*1",
+        "cyp3a4*31",
+        "cyp3a4*33",
+        "cyp3a4*3",
+        "cyp3a4*9",
+        "cyp3a4*16",
+        "cyp3a4*4",
+        "cyp3a4*14",
+        "cyp3a4*24",
+        "cyp3a4*28",
+        "cyp3a4*2",
+        "cyp3a4*19",
+        "cyp3a4*11",
+        "cyp3a4*18",
+        "cyp3a4*29"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "cyp3a4*30",
+        "cyp3a4*32",
+        "cyp3a4*34",
+        "cyp3a4*10",
+        "cyp3a4*23"
+      ],
+      "removed_total": 2,
+      "removed_false_positives": [
+        "CYP3A4*22",
+        "rs35599367"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC8790808",
+      "true_count": 4,
+      "regex_extracted_count": 26,
+      "filtered_extracted_count": 24,
+      "regex_recall": 1.0,
+      "regex_precision": 0.15384615384615385,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.16666666666666666,
+      "regex_matches": [
+        "rs9958628",
+        "hla-dqb1*02:02",
+        "hla-drb1*07:01",
+        "hla-dqa1*02:01"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs28383172",
+        "hla-drb1*15:01",
+        "hla-drb1*04:05",
+        "hla-drb1*13:01",
+        "rs79377225",
+        "hla-c*07:02",
+        "hla-dqb1*02",
+        "hla-b*50:01",
+        "hla-b*38:01",
+        "rs9268670",
+        "rs11739459",
+        "hla-dqb1*06:03",
+        "hla-dqb1*06:02",
+        "hla-dqa1*01:01",
+        "rs28383308",
+        "hla-dpa1*02:02",
+        "hla-drb1*04:02",
+        "hla-dqa1*01:03",
+        "hla-b*57:01",
+        "rs7775228",
+        "rs1694129",
+        "hla-a*02:05"
+      ],
+      "filtered_matches": [
+        "rs9958628",
+        "hla-dqb1*02:02",
+        "hla-drb1*07:01",
+        "hla-dqa1*02:01"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "rs28383172",
+        "hla-drb1*15:01",
+        "hla-drb1*04:05",
+        "hla-drb1*13:01",
+        "rs79377225",
+        "hla-c*07:02",
+        "hla-b*50:01",
+        "hla-b*38:01",
+        "rs9268670",
+        "rs11739459",
+        "hla-dqb1*06:03",
+        "hla-dqb1*06:02",
+        "hla-dqa1*01:01",
+        "rs28383308",
+        "hla-dpa1*02:02",
+        "hla-drb1*04:02",
+        "hla-dqa1*01:03",
+        "rs7775228",
+        "rs1694129",
+        "hla-a*02:05"
+      ],
+      "removed_total": 2,
+      "removed_false_positives": [
+        "HLA-B*57:01",
+        "HLA-DQB1*02"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC11062152",
+      "true_count": 3,
+      "regex_extracted_count": 2,
+      "filtered_extracted_count": 2,
+      "regex_recall": 0.6666666666666666,
+      "regex_precision": 1.0,
+      "filtered_recall": 0.6666666666666666,
+      "filtered_precision": 1.0,
+      "regex_matches": [
+        "ugt1a1*6",
+        "ugt1a1*28"
+      ],
+      "regex_misses": [
+        "ugt1a1*1"
+      ],
+      "regex_extras": [],
+      "filtered_matches": [
+        "ugt1a1*6",
+        "ugt1a1*28"
+      ],
+      "filtered_misses": [
+        "ugt1a1*1"
+      ],
+      "filtered_extras": [],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC3839910",
+      "true_count": 2,
+      "regex_extracted_count": 7,
+      "filtered_extracted_count": 5,
+      "regex_recall": 1.0,
+      "regex_precision": 0.2857142857142857,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.4,
+      "regex_matches": [
+        "hla-a*31:01",
+        "hla-b*15:02"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "hla-a*33:01",
+        "hla-a*31",
+        "hla-a*33:03",
+        "hla-b*15:11",
+        "rs1061235"
+      ],
+      "filtered_matches": [
+        "hla-a*31:01",
+        "hla-b*15:02"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "hla-a*33:01",
+        "rs1061235",
+        "hla-a*33:03"
+      ],
+      "removed_total": 2,
+      "removed_false_positives": [
+        "HLA-A*31",
+        "HLA-B*15:11"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC3113609",
+      "true_count": 1,
+      "regex_extracted_count": 2,
+      "filtered_extracted_count": 2,
+      "regex_recall": 1.0,
+      "regex_precision": 0.5,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.5,
+      "regex_matches": [
+        "hla-a*31:01"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs1061235"
+      ],
+      "filtered_matches": [
+        "hla-a*31:01"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "rs1061235"
+      ],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC10786722",
+      "true_count": 3,
+      "regex_extracted_count": 57,
+      "filtered_extracted_count": 56,
+      "regex_recall": 1.0,
+      "regex_precision": 0.05263157894736842,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.05357142857142857,
+      "regex_matches": [
+        "rs1801160",
+        "rs2297595",
+        "rs56038477"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "dpyd*1",
+        "rs45589337",
+        "rs749122978",
+        "rs55886062",
+        "rs3918289",
+        "rs368146607",
+        "rs72549308",
+        "dpyd*13",
+        "rs374825099",
+        "rs61622928",
+        "rs138391898",
+        "rs142619737",
+        "rs773159364",
+        "rs1355754530",
+        "rs1801159",
+        "rs141044036",
+        "rs919596571",
+        "rs746368304",
+        "rs67376798",
+        "rs72975710",
+        "dpyd*6",
+        "rs57918000",
+        "rs763174477",
+        "rs114096998",
+        "rs371792178",
+        "rs138616379",
+        "rs202212118",
+        "rs779728902",
+        "rs376073289",
+        "rs772950053",
+        "rs1801158",
+        "rs539032572",
+        "rs56005131",
+        "rs760853559",
+        "rs758927521",
+        "rs371313778",
+        "rs150759598",
+        "rs1801265",
+        "rs764173823",
+        "rs148372305",
+        "rs140039091",
+        "rs368617815",
+        "rs555178721",
+        "rs573299212",
+        "rs768519000",
+        "rs3918290",
+        "rs746991079",
+        "rs115232898",
+        "rs17376848",
+        "rs375436137",
+        "rs927463053",
+        "rs147601618",
+        "rs145548112",
+        "rs367623519"
+      ],
+      "filtered_matches": [
+        "rs1801160",
+        "rs2297595",
+        "rs56038477"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "rs45589337",
+        "rs749122978",
+        "rs55886062",
+        "rs3918289",
+        "rs368146607",
+        "rs72549308",
+        "dpyd*13",
+        "rs374825099",
+        "rs61622928",
+        "rs138391898",
+        "rs142619737",
+        "rs773159364",
+        "rs1355754530",
+        "rs1801159",
+        "rs141044036",
+        "rs919596571",
+        "rs746368304",
+        "rs67376798",
+        "rs72975710",
+        "dpyd*6",
+        "rs57918000",
+        "rs763174477",
+        "rs114096998",
+        "rs371792178",
+        "rs138616379",
+        "rs202212118",
+        "rs779728902",
+        "rs376073289",
+        "rs772950053",
+        "rs1801158",
+        "rs539032572",
+        "rs56005131",
+        "rs760853559",
+        "rs758927521",
+        "rs371313778",
+        "rs150759598",
+        "rs1801265",
+        "rs764173823",
+        "rs148372305",
+        "rs140039091",
+        "rs368617815",
+        "rs555178721",
+        "rs573299212",
+        "rs768519000",
+        "rs3918290",
+        "rs746991079",
+        "rs115232898",
+        "rs17376848",
+        "rs375436137",
+        "rs927463053",
+        "rs147601618",
+        "rs145548112",
+        "rs367623519"
+      ],
+      "removed_total": 1,
+      "removed_false_positives": [
+        "DPYD*1"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC384715",
+      "true_count": 1,
+      "regex_extracted_count": 2,
+      "filtered_extracted_count": 2,
+      "regex_recall": 1.0,
+      "regex_precision": 0.5,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.5,
+      "regex_matches": [
+        "hla-b*57:01"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "hla-drb1*07:01"
+      ],
+      "filtered_matches": [
+        "hla-b*57:01"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "hla-drb1*07:01"
+      ],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC3584248",
+      "true_count": 5,
+      "regex_extracted_count": 8,
+      "filtered_extracted_count": 8,
+      "regex_recall": 1.0,
+      "regex_precision": 0.625,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.625,
+      "regex_matches": [
+        "cyp2d6*2",
+        "cyp2d6*10",
+        "cyp2d6*1",
+        "cyp2d6*41",
+        "cyp2d6*5"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "cyp2d6*3",
+        "cyp2d6*4",
+        "cyp2d6*6"
+      ],
+      "filtered_matches": [
+        "cyp2d6*2",
+        "cyp2d6*10",
+        "cyp2d6*1",
+        "cyp2d6*41",
+        "cyp2d6*5"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "cyp2d6*3",
+        "cyp2d6*4",
+        "cyp2d6*6"
+      ],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC12035587",
+      "true_count": 1,
+      "regex_extracted_count": 2,
+      "filtered_extracted_count": 1,
+      "regex_recall": 1.0,
+      "regex_precision": 0.5,
+      "filtered_recall": 1.0,
+      "filtered_precision": 1.0,
+      "regex_matches": [
+        "nudt15*3"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "tpmt*3"
+      ],
+      "filtered_matches": [
+        "nudt15*3"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [],
+      "removed_total": 1,
+      "removed_false_positives": [
+        "TPMT*3"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC10993165",
+      "true_count": 3,
+      "regex_extracted_count": 34,
+      "filtered_extracted_count": 28,
+      "regex_recall": 1.0,
+      "regex_precision": 0.08823529411764706,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.10714285714285714,
+      "regex_matches": [
+        "hla-b*38:02",
+        "hla-b*13:01",
+        "hla-b*15:02"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "hla-c*04:01",
+        "hla-c*03:04",
+        "hla-dqb1*05:01",
+        "hla-a*24:07",
+        "hla-b*38:11",
+        "hla-c*04:03",
+        "hla-b*46:01",
+        "hla-c*04:06",
+        "hla-a*33:03",
+        "hla-a*31:01",
+        "hla-c*08:01",
+        "hla-c*01:02",
+        "hla-dqb1*03:01",
+        "hla-a*68:01",
+        "hla-c*14:02",
+        "hla-a*11:01",
+        "hla-c*07:02",
+        "hla-a*02:07",
+        "hla-b*40:01",
+        "hla-b*38:01",
+        "hla-drb1*12:02",
+        "hla-c*07:27",
+        "hla-b*38",
+        "hla-a*02:03",
+        "hla-c*03:02",
+        "hla-b*57:01",
+        "hla-b*58:01",
+        "hla-b*07:05",
+        "hla-a*24:02",
+        "hla-c*06:02",
+        "hla-b*39:01"
+      ],
+      "filtered_matches": [
+        "hla-b*38:02",
+        "hla-b*13:01",
+        "hla-b*15:02"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "hla-a*68:01",
+        "hla-c*04:01",
+        "hla-c*14:02",
+        "hla-a*11:01",
+        "hla-c*07:02",
+        "hla-a*02:07",
+        "hla-b*40:01",
+        "hla-b*38:01",
+        "hla-c*03:04",
+        "hla-c*07:27",
+        "hla-a*24:07",
+        "hla-a*02:03",
+        "hla-b*38:11",
+        "hla-b*39:01",
+        "hla-c*03:02",
+        "hla-b*58:01",
+        "hla-c*04:03",
+        "hla-b*46:01",
+        "hla-b*07:05",
+        "hla-a*24:02",
+        "hla-c*04:06",
+        "hla-a*33:03",
+        "hla-c*06:02",
+        "hla-c*08:01",
+        "hla-c*01:02"
+      ],
+      "removed_total": 6,
+      "removed_false_positives": [
+        "HLA-B*38",
+        "HLA-A*31:01",
+        "HLA-DQB1*05:01",
+        "HLA-DQB1*03:01",
+        "HLA-B*57:01",
+        "HLA-DRB1*12:02"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC10399933",
+      "true_count": 5,
+      "regex_extracted_count": 10,
+      "filtered_extracted_count": 6,
+      "regex_recall": 0.8,
+      "regex_precision": 0.4,
+      "filtered_recall": 0.8,
+      "filtered_precision": 0.6666666666666666,
+      "regex_matches": [
+        "cyp2c9*3",
+        "cyp2c9*2",
+        "rs4149056",
+        "rs2231142"
+      ],
+      "regex_misses": [
+        "cyp2c9*1"
+      ],
+      "regex_extras": [
+        "rs1799853",
+        "cyp3a4*3",
+        "slco1b1*5",
+        "cyp3a4*22",
+        "cyp3a5*3",
+        "rs1057910"
+      ],
+      "filtered_matches": [
+        "cyp2c9*3",
+        "cyp2c9*2",
+        "rs4149056",
+        "rs2231142"
+      ],
+      "filtered_misses": [
+        "cyp2c9*1"
+      ],
+      "filtered_extras": [
+        "rs1057910",
+        "rs1799853"
+      ],
+      "removed_total": 4,
+      "removed_false_positives": [
+        "CYP3A4*22",
+        "CYP3A5*3",
+        "SLCO1B1*5",
+        "CYP3A4*3"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC4706412",
+      "true_count": 8,
+      "regex_extracted_count": 26,
+      "filtered_extracted_count": 20,
+      "regex_recall": 1.0,
+      "regex_precision": 0.3076923076923077,
+      "filtered_recall": 0.75,
+      "filtered_precision": 0.3,
+      "regex_matches": [
+        "cyp2c9*8",
+        "cyp4f2*3",
+        "cyp2c9*1",
+        "cyp4f2*1",
+        "cyp2c9*3",
+        "cyp2c9*2",
+        "rs9923231",
+        "rs1800566"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "cyp2c9*11",
+        "rs12714145",
+        "rs2260863",
+        "rs2108622",
+        "rs2292566",
+        "vkorc1*1",
+        "rs104894540",
+        "rs9332094",
+        "cyp4f2*2",
+        "rs56165452",
+        "rs4653436",
+        "rs2234922",
+        "vkorc1*2",
+        "cyp2c9*4",
+        "rs1051740",
+        "cyp2c9*6",
+        "cyp2c9*5",
+        "rs28371685"
+      ],
+      "filtered_matches": [
+        "cyp2c9*8",
+        "cyp4f2*3",
+        "cyp2c9*3",
+        "cyp2c9*2",
+        "rs9923231",
+        "rs1800566"
+      ],
+      "filtered_misses": [
+        "cyp2c9*1",
+        "cyp4f2*1"
+      ],
+      "filtered_extras": [
+        "cyp2c9*11",
+        "rs2260863",
+        "rs2108622",
+        "rs2292566",
+        "rs104894540",
+        "rs9332094",
+        "rs56165452",
+        "rs4653436",
+        "rs2234922",
+        "rs1051740",
+        "cyp2c9*4",
+        "cyp2c9*6",
+        "cyp2c9*5",
+        "rs28371685"
+      ],
+      "removed_total": 6,
+      "removed_false_positives": [
+        "rs12714145",
+        "CYP4F2*1",
+        "CYP2C9*1",
+        "CYP4F2*2",
+        "VKORC1*2",
+        "VKORC1*1"
+      ],
+      "removed_true_positives": [
+        "cyp2c9*1",
+        "cyp4f2*1"
+      ]
+    },
+    {
+      "pmcid": "PMC6714829",
+      "true_count": 2,
+      "regex_extracted_count": 4,
+      "filtered_extracted_count": 2,
+      "regex_recall": 1.0,
+      "regex_precision": 0.5,
+      "filtered_recall": 1.0,
+      "filtered_precision": 1.0,
+      "regex_matches": [
+        "rs2306283",
+        "rs4149056"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "slco1b1*5",
+        "slco1b1*15"
+      ],
+      "filtered_matches": [
+        "rs2306283",
+        "rs4149056"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [],
+      "removed_total": 2,
+      "removed_false_positives": [
+        "SLCO1B1*15",
+        "SLCO1B1*5"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC2859392",
+      "true_count": 1,
+      "regex_extracted_count": 5,
+      "filtered_extracted_count": 2,
+      "regex_recall": 1.0,
+      "regex_precision": 0.2,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.5,
+      "regex_matches": [
+        "rs3745274"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs28371759",
+        "cyp2b6*6",
+        "rs28399499",
+        "cyp2b6*516"
+      ],
+      "filtered_matches": [
+        "rs3745274"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "cyp2b6*516"
+      ],
+      "removed_total": 3,
+      "removed_false_positives": [
+        "rs28371759",
+        "CYP2B6*6",
+        "rs28399499"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC11603346",
+      "true_count": 2,
+      "regex_extracted_count": 7,
+      "filtered_extracted_count": 2,
+      "regex_recall": 1.0,
+      "regex_precision": 0.2857142857142857,
+      "filtered_recall": 1.0,
+      "filtered_precision": 1.0,
+      "regex_matches": [
+        "cyp2b6*6",
+        "cyp2b6*1"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs2279343",
+        "abcb1*04",
+        "hla-c*04",
+        "hla-cw*04",
+        "rs3745274"
+      ],
+      "filtered_matches": [
+        "cyp2b6*6",
+        "cyp2b6*1"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [],
+      "removed_total": 5,
+      "removed_false_positives": [
+        "HLA-C*04",
+        "rs3745274",
+        "rs2279343",
+        "ABCB1*04",
+        "HLA-CW*04"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC8973308",
+      "true_count": 3,
+      "regex_extracted_count": 7,
+      "filtered_extracted_count": 7,
+      "regex_recall": 1.0,
+      "regex_precision": 0.42857142857142855,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.42857142857142855,
+      "regex_matches": [
+        "rs116855232",
+        "rs1800460",
+        "rs1800462"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "tpmt*3",
+        "tpmt*2",
+        "rs1142345",
+        "tpmt*1"
+      ],
+      "filtered_matches": [
+        "rs116855232",
+        "rs1800460",
+        "rs1800462"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "tpmt*3",
+        "tpmt*2",
+        "rs1142345",
+        "tpmt*1"
+      ],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC3387531",
+      "true_count": 6,
+      "regex_extracted_count": 23,
+      "filtered_extracted_count": 14,
+      "regex_recall": 1.0,
+      "regex_precision": 0.2608695652173913,
+      "filtered_recall": 0.5,
+      "filtered_precision": 0.21428571428571427,
+      "regex_matches": [
+        "hla-b*35:01",
+        "hla-c*04:01",
+        "rs2054675",
+        "rs3786547",
+        "rs3745274",
+        "hla-drb1*01:01"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "hla-c*08",
+        "hla-dqb*05",
+        "rs28399499",
+        "cyp2b6*01",
+        "hla-cw*08",
+        "hla-b*35",
+        "hla-c*04",
+        "hla-dqb1*05",
+        "hla-c*15",
+        "hla-cw*04",
+        "hla-cw*15",
+        "hla-b*35:05",
+        "hla-drb1*01",
+        "hla-cw*04:01",
+        "cyp2b6*04",
+        "hla-drb*01",
+        "cyp2b6*35"
+      ],
+      "filtered_matches": [
+        "rs3786547",
+        "rs3745274",
+        "rs2054675"
+      ],
+      "filtered_misses": [
+        "hla-b*35:01",
+        "hla-c*04:01",
+        "hla-drb1*01:01"
+      ],
+      "filtered_extras": [
+        "hla-c*08",
+        "hla-dqb*05",
+        "hla-cw*08",
+        "hla-b*35",
+        "hla-c*04",
+        "hla-dqb1*05",
+        "hla-cw*04",
+        "hla-cw*15",
+        "hla-drb1*01",
+        "hla-c*15",
+        "hla-drb*01"
+      ],
+      "removed_total": 9,
+      "removed_false_positives": [
+        "CYP2B6*01",
+        "HLA-C*04:01",
+        "rs28399499",
+        "CYP2B6*04",
+        "HLA-DRB1*01:01",
+        "HLA-CW*04:01",
+        "HLA-B*35:05",
+        "HLA-B*35:01",
+        "CYP2B6*35"
+      ],
+      "removed_true_positives": [
+        "hla-b*35:01",
+        "hla-c*04:01",
+        "hla-drb1*01:01"
+      ]
     }
   ]
 }

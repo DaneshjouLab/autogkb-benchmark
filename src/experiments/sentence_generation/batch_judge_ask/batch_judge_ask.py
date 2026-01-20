@@ -7,6 +7,8 @@ This script is similar to llm_judge_ask but batches all variants for a given PMC
 into a single LLM call instead of processing them one-by-one. This can be more
 efficient and may produce more consistent results across variants.
 
+(default judge model: claude-3-haiku-20240307)
+
 Example Commands:
 
 1. Run with default model (gpt-5) and prompt (v3) for one PMCID:
