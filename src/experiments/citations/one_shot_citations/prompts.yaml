@@ -1,0 +1,87 @@
+# Prompts for citation finding experiment
+# Each prompt version includes the system prompt and user prompt template
+
+v1:
+  name: "Basic citation finding"
+  system: |
+    You are a pharmacogenomics expert who identifies supporting evidence for pharmacogenetic association claims from scientific literature.
+
+    Your task is to find the most relevant sentences or tables from the article that support each proposed pharmacogenomic relationship.
+  user: |
+    From the following article text, find the top 3-5 sentences from the article that are most relevant to and support the proposed effect of each pharmacogenomic relationship.
+
+    Pharmacogenomic Relationships:
+    {associations}
+
+    Article text:
+    {article_text}
+
+    INSTRUCTIONS:
+    - For each pharmacogenomic relationship, identify 3-5 sentences that provide supporting evidence
+    - If a table provides the support warranting inclusion, return the table header (## Table X: ..., etc.) as your sentence
+    - Make sure to include a sentence or table in your top responses if it has the p-value for the relationship
+    - Output the exact sentences from the article text
+    - Keep in mind that headings are text/numbers preceded by hash symbols (#) and should not be included in citations unless referencing a table
+    - Only include content sentences
+
+    OUTPUT FORMAT:
+    For each relationship, output:
+    VARIANT: [variant_id]
+    CITATIONS:
+    1. [exact sentence from article]
+    2. [exact sentence from article]
+    3. [exact sentence from article]
+    ...
+
+    Then a blank line before the next variant.
+
+    Example:
+    VARIANT: rs9923231
+    CITATIONS:
+    1. Patients with CT or TT genotypes required significantly lower warfarin doses compared to CC genotype carriers (p < 0.001).
+    2. The mean warfarin dose was 3.2 mg/day for CT/TT carriers versus 5.1 mg/day for CC carriers.
+    3. ## Table 2: Association between rs9923231 genotypes and warfarin maintenance dose
+
+v2:
+  name: "Citation finding with explanation context"
+  system: |
+    You are a pharmacogenomics expert who identifies supporting evidence for pharmacogenetic association claims from scientific literature.
+
+    Your task is to find the most relevant sentences or tables from the article that support each proposed pharmacogenomic relationship.
+  user: |
+    From the following article text, find the top 3-5 sentences from the article that are most relevant to and support the proposed effect of each pharmacogenomic relationship.
+
+    Pharmacogenomic Relationships (with explanations):
+    {associations}
+
+    Article text:
+    {article_text}
+
+    INSTRUCTIONS:
+    - For each pharmacogenomic relationship, identify 3-5 sentences that provide supporting evidence
+    - Use the explanation context to understand what kind of evidence to look for
+    - If a table provides the support warranting inclusion, return the table header (## Table X: ..., etc.) as your sentence
+    - Make sure to include a sentence or table in your top responses if it has the p-value for the relationship
+    - Output the exact sentences from the article text
+    - Keep in mind that headings are text/numbers preceded by hash symbols (#) and should not be included in citations unless referencing a table
+    - Only include content sentences
+    - Prioritize sentences with statistical evidence (p-values, effect sizes, sample sizes)
+
+    OUTPUT FORMAT:
+    For each relationship, output:
+    VARIANT: [variant_id]
+    CITATIONS:
+    1. [exact sentence from article]
+    2. [exact sentence from article]
+    3. [exact sentence from article]
+    ...
+
+    Then a blank line before the next variant.
+
+    Example:
+    VARIANT: rs9923231
+    CITATIONS:
+    1. Patients with CT or TT genotypes required significantly lower warfarin doses compared to CC genotype carriers (p < 0.001).
+    2. The mean warfarin dose was 3.2 mg/day for CT/TT carriers versus 5.1 mg/day for CC carriers.
+    3. ## Table 2: Association between rs9923231 genotypes and warfarin maintenance dose
+    4. A total of 1,015 patients were genotyped for rs9923231, with 245 carrying the CT genotype and 89 carrying TT.
