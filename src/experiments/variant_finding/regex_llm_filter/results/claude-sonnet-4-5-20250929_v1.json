@@ -1,0 +1,118 @@
+{
+  "model": "claude-sonnet-4-5-20250929",
+  "prompt_version": "v1",
+  "prompt_name": "Basic false positive filter",
+  "timestamp": "2026-01-20T08:53:55.054285",
+  "articles_processed": 2,
+  "regex_results": {
+    "avg_recall": 0.8571428571428572,
+    "avg_precision": 0.4423076923076923,
+    "perfect_recalls": 1
+  },
+  "filtered_results": {
+    "avg_recall": 0.8571428571428572,
+    "avg_precision": 0.5923076923076923,
+    "perfect_recalls": 1
+  },
+  "improvement": {
+    "recall_change": 0.0,
+    "precision_change": 0.15000000000000002
+  },
+  "per_article_results": [
+    {
+      "pmcid": "PMC5508045",
+      "true_count": 4,
+      "regex_extracted_count": 8,
+      "filtered_extracted_count": 5,
+      "regex_recall": 1.0,
+      "regex_precision": 0.5,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.8,
+      "regex_matches": [
+        "rs9923231",
+        "rs1057910",
+        "rs2108622",
+        "rs887829"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "rs8175347",
+        "cyp2c9*1",
+        "cyp2c9*2",
+        "cyp2c9*3"
+      ],
+      "filtered_matches": [
+        "rs9923231",
+        "rs1057910",
+        "rs2108622",
+        "rs887829"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "cyp2c9*3"
+      ],
+      "removed_total": 3,
+      "removed_false_positives": [
+        "rs8175347",
+        "CYP2C9*2",
+        "CYP2C9*1"
+      ],
+      "removed_true_positives": []
+    },
+    {
+      "pmcid": "PMC4916189",
+      "true_count": 7,
+      "regex_extracted_count": 13,
+      "filtered_extracted_count": 13,
+      "regex_recall": 0.7142857142857143,
+      "regex_precision": 0.38461538461538464,
+      "filtered_recall": 0.7142857142857143,
+      "filtered_precision": 0.38461538461538464,
+      "regex_matches": [
+        "rs3745274",
+        "rs2472677",
+        "rs4803419",
+        "rs28399499",
+        "rs1045642"
+      ],
+      "regex_misses": [
+        "cyp2b6*1",
+        "cyp2b6*9"
+      ],
+      "regex_extras": [
+        "rs3003596",
+        "rs35599367",
+        "cyp3a4*22",
+        "rs2307424",
+        "rs6785049",
+        "cyp2a6*17",
+        "rs28399454",
+        "rs8192726"
+      ],
+      "filtered_matches": [
+        "rs3745274",
+        "rs2472677",
+        "rs4803419",
+        "rs28399499",
+        "rs1045642"
+      ],
+      "filtered_misses": [
+        "cyp2b6*1",
+        "cyp2b6*9"
+      ],
+      "filtered_extras": [
+        "rs3003596",
+        "rs35599367",
+        "cyp3a4*22",
+        "rs2307424",
+        "rs6785049",
+        "cyp2a6*17",
+        "rs28399454",
+        "rs8192726"
+      ],
+      "removed_total": 0,
+      "removed_false_positives": [],
+      "removed_true_positives": []
+    }
+  ]
+}
