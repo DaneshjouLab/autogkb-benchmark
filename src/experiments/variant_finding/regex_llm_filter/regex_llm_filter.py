@@ -6,7 +6,7 @@ to remove false positives. The LLM filters out variants that are only mentioned 
 context rather than actually being studied in the article.
 
 Usage:
-    python regex_llm_filter.py --model claude-3-5-sonnet-20241022 --prompt v1
+    python regex_llm_filter.py --model claude-3-5-sonnet --prompt v1
     python regex_llm_filter.py --model gpt-4o --prompt v2 --max-articles 5
 """
 
@@ -18,18 +18,17 @@ from pathlib import Path
 
 import yaml
 from dotenv import load_dotenv
-from litellm import completion
 
 # Import V5 extraction functions
 import sys
-sys.path.append(str(Path(__file__).resolve().parents[3]))
+sys.path.append(str(Path(__file__).resolve().parents[4]))
 
 from src.experiments.variant_finding.regex_variants.extract_variants_v5 import (
     extract_all_variants,
     get_combined_text,
     get_snp_expander,
 )
-from src.experiments.utils import get_markdown_text
+from src.experiments.utils import call_llm, get_markdown_text
 from src.benchmark_v2.variant_bench import load_variant_bench_data, score_variants
 
 # Load environment variables
@@ -41,29 +40,6 @@ def load_prompts() -> dict:
     prompts_path = Path(__file__).parent / "prompts.yaml"
     with open(prompts_path, "r") as f:
         return yaml.safe_load(f)
-
-
-def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
-    """
-    Call LLM using litellm.
-
-    Args:
-        model: Model identifier (e.g., "claude-3-5-sonnet-20241022", "gpt-4o")
-        system_prompt: System message
-        user_prompt: User message
-
-    Returns:
-        LLM response text
-    """
-    response = completion(
-        model=model,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        temperature=0,
-    )
-    return response.choices[0].message.content
 
 
 def extract_json_array(text: str) -> list[str]:
@@ -217,8 +193,8 @@ def run_experiment(
             )
         except Exception as e:
             print(f"  ⚠️  LLM call failed: {e}")
-            print(f"  Skipping to next article\n")
-            continue
+            print("  Ending experiment early due to LLM call failure\n")
+            break
 
         # Step 3: Score both regex and filtered results
         true_variants = benchmark_data[pmcid]

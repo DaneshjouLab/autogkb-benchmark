@@ -42,7 +42,6 @@ from pathlib import Path
 
 import yaml
 from dotenv import load_dotenv
-from litellm import completion
 from loguru import logger
 
 # Suppress Pydantic serialization warnings from litellm
@@ -57,6 +56,9 @@ ROOT = Path(__file__).resolve().parents[4]
 # Add repository root to Python path to enable imports
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+
+# Import centralized LLM utilities
+from src.experiments.utils import call_llm
 
 # Import sentence bench for evaluation
 try:
@@ -93,31 +95,6 @@ def get_n_pmcids_and_variants(n: int) -> list[tuple[str, list[str]]]:
             results.append((rec["pmcid"], rec["variants"]))
     logger.info(f"Loaded {len(results)} PMCID(s) with variants")
     return results
-
-
-def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
-    """Call LLM via litellm.completion and return content string."""
-    logger.debug(f"Calling LLM with model: {model}")
-    # Some models disallow explicit temperature=0; set only when supported
-    no_temp_models = (
-        model.startswith("o1") or model.startswith("o3") or model.startswith("gpt-5")
-    )
-
-    kwargs: dict = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-    }
-    if not no_temp_models:
-        kwargs["temperature"] = 0
-
-    resp = completion(**kwargs)
-    logger.debug(
-        f"LLM response received ({len(resp.choices[0].message.content)} chars)"
-    )
-    return resp.choices[0].message.content
 
 
 def split_sentences(text: str) -> list[str]:

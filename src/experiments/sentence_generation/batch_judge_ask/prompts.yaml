@@ -153,6 +153,7 @@ v5:
     6. Drug name
     7. **CRITICAL - PATIENT POPULATION/CONDITIONS: Search the article carefully for any specific conditions, diseases, or patient populations mentioned. Include them using "in people with [condition list]" format (e.g., "in people with Atrial Fibrillation, Hypertension, Pulmonary Embolism, Venous Thrombosis"). This is a REQUIRED element if such information is present in the article.**
     8. Comparison group (e.g., "as compared to genotype CC", "as compared to allele G")
+    9. P-value or statistical significance if mentioned
 
     EXPLANATION REQUIREMENTS:
     - Cite the type of evidence (e.g., "study found...", "meta-analysis showed...", "p-value of...")

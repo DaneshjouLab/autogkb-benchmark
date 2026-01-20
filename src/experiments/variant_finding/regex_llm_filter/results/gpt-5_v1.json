@@ -1,0 +1,63 @@
+{
+  "model": "gpt-5",
+  "prompt_version": "v1",
+  "prompt_name": "Basic false positive filter",
+  "timestamp": "2026-01-20T10:17:43.234226",
+  "articles_processed": 1,
+  "regex_results": {
+    "avg_recall": 1.0,
+    "avg_precision": 0.5,
+    "perfect_recalls": 1
+  },
+  "filtered_results": {
+    "avg_recall": 1.0,
+    "avg_precision": 0.8,
+    "perfect_recalls": 1
+  },
+  "improvement": {
+    "recall_change": 0.0,
+    "precision_change": 0.30000000000000004
+  },
+  "per_article_results": [
+    {
+      "pmcid": "PMC5508045",
+      "true_count": 4,
+      "regex_extracted_count": 8,
+      "filtered_extracted_count": 5,
+      "regex_recall": 1.0,
+      "regex_precision": 0.5,
+      "filtered_recall": 1.0,
+      "filtered_precision": 0.8,
+      "regex_matches": [
+        "rs2108622",
+        "rs1057910",
+        "rs887829",
+        "rs9923231"
+      ],
+      "regex_misses": [],
+      "regex_extras": [
+        "cyp2c9*2",
+        "cyp2c9*3",
+        "cyp2c9*1",
+        "rs8175347"
+      ],
+      "filtered_matches": [
+        "rs2108622",
+        "rs1057910",
+        "rs887829",
+        "rs9923231"
+      ],
+      "filtered_misses": [],
+      "filtered_extras": [
+        "cyp2c9*3"
+      ],
+      "removed_total": 3,
+      "removed_false_positives": [
+        "CYP2C9*1",
+        "CYP2C9*2",
+        "rs8175347"
+      ],
+      "removed_true_positives": []
+    }
+  ]
+}
