@@ -29,6 +29,23 @@ class SingleSentenceEntry(BaseModel):
     annotation_type: str
 
 
+class GroupedSentenceEntry(BaseModel):
+    """
+    Represents grouped sentences for a (pmcid, variant) pair.
+
+    Attributes:
+        pmcid (str): The PubMed Central ID of the article.
+        pmid (str): The PubMed ID of the article.
+        variant (str): The variant/haplotype associated with these sentences.
+        sentences (list[str]): All sentences associated with this (pmcid, variant) pair.
+    """
+
+    pmcid: str
+    pmid: str
+    variant: str
+    sentences: list[str]
+
+
 def get_file_sentences(file_path: Path | str) -> list[SingleSentenceEntry]:
     """
     Extracts all sentence entries from a single JSON article file.
@@ -109,40 +126,89 @@ def get_dir_sentences(dir_path: str) -> list[SingleSentenceEntry]:
     return all_entries
 
 
-def get_benchmark_sentences(save_jsonl: bool = True) -> list[SingleSentenceEntry]:
+def group_sentences_by_pmcid_variant(
+    entries: list[SingleSentenceEntry],
+) -> list[GroupedSentenceEntry]:
+    """
+    Groups sentence entries by (pmcid, variant) pair.
+
+    Args:
+        entries (list[SingleSentenceEntry]): List of individual sentence entries.
+
+    Returns:
+        list[GroupedSentenceEntry]: List of grouped entries where each entry contains
+                                    all sentences for a unique (pmcid, variant) pair.
+    """
+    from collections import defaultdict
+
+    # Group by (pmcid, variant)
+    grouped: dict[tuple[str, str], dict] = defaultdict(
+        lambda: {"pmid": "", "sentences": []}
+    )
+
+    for entry in entries:
+        key = (entry.pmcid, entry.variant)
+        grouped[key]["pmid"] = entry.pmid
+        grouped[key]["sentences"].append(entry.sentence)
+
+    # Convert to GroupedSentenceEntry objects
+    result = []
+    for (pmcid, variant), data in grouped.items():
+        result.append(
+            GroupedSentenceEntry(
+                pmcid=pmcid,
+                pmid=data["pmid"],
+                variant=variant,
+                sentences=data["sentences"],
+            )
+        )
+
+    return result
+
+
+def get_benchmark_sentences(save_jsonl: bool = True) -> list[GroupedSentenceEntry]:
     """
     Retrieves and processes sentences from the benchmark annotation directory.
 
     This function specifically targets the 'data/benchmark_annotations' directory.
+    Sentences are grouped by (pmcid, variant) pair to handle cases where multiple
+    sentences exist for the same pair.
 
     Args:
         save_jsonl (bool, optional): If True, saves the results to a JSONL file
                                      at 'data/benchmark_v2/sentence_bench.jsonl'. Defaults to True.
 
     Returns:
-        list[SingleSentenceEntry]: A list of `SingleSentenceEntry` objects
-                                   representing the benchmark sentences.
+        list[GroupedSentenceEntry]: A list of `GroupedSentenceEntry` objects
+                                    representing the benchmark sentences grouped by (pmcid, variant).
     """
     benchmark_dir = "data/benchmark_annotations"
     logger.info(f"Loading sentences from benchmark dir {benchmark_dir}")
-    benchmark_sentences = get_dir_sentences(benchmark_dir)
+    raw_sentences = get_dir_sentences(benchmark_dir)
+    logger.info(f"Found {len(raw_sentences)} individual sentence entries")
+
+    # Group sentences by (pmcid, variant) pair
+    grouped_sentences = group_sentences_by_pmcid_variant(raw_sentences)
+    logger.info(f"Grouped into {len(grouped_sentences)} unique (pmcid, variant) pairs")
 
     if save_jsonl:
         output_path = Path("data") / "benchmark_v2" / "sentence_bench.jsonl"
         output_path.parent.mkdir(parents=True, exist_ok=True)
         with open(output_path, "w") as f:
-            for entry in benchmark_sentences:
+            for entry in grouped_sentences:
                 f.write(json.dumps(entry.model_dump()) + "\n")
-        logger.info(
-            f"Saved {len(benchmark_sentences)} sentence entries to {output_path}"
-        )
+        logger.info(f"Saved {len(grouped_sentences)} grouped entries to {output_path}")
 
-    return benchmark_sentences
+    return grouped_sentences
 
 
 if __name__ == "__main__":
     benchmark_sentences = get_benchmark_sentences(save_jsonl=True)
-    print(f"Found {len(benchmark_sentences)} sentence entries")
+    print(f"Found {len(benchmark_sentences)} grouped (pmcid, variant) entries")
+
+    # Show stats on entries with multiple sentences
+    multi_sentence_entries = [e for e in benchmark_sentences if len(e.sentences) > 1]
+    print(f"Entries with multiple sentences: {len(multi_sentence_entries)}")
 
     # Verify the JSONL file is loadable
     with open("data/benchmark_v2/sentence_bench.jsonl", "r") as f:
