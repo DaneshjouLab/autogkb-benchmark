@@ -99,7 +99,9 @@ def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
     """Call LLM via litellm.completion and return content string."""
     logger.debug(f"Calling LLM with model: {model}")
     # Some models disallow explicit temperature=0; set only when supported
-    no_temp_models = model.startswith("o1") or model.startswith("o3") or model.startswith("gpt-5")
+    no_temp_models = (
+        model.startswith("o1") or model.startswith("o3") or model.startswith("gpt-5")
+    )
 
     kwargs: dict = {
         "model": model,
@@ -112,7 +114,9 @@ def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
         kwargs["temperature"] = 0
 
     resp = completion(**kwargs)
-    logger.debug(f"LLM response received ({len(resp.choices[0].message.content)} chars)")
+    logger.debug(
+        f"LLM response received ({len(resp.choices[0].message.content)} chars)"
+    )
     return resp.choices[0].message.content
 
 
@@ -144,8 +148,12 @@ def parse_sentence_with_explanation(text: str) -> dict[str, str]:
     If format is not matched, treats entire text as sentence with empty explanation.
     """
     # Try to match the SENTENCE: ... EXPLANATION: ... format
-    sentence_match = re.search(r"SENTENCE:\s*(.+?)(?=EXPLANATION:|$)", text, re.DOTALL | re.IGNORECASE)
-    explanation_match = re.search(r"EXPLANATION:\s*(.+?)$", text, re.DOTALL | re.IGNORECASE)
+    sentence_match = re.search(
+        r"SENTENCE:\s*(.+?)(?=EXPLANATION:|$)", text, re.DOTALL | re.IGNORECASE
+    )
+    explanation_match = re.search(
+        r"EXPLANATION:\s*(.+?)$", text, re.DOTALL | re.IGNORECASE
+    )
 
     if sentence_match:
         sentence = sentence_match.group(1).strip()
@@ -153,7 +161,9 @@ def parse_sentence_with_explanation(text: str) -> dict[str, str]:
         return {"sentence": sentence, "explanation": explanation}
     else:
         # Fallback: treat entire text as sentence if format not matched
-        logger.warning("Could not parse SENTENCE/EXPLANATION format, treating as plain sentence")
+        logger.warning(
+            "Could not parse SENTENCE/EXPLANATION format, treating as plain sentence"
+        )
         return {"sentence": text.strip(), "explanation": ""}
 
 
@@ -199,7 +209,9 @@ def process_pmcid(
 
     for variant in variants:
         logger.debug(f"Processing variant: {variant}")
-        user_prompt = prompt_cfg["user"].format(variant=variant, article_text=article_text)
+        user_prompt = prompt_cfg["user"].format(
+            variant=variant, article_text=article_text
+        )
         system_prompt = prompt_cfg["system"]
 
         try:
@@ -210,7 +222,11 @@ def process_pmcid(
 
         if use_explanations:
             # For v4: parse sentence + explanation
-            parsed = parse_sentence_with_explanation(output) if output else {"sentence": "", "explanation": ""}
+            parsed = (
+                parse_sentence_with_explanation(output)
+                if output
+                else {"sentence": "", "explanation": ""}
+            )
             result[pmcid][variant] = [parsed]  # Store as list of dicts for consistency
             preview = parsed["sentence"] if parsed["sentence"] else "<no output>"
         else:
@@ -238,7 +254,9 @@ def process_pmcid(
         try:
             RESULTS_DIR.mkdir(parents=True, exist_ok=True)
             safe_judge_model = judge_model.replace("/", "_").replace(":", "_")
-            eval_path = RESULTS_DIR / f"sentence_scores_llm_{safe_judge_model}_{timestamp}.json"
+            eval_path = (
+                RESULTS_DIR / f"sentence_scores_llm_{safe_judge_model}_{timestamp}.json"
+            )
 
             logger.debug(f"Running evaluation with judge model: {judge_model}")
             eval_result = score_and_save(
@@ -253,11 +271,15 @@ def process_pmcid(
             logger.info(f"Number of PMCIDs: {eval_result.num_pmcids}")
             logger.info("Per-PMCID Scores:")
             for pmcid_result in eval_result.per_pmcid:
-                logger.info(f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} ({pmcid_result['num_variants']} variants)")
+                logger.info(
+                    f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} ({pmcid_result['num_variants']} variants)"
+                )
 
         except Exception as e:
             logger.warning(f"Evaluation failed: {e}")
-            logger.info("Generated sentences were saved successfully, but evaluation could not be completed.")
+            logger.info(
+                "Generated sentences were saved successfully, but evaluation could not be completed."
+            )
     elif no_eval:
         logger.info("Skipping evaluation (--no-eval flag set)")
     elif score_and_save is None:
@@ -266,9 +288,7 @@ def process_pmcid(
 
 def main():
     parser = argparse.ArgumentParser(
-        description=(
-            "Generate association sentences for PMCID variants and save JSON."
-        )
+        description=("Generate association sentences for PMCID variants and save JSON.")
     )
     parser.add_argument(
         "--model",
@@ -328,4 +348,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

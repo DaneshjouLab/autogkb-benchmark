@@ -29,7 +29,10 @@ from src.term_normalization.snp_expansion import SNPExpander
 
 # Paths
 SENTENCE_BENCH_PATH = (
-    Path(__file__).resolve().parents[4] / "data" / "benchmark_v2" / "sentence_bench.jsonl"
+    Path(__file__).resolve().parents[4]
+    / "data"
+    / "benchmark_v2"
+    / "sentence_bench.jsonl"
 )
 PROMPTS_FILE = Path(__file__).parent / "prompts.yaml"
 RESULTS_DIR = Path(__file__).parent / "results"
@@ -113,7 +116,9 @@ def get_variant_context(variant: str) -> str:
 def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
     """Call LLM using litellm."""
     # O-series and GPT-5 models don't support temperature=0
-    no_temp_models = model.startswith("o1") or model.startswith("o3") or model.startswith("gpt-5")
+    no_temp_models = (
+        model.startswith("o1") or model.startswith("o3") or model.startswith("gpt-5")
+    )
 
     kwargs = {
         "model": model,
@@ -348,7 +353,9 @@ def run_experiment(
     print(f"Total variants processed: {total_variants}")
     print(f"Average similarity: {avg_similarity:.1%}")
     if use_supplements:
-        print(f"Articles with supplements: {articles_with_supplements}/{len(sentence_bench)}")
+        print(
+            f"Articles with supplements: {articles_with_supplements}/{len(sentence_bench)}"
+        )
 
     # Count by similarity threshold
     all_sims = [

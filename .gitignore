@@ -12,3 +12,4 @@ __MACOSX
 .pyenv
 .env
 .envrc
+.ruff_cache

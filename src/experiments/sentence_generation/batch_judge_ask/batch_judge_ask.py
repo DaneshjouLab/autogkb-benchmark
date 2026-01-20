@@ -179,10 +179,12 @@ def process_pmcid(
     model: str,
     prompt_cfg: dict,
     prompt_name: str,
-    judge_model: str,
-    no_eval: bool,
-) -> None:
-    """Process a single PMCID: generate sentences for all variants in batch and optionally evaluate."""
+) -> dict[str, dict[str, list[str] | list[dict[str, str]]]]:
+    """Process a single PMCID: generate sentences for all variants in batch.
+
+    Returns:
+        A dictionary with structure {pmcid: {variant: sentences}}
+    """
     logger.info(
         f"Processing PMCID: {pmcid} with {len(variants)} variant(s) in batch mode"
     )
@@ -263,53 +265,7 @@ def process_pmcid(
                 result[pmcid][variant] = []
             logger.warning(f"✗ {variant}: not found in batch output")
 
-    # Save output file
-    OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
-    safe_model = model.replace("/", "_").replace(":", "_")
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    out_path = OUTPUTS_DIR / f"{safe_model}_{prompt_name}_{timestamp}.json"
-
-    logger.debug(f"Saving generated sentences to {out_path}")
-    with open(out_path, "w") as f:
-        json.dump(result, f, indent=2)
-    logger.success(f"Saved generated sentences to {out_path}")
-
-    # Evaluate generated sentences against ground truth
-    if not no_eval and score_and_save is not None:
-        logger.info("Evaluating sentences against ground truth")
-        try:
-            RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-            safe_judge_model = judge_model.replace("/", "_").replace(":", "_")
-            eval_path = (
-                RESULTS_DIR / f"sentence_scores_llm_{safe_judge_model}_{timestamp}.json"
-            )
-
-            logger.debug(f"Running evaluation with judge model: {judge_model}")
-            eval_result = score_and_save(
-                generated_sentences_path=out_path,
-                method="llm",
-                model=judge_model,
-                output_path=eval_path,
-            )
-
-            logger.info("Evaluation Summary")
-            logger.info(f"Overall Average Score: {eval_result.overall_avg_score:.3f}")
-            logger.info(f"Number of PMCIDs: {eval_result.num_pmcids}")
-            logger.info("Per-PMCID Scores:")
-            for pmcid_result in eval_result.per_pmcid:
-                logger.info(
-                    f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} ({pmcid_result['num_variants']} variants)"
-                )
-
-        except Exception as e:
-            logger.warning(f"Evaluation failed: {e}")
-            logger.info(
-                "Generated sentences were saved successfully, but evaluation could not be completed."
-            )
-    elif no_eval:
-        logger.info("Skipping evaluation (--no-eval flag set)")
-    elif score_and_save is None:
-        logger.info("Skipping evaluation (sentence_bench module not available)")
+    return result
 
 
 def main():
@@ -359,17 +315,75 @@ def main():
     logger.info(f"Judge Model: {args.judge_model}")
     logger.info(f"Processing {len(pmcids_and_variants)} PMCID(s) in batch mode")
 
+    # Generate timestamp once for this run
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    # Collect results from all PMCIDs
+    all_results: dict[str, dict[str, list[str] | list[dict[str, str]]]] = {}
+
     # Process each PMCID
     for pmcid, variants in pmcids_and_variants:
-        process_pmcid(
+        pmcid_result = process_pmcid(
             pmcid=pmcid,
             variants=variants,
             model=args.model,
             prompt_cfg=prompt_cfg,
             prompt_name=args.prompt,
-            judge_model=args.judge_model,
-            no_eval=args.no_eval,
         )
+        # Merge results into the combined dictionary
+        all_results.update(pmcid_result)
+
+    # Save all results to a single output file
+    OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
+    safe_model = args.model.replace("/", "_").replace(":", "_")
+    out_path = OUTPUTS_DIR / f"{safe_model}_{args.prompt}_{timestamp}.json"
+
+    logger.debug(f"Saving generated sentences to {out_path}")
+    with open(out_path, "w") as f:
+        json.dump(all_results, f, indent=2)
+    logger.success(f"Saved generated sentences for {len(all_results)} PMCID(s) to {out_path}")
+
+    # Evaluate generated sentences against ground truth
+    if not args.no_eval and score_and_save is not None:
+        logger.info("Evaluating sentences against ground truth")
+        try:
+            RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+            safe_judge_model = args.judge_model.replace("/", "_").replace(":", "_")
+            eval_path = (
+                RESULTS_DIR / f"sentence_scores_llm_{safe_judge_model}_{timestamp}.json"
+            )
+
+            logger.debug(f"Running evaluation with judge model: {args.judge_model}")
+            eval_result = score_and_save(
+                generated_sentences_path=out_path,
+                method="llm",
+                model=args.judge_model,
+                output_path=eval_path,
+            )
+
+            logger.info("Evaluation Summary")
+            logger.info(f"Overall Average Score: {eval_result.overall_avg_score:.3f}")
+            logger.info(f"Number of PMCIDs: {eval_result.num_pmcids}")
+            logger.info("Per-PMCID Scores:")
+            for pmcid_result in eval_result.per_pmcid:
+                num_scored = pmcid_result['num_variants_scored']
+                num_not_in_gt = pmcid_result['num_variants_not_in_ground_truth']
+                variants_info = f"{num_scored} variants"
+                if num_not_in_gt > 0:
+                    variants_info += f", {num_not_in_gt} not in ground truth"
+                logger.info(
+                    f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} ({variants_info})"
+                )
+
+        except Exception as e:
+            logger.warning(f"Evaluation failed: {e}")
+            logger.info(
+                "Generated sentences were saved successfully, but evaluation could not be completed."
+            )
+    elif args.no_eval:
+        logger.info("Skipping evaluation (--no-eval flag set)")
+    elif score_and_save is None:
+        logger.info("Skipping evaluation (sentence_bench module not available)")
 
     logger.success(f"Completed batch processing {len(pmcids_and_variants)} PMCID(s)")
 

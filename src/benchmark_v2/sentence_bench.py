@@ -31,10 +31,7 @@ class VariantSentenceScore:
     variant: str
     ground_truth: list[str]
     generated: list[str]
-    score: float
-    best_similarity: float
-    best_gt: str
-    best_gen: str
+    score: float | None  # None if variant not in ground truth
     critique: str
 
 
@@ -48,7 +45,9 @@ class SentenceBenchResult:
     source_file: str
     overall_avg_score: float
     num_pmcids: int
-    per_pmcid: list[dict]  # Each dict contains: pmcid, avg_score, num_variants, per_variant, generated_extras
+    per_pmcid: list[
+        dict
+    ]  # Each dict contains: pmcid, avg_score, num_variants_scored, num_variants_not_in_ground_truth, per_variant
 
 
 def load_sentence_bench_data() -> dict[str, dict[str, list[str]]]:
@@ -81,30 +80,6 @@ def load_sentence_bench_data() -> dict[str, dict[str, list[str]]]:
     return pmcid_data
 
 
-def jaccard_similarity(sent1: str, sent2: str) -> float:
-    """Calculate Jaccard similarity between two sentences based on word tokens.
-
-    Args:
-        sent1: First sentence
-        sent2: Second sentence
-
-    Returns:
-        Jaccard similarity score (0 to 1)
-    """
-    # Tokenize and normalize
-    tokens1 = set(sent1.lower().split())
-    tokens2 = set(sent2.lower().split())
-
-    # Calculate Jaccard similarity
-    intersection = tokens1 & tokens2
-    union = tokens1 | tokens2
-
-    if len(union) == 0:
-        return 0.0
-
-    return len(intersection) / len(union)
-
-
 def llm_judge_score(
     ground_truth_sentences: list[str],
     generated_sentences: list[str],
@@ -127,10 +102,10 @@ def llm_judge_score(
 Variant: {variant}
 
 Ground Truth Sentences:
-{chr(10).join(f"{i+1}. {s}" for i, s in enumerate(ground_truth_sentences))}
+{chr(10).join(f"{i + 1}. {s}" for i, s in enumerate(ground_truth_sentences))}
 
 Generated Sentences:
-{chr(10).join(f"{i+1}. {s}" for i, s in enumerate(generated_sentences))}
+{chr(10).join(f"{i + 1}. {s}" for i, s in enumerate(generated_sentences))}
 
 Evaluate whether the generated sentences capture the same pharmacogenomic associations as the ground truth. Focus on:
 - Variant/genotype mentioned
@@ -194,38 +169,18 @@ def score_variant_sentences(
     # Get LLM judge score
     llm_score, critique = llm_judge_score(ground_truth, generated, variant, model)
 
-    # Calculate best Jaccard similarity
-    best_similarity = 0.0
-    best_gt = ""
-    best_gen = ""
-
-    for gt_sent in ground_truth:
-        for gen_sent in generated:
-            sim = jaccard_similarity(gt_sent, gen_sent)
-            if sim > best_similarity:
-                best_similarity = sim
-                best_gt = gt_sent
-                best_gen = gen_sent
-
-    # If no sentences, use first of each as best
-    if not best_gt and ground_truth:
-        best_gt = ground_truth[0]
-    if not best_gen and generated:
-        best_gen = generated[0]
-
     return VariantSentenceScore(
         variant=variant,
         ground_truth=ground_truth,
         generated=generated,
         score=llm_score,
-        best_similarity=best_similarity,
-        best_gt=best_gt,
-        best_gen=best_gen,
         critique=critique,
     )
 
 
-def extract_sentences_from_generated(generated_data: list[str] | list[dict[str, str]]) -> list[str]:
+def extract_sentences_from_generated(
+    generated_data: list[str] | list[dict[str, str]],
+) -> list[str]:
     """Extract sentences from generated data, handling both old and new formats.
 
     Args:
@@ -296,14 +251,17 @@ def score_generated_sentences(
         # Score each variant for this PMCID
         per_variant_scores = []
         total_score = 0.0
-        num_variants = 0
+        num_variants_scored = 0
 
+        # First, score variants that are in ground truth
         for variant, gt_sentences in ground_truth_variants.items():
             gen_data = generated_variants.get(variant, [])
             # Extract sentences only (ignore explanations for evaluation)
             gen_sentences = extract_sentences_from_generated(gen_data)
 
-            variant_score = score_variant_sentences(variant, gt_sentences, gen_sentences, model)
+            variant_score = score_variant_sentences(
+                variant, gt_sentences, gen_sentences, model
+            )
 
             per_variant_scores.append(
                 {
@@ -311,30 +269,44 @@ def score_generated_sentences(
                     "ground_truth": variant_score.ground_truth,
                     "generated": variant_score.generated,
                     "score": variant_score.score,
-                    "best_similarity": variant_score.best_similarity,
-                    "best_gt": variant_score.best_gt,
-                    "best_gen": variant_score.best_gen,
                     "critique": variant_score.critique,
                 }
             )
 
             total_score += variant_score.score
-            num_variants += 1
+            num_variants_scored += 1
 
-        # Calculate average score for this PMCID
-        pmcid_avg_score = total_score / num_variants if num_variants > 0 else 0.0
+        # Include extra variants in generated that aren't in ground truth
+        # These get null scores and aren't counted in the average
+        generated_extras = [
+            v for v in generated_variants.keys() if v not in ground_truth_variants
+        ]
 
-        # Find extra variants in generated that aren't in ground truth
-        generated_extras = [v for v in generated_variants.keys() if v not in ground_truth_variants]
+        for variant in generated_extras:
+            gen_data = generated_variants[variant]
+            gen_sentences = extract_sentences_from_generated(gen_data)
+
+            per_variant_scores.append(
+                {
+                    "variant": variant,
+                    "ground_truth": None,
+                    "generated": gen_sentences,
+                    "score": None,
+                    "critique": "Variant not found in ground truth - not scored",
+                }
+            )
+
+        # Calculate average score for this PMCID (only counting scored variants)
+        pmcid_avg_score = total_score / num_variants_scored if num_variants_scored > 0 else 0.0
 
         # Add to per_pmcid results
         per_pmcid_results.append(
             {
                 "pmcid": pmcid,
                 "avg_score": round(pmcid_avg_score, 3),
-                "num_variants": num_variants,
+                "num_variants_scored": num_variants_scored,
+                "num_variants_not_in_ground_truth": len(generated_extras),
                 "per_variant": per_variant_scores,
-                "generated_extras": generated_extras,
             }
         )
 
@@ -342,7 +314,9 @@ def score_generated_sentences(
         num_pmcids_scored += 1
 
     # Calculate overall average score across all PMCIDs
-    overall_avg_score = total_score_across_pmcids / num_pmcids_scored if num_pmcids_scored > 0 else 0.0
+    overall_avg_score = (
+        total_score_across_pmcids / num_pmcids_scored if num_pmcids_scored > 0 else 0.0
+    )
 
     # Create result
     return SentenceBenchResult(
@@ -414,7 +388,14 @@ def score_and_save(
     print(f"  Number of PMCIDs: {result.num_pmcids}")
     print(f"\nPer-PMCID Scores:")
     for pmcid_result in result.per_pmcid:
-        print(f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} ({pmcid_result['num_variants']} variants)")
+        num_scored = pmcid_result['num_variants_scored']
+        num_not_in_gt = pmcid_result['num_variants_not_in_ground_truth']
+        variants_info = f"{num_scored} variants"
+        if num_not_in_gt > 0:
+            variants_info += f", {num_not_in_gt} not in ground truth"
+        print(
+            f"  {pmcid_result['pmcid']}: {pmcid_result['avg_score']:.3f} ({variants_info})"
+        )
 
     return result
 
@@ -445,10 +426,12 @@ def main():
     print("\n=== Detailed Results ===")
     for pmcid_result in result.per_pmcid:
         print(f"\n{pmcid_result['pmcid']} (Avg: {pmcid_result['avg_score']:.3f})")
-        for variant_result in pmcid_result['per_variant']:
-            print(f"  {variant_result['variant']}: {variant_result['score']:.3f}")
-            print(f"    GT: {variant_result['best_gt'][:80]}...")
-            print(f"    Gen: {variant_result['best_gen'][:80]}...")
+        for variant_result in pmcid_result["per_variant"]:
+            score = variant_result['score']
+            if score is not None:
+                print(f"  {variant_result['variant']}: {score:.3f}")
+            else:
+                print(f"  {variant_result['variant']}: N/A (not in ground truth)")
 
 
 if __name__ == "__main__":
