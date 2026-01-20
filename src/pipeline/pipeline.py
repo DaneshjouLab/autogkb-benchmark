@@ -836,7 +836,7 @@ def main():
     # Save results - use config name as filename
     OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
     config_name = config_info.get("name", "pipeline")
-    out_path = OUTPUTS_DIR / f"{config_name}.json"
+    out_path = OUTPUTS_DIR / f"{config_name}_outputs.json"
 
     # Handle merging with existing output file
     if out_path.exists() and not args.override:
