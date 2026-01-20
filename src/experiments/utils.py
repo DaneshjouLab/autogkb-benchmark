@@ -3,6 +3,9 @@ from pathlib import Path
 
 from loguru import logger
 
+# Calculate repository root (utils.py is in src/experiments/)
+ROOT = Path(__file__).resolve().parents[2]
+
 
 def get_markdown_text(pmcid: str) -> str:
     """
@@ -14,7 +17,7 @@ def get_markdown_text(pmcid: str) -> str:
     Returns:
         The text content of the markdown file as a string
     """
-    markdown_path = Path("data") / "articles" / f"{pmcid}.md"
+    markdown_path = ROOT / "data" / "articles" / f"{pmcid}.md"
     try:
         with open(markdown_path, "r") as f:
             return f.read()

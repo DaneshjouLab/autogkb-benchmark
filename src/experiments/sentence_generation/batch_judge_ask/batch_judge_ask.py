@@ -1,33 +1,32 @@
 """
-LLM Judge Ask - Generate sentences for a single article's variants and save output.
+Batch Judge Ask - Generate sentences for all variants in a PMCID at once.
 
-(See llm_judge_ask.md for more details)
+(See batch_judge_ask.md for more details)
 
-This script automates the process of generating sentences using an LLM for given
-PMCID variants, saving the output, and optionally evaluating the generated
-sentences against ground truth.
+This script is similar to llm_judge_ask but batches all variants for a given PMCID
+into a single LLM call instead of processing them one-by-one. This can be more
+efficient and may produce more consistent results across variants.
 
 Example Commands:
 
 1. Run with default model (gpt-5) and prompt (v3) for one PMCID:
-   python llm_judge_ask.py
+   python batch_judge_ask.py
 
 2. Specify a different model and prompt, and process 1 PMCID:
-   python llm_judge_ask.py --model gpt-4o-mini --prompt v3 --num-pmcids 1
+   python batch_judge_ask.py --model gpt-4o-mini --prompt v3 --num-pmcids 1
 
 3. Run with v4 prompt (includes sentence + explanation):
-   python llm_judge_ask.py --model gpt-4o-mini --prompt v4 --num-pmcids 1
+   python batch_judge_ask.py --model gpt-4o-mini --prompt v4 --num-pmcids 1
 
 4. Run without automatic evaluation:
-   python llm_judge_ask.py --no-eval
+   python batch_judge_ask.py --no-eval
 
 5. Specify a different judge model for evaluation:
-   python llm_judge_ask.py --model claude-sonnet-4-20250514 --prompt v1 --judge-model claude-3-haiku-2024030
+   python batch_judge_ask.py --model claude-sonnet-4-20250514 --prompt v3 --judge-model claude-3-haiku-20240307
 
 Prompts:
-- v3: Dual format (rsID + genotype) - recommended for most uses
-- v4: Dual format with explanation - includes brief evidence explanation (not evaluated by sentence_bench)
-- v1, v2: Kept for reference
+- v3: Batch dual format (rsID + genotype) - recommended for most uses
+- v4: Batch dual format with explanation - includes brief evidence explanation
 """
 
 from __future__ import annotations
@@ -65,7 +64,7 @@ except ImportError:
     score_and_save = None
 
 VARIANT_BENCH_PATH = ROOT / "data" / "benchmark_v2" / "variant_bench.jsonl"
-PROMPTS_FILE = "prompts.yaml"
+PROMPTS_FILE = Path(__file__).parent / "prompts.yaml"
 OUTPUTS_DIR = Path(__file__).parent / "outputs"
 RESULTS_DIR = Path(__file__).parent / "results"
 
@@ -116,45 +115,56 @@ def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
     return resp.choices[0].message.content
 
 
-def split_sentences(text: str) -> list[str]:
-    """Split model output into a list of sentences.
+def parse_batch_output(output: str, use_explanations: bool) -> dict[str, list[str] | list[dict[str, str]]]:
+    """Parse batch LLM output into a dict mapping variant -> sentence(s) or parsed dicts.
 
-    Handles either newline-separated or standard sentence punctuation.
+    Expected format for v3:
+        VARIANT: rs9923231
+        SENTENCE: Genotypes CT + TT of rs9923231 are associated with...
+
+        VARIANT: rs1057910
+        SENTENCE: Genotypes AC + CC of rs1057910 are associated with...
+
+    Expected format for v4:
+        VARIANT: rs9923231
+        SENTENCE: Genotypes CT + TT of rs9923231 are associated with...
+        EXPLANATION: A study of 1,015 patients found...
+
+        VARIANT: rs1057910
+        SENTENCE: Genotypes AC + CC of rs1057910 are associated with...
+        EXPLANATION: The study demonstrated...
     """
-    # If output has newlines, treat each non-empty line as a sentence
-    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
-    if len(lines) > 1:
-        return lines
-    # Otherwise, split by sentence-ending punctuation.
-    # Keep the delimiter by using a regex split with capture then rejoin.
-    parts = re.split(r"([.!?])\s+", text.strip())
-    sentences: list[str] = []
-    for i in range(0, len(parts) - 1, 2):
-        sentences.append((parts[i] + parts[i + 1]).strip())
-    # If there is a trailing fragment without punctuation
-    if len(parts) % 2 == 1 and parts[-1].strip():
-        sentences.append(parts[-1].strip())
-    return [s for s in sentences if s]
+    result: dict[str, list[str] | list[dict[str, str]]] = {}
 
+    # Split output into blocks for each variant
+    # Use a regex to find VARIANT: ... SENTENCE: ... [EXPLANATION: ...] patterns
+    if use_explanations:
+        # Pattern for v4: VARIANT, SENTENCE, and EXPLANATION
+        pattern = r"VARIANT:\s*(.+?)\s*\n\s*SENTENCE:\s*(.+?)\s*\n\s*EXPLANATION:\s*(.+?)(?=\n\s*VARIANT:|$)"
+        matches = re.findall(pattern, output, re.DOTALL | re.IGNORECASE)
 
-def parse_sentence_with_explanation(text: str) -> dict[str, str]:
-    """Parse output in 'SENTENCE: ... EXPLANATION: ...' format.
-
-    Returns a dict with 'sentence' and 'explanation' keys.
-    If format is not matched, treats entire text as sentence with empty explanation.
-    """
-    # Try to match the SENTENCE: ... EXPLANATION: ... format
-    sentence_match = re.search(r"SENTENCE:\s*(.+?)(?=EXPLANATION:|$)", text, re.DOTALL | re.IGNORECASE)
-    explanation_match = re.search(r"EXPLANATION:\s*(.+?)$", text, re.DOTALL | re.IGNORECASE)
-
-    if sentence_match:
-        sentence = sentence_match.group(1).strip()
-        explanation = explanation_match.group(1).strip() if explanation_match else ""
-        return {"sentence": sentence, "explanation": explanation}
+        for match in matches:
+            variant_id = match[0].strip()
+            sentence = match[1].strip()
+            explanation = match[2].strip()
+            result[variant_id] = [{"sentence": sentence, "explanation": explanation}]
+            logger.debug(f"Parsed variant {variant_id} with explanation")
     else:
-        # Fallback: treat entire text as sentence if format not matched
-        logger.warning("Could not parse SENTENCE/EXPLANATION format, treating as plain sentence")
-        return {"sentence": text.strip(), "explanation": ""}
+        # Pattern for v3: VARIANT and SENTENCE only
+        pattern = r"VARIANT:\s*(.+?)\s*\n\s*SENTENCE:\s*(.+?)(?=\n\s*VARIANT:|$)"
+        matches = re.findall(pattern, output, re.DOTALL | re.IGNORECASE)
+
+        for match in matches:
+            variant_id = match[0].strip()
+            sentence = match[1].strip()
+            result[variant_id] = [sentence]
+            logger.debug(f"Parsed variant {variant_id}")
+
+    if not result:
+        logger.warning("Failed to parse any variants from batch output")
+        logger.debug(f"Output was: {output[:500]}...")
+
+    return result
 
 
 def process_pmcid(
@@ -166,8 +176,8 @@ def process_pmcid(
     judge_model: str,
     no_eval: bool,
 ) -> None:
-    """Process a single PMCID: generate sentences and optionally evaluate."""
-    logger.info(f"Processing PMCID: {pmcid} with {len(variants)} variant(s)")
+    """Process a single PMCID: generate sentences for all variants in batch and optionally evaluate."""
+    logger.info(f"Processing PMCID: {pmcid} with {len(variants)} variant(s) in batch mode")
 
     # Get article text; reuse utils for markdown content
     try:
@@ -195,31 +205,46 @@ def process_pmcid(
     # Determine if we're using v4 prompt (with explanations)
     use_explanations = prompt_name == "v4"
 
+    # Format variants list for the prompt
+    variants_list = "\n".join([f"- {variant}" for variant in variants])
+
+    # Create the batch prompt
+    user_prompt = prompt_cfg["user"].format(
+        variants_list=variants_list,
+        article_text=article_text
+    )
+    system_prompt = prompt_cfg["system"]
+
+    # Call LLM once for all variants
+    try:
+        logger.debug(f"Making single LLM call for all {len(variants)} variants")
+        output = call_llm(model, system_prompt, user_prompt)
+    except Exception as e:
+        output = ""
+        logger.error(f"Error generating batch for {pmcid}: {e}")
+
+    # Parse the batch output
+    variant_results = parse_batch_output(output, use_explanations)
+
+    # Build result structure matching llm_judge_ask format
     result: dict[str, dict[str, list[str] | list[dict[str, str]]]] = {pmcid: {}}
 
+    # Ensure all requested variants are in the result
     for variant in variants:
-        logger.debug(f"Processing variant: {variant}")
-        user_prompt = prompt_cfg["user"].format(variant=variant, article_text=article_text)
-        system_prompt = prompt_cfg["system"]
-
-        try:
-            output = call_llm(model, system_prompt, user_prompt)
-        except Exception as e:
-            output = ""
-            logger.error(f"Error generating for {pmcid}/{variant}: {e}")
-
-        if use_explanations:
-            # For v4: parse sentence + explanation
-            parsed = parse_sentence_with_explanation(output) if output else {"sentence": "", "explanation": ""}
-            result[pmcid][variant] = [parsed]  # Store as list of dicts for consistency
-            preview = parsed["sentence"] if parsed["sentence"] else "<no output>"
+        if variant in variant_results:
+            result[pmcid][variant] = variant_results[variant]
+            if use_explanations:
+                preview = variant_results[variant][0]["sentence"] if variant_results[variant] else "<no output>"
+            else:
+                preview = variant_results[variant][0] if variant_results[variant] else "<no output>"
+            logger.info(f"✓ {variant}: {preview[:90]}{'...' if len(preview) > 90 else ''}")
         else:
-            # For v1-v3: use original sentence splitting
-            sentences = split_sentences(output) if output else []
-            result[pmcid][variant] = sentences
-            preview = sentences[0] if sentences else "<no output>"
-
-        logger.info(f"✓ {variant}: {preview[:90]}{'...' if len(preview) > 90 else ''}")
+            # Variant not found in parsed output
+            if use_explanations:
+                result[pmcid][variant] = [{"sentence": "", "explanation": ""}]
+            else:
+                result[pmcid][variant] = []
+            logger.warning(f"✗ {variant}: not found in batch output")
 
     # Save output file
     OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -267,7 +292,7 @@ def process_pmcid(
 def main():
     parser = argparse.ArgumentParser(
         description=(
-            "Generate association sentences for PMCID variants and save JSON."
+            "Generate association sentences for PMCID variants in batch mode and save JSON."
         )
     )
     parser.add_argument(
@@ -278,7 +303,7 @@ def main():
     parser.add_argument(
         "--prompt",
         default="v3",
-        help="Prompt key from prompts.yaml (e.g., v1, v2, v3)",
+        help="Prompt key from prompts.yaml (e.g., v3, v4)",
     )
     parser.add_argument(
         "--no-eval",
@@ -309,7 +334,7 @@ def main():
     logger.info(f"Prompt: {args.prompt} ({prompt_cfg.get('name', '')})")
     logger.info(f"Generation Model: {args.model}")
     logger.info(f"Judge Model: {args.judge_model}")
-    logger.info(f"Processing {len(pmcids_and_variants)} PMCID(s)")
+    logger.info(f"Processing {len(pmcids_and_variants)} PMCID(s) in batch mode")
 
     # Process each PMCID
     for pmcid, variants in pmcids_and_variants:
@@ -323,9 +348,8 @@ def main():
             no_eval=args.no_eval,
         )
 
-    logger.success(f"Completed processing {len(pmcids_and_variants)} PMCID(s)")
+    logger.success(f"Completed batch processing {len(pmcids_and_variants)} PMCID(s)")
 
 
 if __name__ == "__main__":
     main()
-
