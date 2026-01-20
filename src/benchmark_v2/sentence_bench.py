@@ -297,7 +297,9 @@ def score_generated_sentences(
             )
 
         # Calculate average score for this PMCID (only counting scored variants)
-        pmcid_avg_score = total_score / num_variants_scored if num_variants_scored > 0 else 0.0
+        pmcid_avg_score = (
+            total_score / num_variants_scored if num_variants_scored > 0 else 0.0
+        )
 
         # Add to per_pmcid results
         per_pmcid_results.append(
@@ -388,8 +390,8 @@ def score_and_save(
     print(f"  Number of PMCIDs: {result.num_pmcids}")
     print(f"\nPer-PMCID Scores:")
     for pmcid_result in result.per_pmcid:
-        num_scored = pmcid_result['num_variants_scored']
-        num_not_in_gt = pmcid_result['num_variants_not_in_ground_truth']
+        num_scored = pmcid_result["num_variants_scored"]
+        num_not_in_gt = pmcid_result["num_variants_not_in_ground_truth"]
         variants_info = f"{num_scored} variants"
         if num_not_in_gt > 0:
             variants_info += f", {num_not_in_gt} not in ground truth"
@@ -427,7 +429,7 @@ def main():
     for pmcid_result in result.per_pmcid:
         print(f"\n{pmcid_result['pmcid']} (Avg: {pmcid_result['avg_score']:.3f})")
         for variant_result in pmcid_result["per_variant"]:
-            score = variant_result['score']
+            score = variant_result["score"]
             if score is not None:
                 print(f"  {variant_result['variant']}: {score:.3f}")
             else:

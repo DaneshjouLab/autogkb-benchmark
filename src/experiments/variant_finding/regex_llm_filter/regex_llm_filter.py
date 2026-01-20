@@ -21,6 +21,7 @@ from dotenv import load_dotenv
 
 # Import V5 extraction functions
 import sys
+
 sys.path.append(str(Path(__file__).resolve().parents[4]))
 
 from src.experiments.variant_finding.regex_variants.extract_variants_v5 import (
@@ -108,8 +109,7 @@ def filter_variants_with_llm(
     # Format prompts
     system_prompt = prompt_config["system"]
     user_prompt = prompt_config["user"].format(
-        variants_list=variants_list,
-        article_text=article_text
+        variants_list=variants_list, article_text=article_text
     )
 
     # Call LLM
@@ -142,13 +142,17 @@ def run_experiment(
     expander = get_snp_expander()
     stats = expander.stats()
     print(f"  Loaded {stats['total_mappings']} SNP notation mappings")
-    print(f"  Covering {stats['unique_rsids']} unique rsIDs across {len(stats['genes'])} genes\n")
+    print(
+        f"  Covering {stats['unique_rsids']} unique rsIDs across {len(stats['genes'])} genes\n"
+    )
 
     # Load prompts
     prompts = load_prompts()
     if prompt_version not in prompts:
         available = ", ".join(prompts.keys())
-        raise ValueError(f"Prompt version '{prompt_version}' not found. Available: {available}")
+        raise ValueError(
+            f"Prompt version '{prompt_version}' not found. Available: {available}"
+        )
 
     prompt_config = prompts[prompt_version]
     print(f"Using prompt: {prompt_config['name']}")
@@ -208,7 +212,9 @@ def run_experiment(
         # Score filtered results
         filtered_result = score_variants(filtered_variants, true_variants, pmcid)
         filtered_precision = (
-            len(filtered_result.matches) / len(filtered_variants) if filtered_variants else 1.0
+            len(filtered_result.matches) / len(filtered_variants)
+            if filtered_variants
+            else 1.0
         )
 
         # Track totals
@@ -219,44 +225,68 @@ def run_experiment(
 
         # Calculate how many false positives were removed
         removed_variants = set(regex_variants) - set(filtered_variants)
-        removed_true_positives = set(regex_result.matches) - set(filtered_result.matches)
+        removed_true_positives = set(regex_result.matches) - set(
+            filtered_result.matches
+        )
         removed_false_positives = removed_variants - removed_true_positives
 
         # Store results
-        per_article_results.append({
-            "pmcid": pmcid,
-            "true_count": len(true_variants),
-            "regex_extracted_count": len(regex_variants),
-            "filtered_extracted_count": len(filtered_variants),
-            "regex_recall": regex_result.match_rate,
-            "regex_precision": regex_precision,
-            "filtered_recall": filtered_result.match_rate,
-            "filtered_precision": filtered_precision,
-            "regex_matches": regex_result.matches,
-            "regex_misses": regex_result.misses,
-            "regex_extras": regex_result.extras,
-            "filtered_matches": filtered_result.matches,
-            "filtered_misses": filtered_result.misses,
-            "filtered_extras": filtered_result.extras,
-            "removed_total": len(removed_variants),
-            "removed_false_positives": list(removed_false_positives),
-            "removed_true_positives": list(removed_true_positives),
-        })
+        per_article_results.append(
+            {
+                "pmcid": pmcid,
+                "true_count": len(true_variants),
+                "regex_extracted_count": len(regex_variants),
+                "filtered_extracted_count": len(filtered_variants),
+                "regex_recall": regex_result.match_rate,
+                "regex_precision": regex_precision,
+                "filtered_recall": filtered_result.match_rate,
+                "filtered_precision": filtered_precision,
+                "regex_matches": regex_result.matches,
+                "regex_misses": regex_result.misses,
+                "regex_extras": regex_result.extras,
+                "filtered_matches": filtered_result.matches,
+                "filtered_misses": filtered_result.misses,
+                "filtered_extras": filtered_result.extras,
+                "removed_total": len(removed_variants),
+                "removed_false_positives": list(removed_false_positives),
+                "removed_true_positives": list(removed_true_positives),
+            }
+        )
 
         # Print results
-        regex_status = "✓" if regex_result.match_rate == 1.0 else "○" if regex_result.match_rate > 0 else "✗"
-        filtered_status = "✓" if filtered_result.match_rate == 1.0 else "○" if filtered_result.match_rate > 0 else "✗"
+        regex_status = (
+            "✓"
+            if regex_result.match_rate == 1.0
+            else "○"
+            if regex_result.match_rate > 0
+            else "✗"
+        )
+        filtered_status = (
+            "✓"
+            if filtered_result.match_rate == 1.0
+            else "○"
+            if filtered_result.match_rate > 0
+            else "✗"
+        )
 
-        print(f"  Regex    {regex_status}: recall={regex_result.match_rate:.0%} precision={regex_precision:.0%} "
-              f"(found {len(regex_result.matches)}/{len(true_variants)}, extras={len(regex_result.extras)})")
-        print(f"  Filtered {filtered_status}: recall={filtered_result.match_rate:.0%} precision={filtered_precision:.0%} "
-              f"(found {len(filtered_result.matches)}/{len(true_variants)}, extras={len(filtered_result.extras)})")
+        print(
+            f"  Regex    {regex_status}: recall={regex_result.match_rate:.0%} precision={regex_precision:.0%} "
+            f"(found {len(regex_result.matches)}/{len(true_variants)}, extras={len(regex_result.extras)})"
+        )
+        print(
+            f"  Filtered {filtered_status}: recall={filtered_result.match_rate:.0%} precision={filtered_precision:.0%} "
+            f"(found {len(filtered_result.matches)}/{len(true_variants)}, extras={len(filtered_result.extras)})"
+        )
 
         # Show what was removed
         if removed_false_positives:
-            print(f"  ✓ Removed {len(removed_false_positives)} false positives: {list(removed_false_positives)[:5]}")
+            print(
+                f"  ✓ Removed {len(removed_false_positives)} false positives: {list(removed_false_positives)[:5]}"
+            )
         if removed_true_positives:
-            print(f"  ✗ Incorrectly removed {len(removed_true_positives)} true positives: {list(removed_true_positives)}")
+            print(
+                f"  ✗ Incorrectly removed {len(removed_true_positives)} true positives: {list(removed_true_positives)}"
+            )
 
         print()
 
@@ -276,8 +306,12 @@ def run_experiment(
     precision_change = avg_precision_filtered - avg_precision_regex
 
     # Count perfect recalls
-    perfect_recalls_regex = sum(1 for r in per_article_results if r["regex_recall"] == 1.0)
-    perfect_recalls_filtered = sum(1 for r in per_article_results if r["filtered_recall"] == 1.0)
+    perfect_recalls_regex = sum(
+        1 for r in per_article_results if r["regex_recall"] == 1.0
+    )
+    perfect_recalls_filtered = sum(
+        1 for r in per_article_results if r["filtered_recall"] == 1.0
+    )
 
     # Build results
     results = {
@@ -312,12 +346,18 @@ def run_experiment(
     print(f"REGEX EXTRACTION (V5 baseline):")
     print(f"  Average Recall:    {avg_recall_regex:.1%}")
     print(f"  Average Precision: {avg_precision_regex:.1%}")
-    print(f"  Perfect recall:    {perfect_recalls_regex}/{n} ({perfect_recalls_regex/n:.0%})")
+    print(
+        f"  Perfect recall:    {perfect_recalls_regex}/{n} ({perfect_recalls_regex / n:.0%})"
+    )
     print()
     print(f"REGEX + LLM FILTER:")
     print(f"  Average Recall:    {avg_recall_filtered:.1%} ({recall_change:+.1%})")
-    print(f"  Average Precision: {avg_precision_filtered:.1%} ({precision_change:+.1%})")
-    print(f"  Perfect recall:    {perfect_recalls_filtered}/{n} ({perfect_recalls_filtered/n:.0%})")
+    print(
+        f"  Average Precision: {avg_precision_filtered:.1%} ({precision_change:+.1%})"
+    )
+    print(
+        f"  Perfect recall:    {perfect_recalls_filtered}/{n} ({perfect_recalls_filtered / n:.0%})"
+    )
     print()
 
     if precision_change > 0:

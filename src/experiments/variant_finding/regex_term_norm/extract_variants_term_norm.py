@@ -405,7 +405,9 @@ def normalize_variants(
 
 
 def apply_normalization_to_variants(
-    extracted_variants: List[str], mappings: Dict[str, List[Dict]], min_score: float = 0.9
+    extracted_variants: List[str],
+    mappings: Dict[str, List[Dict]],
+    min_score: float = 0.9,
 ) -> Tuple[List[str], Dict[str, str]]:
     """
     Apply normalization mappings to get final variant list.
@@ -535,7 +537,9 @@ def run_experiment(
 
         # Step 3: Apply normalization
         final_variants, normalization_applied = apply_normalization_to_variants(
-            extracted_variants, normalization_mappings, min_score=normalization_min_score
+            extracted_variants,
+            normalization_mappings,
+            min_score=normalization_min_score,
         )
 
         total_normalized_count += len(normalization_applied)
@@ -594,7 +598,9 @@ def run_experiment(
         status = (
             "✓" if result.match_rate == 1.0 else "○" if result.match_rate > 0 else "✗"
         )
-        norm_note = f" [norm: {len(normalization_applied)}]" if normalization_applied else ""
+        norm_note = (
+            f" [norm: {len(normalization_applied)}]" if normalization_applied else ""
+        )
         helped_note = " [+helped]" if normalization_helped else ""
         print(
             f"  {status} {pmcid}: recall={result.match_rate:.0%} precision={precision:.0%} "

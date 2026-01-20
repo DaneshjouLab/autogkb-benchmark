@@ -162,9 +162,7 @@ def format_associations(variants_data: list[dict]) -> str:
     return "\n\n".join(parts)
 
 
-def format_citations(
-    pmcid: str, citations_data: dict[str, list[dict]] | None
-) -> str:
+def format_citations(pmcid: str, citations_data: dict[str, list[dict]] | None) -> str:
     """Format citations for the prompt.
 
     Args:
@@ -337,14 +335,14 @@ def main():
     # Print a sample summary if any were generated
     if summaries:
         logger.info("Sample summary (first PMCID):")
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"PMCID: {summaries[0]['pmcid']}")
         print(f"Variants: {', '.join(summaries[0]['variants'][:5])}")
         if len(summaries[0]["variants"]) > 5:
             print(f"  ... and {len(summaries[0]['variants']) - 5} more")
-        print(f"{'='*60}")
+        print(f"{'=' * 60}")
         print(summaries[0]["summary"])
-        print(f"{'='*60}\n")
+        print(f"{'=' * 60}\n")
 
     logger.success(f"Completed processing {len(pmcid_data)} PMCID(s)")
 
