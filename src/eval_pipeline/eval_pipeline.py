@@ -149,7 +149,9 @@ class EvaluationResult:
     def to_dict(self) -> dict:
         return {
             "metadata": self.metadata,
-            "overall_variant_metrics": self.overall_variant_metrics.to_dict() if self.overall_variant_metrics else None,
+            "overall_variant_metrics": self.overall_variant_metrics.to_dict()
+            if self.overall_variant_metrics
+            else None,
             "overall_sentence_score": self.overall_sentence_score,
             "num_pmcids": self.num_pmcids,
             "per_pmcid": [r.to_dict() for r in self.per_pmcid],
@@ -167,7 +169,9 @@ def load_config(config_path: Path = CONFIG_FILE) -> dict:
     logger.debug(f"Loading config from {config_path}")
     with open(config_path) as f:
         config = yaml.safe_load(f)
-    logger.info(f"Loaded eval config: {config.get('config', {}).get('name', 'unknown')}")
+    logger.info(
+        f"Loaded eval config: {config.get('config', {}).get('name', 'unknown')}"
+    )
     return config
 
 
@@ -345,13 +349,15 @@ def evaluate_sentences_for_pmcid(
                 model=judge_model,
             )
 
-            per_variant_scores.append({
-                "variant": variant,
-                "ground_truth": variant_score.ground_truth,
-                "generated": variant_score.generated,
-                "score": variant_score.score,
-                "critique": variant_score.critique,
-            })
+            per_variant_scores.append(
+                {
+                    "variant": variant,
+                    "ground_truth": variant_score.ground_truth,
+                    "generated": variant_score.generated,
+                    "score": variant_score.score,
+                    "critique": variant_score.critique,
+                }
+            )
 
             if variant_score.score is not None:
                 total_score += variant_score.score
@@ -359,27 +365,33 @@ def evaluate_sentences_for_pmcid(
                 logger.debug(f"  {variant}: {variant_score.score:.2f}")
         else:
             # No generated sentences for this ground truth variant
-            per_variant_scores.append({
-                "variant": variant,
-                "ground_truth": gt_sentences,
-                "generated": [],
-                "score": 0.0,
-                "critique": "No generated sentences for this variant",
-            })
+            per_variant_scores.append(
+                {
+                    "variant": variant,
+                    "ground_truth": gt_sentences,
+                    "generated": [],
+                    "score": 0.0,
+                    "critique": "No generated sentences for this variant",
+                }
+            )
             total_score += 0.0
             num_variants_scored += 1
             logger.warning(f"  {variant}: No generated sentences")
 
     # Track extra variants not in ground truth
-    generated_extras = [v for v in generated_map.keys() if v not in ground_truth_variants]
+    generated_extras = [
+        v for v in generated_map.keys() if v not in ground_truth_variants
+    ]
     for variant in generated_extras:
-        per_variant_scores.append({
-            "variant": variant,
-            "ground_truth": None,
-            "generated": generated_map[variant],
-            "score": None,
-            "critique": "Variant not found in ground truth - not scored",
-        })
+        per_variant_scores.append(
+            {
+                "variant": variant,
+                "ground_truth": None,
+                "generated": generated_map[variant],
+                "score": None,
+                "critique": "Variant not found in ground truth - not scored",
+            }
+        )
 
     # Calculate average score
     avg_score = total_score / num_variants_scored if num_variants_scored > 0 else 0.0
@@ -506,12 +518,18 @@ def evaluate_pmcid(
     result = PMCIDEvaluationResult(pmcid=pmcid)
 
     # Variant Evaluation
-    if "variants" in stages and config.get("variant_evaluation", {}).get("enabled", True):
+    if "variants" in stages and config.get("variant_evaluation", {}).get(
+        "enabled", True
+    ):
         proposed_variants = pmcid_result.get("variants", [])
-        result.variant_evaluation = evaluate_variants_for_pmcid(pmcid, proposed_variants)
+        result.variant_evaluation = evaluate_variants_for_pmcid(
+            pmcid, proposed_variants
+        )
 
     # Sentence Evaluation
-    if "sentences" in stages and config.get("sentence_evaluation", {}).get("enabled", True):
+    if "sentences" in stages and config.get("sentence_evaluation", {}).get(
+        "enabled", True
+    ):
         associations = pmcid_result.get("associations", [])
         judge_model = config.get("sentence_evaluation", {}).get(
             "judge_model", "claude-sonnet-4-20250514"
@@ -566,7 +584,9 @@ def evaluate_pipeline_output(
             eval_result = evaluate_pmcid(pmcid_result, config, stages)
             per_pmcid_results.append(eval_result)
         except Exception as e:
-            logger.error(f"Failed to evaluate {pmcid_result.get('pmcid', 'unknown')}: {e}")
+            logger.error(
+                f"Failed to evaluate {pmcid_result.get('pmcid', 'unknown')}: {e}"
+            )
             per_pmcid_results.append(
                 PMCIDEvaluationResult(pmcid=pmcid_result.get("pmcid", "unknown"))
             )
