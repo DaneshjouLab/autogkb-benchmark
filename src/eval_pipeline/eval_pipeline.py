@@ -8,19 +8,32 @@ It produces comprehensive reports for:
 
 Citation evaluation is currently disabled.
 
+Input/Output Structure:
+  Input: Directory containing per-PMCID JSON files from the generation pipeline
+    e.g., ../pipeline/outputs/base_config/
+         ├── PMC123456.json
+         ├── PMC789012.json
+         └── ...
+
+  Output: Each PMCID evaluation result is saved to its own file immediately:
+    e.g., outputs/eval_base_config/
+         ├── PMC123456.json
+         ├── PMC789012.json
+         └── ...
+
 Example Commands:
 
-1. Evaluate a pipeline output file:
-   python eval_pipeline.py --input ../pipeline/outputs/base_config.json
+1. Evaluate a pipeline output directory:
+   python eval_pipeline.py --input ../pipeline/outputs/base_config
 
 2. Evaluate with custom config:
-   python eval_pipeline.py --input ../pipeline/outputs/base_config.json --config configs/custom.yaml
+   python eval_pipeline.py --input ../pipeline/outputs/base_config --config configs/custom.yaml
 
 3. Evaluate specific stages only:
-   python eval_pipeline.py --input ../pipeline/outputs/base_config.json --stages variants,sentences
+   python eval_pipeline.py --input ../pipeline/outputs/base_config --stages variants,sentences
 
 4. Use a different judge model:
-   python eval_pipeline.py --input ../pipeline/outputs/base_config.json --judge-model gpt-4o
+   python eval_pipeline.py --input ../pipeline/outputs/base_config --judge-model gpt-4o
 """
 
 from __future__ import annotations
@@ -175,13 +188,77 @@ def load_config(config_path: Path = CONFIG_FILE) -> dict:
     return config
 
 
-def load_pipeline_output(input_path: Path) -> dict:
-    """Load pipeline output JSON file."""
-    logger.debug(f"Loading pipeline output from {input_path}")
-    with open(input_path) as f:
-        data = json.load(f)
-    logger.info(f"Loaded pipeline output with {len(data.get('results', []))} PMCID(s)")
-    return data
+def load_pipeline_output(input_path: Path) -> tuple[dict, list[dict]]:
+    """Load pipeline output from a directory of per-PMCID files.
+
+    Args:
+        input_path: Path to directory containing per-PMCID JSON files
+
+    Returns:
+        Tuple of (metadata dict, list of PMCID result dicts)
+    """
+    if not input_path.is_dir():
+        raise ValueError(
+            f"Input path must be a directory containing per-PMCID JSON files: {input_path}"
+        )
+
+    logger.debug(f"Loading pipeline outputs from directory: {input_path}")
+
+    # Find all JSON files in the directory
+    json_files = sorted(input_path.glob("*.json"))
+
+    if not json_files:
+        raise ValueError(f"No JSON files found in {input_path}")
+
+    # Load each file and collect results
+    metadata = None
+    results = []
+
+    for json_file in json_files:
+        with open(json_file) as f:
+            data = json.load(f)
+
+        # Use metadata from first file (should be same across all)
+        if metadata is None:
+            metadata = data.get("metadata", {})
+
+        # Each file has a single "result" (not "results")
+        result = data.get("result", {})
+        if result:
+            results.append(result)
+
+    logger.info(f"Loaded {len(results)} PMCID result(s) from {input_path}")
+    return metadata or {}, results
+
+
+def save_pmcid_evaluation(
+    result: PMCIDEvaluationResult,
+    output_dir: Path,
+    metadata: dict,
+) -> Path:
+    """Save a single PMCID evaluation result to its own file.
+
+    Args:
+        result: PMCIDEvaluationResult to save
+        output_dir: Directory to save the file in
+        metadata: Evaluation metadata to include
+
+    Returns:
+        Path to the saved file.
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+    out_path = output_dir / f"{result.pmcid}.json"
+
+    output_data = {
+        "metadata": metadata,
+        "result": result.to_dict(),
+    }
+
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(output_data, f, indent=2, ensure_ascii=False)
+
+    logger.info(f"Saved evaluation result to: {out_path}")
+    return out_path
 
 
 # =============================================================================
@@ -545,21 +622,23 @@ def evaluate_pipeline_output(
     input_path: Path,
     config: dict,
     stages: set[str],
-) -> EvaluationResult:
-    """Evaluate a complete pipeline output file.
+    output_dir: Path,
+) -> tuple[Path, list[PMCIDEvaluationResult]]:
+    """Evaluate a complete pipeline output directory.
+
+    Each PMCID evaluation result is saved to its own file immediately after processing.
 
     Args:
-        input_path: Path to pipeline output JSON file
+        input_path: Path to directory containing per-PMCID pipeline output files
         config: Evaluation configuration
         stages: Set of stages to evaluate
+        output_dir: Directory to save per-PMCID evaluation result files
 
     Returns:
-        EvaluationResult with all evaluations
+        Tuple of (output_dir, list of PMCIDEvaluationResults)
     """
-    # Load pipeline output
-    pipeline_data = load_pipeline_output(input_path)
-    pipeline_metadata = pipeline_data.get("metadata", {})
-    results = pipeline_data.get("results", [])
+    # Load pipeline outputs from directory
+    pipeline_metadata, results = load_pipeline_output(input_path)
 
     timestamp = datetime.now().isoformat()
 
@@ -577,74 +656,32 @@ def evaluate_pipeline_output(
         ),
     }
 
-    # Evaluate each PMCID
+    # Ensure output directory exists
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Evaluate each PMCID and save immediately
     per_pmcid_results: list[PMCIDEvaluationResult] = []
-    for pmcid_result in results:
+    for i, pmcid_result in enumerate(results, 1):
+        logger.info(
+            f"\n[{i}/{len(results)}] Evaluating {pmcid_result.get('pmcid', 'unknown')}"
+        )
         try:
             eval_result = evaluate_pmcid(pmcid_result, config, stages)
             per_pmcid_results.append(eval_result)
+            # Save result immediately after evaluation
+            save_pmcid_evaluation(eval_result, output_dir, metadata)
         except Exception as e:
             logger.error(
                 f"Failed to evaluate {pmcid_result.get('pmcid', 'unknown')}: {e}"
             )
-            per_pmcid_results.append(
-                PMCIDEvaluationResult(pmcid=pmcid_result.get("pmcid", "unknown"))
+            error_result = PMCIDEvaluationResult(
+                pmcid=pmcid_result.get("pmcid", "unknown")
             )
+            per_pmcid_results.append(error_result)
+            # Still save error result so we know it was attempted
+            save_pmcid_evaluation(error_result, output_dir, metadata)
 
-    # Calculate overall metrics
-    overall_variant_metrics = None
-    overall_sentence_score = None
-
-    if "variants" in stages:
-        # Aggregate counts across all PMCIDs for micro-averaged F1
-        total_matches = 0
-        total_proposed = 0
-        total_ground_truth = 0
-
-        for r in per_pmcid_results:
-            if r.variant_evaluation is not None:
-                total_matches += len(r.variant_evaluation.matches)
-                total_proposed += r.variant_evaluation.num_proposed
-                total_ground_truth += r.variant_evaluation.num_ground_truth
-
-        if total_proposed > 0 or total_ground_truth > 0:
-            precision, recall, f1_score = calculate_f1_metrics(
-                total_matches, total_proposed, total_ground_truth
-            )
-            overall_variant_metrics = VariantMetrics(
-                precision=round(precision, 3),
-                recall=round(recall, 3),
-                f1_score=round(f1_score, 3),
-            )
-
-    if "sentences" in stages:
-        sentence_scores = [
-            r.sentence_evaluation.avg_score
-            for r in per_pmcid_results
-            if r.sentence_evaluation is not None
-        ]
-        if sentence_scores:
-            overall_sentence_score = round(
-                sum(sentence_scores) / len(sentence_scores), 3
-            )
-
-    # Create the result object first (without summary)
-    eval_result = EvaluationResult(
-        metadata=metadata,
-        overall_variant_metrics=overall_variant_metrics,
-        overall_sentence_score=overall_sentence_score,
-        num_pmcids=len(per_pmcid_results),
-        per_pmcid=per_pmcid_results,
-        summary="",
-    )
-
-    # Generate LLM summary
-    summary_model = config.get("sentence_evaluation", {}).get(
-        "judge_model", "claude-sonnet-4-20250514"
-    )
-    eval_result.summary = generate_evaluation_summary(eval_result, summary_model)
-
-    return eval_result
+    return output_dir, per_pmcid_results
 
 
 def main():
@@ -655,7 +692,7 @@ def main():
         "--input",
         type=Path,
         required=True,
-        help="Path to pipeline output JSON file to evaluate",
+        help="Path to pipeline output directory containing per-PMCID JSON files",
     )
     parser.add_argument(
         "--config",
@@ -673,12 +710,6 @@ def main():
         type=str,
         default=None,
         help="Override judge model for sentence evaluation",
-    )
-    parser.add_argument(
-        "--output",
-        type=Path,
-        default=None,
-        help="Path to save evaluation results (default: auto-generated)",
     )
     args = parser.parse_args()
 
@@ -699,11 +730,16 @@ def main():
         logger.error(f"Invalid stages: {invalid_stages}. Valid: {valid_stages}")
         sys.exit(1)
 
+    # Create output directory based on input directory name
+    input_name = args.input.name  # e.g., "base_config"
+    output_dir = OUTPUTS_DIR / f"eval_{input_name}"
+
     # Log configuration
     config_info = config.get("config", {})
     logger.info(f"Evaluation Configuration:")
     logger.info(f"  Config: {config_info.get('name', 'unknown')}")
-    logger.info(f"  Input file: {args.input}")
+    logger.info(f"  Input directory: {args.input}")
+    logger.info(f"  Output directory: {output_dir}")
     logger.info(f"  Stages: {sorted(stages)}")
     if "sentences" in stages:
         judge_model = config.get("sentence_evaluation", {}).get(
@@ -711,44 +747,66 @@ def main():
         )
         logger.info(f"  Judge model: {judge_model}")
 
-    # Run evaluation
-    eval_result = evaluate_pipeline_output(args.input, config, stages)
+    # Run evaluation - results are saved incrementally as each PMCID completes
+    output_dir, results = evaluate_pipeline_output(
+        args.input, config, stages, output_dir
+    )
 
-    # Determine output path
-    if args.output:
-        out_path = args.output
-    else:
-        OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
-        # Extract pipeline config name from input filename
-        pipeline_name = args.input.stem
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        out_path = OUTPUTS_DIR / f"eval_{pipeline_name}_{timestamp}.json"
+    # Calculate overall metrics
+    overall_variant_metrics = None
+    overall_sentence_score = None
 
-    # Save results
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(eval_result.to_dict(), f, indent=2, ensure_ascii=False)
+    if "variants" in stages:
+        total_matches = 0
+        total_proposed = 0
+        total_ground_truth = 0
+
+        for r in results:
+            if r.variant_evaluation is not None:
+                total_matches += len(r.variant_evaluation.matches)
+                total_proposed += r.variant_evaluation.num_proposed
+                total_ground_truth += r.variant_evaluation.num_ground_truth
+
+        if total_proposed > 0 or total_ground_truth > 0:
+            precision, recall, f1_score = calculate_f1_metrics(
+                total_matches, total_proposed, total_ground_truth
+            )
+            overall_variant_metrics = VariantMetrics(
+                precision=round(precision, 3),
+                recall=round(recall, 3),
+                f1_score=round(f1_score, 3),
+            )
+
+    if "sentences" in stages:
+        sentence_scores = [
+            r.sentence_evaluation.avg_score
+            for r in results
+            if r.sentence_evaluation is not None
+        ]
+        if sentence_scores:
+            overall_sentence_score = round(
+                sum(sentence_scores) / len(sentence_scores), 3
+            )
 
     logger.success(f"\nEvaluation complete!")
-    logger.success(f"Results saved to: {out_path}")
+    logger.success(f"Results saved to: {output_dir}")
 
     # Print summary
     logger.info(f"\nEvaluation Summary:")
-    logger.info(f"  PMCIDs evaluated: {eval_result.num_pmcids}")
+    logger.info(f"  PMCIDs evaluated: {len(results)}")
 
-    if eval_result.overall_variant_metrics is not None:
-        vm = eval_result.overall_variant_metrics
+    if overall_variant_metrics is not None:
+        vm = overall_variant_metrics
         logger.info(
             f"  Variant extraction - P: {vm.precision:.1%}, R: {vm.recall:.1%}, F1: {vm.f1_score:.3f}"
         )
 
-    if eval_result.overall_sentence_score is not None:
-        logger.info(
-            f"  Sentence generation - Avg score: {eval_result.overall_sentence_score:.3f}"
-        )
+    if overall_sentence_score is not None:
+        logger.info(f"  Sentence generation - Avg score: {overall_sentence_score:.3f}")
 
     # Print per-PMCID breakdown
     logger.info(f"\nPer-PMCID Results:")
-    for pmcid_result in eval_result.per_pmcid:
+    for pmcid_result in results:
         pmcid = pmcid_result.pmcid
         parts = [f"  {pmcid}:"]
 
@@ -761,13 +819,6 @@ def main():
             parts.append(f"sentences={se.avg_score:.3f}")
 
         logger.info(" ".join(parts))
-
-    # Print LLM summary
-    if eval_result.summary:
-        logger.info(f"\n{'=' * 60}")
-        logger.info("LLM Evaluation Summary:")
-        logger.info(f"{'=' * 60}")
-        logger.info(eval_result.summary)
 
 
 if __name__ == "__main__":

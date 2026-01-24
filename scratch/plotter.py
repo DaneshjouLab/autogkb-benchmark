@@ -47,7 +47,17 @@ def plot_line_graph(
     ax.fill_between(x, values, alpha=0.3, color="#5B9BD5")
 
     # Plot the line
-    ax.plot(x, values, color="#5B9BD5", linewidth=2, marker="o", markersize=8, markerfacecolor="#5B9BD5", markeredgecolor="white", markeredgewidth=2)
+    ax.plot(
+        x,
+        values,
+        color="#5B9BD5",
+        linewidth=2,
+        marker="o",
+        markersize=8,
+        markerfacecolor="#5B9BD5",
+        markeredgecolor="white",
+        markeredgewidth=2,
+    )
 
     # Add value labels above each point
     for i, (xi, yi) in enumerate(zip(x, values)):
@@ -77,7 +87,12 @@ def plot_line_graph(
                     fontsize=15,
                     color="#2E7D32",
                     fontweight="bold",
-                    bbox=dict(boxstyle="round,pad=0.3", facecolor="white", edgecolor="none", alpha=0.8),
+                    bbox=dict(
+                        boxstyle="round,pad=0.3",
+                        facecolor="white",
+                        edgecolor="none",
+                        alpha=0.8,
+                    ),
                 )
 
     # Add total improvement annotation box
