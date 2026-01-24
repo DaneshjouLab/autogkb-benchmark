@@ -14,7 +14,7 @@ The goal is to:
 import json
 import re
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Tuple
 
 from src.experiments.utils import get_markdown_text
 from src.experiments.utils_bioc import fetch_bioc_supplement, prefetch_bioc_supplements
@@ -405,7 +405,9 @@ def normalize_variants(
 
 
 def apply_normalization_to_variants(
-    extracted_variants: List[str], mappings: Dict[str, List[Dict]], min_score: float = 0.9
+    extracted_variants: List[str],
+    mappings: Dict[str, List[Dict]],
+    min_score: float = 0.9,
 ) -> Tuple[List[str], Dict[str, str]]:
     """
     Apply normalization mappings to get final variant list.
@@ -472,7 +474,7 @@ def run_experiment(
     variant_lookup = get_variant_lookup()
     stats = expander.stats()
     print(f"  SNP Expander: {stats['total_mappings']} mappings")
-    print(f"  VariantLookup: Ready\n")
+    print("  VariantLookup: Ready\n")
 
     benchmark_data = load_variant_bench_data()
     pmcids = list(benchmark_data.keys())
@@ -535,7 +537,9 @@ def run_experiment(
 
         # Step 3: Apply normalization
         final_variants, normalization_applied = apply_normalization_to_variants(
-            extracted_variants, normalization_mappings, min_score=normalization_min_score
+            extracted_variants,
+            normalization_mappings,
+            min_score=normalization_min_score,
         )
 
         total_normalized_count += len(normalization_applied)
@@ -594,7 +598,9 @@ def run_experiment(
         status = (
             "✓" if result.match_rate == 1.0 else "○" if result.match_rate > 0 else "✗"
         )
-        norm_note = f" [norm: {len(normalization_applied)}]" if normalization_applied else ""
+        norm_note = (
+            f" [norm: {len(normalization_applied)}]" if normalization_applied else ""
+        )
         helped_note = " [+helped]" if normalization_helped else ""
         print(
             f"  {status} {pmcid}: recall={result.match_rate:.0%} precision={precision:.0%} "
@@ -623,7 +629,7 @@ def run_experiment(
     }
 
     print(f"\n{'=' * 60}")
-    print(f"SUMMARY")
+    print("SUMMARY")
     print(f"{'=' * 60}")
     print(f"Articles scored: {n}")
     print(f"Average Recall: {avg_recall:.1%}")
@@ -632,7 +638,7 @@ def run_experiment(
     perfect_recalls = sum(1 for r in per_article_results if r["recall"] == 1.0)
     print(f"Perfect recall: {perfect_recalls}/{n} articles ({perfect_recalls / n:.0%})")
 
-    print(f"\nNormalization Statistics:")
+    print("\nNormalization Statistics:")
     print(f"  Total variants extracted: {total_variants_extracted}")
     print(f"  Normalizations applied: {total_normalized_count}")
     norm_rate = (
@@ -646,7 +652,7 @@ def run_experiment(
     )
 
     if normalization_helped_articles:
-        print(f"\n  Normalization improvements:")
+        print("\n  Normalization improvements:")
         for item in normalization_helped_articles[:5]:  # Show first 5
             print(
                 f"    {item['pmcid']}: +{item['recall_improvement']:.1%} recall, new matches: {item['new_matches']}"

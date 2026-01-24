@@ -5,7 +5,6 @@ Generate a summary of the drugs in the benchmark vs the proposed
 import json
 from pydantic import BaseModel
 from pathlib import Path
-from typing import Optional
 from datetime import datetime
 from loguru import logger
 
@@ -118,7 +117,7 @@ def proposed_drug_summary(
     output_file_name = timestamp
     if not run_name:
         run_name = proposed_annotations_dir
-    output_file_name += f"_drug_report.json"
+    output_file_name += "_drug_report.json"
     output_path = Path("data") / "coverage" / "drug_reports" / output_file_name
     output_path.parent.mkdir(parents=True, exist_ok=True)
     summary = DrugCoverageReport(

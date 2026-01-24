@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional, Any
+from typing import List, Optional
 import requests
 from src.term_normalization.search_utils import (
     calc_similarity,
@@ -7,7 +7,6 @@ from src.term_normalization.search_utils import (
     general_search_comma_list,
 )
 import pandas as pd
-from loguru import logger
 from pathlib import Path
 
 

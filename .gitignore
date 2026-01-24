@@ -13,3 +13,4 @@ __MACOSX
 .env
 .envrc
 .ruff_cache
+*.png

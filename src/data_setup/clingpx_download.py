@@ -22,7 +22,7 @@ def download_variant_annotations(base_dir=Path("data"), override=False) -> Path:
     # Check if files already exist
     if extract_to.exists() and extract_to.is_dir() and not override:
         print(f"Files already exist in {extract_to}. Skipping download.")
-        print(f"Use override=True to re-download.")
+        print("Use override=True to re-download.")
         return Path(extract_to)
 
     # Create directories if they don't exist

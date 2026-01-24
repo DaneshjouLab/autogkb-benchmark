@@ -478,7 +478,7 @@ def run_experiment():
     }
 
     print(f"\n{'=' * 60}")
-    print(f"SUMMARY")
+    print("SUMMARY")
     print(f"{'=' * 60}")
     print(f"Articles scored: {n}")
     print(f"Average Recall: {avg_recall:.1%}")
@@ -487,14 +487,14 @@ def run_experiment():
     perfect_recalls = sum(1 for r in per_article_results if r["recall"] == 1.0)
     print(f"Perfect recall: {perfect_recalls}/{n} articles ({perfect_recalls / n:.0%})")
 
-    print(f"\nBioC Supplement Integration:")
+    print("\nBioC Supplement Integration:")
     print(f"  Articles with supplements: {bioc_available_count}")
     print(f"  Articles helped by supplements: {len(supplement_improvements)}")
     total_supp_variants = sum(len(s["recovered"]) for s in supplement_improvements)
     print(f"  Total variants recovered from supplements: {total_supp_variants}")
 
     if supplement_improvements:
-        print(f"\n  Supplement recoveries:")
+        print("\n  Supplement recoveries:")
         for s in supplement_improvements:
             print(f"    {s['pmcid']}: {s['recovered']}")
 

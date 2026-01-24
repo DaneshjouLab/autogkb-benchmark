@@ -34,7 +34,7 @@ from typing import Dict, Any, List, Optional
 from datetime import datetime
 from tqdm import tqdm
 from .drug_benchmark import evaluate_drug_annotations
-from .fa_benchmark import evaluate_functional_analysis, evaluate_fa_from_articles
+from .fa_benchmark import evaluate_fa_from_articles
 from .pheno_benchmark import evaluate_phenotype_annotations
 from .study_parameters_benchmark import evaluate_study_parameters
 
@@ -267,7 +267,7 @@ def run_all_benchmarks(
         print(f"\nOverall Mean Score: {aggregate_results['overall_mean_score']:.3f}")
         print(f"Overall Min Score: {aggregate_results['overall_min_score']:.3f}")
         print(f"Overall Max Score: {aggregate_results['overall_max_score']:.3f}")
-        print(f"\nPer-Benchmark Statistics:")
+        print("\nPer-Benchmark Statistics:")
         for benchmark_name, stats in aggregate_results["per_benchmark_stats"].items():
             print(f"  {benchmark_name}:")
             print(f"    Mean: {stats['mean_score']:.3f}")

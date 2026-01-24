@@ -44,7 +44,7 @@ Your task is to evaluate how well a set of citations from a scientific article s
 You will score each citation set on a scale of 0-100 based on:
 1. Relevance: Do the citations directly relate to the claimed association?
 2. Support: Do the citations provide evidence for the specific claim?
-3. Completeness: Do the citations include key information (statistical evidence, sample size, effect direction)?
+3. Completeness: Do the citations together include all key information (statistical evidence, sample size, effect direction)?
 4. Quality: Are the citations from appropriate sections (Results, Methods, Tables)?
 
 Scoring guidelines:

@@ -343,7 +343,9 @@ def main():
     logger.debug(f"Saving generated sentences to {out_path}")
     with open(out_path, "w") as f:
         json.dump(all_results, f, indent=2)
-    logger.success(f"Saved generated sentences for {len(all_results)} PMCID(s) to {out_path}")
+    logger.success(
+        f"Saved generated sentences for {len(all_results)} PMCID(s) to {out_path}"
+    )
 
     # Evaluate generated sentences against ground truth
     if not args.no_eval and score_and_save is not None:
@@ -368,8 +370,8 @@ def main():
             logger.info(f"Number of PMCIDs: {eval_result.num_pmcids}")
             logger.info("Per-PMCID Scores:")
             for pmcid_result in eval_result.per_pmcid:
-                num_scored = pmcid_result['num_variants_scored']
-                num_not_in_gt = pmcid_result['num_variants_not_in_ground_truth']
+                num_scored = pmcid_result["num_variants_scored"]
+                num_not_in_gt = pmcid_result["num_variants_not_in_ground_truth"]
                 variants_info = f"{num_scored} variants"
                 if num_not_in_gt > 0:
                     variants_info += f", {num_not_in_gt} not in ground truth"

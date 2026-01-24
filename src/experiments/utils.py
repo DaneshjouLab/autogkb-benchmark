@@ -198,7 +198,9 @@ def call_llm(
     if not no_temp_models and temperature is not None:
         completion_kwargs["temperature"] = temperature
 
-    logger.debug(f"Calling LLM: {normalized_model} (temp={temperature if not no_temp_models else 'N/A'})")
+    logger.debug(
+        f"Calling LLM: {normalized_model} (temp={temperature if not no_temp_models else 'N/A'})"
+    )
 
     try:
         response = completion(**completion_kwargs)

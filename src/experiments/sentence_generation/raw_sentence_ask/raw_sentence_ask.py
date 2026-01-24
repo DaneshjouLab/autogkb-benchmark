@@ -219,7 +219,7 @@ def run_experiment(
     if pmcids:
         sentence_bench = {k: v for k, v in sentence_bench.items() if k in pmcids}
 
-    print(f"Running sentence generation experiment")
+    print("Running sentence generation experiment")
     print(f"Model: {model}")
     print(f"Prompt: {prompt_version} ({prompt_config['name']})")
     print(f"Articles: {len(sentence_bench)}")
@@ -252,13 +252,13 @@ def run_experiment(
             has_supplement = supplement_text is not None
             if has_supplement:
                 articles_with_supplements += 1
-                print(f"  [+supplement]")
+                print("  [+supplement]")
         else:
             article_text = get_markdown_text(pmcid)
             has_supplement = False
 
         if not article_text:
-            print(f"  No article text found, skipping")
+            print("  No article text found, skipping")
             continue
 
         article_results = {
@@ -348,7 +348,7 @@ def run_experiment(
     results["articles_with_supplements"] = articles_with_supplements
 
     print(f"\n{'=' * 60}")
-    print(f"SUMMARY")
+    print("SUMMARY")
     print(f"{'=' * 60}")
     print(f"Total variants processed: {total_variants}")
     print(f"Average similarity: {avg_similarity:.1%}")
