@@ -29,7 +29,7 @@ from src.experiments.variant_finding.regex_variants.extract_variants_v5 import (
     get_combined_text,
     get_snp_expander,
 )
-from src.experiments.utils import call_llm, get_markdown_text
+from src.experiments.utils import call_llm
 from src.benchmark_v2.variant_bench import load_variant_bench_data, score_variants
 
 # Load environment variables
@@ -78,7 +78,7 @@ def extract_json_array(text: str) -> list[str]:
             return [str(v).strip() for v in result]
         return []
     except json.JSONDecodeError:
-        print(f"    ⚠️  Failed to parse JSON from LLM response")
+        print("    ⚠️  Failed to parse JSON from LLM response")
         return []
 
 
@@ -181,7 +181,7 @@ def run_experiment(
         combined_text, supplement_text = get_combined_text(pmcid)
 
         if not combined_text:
-            print(f"  ⚠️  No text found (skipping)\n")
+            print("  ⚠️  No text found (skipping)\n")
             continue
 
         # Step 1: Extract variants using V5 regex
@@ -343,14 +343,14 @@ def run_experiment(
     print(f"{'=' * 70}")
     print(f"Articles processed: {n}")
     print()
-    print(f"REGEX EXTRACTION (V5 baseline):")
+    print("REGEX EXTRACTION (V5 baseline):")
     print(f"  Average Recall:    {avg_recall_regex:.1%}")
     print(f"  Average Precision: {avg_precision_regex:.1%}")
     print(
         f"  Perfect recall:    {perfect_recalls_regex}/{n} ({perfect_recalls_regex / n:.0%})"
     )
     print()
-    print(f"REGEX + LLM FILTER:")
+    print("REGEX + LLM FILTER:")
     print(f"  Average Recall:    {avg_recall_filtered:.1%} ({recall_change:+.1%})")
     print(
         f"  Average Precision: {avg_precision_filtered:.1%} ({precision_change:+.1%})"

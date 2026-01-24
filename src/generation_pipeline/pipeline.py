@@ -45,7 +45,6 @@ import warnings
 from dataclasses import dataclass, field, asdict
 from datetime import datetime
 from pathlib import Path
-from typing import Any
 
 import yaml
 from dotenv import load_dotenv
@@ -866,7 +865,7 @@ def main():
         sys.exit(1)
 
     config_info = config.get("config", {})
-    logger.info(f"Pipeline Configuration:")
+    logger.info("Pipeline Configuration:")
     logger.info(f"  Config: {config_info.get('name', 'unknown')}")
     logger.info(f"  PMCIDs to process: {len(pmcids)}")
     logger.info(f"  Stages: {sorted(stages)}")
@@ -895,9 +894,9 @@ def main():
     )
     total_summaries = sum(1 for r in results if r.summary)
 
-    logger.success(f"\nPipeline complete!")
+    logger.success("\nPipeline complete!")
     logger.success(f"Results saved to: {output_dir}")
-    logger.info(f"\nPipeline Summary:")
+    logger.info("\nPipeline Summary:")
     logger.info(f"  PMCIDs processed: {len(results)}")
     logger.info(f"  Total variants found: {total_variants}")
     logger.info(f"  Total associations: {total_associations}")

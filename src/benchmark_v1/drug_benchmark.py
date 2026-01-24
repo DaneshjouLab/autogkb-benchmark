@@ -7,7 +7,6 @@ from .shared_utils import (
     exact_match,
     semantic_similarity,
     category_equal,
-    variant_substring_match,
     compute_weighted_score,
     parse_variant_list,
     normalize_variant,

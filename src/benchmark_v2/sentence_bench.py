@@ -385,10 +385,10 @@ def score_and_save(
         json.dump(result_dict, f, indent=2)
 
     print(f"Results saved to {output_path}")
-    print(f"\nOverall Statistics:")
+    print("\nOverall Statistics:")
     print(f"  Overall Average Score: {result.overall_avg_score:.3f}")
     print(f"  Number of PMCIDs: {result.num_pmcids}")
-    print(f"\nPer-PMCID Scores:")
+    print("\nPer-PMCID Scores:")
     for pmcid_result in result.per_pmcid:
         num_scored = pmcid_result["num_variants_scored"]
         num_not_in_gt = pmcid_result["num_variants_not_in_ground_truth"]

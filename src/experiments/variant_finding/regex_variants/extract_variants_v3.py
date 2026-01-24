@@ -330,7 +330,7 @@ def run_experiment():
     results["per_article_results"] = per_article_results
 
     print(f"\n{'=' * 60}")
-    print(f"SUMMARY")
+    print("SUMMARY")
     print(f"{'=' * 60}")
     print(f"Articles scored: {n}")
     print(f"Average Recall: {avg_recall:.1%}")

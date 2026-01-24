@@ -3,9 +3,7 @@ import time
 import json
 from pathlib import Path
 from typing import List, Dict, Optional, Set
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from dotenv import load_dotenv
-import os
 
 load_dotenv()
 
@@ -335,7 +333,7 @@ if __name__ == "__main__":
     print("=== Method 1: convert() - In-memory list conversion ===")
     # Simple in-memory conversion
     results = converter.convert(pmids)
-    print(f"\nSample results:")
+    print("\nSample results:")
     for pmid, pmcid in list(results.items())[:3]:
         print(f"PMID {pmid} -> {pmcid}")
 

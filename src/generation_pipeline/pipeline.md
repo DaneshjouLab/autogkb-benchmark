@@ -6,7 +6,7 @@ We should be able to control prompts and model choices via a config file and the
 
 Follow conventions established in the experiments we've already done. We shouldn't be reinventing the wheel, let's use the highest performing models and prompts we have from our experiments. Although, to link everything together to run sequentially, we may not be able to just import functions generated under experiments.
 
-All files and intermediate files should be stored in the pipeline folder.
+All files and intermediate files should be stored in the generation_pipeline folder.
 
 ## Implementation
 

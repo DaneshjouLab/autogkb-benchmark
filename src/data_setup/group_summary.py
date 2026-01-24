@@ -242,7 +242,7 @@ def print_grouped_annotations(all_annotations: list[GroupedAnnotation]):
             print(f"\n[{i}] Type: {ann.annotation_type}")
             print(f"Grouped fields: {', '.join(ann.grouped_fields)}")
             print(f"Annotation ID: {ann.annotation.get('Variant Annotation ID')}")
-            print(f"---")
+            print("---")
 
             # Print key fields from the annotation
             key_fields = [

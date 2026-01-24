@@ -361,7 +361,7 @@ if "Regex v1" in results_data and "Regex v5" in results_data:
     v5_recall = results_data["Regex v5"]["recall"]
     improvement = v5_recall - v1_recall
 
-    print(f"\n📈 Regex Evolution (v1 → v5):")
+    print("\n📈 Regex Evolution (v1 → v5):")
     print(
         f"   Recall improvement: +{improvement:.1f} percentage points ({v1_recall:.1f}% → {v5_recall:.1f}%)"
     )

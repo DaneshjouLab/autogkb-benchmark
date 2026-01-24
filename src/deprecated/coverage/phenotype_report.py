@@ -137,7 +137,7 @@ def proposed_phenotype_summary(
     output_file_name = timestamp
     if not run_name:
         run_name = proposed_annotations_dir
-    output_file_name += f"_phenotype_report.json"
+    output_file_name += "_phenotype_report.json"
     output_path = Path("data") / "coverage" / "phenotype_reports" / output_file_name
     output_path.parent.mkdir(parents=True, exist_ok=True)
     summary = PhenotypeCoverageReport(

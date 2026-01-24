@@ -8,7 +8,7 @@
       "sentences"
     ],
     "source_pipeline_config": "base_config",
-    "source_file": "src/pipeline/outputs/base_config_outputs.json",
+    "source_file": "src/generation_pipeline/outputs/base_config_outputs.json",
     "judge_model": "claude-sonnet-4-20250514"
   },
   "overall_variant_match_rate": 1.0,

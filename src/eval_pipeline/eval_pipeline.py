@@ -27,13 +27,13 @@ Example Commands:
    python eval_pipeline.py --input ../pipeline/outputs/base_config
 
 2. Evaluate with custom config:
-   python eval_pipeline.py --input ../pipeline/outputs/base_config --config configs/custom.yaml
+   python eval_pipeline.py --input ../generation_pipeline/outputs/base_configconfig configs/custom.yaml
 
 3. Evaluate specific stages only:
-   python eval_pipeline.py --input ../pipeline/outputs/base_config --stages variants,sentences
+   python eval_pipeline.py --input ../generation_pipeline/outputs/base_configstages variants,sentences
 
 4. Use a different judge model:
-   python eval_pipeline.py --input ../pipeline/outputs/base_config --judge-model gpt-4o
+   python eval_pipeline.py --input ../generation_pipeline/outputs/base_configjudge-model gpt-4o
 """
 
 from __future__ import annotations
@@ -41,7 +41,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, asdict
 from datetime import datetime
 from pathlib import Path
 
@@ -63,7 +63,6 @@ if str(ROOT) not in sys.path:
 # Import benchmark evaluation functions
 from src.benchmark_v2.variant_bench import (
     score_variants_by_pmcid,
-    load_variant_bench_data,
     VariantBenchResult,
 )
 from src.benchmark_v2.sentence_bench import (
@@ -736,7 +735,7 @@ def main():
 
     # Log configuration
     config_info = config.get("config", {})
-    logger.info(f"Evaluation Configuration:")
+    logger.info("Evaluation Configuration:")
     logger.info(f"  Config: {config_info.get('name', 'unknown')}")
     logger.info(f"  Input directory: {args.input}")
     logger.info(f"  Output directory: {output_dir}")
@@ -788,11 +787,11 @@ def main():
                 sum(sentence_scores) / len(sentence_scores), 3
             )
 
-    logger.success(f"\nEvaluation complete!")
+    logger.success("\nEvaluation complete!")
     logger.success(f"Results saved to: {output_dir}")
 
     # Print summary
-    logger.info(f"\nEvaluation Summary:")
+    logger.info("\nEvaluation Summary:")
     logger.info(f"  PMCIDs evaluated: {len(results)}")
 
     if overall_variant_metrics is not None:
@@ -805,7 +804,7 @@ def main():
         logger.info(f"  Sentence generation - Avg score: {overall_sentence_score:.3f}")
 
     # Print per-PMCID breakdown
-    logger.info(f"\nPer-PMCID Results:")
+    logger.info("\nPer-PMCID Results:")
     for pmcid_result in results:
         pmcid = pmcid_result.pmcid
         parts = [f"  {pmcid}:"]

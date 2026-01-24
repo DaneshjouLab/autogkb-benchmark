@@ -10,7 +10,6 @@ API Documentation: https://www.ncbi.nlm.nih.gov/research/bionlp/APIs/FAIR-SMART/
 
 import json
 import time
-from functools import lru_cache
 from pathlib import Path
 
 import requests

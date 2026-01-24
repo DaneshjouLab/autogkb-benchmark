@@ -1,7 +1,6 @@
 # SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
 # SPDX-License-Identifier: Apache-2.0
 from typing import Dict, List, Any, Optional, Tuple
-from difflib import SequenceMatcher
 import re
 from .shared_utils import (
     exact_match,

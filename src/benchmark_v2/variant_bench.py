@@ -417,7 +417,7 @@ def main():
     )
     print(f"Generated variants file: {generated_variants_path}")
     results = score_generated_variants(generated_variants_path)
-    print(f"\nSummary:")
+    print("\nSummary:")
     print(f"Total match rate: {results['total_match_rate']:.2%}")
     print(f"Number of PMCIDs scored: {len(results['per_pmcid_scores'])}")
     for score in results["per_pmcid_scores"]:

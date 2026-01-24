@@ -417,7 +417,7 @@ def run_experiment():
     }
 
     print(f"\n{'=' * 60}")
-    print(f"SUMMARY")
+    print("SUMMARY")
     print(f"{'=' * 60}")
     print(f"Articles scored: {n}")
     print(f"Average Recall: {avg_recall:.1%}")
@@ -426,7 +426,7 @@ def run_experiment():
     perfect_recalls = sum(1 for r in per_article_results if r["recall"] == 1.0)
     print(f"Perfect recall: {perfect_recalls}/{n} articles ({perfect_recalls / n:.0%})")
 
-    print(f"\nSNP Notation Expansion:")
+    print("\nSNP Notation Expansion:")
     print(f"  Articles benefiting: {len(snp_expansions_used)}")
     total_snp_rsids = sum(len(e["expanded_rsids"]) for e in snp_expansions_used)
     print(f"  Total rsIDs from SNP notation: {total_snp_rsids}")
