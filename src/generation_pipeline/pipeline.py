@@ -876,9 +876,10 @@ def main():
     logger.info(f"  Citation model: {config['citation_finding']['model']}")
     logger.info(f"  Summary model: {config['summary_generation']['model']}")
 
-    # Create output directory for this config (each PMCID gets its own file)
+    # Create output directory for this config with timestamp (each PMCID gets its own file)
     config_name = config_info.get("name", "pipeline")
-    output_dir = OUTPUTS_DIR / config_name
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_dir = OUTPUTS_DIR / f"{config_name}_{timestamp}"
     logger.info(f"  Output directory: {output_dir}")
 
     # Run pipeline - results are saved incrementally as each PMCID completes

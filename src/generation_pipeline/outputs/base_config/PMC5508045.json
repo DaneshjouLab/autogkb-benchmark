@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T11:29:38.992479",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "summary",
+      "citations",
+      "variants"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC5508045",
+    "variants": [
+      "rs9923231",
+      "rs887829",
+      "CYP2C9*1",
+      "CYP2C9*3",
+      "rs8175347",
+      "rs2108622",
+      "CYP2C9*2",
+      "rs1057910"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": true,
+      "supplement_variants": [],
+      "total_extracted": 8,
+      "from_article": 8,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "rs9923231",
+        "sentence": "Genotypes GA + AA of rs9923231 are associated with decreased dose of warfarin in Thai people with Atrial Fibrillation, Heart Valve Replacement, Deep Vein Thrombosis, Pulmonary Embolism, Chronic Thromboembolic Pulmonary Hypertension as compared to genotype GG.",
+        "explanation": "In a cohort of 250 Thai patients on stable warfarin, multivariable modeling identified VKORC1 −1639G>A (rs9923231) as the largest genetic determinant of dose, explaining 26.2% of variance (22.5% from AA and 3.7% from GA), indicating significantly lower dose requirements for A-allele carriers.",
+        "citations": [
+          "The patients with variant genotypes of VKORC1 − 1639G > A required significantly lower warfarin stable weekly doses (SWDs) than those with wild-type genotype (p < 0.001).",
+          "Patients with AA and GA genotypes of VKORC1 − 1639G > A required 49.7% and 27.7% significantly lower averages of SWDS of warfarin as compared with those with wild-type GG genotype (p < 0.001).",
+          "The warfarin SWDs were decreased by 9.7 mg and 18.1 mg in the patients with GA and AA genotypes of VKORC1 − 1639G > A as compared with those with wild-type GG genotype (p < 0.001) (Table [3](#Tab3)).",
+          "This also confirmed the previous studies that at 26.2% of the warfarin dose variance (22.5% from VKORC1 (−1639G > A) AA genotype and 3.7% from VKORC1 (−1639G > A) GA genotype) (Table [3](#Tab3)) [[3](#CR3), [25](#CR25)], the VKORC1 − 1639G > A polymorphism accounted for the largest portion."
+        ]
+      },
+      {
+        "variant_id": "rs887829",
+        "sentence": "Genotypes CT + TT of rs887829 are not associated with dose of warfarin in Thai people with Atrial Fibrillation, Heart Valve Replacement, Deep Vein Thrombosis, Pulmonary Embolism, Chronic Thromboembolic Pulmonary Hypertension as compared to genotype CC.",
+        "explanation": "The study genotyped UGT1A1 rs887829 in 250 Thai patients and found it did not significantly contribute to variability in stable warfarin dose in multivariable analysis.",
+        "citations": [
+          "In contrast, there were no significant differences in the SWDs between the patients who carried variant alleles of CYP4F2 rs2108622 and UGT1A1 rs887829 as compared to wild-type allele carriers.",
+          "The dosage requirement differences, however, were not observed in patients with variant genotypes of CYP4F2 rs2108622 and UGT1A1 rs887829 (p = 0.172 and p = 0.921) (Table [2](#Tab2)).",
+          "In contrast, the UGT1A1 rs887829 polymorphism did not contribute to dose variability.",
+          "According to the UGT1A1 rs887829 polymorphism, the present results showed that UGT1A1 rs887829 did not significantly contribute to the variability of the stable warfarin doses (Table [2](#Tab2)) which was not consistent with the study of Korean patients [[18](#CR18)]."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*1",
+        "sentence": "CYP2C9 *1/*1 is associated with increased dose of warfarin in Thai people with Atrial Fibrillation, Heart Valve Replacement, Deep Vein Thrombosis, Pulmonary Embolism, Chronic Thromboembolic Pulmonary Hypertension as compared to CYP2C9 *1/*3 and *3/*3.",
+        "explanation": "The cohort analysis showed the CYP2C9*3 allele genotypes (*1/*3 and *3/*3) accounted for 6.0% of dose variance (2.7% and 3.3%, respectively), implying lower dose needs than the normal-function CYP2C9 *1/*1 genotype.",
+        "citations": [
+          "Similarly, the patients with CYP2C9*3* variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+          "The averages of warfarin SWDs were 64.6% and 34.1% lower in *CYP2C9 *3/*3* and **1/*3* patients than in **1/*1* patients (*p* = 0.006).",
+          "Similarly, the warfarin SWDs were decreased by 7.9 mg and 25.9 mg in the patients with *CYP2C9 *1/*3* and *CYP2C9 *3/*3* genotypes as compared with those with wild-type **1/*1* genotype (*p* < 0.001) (Table [3](#Tab3)).",
+          "The present study showed that the *CYP2C9*3* allele could explain about 6.0% of the warfarin dose variance (3.3% from *CYP2C9*3/*3* and 2.7% from *CYP2C9*1/*3*) (Table [3](#Tab3))."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*3",
+        "sentence": "CYP2C9 *1/*3 + *3/*3 are associated with decreased dose of warfarin in Thai people with Atrial Fibrillation, Heart Valve Replacement, Deep Vein Thrombosis, Pulmonary Embolism, Chronic Thromboembolic Pulmonary Hypertension as compared to CYP2C9 *1/*1.",
+        "explanation": "In 250 Thai patients on stable therapy, carriers of CYP2C9*3 (both *1/*3 and *3/*3) explained 6.0% of dose variability (2.7% and 3.3%, respectively), consistent with reduced metabolism and lower dose requirements vs. *1/*1.",
+        "citations": [
+          "The averages of warfarin SWDs were 64.6% and 34.1% lower in *CYP2C9 *3/*3* and **1/*3* patients than in **1/*1* patients (*p* = 0.006).",
+          "Similarly, the warfarin SWDs were decreased by 7.9 mg and 25.9 mg in the patients with *CYP2C9 *1/*3* and *CYP2C9 *3/*3* genotypes as compared with those with wild-type **1/*1* genotype (*p* < 0.001) (Table [3](#Tab3)).",
+          "Similarly, the patients with CYP2C9*3* variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+          "The present study showed that the *CYP2C9*3* allele could explain about 6.0% of the warfarin dose variance (3.3% from *CYP2C9*3/*3* and 2.7% from *CYP2C9*1/*3*) (Table [3](#Tab3))."
+        ]
+      },
+      {
+        "variant_id": "rs8175347",
+        "sentence": "rs8175347 mentioned in article but not studied by paper.",
+        "explanation": "The study genotyped VKORC1 rs9923231, CYP2C9 rs1057910 (CYP2C9*3), CYP4F2 rs2108622, and UGT1A1 rs887829; rs8175347 was not included in their analyses.",
+        "citations": [
+          "Recently, the polymorphisms of uridine diphosphate-glucuronosyltransferase 1A1 (*UGT1A1*) rs8175347 and rs887829, which are in linked disequilibrium, were significantly associated with a requirement for higher warfarin doses in Korean and Brazilian patients [[18](#CR18), [19](#CR19)].",
+          "Four single nucleotide polymorphisms in the *VKORC1* − 1639G > A, *CYP2C9*3*, *CYP4F2* rs2108622, and *UGT1A1* rs887829 genes were detected from gDNA using TaqMan allelic discrimination assays.",
+          "Genotyping of *VKORC1* (−1639G > A; rs9923231; assay ID C_30403261_20), *CYP2C9*3* (1075A > C; rs1057910; assay ID: C_27104892_10), *CYP4F2* (1347C > T; rs2108622; assay ID C_16179493_40), and *UGT1A1* (rs887829; assay ID C_2669357_10) was performed by the Taqman allelic discrimination assay using a 7500HT Applied Biosystems thermal cycler (Applied Biosystems, CA, USA)."
+        ]
+      },
+      {
+        "variant_id": "rs2108622",
+        "sentence": "Genotype TT of rs2108622 is associated with increased dose of warfarin in Thai people with Atrial Fibrillation, Heart Valve Replacement, Deep Vein Thrombosis, Pulmonary Embolism, Chronic Thromboembolic Pulmonary Hypertension as compared to genotype CC.",
+        "explanation": "The CYP4F2 rs2108622 variant (TT) was a significant, modest contributor (≈1.2% of variance) to higher warfarin dose requirements in the 250-patient Thai cohort.",
+        "citations": [
+          "In addition, warfarin SWDs were increased by 4.1 mg in the patients with the TT variant genotype of *CYP4F2* rs2108622 as compared with those with the wild-type CC genotype (*p* = 0.016) (Table [3](#Tab3)).",
+          "Multivariate analysis, however, showed that *CYP4F2* rs2108622 TT genotype accounted for a modest part of warfarin dose variability (1.2%).",
+          "Increasing age, concomitant use of antiplatelet drugs, amiodarone use, variant genotypes of *CYP2C9*3*, and *VKORC1* − 1639G > A were negatively associated with warfarin dose requirements; while increased BMI, current smoker status, and the TT variant genotype of *CYP4F2* rs2108622 showed positive correlations.",
+          "For the *CYP4F2* rs2108622 polymorphism, the results revealed that the variant TT genotype was identified as a significant contributor and accounted for a modest part of warfarin dose variability (1.2%) (Table [3](#Tab3))."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*2",
+        "sentence": "CYP2C9*2 mentioned in article but not studied by paper.",
+        "explanation": "The paper discussed CYP2C9*2 in prior literature and ethnic differences but did not genotype CYP2C9*2 in the Thai cohort.",
+        "citations": [
+          "The *CYP2C9*2* and *CYP2C9*3* variants have been shown to have decreased enzymatic activity, which partly accounts for the variance in warfarin dose requirements [[5](#CR5)].",
+          "Previous studies in several different ethnic groups, including Thai, have shown that patients with the *CYP2C9*2* or *CYP2C9*3* allele required lower warfarin doses than those patients with the *CYP2C9*1* allele [[6](#CR6)–[8](#CR8)].",
+          "Four single nucleotide polymorphisms in the *VKORC1* − 1639G > A, *CYP2C9*3*, *CYP4F2* rs2108622, and *UGT1A1* rs887829 genes were detected from gDNA using TaqMan allelic discrimination assays.",
+          "Genotyping of *VKORC1* (−1639G > A; rs9923231; assay ID C_30403261_20), *CYP2C9*3* (1075A > C; rs1057910; assay ID: C_27104892_10), *CYP4F2* (1347C > T; rs2108622; assay ID C_16179493_40), and *UGT1A1* (rs887829; assay ID C_2669357_10) was performed by the Taqman allelic discrimination assay using a 7500HT Applied Biosystems thermal cycler (Applied Biosystems, CA, USA)."
+        ]
+      },
+      {
+        "variant_id": "rs1057910",
+        "sentence": "Genotypes AC + CC of rs1057910 are associated with decreased dose of warfarin in Thai people with Atrial Fibrillation, Heart Valve Replacement, Deep Vein Thrombosis, Pulmonary Embolism, Chronic Thromboembolic Pulmonary Hypertension as compared to genotype AA.",
+        "explanation": "rs1057910 (CYP2C9*3) genotyping in 250 Thai patients showed that carriers (AC and CC) accounted for 6.0% of dose variance, requiring lower maintenance doses than AA homozygotes.",
+        "citations": [
+          "Genotyping of *CYP2C9*3* (1075A > C; rs1057910; assay ID: C_27104892_10), was performed by the Taqman allelic discrimination assay using a 7500HT Applied Biosystems thermal cycler (Applied Biosystems, CA, USA).",
+          "Similarly, the patients with CYP2C9*3* variant allele required significantly lower warfarin SWDs than those with homozygous wild-type (p = 0.006).",
+          "The averages of warfarin SWDs were 64.6% and 34.1% lower in *CYP2C9 *3/*3* and **1/*3* patients than in **1/*1* patients (*p* = 0.006).",
+          "Similarly, the warfarin SWDs were decreased by 7.9 mg and 25.9 mg in the patients with *CYP2C9 *1/*3* and *CYP2C9 *3/*3* genotypes as compared with those with wild-type **1/*1* genotype (*p* < 0.001) (Table [3](#Tab3))."
+        ]
+      }
+    ],
+    "summary": "## Background\nThis retrospective study examined how genetic and non-genetic factors influence stable warfarin dose requirements in 250 Thai patients. Genotyping focused on VKORC1 −1639G>A (rs9923231), CYP2C9*3 (rs1057910), CYP4F2 rs2108622, and UGT1A1 rs887829.\n\n## Key Findings\n- VKORC1 −1639G>A (rs9923231): Strongest genetic predictor. Compared with GG, GA and AA genotypes required 27.7% and 49.7% lower weekly doses, respectively (p<0.001). In multivariable modeling, GA and AA were associated with −9.7 mg/week and −18.1 mg/week, respectively (both p<0.001), accounting for 26.2% of dose variability.\n- CYP2C9*3 (rs1057910): Variant carriers needed less warfarin. Versus *1/*1, doses were 34.1% lower for *1/*3 and 64.6% lower for *3/*3 (p=0.006). In multivariable analysis, effects were −7.9 mg/week for *1/*3 and −25.9 mg/week for *3/*3 (both p<0.001), contributing 6.0% to variability.\n- CYP4F2 rs2108622: Small, positive effect on dose. While univariate differences were not significant (p=0.172), multivariable analysis showed TT genotype required +4.1 mg/week versus CC (p=0.016), explaining 1.2% of variability.\n- UGT1A1 rs887829: No association with dose (p=0.921).\n- Overall model including VKORC1, CYP2C9*3, CYP4F2, and clinical covariates (age, BMI, amiodarone, antiplatelets, smoking) explained 51.3% of interindividual dose variability.\n\n## Clinical Implications\n- For Thai patients, genotype-guided dosing should prioritize VKORC1 −1639G>A and CYP2C9*3, with CYP4F2 rs2108622 considered as a minor modifier; UGT1A1 rs887829 need not be included for warfarin dose prediction.\n- Expect substantially lower initial and maintenance doses in VKORC1 A-allele carriers and CYP2C9*3 carriers; conversely, consider modest upward adjustment for CYP4F2 TT.\n- Incorporating these variants alongside age, BMI, and key drug interactions (amiodarone, antiplatelets, smoking) can markedly improve dose prediction, potentially reducing time to stable anticoagulation and minimizing adverse events."
+  }
+}
