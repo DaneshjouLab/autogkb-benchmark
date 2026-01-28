@@ -17,8 +17,12 @@ This document compares all variant extraction methods tested on the AutoGKB benc
 | **LLM-Only (GPT-4o)** | 65.7% | 42.1% | 51.3% | 14/32 (44%) | Pure LLM extraction |
 | **LLM-Only (Sonnet 4.5)** | 71.5% | **46.3%** | 56.2% | 16/32 (50%) | Pure LLM extraction |
 | **LLM-Only (Opus 4.5)** | 71.0% | 41.6% | 52.4% | 17/32 (53%) | Pure LLM extraction |
+| **PubTator (Full Text)** | 36.3% | 19.4% | 25.3% | 10/32 (31%) | NCBI PubTator3 API |
+| **PubTator (Abstract Only)** | 26.4% | 31.8% | 28.9% | 6/32 (19%) | NCBI PubTator3 API (abstract) |
 
 **Note**: Regex + LLM Filter methods were tested on only 2 articles (partial experiment) and excluded from main comparison.
+
+**Note on PubTator**: PubTator performs poorly for pharmacogenomics because it does not recognize star alleles (CYP2C9*3) or HLA alleles (HLA-B*58:01). See `pubtator/pubtator_variants.md` for detailed analysis.
 
 ## Key Findings
 
@@ -219,6 +223,10 @@ just_ask/results/
 regex_llm_filter/results/
 ├── claude-sonnet-4-5-20250929_v1.json
 └── gpt-4o_v1.json
+
+pubtator/results/
+├── pubtator_api_v1.json  (full text)
+└── pubtator_api_abstract_only.json  (abstract only)
 ```
 
 ### Documentation

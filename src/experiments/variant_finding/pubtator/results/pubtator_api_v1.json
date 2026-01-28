@@ -1,0 +1,938 @@
+{
+  "run_name": "pubtator_api_v1",
+  "method": "PubTator3 API",
+  "api_url": "https://www.ncbi.nlm.nih.gov/research/pubtator3-api/publications/export/biocjson",
+  "timestamp": "2026-01-28T11:18:02.767725",
+  "full_text": true,
+  "avg_recall": 0.36294642857142856,
+  "avg_precision": 0.19429713804713805,
+  "articles_scored": 32,
+  "api_failures": [],
+  "per_article_results": [
+    {
+      "pmcid": "PMC5508045",
+      "pmid": "28550460",
+      "recall": 1.0,
+      "precision": 0.6666666666666666,
+      "true_count": 4,
+      "extracted_count": 6,
+      "matches": [
+        "rs9923231",
+        "rs887829",
+        "rs1057910",
+        "rs2108622"
+      ],
+      "misses": [],
+      "extras": [
+        "rs8175347",
+        "rs9934438"
+      ],
+      "raw_extracted": [
+        "rs8175347",
+        "rs887829",
+        "rs9934438",
+        "rs9923231",
+        "rs1057910",
+        "rs2108622"
+      ]
+    },
+    {
+      "pmcid": "PMC4916189",
+      "pmid": "26715213",
+      "recall": 0.7142857142857143,
+      "precision": 0.4166666666666667,
+      "true_count": 7,
+      "extracted_count": 12,
+      "matches": [
+        "rs2472677",
+        "rs4803419",
+        "rs28399499",
+        "rs3745274",
+        "rs1045642"
+      ],
+      "misses": [
+        "cyp2b6*9",
+        "cyp2b6*1"
+      ],
+      "extras": [
+        "rs8192726",
+        "rs28399454",
+        "rs6785049",
+        "rs3003596",
+        "rs2307424",
+        "rs2032582",
+        "rs35599367"
+      ],
+      "raw_extracted": [
+        "rs8192726",
+        "rs2032582",
+        "rs2472677",
+        "rs4803419",
+        "rs28399499",
+        "rs28399454",
+        "rs6785049",
+        "rs3003596",
+        "rs2307424",
+        "rs3745274",
+        "rs1045642",
+        "rs35599367"
+      ]
+    },
+    {
+      "pmcid": "PMC12036300",
+      "pmid": "40295977",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 3,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "cyp2c19*17",
+        "cyp2c19*2",
+        "cyp2c19*1"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC554812",
+      "pmid": "15743917",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 5,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "hla-a*33:03",
+        "hla-b*58:01",
+        "hla-c*03:02",
+        "hla-drb1*03:01",
+        "rs1594"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC5561238",
+      "pmid": "28819312",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 43,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "hla-b*78:01",
+        "rs28399499",
+        "hla-b*39:10",
+        "hla-drb1*08:01",
+        "hla-b*67:01",
+        "hla-b*15:24",
+        "hla-drb1*04:04",
+        "hla-b*13:02",
+        "hla-b*15:01",
+        "hla-c*04:06",
+        "hla-drb1*01:03",
+        "hla-b*35:05",
+        "hla-b*39:05",
+        "hla-drb1*01:01",
+        "hla-b*39:06",
+        "hla-b*15:35",
+        "hla-b*51:02",
+        "hla-b*55:01",
+        "hla-b*39:01",
+        "hla-c*04:03",
+        "hla-b*15:27",
+        "hla-b*39:09",
+        "hla-b*56:01",
+        "hla-b*15:12",
+        "hla-c*04:01",
+        "hla-drb1*10:01",
+        "hla-c*18:01",
+        "rs3745274",
+        "hla-b*38:01",
+        "hla-b*55:02",
+        "hla-b*35:10",
+        "hla-b*56:06",
+        "hla-b*54:01",
+        "hla-b*15:32",
+        "hla-c*05:09",
+        "hla-b*15:25",
+        "hla-drb1*01:02",
+        "hla-b*51:01",
+        "hla-c*05:01",
+        "hla-b*52:01",
+        "hla-c*04:07",
+        "hla-b*38:02",
+        "hla-b*57:01"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC10946077",
+      "pmid": "38497131",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 7,
+      "extracted_count": 1,
+      "matches": [],
+      "misses": [
+        "ugt1a1*28",
+        "ugt1a1*1",
+        "ugt1a1*6"
+      ],
+      "extras": [
+        "rs4148323"
+      ],
+      "raw_extracted": [
+        "rs4148323"
+      ]
+    },
+    {
+      "pmcid": "PMC6465603",
+      "pmid": "31024313",
+      "recall": 1.0,
+      "precision": 0.6666666666666666,
+      "true_count": 2,
+      "extracted_count": 3,
+      "matches": [
+        "rs1142345",
+        "rs116855232"
+      ],
+      "misses": [],
+      "extras": [
+        "rs147390019"
+      ],
+      "raw_extracted": [
+        "rs1142345",
+        "rs116855232",
+        "rs147390019"
+      ]
+    },
+    {
+      "pmcid": "PMC12038368",
+      "pmid": "40297930",
+      "recall": 1.0,
+      "precision": 0.16666666666666666,
+      "true_count": 2,
+      "extracted_count": 12,
+      "matches": [
+        "rs4149056",
+        "rs2306283"
+      ],
+      "misses": [],
+      "extras": [
+        "rs4149117",
+        "rs7311158",
+        "rs2242480",
+        "rs2231142",
+        "rs3740066",
+        "rs1045642",
+        "rs1188402319",
+        "rs7311358",
+        "rs776746",
+        "rs717620"
+      ],
+      "raw_extracted": [
+        "rs4149056",
+        "rs4149117",
+        "rs7311158",
+        "rs2242480",
+        "rs2231142",
+        "rs2306283",
+        "rs3740066",
+        "rs1045642",
+        "rs1188402319",
+        "rs7311358",
+        "rs776746",
+        "rs717620"
+      ]
+    },
+    {
+      "pmcid": "PMC10880264",
+      "pmid": "38377518",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 3,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "cyp2d6 poor metabolizer",
+        "cyp2c19 intermediate metabolizer",
+        "rs6311"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC12331468",
+      "pmid": "40786508",
+      "recall": 1.0,
+      "precision": 1.0,
+      "true_count": 4,
+      "extracted_count": 4,
+      "matches": [
+        "rs1695",
+        "rs45445694",
+        "rs1801265",
+        "rs11280056"
+      ],
+      "misses": [],
+      "extras": [],
+      "raw_extracted": [
+        "rs1695",
+        "rs45445694",
+        "rs11280056",
+        "rs1801265"
+      ]
+    },
+    {
+      "pmcid": "PMC6435416",
+      "pmid": "30661084",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 15,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "cyp2d6*10",
+        "cyp2d6*5",
+        "cyp2d6*9",
+        "cyp2d6*6",
+        "cyp2d6*1xn",
+        "cyp2d6*41",
+        "cyp2d6*4",
+        "cyp2d6*2",
+        "cyp2d6*35",
+        "cyp2d6*2xn",
+        "cyp2d6*3",
+        "cyp2d6*1",
+        "cyp2d6*17",
+        "cyp2d6*29",
+        "cyp2d6*4xn"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC12319246",
+      "pmid": "40761554",
+      "recall": 1.0,
+      "precision": 0.2962962962962963,
+      "true_count": 8,
+      "extracted_count": 27,
+      "matches": [
+        "rs4244285",
+        "rs4149056",
+        "rs2306283",
+        "rs9282564",
+        "rs2740574",
+        "rs3745274",
+        "rs776746",
+        "rs2273697"
+      ],
+      "misses": [],
+      "extras": [
+        "rs1800871",
+        "rs2032582",
+        "rs1142345",
+        "rs2279343",
+        "rs2066844",
+        "rs17868320",
+        "rs72551330",
+        "rs1045642",
+        "rs1799853",
+        "rs3832043",
+        "rs717620",
+        "rs1800872",
+        "rs3745275",
+        "rs2235033",
+        "rs6714486",
+        "rs2235013",
+        "rs3740066",
+        "rs1800896",
+        "rs214778"
+      ],
+      "raw_extracted": [
+        "rs1800871",
+        "rs4149056",
+        "rs2306283",
+        "rs2032582",
+        "rs1142345",
+        "rs2279343",
+        "rs776746",
+        "rs2066844",
+        "rs17868320",
+        "rs9282564",
+        "rs72551330",
+        "rs1045642",
+        "rs1799853",
+        "rs3832043",
+        "rs717620",
+        "rs4244285",
+        "rs1800872",
+        "rs3745274",
+        "rs2273697",
+        "rs3745275",
+        "rs2235033",
+        "rs6714486",
+        "rs2235013",
+        "rs3740066",
+        "rs1800896",
+        "rs2740574",
+        "rs214778"
+      ]
+    },
+    {
+      "pmcid": "PMC3548984",
+      "pmid": "23213055",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 10,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "cyp2d6*4",
+        "cyp2d6*10",
+        "cyp2d6*3",
+        "cyp2d6*6",
+        "cyp2d6*1",
+        "cyp2d6*41"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC10275785",
+      "pmid": "37332933",
+      "recall": 1.0,
+      "precision": 0.2,
+      "true_count": 2,
+      "extracted_count": 10,
+      "matches": [
+        "rs2043211",
+        "rs4612666"
+      ],
+      "misses": [],
+      "extras": [
+        "rs35829419",
+        "rs4925648",
+        "rs10925026",
+        "rs10403848",
+        "rs4925659",
+        "rs10159239",
+        "rs10754558",
+        "rs11672725"
+      ],
+      "raw_extracted": [
+        "rs35829419",
+        "rs4925648",
+        "rs2043211",
+        "rs10925026",
+        "rs10403848",
+        "rs4925659",
+        "rs10159239",
+        "rs10754558",
+        "rs11672725",
+        "rs4612666"
+      ]
+    },
+    {
+      "pmcid": "PMC11971672",
+      "pmid": "40184070",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 4,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "cyp2c19*17",
+        "cyp2c19*2",
+        "cyp2c19*1",
+        "cyp2c19*3"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC11430164",
+      "pmid": "39346054",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 19,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "cyp3a4*4",
+        "cyp3a4*5",
+        "cyp3a4*14",
+        "cyp3a4*28",
+        "cyp3a4*24",
+        "cyp3a4*3",
+        "cyp3a4*2",
+        "cyp3a4*31",
+        "cyp3a4*11",
+        "cyp3a4*17",
+        "cyp3a4*16",
+        "cyp3a4*15",
+        "cyp3a4*33",
+        "cyp3a4*29",
+        "cyp3a4*18",
+        "cyp3a4*9",
+        "cyp3a4*1",
+        "cyp3a4*19"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC8790808",
+      "pmid": "33768542",
+      "recall": 0.25,
+      "precision": 0.5,
+      "true_count": 4,
+      "extracted_count": 2,
+      "matches": [
+        "rs9958628"
+      ],
+      "misses": [
+        "hla-drb1*07:01",
+        "hla-dqa1*02:01",
+        "hla-dqb1*02:02"
+      ],
+      "extras": [
+        "rs1694129"
+      ],
+      "raw_extracted": [
+        "rs1694129",
+        "rs9958628"
+      ]
+    },
+    {
+      "pmcid": "PMC11062152",
+      "pmid": "38707740",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 3,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "ugt1a1*28",
+        "ugt1a1*1",
+        "ugt1a1*6"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC3839910",
+      "pmid": "23588310",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 2,
+      "extracted_count": 1,
+      "matches": [],
+      "misses": [
+        "hla-b*15:02",
+        "hla-a*31:01"
+      ],
+      "extras": [
+        "rs1061235"
+      ],
+      "raw_extracted": [
+        "rs1061235"
+      ]
+    },
+    {
+      "pmcid": "PMC3113609",
+      "pmid": "21428769",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 1,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "hla-a*31:01"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC10786722",
+      "pmid": "38216550",
+      "recall": 1.0,
+      "precision": 0.05454545454545454,
+      "true_count": 3,
+      "extracted_count": 55,
+      "matches": [
+        "rs1801160",
+        "rs56038477",
+        "rs2297595"
+      ],
+      "misses": [],
+      "extras": [
+        "rs142619737",
+        "rs1801158",
+        "rs56005131",
+        "rs138616379",
+        "rs55886062",
+        "rs1801265",
+        "rs368146607",
+        "rs148372305",
+        "rs115232898",
+        "rs927463053",
+        "rs3918290",
+        "rs763174477",
+        "rs3918289",
+        "rs72549308",
+        "rs147601618",
+        "rs746368304",
+        "rs374825099",
+        "rs573299212",
+        "rs746991079",
+        "rs28399504",
+        "rs371313778",
+        "rs1801159",
+        "rs773159364",
+        "rs1329865308",
+        "rs368617815",
+        "rs140039091",
+        "rs772950053",
+        "rs150759598",
+        "rs779728902",
+        "rs141044036",
+        "rs760853559",
+        "rs114096998",
+        "rs17376848",
+        "rs919596571",
+        "rs202212118",
+        "rs57918000",
+        "rs138391898",
+        "rs61622928",
+        "rs768519000",
+        "rs67376798",
+        "rs376073289",
+        "rs367623519",
+        "rs764173823",
+        "rs758927521",
+        "rs1355754530",
+        "rs749122978",
+        "rs145548112",
+        "rs45589337",
+        "rs72975710",
+        "rs371792178",
+        "rs375436137",
+        "rs555178721"
+      ],
+      "raw_extracted": [
+        "rs1801158",
+        "rs142619737",
+        "rs138616379",
+        "rs56005131",
+        "rs55886062",
+        "rs1801265",
+        "rs368146607",
+        "rs148372305",
+        "rs115232898",
+        "rs927463053",
+        "rs3918290",
+        "rs2297595",
+        "rs763174477",
+        "rs3918289",
+        "rs72549308",
+        "rs147601618",
+        "rs746368304",
+        "rs374825099",
+        "rs573299212",
+        "rs746991079",
+        "rs1801160",
+        "rs28399504",
+        "rs371313778",
+        "rs1801159",
+        "rs773159364",
+        "rs1329865308",
+        "rs368617815",
+        "rs140039091",
+        "rs772950053",
+        "rs150759598",
+        "rs779728902",
+        "rs141044036",
+        "rs760853559",
+        "rs114096998",
+        "rs17376848",
+        "rs919596571",
+        "rs202212118",
+        "rs57918000",
+        "rs138391898",
+        "rs56038477",
+        "rs61622928",
+        "rs768519000",
+        "rs67376798",
+        "rs376073289",
+        "rs367623519",
+        "rs764173823",
+        "rs758927521",
+        "rs1355754530",
+        "rs749122978",
+        "rs145548112",
+        "rs45589337",
+        "rs72975710",
+        "rs371792178",
+        "rs375436137",
+        "rs555178721"
+      ]
+    },
+    {
+      "pmcid": "PMC384715",
+      "pmid": "15024131",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 1,
+      "extracted_count": 1,
+      "matches": [],
+      "misses": [
+        "hla-b*57:01"
+      ],
+      "extras": [
+        "rs2227956"
+      ],
+      "raw_extracted": [
+        "rs2227956"
+      ]
+    },
+    {
+      "pmcid": "PMC3584248",
+      "pmid": "23476897",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 5,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "cyp2d6*10",
+        "cyp2d6*2",
+        "cyp2d6*5",
+        "cyp2d6*1",
+        "cyp2d6*41"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC12035587",
+      "pmid": "40099566",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 1,
+      "extracted_count": 1,
+      "matches": [],
+      "misses": [
+        "nudt15*3"
+      ],
+      "extras": [
+        "rs116855232"
+      ],
+      "raw_extracted": [
+        "rs116855232"
+      ]
+    },
+    {
+      "pmcid": "PMC10993165",
+      "pmid": "38568509",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 3,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "hla-b*15:02",
+        "hla-b*13:01",
+        "hla-b*38:02"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    },
+    {
+      "pmcid": "PMC10399933",
+      "pmid": "37490620",
+      "recall": 0.4,
+      "precision": 0.5,
+      "true_count": 5,
+      "extracted_count": 4,
+      "matches": [
+        "rs4149056",
+        "rs2231142"
+      ],
+      "misses": [
+        "cyp2c9*1",
+        "cyp2c9*2",
+        "cyp2c9*3"
+      ],
+      "extras": [
+        "rs1799853",
+        "rs1057910"
+      ],
+      "raw_extracted": [
+        "rs4149056",
+        "rs1799853",
+        "rs1057910",
+        "rs2231142"
+      ]
+    },
+    {
+      "pmcid": "PMC4706412",
+      "pmid": "26745506",
+      "recall": 0.25,
+      "precision": 0.16666666666666666,
+      "true_count": 8,
+      "extracted_count": 12,
+      "matches": [
+        "rs9923231",
+        "rs1800566"
+      ],
+      "misses": [
+        "cyp2c9*8",
+        "cyp2c9*3",
+        "cyp2c9*1",
+        "cyp2c9*2",
+        "cyp4f2*1",
+        "cyp4f2*3"
+      ],
+      "extras": [
+        "rs28371685",
+        "rs28371686",
+        "rs4918758",
+        "rs104894540",
+        "rs9934438",
+        "rs9332094",
+        "rs56165452",
+        "rs7900194",
+        "rs2108622",
+        "rs766161320"
+      ],
+      "raw_extracted": [
+        "rs28371685",
+        "rs28371686",
+        "rs4918758",
+        "rs104894540",
+        "rs1800566",
+        "rs9923231",
+        "rs9934438",
+        "rs9332094",
+        "rs56165452",
+        "rs7900194",
+        "rs2108622",
+        "rs766161320"
+      ]
+    },
+    {
+      "pmcid": "PMC6714829",
+      "pmid": "30336686",
+      "recall": 1.0,
+      "precision": 0.5,
+      "true_count": 2,
+      "extracted_count": 4,
+      "matches": [
+        "rs4149056",
+        "rs2306283"
+      ],
+      "misses": [],
+      "extras": [
+        "rs72559747",
+        "rs1345709245"
+      ],
+      "raw_extracted": [
+        "rs4149056",
+        "rs72559747",
+        "rs1345709245",
+        "rs2306283"
+      ]
+    },
+    {
+      "pmcid": "PMC2859392",
+      "pmid": "20338069",
+      "recall": 1.0,
+      "precision": 0.3333333333333333,
+      "true_count": 1,
+      "extracted_count": 3,
+      "matches": [
+        "rs3745274"
+      ],
+      "misses": [],
+      "extras": [
+        "rs2279343",
+        "rs28399499"
+      ],
+      "raw_extracted": [
+        "rs28399499",
+        "rs2279343",
+        "rs3745274"
+      ]
+    },
+    {
+      "pmcid": "PMC11603346",
+      "pmid": "39604537",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 2,
+      "extracted_count": 3,
+      "matches": [],
+      "misses": [
+        "cyp2b6*1",
+        "cyp2b6*6"
+      ],
+      "extras": [
+        "rs28399499",
+        "rs2279343",
+        "rs3745274"
+      ],
+      "raw_extracted": [
+        "rs28399499",
+        "rs2279343",
+        "rs3745274"
+      ]
+    },
+    {
+      "pmcid": "PMC8973308",
+      "pmid": "35431360",
+      "recall": 1.0,
+      "precision": 0.75,
+      "true_count": 3,
+      "extracted_count": 4,
+      "matches": [
+        "rs1800462",
+        "rs116855232",
+        "rs1800460"
+      ],
+      "misses": [],
+      "extras": [
+        "rs1142345"
+      ],
+      "raw_extracted": [
+        "rs1142345",
+        "rs116855232",
+        "rs1800462",
+        "rs1800460"
+      ]
+    },
+    {
+      "pmcid": "PMC3387531",
+      "pmid": "21505298",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 6,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "rs3786547",
+        "rs2054675",
+        "hla-b*35:01",
+        "rs3745274",
+        "hla-c*04:01",
+        "hla-drb1*01:01"
+      ],
+      "extras": [],
+      "raw_extracted": []
+    }
+  ]
+}
