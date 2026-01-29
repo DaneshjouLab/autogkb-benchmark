@@ -1,0 +1,305 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC3387531",
+    "variants": [
+      "HLA-C*04:01",
+      "HLA-CW*15",
+      "HLA-CW*08",
+      "HLA-C*04",
+      "rs2054675",
+      "HLA-DRB*01",
+      "CYP2B6*01",
+      "HLA-B*35:05",
+      "HLA-B*35:01",
+      "rs3786547",
+      "HLA-DQB1*05",
+      "HLA-CW*04",
+      "HLA-C*08",
+      "HLA-B*35",
+      "HLA-DRB1*01:01",
+      "CYP2B6*04",
+      "rs28399499",
+      "HLA-CW*04:01",
+      "HLA-DRB1*01",
+      "HLA-DQB*05",
+      "rs3745274",
+      "CYP2B6*35",
+      "HLA-C*15"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 23,
+      "from_article": 23,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "HLA-C*04:01",
+        "sentence": "HLA-C*04:01 is associated with increased risk of cutaneous adverse events when treated with nevirapine in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl (observed in Asians and extended to Blacks and Whites) as compared to HLA-C*04:01-negative.",
+        "explanation": "In a multiethnic, retrospective case–control study of HIV-1–infected adults starting nevirapine, the authors confirmed strong associations of HLA-Cw*04/HLA-Cw*0401 with nevirapine-related rash, consistent with prior Thai reports.",
+        "citations": [
+          "Individuals with 150 or less CD4 T cells/μl at baseline were excluded.",
+          "Cutaneous adverse events were associated with CYP2B6 516G→T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais).",
+          "HLA-Cw*04 was significantly associated with cutaneous adverse events among all study participants, most notably among Blacks and Asians ([Fig. 3a](#F3)).",
+          "Our data confirmed strong associations between HLA-B*35, HLA-Cw*04, and cutaneous adverse events among Asians, particularly in Thai participants, and extended the HLA-Cw*04 association to Black and White populations.",
+          "Our results support the association between HLA-B*3505, HLA-Cw*0401, and nevirapine-associated cutaneous adverse events previously reported among Thai populations [[16](#R16),[17](#R17)]."
+        ]
+      },
+      {
+        "variant_id": "HLA-CW*15",
+        "sentence": "HLA-Cw*15 mentioned in article but not studied by paper.",
+        "explanation": "The study did not report analyses or results for HLA-Cw*15.",
+        "citations": [
+          "A total of 863 patients were HLA typed.",
+          "Among Whites, a weak association between cutaneous adverse events and the relatively infrequent HLA-Cw*15 was no longer apparent when considering patients with only isolated cutaneous adverse events.",
+          "Odds ratios (OR) and two-tailed P value were calculated by Fisher's exact test in race groups for all HLA alleles, and by Cochran-Mantel-Haenszel (CMH)test in the total population for HLA-Cw*04."
+        ]
+      },
+      {
+        "variant_id": "HLA-CW*08",
+        "sentence": "HLA-Cw*08 is not associated with increased risk of nevirapine-associated hypersensitivity or cutaneous adverse events in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl as compared to HLA-Cw*08-negative.",
+        "explanation": "The authors explicitly state they did not replicate prior Sardinian/Japanese associations for HLA-Cw*08 with nevirapine hypersensitivity in their multiethnic cohort.",
+        "citations": [
+          "We found no association between HLA-Cw*08 (present in 7% of participants) and cutaneous or hepatic adverse events.",
+          "This analysis did not replicate findings from studies in Sardinia and Japan that suggested an association between HLA-Cw*08 and nevirapine-associated hypersensitivity [[5](#R5),[6](#R6)].",
+          "A total of 863 patients were HLA typed."
+        ]
+      },
+      {
+        "variant_id": "HLA-C*04",
+        "sentence": "HLA-C*04 is associated with increased risk of cutaneous adverse events when treated with nevirapine in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl (seen in Asians and extended to Blacks and Whites) as compared to HLA-C*04-negative.",
+        "explanation": "The paper identifies HLA-Cw*04 as an MHC class I risk allele for nevirapine-related rash across race groups.",
+        "citations": [
+          "Cutaneous adverse events were associated with CYP2B6 516G→T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais).",
+          "HLA-Cw*04 was significantly associated with cutaneous adverse events among all study participants, most notably among Blacks and Asians ([Fig. 3a](#F3)).",
+          "Our data confirmed strong associations between HLA-B*35, HLA-Cw*04, and cutaneous adverse events among Asians, particularly in Thai participants, and extended the HLA-Cw*04 association to Black and White populations.",
+          "Among patients with at least 150 CD4 T cells/μl, polymorphisms in drug metabolism and immune response pathways were associated with greater likelihood of risk for nevirapine-related adverse events."
+        ]
+      },
+      {
+        "variant_id": "rs2054675",
+        "sentence": "rs2054675 mentioned in article but not studied by paper.",
+        "explanation": "No genotypic or association results for rs2054675 are presented.",
+        "citations": [
+          "In analyses controlled for population stratification among all participants, two linked SNPs in CYP2B6 [rs2054675 and rs3786547 (r^2 = 0.982)] were significantly associated with cutaneous adverse events after correcting for multiple comparisons ([Fig. 2a](#F2)).",
+          "Among Asians, the association was stronger for rs2054675 and rs3786547 (both P = 0.041).",
+          "Both were in linkage disequilibrium with rs3745274 (CYP2B6 516G→T; r^2 > 0.90) ([Fig. 2b](#F2)), which is known to predict delayed plasma nevirapine clearance [[9](#R9)–[15](#R15)]."
+        ]
+      },
+      {
+        "variant_id": "HLA-DRB*01",
+        "sentence": "HLA-DRB*01 mentioned in article but not studied by paper.",
+        "explanation": "Associations were evaluated at HLA-DRB1*01 specificity rather than HLA-DRB*01.",
+        "citations": [
+          "Hepatic adverse events were associated with HLA-DRB*01 (OR 3.02, Whites), but not CYP2B6 genotypes.",
+          "HLA-DRB1*01 was significantly associated with hepatic adverse events in Whites ([Fig. 3b](#F3)).",
+          "The current study confirmed the association between HLA-DRB1*01 and hepatic adverse events among Whites."
+        ]
+      },
+      {
+        "variant_id": "CYP2B6*01",
+        "sentence": "CYP2B6*01 mentioned in article but not studied by paper.",
+        "explanation": "The study assessed CYP2B6 SNPs (e.g., 516G>T) rather than reporting star-allele–level results like CYP2B6*01.",
+        "citations": [
+          "We characterized 123 human leukocyte antigen (HLA) alleles and 2744 single-nucleotide polymorphisms in major histocompatibility complex (MHC) and drug metabolism and transport genes.",
+          "A total of 2744 SNPs across ADME and MHC genes (see [supplemental material](#SD1), [http://links.lww.com/QAD/A139](http://links.lww.com/QAD/A139)) were assessed for associations with adverse events in each race group and among all participants.",
+          "For CYP2B6 516G→T, increasing T-allele count (0, 1, 2) was significantly associated with progressively increased risk of cutaneous adverse events in Blacks and Whites, with a weak trend in Asians (P=0.0025, P=0.021, and P=0.12, respectively, Cochran-Armitage trend test)."
+        ]
+      },
+      {
+        "variant_id": "HLA-B*35:05",
+        "sentence": "HLA-B*35:05 mentioned in article but not studied by paper.",
+        "explanation": "HLA-B*3505 is cited from prior Thai studies; the current study reported on HLA-B*35 overall without subtype-specific results.",
+        "citations": [
+          "Studies from Thailand implicated HLA-Cw*0401 and HLA-B*3505 as being associated with nevirapine-associated cutaneous adverse events [[16](#R16),[17](#R17)].",
+          "Our results support the association between HLA-B*3505, HLA-Cw*0401, and nevirapine-associated cutaneous adverse events previously reported among Thai populations [[16](#R16),[17](#R17)].",
+          "Our data confirmed strong associations between HLA-B*35, HLA-Cw*04, and cutaneous adverse events among Asians, particularly in Thai participants, and extended the HLA-Cw*04 association to Black and White populations."
+        ]
+      },
+      {
+        "variant_id": "HLA-B*35:01",
+        "sentence": "HLA-B*35:01 mentioned in article but not studied by paper.",
+        "explanation": "The HLA-Cw*0401–HLA-B*3501 haplotype is referenced from prior work; this study did not present B*3501-specific analyses.",
+        "citations": [
+          "In analyses comprising 147 cases and 185 controls, Chantarangsu et al. [[17](#R17)] identified an association between HLA-B*3505 and nevirapine-associated cutaneous adverse events (OR 18.96); also predictive were HLA-Cw*0401 (OR 5.36) and the HLA-Cw*0401-HLA-B*3501 haplotype (OR 12.12).",
+          "Our data confirmed strong associations between HLA-B*35, HLA-Cw*04, and cutaneous adverse events among Asians, particularly in Thai participants, and extended the HLA-Cw*04 association to Black and White populations.",
+          "HLA-B*35 was strongly associated with cutaneous adverse events in Asian and Thai participants, but not in non-Thai Asians (mainly Taiwanese); there was a weak association with HLA-B*35 among Whites that did not withstand multiple testing correction."
+        ]
+      },
+      {
+        "variant_id": "rs3786547",
+        "sentence": "rs3786547 mentioned in article but not studied by paper.",
+        "explanation": "The paper provides no data for rs3786547.",
+        "citations": [
+          "In analyses controlled for population stratification among all participants, two linked SNPs in CYP2B6 [rs2054675 and rs3786547 (r^2 = 0.982)] were significantly associated with cutaneous adverse events after correcting for multiple comparisons ([Fig. 2a](#F2)).",
+          "Among Asians, the association was stronger for rs2054675 and rs3786547 (both P = 0.041).",
+          "Both were in linkage disequilibrium with rs3745274 (CYP2B6 516G→T; r^2 > 0.90) ([Fig. 2b](#F2)), which is known to predict delayed plasma nevirapine clearance [[9](#R9)–[15](#R15)]."
+        ]
+      },
+      {
+        "variant_id": "HLA-DQB1*05",
+        "sentence": "HLA-DQB1*05 is associated with increased risk of hepatic adverse events when treated with nevirapine in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl among Whites as compared to HLA-DQB1*05-negative.",
+        "explanation": "In Whites, HLA-DQB*05 associated with hepatic adverse events, likely due to linkage with HLA-DRB1*01; this association weakened when limited to isolated hepatic cases.",
+        "citations": [
+          "Similarly, HLA-DQB1*05 was significantly associated with hepatic adverse events among Whites only, despite its high frequency among Asians and Blacks but not when considering isolated hepatic adverse events (data not shown).",
+          "Results also indicated an association between HLA-DQB*05 and hepatic adverse events in Whites, likely reflecting linkage between HLA-DRB1*01 and HLA-DQB1*05 [[27](#R27)].",
+          "HLA-DRB1*01 was significantly associated with hepatic adverse events in Whites ([Fig. 3b](#F3))."
+        ]
+      },
+      {
+        "variant_id": "HLA-CW*04",
+        "sentence": "HLA-Cw*04 is associated with increased risk of cutaneous adverse events when treated with nevirapine in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl (observed in Asians and extended to Blacks and Whites) as compared to HLA-Cw*04-negative.",
+        "explanation": "The case–control analysis identified HLA-Cw*04 as a strong predictor of nevirapine-related rash across multiple race groups, corroborating Thai cohort findings.",
+        "citations": [
+          "Cutaneous adverse events were associated with CYP2B6 516G→T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais).",
+          "HLA-Cw*04 was significantly associated with cutaneous adverse events among all study participants, most notably among Blacks and Asians ([Fig. 3a](#F3)).",
+          "Our data confirmed strong associations between HLA-B*35, HLA-Cw*04, and cutaneous adverse events among Asians, particularly in Thai participants, and extended the HLA-Cw*04 association to Black and White populations."
+        ]
+      },
+      {
+        "variant_id": "HLA-C*08",
+        "sentence": "HLA-C*08 is not associated with increased risk of nevirapine-associated hypersensitivity or cutaneous adverse events in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl as compared to HLA-C*08-negative.",
+        "explanation": "The study reports failure to replicate previously suggested HLA-Cw*08 associations in their cohort.",
+        "citations": [
+          "We found no association between HLA-Cw*08 (present in 7% of participants) and cutaneous or hepatic adverse events.",
+          "This analysis did not replicate findings from studies in Sardinia and Japan that suggested an association between HLA-Cw*08 and nevirapine-associated hypersensitivity [[5](#R5),[6](#R6)].",
+          "A total of 863 patients were HLA typed."
+        ]
+      },
+      {
+        "variant_id": "HLA-B*35",
+        "sentence": "HLA-B*35 is associated with increased risk of cutaneous adverse events when treated with nevirapine in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl among Asians (particularly Thai) as compared to HLA-B*35-negative.",
+        "explanation": "The study confirmed strong HLA-B*35 associations with nevirapine-related rash in Asians but not in Blacks or Whites, likely reflecting frequency differences.",
+        "citations": [
+          "HLA-B*35 was strongly associated with cutaneous adverse events in Asian and Thai participants, but not in non-Thai Asians (mainly Taiwanese); there was a weak association with HLA-B*35 among Whites that did not withstand multiple testing correction.",
+          "In contrast, this study did not find significant associations with HLA-B*35 in Blacks and Whites, perhaps reflecting its infrequency in these populations [[27](#R27)].",
+          "Cutaneous adverse events were associated with CYP2B6 516G→T (OR 1.66, all), HLA-Cw*04 (OR 2.51, all), and HLA-B*35 (OR 3.47, Asians; 5.65, Thais)."
+        ]
+      },
+      {
+        "variant_id": "HLA-DRB1*01:01",
+        "sentence": "HLA-DRB1*01:01 mentioned in article but not studied by paper.",
+        "explanation": "DRB1*0101 is cited from an external Western Australian cohort; the present study assessed DRB1*01 at broader resolution.",
+        "citations": [
+          "A study from Australia implicated HLA-DRB1*0101 as a risk for hepatic adverse events [[4](#R4)], whereas studies from Sardinia and Japan implicated HLA-Cw*08 [[5](#R5),[6](#R6)].",
+          "The results of our study also support the association between HLA-DRB1*0101 and nevirapine-associated adverse events reported in the Western Australian HIV Cohort [[4](#R4)].",
+          "The current study confirmed the association between HLA-DRB1*01 and hepatic adverse events among Whites."
+        ]
+      },
+      {
+        "variant_id": "CYP2B6*04",
+        "sentence": "CYP2B6*04 mentioned in article but not studied by paper.",
+        "explanation": "Star-allele analyses (e.g., *04) were not reported; the study focused on individual CYP2B6 SNPs.",
+        "citations": [
+          "We characterized 123 human leukocyte antigen (HLA) alleles and 2744 single-nucleotide polymorphisms in major histocompatibility complex (MHC) and drug metabolism and transport genes.",
+          "A total of 2744 SNPs across ADME and MHC genes (see [supplemental material](#SD1), [http://links.lww.com/QAD/A139](http://links.lww.com/QAD/A139)) were assessed for associations with adverse events in each race group and among all participants.",
+          "For CYP2B6 516G→T, increasing T-allele count (0, 1, 2) was significantly associated with progressively increased risk of cutaneous adverse events in Blacks and Whites, with a weak trend in Asians (P=0.0025, P=0.021, and P=0.12, respectively, Cochran-Armitage trend test)."
+        ]
+      },
+      {
+        "variant_id": "rs28399499",
+        "sentence": "rs28399499 mentioned in article but not studied by paper.",
+        "explanation": "No association results for rs28399499 are provided.",
+        "citations": [
+          "A total of 2744 SNPs across ADME and MHC genes (see [supplemental material](#SD1), [http://links.lww.com/QAD/A139](http://links.lww.com/QAD/A139)) were assessed for associations with adverse events in each race group and among all participants.",
+          "In analyses controlled for population stratification among all participants, two linked SNPs in CYP2B6 [rs2054675 and rs3786547 (r^2 = 0.982)] were significantly associated with cutaneous adverse events after correcting for multiple comparisons ([Fig. 2a](#F2)).",
+          "No SNP was significantly associated with hepatic adverse events after correcting for multiple comparisons ([Fig. 2c](#F2))."
+        ]
+      },
+      {
+        "variant_id": "HLA-CW*04:01",
+        "sentence": "HLA-Cw*04:01 is associated with increased risk of cutaneous adverse events when treated with nevirapine in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl (confirmed in Asians and extended to Blacks and Whites) as compared to HLA-Cw*04:01-negative.",
+        "explanation": "The authors support prior Thai findings for HLA-Cw*0401 and demonstrate risk across racial groups in their cohort.",
+        "citations": [
+          "Our results support the association between HLA-B*3505, HLA-Cw*0401, and nevirapine-associated cutaneous adverse events previously reported among Thai populations [[16](#R16),[17](#R17)].",
+          "Our data confirmed strong associations between HLA-B*35, HLA-Cw*04, and cutaneous adverse events among Asians, particularly in Thai participants, and extended the HLA-Cw*04 association to Black and White populations.",
+          "HLA-Cw*04 was significantly associated with cutaneous adverse events among all study participants, most notably among Blacks and Asians ([Fig. 3a](#F3)).",
+          "Individuals with 150 or less CD4 T cells/μl at baseline were excluded."
+        ]
+      },
+      {
+        "variant_id": "HLA-DRB1*01",
+        "sentence": "HLA-DRB1*01 is associated with increased risk of hepatic adverse events when treated with nevirapine in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl among Whites as compared to HLA-DRB1*01-negative.",
+        "explanation": "The study replicated earlier observations by showing DRB1*01 predicts hepatic/systemic reactions to nevirapine in Whites, with no significant association in Blacks or Asians.",
+        "citations": [
+          "Hepatic adverse events were associated with HLA-DRB*01 (OR 3.02, Whites), but not CYP2B6 genotypes.",
+          "HLA-DRB1*01 was significantly associated with hepatic adverse events in Whites ([Fig. 3b](#F3)).",
+          "The current study confirmed the association between HLA-DRB1*01 and hepatic adverse events among Whites."
+        ]
+      },
+      {
+        "variant_id": "HLA-DQB*05",
+        "sentence": "HLA-DQB*05 is associated with increased risk of hepatic adverse events when treated with nevirapine in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl among Whites as compared to HLA-DQB*05-negative.",
+        "explanation": "The association in Whites likely reflects linkage disequilibrium with HLA-DRB1*01; it was not sustained in analyses restricted to isolated hepatic events.",
+        "citations": [
+          "Similarly, HLA-DQB1*05 was significantly associated with hepatic adverse events among Whites only, despite its high frequency among Asians and Blacks but not when considering isolated hepatic adverse events (data not shown).",
+          "Results also indicated an association between HLA-DQB*05 and hepatic adverse events in Whites, likely reflecting linkage between HLA-DRB1*01 and HLA-DQB1*05 [[27](#R27)].",
+          "HLA-DRB1*01 was significantly associated with hepatic adverse events in Whites ([Fig. 3b](#F3))."
+        ]
+      },
+      {
+        "variant_id": "rs3745274",
+        "sentence": "Allele T of rs3745274 (CYP2B6 516G>T) is associated with increased risk of cutaneous adverse events when treated with nevirapine in people with HIV-1 infection initiating therapy with baseline CD4 T-cell counts >150 cells/μl—especially among HLA-Cw*04 carriers—as compared to allele G; not associated with hepatic adverse events.",
+        "explanation": "Using an additive genetic model in this case–control cohort, CYP2B6 516G>T increased rash risk and showed interaction with HLA-Cw*04 status, while showing no relationship with hepatic adverse events.",
+        "citations": [
+          "For CYP2B6 516G→T, increasing T-allele count (0, 1, 2) was significantly associated with progressively increased risk of cutaneous adverse events in Blacks and Whites, with a weak trend in Asians (P=0.0025, P=0.021, and P=0.12, respectively, Cochran-Armitage trend test).",
+          "Patients carrying both CYP2B6 516TT and HLA-Cw*04 were at highest risk in the total population (OR 6.31, 95% CI 2.53–15.73), and in Blacks and Asians analyzed separately ([Fig. 4b](#F4)).",
+          "Risk for cutaneous adverse events was particularly high among Blacks with CYP2B6 516TT and HLA-Cw*04 (OR 18.90) and Asians with HLA-B*35 and HLA-Cw*04 (OR 18.34).",
+          "Hepatic adverse events were associated with HLA-DRB*01 (OR 3.02, Whites), but not CYP2B6 genotypes."
+        ]
+      },
+      {
+        "variant_id": "CYP2B6*35",
+        "sentence": "CYP2B6*35 mentioned in article but not studied by paper.",
+        "explanation": "The paper did not present star-allele–level analyses such as CYP2B6*35.",
+        "citations": [
+          "We characterized 123 human leukocyte antigen (HLA) alleles and 2744 single-nucleotide polymorphisms in major histocompatibility complex (MHC) and drug metabolism and transport genes.",
+          "A total of 2744 SNPs across ADME and MHC genes (see [supplemental material](#SD1), [http://links.lww.com/QAD/A139](http://links.lww.com/QAD/A139)) were assessed for associations with adverse events in each race group and among all participants.",
+          "For CYP2B6 516G→T, increasing T-allele count (0, 1, 2) was significantly associated with progressively increased risk of cutaneous adverse events in Blacks and Whites, with a weak trend in Asians (P=0.0025, P=0.021, and P=0.12, respectively, Cochran-Armitage trend test)."
+        ]
+      },
+      {
+        "variant_id": "HLA-C*15",
+        "sentence": "HLA-C*15 mentioned in article but not studied by paper.",
+        "explanation": "No analyses or results for HLA-C*15 were reported.",
+        "citations": [
+          "Among Whites, a weak association between cutaneous adverse events and the relatively infrequent HLA-Cw*15 was no longer apparent when considering patients with only isolated cutaneous adverse events.",
+          "A total of 863 patients were HLA typed.",
+          "Odds ratios (OR) and two-tailed P value were calculated by Fisher's exact test in race groups for all HLA alleles, and by Cochran-Mantel-Haenszel (CMH)test in the total population for HLA-Cw*04."
+        ]
+      }
+    ],
+    "summary": "## Background\nNevirapine, a non-nucleoside reverse transcriptase inhibitor for HIV-1, can cause severe cutaneous rash and hepatotoxicity early after initiation. This multicenter, case–control study (276 cases; 587 matched controls; CD4 >150 cells/μl) evaluated 123 HLA alleles and 2744 SNPs in ADME and MHC genes across Black, Asian (predominantly Thai), and White populations to identify genetic predictors of these adverse events.\n\n## Key Findings\n- Cutaneous adverse events (rash):\n  - CYP2B6 516G>T (rs3745274): increased risk overall (OR 1.66). Risk rose with T-allele dose (trend p=0.0025 in Blacks; p=0.021 in Whites; weaker in Asians). Two linked CYP2B6 SNPs (rs2054675, rs3786547; r2≈0.98 with each other and >0.90 with 516G>T) were significant after multiple-testing correction.\n  - HLA-Cw*04: associated with rash across populations (OR 2.51 overall), most pronounced in Blacks and Asians.\n  - HLA-B*35: strong association in Asians (OR 3.47) and particularly Thais (OR 5.65); not significant in Blacks or Whites.\n  - Gene–gene combinations amplified risk: CYP2B6 516TT + HLA-Cw*04 (OR 6.31 overall; Blacks OR 18.90). In Asians, HLA-B*35 + HLA-Cw*04 conferred very high risk (OR 18.34; 95% CI 5.10–65.99).\n  - No association with HLA-Cw*08; weak HLA-Cw*15 in Whites did not persist for isolated rash.\n- Hepatic adverse events:\n  - HLA-DRB1*01 was associated in Whites (OR 3.02; increased to OR 3.63 when restricting to isolated hepatic events). HLA-DQB1*05 showed an association in Whites but likely due to linkage with DRB1*01 and was not significant for isolated hepatic events.\n  - No CYP2B6 or other ADME SNPs were associated with hepatic toxicity after multiple-testing correction; ABCB1 3435C>T was not significant (trend toward protection in Blacks, OR 0.50, p=0.27).\n- Population specificity: Effect sizes and detectability varied by ancestry, reflecting allele frequency differences.\n- Sensitivity limits: These markers missed many cases (e.g., 62% of rash cases lacked HLA-Cw*04; 80% of Asian rash cases lacked HLA-B*35; 56% of White hepatic cases lacked HLA-DRB1*01; 48% of all AE cases had none of HLA risk alleles nor CYP2B6 516TT).\n\n## Clinical Implications\n- Distinct mechanisms likely underlie nevirapine toxicity: cutaneous events appear MHC class I–mediated and influenced by CYP2B6-dependent metabolism; hepatic events appear MHC class II–mediated and not metabolism-dependent.\n- Routine pre-emptive genetic screening is not recommended due to low sensitivity and population specificity; negative tests do not reliably exclude risk.\n- Potential targeted use:\n  - In Asians (especially Thais), HLA-B*35 and HLA-Cw*04 identify higher rash risk; in Blacks, combined CYP2B6 516TT and HLA-Cw*04 indicates very high rash risk.\n  - In Whites, HLA-DRB1*01 flags increased hepatic risk.\n- Regardless of genotype, maintain close clinical and laboratory monitoring during the first 8 weeks of nevirapine therapy. CYP2B6 genotype–based dose changes are unlikely to mitigate hepatic toxicity. Consider alternative regimens for patients with high-risk genotypes in settings where testing is available and timely, coupled with shared decision-making."
+  }
+}

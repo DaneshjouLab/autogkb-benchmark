@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC10946077",
+    "variants": [
+      "UGT1A1*28",
+      "UGT1A1*6"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 2,
+      "from_article": 2,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "UGT1A1*28",
+        "sentence": "Genotypes heterozygous + homozygous variant of UGT1A1*28 are not associated with increased risk of adverse events when treated with irinotecan in people with advanced gastric cancer receiving second-line chemotherapy as compared to wild-type genotype; not statistically significant.",
+        "explanation": "In a single-center retrospective cohort of 110 advanced gastric cancer patients (107 treated with second-line irinotecan), the investigators reported no significant difference in AE incidence across UGT1A1*28 genotypes; they also noted that dose adjustments based on UGT1A1*6 may have influenced toxicity across UGT1A1*28 subgroups.",
+        "citations": [
+          "In addition, there were no significant differences in diarrhea (p = 0.136), neutropenia (p = 0.991), and leukopenia (p = 0.857) in UGT1A1*28 subgroups.",
+          "There was a significant difference in the risk of delayed diarrhea (p = 0.000), leukopenia (p = 0.003) and neutropenia (p = 0.000) in patients with different UGT1A1*6 genotypes, while no difference in patients with different UGT1A1*28 genotypes.",
+          "It was found that there was no significant difference in the incidence of AEs in GC patients with different UGT1A1*28 genotypes.",
+          "Irinotecan dose reduction may influence the toxicity of each UGT1A1*28 subgroup.",
+          "### Table 3."
+        ]
+      },
+      {
+        "variant_id": "UGT1A1*6",
+        "sentence": "Genotypes GA + AA of UGT1A1*6 are associated with increased risk of delayed diarrhea and neutropenia (grade 3–4 adverse events) when treated with irinotecan in people with advanced gastric cancer receiving second-line chemotherapy as compared to genotype GG; statistically significant.",
+        "explanation": "This retrospective study of 110 advanced gastric cancer patients (107 on irinotecan with genotype-guided dosing: GG 125 mg/m2, GA 100 mg/m2, AA 75 mg/m2) found a significant association between UGT1A1*6 and toxicity, with adverse event rates increasing from GG to GA to AA; notably, 5 of 8 AA patients experienced severe toxicity despite 40% dose reduction, prompting switches to paclitaxel.",
+        "citations": [
+          "However, diarrhea (p = 0.000), neutropenia (p = 0.000), and leukopenia (p = 0.003) were significantly different among UGT1A1*6 subgroups ([Table 3](#table3-15330338241236658)).",
+          "UGT1A1*6* gene polymorphism is significantly related to delayed diarrhea and neutropenia, which is consistent with the existing research conclusions.",
+          "The incidence of adverse reactions gradually increases in patients with wild-type, mutant heterozygous and mutant homozygous.",
+          "Additionally, grade 3/4 diarrhea, neutropenia, and leukopenia were significantly more common in AA genotype patients compared to GG (2%, 19%, and 24%) or GA (23%, 31%, and 31%) genotype patients, suggesting that that patients with the AA genotype could not tolerate severe toxicity even with reduced doses of irinotecan.",
+          "This gene was categorized into 3 groups: UGT1A1*6 wild-type (GG type) with a dosage of 125 mg/m^2^, d1, d8, UGT1A1*6 mutant heterozygosity (GA type) with a dosage of 100 mg/m^2^, d1, d8 and UGT1A1*6 homozygosity mutation (AA type) with a dosage of 75 mg/m^2^, d1, d8 or paclitaxel 125 mg/m^2^, d1, d8."
+        ]
+      }
+    ],
+    "summary": "## Background\nIrinotecan is an accepted second-line option for advanced gastric cancer but is limited by delayed diarrhea and myelosuppression. UGT1A1 glucuronidates the active metabolite SN-38; common variants UGT1A1*6 (more prevalent in East Asians) and UGT1A1*28 can affect toxicity risk. This single-center retrospective study (n=110 Chinese patients) used pre-treatment UGT1A1 genotyping to guide irinotecan dosing: GG (wild-type) 125 mg/m2; GA 100 mg/m2; AA 75 mg/m2, with paclitaxel substitution if severe toxicity occurred.\n\n## Key Findings\n- Toxicity:\n  - UGT1A1*6 was strongly associated with higher toxicity despite dose reduction: delayed diarrhea (p<0.001), neutropenia (p<0.001), and leukopenia (p=0.003) differed across GG/GA/AA. Grade 3/4 rates were markedly higher in AA than GG or GA; in the small AA subset receiving irinotecan, all experienced grade 3/4 diarrhea, neutropenia, and leukopenia, versus GG 2%, 24%, 19% and GA 23%, 31%, 31%, respectively.\n  - UGT1A1*28 showed no significant association with diarrhea (p=0.136), neutropenia (p=0.991), or leukopenia (p=0.857). No genotype was associated with thrombocytopenia or hemoglobin decline.\n- Efficacy:\n  - With genotype-guided dosing and timely paclitaxel switch in intolerant AA patients, survival did not differ by genotype. Median PFS was similar across UGT1A1*6 genotypes (GG 4.8 mo; GA 4.9 mo; AA 4.4 mo; p=0.5249) and UGT1A1*28 genotypes; median OS likewise showed no differences (GG 9.3 mo; GA 9.3 mo; AA not reached; p=0.6821). UGT1A1*6 and *28 were not associated with PFS or OS in uni-/multivariable analyses (all p>0.28 for PFS; p>0.70 for OS).\n\n## Clinical Implications\n- Pre-treatment UGT1A1 testing—particularly UGT1A1*6—can guide safer irinotecan use in gastric cancer.\n  - GG: standard dose reasonable.\n  - GA: consider ~20% dose reduction with close monitoring for diarrhea and neutropenia.\n  - AA: high risk of severe hematologic/GI toxicity even with 40% dose reduction; irinotecan may be unsuitable—consider alternative therapy (e.g., paclitaxel).\n- In this East Asian cohort, UGT1A1*28 did not predict toxicity or outcomes and should not drive dosing decisions alone. Genotype-guided dosing maintained similar survival across genotypes while reducing severe toxicity in non-AA patients."
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC2859392",
+    "variants": [
+      "rs28399499",
+      "CYP2B6*516",
+      "rs28371759",
+      "rs3745274",
+      "CYP2B6*6"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 5,
+      "from_article": 5,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "rs28399499",
+        "sentence": "rs28399499 mentioned in article but not studied by paper.",
+        "explanation": "The authors referenced CYP2B6 983T>C (rs28399499) as a SNP to consider in future work, but it was not genotyped or analyzed in this cohort of 124 HIV-1/TB co-infected Thai adults on rifampicin with efavirenz or nevirapine.",
+        "citations": [
+          "Seven SNPs were genotyped: 4 SNPs of CYP2B6-G516T, -C777A, -A415G and -C1459T and 3 SNPs of CYP3A4-T566C, -T878C and C1088T.",
+          "Among 4 SNPs of CYP2B6-G516T, -C777A, -A415G and -C1459T being evaluated, the frequencies of wild-type, heterozygous mutant and homozygous mutant were well distributed only in CYP2B6-G516T polymorphism, therefore, the analysis of this gene polymorphism was further done in relation to plasma efavirenz and nevirapine levels.",
+          "However, for further investigation, other SNPs such as CYP2B6 T983C or TGATC-CYP2B6 haplotypes which were shown to influence the NNRTI plasma drug levels [23,36,37] should be taken into account and larger sample size with varying genotypes should be included."
+        ]
+      },
+      {
+        "variant_id": "CYP2B6*516",
+        "sentence": "Genotype TT of CYP2B6*516 is associated with increased plasma concentrations of efavirenz and nevirapine in people with HIV-1/TB coinfection receiving rifampicin-based TB therapy with efavirenz- or nevirapine-based ART as compared to genotypes GT + GG, with a statistically significant increase for efavirenz.",
+        "explanation": "In 124 rifampicin-treated, HIV-1/TB co-infected Thai adults (65 on efavirenz, 59 on nevirapine), TT carriers had higher efavirenz levels at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (significant by ANOVA), and showed a similar but less pronounced increase for nevirapine.",
+        "citations": [
+          "We studied 124 rifampicin recipients with concurrent HIV-1/TB coinfection, receiving efavirenz (600 mg/day) (n = 65) or nevirapine (400 mg/day) (n = 59) based antiretroviral therapy (ART).",
+          "The mean 12-hour post-dose plasma efavirenz concentration in patients with TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (10.97 ± 2.32, 13.62 ± 4.21 and 8.48 ± 1.30 mg/L, respectively) were significantly higher than those with GT (3.43 ± 0.29, 3.35 ± 0.27 and 3.21 ± 0.22 mg/L, respectively) (p < 0.0001) or GG genotypes (2.88 ± 0.33, 2.45 ± 0.26 and 2.08 ± 0.16 mg/L, respectively) (p < 0.0001).",
+          "Likewise, the mean 12-hour post-dose plasma nevirapine concentration in patients carrying TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (14.09 ± 9.49, 7.94 ± 2.76 and 9.44 ± 0.17 mg/L, respectively) tended to be higher than those carrying GT (5.65 ± 0.54, 5.58 ± 0.48 and 7.03 ± 0.64 mg/L, respectively) or GG genotypes (5.42 ± 0.48, 5.34 ± 0.50 and 6.43 ± 0.64 mg/L, respectively) (p = 0.003, p = 0.409 and p = 0.448, respectively).",
+          "The results indicated that the wide interindividual variability of efavirenz concentrations is strongly influenced by CYP2B6-516TT genotype by the finding of significantly higher plasma efavirenz concentration at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation compared to those with GT or GG genotype."
+        ]
+      },
+      {
+        "variant_id": "rs28371759",
+        "sentence": "Genotypes AG + GG of rs28371759 are not associated with plasma concentrations of efavirenz or nevirapine in people with HIV-1/TB coinfection receiving rifampicin as compared to genotype AA.",
+        "explanation": "Although CYP2B6 A415G (rs28371759) was genotyped, the paper reports that only CYP2B6 516G>T showed significant effects on efavirenz/nevirapine levels; no significant differences were observed for A415G.",
+        "citations": [
+          "The genotype frequencies of CYP2B6-C777A and -A415G in efavirenz and nevirapine groups were 100% of homozygous mutant AA and 100% of homozygous wild-type AA, respectively.",
+          "Among 4 SNPs of CYP2B6-G516T, -C777A, -A415G and -C1459T being evaluated, the frequencies of wild-type, heterozygous mutant and homozygous mutant were well distributed only in CYP2B6-G516T polymorphism, therefore, the analysis of this gene polymorphism was further done in relation to plasma efavirenz and nevirapine levels.",
+          "In summary, the CYP2B6 and CYP3A4 polymorphisms were analysed, for the first time, in HIV/TB co-infected Thai adults receiving efavirenz and nevirapine based-ART co-administered with rifampicin and the results indicated that only 516G>T in CYP2B6 gene, but not CYP3A4 gene polymorphism, gave the significant effects on plasma drug levels."
+        ]
+      },
+      {
+        "variant_id": "rs3745274",
+        "sentence": "Genotype TT of rs3745274 is associated with increased plasma concentrations of efavirenz and nevirapine in people with HIV-1/TB coinfection receiving rifampicin-based TB therapy with efavirenz- or nevirapine-based ART as compared to genotypes GT + GG, with a statistically significant increase for efavirenz.",
+        "explanation": "rs3745274 (CYP2B6 516G>T) was the only CYP2B6 SNP with significant effects: TT homozygotes had higher efavirenz levels at multiple time points (weeks 6, 12, and post-rifampicin), and a trend toward higher nevirapine, in a cohort of 124 Thai adults.",
+        "citations": [
+          "The mean 12-hour post-dose plasma efavirenz concentration in patients with TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (10.97 ± 2.32, 13.62 ± 4.21 and 8.48 ± 1.30 mg/L, respectively) were significantly higher than those with GT (3.43 ± 0.29, 3.35 ± 0.27 and 3.21 ± 0.22 mg/L, respectively) (p < 0.0001) or GG genotypes (2.88 ± 0.33, 2.45 ± 0.26 and 2.08 ± 0.16 mg/L, respectively) (p < 0.0001).",
+          "Similar results were found in nevirapine group (Figure 1d, e, f) in that the mean plasma drug concentration of patients with TT genotype at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation (14.09 ± 9.49, 7.94 ± 2.76 and 9.44 ± 0.17 mg/L, respectively) tended to be higher than those with GT genotype (5.65 ± 0.54, 5.58 ± 0.48 and 7.03 ± 0.64 mg/L, respectively) or GG genotype (5.42 ± 0.48, 5.34 ± 0.50 and 6.43 ± 0.64 mg/L, respectively) (p = 0.003, p = 0.409 and p = 0.448, respectively).",
+          "The results indicated that the wide interindividual variability of efavirenz concentrations is strongly influenced by CYP2B6-516TT genotype by the finding of significantly higher plasma efavirenz concentration at weeks 6 and 12 of ART and 1 month after rifampicin discontinuation compared to those with GT or GG genotype.",
+          "The numbers of GG, GT and TT genotype patients were 25, 31 and 9 in efavirenz group and 26, 31, 2 in nevirapine group."
+        ]
+      },
+      {
+        "variant_id": "CYP2B6*6",
+        "sentence": "CYP2B6*6 not studied by paper.",
+        "explanation": "The study analyzed individual CYP2B6 SNPs (516G>T [rs3745274], 415A>G [rs28371759], 777C>A, 1459C>T) and did not report star allele haplotypes such as CYP2B6*6.",
+        "citations": [
+          "Seven SNPs were genotyped: 4 SNPs of CYP2B6-G516T, -C777A, -A415G and -C1459T and 3 SNPs of CYP3A4-T566C, -T878C and C1088T.",
+          "Among 4 SNPs of CYP2B6-G516T, -C777A, -A415G and -C1459T being evaluated, the frequencies of wild-type, heterozygous mutant and homozygous mutant were well distributed only in CYP2B6-G516T polymorphism, therefore, the analysis of this gene polymorphism was further done in relation to plasma efavirenz and nevirapine levels.",
+          "However, for further investigation, other SNPs such as CYP2B6 T983C or TGATC-CYP2B6 haplotypes which were shown to influence the NNRTI plasma drug levels [23,36,37] should be taken into account and larger sample size with varying genotypes should be included."
+        ]
+      }
+    ],
+    "summary": "## Background\nThis study evaluated how CYP2B6 and CYP3A4 genetic variants affect plasma levels of efavirenz and nevirapine when co-administered with rifampicin in HIV/TB co-infected Thai adults. Participants received standard-dose efavirenz (600 mg/day; n=65) or nevirapine (400 mg/day; n=59) alongside rifampicin-based TB therapy.\n\n## Key Findings\n- CYP2B6 516G>T (rs3745274) was the primary determinant of NNRTI exposure. Individuals with the TT genotype had markedly higher 12-hour post-dose efavirenz concentrations than GT or GG at:\n  - Week 6: TT 10.97 mg/L vs GT 3.43 vs GG 2.88 (p<0.0001)\n  - Week 12: TT 13.62 vs GT 3.35 vs GG 2.45 (p<0.0001)\n  - 1 month after stopping rifampicin: TT 8.48 vs GT 3.21 vs GG 2.08 (p<0.0001)\n- For nevirapine, TT carriers tended to have higher levels:\n  - Week 6: TT 14.09 mg/L vs GT 5.65 vs GG 5.42 (p=0.003); Week 12 and post-rifampicin differences were not statistically significant (p=0.409 and 0.448).\n- Rifampicin’s effect on drug levels was small compared with the genotype effect:\n  - Efavirenz decreased modestly after rifampicin discontinuation (mean 4.26 to 3.50 mg/L; p=0.043).\n  - Nevirapine increased modestly after rifampicin discontinuation (5.83 to 6.84 mg/L; p=0.034).\n- Other tested variants showed no meaningful associations in this cohort due to limited variability: CYP2B6 C777A, A415G, C1459T and CYP3A4 T566C, T878C, C1088T (only rare CYP3A4 T878C heterozygotes observed).\n- Virologic response: there was a nonsignificant trend toward higher rates of HIV-1 RNA <50 copies/mL at week 12 among CYP2B6 516TT carriers (efavirenz group: 88.9% TT vs 77.4% GT vs 68.0% GG; p=0.430; similar trend in nevirapine group with small numbers).\n\n## Clinical Implications\n- CYP2B6 516TT identifies poor metabolizers with substantially elevated efavirenz (and to a lesser extent nevirapine) exposure, even during rifampicin co-therapy; rifampicin induction does not overcome the genotype effect.\n- Consider genotype-informed management when using efavirenz or nevirapine with rifampicin:\n  - For efavirenz, TT carriers may benefit from closer therapeutic drug monitoring and, where feasible, dose reduction to mitigate concentration-related adverse effects, while maintaining efficacy.\n  - Standard dosing generally achieved therapeutic concentrations across genotypes, but monitoring is prudent in TT carriers given high exposures.\n- Routine testing of other CYP2B6/CYP3A4 variants examined here appears less actionable in this population; the CYP2B6 516G>T variant is the key pharmacogenetic marker guiding NNRTI exposure with concurrent rifampicin."
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC3584248",
+    "variants": [
+      "CYP2D6*10",
+      "CYP2D6*2",
+      "CYP2D6*4",
+      "CYP2D6*5",
+      "CYP2D6*6",
+      "CYP2D6*3",
+      "CYP2D6*41",
+      "CYP2D6*1"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": true,
+      "supplement_variants": [],
+      "total_extracted": 8,
+      "from_article": 8,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "CYP2D6*10",
+        "sentence": "CYP2D6*10 mentioned in article but not studied by paper.",
+        "explanation": "The article discusses CYP2D6 genotype–endoxifen relationships in tamoxifen-treated breast cancer generally but does not provide genotype-specific results for CYP2D6*10.",
+        "citations": [
+          "The genotyping was performed for CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 using the predeveloped TaqMan Genotyping Assays (Applied Biosystems, Foster City, CA, USA) following the manufacturer’s instructions.",
+          "On the basis of the genotype-predicted phenotype, genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6).",
+          "The effect of CYP2D6 genotype metabolic status on each of the metabolites (tamoxifen, NDMTAM, endoxifen, and 4-OHTAM) was assessed using a test for linear trend.",
+          "Endoxifen plasma concentrations by CYP2D6 genotype metabolic status in Filipino (n = 138) and Vietnamese (n = 86) patients (p = 0.0001 for trend: normal > intermediate > slow).",
+          "Frequencies of specific genotypes are presented in Table 2."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*2",
+        "sentence": "CYP2D6*2 mentioned in article but not studied by paper.",
+        "explanation": "No allele-specific or genotype-specific outcomes for CYP2D6*2 are reported in the provided text.",
+        "citations": [
+          "The genotyping was performed for CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 using the predeveloped TaqMan Genotyping Assays (Applied Biosystems, Foster City, CA, USA) following the manufacturer’s instructions.",
+          "CYP2D6 allelic frequencies in the two populations were in Hardy-Weinberg Equilibrium except for *1 and *2 in Filipinos (Table 1).",
+          "On the basis of the genotype-predicted phenotype, genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6).",
+          "The effect of CYP2D6 genotype metabolic status on each of the metabolites (tamoxifen, NDMTAM, endoxifen, and 4-OHTAM) was assessed using a test for linear trend."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*4",
+        "sentence": "CYP2D6*4 mentioned in article but not studied by paper.",
+        "explanation": "Although CYP2D6 metabolic status is referenced, the study does not present specific findings for CYP2D6*4 genotypes.",
+        "citations": [
+          "The genotyping was performed for CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 using the predeveloped TaqMan Genotyping Assays (Applied Biosystems, Foster City, CA, USA) following the manufacturer’s instructions.",
+          "On the basis of the genotype-predicted phenotype, genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6).",
+          "Frequencies of specific genotypes are presented in Table 2.",
+          "The effect of CYP2D6 genotype metabolic status on each of the metabolites (tamoxifen, NDMTAM, endoxifen, and 4-OHTAM) was assessed using a test for linear trend.",
+          "Endoxifen plasma concentrations by CYP2D6 genotype metabolic status in Filipino (n = 138) and Vietnamese (n = 86) patients (p = 0.0001 for trend: normal > intermediate > slow)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*5",
+        "sentence": "CYP2D6*5 mentioned in article but not studied by paper.",
+        "explanation": "The excerpt does not include analyses or comparisons involving CYP2D6*5.",
+        "citations": [
+          "The genotyping was performed for CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 using the predeveloped TaqMan Genotyping Assays (Applied Biosystems, Foster City, CA, USA) following the manufacturer’s instructions.",
+          "Frequencies of specific genotypes are presented in Table 2.",
+          "On the basis of the genotype-predicted phenotype, genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6).",
+          "The effect of CYP2D6 genotype metabolic status on each of the metabolites (tamoxifen, NDMTAM, endoxifen, and 4-OHTAM) was assessed using a test for linear trend.",
+          "Endoxifen plasma concentrations by CYP2D6 genotype metabolic status in Filipino (n = 138) and Vietnamese (n = 86) patients (p = 0.0001 for trend: normal > intermediate > slow)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*6",
+        "sentence": "CYP2D6*6 mentioned in article but not studied by paper.",
+        "explanation": "The paper does not report associations for CYP2D6*6 genotypes with tamoxifen outcomes.",
+        "citations": [
+          "The genotyping was performed for CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 using the predeveloped TaqMan Genotyping Assays (Applied Biosystems, Foster City, CA, USA) following the manufacturer’s instructions.",
+          "On the basis of the genotype-predicted phenotype, genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6).",
+          "Frequencies of specific genotypes are presented in Table 2.",
+          "The effect of CYP2D6 genotype metabolic status on each of the metabolites (tamoxifen, NDMTAM, endoxifen, and 4-OHTAM) was assessed using a test for linear trend.",
+          "Endoxifen plasma concentrations by CYP2D6 genotype metabolic status in Filipino (n = 138) and Vietnamese (n = 86) patients (p = 0.0001 for trend: normal > intermediate > slow)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*3",
+        "sentence": "CYP2D6*3 mentioned in article but not studied by paper.",
+        "explanation": "No genotype-specific data for CYP2D6*3 are provided in the article text.",
+        "citations": [
+          "The genotyping was performed for CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 using the predeveloped TaqMan Genotyping Assays (Applied Biosystems, Foster City, CA, USA) following the manufacturer’s instructions.",
+          "On the basis of the genotype-predicted phenotype, genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6).",
+          "Frequencies of specific genotypes are presented in Table 2.",
+          "The effect of CYP2D6 genotype metabolic status on each of the metabolites (tamoxifen, NDMTAM, endoxifen, and 4-OHTAM) was assessed using a test for linear trend.",
+          "Endoxifen plasma concentrations by CYP2D6 genotype metabolic status in Filipino (n = 138) and Vietnamese (n = 86) patients (p = 0.0001 for trend: normal > intermediate > slow)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*41",
+        "sentence": "CYP2D6*41 mentioned in article but not studied by paper.",
+        "explanation": "The study references CYP2D6 genotype effects broadly but does not present results for CYP2D6*41.",
+        "citations": [
+          "The genotyping was performed for CYP2D6 alleles *2, *3, *4, *5, *6, *10, and *41 using the predeveloped TaqMan Genotyping Assays (Applied Biosystems, Foster City, CA, USA) following the manufacturer’s instructions.",
+          "On the basis of the genotype-predicted phenotype, genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6).",
+          "Frequencies of specific genotypes are presented in Table 2.",
+          "The effect of CYP2D6 genotype metabolic status on each of the metabolites (tamoxifen, NDMTAM, endoxifen, and 4-OHTAM) was assessed using a test for linear trend.",
+          "Endoxifen plasma concentrations by CYP2D6 genotype metabolic status in Filipino (n = 138) and Vietnamese (n = 86) patients (p = 0.0001 for trend: normal > intermediate > slow)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*1",
+        "sentence": "CYP2D6*1 mentioned in article but not studied by paper.",
+        "explanation": "While “normal CYP2D6 genotype carriers” are mentioned in relation to endoxifen levels in tamoxifen-treated breast cancer, the article does not specify CYP2D6*1 genotypes or comparative statistics.",
+        "citations": [
+          "CYP2D6 allelic frequencies in the two populations were in Hardy-Weinberg Equilibrium except for *1 and *2 in Filipinos (Table 1).",
+          "On the basis of the genotype-predicted phenotype, genotypes were categorized as normal (fully functional CYP2D6 alleles: *1 and *2), intermediate (alleles associated with reduced enzyme activity: heterozygous for *10 and *41), and slow (homozygous for *10, *41 variants and one or more non-functional null alleles: *3-*6).",
+          "The effect of CYP2D6 genotype metabolic status on each of the metabolites (tamoxifen, NDMTAM, endoxifen, and 4-OHTAM) was assessed using a test for linear trend.",
+          "Endoxifen plasma concentrations by CYP2D6 genotype metabolic status in Filipino (n = 138) and Vietnamese (n = 86) patients (p = 0.0001 for trend: normal > intermediate > slow).",
+          "It is estimated that among “normal” CYP2D6 genoptype carriers, 32% develop steady state endoxifen levels of >70 ng/ml with tamoxifen 20 mg/day (range 71–142 ng/ml) (Borges et al. [2006](#CR3))."
+        ]
+      }
+    ],
+    "summary": "## Background\nTamoxifen’s anticancer activity is driven largely by its active metabolite, endoxifen, which is formed primarily by CYP2D6. This exploratory study assessed how CYP2D6 variants affect endoxifen exposure and whether endoxifen levels relate to breast cancer recurrence in 224 Filipino and Vietnamese women on adjuvant tamoxifen.\n\n## Key Findings\n- CYP2D6 genotyping included alleles *1, *2 (normal function), and reduced/nonfunctional variants *10, *41, *3, *4, *5, *6. The reduced-function allele *10 was very common (≈52–59%).\n- Endoxifen concentrations tracked with CYP2D6 metabolic status: normal > intermediate > slow (p for trend ≈0.0001). Mean endoxifen (ng/mL): normal 48.2, intermediate 39.3, slow 25.0. CYP2D6 explained about 10% of endoxifen variability (r^2 ≈0.086). Associations with other metabolites were weaker (4-OH-tamoxifen p=0.13; N-desmethyltamoxifen p=0.060; tamoxifen p=0.39).\n- In a matched nested case–control subset (n=48), a J-shaped relationship was observed between endoxifen levels and recurrence risk: both low and high levels appeared unfavorable, with the highest risk at high endoxifen (>70 ng/mL). A quadratic trend in a stratified Cox model was significant (likelihood ratio p=0.002). Among pairs with low endoxifen, 8/9 recurrences had lower levels than their matched controls.\n\n## Clinical Implications\n- CYP2D6 genotype (especially prevalent reduced-function variants like *10 and *41, or null alleles *3–*6) identifies patients prone to lower endoxifen exposure, but genotype alone explains only a modest fraction of variability; other factors drive most of the differences.\n- Findings support the concept of an optimal therapeutic range for endoxifen and suggest that both subtherapeutic and very high levels (e.g., >70 ng/mL) may be associated with worse outcomes. This argues for considering endoxifen therapeutic drug monitoring, particularly in populations with high rates of reduced-function CYP2D6 alleles.\n- Because the recurrence analysis is exploratory and based on a small subset, results should be validated before practice changes. In the interim, combining CYP2D6 genotyping with endoxifen level monitoring may be more informative than relying on genotype alone when individualizing tamoxifen therapy."
+  }
+}

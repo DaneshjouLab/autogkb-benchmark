@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC8973308",
+    "variants": [
+      "TPMT*2",
+      "TPMT*1",
+      "rs116855232",
+      "TPMT*3",
+      "rs1800460",
+      "rs1800462",
+      "rs1142345"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 7,
+      "from_article": 7,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "TPMT*2",
+        "sentence": "Genotype GCT (TPMT*2 haplotype across rs1800462/rs1800460/rs1142345) is not associated with increased risk of myelotoxicity, hepatotoxicity, or dose reduction/interruption of 6-mercaptopurine in people with pediatric acute lymphoblastic leukemia receiving BFM ALLIC 2009 maintenance therapy in Colombia as compared to genotype CCT (TPMT*1 haplotype).",
+        "explanation": "In this observational pediatric ALL cohort, TPMT was haplotyped from rs1800462/rs1800460/rs1142345 and, among the 42 cases with complete TPMT typing, no statistically significant associations with 6-MP toxicity or dose modifications were found (Chi-square, p ≥ 0.05).",
+        "citations": [
+          "Briefly, TPMT haplotypes were determined based on the combinations of SNPs rs1800462, rs1800460 and rs1142345 as follows: CCT = * 1, GCT = * 2, CTC = * 3A, CTT = * 3B and CCC = * 3C.",
+          "Similar analyses were carried out about the typing of TPMT, using the homozygosity variable for allele *1 versus carrying *2 or *3A as heterozygous, without evidence of any statistically significant association ([supplementary table 1S]).",
+          "### Table 1S. Association analysis between TPMT diplotypes and outcomes.",
+          "No statistically significant association was identified between the genetic variants and the outcomes of interest.",
+          "The outcomes of interest were side effects as myelotoxicity and liver toxicity and the dose reduction or interruption of 6-MP."
+        ]
+      },
+      {
+        "variant_id": "TPMT*1",
+        "sentence": "Genotype CCT (TPMT*1 haplotype across rs1800462/rs1800460/rs1142345) is not associated with altered risk of myelotoxicity, hepatotoxicity, or dose reduction/interruption of 6-mercaptopurine in people with pediatric acute lymphoblastic leukemia receiving BFM ALLIC 2009 maintenance therapy in Colombia as compared to variant haplotypes GCT (TPMT*2) or CTC (TPMT*3A).",
+        "explanation": "The study performed TPMT haplotype assignment from three SNPs and reported no significant association between TPMT haplotypes and 6-MP toxicity outcomes in the 42 fully typed patients (Chi-square, p ≥ 0.05).",
+        "citations": [
+          "Similar analyses were carried out about the typing of TPMT, using the homozygosity variable for allele *1 versus carrying *2 or *3A as heterozygous, without evidence of any statistically significant association ([supplementary table 1S]).",
+          "### Table 1S. Association analysis between TPMT diplotypes and outcomes.",
+          "No statistically significant associations were identified between genetic variants in TPMT and NUDT15 with toxicity outcomes evaluated (myelotoxicity and liver toxicity, as well as the dose reduction or interruption of 6-MP).",
+          "Genetic analyses were carried out of these for NUDT15 and TPMT (rs1800462 and rs1800460) on 68 patients, while for the rs1142345 polymorphism, typing was achieved in 42 patients.",
+          "Briefly, TPMT haplotypes were determined based on the combinations of SNPs rs1800462, rs1800460 and rs1142345 as follows: CCT = * 1, GCT = * 2, CTC = * 3A, CTT = * 3B and CCC = * 3C."
+        ]
+      },
+      {
+        "variant_id": "rs116855232",
+        "sentence": "Genotypes CT + TT of rs116855232 are not associated with increased risk of myelotoxicity, hepatotoxicity, or dose reduction/interruption of 6-mercaptopurine in people with pediatric acute lymphoblastic leukemia receiving BFM ALLIC 2009 maintenance therapy in Colombia as compared to genotype CC.",
+        "explanation": "Using TaqMan genotyping for NUDT15 rs116855232 and monthly 6-month follow-up, the study found no statistically significant associations with 6-MP-related toxicity or dose changes (Chi-square, p ≥ 0.05); the variant allele frequency was ~0.03 in this cohort.",
+        "citations": [
+          "No association was found between the outcomes of interest and the genetic variant of NUDT15 or any TPMT polymorphisms evaluated individually.",
+          "### Table 4. Association analysis between genotypes and outcomes.",
+          "Data are presented as absolute frequency values for each outcome evaluated. No statistically significant association was found between any of the polymorphisms studied and the outcomes of interest.",
+          "The outcomes of interest were side effects as myelotoxicity and liver toxicity and the dose reduction or interruption of 6-MP.",
+          "4/68 patients were heterozygous for NUDT15, and the same number of patients were heterozygous for rs1800462 and rs1142345, while for rs1800460, 6 heterozygous patients were identified."
+        ]
+      },
+      {
+        "variant_id": "TPMT*3",
+        "sentence": "Genotype CTC (TPMT*3A haplotype of TPMT*3, based on rs1800462/rs1800460/rs1142345) is not associated with increased risk of myelotoxicity, hepatotoxicity, or dose reduction/interruption of 6-mercaptopurine in people with pediatric acute lymphoblastic leukemia receiving BFM ALLIC 2009 maintenance therapy in Colombia as compared to genotype CCT (TPMT*1).",
+        "explanation": "TPMT*3A was defined from the three assayed SNPs, and in the subset with complete TPMT typing (n = 42) no significant relationship with 6-MP toxicity or dosing actions was observed (Chi-square, p ≥ 0.05).",
+        "citations": [
+          "Briefly, TPMT haplotypes were determined based on the combinations of SNPs rs1800462, rs1800460 and rs1142345 as follows: CCT = * 1, GCT = * 2, CTC = * 3A, CTT = * 3B and CCC = * 3C.",
+          "Similar analyses were carried out about the typing of TPMT, using the homozygosity variable for allele *1 versus carrying *2 or *3A as heterozygous, without evidence of any statistically significant association ([supplementary table 1S]).",
+          "### Table 1S. Association analysis between TPMT diplotypes and outcomes.",
+          "Given that genotyping of rs1142345 was only possible in 42 subjects and that to carry out these classifications, it is necessary to have genotyping of the 3 TPMT loci.",
+          "No statistically significant associations were identified between genetic variants in TPMT and NUDT15 with toxicity outcomes evaluated (myelotoxicity and liver toxicity, as well as the dose reduction or interruption of 6-MP)."
+        ]
+      },
+      {
+        "variant_id": "rs1800460",
+        "sentence": "Genotypes CT + TT of rs1800460 are not associated with increased risk of myelotoxicity, hepatotoxicity, or dose reduction/interruption of 6-mercaptopurine in people with pediatric acute lymphoblastic leukemia receiving BFM ALLIC 2009 maintenance therapy in Colombia as compared to genotype CC.",
+        "explanation": "The study genotyped TPMT rs1800460 with TaqMan and, using Chi-square tests, reported no statistically significant associations with 6-MP toxicity or dose modification outcomes (p ≥ 0.05).",
+        "citations": [
+          "No association was found between the outcomes of interest and the genetic variant of NUDT15 or any TPMT polymorphisms evaluated individually.",
+          "### Table 4. Association analysis between genotypes and outcomes.",
+          "Data are presented as absolute frequency values for each outcome evaluated. No statistically significant association was found between any of the polymorphisms studied and the outcomes of interest.",
+          "Genetic analyses were carried out of these for NUDT15 and TPMT (rs1800462 and rs1800460) on 68 patients, while for the rs1142345 polymorphism, typing was achieved in 42 patients.",
+          "The determination of the genotypes of the SNPs (rs1800462, rs1800460, rs1142345, and rs116855232) in the TPMT and NUDT15 genes was carried out in real-time PCR for allelic discrimination by 5' nuclease using commercially available TaqMan® SNP Genotyping Assays (Assay ID: C__12091552_30, C__30634116_20, C_____19567_20 and C_154823200_10, Thermo Fisher Scientific, USA), following the recommendations described in the \"TaqMan® Allelic Discrimination Guide\"."
+        ]
+      },
+      {
+        "variant_id": "rs1800462",
+        "sentence": "Genotypes CG + GG of rs1800462 are not associated with increased risk of myelotoxicity, hepatotoxicity, or dose reduction/interruption of 6-mercaptopurine in people with pediatric acute lymphoblastic leukemia receiving BFM ALLIC 2009 maintenance therapy in Colombia as compared to genotype CC.",
+        "explanation": "TPMT rs1800462 was assayed and analyzed with Chi-square; no significant associations with 6-MP–related toxicities or dosing actions were identified (p ≥ 0.05).",
+        "citations": [
+          "No association was found between the outcomes of interest and the genetic variant of NUDT15 or any TPMT polymorphisms evaluated individually.",
+          "### Table 4. Association analysis between genotypes and outcomes.",
+          "Data are presented as absolute frequency values for each outcome evaluated. No statistically significant association was found between any of the polymorphisms studied and the outcomes of interest.",
+          "Genetic analyses were carried out of these for NUDT15 and TPMT (rs1800462 and rs1800460) on 68 patients, while for the rs1142345 polymorphism, typing was achieved in 42 patients.",
+          "The outcomes of interest were side effects as myelotoxicity and liver toxicity and the dose reduction or interruption of 6-MP."
+        ]
+      },
+      {
+        "variant_id": "rs1142345",
+        "sentence": "Genotypes CT + CC of rs1142345 are not associated with increased risk of myelotoxicity, hepatotoxicity, or dose reduction/interruption of 6-mercaptopurine in people with pediatric acute lymphoblastic leukemia receiving BFM ALLIC 2009 maintenance therapy in Colombia as compared to genotype TT.",
+        "explanation": "The study genotyped TPMT rs1142345 and found no statistically significant relationship with 6-MP toxicity or need for dose reduction/interruption during 6-month follow-up (Chi-square, p ≥ 0.05).",
+        "citations": [
+          "No association was found between the outcomes of interest and the genetic variant of NUDT15 or any TPMT polymorphisms evaluated individually.",
+          "### Table 4. Association analysis between genotypes and outcomes.",
+          "Data are presented as absolute frequency values for each outcome evaluated. No statistically significant association was found between any of the polymorphisms studied and the outcomes of interest.",
+          "Genetic analyses were carried out of these for NUDT15 and TPMT (rs1800462 and rs1800460) on 68 patients, while for the rs1142345 polymorphism, typing was achieved in 42 patients.",
+          "The outcomes of interest were side effects as myelotoxicity and liver toxicity and the dose reduction or interruption of 6-MP."
+        ]
+      }
+    ],
+    "summary": "## Background\nThiopurines (especially 6‑mercaptopurine, 6‑MP) are key drugs in maintenance therapy for pediatric acute lymphoblastic leukemia (ALL). Variants in TPMT and NUDT15 are established predictors of thiopurine intolerance in many populations. This single-center longitudinal study in Colombia genotyped pediatric ALL patients during the first 6 months of maintenance to test whether common TPMT and NUDT15 variants correlate with myelotoxicity, hepatotoxicity, and 6‑MP dose modification.\n\n## Key Findings\n- Cohort: 70 children (68 successfully genotyped). Outcomes observed overall: myelotoxicity 25%, hepatotoxicity 27%, 6‑MP dose reduction 32.9%, interruption 28.6%.\n- Variants tested: NUDT15 rs116855232; TPMT rs1800462 (TPMT*2), rs1800460 and rs1142345 (used to derive TPMT haplotypes). No homozygous variant carriers were detected; all variant carriers were heterozygous.\n  - Carrier frequencies: NUDT15 rs116855232 C/T 4/68 (5.9%); TPMT rs1800462 4/68 (5.9%); rs1800460 6/68 (8.8%); rs1142345 4/42 (9.5% of those typed). TPMT diplotypes (n=42): *1/*1 (n=36), *1/*2 (n=2), *1/*3A (n=4).\n- Association analyses:\n  - No statistically significant associations between NUDT15 rs116855232 or individual TPMT SNPs and any outcome (all p>0.05).\n  - TPMT diplotype analyses likewise showed no significant links: 6‑MP reduction (p=0.616), interruption (p=0.308), neutropenia (p=1.000), relapse (p=0.557), death (p=1.000).\n- Descriptive trends (not statistically significant): 2/4 NUDT15 heterozygotes required 6‑MP dose decreases; 2/4 TPMT rs1800462 heterozygotes had febrile neutropenia and required 6‑MP discontinuation; 3/6 rs1800460 heterozygotes required dose decreases.\n\n## Clinical Implications\n- In this Colombian pediatric cohort, common TPMT and NUDT15 variants did not significantly predict early 6‑MP toxicity or dose modification, likely reflecting low variant frequencies, absence of homozygous poor metabolizers, and limited sample size.\n- Clinicians should continue close clinical and laboratory monitoring for thiopurine toxicity, as genotype-negative patients can still experience adverse effects.\n- Despite the null associations here, broader evidence supports CPIC-guided thiopurine dosing using TPMT and NUDT15 genotypes; preemptive testing may still be considered, with the understanding that predictive value may vary in admixed Latin American populations.\n- Larger, multicenter Latin American studies incorporating comprehensive TPMT/NUDT15 variant panels and ancestry-informed analyses are needed to refine dosing guidance for this region."
+  }
+}

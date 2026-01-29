@@ -1,0 +1,335 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC12319246",
+    "variants": [
+      "rs2235013",
+      "rs2273697",
+      "rs1800872",
+      "rs4244285",
+      "rs2279343",
+      "rs1045642",
+      "rs1800896",
+      "rs2032582",
+      "rs717620",
+      "rs3745275",
+      "rs2745074",
+      "rs1800871",
+      "rs2235033",
+      "rs4149056",
+      "rs2740574",
+      "rs3740066",
+      "rs2066844",
+      "rs1142345",
+      "rs776746",
+      "rs6714486",
+      "rs72551330",
+      "rs1799853",
+      "rs9282564",
+      "rs17868320",
+      "rs3745274",
+      "rs2306283",
+      "rs3832043"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 27,
+      "from_article": 27,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "rs2235013",
+        "sentence": "Genotype GA of rs2235013 is associated with decreased risk of chronic rejection when treated with tacrolimus in people with kidney transplantation (donor genotype) as compared to non-GA genotypes (OR 0.13).",
+        "explanation": "In a cohort of 79 kidney transplant patients, logistic regression identified donor ABCB1 rs2235013 GA as protective against chronic rejection; significance level was not reported but the effect size (OR 0.13) was provided.",
+        "citations": [
+          "Results are shown in Table 3, and it can be observed that the GA variant in ABCB1 rs2235013 is associated with a reduced risk of chronic rejection (p-value: 0.016; OR: 0.13).",
+          "Table 3 Caption: Pharmacogene variants associated with the probability of clinical events occurrence regarding renal function during the follow-up.",
+          "Our results indicate that the ABCB1 gene could influence the risk of chronic rejection (GA variant in donor's rs2235013 SNP; OR: 0.13) and severe infections, either reducing it (CC variant in recipient's ABCB1 rs1045642; OR: 0.087) or increasing it (AA variant in donor's ABCB1 rs9282564; OR: 23.8).",
+          "All patients in our cohort received tacrolimus, as it significantly reduces acute rejection rates and improves long-term graft survival (Mayer et al., 1997)."
+        ]
+      },
+      {
+        "variant_id": "rs2273697",
+        "sentence": "Genotypes GA + AA of rs2273697 are associated with increased risk of death from any cause when treated with tacrolimus in people with kidney transplantation (donor genotype) as compared to genotype GG (log-rank p = 0.005; FDR-adjusted analysis indicated increased risk).",
+        "explanation": "Donor ABCC2 rs2273697 showed significant survival differences on Kaplan–Meier analysis (p = 0.005) and remained associated with increased exitus risk after FDR correction (reported OR 4.133).",
+        "citations": [
+          "Conversely, patients receiving a graft from a donor with the GA genotype in rs2273697 of ABCC2 were significantly associated (p-value: 0.021) with an increased risk (OR: 4.133) of exitus.",
+          "It was observed that the genotype in the donor's ABCC2 rs2273697 could significantly (p-value: 0.003; log-rank) affect survival (Fig. 1B), with the GG variant providing a higher rate during the entire follow-up compared to AA and GA.",
+          "However, after applying false discovery rate (FDR) penalization, only variants in donors' ABCB1 and ABCC2 genes remained significantly associated with reduced (OR: 0.116) and increased (OR: 4.133) risk, respectively.",
+          "Table 1 Caption: Pharmacogene variants associated with probability of survival during the follow-up."
+        ]
+      },
+      {
+        "variant_id": "rs1800872",
+        "sentence": "rs1800872 not mentioned in the article.",
+        "explanation": "This IL10 variant was not listed among the SNPs analyzed or discussed in the study.",
+        "citations": [
+          "The SNPs evaluated (Table S1) were selected based on previous studies associating genes with clinical outcomes in solid organ transplant recipients, along with additional polymorphisms in genes encoding drug transporters and other signaling pathways of potential interest.",
+          "In this context, polymorphisms in the IL10 gene—which encodes a key cytokine involved in immunomodulatory processes—have been associated with variable tumor susceptibility (Li et al., 2022).",
+          "Understanding these genetic variants facilitates the development of personalized advanced therapies, including both cell- and gene-based strategies."
+        ]
+      },
+      {
+        "variant_id": "rs4244285",
+        "sentence": "Genotype AA of rs4244285 (CYP2C19*2) is associated with increased risk of nephrotoxicity and increased dose-adjusted concentrations of tacrolimus in people with kidney transplantation as compared to genotype GG (p = 0.026).",
+        "explanation": "The study reported that CYP2C19 rs4244285 AA (poor metabolizer) was linked to higher tacrolimus C/D and markedly higher nephrotoxicity risk (OR 11.6; p = 0.026) in a cohort where all recipients received omeprazole.",
+        "citations": [
+          "An increased risk of nephrotoxicity was observed in patients receiving grafts carrying the AA variant in CYP2C19 rs4244285.",
+          "In the case of CYP2C19, it can be observed that the GG and GA variants in donors’ rs4244285 exhibited similar behavior, whereas patients receiving a kidney graft with the AA variant showed higher levels of tacrolimus, especially from 3 years onwards, achieving high C/D values over 300 [(ng/ml)/(mg/kg)] that would suggest the need of dose reduction.",
+          "Our study also found a strong association (p-value: 0.026) with a substantial increase in nephrotoxicity risk (OR: 11.6) in patients with the AA variant in CYP2C19 rs4244285, which defines the ∗2 poor metabolizer haplotype and has been reported (Huang et al., 2022) to require lower tacrolimus doses for therapeutic concentrations.",
+          "Our results confirm this, with significantly higher (p-value: 0.026) dose-adjusted tacrolimus concentrations (over 300 [(ng/ml)/(mg/kg)]) observed in patients receiving a kidney with this variant, which could contribute to nephrotoxicity."
+        ]
+      },
+      {
+        "variant_id": "rs2279343",
+        "sentence": "rs2279343 not mentioned in the article.",
+        "explanation": "This CYP2B6 variant was not specified among results or discussions.",
+        "citations": [
+          "The combination in donor of GG variant in ABCC2 rs2273697 with AG or AA variants in rs4244285 of CYP2C19 metabolizer gene could reduce the risk of tumor occurrence, with an OR < 0.2 in both cases.",
+          "In this sense, GA variant in rs2279343 of recipient when coinciding with GG variant in ABCC2 rs2273697 of donor could increase the risk of tumor occurrence with a 5.3 odds ratio.",
+          "The TT variant in recipient rs3745274 of CYP2B6 was also associated with increased risk of graft acute rejection if combined with TC variant in ABCB1 rs1045642 of recipient."
+        ]
+      },
+      {
+        "variant_id": "rs1045642",
+        "sentence": "Genotype CC of rs1045642 is associated with decreased risk of severe infections when treated with tacrolimus in people with kidney transplantation (recipient genotype) as compared to genotypes CT + TT (OR 0.087).",
+        "explanation": "Logistic regression in 79 recipients showed ABCB1 rs1045642 CC reduced severe infection risk during follow-up; no p-value was provided.",
+        "citations": [
+          "Table 4 Caption: Pharmacogene variants associated with occurrence risk of diabetes mellitus and infections during the follow-up.",
+          "Our results indicate that the ABCB1 gene could influence the risk of chronic rejection (GA variant in donor's rs2235013 SNP; OR: 0.13) and severe infections, either reducing it (CC variant in recipient's ABCB1 rs1045642; OR: 0.087) or increasing it (AA variant in donor's ABCB1 rs9282564; OR: 23.8).",
+          "All patients in our cohort received tacrolimus, as it significantly reduces acute rejection rates and improves long-term graft survival (Mayer et al., 1997)."
+        ]
+      },
+      {
+        "variant_id": "rs1800896",
+        "sentence": "rs1800896 not mentioned in the article.",
+        "explanation": "This IL10 promoter variant was not reported in the study’s SNP panel or results.",
+        "citations": [
+          "The SNPs evaluated (Table S1) were selected based on previous studies associating genes with clinical outcomes in solid organ transplant recipients, along with additional polymorphisms in genes encoding drug transporters and other signaling pathways of potential interest.",
+          "In this context, polymorphisms in the IL10 gene—which encodes a key cytokine involved in immunomodulatory processes—have been associated with variable tumor susceptibility (Li et al., 2022).",
+          "Understanding these genetic variants facilitates the development of personalized advanced therapies, including both cell- and gene-based strategies."
+        ]
+      },
+      {
+        "variant_id": "rs2032582",
+        "sentence": "rs2032582 mentioned in article but not studied by paper.",
+        "explanation": "The SNP was cited from prior literature regarding graft rejection but no new analyses were presented in this cohort.",
+        "citations": [
+          "Moreover, the risk of graft rejection has been linked to rs1045642 and rs2032582 SNPs in ABCB1 (Korkor et al., 2023).",
+          "However, long-term studies on these associations are lacking."
+        ]
+      },
+      {
+        "variant_id": "rs717620",
+        "sentence": "rs717620 mentioned in article but not studied by paper.",
+        "explanation": "The ABCC2 variant was referenced from prior work (no effect on tacrolimus PK) without new data in this study.",
+        "citations": [
+          "ABCC2 may also be involved in tacrolimus transport, as the rs3740066 SNP has been shown to significantly increase dose-normalized tacrolimus concentrations, whereas rs717620 had no significant effect (Li et al., 2011).",
+          "However, long-term studies on these associations are lacking."
+        ]
+      },
+      {
+        "variant_id": "rs3745275",
+        "sentence": "rs3745275 not mentioned in the article.",
+        "explanation": "This variant was not included in the study’s reported analyses.",
+        "citations": [
+          "The association between pharmacogene variants and cancer occurrence, regardless of the exact moment during the 12-year follow-up, was also evaluated (Table 2), given the influence that imbalanced immunosuppression could present on tumor control.",
+          "Multivariate logistic regression using all pharmacogene variants showed that recipients carrying the GT heterozygous genotype in CYP2B6 rs3745275 could present an advantage (OR: 0.099; p-value: 0.048).",
+          "Table 2 Caption: Pharmacogene variants associated with probability of tumor occurrence during the follow-up."
+        ]
+      },
+      {
+        "variant_id": "rs2745074",
+        "sentence": "rs2745074 not mentioned in the article.",
+        "explanation": "No data or discussion on this variant were provided.",
+        "citations": [
+          "The AA variant in CYP3A4 rs2745074 SNP of recipient mediated better recovery of renal clearance than GA (60 and 45 ml/min/1.73 m2, respectively; p-value <0.001), which was observable from 3 months post-transplantation and remained throughout the entire follow-up.",
+          "The AA (TT) variant in CYP3A4 rs2740574 has been previously associated with increased tacrolimus concentration/dose (C/D) (Kuypers et al., 2007; Hannachi et al., 2021), which aligns with our findings of significantly higher (p-value <0.001) C/D in AA recipients."
+        ]
+      },
+      {
+        "variant_id": "rs1800871",
+        "sentence": "rs1800871 not mentioned in the article.",
+        "explanation": "This IL10 variant was not discussed or analyzed.",
+        "citations": [
+          "The SNPs evaluated (Table S1) were selected based on previous studies associating genes with clinical outcomes in solid organ transplant recipients, along with additional polymorphisms in genes encoding drug transporters and other signaling pathways of potential interest.",
+          "In this context, polymorphisms in the IL10 gene—which encodes a key cytokine involved in immunomodulatory processes—have been associated with variable tumor susceptibility (Li et al., 2022).",
+          "Understanding these genetic variants facilitates the development of personalized advanced therapies, including both cell- and gene-based strategies."
+        ]
+      },
+      {
+        "variant_id": "rs2235033",
+        "sentence": "rs2235033 not mentioned in the article.",
+        "explanation": "Although multiple ABCB1 variants were analyzed, rs2235033 was not reported in the results.",
+        "citations": [
+          "Regarding active transport pharmacogenes (right panels), only variants in the ABCB1 gene proved significant.",
+          "Patients with the TT variant in both rs1045642 and rs2235033 SNPs presented significantly (p-value: 0.005 in both cases) higher ratios of tacrolimus C/D than those with any of the other genotype combinations."
+        ]
+      },
+      {
+        "variant_id": "rs4149056",
+        "sentence": "Genotype TT of rs4149056 is associated with decreased risk of acute rejection and increased dose-adjusted concentrations of tacrolimus in people with kidney transplantation (recipient genotype) as compared to genotypes CC + CT (OR 0.157).",
+        "explanation": "The study found SLCO1B1 rs4149056 TT linked to higher tacrolimus C/D and lower acute rejection risk (OR 0.157) in recipients; significance levels were not provided for the rejection analysis.",
+        "citations": [
+          "The presence of the TT variant in SLCO1B1 rs4149056 in the recipient and the GT variant in CYP2B6 rs3745274 in the donor were also statistically associated with a reduced risk (OR: 0.16 and 0.2, respectively) of acute rejection.",
+          "Table 3 Caption: Pharmacogene variants associated with the probability of clinical events occurrence regarding renal function during the follow-up.",
+          "In this regard, patients with the TT variant in rs4149056 nearly doubled the dose-adjusted tacrolimus concentration (C/D) observed with TC (p-value: 0.002), with the greatest differences observed from 3 years onwards.",
+          "Recipients with the TT variant in SLCO1B1 rs4149056 showed higher dose-adjusted tacrolimus concentrations, possibly mediating a greater immunosuppressive effect and protecting against rejection, consistent with our logistic regression results (OR: 0.157)."
+        ]
+      },
+      {
+        "variant_id": "rs2740574",
+        "sentence": "Genotype AA of rs2740574 is associated with increased dose-adjusted concentrations of tacrolimus in people with kidney transplantation (recipient genotype) as compared to genotypes AG + GG (p < 0.001).",
+        "explanation": "Recipients with CYP3A4 rs2740574 AA showed significantly higher C/D (p < 0.001), consistent with prior reports of altered CYP3A4 activity affecting tacrolimus PK.",
+        "citations": [
+          "Results show that patients with the AA variant in CYP3A4 rs2740574 (top left graph) have significantly (p-value <0.001) higher dose-adjusted tacrolimus plasma levels (C/D ratio) during the entire follow-up, with a tendency to increase over time, whereas GA variant patients present sustained lower steady levels.",
+          "The AA (TT) variant in CYP3A4 rs2740574 has been previously associated with increased tacrolimus concentration/dose (C/D) (Kuypers et al., 2007; Hannachi et al., 2021), which aligns with our findings of significantly higher (p-value <0.001) C/D in AA recipients."
+        ]
+      },
+      {
+        "variant_id": "rs3740066",
+        "sentence": "rs3740066 mentioned in article but not studied by paper.",
+        "explanation": "The ABCC2 variant was discussed from prior literature (higher dose-normalized tacrolimus concentrations) without cohort-specific results.",
+        "citations": [
+          "ABCC2 may also be involved in tacrolimus transport, as the rs3740066 SNP has been shown to significantly increase dose-normalized tacrolimus concentrations, whereas rs717620 had no significant effect (Li et al., 2011).",
+          "However, long-term studies on these associations are lacking."
+        ]
+      },
+      {
+        "variant_id": "rs2066844",
+        "sentence": "Genotype CC of rs2066844 is associated with decreased risk of nephrotoxicity when treated with tacrolimus in people with kidney transplantation (donor genotype) as compared to genotypes CT + TT.",
+        "explanation": "The study reported donor NOD2 rs2066844 CC as protective against nephrotoxicity; effect size/p-value were not provided for this endpoint.",
+        "citations": [
+          "When considering nephrotoxicity, results indicate that the AA and AG variants in SLCO1B1 in the recipient, and the AA variant in this SNP in the donor, were associated with a reduced risk of nephrotoxicity (OR: 0.08, 0.23, and 0.11, respectively).",
+          "The CC variant in donor NOD2 rs2066844 could also reduce that risk (OR: 0.015).",
+          "Table 3 Caption: Pharmacogene variants associated with the probability of clinical events occurrence regarding renal function during the follow-up.",
+          "On the other hand, the CC variant in NOD2 rs2066844 in donor also showed a reduced risk of nephrotoxicity, although no significant effect was observed on tacrolimus pharmacokinetics."
+        ]
+      },
+      {
+        "variant_id": "rs1142345",
+        "sentence": "rs1142345 mentioned in article but no variant-specific association data were reported by the paper.",
+        "explanation": "TPMT variants were described as having a protective role for re-transplantation risk, but rs1142345-specific results were not presented.",
+        "citations": [
+          "Lastly, a reduced risk of re-transplantation was observed in patients whose implanted kidneys carried the AA variant in TPMT rs1142345 and the CC variant in CYP2C9 rs1799853 (OR: 0.048, p-value: 0.02; and OR: 0.10, p-value: 0.042, respectively).",
+          "Table 3 Caption: Pharmacogene variants associated with the probability of clinical events occurrence regarding renal function during the follow-up."
+        ]
+      },
+      {
+        "variant_id": "rs776746",
+        "sentence": "Genotype GG of rs776746 (CYP3A5*3/*3) is associated with increased dose-adjusted concentrations of tacrolimus in people with kidney transplantation as compared to genotypes AG + AA (i.e., CYP3A5 expressers).",
+        "explanation": "The cohort confirmed the established association of CYP3A5*3 with higher tacrolimus C/D; survival differences by CYP3A5 haplotype were not significant (log-rank p = 0.138).",
+        "citations": [
+          "The ∗3 haplotype, defined by the presence of G instead of A at rs776746, plays an important role, and pharmacogenetics-driven dose adjustment has been established.",
+          "In this sense, homozygous patients for this variant (∗3/∗3) presented increasing C/D ratios of tacrolimus during the follow-up, reaching levels that exceed 200 [(ng/ml)/(mg/kg)], which was significantly (p-value <0.001) higher than in heterozygous (∗1/∗3) patients, whose levels remained constant around 100 [(ng/ml)/(mg/kg)].",
+          "Although the CYP3A5 rs776746 did not show a significant association with survival in logistic regression, the Kaplan-Meier curve was also represented (Fig. 1C) due to its special relevance and clinical evidence on the response to tacrolimus.",
+          "No significant difference was observed by log-rank either, but it should not be discarded that the GG variant (∗3/∗3) could offer an advantage, especially at late post-transplantation stages."
+        ]
+      },
+      {
+        "variant_id": "rs6714486",
+        "sentence": "rs6714486 mentioned in article but not studied by paper.",
+        "explanation": "This UGT1A9 SNP was cited from prior mycophenolate literature; no analysis was reported in the current cohort.",
+        "citations": [
+          "Variants in UGT1A9 (rs72551330, rs3832043, rs6714486, and rs17868320) have been associated with mycophenolate mofetil toxicity and efficacy in kidney transplantation (Krall et al., 2021), although the clinical evidence remains low (levels 3 and 4)."
+        ]
+      },
+      {
+        "variant_id": "rs72551330",
+        "sentence": "rs72551330 mentioned in article but not studied by paper.",
+        "explanation": "The UGT1A9 SNP was referenced regarding mycophenolate outcomes; no cohort data were provided.",
+        "citations": [
+          "Variants in UGT1A9 (rs72551330, rs3832043, rs6714486, and rs17868320) have been associated with mycophenolate mofetil toxicity and efficacy in kidney transplantation (Krall et al., 2021), although the clinical evidence remains low (levels 3 and 4)."
+        ]
+      },
+      {
+        "variant_id": "rs1799853",
+        "sentence": "rs1799853 mentioned in article but no variant-specific association data were reported by the paper.",
+        "explanation": "CYP2C9 variants were noted as protective for re-transplantation risk, but rs1799853-specific results were not detailed.",
+        "citations": [
+          "Lastly, a reduced risk of re-transplantation was observed in patients whose implanted kidneys carried the AA variant in TPMT rs1142345 and the CC variant in CYP2C9 rs1799853 (OR: 0.048, p-value: 0.02; and OR: 0.10, p-value: 0.042, respectively).",
+          "Table 3 Caption: Pharmacogene variants associated with the probability of clinical events occurrence regarding renal function during the follow-up."
+        ]
+      },
+      {
+        "variant_id": "rs9282564",
+        "sentence": "Genotype AA of rs9282564 is associated with increased risk of severe infections when treated with tacrolimus in people with kidney transplantation (donor genotype) as compared to genotypes AG + GG (OR 23.8; survival also differed by genotype, log-rank p = 0.042).",
+        "explanation": "Donor ABCB1 rs9282564 AA markedly increased infection risk in recipients (OR 23.8), and Kaplan–Meier analysis showed significant survival differences (p = 0.042).",
+        "citations": [
+          "Our results indicate that the ABCB1 gene could influence the risk of chronic rejection (GA variant in donor's rs2235013 SNP; OR: 0.13) and severe infections, either reducing it (CC variant in recipient's ABCB1 rs1045642; OR: 0.087) or increasing it (AA variant in donor's ABCB1 rs9282564; OR: 23.8).",
+          "Table 4 Caption: Pharmacogene variants associated with occurrence risk of diabetes mellitus and infections during the follow-up.",
+          "The AG variant in ABCB1 gene rs9282564 of the donor was significantly associated (p-value: 0.042; log-rank) with reduced cumulative survival compared to the AA variant."
+        ]
+      },
+      {
+        "variant_id": "rs17868320",
+        "sentence": "rs17868320 mentioned in article but not studied by paper.",
+        "explanation": "This UGT1A9 variant was discussed from prior literature; no new data were presented.",
+        "citations": [
+          "Variants in UGT1A9 (rs72551330, rs3832043, rs6714486, and rs17868320) have been associated with mycophenolate mofetil toxicity and efficacy in kidney transplantation (Krall et al., 2021), although the clinical evidence remains low (levels 3 and 4).",
+          "However, long-term studies on these associations are lacking."
+        ]
+      },
+      {
+        "variant_id": "rs3745274",
+        "sentence": "Genotype GT of rs3745274 is associated with increased risk of tumor occurrence when treated with tacrolimus in people with kidney transplantation (recipient genotype) as compared to genotype GG (p = 0.048).",
+        "explanation": "The study found CYP2B6 rs3745274 GT increased de novo tumor risk (p = 0.048) and suggested a trend toward reduced diabetes risk (p = 0.056).",
+        "citations": [
+          "Multivariate logistic regression using all pharmacogene variants showed that recipients carrying the GT heterozygous genotype in CYP2B6 rs3745275 could present an advantage (OR: 0.099; p-value: 0.048).",
+          "Table 2 Caption: Pharmacogene variants associated with probability of tumor occurrence during the follow-up."
+        ]
+      },
+      {
+        "variant_id": "rs2306283",
+        "sentence": "rs2306283 mentioned in article but no standalone variant-specific association was reported by the paper.",
+        "explanation": "SLCO1B1 rs2306283 was included in interaction analyses (e.g., with CYP3A5 rs776746 for exitus risk), but independent genotype–outcome results were not provided.",
+        "citations": [
+          "When considering nephrotoxicity, results indicate that the AA and AG variants in SLCO1B1 in the recipient, and the AA variant in this SNP in the donor, were associated with a reduced risk of nephrotoxicity (OR: 0.08, 0.23, and 0.11, respectively).",
+          "When comparing tacrolimus C/D in patients receiving kidney grafts from donors with the AA or GG variant in rs2306283, significant differences (p-value: 0.01) were observed during the early post-transplantation phase, which tended to reduce over time.",
+          "Table 3 Caption: Pharmacogene variants associated with the probability of clinical events occurrence regarding renal function during the follow-up."
+        ]
+      },
+      {
+        "variant_id": "rs3832043",
+        "sentence": "rs3832043 mentioned in article but not studied by paper.",
+        "explanation": "The UGT1A9 promoter VNTR was referenced from prior mycophenolate literature; no cohort analyses were reported.",
+        "citations": [
+          "Variants in UGT1A9 (rs72551330, rs3832043, rs6714486, and rs17868320) have been associated with mycophenolate mofetil toxicity and efficacy in kidney transplantation (Krall et al., 2021), although the clinical evidence remains low (levels 3 and 4).",
+          "However, long-term studies on these associations are lacking."
+        ]
+      }
+    ],
+    "summary": "## Background\nThis single-center cohort study genotyped 37 SNPs across 14 ADME genes in both donors and recipients (n=79 kidney transplants; all on tacrolimus) and followed patients for 12 years. The authors assessed associations between pharmacogene variants and long-term outcomes (survival, tumors, rejection, nephrotoxicity, infections, renal function) and tacrolimus pharmacokinetics (dose-adjusted trough, C/D).\n\n## Key Findings\n- Survival and tumors (donor transport genes were influential):\n  - Donor ABCB1 rs9282564 AA was linked to lower mortality risk (OR 0.116; p=0.029 FDR) and better survival vs AG (log-rank p=0.042), but higher infection risk (OR 23.8; p=0.005).\n  - Donor ABCC2 rs2273697 GA increased mortality (OR 4.13; p=0.021); ABCC2 rs2273697 GG had the best survival (log-rank p=0.003). The same donor variant increased tumor risk (AA OR 13.09; GA OR 3.39; p≈0.04–0.06).\n  - Recipient CYP2B6 rs3745274 GT was associated with lower tumor incidence (OR 0.099; p=0.048).\n\n- Rejection, nephrotoxicity, infections, re-transplantation:\n  - Chronic rejection: reduced with donor ABCB1 rs2235013 GA (OR 0.133; p=0.016).\n  - Acute rejection: reduced with recipient CYP3A4 rs2740574 AA (OR 0.080; p=0.047), recipient SLCO1B1 rs4149056 TT (OR 0.157; p=0.024), and donor CYP2B6 rs3745274 GT (OR 0.199; p=0.027); increased with donor UGT1A9 rs6714486 TA (OR 32.1; p=0.020; sparse genotypes).\n  - Nephrotoxicity: reduced with recipient SLCO1B1 rs2306283 AA (OR 0.076; p=0.009) and AG (OR 0.227; p=0.051), donor SLCO1B1 rs2306283 AG (OR 0.108; p=0.024), and donor NOD2 rs2066844 CC (OR 0.015; p=0.035); increased with donor CYP2C19 rs4244285 AA (CYP2C19*2; OR 11.65; p=0.026).\n  - Infections: reduced with recipient ABCB1 rs1045642 CC (OR 0.087; p=0.003); increased with donor ABCB1 rs9282564 AA (OR 23.8; p=0.005).\n  - Re-transplant: reduced with donor TPMT rs1142345 AA (OR 0.048; p=0.020) and donor CYP2C9 rs1799853 CC (OR 0.102; p=0.042).\n\n- Tacrolimus pharmacokinetics and renal function:\n  - Higher tacrolimus C/D with recipient CYP3A4 rs2740574 AA (p<0.001), recipient CYP3A5 rs776746 *3/*3 (p<0.001), donor CYP2C19 rs4244285 AA (notably >3 years; p=0.026), recipient ABCB1 rs1045642 TT and rs2235033 TT (both p=0.005), and recipient SLCO1B1 rs4149056 TT (p=0.002). Donor ABCB1 rs2235013 GG showed lower C/D (p=0.011); donor SLCO1B1 rs2306283 affected early C/D (p=0.01).\n  - Better eGFR recovery with recipient CYP3A4 rs2740574 AA (p<0.001); donor CYP3A5 *3/*3 and recipient CYP2B6 rs3745274 GT favored higher clearance, while donor CYP2B6 rs3745274 TT was unfavorable.\n  - Variant combinations across metabolizing (CYP3A5, CYP2B6, CYP2C19) and transporter (ABCB1, ABCC2, SLCO1B1) genes further modified risks (e.g., donor ABCC2 rs2273697 GG plus donor/recipient CYP2C19 rs4244285 AG/AA lowered tumor risk; several CYP2B6–ABCB1/SLCO1B1 pairs increased rejection, nephrotoxicity, or diabetes; ORs typically >5 or <0.2).\n\n## Clinical Implications\n- Genotyping both donor and recipient can inform long-term risk stratification and tacrolimus management.\n  - Dose/monitoring: anticipate higher tacrolimus exposure with recipient CYP3A5*3/*3, CYP3A4 rs2740574 AA, SLCO1B1 rs4149056 TT, and donor CYP2C19*2; consider lower initial doses and closer trough/eGFR monitoring to mitigate nephrotoxicity.\n  - Surveillance: donors carrying ABCC2 rs2273697 A (AA/GA) and/or ABCB1 rs9282564 AA identify recipients who may need intensified cancer, infection, and survival-focused follow-up.\n  - Graft outcomes: donor ABCB1 rs2235013 GA and recipient SLCO1B1 rs4149056 TT associate with less rejection; recipient SLCO1B1 rs2306283 AA/AG and donor SLCO1B1 rs2306283 AG are protective against nephrotoxicity.\n- Findings support panel-based pharmacogenetic testing in kidney transplantation to tailor tacrolimus dosing and long-term monitoring. Given the modest sample and single-center design, use these markers to complement, not replace, therapeutic drug monitoring and clinical judgment, and seek validation when possible."
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC3548984",
+    "variants": [
+      "CYP2D6*10",
+      "CYP2D6*5",
+      "CYP2D6*4",
+      "CYP2D6*6",
+      "CYP2D6*3",
+      "CYP2D6*41"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 6,
+      "from_article": 6,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "CYP2D6*10",
+        "sentence": "Genotypes IM/IM and EM/IM of CYP2D6*10 are not associated with increased likelihood of a disease event during tamoxifen treatment in people with postmenopausal estrogen receptor–positive early-stage breast cancer in the ABCSG 8 trial as compared to EM/EM.",
+        "explanation": "In a matched case-control analysis within ABCSG 8 that genotyped reduced-function alleles including *10, increased risk was observed only for poor-metabolizer genotypes; patients without poor alleles (IM/IM and EM/IM) showed no significant increase in disease events during tamoxifen, and no association was seen after switching to anastrozole.",
+        "citations": [
+          "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.",
+          "CYP2D6 phenotype groups were defined as previously published ([11]) where ‘extensive’ metabolizers do not carry a null or reduced allele (EM/EM); those with one to two reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and ‘poor’ metabolizers, those with 2 null alleles (PM/PM).",
+          "There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95–2.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58–2.61, p=0.60) to have a higher odds of a disease event."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*5",
+        "sentence": "CYP2D6*5 mentioned in article but not studied by paper.",
+        "explanation": "The paper states the CYP2D6*5 gene deletion could not be assessed due to DNA fragmentation from paraffin fixation, so no clinical association with tamoxifen outcomes was analyzed.",
+        "citations": [
+          "DNA was assessed for the most common CYP2D6 single nucleotide polymorphisms (SNP) corresponding to alleles associated with null [*3 (2549 del A),*4(1846G>A), and *6(1707T>del)] reduced [*10 (100 C>T and 1846 G>A) and *41 (2988 G>A)] CYP2D6 enzyme activity as previously described ([11]) using the Applied Biosystems’ Taqman® Allelic Discrimination Assay (Foster City, CA) with the ABI Prism 7900HT Real Time System according to the manufacturer’s instructions.",
+          "The CYP2D6 *5 gene deletion allele and duplicated alleles could not be assessed because of DNA fragmentation which results from paraffin fixation.",
+          "The latter observation may relate to somatic deletion of the CYP2D6 chromosomal locus ([18], [19]) or the presence of germline deletion of the entire CYP2D6 gene *(CYP2D6 *5)* ([30]), leading to a deficit of observed heterozygotes."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*4",
+        "sentence": "Genotype PM/PM (e.g., CYP2D6 *4/*4 or other two-null-allele combinations) of CYP2D6*4 is associated with increased likelihood of a disease event during tamoxifen treatment in people with postmenopausal estrogen receptor–positive early-stage breast cancer in the ABCSG 8 trial as compared to EM/EM; statistically significant.",
+        "explanation": "The ABCSG 8 matched case-control study (drawing from a 3,901-patient randomized trial and including 52% of early events) found significantly higher odds of disease events for poor metabolizers (two null alleles, including *4) during tamoxifen, with no significant association after switching to anastrozole.",
+        "citations": [
+          "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.",
+          "In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05–5.73; p=0.04) had a higher odds of a disease event relative to EM/EM ([Table 5]).",
+          "In years 3–5 when patients remained on tamoxifen (Arm A) or switched to anastrozole (Arm B), PM/PM tended towards a higher likelihood of a disease event relative to EM/EM (OR= 2.40, 95% CI: 0.86–6.66, p=0.09) among women on Arm A but not among women on Arm B (OR= 0.28; 95% CI: 0.03–2.30)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*6",
+        "sentence": "Genotype PM/PM (e.g., CYP2D6 *6/*6 or combinations with another null allele) of CYP2D6*6 is associated with increased likelihood of a disease event during tamoxifen treatment in people with postmenopausal estrogen receptor–positive early-stage breast cancer in the ABCSG 8 trial as compared to EM/EM; statistically significant.",
+        "explanation": "Null alleles such as *6 contributed to the poor-metabolizer (PM/PM) group, which showed a significant increase in disease events during tamoxifen in the matched case-control analysis; no increased risk was seen after switch to anastrozole.",
+        "citations": [
+          "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.",
+          "CYP2D6 phenotype groups were defined as previously published ([11]) where ‘extensive’ metabolizers do not carry a null or reduced allele (EM/EM); those with one to two reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and ‘poor’ metabolizers, those with 2 null alleles (PM/PM).",
+          "In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05–5.73; p=0.04) had a higher odds of a disease event relative to EM/EM ([Table 5]).",
+          "Conversely in Arm B, no significant association was found between *CYP2D6* genotype and the likelihood of a disease event during the 5 years of treatment."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*3",
+        "sentence": "Genotype PM/PM (e.g., CYP2D6 *3/*3 or combinations with other null alleles) of CYP2D6*3 is associated with increased likelihood of a disease event during tamoxifen treatment in people with postmenopausal estrogen receptor–positive early-stage breast cancer in the ABCSG 8 trial as compared to EM/EM; statistically significant.",
+        "explanation": "The study grouped *3 among null alleles defining the PM/PM phenotype, which had significantly higher odds of disease events during tamoxifen; while *3 showed moderate HWE deviation, the overall PM/PM association remained significant and no association was seen during anastrozole.",
+        "citations": [
+          "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.",
+          "In Arm A during the 5 years of tamoxifen treatment, PM/PM (OR 2.45, 95% CI: 1.05–5.73; p=0.04) had a higher odds of a disease event relative to EM/EM ([Table 5]).",
+          "Tests for HWE demonstrated that *4 (p=0.07) *6 (p=1.0) and *10 (p=0.54) alleles were within HWE, with some deviation for the *41 (p=0.009) and rare *3 allele (p=0.003).",
+          "In ABCSG8, the negative effects of reduced CYP2D6 metabolism were observed only during the period of tamoxifen administration, and not after switching to anastrozole."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*41",
+        "sentence": "Genotypes IM/IM and EM/IM of CYP2D6*41 are not associated with increased likelihood of a disease event during tamoxifen treatment in people with postmenopausal estrogen receptor–positive early-stage breast cancer in the ABCSG 8 trial as compared to EM/EM.",
+        "explanation": "The reduced-function allele *41 contributed to intermediate-metabolizer categories (IM/IM, EM/IM), for which the study reported no significant increase in disease events during tamoxifen; only poor-metabolizer genotypes (two null alleles) showed increased risk, and no association was observed after switching to anastrozole.",
+        "citations": [
+          "Genotyping was performed for alleles associated with no (PM; *3, *4, *6); reduced (IM; *10, and *41); and extensive (EM: absence of these alleles) CYP2D6 metabolism.",
+          "CYP2D6 phenotype groups were defined as previously published ([11]) where ‘extensive’ metabolizers do not carry a null or reduced allele (EM/EM); those with one to two reduced alleles without a null allele (EM/IM, IM/IM); one null allele (PM/IM, PM/EM), and ‘poor’ metabolizers, those with 2 null alleles (PM/PM).",
+          "There was also a trend for patients classified as IM/PM or EM/PM relative to EM/EM (OR 1.67, 95% CI: 0.95–2.93, p=0.07) but not in patients classified as EM/IM or IM/IM relative to EM/EM (OR 1.23, 95% CI: 0.58–2.61, p=0.60) to have a higher odds of a disease event."
+        ]
+      }
+    ],
+    "summary": "## Background\nThis matched case–control analysis from the ABCSG-8 trial evaluated whether CYP2D6 genotype influences outcomes with adjuvant endocrine therapy in postmenopausal women with ER-positive early breast cancer. Patients received either 5 years of tamoxifen (Arm A) or 2 years of tamoxifen followed by 3 years of anastrozole (Arm B). Genotyping targeted CYP2D6 null alleles (poor-function: *3, *4, *6) and reduced-function alleles (*10, *41), and patients were grouped by predicted phenotype: extensive (EM/EM), intermediate (EM/IM or IM/IM), one null allele (PM/EM or PM/IM), and poor metabolizer (PM/PM; two null alleles).\n\n## Key Findings\n- Tamoxifen monotherapy (Arm A, years 1–5): Poor metabolizers (PM/PM) had a significantly higher odds of a disease event versus EM/EM (OR 2.45; 95% CI 1.05–5.73; p=0.04). Carriers of one null allele (PM/EM or PM/IM) showed a trend toward higher risk (OR 1.67; 95% CI 0.95–2.93; p=0.07). Reduced-function alleles alone (EM/IM or IM/IM; largely driven by *10 and *41) were not associated with increased risk (OR 1.23; 95% CI 0.58–2.61; p=0.60).\n- Early tamoxifen phase (years 1–2, both arms): PM/PM showed a similar, non-significant trend toward higher risk compared with EM/EM (Arm A OR 2.54, p=0.25; Arm B OR 2.60, p=0.46), though event numbers were small.\n- Years 3–5 by treatment: Among women continuing tamoxifen (Arm A), PM/PM trended toward higher risk (OR 2.40; 95% CI 0.86–6.66; p=0.09). Among women who switched to anastrozole (Arm B), no increased risk was observed for PM/PM (OR 0.28; 95% CI 0.03–2.30; p=0.23) or for carriers of one null allele (OR 0.63; p=0.22). Across the full 5-year period in Arm B, CYP2D6 genotype was not associated with outcomes.\n\n## Clinical Implications\n- The adverse impact of reduced CYP2D6 metabolism on recurrence risk appears confined to the period of tamoxifen therapy and is not seen after switching to anastrozole. This supports the strategy of AI sequencing after initial tamoxifen, regardless of CYP2D6 genotype.\n- For patients expected to remain on tamoxifen long term, those with poor-metabolizer genotypes (two null alleles, commonly involving *4 and less commonly *3 or *6) are at higher risk of early events; alternatives such as earlier AI use, avoiding strong CYP2D6 inhibitors, or considering pharmacologic monitoring of endoxifen could be contemplated.\n- Limitations relevant to clinical use: the CYP2D6*5 gene deletion and gene duplications were not assayed, and concomitant CYP2D6 inhibitor use was unknown. Prospective studies are needed to determine whether genotype-guided therapy or endoxifen-guided dosing improves outcomes."
+  }
+}

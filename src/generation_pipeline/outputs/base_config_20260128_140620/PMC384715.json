@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC384715",
+    "variants": [
+      "HLA-B*57:01",
+      "HLA-DRB1*07:01"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 2,
+      "from_article": 2,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "HLA-B*57:01",
+        "sentence": "HLA-B *57:01 is associated with increased risk of definite hypersensitivity when treated with abacavir in people with HIV infection as compared to non-carriers.",
+        "explanation": "A retrospective (n=200 abacavir-exposed) plus prospective (n=48) study in the Western Australian HIV Cohort identified 18 definite hypersensitivity cases vs 230 tolerant controls and found that HLA-B*57:01 carriage strongly marked susceptibility; prediction improved further when combined with Hsp70-Hom M493T (present in 94.4% of cases vs 0.4% of controls), and prospective HLA-B*57:01 screening was estimated to reduce hypersensitivity prevalence from 8% to 0.4%.",
+        "citations": [
+          "HLA-B*5701 was present in 94.4% of hypersensitive cases compared with 1.7% of controls (odds ratio, 960; P < 0.00001).",
+          "With regard to alleles specific to the 57.1 AH, HLA-B*5701 was present in 17 of 18 (94.4%) cases with abacavir hypersensitivity and 4 of 230 (1.7%) abacavir-tolerant controls [OR = 960, P value corrected for the number of alleles examined (Pc) < 0.0001].",
+          "Hence, HLA-B*5701 provided the strongest univariate association with susceptibility to abacavir hypersensitivity.",
+          "Hence, the incidence of abacavir hypersensitivity among HLA-B*5701-negative individuals in this prospective cohort was 0% (95% confidence interval, 0–0.075%).",
+          "From a clinical perspective, these data indicate that the prospective use of a genetic test involving HLA-B*5701 alone or in combination with the Hsp70-Hom M493T variant would reduce the prevalence of definite abacavir hypersensitivity in our cohort from 8% to 0.4%."
+        ]
+      },
+      {
+        "variant_id": "HLA-DRB1*07:01",
+        "sentence": "HLA-DRB1 *07:01 mentioned in article but not studied by paper.",
+        "explanation": "The allele was typed as a marker of the 57.1 ancestral haplotype, but no direct association analysis with abacavir hypersensitivity or treatment outcomes was reported.",
+        "citations": [
+          "Forty-eight individuals exposed to abacavir since the introduction of prospective genetic testing for HLA-B*5701 and/or HLA-DRB1*0701, HLA-DQ3 in December 2001 were classified by a clinician blinded to the results of genetic analysis using the updated diagnostic criteria.",
+          "All patients with HLA-B*5701 and HLA-DRB1*0701, HLA-DQ3 alleles were actively excluded from exposure to abacavir-based regimens.",
+          "Testing also was performed on abacavir-tolerant individuals carrying markers of the 57.1 AH (n = 12, with 4 consenting to patch testing), including two who carried the HLA-B*5701 allele, and on two individuals carrying the full 57.1 AH (HLA-B*5701, C4A6*, and HLA-DRB1*0701, HLA-DQ3*) who had not been exposed to abacavir.",
+          "Since our initial study (1), 48 individuals have been HLA-typed before exposure to abacavir."
+        ]
+      }
+    ],
+    "summary": "## Background\nAbacavir is an antiretroviral associated with a clinically significant hypersensitivity reaction (HSR). This study genotyped 248 abacavir-exposed individuals (18 definite HSR; 230 tolerant) to fine-map MHC-based susceptibility and evaluate how genetic variants predict HSR risk.\n\n## Key Findings\n- HLA-B*57:01 showed a very strong association with abacavir HSR:\n  - Present in 94.4% of HSR cases vs 1.7% of controls; OR 960; Pc < 0.00001; PPV 78.9%, NPV 99.4%.\n- A nonsynonymous variant in Hsp70-Hom (HSPA1L) M493T (rs2227956) was enriched in cases:\n  - Present in 94.4% of cases vs 22.2% of controls; OR 59.7; Pc < 0.00001; PPV 25.4%.\n- The combination of HLA-B*57:01 plus HSPA1L M493T provided maximal discrimination:\n  - Present in 94.4% of cases vs 0.4% of controls; OR 3,893; Pc < 0.00001; PPV 93.8%, NPV 99.5%; improved classification over HLA-B*57:01 alone (P = 0.003).\n  - Strong linkage disequilibrium between HLA-B*57:01 and HSPA1L M493T (relative LD 0.82).\n- Other 57.1 ancestral haplotype markers (C4A6; HLA-DRB1*07:01/HLA-DQ3) were associated but less discriminating individually; the full 57.1 haplotype was present in 14/18 cases and 0/230 controls.\n- Functional data support an HLA class I-restricted mechanism: abacavir stimulation increased monocyte TNF in HSR patients, which was abrogated by CD8+ T-cell depletion.\n- Notably, one tolerant individual carried both HLA-B*57:01 and HSPA1L M493T, indicating additional factors may influence risk.\n\n## Clinical Implications\n- Pre-emptive HLA-B*57:01 testing is highly effective for preventing abacavir HSR; in the prospective subset, no HSR occurred among HLA-B*57:01-negative individuals on abacavir.\n- Adding HSPA1L M493T to HLA-B*57:01 testing may further increase specificity and reduce unnecessary exclusion from abacavir (estimated inappropriate denial reduced from 1.6% with HLA-B*57:01 alone to 0.4% with the combination in this cohort).\n- Practical takeaway: Screen all candidates for abacavir with HLA-B*57:01; consider that concurrent HSPA1L M493T markedly enriches risk within carriers, though rare tolerant carriers exist. Findings are most immediately applicable to populations of European ancestry and warrant functional and external validation before routine dual-marker testing."
+  }
+}

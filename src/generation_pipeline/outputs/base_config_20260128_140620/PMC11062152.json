@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC11062152",
+    "variants": [
+      "UGT1A1*28",
+      "UGT1A1*6"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 2,
+      "from_article": 2,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "UGT1A1*28",
+        "sentence": "Genotypes UGT1A1*28/*28 and UGT1A1*6/*28 (homozygosity/compound heterozygosity, +/+) are associated with increased risk of grade ≥3 neutropenia and leukopenia when treated with nal-IRI/FL in people with metastatic pancreatic cancer (Japanese patients) as compared to single heterozygosity or wild type.",
+        "explanation": "A retrospective single-center study of Japanese patients receiving nal-IRI/FL reported a higher incidence of grade ≥3 neutropenia and leukopenia in the UGT1A1*6 or *28 (+/+) group (Figure 2), consistent with prior reports that compound heterozygotes (*6/*28) have increased SN-38 exposure and severe neutropenia.",
+        "citations": [
+          "The UGT1A1*6*/**6*, **6*/**28*, and **28*/**28* genotypes were detected in one, one, and two patients in the UGT1A1*6* or **28* (+/+) group, respectively.",
+          "Grade 3 or 4 leukopenia and neutropenia in the UGT1A1*6* or **28* (+/+) group demonstrated an incidence rate of 50.0%, indicating a higher tendency than those in UGT1A1*6* or **28* (–/–) and (+/–) groups at 7.1% and 12.5%, respectively (p=0.085 for each) (Figure 2C and D).",
+          "The nadir counts of white blood cells and neutrophils were significantly lower in patients with UGT1A1*6* or **28* (+/+) (*p*=0.033, 0.043, respectively) (Figure 2A and B).",
+          "Multiple regression analyses revealed that the UGT1A1*6* or **28* (+/+) genotype, high AST value before the nal-IRI/FL therapy, and pancreatic head cancer were significantly associated with decreased white blood cell count (*p*=0.009, 0.019, and 0.030, respectively) ([Table III](#T3)), and that of UGT1A1*6* or **28* (+/+) was significantly related to decreased neutrophil count (*p*=0.017) ([Table IV](#T4)).",
+          "Patients with UGT1A1*6* or **28* (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+        ]
+      },
+      {
+        "variant_id": "UGT1A1*6",
+        "sentence": "Genotypes UGT1A1*6/*6 and UGT1A1*6/*28 (homozygosity/compound heterozygosity, +/+) are associated with increased risk of grade ≥3 neutropenia and leukopenia when treated with nal-IRI/FL in people with metastatic pancreatic cancer (Japanese patients) as compared to single heterozygosity or wild type.",
+        "explanation": "In this retrospective cohort of Japanese patients on nal-IRI/FL, those with UGT1A1*6 or *28 (+/+) showed a high incidence of grade ≥3 neutropenia and leukopenia (Figure 2); earlier pharmacokinetic studies also showed that UGT1A1*6/*28 carriers have higher SN-38 exposure and experienced grade 4 neutropenia.",
+        "citations": [
+          "The UGT1A1*6*/**6*, **6*/**28*, and **28*/**28* genotypes were detected in one, one, and two patients in the UGT1A1*6* or **28* (+/+) group, respectively.",
+          "Grade 3 or 4 leukopenia and neutropenia in the UGT1A1*6* or **28* (+/+) group demonstrated an incidence rate of 50.0%, indicating a higher tendency than those in UGT1A1*6* or **28* (–/–) and (+/–) groups at 7.1% and 12.5%, respectively (p=0.085 for each) (Figure 2C and D).",
+          "The nadir counts of white blood cells and neutrophils were significantly lower in patients with UGT1A1*6* or **28* (+/+) (*p*=0.033, 0.043, respectively) (Figure 2A and B).",
+          "Multiple regression analyses revealed that the UGT1A1*6* or **28* (+/+) genotype, high AST value before the nal-IRI/FL therapy, and pancreatic head cancer were significantly associated with decreased white blood cell count (*p*=0.009, 0.019, and 0.030, respectively) ([Table III](#T3)), and that of UGT1A1*6* or **28* (+/+) was significantly related to decreased neutrophil count (*p*=0.017) ([Table IV](#T4)).",
+          "Patients with UGT1A1*6* or **28* (+/+) should be especially concerned about neutropenia and leukopenia during nal-IRI/FL treatment."
+        ]
+      }
+    ],
+    "summary": "## Background\n- This retrospective study evaluated pharmacogenomic risk factors for adverse events with nanoliposomal irinotecan plus 5-fluorouracil/leucovorin (nal-IRI/FL) in 36 Japanese patients with metastatic pancreatic cancer, focusing on UGT1A1*6 and *28 variants that reduce SN-38 glucuronidation.\n\n## Key Findings\n- UGT1A1 risk genotypes:\n  - Patients homozygous or compound heterozygous for UGT1A1*6 or *28 (i.e., *6/*6, *28/*28, or *6/*28; termed “+/+”) had significantly lower nadir white blood cell (WBC) and neutrophil (ANC) counts versus wild-type or single heterozygotes:\n    - WBC nadir: median 2,050 vs 3,220–3,340/mm3; p=0.033\n    - ANC nadir: median 860 vs 1,285–1,930/mm3; p=0.043\n  - In multivariable models, UGT1A1 (+/+) independently predicted lower WBC (p=0.009) and lower ANC (p=0.017).\n  - Grade 3–4 leukopenia/neutropenia occurred in 50% of UGT1A1 (+/+) patients vs 7.1–12.5% in others (trend, p=0.085), despite lower starting nal-IRI doses in the (+/+) group.\n- Non-genetic factors:\n  - Higher baseline AST (p=0.019) and pancreatic head tumor location (p=0.030) independently associated with lower WBC nadir.\n- Diarrhea:\n  - No significant predictors (including UGT1A1) were identified for grade ≥1 diarrhea in this cohort, noting limited power and exclusion of patients on prophylactic loperamide.\n\n## Clinical Implications\n- Genotype-guided risk stratification:\n  - UGT1A1*6/*6, *28/*28, or *6/*28 identifies patients at high risk for myelosuppression on nal-IRI/FL. Consider reduced starting nal-IRI doses, closer CBC monitoring, and proactive neutropenia management.\n- Broader risk assessment:\n  - Elevated AST and pancreatic head tumors further increase leukopenia risk; optimize biliary drainage/liver function and intensify monitoring in these patients.\n- Practical note:\n  - While severe neutropenia rates showed a strong trend rather than statistical significance, consistent and significant reductions in WBC/ANC nadirs support incorporating UGT1A1 genotype (and baseline liver parameters) into treatment planning. Larger prospective studies are warranted for confirmation."
+  }
+}

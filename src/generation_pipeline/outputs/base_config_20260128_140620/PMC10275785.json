@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC10275785",
+    "variants": [
+      "rs35829419",
+      "rs4925659",
+      "rs11672725",
+      "rs4612666",
+      "rs2043211",
+      "rs10403848",
+      "rs10925026",
+      "rs10754558",
+      "rs4925648",
+      "rs10159239"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 10,
+      "from_article": 10,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "rs35829419",
+        "sentence": "rs35829419 not mentioned in article.",
+        "explanation": "The study focused on CARD8 rs2043211 and NLRP3 rs4612666; no data were provided for rs35829419.",
+        "citations": [
+          "CARD8 (rs2043211) and NLRP3 (rs4612666) were genotyped using Agilent, AriaMx, USA, through Tri-Plex SYBR Green-based real-time PCR allelic discrimination assays.",
+          "NLRP3 SNP rs4612666 and CARD8 SNP rs2043211 were examined in RA patients and healthy controls to determine their morbid genotypes and alleles.",
+          "Second, we investigated only two NLRP3 inflammasome polymorphisms, more SNPs should be assessed."
+        ]
+      },
+      {
+        "variant_id": "rs4925659",
+        "sentence": "rs4925659 not mentioned in article.",
+        "explanation": "The study focused on CARD8 rs2043211 and NLRP3 rs4612666; no data were provided for rs4925659.",
+        "citations": [
+          "CARD8 (rs2043211) and NLRP3 (rs4612666) were genotyped using Agilent, AriaMx, USA, through Tri-Plex SYBR Green-based real-time PCR allelic discrimination assays.",
+          "NLRP3 SNP rs4612666 and CARD8 SNP rs2043211 were examined in RA patients and healthy controls to determine their morbid genotypes and alleles.",
+          "Second, we investigated only two NLRP3 inflammasome polymorphisms, more SNPs should be assessed."
+        ]
+      },
+      {
+        "variant_id": "rs11672725",
+        "sentence": "rs11672725 not mentioned in article.",
+        "explanation": "The study focused on CARD8 rs2043211 and NLRP3 rs4612666; no data were provided for rs11672725.",
+        "citations": [
+          "CARD8 (rs2043211) and NLRP3 (rs4612666) were genotyped using Agilent, AriaMx, USA, through Tri-Plex SYBR Green-based real-time PCR allelic discrimination assays.",
+          "NLRP3 SNP rs4612666 and CARD8 SNP rs2043211 were examined in RA patients and healthy controls to determine their morbid genotypes and alleles.",
+          "Second, we investigated only two NLRP3 inflammasome polymorphisms, more SNPs should be assessed."
+        ]
+      },
+      {
+        "variant_id": "rs4612666",
+        "sentence": "Genotypes TC + CC of rs4612666 are associated with decreased likelihood of response to anti–TNF-α therapy (infliximab or etanercept) and increased disease activity (higher DAS-28, TNF-α and IL-1β) in people with Rheumatoid Arthritis in Iraq as compared to genotype TT; association was statistically significant after 3 months of treatment.",
+        "explanation": "In a cohort of 100 Iraqi RA patients followed for 3 months on infliximab or etanercept, carriers of the NLRP3 rs4612666 variant allele had significantly higher DAS-28 and cytokine levels and a lower EULAR response versus non-carriers.",
+        "citations": [
+          "Also, NLRP3 (rs4612666) TT genotype was more frequent in patients with higher DAS-28 (P < 0.0001) and higher TNF-α and IL- 1β serum levels (P < 0.0001 for both).",
+          "Moreover, NLRP3 (rs4612666), C Allele bearing genotypes (wild homozygous and heterozygous genotypes) are associated with lower DAS-28 as compared with T allele bearing genotypes (Variant homozygous and heterozygous genotypes (P < 0.0001 and 0.003 respectively), this supposing that NLRP3 (rs4612666) variant genotypes are extremely associated with higher disease progression and lower response to anti-TNF-α drugs.",
+          "Recessive model of NLRP3 (rs4612666) was associated with higher TNF-α and IL- 1β serum level after 3 months of treatment (P = 0.002 and P < 0.0001 respectively), where T allele bearing genotypes (Variant homozygous and heterozygous) were significantly associated with higher cytokines level.",
+          "Significant difference was observed in CARD8 (rs2043211) genotypes between responders and non-responders (P < 0.0001). As well as, NLRP3 genotypes (rs4612666) (P < 0.0001).",
+          "CARD8 rs2043211 and NLRP3 rs4612666 variant polymorphisms are associated with high serum TNF-α and IL-1β, active disease course, poor disease outcomes, and low response to anti-TNF-α therapy."
+        ]
+      },
+      {
+        "variant_id": "rs2043211",
+        "sentence": "Genotypes AT + TT of rs2043211 are associated with decreased likelihood of response to anti–TNF-α therapy (infliximab or etanercept) and increased disease activity (higher DAS-28, TNF-α and IL-1β) in people with Rheumatoid Arthritis in Iraq as compared to genotype AA; association was statistically significant after 3 months of treatment.",
+        "explanation": "Among 100 Iraqi RA patients assessed after 3 months of anti–TNF-α therapy, CARD8 rs2043211 T-allele carriers—especially TT—showed significantly higher DAS-28 and cytokines and poorer EULAR response compared with AA homozygotes.",
+        "citations": [
+          "CARD8 (rs2043211) TT genotype was more frequent in patients with higher DAS-28 (P < 0.0001) and higher TNF-α and IL-1β serum levels (P < 0.0001 for both).",
+          "Significant difference was observed in CARD8 (rs2043211) genotypes between responders and non-responders (P < 0.0001).",
+          "This assume that CARD8 (rs2043211) variant genotypes are associated with lower response to anti-TNF-α treatments in RA patients.",
+          "Higher response rate associated with dominant models of CARD8 SNP rs2043211 and NLRP3 SNP rs4612666 (P < 0.0001 and 0.001 respectively). While highly non response rate related with recessive models of these two SNPs (P < 0.0001 for both).",
+          "Comparing SNPs models reveal that lower TNF-α and IL- 1β serum level after 3 months of treatment were associated with dominant models of CARD8 (rs2043211) SNPs (P < 0.0001 for both), while higher cytokines level associated with recessive model (P < 0.0001 for both)."
+        ]
+      },
+      {
+        "variant_id": "rs10403848",
+        "sentence": "rs10403848 not mentioned in article.",
+        "explanation": "The study focused on CARD8 rs2043211 and NLRP3 rs4612666; no data were provided for rs10403848.",
+        "citations": [
+          "CARD8 (rs2043211) and NLRP3 (rs4612666) were genotyped using Agilent, AriaMx, USA, through Tri-Plex SYBR Green-based real-time PCR allelic discrimination assays.",
+          "NLRP3 SNP rs4612666 and CARD8 SNP rs2043211 were examined in RA patients and healthy controls to determine their morbid genotypes and alleles.",
+          "Second, we investigated only two NLRP3 inflammasome polymorphisms, more SNPs should be assessed."
+        ]
+      },
+      {
+        "variant_id": "rs10925026",
+        "sentence": "rs10925026 not mentioned in article.",
+        "explanation": "The study focused on CARD8 rs2043211 and NLRP3 rs4612666; no data were provided for rs10925026.",
+        "citations": [
+          "CARD8 (rs2043211) and NLRP3 (rs4612666) were genotyped using Agilent, AriaMx, USA, through Tri-Plex SYBR Green-based real-time PCR allelic discrimination assays.",
+          "NLRP3 SNP rs4612666 and CARD8 SNP rs2043211 were examined in RA patients and healthy controls to determine their morbid genotypes and alleles.",
+          "Second, we investigated only two NLRP3 inflammasome polymorphisms, more SNPs should be assessed."
+        ]
+      },
+      {
+        "variant_id": "rs10754558",
+        "sentence": "rs10754558 not mentioned in article.",
+        "explanation": "The study focused on CARD8 rs2043211 and NLRP3 rs4612666; no data were provided for rs10754558.",
+        "citations": [
+          "CARD8 (rs2043211) and NLRP3 (rs4612666) were genotyped using Agilent, AriaMx, USA, through Tri-Plex SYBR Green-based real-time PCR allelic discrimination assays.",
+          "NLRP3 SNP rs4612666 and CARD8 SNP rs2043211 were examined in RA patients and healthy controls to determine their morbid genotypes and alleles.",
+          "Second, we investigated only two NLRP3 inflammasome polymorphisms, more SNPs should be assessed."
+        ]
+      },
+      {
+        "variant_id": "rs4925648",
+        "sentence": "rs4925648 not mentioned in article.",
+        "explanation": "The study focused on CARD8 rs2043211 and NLRP3 rs4612666; no data were provided for rs4925648.",
+        "citations": [
+          "CARD8 (rs2043211) and NLRP3 (rs4612666) were genotyped using Agilent, AriaMx, USA, through Tri-Plex SYBR Green-based real-time PCR allelic discrimination assays.",
+          "NLRP3 SNP rs4612666 and CARD8 SNP rs2043211 were examined in RA patients and healthy controls to determine their morbid genotypes and alleles.",
+          "Second, we investigated only two NLRP3 inflammasome polymorphisms, more SNPs should be assessed."
+        ]
+      },
+      {
+        "variant_id": "rs10159239",
+        "sentence": "rs10159239 not mentioned in article.",
+        "explanation": "The study focused on CARD8 rs2043211 and NLRP3 rs4612666; no data were provided for rs10159239.",
+        "citations": [
+          "CARD8 (rs2043211) and NLRP3 (rs4612666) were genotyped using Agilent, AriaMx, USA, through Tri-Plex SYBR Green-based real-time PCR allelic discrimination assays.",
+          "NLRP3 SNP rs4612666 and CARD8 SNP rs2043211 were examined in RA patients and healthy controls to determine their morbid genotypes and alleles.",
+          "Second, we investigated only two NLRP3 inflammasome polymorphisms, more SNPs should be assessed."
+        ]
+      }
+    ],
+    "summary": "## Background\n- Study population: 100 Iraqi patients with rheumatoid arthritis (RA) treated with infliximab or etanercept for 3 months, and 100 healthy controls.\n- Genes/SNPs examined: CARD8 rs2043211 (A>T) and NLRP3 rs4612666 (C>T), both involved in NLRP3 inflammasome regulation.\n- Outcomes: RA susceptibility, disease activity (DAS-28), serum TNF-α and IL-1β, and response to anti–TNF-α therapy.\n\n## Key Findings\n- No RA susceptibility signal: Genotype and allele frequencies for CARD8 rs2043211 and NLRP3 rs4612666 did not differ significantly between patients and controls (P=0.17/0.059 and P=0.08/0.879, respectively).\n- Strong pharmacogenomic associations with anti–TNF-α response:\n  - CARD8 rs2043211:\n    - TT genotype associated with higher disease activity and cytokines: DAS-28 4.65±0.65; TNF-α 14.25±4.67 pg/mL; IL-1β 4.55±0.64 pg/mL (all P<0.0001 across genotypes).\n    - Markedly lower response rate: responders 1/16 (6%) for TT vs 32/37 (86%) for AA; genotype–response association P<0.0001.\n  - NLRP3 rs4612666:\n    - TT genotype associated with higher disease activity and cytokines: DAS-28 4.72±0.55; TNF-α 14.74±4.61 pg/mL; IL-1β 4.86±0.50 pg/mL (all P<0.0001 across genotypes).\n    - Markedly lower response rate: responders 1/11 (9%) for TT vs 41/47 (87%) for CC; genotype–response association P<0.0001.\n  - Genetic model analyses supported worse outcomes for T-allele–bearing genotypes at both loci (dominant/recessive models, P≤0.003), with strong odds ratios for non-response (e.g., CARD8 dominant model OR ~0.02; 95% CI ~0.002–0.16; NLRP3 models also significant).\n- Biomarker correlations: Higher TNF-α and IL-1β correlated with higher DAS-28 (r2=0.45 and 0.51; both P<0.0001) and with non-response (TNF-α 13.68 vs 4.83 pg/mL; IL-1β 3.36 vs 1.57 pg/mL; both P<0.0001).\n\n## Clinical Implications\n- CARD8 rs2043211 and NLRP3 rs4612666 T-allele genotypes (especially TT) identify RA patients at high risk for poor response to infliximab or etanercept and for persistently high inflammatory activity.\n- These variants were not associated with RA risk in this cohort, but have potential as pharmacogenomic biomarkers to guide expectations for anti–TNF-α therapy and to consider early alternative/adjunctive strategies (e.g., switching mechanism, tighter monitoring).\n- Elevated baseline or on-treatment TNF-α/IL-1β levels align with poor response and may complement genotyping in predicting outcomes.\n- Practical note: Findings are from a single-center Iraqi cohort with modest sample size; validation in larger, diverse populations is needed before routine clinical implementation."
+  }
+}

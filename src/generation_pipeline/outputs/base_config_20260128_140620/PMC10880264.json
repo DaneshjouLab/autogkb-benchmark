@@ -1,0 +1,351 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC10880264",
+    "variants": [
+      "CYP2C19*6",
+      "CYP2C19*17",
+      "CYP2D6*8",
+      "CYP2C19*1",
+      "CYP2D6*14",
+      "CYP2D6*12",
+      "rs6311",
+      "CYP2D6*9",
+      "CYP2D6*11",
+      "CYP2D6*17",
+      "CYP2D6*10",
+      "CYP2C19*5",
+      "CYP2D6*2",
+      "CYP2D6*15",
+      "CYP2D6*6",
+      "CYP2D6*3",
+      "CYP2C19*2",
+      "CYP2D6*41",
+      "CYP2D6*1",
+      "CYP2C19*8",
+      "CYP2C19*7",
+      "CYP2D6*5",
+      "CYP2D6*4",
+      "CYP2C19*3",
+      "CYP2D6*7",
+      "CYP2C19*4"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 26,
+      "from_article": 26,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "CYP2C19*6",
+        "sentence": "CYP2C19*6 mentioned in article but not studied by paper.",
+        "explanation": "The study evaluated CYP2C19 metabolizer phenotypes (not individual star allele genotypes) for associations with escitalopram pharmacokinetics and adverse events in high-risk youth; no allele-specific results were reported.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2C19 metabolizers had greater dose-normalized 24-hour area under the curve (AUC0–24; p = 0.025), trough concentrations (Ctrough; p = 0.013), and elimination half-lives (t1/2; p < 0.001)."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*17",
+        "sentence": "CYP2C19*17 mentioned in article but not studied by paper.",
+        "explanation": "Only CYP2C19 phenotype-level associations with escitalopram exposure were analyzed; no genotype- or allele-specific findings were presented.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2C19 metabolizers had greater dose-normalized 24-hour area under the curve (AUC0–24; p = 0.025), trough concentrations (Ctrough; p = 0.013), and elimination half-lives (t1/2; p < 0.001)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*8",
+        "sentence": "CYP2D6*8 mentioned in article but not studied by paper.",
+        "explanation": "The paper examined CYP2D6 metabolizer phenotypes in relation to escitalopram adverse effects, not specific star allele genotypes.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*1",
+        "sentence": "CYP2C19*1 mentioned in article but not studied by paper.",
+        "explanation": "CYP2C19 effects were assessed at the phenotype level for escitalopram pharmacokinetics and not by individual star allele genotype.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Among the 48 escitalopram-treated participants who provided samples for pharmacokinetic analysis, CYP2C19 metabolizer phenotype had a significant effect on the dose-normalized AUC0–24 (p = 0.025), Ctrough (p = 0.013), and t1/2 (p = 0.0008) of escitalopram (Fig. 1)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*14",
+        "sentence": "CYP2D6*14 mentioned in article but not studied by paper.",
+        "explanation": "CYP2D6 findings were reported by metabolizer phenotype (e.g., slower vs normal), without allele-specific analyses.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*12",
+        "sentence": "CYP2D6*12 mentioned in article but not studied by paper.",
+        "explanation": "No allele-specific CYP2D6 associations with escitalopram outcomes were provided; analyses were phenotype-based.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "rs6311",
+        "sentence": "Genotypes A/A + A/G of rs6311 are associated with increased severity of high-risk behaviors (self-injury, suicidality, and harm to others) when treated with escitalopram in youth at familial risk for bipolar I disorder with clinically significant depression and/or anxiety symptoms as compared to genotype G/G.",
+        "explanation": "In escitalopram-treated adolescents (12–17 years) at familial risk for bipolar I disorder, the study found greater increases in caregiver-reported TEASAP high-risk behavior subscale among A-allele carriers (A/A or A/G) versus G/G; p-values were not reported and the sample size was limited.",
+        "citations": [
+          "Participants with HTR2A A/A or A/G genotypes had a greater increase in TEASAP “Self-injury, Suicidality, and Harm to Others” subscale scores relative to those with HTR2A G/G genotypes (p = 0.017).",
+          "HTR2A A/A and A/G genotypes were associated with increased TEASAP “self-injury, suicidality, and harm to others” subscale scores (p = 0.017).",
+          "HTR2A genotype comparisons were made between homozygotes for the −1438G>A (rs6311) allele (G/G) and homozygotes and carriers for −1438A (A/A, A/G), based on the results of prior studies of associations between HTR2A and antidepressant-related adverse events (Kato et al., [2006](#B29); Murphy et al., [2003](#B35); Wilkie et al., [2009](#B57)).",
+          "Children and adolescents aged 12–17 years with a first-degree relative with bipolar I disorder were treated with escitalopram and monitored for adverse effects, underwent pharmacogenetic testing, and provided serum escitalopram levels.",
+          "We did not have a sufficient number of participants to further analyze differences between participants with A/A versus A/G genotypes."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*9",
+        "sentence": "CYP2D6*9 mentioned in article but not studied by paper.",
+        "explanation": "The study linked slower CYP2D6 phenotypes to more adverse behaviors on escitalopram but did not report results by specific star allele.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*11",
+        "sentence": "CYP2D6*11 mentioned in article but not studied by paper.",
+        "explanation": "Only CYP2D6 metabolizer phenotype categories were analyzed in relation to escitalopram adverse effects.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*17",
+        "sentence": "CYP2D6*17 mentioned in article but not studied by paper.",
+        "explanation": "Although slower CYP2D6 phenotypes were associated with more akathisia, disinhibition, and manic symptoms, allele-level (e.g., *17) analyses were not provided.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*10",
+        "sentence": "CYP2D6*10 mentioned in article but not studied by paper.",
+        "explanation": "CYP2D6 was examined by phenotype only; no star allele genotype-specific associations were reported.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*5",
+        "sentence": "CYP2C19*5 mentioned in article but not studied by paper.",
+        "explanation": "The study reported CYP2C19 effects on escitalopram exposure at the phenotype level, without allele-specific results.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2C19 metabolizers had greater dose-normalized 24-hour area under the curve (AUC0–24; p = 0.025), trough concentrations (Ctrough; p = 0.013), and elimination half-lives (t1/2; p < 0.001)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*2",
+        "sentence": "CYP2D6*2 mentioned in article but not studied by paper.",
+        "explanation": "Results for CYP2D6 were summarized by metabolizer phenotype rather than individual star allele genotypes.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*15",
+        "sentence": "CYP2D6*15 mentioned in article but not studied by paper.",
+        "explanation": "No allele-specific CYP2D6 associations with escitalopram adverse outcomes were presented; analyses were phenotype-based.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*6",
+        "sentence": "CYP2D6*6 mentioned in article but not studied by paper.",
+        "explanation": "The paper did not provide star allele–specific analyses for CYP2D6, focusing instead on phenotype categories.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*3",
+        "sentence": "CYP2D6*3 mentioned in article but not studied by paper.",
+        "explanation": "CYP2D6 associations with adverse effects were evaluated by metabolizer phenotype only, not by specific star alleles.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*2",
+        "sentence": "CYP2C19*2 mentioned in article but not studied by paper.",
+        "explanation": "While CYP2C19 phenotype influenced escitalopram pharmacokinetics, the study did not report allele-level associations.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2C19 metabolizers had greater dose-normalized 24-hour area under the curve (AUC0–24; p = 0.025), trough concentrations (Ctrough; p = 0.013), and elimination half-lives (t1/2; p < 0.001)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*41",
+        "sentence": "CYP2D6*41 mentioned in article but not studied by paper.",
+        "explanation": "The study associated slower CYP2D6 phenotypes with adverse behavior reports on escitalopram, but no allele-specific data were given.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*1",
+        "sentence": "CYP2D6*1 mentioned in article but not studied by paper.",
+        "explanation": "Analyses were conducted at the phenotype level for CYP2D6; star allele–specific results (e.g., *1/*1) were not presented.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*8",
+        "sentence": "CYP2C19*8 mentioned in article but not studied by paper.",
+        "explanation": "CYP2C19 associations were limited to phenotype effects on escitalopram exposure; no allele-specific analyses were reported.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2C19 metabolizers had greater dose-normalized 24-hour area under the curve (AUC0–24; p = 0.025), trough concentrations (Ctrough; p = 0.013), and elimination half-lives (t1/2; p < 0.001)."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*7",
+        "sentence": "CYP2C19*7 mentioned in article but not studied by paper.",
+        "explanation": "The paper used CPIC phenotype groupings for CYP2C19 and did not analyze outcomes by star allele genotype.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2C19 metabolizers had greater dose-normalized 24-hour area under the curve (AUC0–24; p = 0.025), trough concentrations (Ctrough; p = 0.013), and elimination half-lives (t1/2; p < 0.001)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*5",
+        "sentence": "CYP2D6*5 mentioned in article but not studied by paper.",
+        "explanation": "Although gene deletion (*5) was part of the testing panel, the study did not report allele-specific associations, only phenotype-level findings.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*4",
+        "sentence": "CYP2D6*4 mentioned in article but not studied by paper.",
+        "explanation": "CYP2D6-related results (e.g., increased akathisia/disinhibition/mania with slower metabolism) were not broken down by star allele genotype.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*3",
+        "sentence": "CYP2C19*3 mentioned in article but not studied by paper.",
+        "explanation": "The study reported CYP2C19 phenotype effects on escitalopram pharmacokinetics without allele-specific associations.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2C19 metabolizers had greater dose-normalized 24-hour area under the curve (AUC0–24; p = 0.025), trough concentrations (Ctrough; p = 0.013), and elimination half-lives (t1/2; p < 0.001)."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*7",
+        "sentence": "CYP2D6*7 mentioned in article but not studied by paper.",
+        "explanation": "Only metabolizer phenotype categories for CYP2D6 were analyzed; no star allele–specific results were provided.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2D6 metabolizers had increased TEASAP akathisia (p = 0.015) scores.",
+          "CYP2D6 phenotype was not significantly associated with any pharmacokinetic parameter."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*4",
+        "sentence": "CYP2C19*4 mentioned in article but not studied by paper.",
+        "explanation": "CYP2C19 was analyzed at the phenotype level for escitalopram exposure and adverse events; individual star allele genotypes were not reported.",
+        "citations": [
+          "We used CPIC guidelines (Caudle et al., [2017](#B9); Hicks et al., [2015](#B23)) to assign CYP2C19 and CYP2D6 metabolizer phenotypes based on the alleles detected (CYP2C19: *1, *2,*3, *4, *5, *6, *7, *8, *17; CYP2D6: *1, *2, *2A, *3, *4, *5, *6, *7, *8, *9, *10, *11, *12, *14, *15, *17, *41, gene duplication).",
+          "Because the CPIC categories used for analysis are metabolizer phenotypes (e.g., participants with normal rates of CYP2C19 metabolism), and not discrete genotypes (e.g., participants with CYP2C19 *1/*1* alleles), CYP metabolizer groups are referred to throughout this study as phenotypic (rather than genotypic) groups.",
+          "Slower CYP2C19 metabolizers had greater dose-normalized 24-hour area under the curve (AUC0–24; p = 0.025), trough concentrations (Ctrough; p = 0.013), and elimination half-lives (t1/2; p < 0.001)."
+        ]
+      }
+    ],
+    "summary": "## Background\nThis preliminary study evaluated whether common pharmacogenetic variants influence escitalopram pharmacokinetics and adverse effects in 66 adolescents (12–17 years) with depression and/or anxiety who have a first-degree relative with bipolar I disorder. Genotyping focused on CYP2C19 and CYP2D6 (drug metabolism), and HTR2A rs6311 and SLC6A4 (serotonin pathway). Forty-eight participants contributed pharmacokinetic (PK) data.\n\n## Key Findings\n- CYP2C19 and escitalopram exposure:\n  - Slower CYP2C19 metabolizers had higher dose-normalized exposure and slower clearance: increased AUC0–24 (p = 0.025), higher trough concentrations (p = 0.013), and longer half-life (p < 0.001); Cmax trended higher (p = 0.057).\n  - CYP2C19 phenotype was not associated with clinician- or caregiver-reported adverse events (hyperarousal, PAERS, TEASAP subscales).\n\n- CYP2D6 and adverse events:\n  - CYP2D6 phenotype did not affect escitalopram PK.\n  - Slower CYP2D6 metabolizers showed greater activation-type adverse symptoms:\n    - Higher TEASAP akathisia/hyperkinesis/somatic anxiety scores (p = 0.015).\n    - In aggregate analyses, higher disinhibition/impulsivity (mean 3.0 vs 1.1; p = 0.02), with trends toward higher mania (p = 0.07) and akathisia/hyperkinesis/somatic anxiety (p = 0.08).\n  - No association with hyperarousal events or PAERS maxima.\n\n- HTR2A rs6311 (−1438G>A) and risk behaviors:\n  - Carriers of the A allele (A/A or A/G) had greater increases in TEASAP “self-injury, suicidality, and harm to others” vs G/G (p = 0.017). No differences on other subscales, PAERS, or hyperarousal.\n\n- SLC6A4 (5-HTTLPR):\n  - No associations with adverse events in this cohort.\n\n- Escitalopram exposure vs adverse events:\n  - Non–dose-normalized Cmax and AUC0–24 were not significantly associated with hyperarousal or TEASAP changes.\n\n## Clinical Implications\n- Dose optimization:\n  - Findings support existing CPIC guidance that CYP2C19 phenotype influences escitalopram exposure; consider CYP2C19-guided dosing to achieve target concentrations in youth.\n  - CYP2D6 does not appear to influence escitalopram PK; no dosing changes are supported by these data.\n\n- Safety monitoring:\n  - Slower CYP2D6 metabolizers may have higher risk of activation-like adverse effects (akathisia, disinhibition/impulsivity). Consider closer monitoring for restlessness, motor agitation, and behavioral disinhibition after initiation and dose increases.\n  - HTR2A rs6311 A-allele carriers may be at increased risk for self-harm/suicidality-related behaviors; ensure enhanced safety surveillance and counseling in high-risk youth starting escitalopram.\n\n- Implementation caveats:\n  - Results are hypothesis-generating (small sample; few poor metabolizers; no correction for multiple comparisons) and conducted in youth at familial risk for bipolar disorder, which may limit generalizability.\n  - Current evidence continues to support CYP2C19-guided dosing for SSRIs; routine therapy changes based solely on CYP2D6 or HTR2A genotypes are not yet recommended, but these markers may inform risk stratification and monitoring plans. Larger studies are needed to confirm these associations."
+  }
+}

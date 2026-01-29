@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC12331468",
+    "variants": [
+      "rs1044642",
+      "rs1801131",
+      "rs1801265",
+      "rs6737679",
+      "rs1045642",
+      "DPYD*9",
+      "DPYD*2",
+      "rs11280056",
+      "rs4544694",
+      "DPYD*13",
+      "rs717620",
+      "rs2231142",
+      "DPYD*5",
+      "rs1695",
+      "rs11479",
+      "rs3918290",
+      "rs3742106",
+      "rs1128503",
+      "rs1801159",
+      "rs56038477",
+      "rs45445694",
+      "rs67376798",
+      "rs55886062",
+      "rs13181",
+      "rs16430",
+      "rs1801019",
+      "rs1665",
+      "rs1801133",
+      "rs180131",
+      "rs9561778"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 30,
+      "from_article": 30,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "rs1044642",
+        "sentence": "rs1044642 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "The study’s genotyped variants and results do not include rs1044642.",
+        "citations": [
+          "These variants included: TYMS (rs4544694 and rs11280056), TYMP (rs11479), DPYD (rs6737679 and rs1801265), GSTP1 (rs1695), MTHFR (rs1801131 and rs1801133), ERCC2 (rs13181), ABCB1 (rs1045642 and rs1128503), ABCC2 (rs717620), ABCC4 (rs9561778), and ABCG2 (rs2231142).",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study.",
+          "However, it is important to note that the ABCB1 variant was not statistically significant within the model."
+        ]
+      },
+      {
+        "variant_id": "rs1801131",
+        "sentence": "rs1801131 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "The paper discussed MTHFR rs1801133 but did not mention rs1801131 (A1298C).",
+        "citations": [
+          "Additional polymorphisms have been investigated for their potential influence on FP toxicity and efficacy; however, their impact is less pronounced, and routine genotyping for these variants is not currently recommended in clinical practice.",
+          "These include DPYD polymorphisms such as DPYD9 (c.85T>C - rs1801265), and DPYD5 (rs1801159), polymorphisms affecting the gene encoding 5-FU’s therapeutic target thymidylate synthase (TYMS) 5’-UTR VTNR 2R and 3R (rs45445694) and 3’-UTR + 1494 del6 (rs16430) variants, and polymorphisms affecting the methylenetetrahydrofolate reductase gene (MTHFR) variants c.677C>T (rs1801133) and c.1298A>C (rs1801131) (14–17).",
+          "Conversely, the C allele of the MTHFR rs1801131 polymorphism was correlated with a lower risk of pain, but a higher risk of nervous system disorders in chemotherapy patients."
+        ]
+      },
+      {
+        "variant_id": "rs1801265",
+        "sentence": "Allele C of rs1801265 is associated with increased risk of neuropathy during 5-FU–based chemotherapy in people with advanced colorectal cancer in Chile as compared to allele T.",
+        "explanation": "In this retrospective nested case-control study of 82 advanced CRC patients, the authors report that the DPYD rs1801265 C allele was identified as a risk factor for neuropathies using logistic regression.",
+        "citations": [
+          "The C allele of DPYD (rs1801265) was linked to a higher neuropathy risk (OR = 4.58; p = 0.05).",
+          "Further analysis of ungrouped ADRs indicated a higher risk of neuropathy in patients carrying the C allele of the DPYD rs1801265 polymorphism (Supplementary Table 3, codominant model T/C genotype OR = 30.0, p-value = 0.0049, dominant model OR = 4.583, p-value = 0.05).",
+          "In this study, we included the DPYD genetic variant rs1801265, which, unlike other DPYD variants, is present in 26% of the world population (30).",
+          "The C allele was identified as a risk factor for the development of neuropathies."
+        ]
+      },
+      {
+        "variant_id": "rs6737679",
+        "sentence": "rs6737679 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "This variant does not appear in the study’s methods or results.",
+        "citations": [
+          "Certain DPYD polymorphisms (DPYD2A - rs3918290, c.1679T>G - rs55886062, c.2846A>T - rs67376798 or c.1236G>A - rs56038477) result in a complete loss of DPD function and are strongly associated with severe FP-related toxicity.",
+          "Results of genotype frequencies are shown in Table 2.",
+          "We initially considered analyse of DPYD SNPs c.1905 + 1G>A (DPYD2) (rs3918290) and c.1679T>G (DPYD13) (rs55886062)."
+        ]
+      },
+      {
+        "variant_id": "rs1045642",
+        "sentence": "rs1045642 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "Although an ABCB1 variant was included in a multivariate model (not significant), the specific rsID (rs1045642) was not named.",
+        "citations": [
+          "These variants included: TYMS (rs4544694 and rs11280056), TYMP (rs11479), DPYD (rs6737679 and rs1801265), GSTP1 (rs1695), MTHFR (rs1801131 and rs1801133), ERCC2 (rs13181), ABCB1 (rs1045642 and rs1128503), ABCC2 (rs717620), ABCC4 (rs9561778), and ABCG2 (rs2231142).",
+          "However, it is important to note that the ABCB1 variant was not statistically significant within the model.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "DPYD*9",
+        "sentence": "DPYD*9 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "The paper focused on DPYD rs1801265 and referenced other DPYD variants broadly without specifying star alleles.",
+        "citations": [
+          "These include DPYD polymorphisms such as DPYD9 (c.85T>C - rs1801265), and DPYD5 (rs1801159), polymorphisms affecting the gene encoding 5-FU’s therapeutic target thymidylate synthase (TYMS) 5’-UTR VTNR 2R and 3R (rs45445694) and 3’-UTR + 1494 del6 (rs16430) variants, and polymorphisms affecting the methylenetetrahydrofolate reductase gene (MTHFR) variants c.677C>T (rs1801133) and c.1298A>C (rs1801131) (14–17).",
+          "DPYD c.85T>C (DPYD*9) (rs1801265) | T/T | T/C | C/C.",
+          "Further analysis of ungrouped ADRs indicated a higher risk of neuropathy in patients carrying the C allele of the DPYD rs1801265 polymorphism (Supplementary Table 3, codominant model T/C genotype OR = 30.0, p-value = 0.0049, dominant model OR = 4.583, p-value = 0.05)."
+        ]
+      },
+      {
+        "variant_id": "DPYD*2",
+        "sentence": "DPYD*2 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "The study did not list or analyze DPYD*2 specifically.",
+        "citations": [
+          "We initially considered analyse of DPYD SNPs c.1905 + 1G>A (DPYD2) (rs3918290) and c.1679T>G (DPYD13) (rs55886062).",
+          "However, genotyping of both polymorphisms revealed no variability (DPYD2 G/G genotype and DPYD13 genotype T/T for all patients), and therefore both were omitted from the statistical analyses.",
+          "Results of genotype frequencies are shown in Table 2."
+        ]
+      },
+      {
+        "variant_id": "rs11280056",
+        "sentence": "Allele 6-bp deletion of rs11280056 is associated with decreased risk of gastrointestinal and hematological adverse reactions during 5-FU–based chemotherapy in people with advanced colorectal cancer in Chile as compared to the insertion allele.",
+        "explanation": "The authors state that the TYMS 3′UTR 6-bp deletion (rs11280056) was protective against GI and hematological ADRs in their 82-patient cohort.",
+        "citations": [
+          "The TYMS deletion genotype (rs11280056) conferred protection against hematological adverse reactions (OR = 0.029; p = 0.001).",
+          "We identified a protective correlation between the 6bp deletion of the TYMS 3’UTR region (rs11280056) and a lower risk of gastrointestinal and hematological disorders in chemotherapy patients.",
+          "When analyzing the risk of grouped ADR while considering only severe reactions (Grade III-IV), we found that only the TYMS 3’UTR 6bp deletion (rs11280056) was the only polymorphism associated with a lower risk of severe hematological disorders (dominant model OR = 0,098, CI 95% 0.013 – 0.441, p-value =0.005)."
+        ]
+      },
+      {
+        "variant_id": "rs4544694",
+        "sentence": "rs4544694 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "This rsID is absent from the described genotyping panel and results.",
+        "citations": [
+          "These variants included: TYMS (rs4544694 and rs11280056), TYMP (rs11479), DPYD (rs6737679 and rs1801265), GSTP1 (rs1695), MTHFR (rs1801131 and rs1801133), ERCC2 (rs13181), ABCB1 (rs1045642 and rs1128503), ABCC2 (rs717620), ABCC4 (rs9561778), and ABCG2 (rs2231142).",
+          "Results of genotype frequencies are shown in Table 2.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "DPYD*13",
+        "sentence": "DPYD*13 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "The paper referenced DPYD variants generally but did not specify DPYD*13.",
+        "citations": [
+          "We initially considered analyse of DPYD SNPs c.1905 + 1G>A (DPYD2) (rs3918290) and c.1679T>G (DPYD13) (rs55886062).",
+          "However, genotyping of both polymorphisms revealed no variability (DPYD2 G/G genotype and DPYD13 genotype T/T for all patients), and therefore both were omitted from the statistical analyses.",
+          "Results of genotype frequencies are shown in Table 2."
+        ]
+      },
+      {
+        "variant_id": "rs717620",
+        "sentence": "rs717620 mentioned in article but not studied by paper.",
+        "explanation": "The discussion cites another Chilean study linking ABCC2 rs717620 to 5-FU toxicities, while noting it was not included in this cohort’s genotyping.",
+        "citations": [
+          "Similarly, another Chilean study demonstrated that certain DPYD genetic variants, not included in this study, are associated with 5-FU toxicities, either in combination with L-OHP individually or alongside UMPS (rs1801019) and ABCC2 (rs717620) genetic variants (29).",
+          "These variants included: TYMS (rs4544694 and rs11280056), TYMP (rs11479), DPYD (rs6737679 and rs1801265), GSTP1 (rs1695), MTHFR (rs1801131 and rs1801133), ERCC2 (rs13181), ABCB1 (rs1045642 and rs1128503), ABCC2 (rs717620), ABCC4 (rs9561778), and ABCG2 (rs2231142).",
+          "Results of genotype frequencies are shown in Table 2."
+        ]
+      },
+      {
+        "variant_id": "rs2231142",
+        "sentence": "rs2231142 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "ABCG2 Q141K (rs2231142) is not listed among the variants analyzed.",
+        "citations": [
+          "These variants included: TYMS (rs4544694 and rs11280056), TYMP (rs11479), DPYD (rs6737679 and rs1801265), GSTP1 (rs1695), MTHFR (rs1801131 and rs1801133), ERCC2 (rs13181), ABCB1 (rs1045642 and rs1128503), ABCC2 (rs717620), ABCC4 (rs9561778), and ABCG2 (rs2231142).",
+          "Results of genotype frequencies are shown in Table 2.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "DPYD*5",
+        "sentence": "DPYD*5 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "No star-allele designation for DPYD*5 appears in the study.",
+        "citations": [
+          "These include DPYD polymorphisms such as DPYD9 (c.85T>C - rs1801265), and DPYD5 (rs1801159), polymorphisms affecting the gene encoding 5-FU’s therapeutic target thymidylate synthase (TYMS) 5’-UTR VTNR 2R and 3R (rs45445694) and 3’-UTR + 1494 del6 (rs16430) variants, and polymorphisms affecting the methylenetetrahydrofolate reductase gene (MTHFR) variants c.677C>T (rs1801133) and c.1298A>C (rs1801131) (14–17).",
+          "Results of genotype frequencies are shown in Table 2.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "rs1695",
+        "sentence": "Allele A of rs1695 is associated with increased risk of hematological and nervous system adverse reactions during 5-FU–based chemotherapy in people with advanced colorectal cancer in Chile as compared to allele G.",
+        "explanation": "The study reports that GSTP1 rs1695 A allele carriers had higher risks of hematological and nervous system ADRs based on logistic regression in 82 patients.",
+        "citations": [
+          "The G allele of the GSTP1 rs1695 polymorphism was correlated with a lower risk of hematological and nervous system disorders in treated patients, including a reduced risk of neuropathy.",
+          "This was observed through the analysis of individual ADR using univariate logistic regression without CTCAE v5.0 grouping (Supplementary Table 3, OR = 0.01, p-value = 0.008).",
+          "Our findings indicate that the A allele is associated with an increased risk of hematological and nervous system ADR, aligning with previous studies (45)."
+        ]
+      },
+      {
+        "variant_id": "rs11479",
+        "sentence": "Allele T of rs11479 is associated with increased risk of pain during 5-FU–based chemotherapy in people with advanced colorectal cancer in Chile as compared to allele C.",
+        "explanation": "The authors observed that the TYMP rs11479 missense variant’s T allele was linked to pain development in this cohort.",
+        "citations": [
+          "Additionally, we found a direct correlation between the T allele of the TYMP rs11479 polymorphism and an increased risk of pain in chemotherapy patients.",
+          "In this study it was observed that the T allele was associated with pain development.",
+          "These variants included: TYMP (rs11479)."
+        ]
+      },
+      {
+        "variant_id": "rs3918290",
+        "sentence": "rs3918290 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "The classic DPYD*2A (rs3918290) variant was not specified among the analyzed variants.",
+        "citations": [
+          "Certain DPYD polymorphisms (DPYD2A - rs3918290, c.1679T>G - rs55886062, c.2846A>T - rs67376798 or c.1236G>A - rs56038477) result in a complete loss of DPD function and are strongly associated with severe FP-related toxicity.",
+          "We initially considered analyse of DPYD SNPs c.1905 + 1G>A (DPYD2) (rs3918290) and c.1679T>G (DPYD13) (rs55886062).",
+          "However, genotyping of both polymorphisms revealed no variability (DPYD2 G/G genotype and DPYD13 genotype T/T for all patients), and therefore both were omitted from the statistical analyses."
+        ]
+      },
+      {
+        "variant_id": "rs3742106",
+        "sentence": "rs3742106 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "This variant is not listed in the methods or results.",
+        "citations": [
+          "These include DPYD polymorphisms such as DPYD9 (c.85T>C - rs1801265), and DPYD5 (rs1801159), polymorphisms affecting the gene encoding 5-FU’s therapeutic target thymidylate synthase (TYMS) 5’-UTR VTNR 2R and 3R (rs45445694) and 3’-UTR + 1494 del6 (rs16430) variants, and polymorphisms affecting the methylenetetrahydrofolate reductase gene (MTHFR) variants c.677C>T (rs1801133) and c.1298A>C (rs1801131) (14–17).",
+          "Results of genotype frequencies are shown in Table 2.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "rs1128503",
+        "sentence": "rs1128503 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "Although an ABCB1 variant was explored in a multivariate model (not significant), rs1128503 was not specifically named.",
+        "citations": [
+          "These variants included: TYMS (rs4544694 and rs11280056), TYMP (rs11479), DPYD (rs6737679 and rs1801265), GSTP1 (rs1695), MTHFR (rs1801131 and rs1801133), ERCC2 (rs13181), ABCB1 (rs1045642 and rs1128503), ABCC2 (rs717620), ABCC4 (rs9561778), and ABCG2 (rs2231142).",
+          "Additionally, patients carrying the C/C genotype of the ABCB1 rs1128503 polymorphism exhibited a higher risk of pain.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "rs1801159",
+        "sentence": "rs1801159 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "This DPYD variant was not presented among the genotyped variants.",
+        "citations": [
+          "These include DPYD polymorphisms such as DPYD9 (c.85T>C - rs1801265), and DPYD5 (rs1801159), polymorphisms affecting the gene encoding 5-FU’s therapeutic target thymidylate synthase (TYMS) 5’-UTR VTNR 2R and 3R (rs45445694) and 3’-UTR + 1494 del6 (rs16430) variants, and polymorphisms affecting the methylenetetrahydrofolate reductase gene (MTHFR) variants c.677C>T (rs1801133) and c.1298A>C (rs1801131) (14–17).",
+          "Results of genotype frequencies are shown in Table 2.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "rs56038477",
+        "sentence": "rs56038477 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "This rsID does not appear in the study’s variant list.",
+        "citations": [
+          "Certain DPYD polymorphisms (DPYD2A - rs3918290, c.1679T>G - rs55886062, c.2846A>T - rs67376798 or c.1236G>A - rs56038477) result in a complete loss of DPD function and are strongly associated with severe FP-related toxicity.",
+          "Results of genotype frequencies are shown in Table 2.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "rs45445694",
+        "sentence": "rs45445694 was studied but no specific association with adverse reactions to 5-FU–based chemotherapy was reported in people with advanced colorectal cancer in Chile.",
+        "explanation": "The methods detail TYMS TSER (rs45445694) genotyping, but the results do not report a significant association; prior small studies cited linked it to hematological toxicity severity.",
+        "citations": [
+          "On the other hand, the 3R genotype of TYMS 5’UTR (rs45445694) is associated as a risk factor for skin and subcutaneous tissue disorders (OR = 6.40; p = 0.029).",
+          "Lastly, the 3R/3R genotype of the TYMS rs45445694 polymorphism was associated with an increased risk of skin and subcutaneous tissue disorders."
+        ]
+      },
+      {
+        "variant_id": "rs67376798",
+        "sentence": "rs67376798 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "The DPYD c.2846A>T variant was not listed in this study.",
+        "citations": [
+          "Certain DPYD polymorphisms (DPYD2A - rs3918290, c.1679T>G - rs55886062, c.2846A>T - rs67376798 or c.1236G>A - rs56038477) result in a complete loss of DPD function and are strongly associated with severe FP-related toxicity.",
+          "Results of genotype frequencies are shown in Table 2.",
+          "We initially considered analyse of DPYD SNPs c.1905 + 1G>A (DPYD2) (rs3918290) and c.1679T>G (DPYD13) (rs55886062)."
+        ]
+      },
+      {
+        "variant_id": "rs55886062",
+        "sentence": "rs55886062 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "DPYD*13 (rs55886062) was not specified in the cohort analysis.",
+        "citations": [
+          "We initially considered analyse of DPYD SNPs c.1905 + 1G>A (DPYD2) (rs3918290) and c.1679T>G (DPYD13) (rs55886062).",
+          "However, genotyping of both polymorphisms revealed no variability (DPYD2 G/G genotype and DPYD13 genotype T/T for all patients), and therefore both were omitted from the statistical analyses.",
+          "Results of genotype frequencies are shown in Table 2."
+        ]
+      },
+      {
+        "variant_id": "rs13181",
+        "sentence": "Genotype CC of rs13181 is associated with decreased risk of gastric adverse reactions during 5-FU–based chemotherapy in people with advanced colorectal cancer in Chile as compared to genotype AA.",
+        "explanation": "The paper reports ERCC2 rs13181 CC as a protective factor against gastric ADRs in the 82-patient cohort.",
+        "citations": [
+          "Additionally, the C/C genotype of the ERCC2 rs13181 polymorphism was correlated with a lower risk of gastrointestinal disorders in our study population.",
+          "In this study we observed that the CC genotype was a protective factor against gastric ADR.",
+          "Table 4 Caption: Univariate analysis of the correlation between the risk of ADRs and genotypes."
+        ]
+      },
+      {
+        "variant_id": "rs16430",
+        "sentence": "rs16430 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "The study referred to a TYMS 3′UTR 6-bp polymorphism as rs11280056, not rs16430.",
+        "citations": [
+          "These include DPYD polymorphisms such as DPYD9 (c.85T>C - rs1801265), and DPYD5 (rs1801159), polymorphisms affecting the gene encoding 5-FU’s therapeutic target thymidylate synthase (TYMS) 5’-UTR VTNR 2R and 3R (rs45445694) and 3’-UTR + 1494 del6 (rs16430) variants, and polymorphisms affecting the methylenetetrahydrofolate reductase gene (MTHFR) variants c.677C>T (rs1801133) and c.1298A>C (rs1801131) (14–17).",
+          "Results of genotype frequencies are shown in Table 2.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "rs1801019",
+        "sentence": "rs1801019 mentioned in article but not studied by paper.",
+        "explanation": "The discussion references another Chilean study where UMPS rs1801019 contributed to 5-FU toxicities; it was not included in this cohort’s genotyping.",
+        "citations": [
+          "Similarly, another Chilean study demonstrated that certain DPYD genetic variants, not included in this study, are associated with 5-FU toxicities, either in combination with L-OHP individually or alongside UMPS (rs1801019) and ABCC2 (rs717620) genetic variants (29).",
+          "These variants included: TYMS (rs4544694 and rs11280056), TYMP (rs11479), DPYD (rs6737679 and rs1801265), GSTP1 (rs1695), MTHFR (rs1801131 and rs1801133), ERCC2 (rs13181), ABCB1 (rs1045642 and rs1128503), ABCC2 (rs717620), ABCC4 (rs9561778), and ABCG2 (rs2231142).",
+          "Results of genotype frequencies are shown in Table 2."
+        ]
+      },
+      {
+        "variant_id": "rs1665",
+        "sentence": "rs1665 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "This rsID is absent from the methods and results.",
+        "citations": [
+          "On the other hand, L-OHP is an alkylating agent primarily eliminated through glutathione conjugation, a process mediated by the glutathione S-transferase (GST) family of enzymes (Figure 2).",
+          "A genetic variant of the GST enzyme GSTP1 (rs1665 A>G) and the deletion of GSTM1 have been linked to peripheral neuropathy in patients undergoing modified FOLFOX6 treatment (18).",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "rs1801133",
+        "sentence": "Allele C of rs1801133 is associated with increased risk of nervous system adverse reactions and decreased risk of pain during 5-FU–based chemotherapy in people with advanced colorectal cancer in Chile as compared to allele G.",
+        "explanation": "The study found that MTHFR rs1801133 C allele increased nervous system ADR risk while acting as a protective factor against pain in the 82-patient cohort.",
+        "citations": [
+          "The MTHFR rs1801133 (c.788C>G) genetic variant induces a protein conformational change, reducing enzyme activity, which may contribute to ADR risk in this treatment (41).",
+          "In our study, the C allele was associated with an increased risk of nervous system ADR, yet it also acted as a protective factor against pain development.",
+          "Past research has only linked this variant to asthenia (42), mucositis, diarrhea and neutropenia (43)."
+        ]
+      },
+      {
+        "variant_id": "rs180131",
+        "sentence": "rs180131 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "This rsID does not appear in the study.",
+        "citations": [
+          "These variants included: TYMS (rs4544694 and rs11280056), TYMP (rs11479), DPYD (rs6737679 and rs1801265), GSTP1 (rs1695), MTHFR (rs1801131 and rs1801133), ERCC2 (rs13181), ABCB1 (rs1045642 and rs1128503), ABCC2 (rs717620), ABCC4 (rs9561778), and ABCG2 (rs2231142).",
+          "Results of genotype frequencies are shown in Table 2.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      },
+      {
+        "variant_id": "rs9561778",
+        "sentence": "rs9561778 was not mentioned in the article; no pharmacogenetic association was reported.",
+        "explanation": "This variant is not listed among those analyzed or discussed.",
+        "citations": [
+          "These variants included: TYMS (rs4544694 and rs11280056), TYMP (rs11479), DPYD (rs6737679 and rs1801265), GSTP1 (rs1695), MTHFR (rs1801131 and rs1801133), ERCC2 (rs13181), ABCB1 (rs1045642 and rs1128503), ABCC2 (rs717620), ABCC4 (rs9561778), and ABCG2 (rs2231142).",
+          "Results of genotype frequencies are shown in Table 2.",
+          "No correlation was found between the risk of grouped and ungrouped ADR, and the other polymorphisms considered in this study."
+        ]
+      }
+    ],
+    "summary": "## Background\nThis retrospective nested case–control study evaluated 82 Chilean patients with advanced colorectal cancer treated with 5-fluorouracil (5-FU)-based regimens (often with oxaliplatin). Sixteen variants across TYMS, TYMP, DPYD, GSTP1, MTHFR, ERCC2, ABCB1, ABCC2, ABCC4, and ABCG2 were genotyped to identify associations with chemotherapy adverse drug reactions (ADRs) and to build preliminary predictive models.\n\n## Key Findings\n- DPYD\n  - rs1801265 (c.85T>C; DPYD*9): C allele associated with higher neuropathy risk (dominant model OR 4.58; p=0.05; codominant T/C OR 30.0; p=0.0049). Classic DPYD loss-of-function variants (rs3918290, rs55886062) showed no variability in this cohort.\n- GSTP1\n  - rs1695 (c.313A>G): G allele was protective against neuropathy (OR 0.147; p=0.012) and hematological toxicity (dominant OR 0.298; p=0.001; recessive OR 0.157; p=0.0005), but increased mucositis risk (OR 2.27; p=0.036).\n- TYMS\n  - rs11280056 (3′UTR 6-bp del): Deletion genotype reduced gastrointestinal and hematologic ADRs (DEL/DEL OR 0.029 for hematologic; p=0.001; dominant OR 0.107; p<0.0001) and lowered risk of severe hematologic toxicity (OR 0.098; p=0.005).\n  - rs45445694 (5′UTR TSER): 3R/3R genotype increased skin/subcutaneous toxicity (OR 6.40; p=0.029).\n- ERCC2\n  - rs13181 (c.2251A>C): CC genotype associated with lower gastrointestinal toxicity (OR 0.100; p=0.045); in a multivariate model, CC genotype increased pain risk (OR 6.27; p=0.034).\n- MTHFR\n  - rs1801131 (A1298C): C allele reduced pain risk (dominant OR 0.375; p=0.048; A/C OR 0.355; p=0.042) but increased risk of nervous system disorders (dominant OR 5.81; p=0.035).\n- ABCB1 and TYMP\n  - ABCB1 rs1128503: C/C genotype associated with higher pain risk (OR 4.20; p=0.049).\n  - TYMP rs11479: T allele increased pain risk; in an anemia model, T/T strongly predicted anemia (OR 23.76; p=0.038).\n- Predictive models\n  - Anemia: TYMP rs11479 (T/T) + ABCB1 rs1045642 (T/T, trend) yielded a model with AUC ~0.71; p=0.027.\n  - Pain: ERCC2 rs13181 (C/C) + MTHFR rs1801131 (A/C+C/C) produced AUC ~0.75; p=0.01.\n\n## Clinical Implications\n- Preemptive DPYD testing remains essential; although classic loss-of-function alleles were rare here, the common DPYD rs1801265 C allele may flag higher neuropathy risk, especially relevant with oxaliplatin-containing regimens.\n- GSTP1 rs1695 can help anticipate trade-offs: carriers of G may need closer mucositis monitoring but could be at lower risk for neuropathy and hematologic toxicity.\n- TYMS variants may guide safety expectations: the 3′UTR 6-bp deletion signals lower hematologic (including severe) and GI toxicity risk, while 5′UTR 3R/3R suggests higher skin toxicity risk.\n- Multigene signals for pain and anemia (ERCC2, MTHFR, TYMP, ABCB1) show moderate predictive performance and could inform supportive care and monitoring, but require external validation before routine use.\n- Overall, these findings support integrating pharmacogenetics with clinical factors to personalize 5-FU-based therapy safety in Chilean CRC patients; larger, prospective studies are needed to confirm and operationalize these associations for dosing and toxicity prevention."
+  }
+}

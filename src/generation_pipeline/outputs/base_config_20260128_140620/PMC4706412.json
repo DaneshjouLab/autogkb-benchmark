@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC4706412",
+    "variants": [
+      "CYP4F2*3",
+      "CYP2C9*2",
+      "CYP2C9*8",
+      "VKORC1*2",
+      "rs56165452",
+      "rs2234922",
+      "CYP2C9*1",
+      "rs9923231",
+      "rs4653436",
+      "rs2108622",
+      "CYP2C9*5",
+      "CYP2C9*6",
+      "VKORC1*1",
+      "rs1051740",
+      "rs2292566",
+      "CYP4F2*1",
+      "CYP2C9*3",
+      "rs9332094",
+      "rs104894540",
+      "CYP2C9*11",
+      "CYP2C9*4",
+      "rs28371685",
+      "rs12714145",
+      "rs1800566",
+      "CYP4F2*2",
+      "rs2260863"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": true,
+      "supplement_variants": [
+        "rs4653436",
+        "VKORC1*1",
+        "VKORC1*2",
+        "rs2234922",
+        "rs1051740",
+        "rs12714145",
+        "rs2292566",
+        "rs2260863"
+      ],
+      "total_extracted": 26,
+      "from_article": 18,
+      "from_supplement": 8
+    },
+    "associations": [
+      {
+        "variant_id": "CYP4F2*3",
+        "sentence": "Genotypes *1/*3 + *3/*3 of CYP4F2*3 are not associated with warfarin dose in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype *1/*1 (p > 0.05).",
+        "explanation": "In the derivation cohort (n = 255), CYP4F2 was tested and coded by allele count, but it was not retained as an independent predictor in the final dose-refinement model after stepwise regression, indicating no significant effect on therapeutic dose.",
+        "citations": [
+          "Notably, CYP4F2*3 and NQO1*2 variants were independently associated with a 17% and 10% increase of the dose per variant allele, respectively; whereas, the admixed status of the admixture index decreases the dose by 7%.",
+          "The respective regression coefficients, p-values, the percent of effect on dose requirements and the contribution to explain observed variability that is accounted for by the model, as measured by the partial R^2 statistics, are presented in Table 3 for all the variables that were entered into the regression model.",
+          "Variables were included in the final linear regression model if they were significantly (p<0.05) associated with the daily warfarin dose or were marginally significant (0.05 ≤ p ≤ 0.20) with strong biological plausibility."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*2",
+        "sentence": "Genotypes *1/*2 + *2/*2 of CYP2C9*2 are associated with decreased dose of warfarin in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype *1/*1 (p < 0.05).",
+        "explanation": "The model used a composite CYP2C9 loss-of-function carrier status (including *2) and found CYP2C9 variants to be significant predictors of lower therapeutic dose after adjustment (p < 0.05) in the 255-patient cohort.",
+        "citations": [
+          "The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.",
+          "After adjusting for INR at 3rd day and admixture, clinical polymorphisms on major warfarin-related pharmacogenes (CYP2C9 and VKORC1) remained significant predictors of effective dose (p<0.05).",
+          "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in Fig 2): WarfarinDose(mgday)=[3.2463−(0.0181∙Age)+(0.4246∙D1)+(0.5157∙tINR)−(1.419∙INRD3)−(0.2450∙CYP2C9*2)−(0.5442∙CYP2C9*3)−(1.00∙CYP2C9*8)−(0.3793∙VKORC1GA)−(0.8958∙VKORC1AA)+(0.5602∙CYP4F2*3)+(0.3457∙NQO1*2)−(0.7948∙Amiodarone)−(0.0932∙Admixture)]."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*8",
+        "sentence": "Genotypes *1/*8 + *8/*8 of CYP2C9*8 are associated with decreased dose of warfarin in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype *1/*1 (p < 0.05).",
+        "explanation": "The study specifically genotyped the African-related CYP2C9*8 (c.449G>A; p.R150H) and included it within the composite CYP2C9 loss-of-function predictor that remained significant for dose (p < 0.05).",
+        "citations": [
+          "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in Fig 2): WarfarinDose(mgday)=[3.2463−(0.0181∙Age)+(0.4246∙D1)+(0.5157∙tINR)−(1.419∙INRD3)−(0.2450∙CYP2C9*2)−(0.5442∙CYP2C9*3)−(1.00∙CYP2C9*8)−(0.3793∙VKORC1GA)−(0.8958∙VKORC1AA)+(0.5602∙CYP4F2*3)+(0.3457∙NQO1*2)−(0.7948∙Amiodarone)−(0.0932∙Admixture)].",
+          "The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.",
+          "The African-related rare variant CYP2C9*8 (c.449G>A; p.R150H) and two other polymorphisms in the promoter region of the gene (i.e., c.-1188T>C and c.-1766T>C), which are not included in the commercial DMETTM plus panel, were individually detected by their corresponding TaqMan® SNP Genotyping Custom Assay Reagent kits for Allelic Discrimination (Life Technologies, Carlsbad, CA, USA) following manufacturer’s instructions."
+        ]
+      },
+      {
+        "variant_id": "VKORC1*2",
+        "sentence": "VKORC1*2 not mentioned in article.",
+        "explanation": "The paper evaluated VKORC1 using the -1639G>A (rs9923231) genotype; VKORC1 star haplotypes (*1/*2) were not reported.",
+        "citations": [
+          "Among all these patients, 30% had at least one polymorphism in CYP2C9, whereas ~62% were carriers of the VKORC1-1639G>A promoter variant.",
+          "Combined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population.",
+          "To select candidate variables for the multiple linear-regression model of warfarin dosing prediction in Caribbean Hispanics, we initially examined the independent effects of demographics (i.e., age, gender, height and weight or body mass index), clinical (i.e., treatment indication, comorbidities, use of co-medications [amiodarone, antifungal azoles, statins, Bactrim], target INR range, initial doses (days 1 thru 3 of therapy), dose-adjusted INR at day 3, diet and smoking status) and genetic variables (i.e., VKORC1 genotypes, number of CYP2C9 variants, CYP4F2*3 18000G>A (V433M, rs2108622) and NQO1*2 c.559C>T (P187S, rs1800566) carrier status) individually."
+        ]
+      },
+      {
+        "variant_id": "rs56165452",
+        "sentence": "rs56165452 not mentioned in article.",
+        "explanation": "This specific SNP was not described in the methods or results, so no association with warfarin dose was reported.",
+        "citations": [
+          "Moreover, the CYP2C9*6 allele (g.10601delA; p.K273X) was identified in two subjects of this study cohort (both heterozygous for this variant, but one of them showing a *3/*6 double-carrier status, patient# WPR255); also the rare variants CYP2C9*4 (g.42615T>C, p.I359T, rs56165452) and CYP2C9*11 (g.42542C>T, p.R335W, rs28371685) were detected in four and one additional participants, respectively (all heterozygous)."
+        ]
+      },
+      {
+        "variant_id": "rs2234922",
+        "sentence": "Genotypes GA + AA of rs2234922 are not associated with warfarin dose in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype GG (p > 0.05).",
+        "explanation": "EPHX1 was a tested candidate gene, but no EPHX1 variants were retained as significant predictors in the final model, indicating no independent association (n = 255).",
+        "citations": [
+          "Clinically relevant genetic variants on the following candidate pharmacogenes were tested: CYP2C9, VKORC1, EPHX1, CYP4F2, and NQO1.",
+          "None of the tested EPHX1 variants entered into the final model.",
+          "Variables were included in the final linear regression model if they were significantly (p<0.05) associated with the daily warfarin dose or were marginally significant (0.05 ≤ p ≤ 0.20) with strong biological plausibility."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*1",
+        "sentence": "Genotype *1/*1 of CYP2C9*1 is associated with increased dose of warfarin in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotypes carrying loss-of-function alleles (*1/*2, *1/*3, *1/*8, or two variant alleles) (p < 0.05).",
+        "explanation": "The study used *1/*1 as the reference (normal metabolizer); carriers of CYP2C9 loss-of-function variants required lower doses (p < 0.05), implying relatively higher dose requirements for *1/*1.",
+        "citations": [
+          "The numerical designations of “0” for the CYP2C9*1/*1 genotype (wild-type); “1” for the *1/*n genotypes (n stands for *3,*5,*6,*8,*11 “loss-of-function” variants detected in the genotyping assay) and “2” for n/n genotypes (e.g., *2/*2, *3/*3, *3/*5) were used to correspond to the relative capacity of the CYP system to metabolize warfarin.",
+          "The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.",
+          "After adjusting for INR at 3rd day and admixture, clinical polymorphisms on major warfarin-related pharmacogenes (CYP2C9 and VKORC1) remained significant predictors of effective dose (p<0.05)."
+        ]
+      },
+      {
+        "variant_id": "rs9923231",
+        "sentence": "Genotypes GA + AA of rs9923231 are associated with decreased dose of warfarin in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype GG (p < 0.05).",
+        "explanation": "VKORC1 -1639G>A carrier status (GA and AA) remained a significant predictor in the dose-refinement model and together contributed ~2.1% of R^2, indicating lower dose requirements for carriers (n = 255).",
+        "citations": [
+          "Combined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population.",
+          "Moreover, this covariate was associated with a 13% reduction in the therapeutic warfarin dose per number of A alleles.",
+          "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in Fig 2): WarfarinDose(mgday)=[3.2463−(0.0181∙Age)+(0.4246∙D1)+(0.5157∙tINR)−(1.419∙INRD3)−(0.2450∙CYP2C9*2)−(0.5442∙CYP2C9*3)−(1.00∙CYP2C9*8)−(0.3793∙VKORC1GA)−(0.8958∙VKORC1AA)+(0.5602∙CYP4F2*3)+(0.3457∙NQO1*2)−(0.7948∙Amiodarone)−(0.0932∙Admixture)]."
+        ]
+      },
+      {
+        "variant_id": "rs4653436",
+        "sentence": "rs4653436 not mentioned in article.",
+        "explanation": "This SNP was not discussed in the text; no association with warfarin dose was reported.",
+        "citations": [
+          "Clinically relevant genetic variants on the following candidate pharmacogenes were tested: CYP2C9, VKORC1, EPHX1, CYP4F2, and NQO1.",
+          "To select candidate variables for the multiple linear-regression model of warfarin dosing prediction in Caribbean Hispanics, we initially examined the independent effects of demographics (i.e., age, gender, height and weight or body mass index), clinical (i.e., treatment indication, comorbidities, use of co-medications [amiodarone, antifungal azoles, statins, Bactrim], target INR range, initial doses (days 1 thru 3 of therapy), dose-adjusted INR at day 3, diet and smoking status) and genetic variables (i.e., VKORC1 genotypes, number of CYP2C9 variants, CYP4F2*3 18000G>A (V433M, rs2108622) and NQO1*2 c.559C>T (P187S, rs1800566) carrier status) individually.",
+          "Departure from Hardy-Weinberg equilibrium (HWE) was estimated under the null hypothesis of the predictable segregation ratio of specific matching genotypes (p>0.05) by use of χ2 goodness of fit test with 1 degree of freedom."
+        ]
+      },
+      {
+        "variant_id": "rs2108622",
+        "sentence": "Genotypes CT + TT of rs2108622 are not associated with warfarin dose in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype CC (p > 0.05).",
+        "explanation": "rs2108622 (CYP4F2*3) was included among tested variants, but CYP4F2 did not remain in the final model, indicating no significant independent effect on dose (n = 255).",
+        "citations": [
+          "Notably, CYP4F2*3 and NQO1*2 variants were independently associated with a 17% and 10% increase of the dose per variant allele, respectively; whereas, the admixed status of the admixture index decreases the dose by 7%.",
+          "The respective regression coefficients, p-values, the percent of effect on dose requirements and the contribution to explain observed variability that is accounted for by the model, as measured by the partial R^2 statistics, are presented in Table 3 for all the variables that were entered into the regression model.",
+          "Variables were included in the final linear regression model if they were significantly (p<0.05) associated with the daily warfarin dose or were marginally significant (0.05 ≤ p ≤ 0.20) with strong biological plausibility."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*5",
+        "sentence": "Genotypes *1/*5 + *5/*5 of CYP2C9*5 are associated with decreased dose of warfarin in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype *1/*1 (p < 0.05).",
+        "explanation": "CYP2C9 loss-of-function status in the model included *5 and was significantly associated with lower dose requirements (p < 0.05) in the cohort.",
+        "citations": [
+          "The numerical designations of “0” for the CYP2C9*1/*1 genotype (wild-type); “1” for the *1/*n genotypes (n stands for *3,*5,*6,*8,*11 “loss-of-function” variants detected in the genotyping assay) and “2” for n/n genotypes (e.g., *2/*2, *3/*3, *3/*5) were used to correspond to the relative capacity of the CYP system to metabolize warfarin.",
+          "The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.",
+          "Notably, three patients were carriers of the CYP2C9*8 allele (all heterozygous) and another five (5) were carriers of the CYP2C9*5 allele (c.1080C>G transversion in exon 7, p.N360E)."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*6",
+        "sentence": "Genotypes *1/*6 + *6/*6 of CYP2C9*6 are associated with decreased dose of warfarin in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype *1/*1 (p < 0.05).",
+        "explanation": "The composite CYP2C9 loss-of-function variable included *6 and remained a significant predictor of dose reduction (p < 0.05) in 255 patients.",
+        "citations": [
+          "The numerical designations of “0” for the CYP2C9*1/*1 genotype (wild-type); “1” for the *1/*n genotypes (n stands for *3,*5,*6,*8,*11 “loss-of-function” variants detected in the genotyping assay) and “2” for n/n genotypes (e.g., *2/*2, *3/*3, *3/*5) were used to correspond to the relative capacity of the CYP system to metabolize warfarin.",
+          "The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.",
+          "Moreover, the CYP2C9*6 allele (g.10601delA; p.K273X) was identified in two subjects of this study cohort (both heterozygous for this variant, but one of them showing a *3/*6 double-carrier status, patient# WPR255)."
+        ]
+      },
+      {
+        "variant_id": "VKORC1*1",
+        "sentence": "VKORC1*1 not mentioned in article.",
+        "explanation": "VKORC1 haplotypes (*1/*2) were not reported; the analysis focused on VKORC1 -1639G>A (rs9923231).",
+        "citations": [
+          "Among all these patients, 30% had at least one polymorphism in CYP2C9, whereas ~62% were carriers of the VKORC1-1639G>A promoter variant.",
+          "Combined VKORC1-1639AA and GA genotypes explained approximately 2.1% of the dose variability in this population.",
+          "To select candidate variables for the multiple linear-regression model of warfarin dosing prediction in Caribbean Hispanics, we initially examined the independent effects of demographics (i.e., age, gender, height and weight or body mass index), clinical (i.e., treatment indication, comorbidities, use of co-medications [amiodarone, antifungal azoles, statins, Bactrim], target INR range, initial doses (days 1 thru 3 of therapy), dose-adjusted INR at day 3, diet and smoking status) and genetic variables (i.e., VKORC1 genotypes, number of CYP2C9 variants, CYP4F2*3 18000G>A (V433M, rs2108622) and NQO1*2 c.559C>T (P187S, rs1800566) carrier status) individually."
+        ]
+      },
+      {
+        "variant_id": "rs1051740",
+        "sentence": "Genotypes CT + TT of rs1051740 are not associated with warfarin dose in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype CC (p > 0.05).",
+        "explanation": "Although EPHX1 was tested, no EPHX1 SNPs were retained as significant predictors in the final model, implying no independent association with dose (n = 255).",
+        "citations": [
+          "Clinically relevant genetic variants on the following candidate pharmacogenes were tested: CYP2C9, VKORC1, EPHX1, CYP4F2, and NQO1.",
+          "None of the tested EPHX1 variants entered into the final model.",
+          "Variables were included in the final linear regression model if they were significantly (p<0.05) associated with the daily warfarin dose or were marginally significant (0.05 ≤ p ≤ 0.20) with strong biological plausibility."
+        ]
+      },
+      {
+        "variant_id": "rs2292566",
+        "sentence": "rs2292566 not mentioned in article.",
+        "explanation": "This SNP does not appear in the study description; no dose association was provided.",
+        "citations": [
+          "Clinically relevant genetic variants on the following candidate pharmacogenes were tested: CYP2C9, VKORC1, EPHX1, CYP4F2, and NQO1.",
+          "To select candidate variables for the multiple linear-regression model of warfarin dosing prediction in Caribbean Hispanics, we initially examined the independent effects of demographics (i.e., age, gender, height and weight or body mass index), clinical (i.e., treatment indication, comorbidities, use of co-medications [amiodarone, antifungal azoles, statins, Bactrim], target INR range, initial doses (days 1 thru 3 of therapy), dose-adjusted INR at day 3, diet and smoking status) and genetic variables (i.e., VKORC1 genotypes, number of CYP2C9 variants, CYP4F2*3 18000G>A (V433M, rs2108622) and NQO1*2 c.559C>T (P187S, rs1800566) carrier status) individually.",
+          "Departure from Hardy-Weinberg equilibrium (HWE) was estimated under the null hypothesis of the predictable segregation ratio of specific matching genotypes (p>0.05) by use of χ2 goodness of fit test with 1 degree of freedom."
+        ]
+      },
+      {
+        "variant_id": "CYP4F2*1",
+        "sentence": "Genotype *1/*1 of CYP4F2*1 is not associated with warfarin dose in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotypes carrying CYP4F2*3 (*1/*3 or *3/*3) (p > 0.05).",
+        "explanation": "CYP4F2 genotype (coded by allele count) did not remain a significant predictor in the final regression, indicating no independent association with therapeutic dose.",
+        "citations": [
+          "Notably, CYP4F2*3 and NQO1*2 variants were independently associated with a 17% and 10% increase of the dose per variant allele, respectively; whereas, the admixed status of the admixture index decreases the dose by 7%.",
+          "The respective regression coefficients, p-values, the percent of effect on dose requirements and the contribution to explain observed variability that is accounted for by the model, as measured by the partial R^2 statistics, are presented in Table 3 for all the variables that were entered into the regression model.",
+          "Variables were included in the final linear regression model if they were significantly (p<0.05) associated with the daily warfarin dose or were marginally significant (0.05 ≤ p ≤ 0.20) with strong biological plausibility."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*3",
+        "sentence": "Genotypes *1/*3 + *3/*3 of CYP2C9*3 are associated with decreased dose of warfarin in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype *1/*1 (p < 0.05).",
+        "explanation": "The model’s composite CYP2C9 loss-of-function status (including *3) significantly predicted lower dose requirements (p < 0.05) in the 255-patient cohort.",
+        "citations": [
+          "The stepwise regression analysis yielded the following PGt algorithm to predict warfarin doses in Hispanic Puerto Ricans (as seen in Fig 2): WarfarinDose(mgday)=[3.2463−(0.0181∙Age)+(0.4246∙D1)+(0.5157∙tINR)−(1.419∙INRD3)−(0.2450∙CYP2C9*2)−(0.5442∙CYP2C9*3)−(1.00∙CYP2C9*8)−(0.3793∙VKORC1GA)−(0.8958∙VKORC1AA)+(0.5602∙CYP4F2*3)+(0.3457∙NQO1*2)−(0.7948∙Amiodarone)−(0.0932∙Admixture)].",
+          "The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.",
+          "After adjusting for INR at 3rd day and admixture, clinical polymorphisms on major warfarin-related pharmacogenes (CYP2C9 and VKORC1) remained significant predictors of effective dose (p<0.05)."
+        ]
+      },
+      {
+        "variant_id": "rs9332094",
+        "sentence": "rs9332094 not mentioned in article.",
+        "explanation": "This variant was not described in the paper, and no association with warfarin dose was reported.",
+        "citations": [
+          "Another rare variant found in these patients was the c.-1188 T>C SNP in the promoter region of the CYP2C9 gene (MAF = 0.357; frequencies of genotypes C/T: 0.405 ±0.31–0.51, Margin of Error = 0.10 and C/C: 0.155 ±0.09–0.25, Margin of Error = 0.08; HWE test χ2 = 1.18), but not the c.-1766 T>C polymorphism (rs9332094)."
+        ]
+      },
+      {
+        "variant_id": "rs104894540",
+        "sentence": "rs104894540 not mentioned in article.",
+        "explanation": "The SNP is not discussed in the text; no warfarin-dose association is provided.",
+        "citations": [
+          "Moreover, one patient (# WPR274) was identified as heterozygous for the “rare” missense variant c.134T>C transition in the VKORC1 gene (rs104894540), which is an autosomal dominant warfarin resistance genotype resulting in a valine-to-alanine substitution at codon 45 (p.V45A)."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*11",
+        "sentence": "Genotypes *1/*11 + *11/*11 of CYP2C9*11 are associated with decreased dose of warfarin in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype *1/*1 (p < 0.05).",
+        "explanation": "CYP2C9 loss-of-function carrier status in the model included *11 and was significantly associated with reduced maintenance dose (p < 0.05).",
+        "citations": [
+          "The numerical designations of “0” for the CYP2C9*1/*1 genotype (wild-type); “1” for the *1/*n genotypes (n stands for *3,*5,*6,*8,*11 “loss-of-function” variants detected in the genotyping assay) and “2” for n/n genotypes (e.g., *2/*2, *3/*3, *3/*5) were used to correspond to the relative capacity of the CYP system to metabolize warfarin.",
+          "The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.",
+          "Moreover, the CYP2C9*6 allele (g.10601delA; p.K273X) was identified in two subjects of this study cohort (both heterozygous for this variant, but one of them showing a *3/*6 double-carrier status, patient# WPR255); also the rare variants CYP2C9*4 (g.42615T>C, p.I359T, rs56165452) and CYP2C9*11 (g.42542C>T, p.R335W, rs28371685) were detected in four and one additional participants, respectively (all heterozygous)."
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*4",
+        "sentence": "CYP2C9*4 not mentioned in article.",
+        "explanation": "The CYP2C9 variants explicitly considered in the composite predictor were *2, *3, *5, *6, *8, and *11; *4 was not reported.",
+        "citations": [
+          "Moreover, the CYP2C9*6 allele (g.10601delA; p.K273X) was identified in two subjects of this study cohort (both heterozygous for this variant, but one of them showing a *3/*6 double-carrier status, patient# WPR255); also the rare variants CYP2C9*4 (g.42615T>C, p.I359T, rs56165452) and CYP2C9*11 (g.42542C>T, p.R335W, rs28371685) were detected in four and one additional participants, respectively (all heterozygous)."
+        ]
+      },
+      {
+        "variant_id": "rs28371685",
+        "sentence": "Genotypes CT + TT of rs28371685 (CYP2C9*11) are associated with decreased dose of warfarin in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype CC (p < 0.05).",
+        "explanation": "rs28371685 tags CYP2C9*11, which was included in the composite CYP2C9 loss-of-function status that remained a significant predictor for lower dose (p < 0.05).",
+        "citations": [
+          "The numerical designations of “0” for the CYP2C9*1/*1 genotype (wild-type); “1” for the *1/*n genotypes (n stands for *3,*5,*6,*8,*11 “loss-of-function” variants detected in the genotyping assay) and “2” for n/n genotypes (e.g., *2/*2, *3/*3, *3/*5) were used to correspond to the relative capacity of the CYP system to metabolize warfarin.",
+          "The number of loss-of-function CYP2C9 polymorphisms combined explained another 5% of the observed inter-individual variability in dose requirements, and it was associated with an average of 18% decrement in the warfarin dose per variant allele.",
+          "Moreover, the CYP2C9*6 allele (g.10601delA; p.K273X) was identified in two subjects of this study cohort (both heterozygous for this variant, but one of them showing a *3/*6 double-carrier status, patient# WPR255); also the rare variants CYP2C9*4 (g.42615T>C, p.I359T, rs56165452) and CYP2C9*11 (g.42542C>T, p.R335W, rs28371685) were detected in four and one additional participants, respectively (all heterozygous)."
+        ]
+      },
+      {
+        "variant_id": "rs12714145",
+        "sentence": "rs12714145 not mentioned in article.",
+        "explanation": "This SNP was not referenced; no association data were presented.",
+        "citations": [
+          "Clinically relevant genetic variants on the following candidate pharmacogenes were tested: CYP2C9, VKORC1, EPHX1, CYP4F2, and NQO1.",
+          "To select candidate variables for the multiple linear-regression model of warfarin dosing prediction in Caribbean Hispanics, we initially examined the independent effects of demographics (i.e., age, gender, height and weight or body mass index), clinical (i.e., treatment indication, comorbidities, use of co-medications [amiodarone, antifungal azoles, statins, Bactrim], target INR range, initial doses (days 1 thru 3 of therapy), dose-adjusted INR at day 3, diet and smoking status) and genetic variables (i.e., VKORC1 genotypes, number of CYP2C9 variants, CYP4F2*3 18000G>A (V433M, rs2108622) and NQO1*2 c.559C>T (P187S, rs1800566) carrier status) individually.",
+          "Departure from Hardy-Weinberg equilibrium (HWE) was estimated under the null hypothesis of the predictable segregation ratio of specific matching genotypes (p>0.05) by use of χ2 goodness of fit test with 1 degree of freedom."
+        ]
+      },
+      {
+        "variant_id": "rs1800566",
+        "sentence": "Genotypes CT + TT of rs1800566 are not associated with warfarin dose in people with chronic warfarin therapy among Caribbean Hispanic outpatients from Puerto Rico as compared to genotype CC (p > 0.05).",
+        "explanation": "NQO1 (rs1800566, *2) was evaluated and coded by allele count, but it did not remain a significant predictor in the adjusted model; prior studies in other Hispanics reported higher dose with combined CYP4F2*3 and NQO1*2, but this study did not find an independent effect.",
+        "citations": [
+          "The frequencies of the CYP4F2*3 (g.18000G>A, p.V433M, rs2108622) and NQO1*2 (g.559C>T, p.P187S, rs1800566) “resistant” polymorphisms in the study population were 0.11 (95%CI: 0.09–0.14) and 0.10 (95%CI: 0.07–0.13), respectively.",
+          "Notably, CYP4F2*3 and NQO1*2 variants were independently associated with a 17% and 10% increase of the dose per variant allele, respectively; whereas, the admixed status of the admixture index decreases the dose by 7%.",
+          "Variables were included in the final linear regression model if they were significantly (p<0.05) associated with the daily warfarin dose or were marginally significant (0.05 ≤ p ≤ 0.20) with strong biological plausibility."
+        ]
+      },
+      {
+        "variant_id": "CYP4F2*2",
+        "sentence": "CYP4F2*2 not mentioned in article.",
+        "explanation": "Only CYP4F2*3 (rs2108622) was explicitly discussed; *2 was not reported.",
+        "citations": [
+          "The frequencies of the CYP4F2*3 (g.18000G>A, p.V433M, rs2108622) and NQO1*2 (g.559C>T, p.P187S, rs1800566) “resistant” polymorphisms in the study population were 0.11 (95%CI: 0.09–0.14) and 0.10 (95%CI: 0.07–0.13), respectively.",
+          "To select candidate variables for the multiple linear-regression model of warfarin dosing prediction in Caribbean Hispanics, we initially examined the independent effects of demographics (i.e., age, gender, height and weight or body mass index), clinical (i.e., treatment indication, comorbidities, use of co-medications [amiodarone, antifungal azoles, statins, Bactrim], target INR range, initial doses (days 1 thru 3 of therapy), dose-adjusted INR at day 3, diet and smoking status) and genetic variables (i.e., VKORC1 genotypes, number of CYP2C9 variants, CYP4F2*3 18000G>A (V433M, rs2108622) and NQO1*2 c.559C>T (P187S, rs1800566) carrier status) individually.",
+          "Clinically relevant genetic variants on the following candidate pharmacogenes were tested: CYP2C9, VKORC1, EPHX1, CYP4F2, and NQO1."
+        ]
+      },
+      {
+        "variant_id": "rs2260863",
+        "sentence": "rs2260863 not mentioned in article.",
+        "explanation": "This SNP does not appear in the study description; no association with warfarin dose was reported.",
+        "citations": [
+          "Clinically relevant genetic variants on the following candidate pharmacogenes were tested: CYP2C9, VKORC1, EPHX1, CYP4F2, and NQO1.",
+          "To select candidate variables for the multiple linear-regression model of warfarin dosing prediction in Caribbean Hispanics, we initially examined the independent effects of demographics (i.e., age, gender, height and weight or body mass index), clinical (i.e., treatment indication, comorbidities, use of co-medications [amiodarone, antifungal azoles, statins, Bactrim], target INR range, initial doses (days 1 thru 3 of therapy), dose-adjusted INR at day 3, diet and smoking status) and genetic variables (i.e., VKORC1 genotypes, number of CYP2C9 variants, CYP4F2*3 18000G>A (V433M, rs2108622) and NQO1*2 c.559C>T (P187S, rs1800566) carrier status) individually.",
+          "Departure from Hardy-Weinberg equilibrium (HWE) was estimated under the null hypothesis of the predictable segregation ratio of specific matching genotypes (p>0.05) by use of χ2 goodness of fit test with 1 degree of freedom."
+        ]
+      }
+    ],
+    "summary": "## Background\nWarfarin dose needs vary widely and existing pharmacogenetic (PGx) dosing tools were largely derived in Europeans, with limited applicability to admixed groups. This study developed and externally validated an admixture-adjusted, genotype-guided dose-refinement algorithm for Caribbean Hispanics (n=255 derivation; n=55 validation), using data available by day 3–4 of therapy.\n\n## Key Findings\n- Key variants and dose effects (per allele in the final model):\n  - VKORC1 −1639G>A (rs9923231): 13% lower dose per A allele; GA p=0.007, AA p<0.0001; ~2.1% of dose variance explained in the refinement setting.\n  - CYP2C9 loss-of-function alleles: \n    - CYP2C9*2: lower dose (−7% in model; p=0.014).\n    - CYP2C9*3: lower dose (−16%; p=0.015).\n    - CYP2C9*8 (common in African ancestry): trend to lower dose (≈−31%; p=0.098). Rare African alleles (*5, *6, *11) were also present in this cohort.\n    - Combined CYP2C9 variants explained ~5% of dose variability; on average, ~18% dose reduction per loss-of-function allele.\n  - CYP4F2*3 (rs2108622): higher dose (+17%; p=0.014).\n  - NQO1*2 (rs1800566): trend toward higher dose (+10%; p=0.125).\n  - EPHX1 variants did not contribute to dosing in this model.\n  - A rare VKORC1 p.V45A (rs104894540) resistance variant and the VKORC1 H7 resistant haplotype were observed in a few patients.\n- Admixture/ancestry:\n  - An admixture index contributed a ~7% dose decrease for admixed status (p=0.108).\n  - Higher Amerindian ancestry was associated with greater likelihood of low-dose requirements (≤3 mg/day: 33% vs 19% in others; p<0.01).\n- Algorithm performance:\n  - Derivation cohort: R2=0.70; MAE=0.72 mg/day, outperforming a clinical-only model (R2=0.60; MAE=0.99 mg/day).\n  - External validation: R2≈0.58–0.59; MAE=0.89 mg/day, superior to two published PGx algorithms.\n  - In high-risk dose groups (≤3 mg or ≥7 mg/day), approximately half of predictions were within 20% of the actual dose vs ~29% with the clinical non-genetic model.\n\n## Clinical Implications\n- For Caribbean Hispanics, PGx-guided warfarin dosing should include VKORC1 −1639G>A and comprehensive CYP2C9 genotyping that captures African-ancestry alleles (e.g., *5, *6, *8, *11) to anticipate lower dose needs and minimize over-anticoagulation.\n- CYP4F2*3 supports higher dose requirements; NQO1*2 may increment dose modestly. EPHX1 testing adds little to dose refinement.\n- Considering individual ancestry/admixture improves dosing accuracy; higher Amerindian ancestry signals greater warfarin sensitivity (lower doses).\n- Applying this admixture-adjusted PGx refinement after 3–4 days (once initial INRs are available) improves dose precision, especially in low- and high-dose patients, and may reduce the risk of bleeding or thrombosis compared with clinical dosing alone."
+  }
+}

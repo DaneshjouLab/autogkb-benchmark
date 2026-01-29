@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC11603346",
+    "variants": [
+      "HLA-CW*04",
+      "CYP2B6*1",
+      "rs2279343",
+      "rs3745274",
+      "ABCB1*04",
+      "CYP2B6*6",
+      "HLA-C*04"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": true,
+      "supplement_variants": [],
+      "total_extracted": 7,
+      "from_article": 7,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "HLA-CW*04",
+        "sentence": "HLA-Cw*04 mentioned in article but not studied by paper.",
+        "explanation": "The systematic review notes HLA-Cw*04 among commonly reported genes for ARV-associated DILI, but this paper did not analyze HLA-Cw*04 genotypes or provide effect estimates.",
+        "citations": [
+          "However, 39 publications reported on associations of genetic polymorphisms with ARVDILI.",
+          "The top-fifth of the highest number of reports were 11 for UGT1A1, 11 for CYP2B6, four reports of ABCB1, two for HLA-Cw, and two for HLA-DRB1 (Figure S1).",
+          "The fifth highest frequency of reported gene-associated ARVDILI was UGT1A1, CYP2B6, ABCB1, HLA-Cw*04, and HLA-DRB1, respectively.",
+          "In PPI analysis, CYP2B6 was selected as a candidate gene due to its frequent reports and centrality.",
+          "Consequently, based on this premise, we conducted meta-analyses to verify the relationship between CYP2B6 polymorphisms and their association with ARVDILI susceptibility."
+        ]
+      },
+      {
+        "variant_id": "CYP2B6*1",
+        "sentence": "Genotype CYP2B6 *1/*1 is associated with increased risk of drug-induced liver injury when treated with nevirapine in people living with HIV (African and Caucasian populations) as compared to CYP2B6 *1/*6 + *6/*6; association was statistically significant in the meta-analysis.",
+        "explanation": "The meta-analysis found normal-metabolizer CYP2B6 *1 was significantly associated with NVP-induced hepatotoxicity, while poor-metabolizer genotypes were more frequent in controls; results were derived from African and Caucasian cohorts and judged statistically significant.",
+        "citations": [
+          "Meta-analysis showed that CYP2B6 *1/*6* allele and combination of **1/*6* + **6/*6* alleles were significantly associated with a reduction in susceptibility to NVP-induced liver injury, compared with normal metabolizer (Fig. 4), with pooled OR and 95% CI of 0.44 (0.22–0.91) and 0.42 (0.21–0.84), respectively, as well as P value less than 0.05 (Table 2).",
+          "This meta-analysis illustrated that CYP2B6 *6* and *1 was significantly associated with EFV-induced liver injury and NVP-induced liver injury in PLHIV, respectively.",
+          "The meta-analysis of the link between CYP2B6 genotypes and EFV-induced liver injury was only derived from the African population, as well as NVP-induced liver injury were obtained from only African and Caucasian populations."
+        ]
+      },
+      {
+        "variant_id": "rs2279343",
+        "sentence": "rs2279343 mentioned in article but not studied by paper.",
+        "explanation": "Although CYP2B6 polymorphisms were the focus, this paper did not report genotype-specific results for rs2279343.",
+        "citations": [
+          "CYP2B6*6* haplotype is characterized by the existence of two variants, G516T (rs3745274) and A785G (rs2279343), with or without promoter variants.",
+          "The pooled effects of CYP2B6 polymorphisms on EFV-induced liver injury occurrences in PLHIV are summarized in Table 2 and illustrated in Fig. 2.",
+          "Compared with normal metabolizers, CYP2B6 *6* carriers were significantly more susceptible to EFV-induced liver injury, with an odds ratio (OR) and 95% confidence interval (CI) of 1.83 (1.15–2.90), 2.48 (1.28–4.79), and 1.94 (1.24–3.01) for heterozygous, homozygous, and combination of both alleles, respectively, as well as P value less than 0.05 (Table 2).",
+          "Table Caption: Summary of meta-analyses between CYP2B6 genotypes and the risk of ARVDILI."
+        ]
+      },
+      {
+        "variant_id": "rs3745274",
+        "sentence": "rs3745274 mentioned in article but not studied by paper.",
+        "explanation": "The paper’s meta-analysis centered on CYP2B6 star alleles and did not present rs3745274-specific associations.",
+        "citations": [
+          "CYP2B6*6* haplotype is characterized by the existence of two variants, G516T (rs3745274) and A785G (rs2279343), with or without promoter variants.",
+          "Meta-analysis showed that CYP2B6 *1/*6* allele and combination of **1/*6* + **6/*6* alleles were significantly associated with a reduction in susceptibility to NVP-induced liver injury, compared with normal metabolizer (Fig. 4), with pooled OR and 95% CI of 0.44 (0.22–0.91) and 0.42 (0.21–0.84), respectively, as well as P value less than 0.05 (Table 2).",
+          "Table Caption: Summary of meta-analyses between CYP2B6 genotypes and the risk of ARVDILI."
+        ]
+      },
+      {
+        "variant_id": "ABCB1*04",
+        "sentence": "ABCB1*04 mentioned in article but not studied by paper.",
+        "explanation": "While ABCB1 was identified as a frequently studied gene in ARV-related hepatotoxicity, no ABCB1*04 genotype-level analyses or outcomes were presented.",
+        "citations": [
+          "However, 39 publications reported on associations of genetic polymorphisms with ARVDILI.",
+          "The top-fifth of the highest number of reports were 11 for UGT1A1, 11 for CYP2B6, four reports of ABCB1, two for HLA-Cw, and two for HLA-DRB1 (Figure S1).",
+          "The fifth highest frequency of reported gene-associated ARVDILI was UGT1A1, CYP2B6, ABCB1, HLA-Cw*04, and HLA-DRB1, respectively.",
+          "In PPI analysis, CYP2B6 was selected as a candidate gene due to its frequent reports and centrality.",
+          "Consequently, based on this premise, we conducted meta-analyses to verify the relationship between CYP2B6 polymorphisms and their association with ARVDILI susceptibility."
+        ]
+      },
+      {
+        "variant_id": "CYP2B6*6",
+        "sentence": "Genotypes CYP2B6 *1/*6 + *6/*6 are associated with increased risk of drug-induced liver injury when treated with efavirenz (African population) and with decreased risk when treated with nevirapine in people living with HIV as compared to CYP2B6 *1/*1; associations were statistically significant in the meta-analysis.",
+        "explanation": "The meta-analysis reported that poor-metabolizer CYP2B6*6 genotypes increased EFV-induced hepatotoxicity risk in African PLHIV, but were more common in controls and thus protective for NVP-induced hepatotoxicity; effects were reported as statistically significant.",
+        "citations": [
+          "Compared with normal metabolizers, CYP2B6 *6* carriers were significantly more susceptible to EFV-induced liver injury, with an odds ratio (OR) and 95% confidence interval (CI) of 1.83 (1.15–2.90), 2.48 (1.28–4.79), and 1.94 (1.24–3.01) for heterozygous, homozygous, and combination of both alleles, respectively, as well as P value less than 0.05 (Table 2).",
+          "All the studies were conducted on the African population.",
+          "Meta-analysis showed that CYP2B6 *1/*6* allele and combination of **1/*6* + **6/*6* alleles were significantly associated with a reduction in susceptibility to NVP-induced liver injury, compared with normal metabolizer (Fig. 4), with pooled OR and 95% CI of 0.44 (0.22–0.91) and 0.42 (0.21–0.84), respectively, as well as P value less than 0.05 (Table 2).",
+          "On the contrary, in NVP’s circumstance, the meta-analysis results showed that CYP2B6 *1/*6 and a combination of *1/*6 and *6/*6 were dominantly found in the controls group, thus indicating that the poor metabolizer form of CYP2B6 may reduce the risk of ARVDILI."
+        ]
+      },
+      {
+        "variant_id": "HLA-C*04",
+        "sentence": "HLA-C*04 mentioned in article but not studied by paper.",
+        "explanation": "The article broadly referenced HLA-C–related findings in ARV-associated DILI but did not analyze HLA-C*04 specifically or provide association statistics.",
+        "citations": [
+          "However, 39 publications reported on associations of genetic polymorphisms with ARVDILI.",
+          "The top-fifth of the highest number of reports were 11 for UGT1A1, 11 for CYP2B6, four reports of ABCB1, two for HLA-Cw, and two for HLA-DRB1 (Figure S1).",
+          "The fifth highest frequency of reported gene-associated ARVDILI was UGT1A1, CYP2B6, ABCB1, HLA-Cw*04, and HLA-DRB1, respectively.",
+          "In PPI analysis, CYP2B6 was selected as a candidate gene due to its frequent reports and centrality.",
+          "Consequently, based on this premise, we conducted meta-analyses to verify the relationship between CYP2B6 polymorphisms and their association with ARVDILI susceptibility."
+        ]
+      }
+    ],
+    "summary": "## Background\nThis systematic review and meta-analysis examined whether CYP2B6 genetic variation influences the risk of drug-induced liver injury (DILI) from the NNRTIs efavirenz (EFV) and nevirapine (NVP) in people living with HIV. Across the literature, several genes have been linked to antiretroviral-related DILI, with CYP2B6 emerging as a central pharmacogene. The CYP2B6*6 haplotype (defined by rs3745274 c.516G>T and rs2279343 c.785A>G) reduces CYP2B6 expression/activity and could alter NNRTI bioactivation and clearance.\n\n## Key Findings\n- Overall landscape: UGT1A1, CYP2B6, ABCB1, HLA-Cw, and HLA-DRB1 were most frequently reported with NNRTI-related hepatotoxicity; meta-analysis focused on CYP2B6.\n- Efavirenz-induced DILI (3 studies, all African cohorts; 106 cases/795 total):\n  - CYP2B6*6 carriers had higher DILI risk vs CYP2B6*1/*1:\n    - Heterozygous *1/*6: OR 1.83 (95% CI 1.15–2.90; p=0.01)\n    - Homozygous *6/*6: OR 2.48 (1.28–4.79; p=0.007)\n    - Combined carriers: OR 1.94 (1.24–3.01; p=0.003)\n  - Low heterogeneity; sensitivity analyses supported robustness.\n- Nevirapine-induced DILI (2 studies; African and Caucasian cohorts; 38 cases/820 total):\n  - CYP2B6*6 carriage was associated with lower DILI risk vs CYP2B6*1/*1:\n    - Heterozygous *1/*6: OR 0.44 (0.22–0.91; p=0.03)\n    - Homozygous *6/*6: OR 0.45 (0.15–1.32; p=0.14; not significant)\n    - Combined carriers: OR 0.42 (0.21–0.84; p=0.01)\n  - Low heterogeneity; results stable on sensitivity analyses.\n- Mechanistic context: Reduced CYP2B6 activity can increase EFV and 8‑OH‑EFV exposure (pro-hepatotoxic), but for NVP, multiple enzymes (notably CYP3A4) drive metabolite formation, which may explain the inverse association for *6.\n\n## Clinical Implications\n- Efavirenz: CYP2B6*6 identifies patients at roughly twofold higher DILI risk. If EFV is considered, genotype-guided care could include selecting alternative regimens, closer early liver function monitoring, and/or therapeutic drug monitoring where available.\n- Nevirapine: CYP2B6*6 may confer lower DILI risk, but evidence is limited (two studies) and homozygous effects were not statistically significant. Do not select NVP solely based on CYP2B6*6; consider other genetic (e.g., CYP3A4, HLA) and clinical risk factors.\n- Generalizability: EFV findings derive from African cohorts; NVP findings from African and Caucasian cohorts. Apply results cautiously across populations with different allele frequencies and co-medication patterns. Further multi-ethnic studies integrating additional metabolizing and immune genes are warranted."
+  }
+}

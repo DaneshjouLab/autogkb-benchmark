@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC3839910",
+    "variants": [
+      "HLA-A*31",
+      "rs1061235",
+      "HLA-B*15:02",
+      "HLA-A*33:01",
+      "HLA-B*15:11",
+      "HLA-A*33:03",
+      "HLA-A*31:01"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": true,
+      "supplement_variants": [],
+      "total_extracted": 7,
+      "from_article": 7,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "HLA-A*31",
+        "sentence": "HLA-A*31 mentioned in article but not studied by paper.",
+        "explanation": "The study evaluated HLA-A*31:01 specifically (including via rs1061235 proxy and direct typing), not the broader HLA-A*31 allele group.",
+        "citations": [
+          "To replicate these genetic associations in pediatric patients from North America with a diverse ethnic background, we investigated HLA-A*31:01 and HLA-B*15:02 in 42 children with CBZ hypersensitivity, and 91 CBZ-tolerant children from across Canada.",
+          "For HLA-A*31:01 a Custom Taqman SNP Genotyping Assay (Applied Biosystems, Foster City, CA) was used for rs1061235, a proxy SNP showing an absolute correlation (R^2 = 1) with HLA-A*31:01 in Europeans ([48]).",
+          "In addition, direct sequence-based typing for HLA-A*31:01 was also performed as described previously ([49]), using primers I1-240 and I3-249 for allele-specific amplification of exons 2 and 3 for HLA-A*31 and *33.",
+          "Overall, 20 (15%) children treated with CBZ carried the T allele of rs1061235, a single nucleotide polymorphism (SNP) previously shown to be in complete linkage disequilibrium with HLA-A*31:01 in Europeans ([30])."
+        ]
+      },
+      {
+        "variant_id": "rs1061235",
+        "sentence": "Genotypes CT + TT of rs1061235 are associated with increased risk of hypersensitivity reactions to carbamazepine in children (multiethnic pediatric patients in Canada) as compared to genotype CC.",
+        "explanation": "The study used rs1061235 as a proxy for HLA-A*31:01 and observed the T allele overrepresented among carbamazepine hypersensitivity cases, including some without HLA-A*31:01, indicating an association but also noting the proxy performs suboptimally in diverse ancestries (dominant model; Fisher’s exact test; pediatric CPNDS cohort).",
+        "citations": [
+          "A highly significant association with CBZ-HSS and MPE was also observed for the HLA-A*31:01 proxy SNP rs1061235 with 14 (33%) CBZ hypersensitivity cases and only six (6.6%) control patients carrying the T allele (combined OR: 9.45; P=2.6×10^−5; [Table 2]).",
+          "Interestingly, rs1061235 was also overrepresented in hypersensitivity cases after excluding HLA-A*31:01-positive children (OR: 5.83; P=0.033; [Supplementary Table 1]), resulting in very similar effect sizes of the associations with HSS and MPE for HLA-A*31:01 and rs1061235.",
+          "Associations of genetic variants with CBZ hypersensitivity were assessed using Fisher’s exact test and a dominant genetic model.",
+          "Of importance, we showed that the proxy SNP rs1061235 is not an optimal surrogate marker for HLA-A*31:01 in ancestrally diverse populations."
+        ]
+      },
+      {
+        "variant_id": "HLA-B*15:02",
+        "sentence": "HLA-B*15:02-positive is associated with increased risk of severe cutaneous adverse reactions (Stevens–Johnson syndrome/toxic epidermal necrolysis) when treated with carbamazepine in children—particularly those of Asian origin—as compared to HLA-B*15:02-negative.",
+        "explanation": "In this pediatric CPNDS cohort, all carbamazepine-treated children with SJS/TEN who reported Asian origins carried HLA-B*15:02, replicating prior findings; one Sri Lankan child was also positive.",
+        "citations": [
+          "Conversely, HLA-B*15:02 was associated with CBZ-SJS (OR: 38.6, p=0.002), but not HSS and maculopapular exanthems.",
+          "On the other hand, three of the nine patients with CBZ-SJS/TEN were carriers of HLA-B*15:02, resulting in a significant association of HLA-B*15:02 with CBZ-SJS/TEN (OR: 38.6; P=0.002; [Table 2]).",
+          "All three HLA-B*15:02-positive patients with CBZ-SJS/TEN were of Asian origin and included the patient with concurrent Mycoplasma infection.",
+          "All four HLA-B*15:02-positive children reported Asian countries of origin.",
+          "Interestingly, one HLA-B*15:02-positive child with CBZ-SJS/TEN was of Sri Lankan origin, where, to our knowledge, no HLA-B*15:02-positive cases have been reported so far."
+        ]
+      },
+      {
+        "variant_id": "HLA-A*33:01",
+        "sentence": "HLA-A*33:01 mentioned in article but not studied by paper.",
+        "explanation": "The paper discusses HLA-A*31:01 and HLA-A*33:03 in the context of rs1061235 but does not analyze HLA-A*33:01.",
+        "citations": [
+          "Of the remaining patients, five carried HLA-A*33:03, and three HLA-A*33:01 ([Supplementary Table 1]).",
+          "To replicate these genetic associations in pediatric patients from North America with a diverse ethnic background, we investigated HLA-A*31:01 and HLA-B*15:02 in 42 children with CBZ hypersensitivity, and 91 CBZ-tolerant children from across Canada.",
+          "In addition, direct sequence-based typing for HLA-A*31:01 was also performed as described previously ([49]), using primers I1-240 and I3-249 for allele-specific amplification of exons 2 and 3 for HLA-A*31 and *33."
+        ]
+      },
+      {
+        "variant_id": "HLA-B*15:11",
+        "sentence": "HLA-B*15:11 mentioned in article but not studied by paper.",
+        "explanation": "This allele was not evaluated for association with carbamazepine outcomes in the study.",
+        "citations": [
+          "Kaniwa N, et al. HLA-B*1511 is a risk factor for carbamazepine-induced Stevens-Johnson syndrome and toxic epidermal necrolysis in Japanese patients.",
+          "To replicate these genetic associations in pediatric patients from North America with a diverse ethnic background, we investigated HLA-A*31:01 and HLA-B*15:02 in 42 children with CBZ hypersensitivity, and 91 CBZ-tolerant children from across Canada.",
+          "Genotyping was performed using the PG1502 DNA Detection Kit (Pharmigene, Inc., Taipei, Taiwan) for direct typing of HLA-B*15:02."
+        ]
+      },
+      {
+        "variant_id": "HLA-A*33:03",
+        "sentence": "HLA-A*33:03 mentioned in article but not studied by paper.",
+        "explanation": "The paper notes that many rs1061235T carriers without HLA-A*31:01 carried HLA-A*33:03 (often of Asian origin), but no formal association with carbamazepine hypersensitivity was tested.",
+        "citations": [
+          "Of the remaining patients, five carried HLA-A*33:03, and three HLA-A*33:01 ([Supplementary Table 1]).",
+          "Many of these patients carried HLA-A*33:03 and were of Asian origin, where HLA-A*33:03 is more common compared to European populations.",
+          "To replicate these genetic associations in pediatric patients from North America with a diverse ethnic background, we investigated HLA-A*31:01 and HLA-B*15:02 in 42 children with CBZ hypersensitivity, and 91 CBZ-tolerant children from across Canada."
+        ]
+      },
+      {
+        "variant_id": "HLA-A*31:01",
+        "sentence": "HLA-A*31:01-positive is associated with increased risk of hypersensitivity reactions—particularly hypersensitivity syndrome (HSS)—when treated with carbamazepine in children (multiethnic pediatric patients in Canada) as compared to HLA-A*31:01-negative.",
+        "explanation": "The pediatric CPNDS study replicated the HLA-A*31:01 risk association for carbamazepine hypersensitivity, observing a stronger association with HSS than with maculopapular eruptions, and no signal for SJS/TEN in this small pediatric sample (dominant model; Fisher’s exact test).",
+        "citations": [
+          "HLA-A*31:01 was significantly associated with CBZ-HSS (odds ratio (OR): 26.4, p=0.0025) and maculopapular exanthems (OR: 8.6, p=0.0037), but not with CBZ-SJS.",
+          "Three of six patients (50%) with CBZ-HSS carried HLA-A*31:01, whereas only three (3.3%) of the 91 CBZ-tolerant controls carried the allele, resulting in a very strong association with CBZ-HSS (OR: 26.4; P=0.0025; [Table 2]).",
+          "A significant association was also observed with CBZ-induced MPE, with six of 26 (23.1%) CBZ-MPE cases carrying HLA-A*31:01 (OR: 8.6; P=0.0037; [Table 2]).",
+          "In contrast to the strong associations with HSS and MPE, no HLA-A*31:01 or rs1061235T carriers were detected among the nine patients with CBZ-induced SJS/TEN, and no significant association with CBZ-SJS/TEN was observed (OR: 1.33; P=1.00; [Table 2]).",
+          "As the first study in ethnically diverse North American patients, we replicated the association of HLA-A*31:01 with CBZ hypersensitivity and demonstrated the relevance of this risk variant across a broader range of ancestries, as well as provided further replication in European patients."
+        ]
+      }
+    ],
+    "summary": "## Background\nCarbamazepine (CBZ) can cause hypersensitivity reactions ranging from mild rashes to life-threatening Stevens–Johnson syndrome/toxic epidermal necrolysis (SJS/TEN). This pediatric case–control study from Canada (42 CBZ hypersensitivity cases; 91 CBZ-tolerant controls) evaluated two HLA markers previously implicated in adults—HLA-A*31:01 and HLA-B*15:02—across a multiethnic cohort of children.\n\n## Key Findings\n- HLA-A*31:01 was strongly associated with non-SJS/TEN hypersensitivity:\n  - Hypersensitivity syndrome (HSS): OR 26.4; p=0.0025 (3/6 cases vs 3/91 controls).\n  - Maculopapular exanthema (MPE): OR 8.6; p=0.0037 (6/26 cases).\n  - Combined HSS/MPE: OR 11.2; p=2.6×10^-4.\n  - No association with SJS/TEN (0/9 cases; p=1.00).\n- HLA-B*15:02 was specifically associated with SJS/TEN: OR 38.6; p≈0.002 (3/9 SJS/TEN cases; all of Asian ancestry); not associated with HSS or MPE (no carriers).\n- Combined risk marker analysis (HLA-A*31:01 or HLA-B*15:02): 28.6% of cases vs 4.6% of controls; OR 8.14; p=2.6×10^-4. Estimated positive post-test probability 25–41% assuming a 5–10% baseline risk; negative post-test probability 3.8–7.7%.\n- The proxy SNP rs1061235T (often linked to HLA-A*31:01 in Europeans) was associated with HSS/MPE (OR 9.45; p=2.6×10^-5) but was not a reliable surrogate across non-European ancestries.\n\n## Clinical Implications\n- Test HLA-B*15:02 before CBZ initiation to prevent SJS/TEN; avoid CBZ in carriers. Although most common in Asian populations, testing is advisable regardless of reported ancestry in diverse settings.\n- Test HLA-A*31:01 to assess risk of HSS/MPE across ancestries; consider alternative therapy in carriers.\n- Do not rely on rs1061235 as a standalone proxy for HLA-A*31:01 in multiethnic populations; use direct HLA typing.\n- While these markers are neither necessary nor sufficient for reaction, the severity of outcomes and availability of alternatives support preemptive HLA genotyping in children prior to CBZ therapy."
+  }
+}

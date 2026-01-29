@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC11971672",
+    "variants": [
+      "CYP2C19*17",
+      "CYP2C19*2",
+      "CYP2C19*3",
+      "CYP2C19*1"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 4,
+      "from_article": 4,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "CYP2C19*17",
+        "sentence": "Genotypes *1/*17 + *17/*17 of CYP2C19*17 are associated with decreased likelihood of composite cardiovascular events within 6 months when treated with clopidogrel in people with acute ischemic stroke in South Korea as compared to genotypes carrying a CYP2C19 loss-of-function allele (*1/*2, *1/*3, *2/*2, *2/*3, *3/*3, *2/*17, *3/*17) (log-rank P = .048).",
+        "explanation": "In the prospective multicenter PLATELET trial of 2,910 Korean patients with acute ischemic stroke on clopidogrel, noncarriers of CYP2C19 loss-of-function alleles (including *1/*17 and *17/*17) had lower 6‑month cardiovascular events (1.6%) than carriers (2.7%), with a significant difference (P = .048).",
+        "citations": [
+          "Based on the result of CYP2C19 genotyping (**1*, **2*, **3*, and **17* alleles), we defined extensive metabolizers as patients with **1/*1*, **1/*17*, and **17/*17* genotypes; intermediate metabolizers as patients with only one **2* or **3* genotypes (**1/*2*, **1/*3*, **2/*17*, and **3/*17*); and poor metabolizers as patients with only **2* or **3* genotypes (**2/*2*, **2/*3*, and **3/*3*).",
+          "The primary outcome was the difference in the risk of cardiovascular events (including ischemic or hemorrhagic stroke, myocardial infarction, or cardiovascular death) within 6 months after an ischemic stroke between patients who were carriers or noncarriers of the CYP2C19 LOF allele.",
+          "The primary outcome occurred more frequently in carriers of the LOF CYP2C19 allele than in noncarriers (2.7% [49 of 1785] vs 1.6% [18 of 1125]; log-rank P = .048).",
+          "A prospective, nonrandomized clinical trial was conducted from September 1, 2019, to January 27, 2023, at 37 clinical sites in South Korea.",
+          "Patients who received clopidogrel within 72 hours of experiencing an acute ischemic stroke were included."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*2",
+        "sentence": "Genotypes *1/*2 + *2/*2 + *2/*3 + *2/*17 of CYP2C19*2 are associated with increased likelihood of composite cardiovascular events within 6 months when treated with clopidogrel in people with acute ischemic stroke in South Korea as compared to noncarrier genotypes (*1/*1, *1/*17, *17/*17) (log-rank P = .048).",
+        "explanation": "The study dichotomized patients by CYP2C19 loss-of-function (LOF) carrier status; carriers (including *2-containing genotypes) had higher 6‑month event rates (2.7%) than noncarriers (1.6%) on clopidogrel (P = .048).",
+        "citations": [
+          "Based on the result of CYP2C19 genotyping (**1*, **2*, **3*, and **17* alleles), we defined extensive metabolizers as patients with **1/*1*, **1/*17*, and **17/*17* genotypes; intermediate metabolizers as patients with only one **2* or **3* genotypes (**1/*2*, **1/*3*, **2/*17*, and **3/*17*); and poor metabolizers as patients with only **2* or **3* genotypes (**2/*2*, **2/*3*, and **3/*3*).",
+          "The primary outcome was the difference in the risk of cardiovascular events (including ischemic or hemorrhagic stroke, myocardial infarction, or cardiovascular death) within 6 months after an ischemic stroke between patients who were carriers or noncarriers of the CYP2C19 LOF allele.",
+          "The primary outcome occurred more frequently in carriers of the LOF CYP2C19 allele than in noncarriers (2.7% [49 of 1785] vs 1.6% [18 of 1125]; log-rank P = .048).",
+          "Patients who received clopidogrel within 72 hours of experiencing an acute ischemic stroke were included.",
+          "A prospective, nonrandomized clinical trial was conducted from September 1, 2019, to January 27, 2023, at 37 clinical sites in South Korea."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*3",
+        "sentence": "Genotypes *1/*3 + *3/*3 + *2/*3 + *3/*17 of CYP2C19*3 are associated with increased likelihood of composite cardiovascular events within 6 months when treated with clopidogrel in people with acute ischemic stroke in South Korea as compared to noncarrier genotypes (*1/*1, *1/*17, *17/*17) (log-rank P = .048).",
+        "explanation": "In this nonrandomized multicenter trial, CYP2C19 LOF carriers (including *3-containing genotypes) experienced more cardiovascular events at 6 months than noncarriers while on clopidogrel (2.7% vs 1.6%; P = .048).",
+        "citations": [
+          "Based on the result of CYP2C19 genotyping (**1*, **2*, **3*, and **17* alleles), we defined extensive metabolizers as patients with **1/*1*, **1/*17*, and **17/*17* genotypes; intermediate metabolizers as patients with only one **2* or **3* genotypes (**1/*2*, **1/*3*, **2/*17*, and **3/*17*); and poor metabolizers as patients with only **2* or **3* genotypes (**2/*2*, **2/*3*, and **3/*3*).",
+          "The primary outcome was the difference in the risk of cardiovascular events (including ischemic or hemorrhagic stroke, myocardial infarction, or cardiovascular death) within 6 months after an ischemic stroke between patients who were carriers or noncarriers of the CYP2C19 LOF allele.",
+          "The primary outcome occurred more frequently in carriers of the LOF CYP2C19 allele than in noncarriers (2.7% [49 of 1785] vs 1.6% [18 of 1125]; log-rank P = .048).",
+          "Patients who received clopidogrel within 72 hours of experiencing an acute ischemic stroke were included.",
+          "A prospective, nonrandomized clinical trial was conducted from September 1, 2019, to January 27, 2023, at 37 clinical sites in South Korea."
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*1",
+        "sentence": "Genotypes *1/*1 + *1/*17 of CYP2C19*1 are associated with decreased likelihood of composite cardiovascular events within 6 months when treated with clopidogrel in people with acute ischemic stroke in South Korea as compared to genotypes carrying a CYP2C19 loss-of-function allele (*1/*2, *1/*3, *2/*2, *2/*3, *3/*3, *2/*17, *3/*17) (log-rank P = .048).",
+        "explanation": "The trial defined extensive metabolizers (including *1/*1 and *1/*17) as LOF noncarriers and observed significantly fewer 6‑month cardiovascular events versus LOF carriers while on clopidogrel (1.6% vs 2.7%; P = .048).",
+        "citations": [
+          "Based on the result of CYP2C19 genotyping (**1*, **2*, **3*, and **17* alleles), we defined extensive metabolizers as patients with **1/*1*, **1/*17*, and **17/*17* genotypes; intermediate metabolizers as patients with only one **2* or **3* genotypes (**1/*2*, **1/*3*, **2/*17*, and **3/*17*); and poor metabolizers as patients with only **2* or **3* genotypes (**2/*2*, **2/*3*, and **3/*3*).",
+          "The primary outcome was the difference in the risk of cardiovascular events (including ischemic or hemorrhagic stroke, myocardial infarction, or cardiovascular death) within 6 months after an ischemic stroke between patients who were carriers or noncarriers of the CYP2C19 LOF allele.",
+          "The primary outcome occurred more frequently in carriers of the LOF CYP2C19 allele than in noncarriers (2.7% [49 of 1785] vs 1.6% [18 of 1125]; log-rank P = .048).",
+          "Patients who received clopidogrel within 72 hours of experiencing an acute ischemic stroke were included.",
+          "A prospective, nonrandomized clinical trial was conducted from September 1, 2019, to January 27, 2023, at 37 clinical sites in South Korea."
+        ]
+      }
+    ],
+    "summary": "## Background\nClopidogrel requires metabolic activation via CYP2C19. Loss‑of‑function (LOF) variants reduce active metabolite formation and may blunt antiplatelet effect. This prospective, multicenter, nonrandomized trial in South Korea evaluated whether CYP2C19 genotype predicts cardiovascular outcomes in 2910 adults who started clopidogrel within 72 hours of acute ischemic stroke.\n\n## Key Findings\n- Genotype groups: LOF carriers (intermediate or poor metabolizers; any CYP2C19*2 or *3 allele, including *1/*2, *1/*3, *2/*2, *2/*3, *3/*3, *2/*17, *3/*17) vs noncarriers (extensive metabolizers; *1/*1, *1/*17, *17/*17).\n- Primary outcome (6‑month composite of stroke [ischemic or hemorrhagic], myocardial infarction, or cardiovascular death) occurred more often in LOF carriers: 2.7% (49/1785) vs 1.6% (18/1125); noncarriers had lower risk (HR 0.58; 95% CI 0.33‑0.99; log‑rank P = .048). Association persisted after multivariable adjustment (adjusted HR 0.58; 95% CI 0.33‑0.99; P = .049).\n- Recurrent stroke was higher in LOF carriers: 2.5% vs 1.4% (HR 0.56; 95% CI 0.32‑1.00; P = .047). Individual myocardial infarction and cardiovascular death rates did not differ significantly.\n- Safety did not differ by genotype: major bleeding 0.6% vs 0.8% (P = .56); all‑cause mortality 0.3% vs 0.1% (P = .27).\n- Within LOF carriers, intermediate vs poor metabolizers had similar outcomes (HR 0.96; 95% CI 0.49‑1.88; P = .92).\n- Subgroup: among smokers, noncarriers had markedly fewer primary events than carriers (HR 0.09; 95% CI 0.01‑0.64; interaction P = .03).\n\n## Clinical Implications\n- CYP2C19 LOF alleles (*2, *3) identify patients with ischemic stroke who are less protected by clopidogrel against recurrent cardiovascular events, without an offsetting reduction in bleeding. Genotypes lacking LOF alleles (including *17 gain‑of‑function or *1 normal alleles) show better effectiveness.\n- Routine CYP2C19 genotyping can inform antiplatelet selection after ischemic stroke, particularly in East Asian populations where LOF alleles are common. For LOF carriers, consider antiplatelet strategies not dependent on CYP2C19 activation (e.g., ticagrelor‑based regimens) and close monitoring for recurrent ischemic events, with attention to smokers who may derive particular benefit from genotype‑guided therapy."
+  }
+}

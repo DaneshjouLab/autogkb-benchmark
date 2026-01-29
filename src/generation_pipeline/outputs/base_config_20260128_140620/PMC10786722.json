@@ -1,0 +1,679 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC10786722",
+    "variants": [
+      "rs114096998",
+      "rs138616379",
+      "DPYD*1",
+      "rs148372305",
+      "rs1801158",
+      "rs919596571",
+      "rs746368304",
+      "rs1801265",
+      "rs773159364",
+      "rs368146607",
+      "rs45589337",
+      "rs768519000",
+      "rs141044036",
+      "rs367623519",
+      "DPYD*13",
+      "rs56005131",
+      "rs375436137",
+      "rs371792178",
+      "rs779728902",
+      "rs746991079",
+      "rs3918290",
+      "rs1355754530",
+      "rs17376848",
+      "rs760853559",
+      "rs1801159",
+      "rs573299212",
+      "rs539032572",
+      "rs147601618",
+      "rs142619737",
+      "rs56038477",
+      "rs555178721",
+      "rs140039091",
+      "rs67376798",
+      "rs764173823",
+      "rs758927521",
+      "rs57918000",
+      "rs145548112",
+      "rs2297595",
+      "rs368617815",
+      "rs763174477",
+      "rs371313778",
+      "rs55886062",
+      "rs374825099",
+      "rs1801160",
+      "rs115232898",
+      "rs150759598",
+      "rs61622928",
+      "rs72975710",
+      "rs749122978",
+      "rs376073289",
+      "rs772950053",
+      "rs72549308",
+      "rs927463053",
+      "DPYD*6",
+      "rs138391898",
+      "rs202212118",
+      "rs3918289"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": true,
+      "supplement_variants": [],
+      "total_extracted": 57,
+      "from_article": 57,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "rs114096998",
+        "sentence": "rs114096998 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs138616379",
+        "sentence": "rs138616379 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "DPYD*1",
+        "sentence": "DPYD*1 mentioned in article but not studied by paper.",
+        "explanation": "No association or genotype-specific outcomes for DPYD*1 are described in the provided text.",
+        "citations": [
+          "The group of patients with partial DPD deficiency represented a total of 580 patients, including 134 wild-type patients (DPYD1/1) and 446 patients harboring at least one genetic variant (208 patients carried one genetic variant and 238 patients more than one).",
+          "The remaining 2392 patients exhibiting normal DPD activity include 623 wild-type patients (DPYD1/1) and 1769 mutated patients in which a total of 3183 genetic variants were identified (831 carrying a single genetic variant and 938 carrying more than one).",
+          "However, information regarding fluoropyrimidine toxicity was not available."
+        ]
+      },
+      {
+        "variant_id": "rs148372305",
+        "sentence": "rs148372305 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs1801158",
+        "sentence": "rs1801158 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs919596571",
+        "sentence": "rs919596571 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs746368304",
+        "sentence": "rs746368304 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs1801265",
+        "sentence": "rs1801265 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs773159364",
+        "sentence": "rs773159364 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs368146607",
+        "sentence": "rs368146607 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs45589337",
+        "sentence": "rs45589337 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs768519000",
+        "sentence": "rs768519000 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs141044036",
+        "sentence": "rs141044036 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs367623519",
+        "sentence": "rs367623519 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "DPYD*13",
+        "sentence": "Genotypes TG + GG of DPYD*13 (rs55886062) are associated with decreased DPD activity (predicting increased risk of fluoropyrimidine toxicity) with fluoropyrimidines in people eligible for an uracil analog-based chemotherapy as compared to genotype TT.",
+        "explanation": "In this large French cohort (~3,000 patients), the study confirms the strong impact of this clinically rare variant on DPD enzyme activity using pretreatment uracil and UH2/U phenotyping; significance was reported but exact p-values were not provided in the text.",
+        "citations": [
+          "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [[29](#CR29)].",
+          "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. [1](#Fig1)).",
+          "n = number of patients; ***P < 0.001; ****P < 0.0001.",
+          "Specifically, our results confirmed the strong impact of the three clinically rare variants."
+        ]
+      },
+      {
+        "variant_id": "rs56005131",
+        "sentence": "rs56005131 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs375436137",
+        "sentence": "rs375436137 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs371792178",
+        "sentence": "rs371792178 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs779728902",
+        "sentence": "rs779728902 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs746991079",
+        "sentence": "rs746991079 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs3918290",
+        "sentence": "Genotypes GA + AA of rs3918290 are associated with decreased DPD activity (predicting increased risk of fluoropyrimidine toxicity) with fluoropyrimidines in people eligible for an uracil analog-based chemotherapy as compared to genotype GG.",
+        "explanation": "The study reports a strong effect of this rare splice-site variant on DPD function in a cohort of about 3,000 French patients, based on pretreatment uracil and UH2/U ratio phenotyping; detailed p-values are not provided in the excerpt.",
+        "citations": [
+          "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [[29](#CR29)].",
+          "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. [1](#Fig1)).",
+          "n = number of patients; ***P < 0.001; ****P < 0.0001.",
+          "Specifically, our results confirmed the strong impact of the three clinically rare variants."
+        ]
+      },
+      {
+        "variant_id": "rs1355754530",
+        "sentence": "rs1355754530 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs17376848",
+        "sentence": "rs17376848 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs760853559",
+        "sentence": "rs760853559 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs1801159",
+        "sentence": "rs1801159 mentioned in article but not studied by paper.",
+        "explanation": "Although the paper notes some common DPYD variants may influence DPD activity, this specific rsID is not detailed in the provided text.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs573299212",
+        "sentence": "rs573299212 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs539032572",
+        "sentence": "rs539032572 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs147601618",
+        "sentence": "rs147601618 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs142619737",
+        "sentence": "rs142619737 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs56038477",
+        "sentence": "Genotypes CG + GG of rs56038477 (HapB3 tag) are associated with modestly decreased DPD activity with fluoropyrimidines in people eligible for an uracil analog-based chemotherapy as compared to genotype CC.",
+        "explanation": "The study notes a significant but modest association between common variants including HapB3 and DPD activity in this large French cohort; exact effect sizes and p-values are not provided in the excerpt.",
+        "citations": [
+          "The association between common DPYD genetic variants (MAF ≥ 1%) and DPD activity is summarized in Fig. [2](#Fig2).",
+          "Among the seven genetic variants identified, three variants (c.1236G>A or rs56038477 p.Glu412Glu ; c.496A>G or rs2297595 p.Met166Val; DPYD6 c.2194G>A or rs1801160 p.Val732Ile) were significantly more frequent in the group of patients exhibiting partial DPD deficiency.",
+          "Consistent with previous reports, the c.1236G>A (rs56038477) which is included in the risk haplotype B3 was significantly associated with low DPD activity [[30](#CR30), [31](#CR31)].",
+          "n = number of patients, ns = non-significant; *P < 0.05, **P < 0.01."
+        ]
+      },
+      {
+        "variant_id": "rs555178721",
+        "sentence": "rs555178721 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs140039091",
+        "sentence": "rs140039091 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs67376798",
+        "sentence": "Genotypes AT + TT of rs67376798 are associated with decreased DPD activity (predicting increased risk of fluoropyrimidine toxicity) with fluoropyrimidines in people eligible for an uracil analog-based chemotherapy as compared to genotype AA.",
+        "explanation": "The paper confirms the strong impact of this clinically rare variant on DPD function using pretreatment uracil-based phenotyping in ~3,000 patients; detailed statistics are not included in the provided text.",
+        "citations": [
+          "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [[29](#CR29)].",
+          "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. [1](#Fig1)).",
+          "n = number of patients; ***P < 0.001; ****P < 0.0001.",
+          "Specifically, our results confirmed the strong impact of the three clinically rare variants."
+        ]
+      },
+      {
+        "variant_id": "rs764173823",
+        "sentence": "rs764173823 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs758927521",
+        "sentence": "rs758927521 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs57918000",
+        "sentence": "rs57918000 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs145548112",
+        "sentence": "rs145548112 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs2297595",
+        "sentence": "rs2297595 mentioned in article but not studied by paper.",
+        "explanation": "Although the discussion references that some common variants may affect DPD activity, this specific rsID is not detailed in the provided text.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs368617815",
+        "sentence": "rs368617815 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs763174477",
+        "sentence": "rs763174477 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs371313778",
+        "sentence": "rs371313778 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs55886062",
+        "sentence": "Genotypes TG + GG of rs55886062 are associated with decreased DPD activity (predicting increased risk of fluoropyrimidine toxicity) with fluoropyrimidines in people eligible for an uracil analog-based chemotherapy as compared to genotype TT.",
+        "explanation": "The study confirms the strong impact of this rare missense variant on DPD activity using pretreatment uracil/UH2 phenotyping in a large cohort; statistical details are not provided in the excerpt.",
+        "citations": [
+          "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [[29](#CR29)].",
+          "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. [1](#Fig1)).",
+          "n = number of patients; ***P < 0.001; ****P < 0.0001.",
+          "Specifically, our results confirmed the strong impact of the three clinically rare variants."
+        ]
+      },
+      {
+        "variant_id": "rs374825099",
+        "sentence": "rs374825099 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs1801160",
+        "sentence": "rs1801160 mentioned in article but not studied by paper.",
+        "explanation": "While the paper notes some common variants have modest effects on DPD activity, no specific data for rs1801160 are included in the provided text.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs115232898",
+        "sentence": "rs115232898 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs150759598",
+        "sentence": "rs150759598 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs61622928",
+        "sentence": "rs61622928 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs72975710",
+        "sentence": "rs72975710 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs749122978",
+        "sentence": "rs749122978 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs376073289",
+        "sentence": "rs376073289 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs772950053",
+        "sentence": "rs772950053 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs72549308",
+        "sentence": "rs72549308 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs927463053",
+        "sentence": "rs927463053 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "DPYD*6",
+        "sentence": "DPYD*6 mentioned in article but not studied by paper.",
+        "explanation": "Although the paper discusses common variants with modest effects, it does not provide genotype-specific results for DPYD*6 in the provided text.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs138391898",
+        "sentence": "rs138391898 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs202212118",
+        "sentence": "rs202212118 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      },
+      {
+        "variant_id": "rs3918289",
+        "sentence": "rs3918289 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not include genotype-specific or outcome data for this variant.",
+        "citations": [
+          "The list of frequent (MAF ≥ 1%), rare (MAF < 1%) and very rare (MAF ≤ 0.1%) variants identified in the DPYD gene in the whole cohort is summarized in Table [2](#Tab2).",
+          "### Table 2.",
+          "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing."
+        ]
+      }
+    ],
+    "summary": "## Background\nFluoropyrimidines (5‑fluorouracil/capecitabine) rely on dihydropyrimidine dehydrogenase (DPD; gene DPYD) for clearance. Reduced DPD activity increases drug exposure and risk of severe toxicity. In ~3,000 patients, the authors sequenced DPYD exons and splice junctions and measured pretreatment DPD activity using the plasma dihydrouracil/uracil (UH2/U) ratio to assess how common and rare variants relate to DPD deficiency.\n\n## Key Findings\n- Established high‑risk variants strongly associated with reduced DPD activity:\n  - c.1679T>G (DPYD*13; rs55886062), c.1905+1G>A (DPYD*2A; rs3918290), and c.2846A>T (rs67376798) were each linked to significantly lower UH2/U ratios (P < 0.001–0.0001), consistent with higher toxicity risk at standard dosing.\n- Several common variants showed modest associations with lower DPD activity:\n  - hapB3 tag c.1236G>A (rs56038477), c.496A>G (p.Met166Val; rs2297595), and DPYD*6 c.2194G>A (p.Val732Ile; rs1801160) were more frequent in partially deficient patients (P < 0.05–0.01), but effects were smaller than the established high‑risk variants.\n- Rare variants substantially contribute to low DPD activity:\n  - Variants with MAF <1% were enriched in patients with low DPD activity (9.3% vs 3.2%; P < 1×10^-5).\n  - This enrichment persisted after excluding the three established high‑risk variants (4.5% vs 2.6%; P < 0.03).\n  - Predicted deleterious rare variants (MAF <1%, CADD >15), excluding the three high‑risk variants, were also enriched (4.2% vs 1.6%; P < 0.001).\n  - Rare loss‑of‑function findings included frameshift DPYD*7 c.299_302del (rs539032572), splice‑site c.2766+1G>A, nonsense p.Trp650*, start‑loss c.1A>G, and other missense/splice variants detected largely in heterozygosity.\n\nNote: Clinical toxicity outcomes were not captured; associations are with DPD phenotype (UH2/U ratio), a validated surrogate of toxicity risk.\n\n## Clinical Implications\n- Preemptive DPYD testing should not be limited to the standard trio (DPYD*2A, *13, c.2846A>T) and hapB3. Comprehensive next‑generation sequencing that captures rare, potentially deleterious variants can improve identification of patients with reduced DPD activity and at risk for fluoropyrimidine toxicity.\n- Use genotype‑guided dosing per current guidelines for known high‑risk alleles; consider dose reduction or alternative therapy when rare predicted loss‑of‑function variants are found, ideally corroborated by DPD phenotyping.\n- Combining comprehensive DPYD genotyping with phenotyping (when available) offers the most robust strategy to minimize fluoropyrimidine toxicity without compromising efficacy."
+  }
+}

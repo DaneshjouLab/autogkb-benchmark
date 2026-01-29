@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC12035587",
+    "variants": [
+      "NUDT15*3",
+      "TPMT*3"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 2,
+      "from_article": 2,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "NUDT15*3",
+        "sentence": "NUDT15 *3/*3 is associated with decreased tolerated dose of mercaptopurine in people of Asian and Hispanic descent as compared to NUDT15 *1/*1 (homozygotes tolerated only about 8% of the standard dose prior to significant toxicity).",
+        "explanation": "The article cites pharmacoepidemiologic evidence (2014 study) showing NUDT15*3 homozygotes could only tolerate ~8% of the usual mercaptopurine dose before toxicity, and notes higher loss-of-function NUDT15 allele frequencies in Asians and Hispanics; the case patient with NUDT15 *3/*3 developed severe myelosuppression, hepatotoxicity, and alopecia after mercaptopurine.",
+        "citations": [
+          "For example, a 2014 study showed that individuals homozygous for the *3 *NUDT15* mutation tolerated only 8% of the standard mercaptopurine dose prior to significant toxicity, similar to individuals who are homozygous for *TPMT* gene mutations.[10]",
+          "However, individuals of Hispanic and Asian descent, who are more likely to develop thiopurine toxicity, rarely possess mutations in the *TPMT* gene.",
+          "Pharmacoepidemiological data suggest that the loss‐of‐function *3 *NUDT15* mutation drives thiopurine intolerance in these patient populations.",
+          "Furthermore, the proportion of Asians and Hispanics who possess 1 *NUDT15* loss‐of‐function allele is double that of Europeans and Africans who possess 1 *TPMT* loss‐of‐function allele (21 *vs*. 10%), and this difference increases to 10‐fold among individuals with 2 loss‐of‐function alleles (2 *vs*. 0.3%; Figure [2]).[4]",
+          "We present a case of thiopurine toxicity resulting in severe myelosuppression, hepatotoxicity and alopecia in an individual with homozygous *3/*3 loss‐of‐function alleles in the NUDT15 gene."
+        ]
+      },
+      {
+        "variant_id": "TPMT*3",
+        "sentence": "TPMT *3A/*3A is associated with increased risk of severe thiopurine toxicity when treated with thiopurine medications in people with inflammatory bowel disease as compared to TPMT *1/*1 (poor metabolizers often develop severe toxicity even at 10-fold dose reductions).",
+        "explanation": "The paper summarizes that TPMT loss-of-function variants (notably *3A, *3C, and with *3B included) account for >90–95% of deficient phenotypes, with poor metabolizers nearly universally experiencing severe thiopurine toxicity despite large dose reductions; supporting evidence includes a randomized trial of 783 IBD patients where pretreatment TPMT screening reduced adverse hematologic events in at-risk individuals.",
+        "citations": [
+          "Mutations in the *TPMT* gene are commonly implicated in cases of severe thiopurine toxicity.",
+          "These mutations are inherited in an autosomal codominant pattern, and individuals who possess 1 loss‐of‐function allele are considered intermediate metabolizers whereas individuals who possess 2 loss‐of‐function alleles are considered poor metabolizers.[4]",
+          "Poor metabolizers almost universally develop severe thiopurine toxicity even at 10‐fold dose reductions.",
+          "Three polymorphisms (*2, *3A and *3C) account for over 90% of all intermediate and poor metabolizers in the general population, and this increases to over 95% with inclusion of a fourth variant (*3B), highlighting both the practicality and potential yield of genetic screening (Figure [2]).[5]",
+          "Pretreatment *TPMT* screening is supported by randomized control data; 1 study consisting of 783 individuals with inflammatory bowel disease (IBD) showed that pretreatment *TPMT* screening compared to weight‐based dosing alone reduced the rate of adverse haematological events by 10‐fold in at‐risk individuals.[6]"
+        ]
+      }
+    ],
+    "summary": "## Background\nThiopurines (azathioprine, mercaptopurine, thioguanine) are effective immunosuppressants/antineoplastics but can cause life-threatening toxicity. This case report describes a South Asian woman who developed profound pancytopenia, hepatotoxicity, and severe alopecia shortly after starting mercaptopurine; genotyping showed NUDT15 loss-of-function (LOF) homozygosity (*3/*3) with wild-type TPMT.\n\n## Key Findings\n- NUDT15 variant and toxicity:\n  - NUDT15*3 (c.415C>T; R139C) is a LOF allele that impairs detoxification of active thioguanine nucleotides, leading to accumulation and toxicity. Individuals homozygous for NUDT15*3 tolerate about 8% of the standard mercaptopurine dose before significant toxicity, similar to TPMT poor metabolizers.\n  - Early, severe alopecia can be an early signal of thiopurine toxicity and may precede myelosuppression; it is strongly associated with NUDT15 R139C but can occur even without NUDT15 variants.\n- Population differences:\n  - NUDT15 LOF alleles are more common in Asians and Hispanics: roughly 21% carry one LOF allele and about 2% carry two, compared with ~10% and 0.3% for TPMT LOF in Europeans/Africans, respectively.\n- TPMT variants and toxicity:\n  - TPMT LOF variants (*2, *3A, *3C; plus *3B) explain >90–95% of reduced TPMT activity. Poor metabolizers (two LOF alleles) almost universally develop severe thiopurine toxicity even at 10-fold dose reductions.\n  - In an RCT of IBD patients, pretreatment TPMT testing with genotype-guided dose reduction decreased hematologic adverse events by ~10-fold in at-risk individuals.\n\n## Clinical Implications\n- Genotype both NUDT15 and TPMT before initiating thiopurines, particularly in Asian and Hispanic patients and across specialties that use these drugs. Current practice often emphasizes TPMT; adding NUDT15 testing increases yield and safety.\n- For NUDT15 poor metabolizers (e.g., NUDT15*3/*3), avoid thiopurines or consider drastic dose minimization with intensive monitoring; many patients may still experience severe toxicity despite large dose reductions.\n- Recognize sudden alopecia as a potential early warning of thiopurine toxicity; promptly suspend therapy and assess with pharmacogenetic testing.\n- Broader adoption of dual-gene (TPMT+NUDT15) guidance—already standard in pediatric ALL and in several Asian guidelines—could reduce serious adverse drug reactions and transfusion/ hospitalization burden."
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC12038368",
+    "variants": [
+      "rs7311158",
+      "SLCO1B1*15",
+      "SLCO1B1*5",
+      "rs2242480",
+      "rs717620",
+      "rs2231142",
+      "SLCO1B1*1",
+      "rs776746",
+      "rs4149056",
+      "CYP3A4*22",
+      "rs2306283",
+      "rs3740066",
+      "rs1045642",
+      "rs4149117",
+      "rs7311358",
+      "CYP3A5*3"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 16,
+      "from_article": 16,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "rs7311158",
+        "sentence": "rs7311158 mentioned in article but not studied by paper.",
+        "explanation": "The Methods list genotyping of SLCO1B3 rs7311358 and rs4149117, and the cohort results reference multiple SNPs; rs7311158 appears in the Discussion list but was not genotyped or analyzed in this Thai simvastatin cohort.",
+        "citations": [
+          "MassARRAY System (Agena Bioscience, USA) genotyping platform was used to genotype the 10 variants from seven candidate genes which were previously reported to be associated with statin‐induced myotoxicity and/or pharmacokinetic parameters of statins including ABCB1 (rs1045642), ABCC2 (rs717620 and rs3740066), ABCG2 (rs2231142), SLCO1B1 (rs4149056, and rs2306283), SLCO1B3 (rs7311358 and rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746).",
+          "Besides SLCO1B1, other members of the SLC transporter family, SLCO1B3, may also serve as transporters for simvastatin acid.",
+          "Nonetheless, their roles in simvastatin pharmacokinetics are still unclear."
+        ]
+      },
+      {
+        "variant_id": "SLCO1B1*15",
+        "sentence": "SLCO1B1 1b/*15 is associated with increased steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to SLCO1B1 1a/*1a or 1a/*1b.",
+        "explanation": "In 89 Thai simvastatin-treated patients, the paper reports that the 1b/*15 diplotype (reduced OATP1B1 function) was linked to higher simvastatin acid exposure; overall decreased-function phenotypes (1b/*15 or 1b/*5) had higher SVA than normal function (0.53 vs. 0.19 ng/mL; p = 0.07).",
+        "citations": [
+          "The results showed that patients with the SLCO1B1 c.521TC+CC genotype had significantly higher simvastatin acid levels than those with c.521TT (0.53 vs. 0.19 ng/mL, p = 0.03).",
+          "Similarly, the SLCO1B1*1b/*15 genotype was associated with higher simvastatin acid levels than SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p < 0.001).",
+          "SLCO1B1*1b/*15 (decrease function) had significantly higher SVA concentrations compared to SLCO1B1*1a/*1a (0.58 vs. 0.16 ng/mL, p value < 0.001, Table 4).",
+          "Moreover, patients with decreased OATP1B1 function, including those with *1b/*5 and *1b/*15, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a p value trending towards significance (p = 0.07)."
+        ]
+      },
+      {
+        "variant_id": "SLCO1B1*5",
+        "sentence": "SLCO1B1 1b/*5 is associated with increased steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to SLCO1B1 1a/*1a or 1a/*1b.",
+        "explanation": "The study grouped 1b/*5 with other decreased-function SLCO1B1 phenotypes and observed higher SVA concentrations versus normal function (0.53 vs. 0.19 ng/mL; p = 0.07) in 89 Thai patients, consistent with reduced hepatic uptake.",
+        "citations": [
+          "Moreover, patients with decreased OATP1B1 function, including those with *1b/*5 and *1b/*15, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a p value trending towards significance (p = 0.07).",
+          "Consistent with the CPIC guideline and prior studies, participants with decreased OATP1B1 function (*1b/*15 and *1b/*5) showed higher simvastatin acid concentrations than those with normal function (0.53 vs. 0.19 ng/mL, p = 0.07).",
+          "Table 4 Caption: Impacts of SLCO1B1 diplotypes and OATP1B1 functions on 12‐h simvastatin plasma concentrations (n = 89)."
+        ]
+      },
+      {
+        "variant_id": "rs2242480",
+        "sentence": "Genotypes heterozygous + homozygous variant of rs2242480 are not associated with steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to the wildtype genotype.",
+        "explanation": "CYP3A4*1G (rs2242480) was genotyped in 89 Thai patients, and the study reports no significant association with simvastatin pharmacokinetics.",
+        "citations": [
+          "MassARRAY System (Agena Bioscience, USA) genotyping platform was used to genotype the 10 variants from seven candidate genes which were previously reported to be associated with statin‐induced myotoxicity and/or pharmacokinetic parameters of statins including ABCB1 (rs1045642), ABCC2 (rs717620 and rs3740066), ABCG2 (rs2231142), SLCO1B1 (rs4149056, and rs2306283), SLCO1B3 (rs7311358 and rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746).",
+          "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+          "In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort."
+        ]
+      },
+      {
+        "variant_id": "rs717620",
+        "sentence": "Genotypes heterozygous + homozygous variant of rs717620 are not associated with steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to the wildtype genotype.",
+        "explanation": "ABCC2 rs717620 showed no significant association with simvastatin exposure in the 89-patient Thai cohort.",
+        "citations": [
+          "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+          "In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+          "Table 3 Caption: Impacts of PK gene polymorphisms on 12‐h simvastatin plasma concentrations (n = 89)."
+        ]
+      },
+      {
+        "variant_id": "rs2231142",
+        "sentence": "Genotypes heterozygous + homozygous variant of rs2231142 are not associated with steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to the wildtype genotype.",
+        "explanation": "ABCG2 rs2231142 was assessed and found not significantly associated with simvastatin pharmacokinetics in 89 Thai patients.",
+        "citations": [
+          "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+          "In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+          "Table 3 Caption: Impacts of PK gene polymorphisms on 12‐h simvastatin plasma concentrations (n = 89)."
+        ]
+      },
+      {
+        "variant_id": "SLCO1B1*1",
+        "sentence": "SLCO1B1 1a/*1a or 1a/*1b (normal function) is associated with decreased steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to SLCO1B1 1b/*15 or 1b/*5 (decreased function).",
+        "explanation": "In this 89-patient Thai cohort, decreased-function OATP1B1 phenotypes had higher SVA than normal function (0.53 vs. 0.19 ng/mL; p = 0.07), indicating lower levels among SLCO1B1*1 normal-function diplotypes.",
+        "citations": [
+          "Moreover, patients with decreased OATP1B1 function, including those with *1b/*5 and *1b/*15, showed consistent increases in simvastatin acid concentrations compared to patients with normal OATP1B1 function, with a p value trending towards significance (p = 0.07).",
+          "Normal function (*1a/*1a, *1a/*1b, *1b/*1b) | 80 (89.88) | 0.02 (0.01–0.03) | 0.41 | 0.19 (0.11–0.41) | 0.07",
+          "Decrease function (*1b/*5, *1b/*15) | 9 (10.12) | 0.01 (0.01–0.03) | 0.53 (0.16–0.73)",
+          "Consistent with the CPIC guideline and prior studies, participants with decreased OATP1B1 function (*1b/*15 and *1b/*5) showed higher simvastatin acid concentrations than those with normal function (0.53 vs. 0.19 ng/mL, p = 0.07)."
+        ]
+      },
+      {
+        "variant_id": "rs776746",
+        "sentence": "Genotypes heterozygous + homozygous variant of rs776746 are not associated with steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to the wildtype genotype.",
+        "explanation": "CYP3A5*3 (rs776746) showed no significant association with simvastatin pharmacokinetics in 89 Thai patients.",
+        "citations": [
+          "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+          "In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+          "Table 3 Caption: Impacts of PK gene polymorphisms on 12‐h simvastatin plasma concentrations (n = 89)."
+        ]
+      },
+      {
+        "variant_id": "rs4149056",
+        "sentence": "Genotypes TC + CC of rs4149056 are associated with increased steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to genotype TT; at 10 mg/day, carriers had higher SVA than TT (p = 0.06).",
+        "explanation": "The study (n = 89 Thai) identified SLCO1B1 c.521T>C (rs4149056) as a key determinant of higher SVA exposure; a dose-stratified analysis at 10 mg/day showed a borderline increase (p = 0.06) in carriers versus TT.",
+        "citations": [
+          "The results showed that patients with the SLCO1B1 c.521TC+CC genotype had significantly higher simvastatin acid levels than those with c.521TT (0.53 vs. 0.19 ng/mL, p = 0.03).",
+          "The results showed that patients with the SLCO1B1 c.521T>C (rs4149056) TC+CC genotype exhibited higher steady‐state plasma levels of simvastatin acid (SVA) compared to TT carriers at a dose of 10 mg/day (5.83 vs. 1.95 ng/mL, p = 0.06).",
+          "SVL (A) and SVA (B) plasma concentrations (Css/Dose) of c.521TT and TC+CC genotype."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*22",
+        "sentence": "CYP3A4*22 mentioned in article but not studied by paper.",
+        "explanation": "The study evaluated CYP3A4*1G (rs2242480) but did not genotype or analyze CYP3A4*22.",
+        "citations": [
+          "There is also evidence suggesting that SNPs in metabolizing genes, such as CYP3A4*22 and CYP3A5*3, are associated with alterations in simvastatin pharmacokinetics.",
+          "MassARRAY System (Agena Bioscience, USA) genotyping platform was used to genotype the 10 variants from seven candidate genes which were previously reported to be associated with statin‐induced myotoxicity and/or pharmacokinetic parameters of statins including ABCB1 (rs1045642), ABCC2 (rs717620 and rs3740066), ABCG2 (rs2231142), SLCO1B1 (rs4149056, and rs2306283), SLCO1B3 (rs7311358 and rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746).",
+          "Pharmacokinetic gene polymorphisms, including ABCB1, ABCC2, ABCG2, SLCO1B1, SLCO1B3, CYP3A4, and CYP3A5, were genotyped by MassARRAY System."
+        ]
+      },
+      {
+        "variant_id": "rs2306283",
+        "sentence": "Genotypes AG + GG of rs2306283 are associated with increased steady-state plasma concentrations of simvastatin acid at the 10 mg/day dose in people with dyslipidemia or coronary artery disease as compared to genotype AA (p = 0.04), with no associations at other doses.",
+        "explanation": "In 89 Thai patients, SLCO1B1 c.388A>G (rs2306283) showed a dose-specific effect: carriers had higher SVA at 10 mg/day (3.63 vs. 1.59 ng/mL; p = 0.04), but no overall association across other doses.",
+        "citations": [
+          "Additionally, SLCO1B1 rs2306283 was associated with significantly higher SVA levels in patients carrying the G allele (AG+GG genotype) at the same dose (3.63 vs. 1.59 ng/mL, p = 0.04).",
+          "There was no association between the other doses and plasma SVL and SVA levels.",
+          "In contrast, SLCO1B1 c.388A>G (rs2306283) showed no significant association with simvastatin concentrations in our study, consistent with previous findings."
+        ]
+      },
+      {
+        "variant_id": "rs3740066",
+        "sentence": "Genotypes heterozygous + homozygous variant of rs3740066 are not associated with steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to the wildtype genotype.",
+        "explanation": "ABCC2 rs3740066 showed no significant association with simvastatin exposure in the 89-patient Thai cohort.",
+        "citations": [
+          "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+          "In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+          "Table 3 Caption: Impacts of PK gene polymorphisms on 12‐h simvastatin plasma concentrations (n = 89)."
+        ]
+      },
+      {
+        "variant_id": "rs1045642",
+        "sentence": "Genotypes heterozygous + homozygous variant of rs1045642 are not associated with steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to the wildtype genotype.",
+        "explanation": "ABCB1 rs1045642 was genotyped and found not significantly associated with simvastatin pharmacokinetics in 89 Thai patients.",
+        "citations": [
+          "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+          "In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+          "Table 3 Caption: Impacts of PK gene polymorphisms on 12‐h simvastatin plasma concentrations (n = 89)."
+        ]
+      },
+      {
+        "variant_id": "rs4149117",
+        "sentence": "Genotypes heterozygous + homozygous variant of rs4149117 are not associated with steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to the wildtype genotype.",
+        "explanation": "SLCO1B3 rs4149117 showed no significant association with simvastatin exposure in this study of 89 Thai patients.",
+        "citations": [
+          "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+          "In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+          "Table 3 Caption: Impacts of PK gene polymorphisms on 12‐h simvastatin plasma concentrations (n = 89)."
+        ]
+      },
+      {
+        "variant_id": "rs7311358",
+        "sentence": "Genotypes heterozygous + homozygous variant of rs7311358 are not associated with steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to the wildtype genotype.",
+        "explanation": "SLCO1B3 rs7311358 was genotyped and did not show a significant association with simvastatin pharmacokinetics in the 89-patient Thai cohort.",
+        "citations": [
+          "MassARRAY System (Agena Bioscience, USA) genotyping platform was used to genotype the 10 variants from seven candidate genes which were previously reported to be associated with statin‐induced myotoxicity and/or pharmacokinetic parameters of statins including ABCB1 (rs1045642), ABCC2 (rs717620 and rs3740066), ABCG2 (rs2231142), SLCO1B1 (rs4149056, and rs2306283), SLCO1B3 (rs7311358 and rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746).",
+          "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+          "In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort."
+        ]
+      },
+      {
+        "variant_id": "CYP3A5*3",
+        "sentence": "CYP3A5 *3/*3 is not associated with steady-state plasma concentrations of simvastatin acid in people with dyslipidemia or coronary artery disease as compared to CYP3A5 *1/*1 or *1/*3.",
+        "explanation": "The study evaluated CYP3A5*3 (rs776746) and reported no significant effect on simvastatin exposure among 89 Thai patients.",
+        "citations": [
+          "No significant relationship was observed between other pharmacokinetic gene polymorphisms and simvastatin lactone or acid concentrations.",
+          "In contrast, other SNPs, including ABCB1 (rs1045642), ABCC2 (rs717620, rs3740066), ABCG2 (rs2231142), SLCO1B3 (rs7311158, rs4149117), CYP3A4*1G (rs2242480), and CYP3A5*3 (rs776746), showed no significant association, suggesting a limited impact on simvastatin pharmacokinetics in this cohort.",
+          "Table 3 Caption: Impacts of PK gene polymorphisms on 12‐h simvastatin plasma concentrations (n = 89)."
+        ]
+      }
+    ],
+    "summary": "## Background\nSimvastatin exposure varies widely and higher plasma levels of its active form (simvastatin acid, SVA) increase risk of statin-associated muscle symptoms. This study measured 12-hour post-dose steady-state plasma simvastatin (lactone and acid) and genotyped key pharmacokinetic genes in 89 Thai patients on stable simvastatin to evaluate genotype–exposure relationships.\n\n## Key Findings\n- SLCO1B1 (OATP1B1) variants were the primary determinants of simvastatin acid levels:\n  - rs4149056 (c.521T>C): Carriers (TC; no CC observed) had higher SVA than TT (median 0.53 vs 0.19 ng/mL; p=0.03). C-allele frequency was 5.1% (TC 10.1%).\n  - Diplotypes: SLCO1B1*1b/*15 (decreased function) had higher SVA than *1a/*1a (0.58 vs 0.16 ng/mL; p<0.001). Grouped by phenotype, decreased OATP1B1 function (*1b/*5, *1b/*15) trended to higher SVA vs normal function (0.53 vs 0.19 ng/mL; p=0.07).\n- Dose subgroup (10 mg/day):\n  - rs4149056 TC carriers showed higher SVA than TT (5.83 vs 1.95 ng/mL; p=0.06).\n  - rs2306283 (c.388A>G): G-allele carriers (AG+GG) had higher SVA than AA (3.63 vs 1.59 ng/mL; p=0.04). Across all doses, rs2306283 was not associated with SVA.\n- No significant associations with simvastatin acid or lactone were found for: ABCB1 rs1045642, ABCC2 rs717620/rs3740066, ABCG2 rs2231142, SLCO1B3 rs7311358/rs4149117, CYP3A4*1G rs2242480, or CYP3A5*3 rs776746.\n\n## Clinical Implications\n- SLCO1B1 rs4149056 (c.521T>C) and the decreased-function diplotype *1b/*15 identify Thai patients with higher simvastatin acid exposure, consistent with reduced OATP1B1 activity and increased myotoxicity risk.\n- When SLCO1B1 genotype is known, follow CPIC 2022 guidance: consider lower simvastatin doses or switching to a statin with less OATP1B1 dependence in decreased/poor function phenotypes to mitigate muscle toxicity risk.\n- Other tested transporters/enzymes did not meaningfully affect exposure in this cohort. Findings support prioritizing SLCO1B1 genotyping (rs4149056, and haplotypes involving rs2306283) to guide simvastatin therapy in Thai patients. Larger studies are warranted to refine dose-specific recommendations and link exposure to clinical outcomes."
+  }
+}

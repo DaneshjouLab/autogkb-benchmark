@@ -1,0 +1,340 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC11430164",
+    "variants": [
+      "CYP3A4*3",
+      "CYP3A4*29",
+      "CYP3A4*1",
+      "CYP3A4*16",
+      "CYP3A4*4",
+      "CYP3A4*15",
+      "CYP3A4*10",
+      "CYP3A4*2",
+      "CYP3A4*23",
+      "CYP3A4*33",
+      "CYP3A4*28",
+      "CYP3A4*24",
+      "CYP3A4*14",
+      "CYP3A4*32",
+      "CYP3A4*31",
+      "CYP3A4*18",
+      "CYP3A4*34",
+      "CYP3A4*9",
+      "CYP3A4*11",
+      "rs35599367",
+      "CYP3A4*30",
+      "CYP3A4*17",
+      "CYP3A4*5",
+      "CYP3A4*19",
+      "CYP3A4*22"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 25,
+      "from_article": 25,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "CYP3A4*3",
+        "sentence": "CYP3A4*3 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "In recombinant insect-cell assays, CYP3A4*3 showed a 64.99% lower CLint for ticagrelor than wild-type, indicating impaired metabolism.",
+        "citations": [
+          "This study confirmed this point: the increase in Km is larger than that of Vmax, resulting in a 64.99% decrease in CLint for CYP3A4*3 compared with CYP3A4*1.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*29",
+        "sentence": "CYP3A4*29 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "The in vitro study identified CYP3A4*29 among 12 variants with significantly reduced ticagrelor CLint (approximately 25–75% of wild-type).",
+        "citations": [
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*1",
+        "sentence": "CYP3A4*1 is associated with normal intrinsic clearance of ticagrelor in vitro and serves as the reference comparator for variant activity.",
+        "explanation": "All variant activities were benchmarked against CYP3A4*1 in the recombinant enzyme kinetics experiments.",
+        "citations": [
+          "The estimated kinetic parameters Vmax, Km and CLint for AR-C124910XX of CYP3A4*1 were 1743.33 pmol/min/nmol, 2.18 µM and 800.45 µL/min/nmol, respectively.",
+          "Compared to the wild-type, most CYP3A4 alleles exhibited significant differences in intrinsic clearance.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*16",
+        "sentence": "CYP3A4*16 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "CYP3A4*16 was one of 12 variants showing significantly lower CLint for ticagrelor than wild-type in the in vitro system.",
+        "citations": [
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*4",
+        "sentence": "CYP3A4*4 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "The recombinant enzyme study grouped CYP3A4*4 among variants with reduced catalytic activity toward ticagrelor.",
+        "citations": [
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*15",
+        "sentence": "CYP3A4*15 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "CYP3A4*15 was reported with significantly reduced ticagrelor CLint relative to wild-type in the in vitro assay.",
+        "citations": [
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*10",
+        "sentence": "CYP3A4*10 not mentioned in article.",
+        "explanation": "The provided text does not report data for CYP3A4*10 with ticagrelor.",
+        "citations": [
+          "four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type;",
+          "The intrinsic clearance of CYP3A4*11, *18 and *33 was much higher than that of wild-type; four variants exhibited similar intrinsic clearance values as the wild-type enzyme; The remaining 14 variants showed significantly reduced intrinsic clearance values, ranging from 1.48% to 75.11% of the wild-type; CYP3A4*30 displayed weak or no activity.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*2",
+        "sentence": "CYP3A4*2 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "The recombinant study showed a 74.48% decrease in CLint for CYP3A4*2 versus wild-type, consistent with impaired metabolism.",
+        "citations": [
+          "In this in vitro study, CYP3A4*2 exhibits a 74.48% decrease in intrinsic clearance for ticagrelor when compared to the wild-type.",
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*23",
+        "sentence": "CYP3A4*23 not mentioned in article.",
+        "explanation": "The provided text does not include results for CYP3A4*23 with ticagrelor.",
+        "citations": [
+          "four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type;",
+          "The intrinsic clearance of CYP3A4*11, *18 and *33 was much higher than that of wild-type; four variants exhibited similar intrinsic clearance values as the wild-type enzyme; The remaining 14 variants showed significantly reduced intrinsic clearance values, ranging from 1.48% to 75.11% of the wild-type; CYP3A4*30 displayed weak or no activity.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*33",
+        "sentence": "CYP3A4*33 is associated with increased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "The in vitro analysis found CYP3A4*33 to have significantly higher catalytic activity toward ticagrelor than wild-type.",
+        "citations": [
+          "The intrinsic clearance of CYP3A4*11, *18 and *33 was much higher than that of wild-type;",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*28",
+        "sentence": "CYP3A4*28 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "CYP3A4*28 was among the variants with significantly reduced ticagrelor CLint relative to wild-type in the enzyme kinetics study.",
+        "citations": [
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*24",
+        "sentence": "CYP3A4*24 is associated with markedly decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "CYP3A4*24 exhibited only 1.48% of wild-type relative clearance in the recombinant system, indicating severe loss of function for ticagrelor metabolism.",
+        "citations": [
+          "CYP3A4*17 (F189S) and *24 (Q200H) exhibit severely reduced activity in the metabolism of ticagrelor, with over 90% decreased CLint compared to the wild-type.",
+          "In this study, CYP3A4*24 showed feeble catalytic activity towards ticagrelor, with only 1.48% relative clearance.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*14",
+        "sentence": "CYP3A4*14 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "The study categorized CYP3A4*14 among 12 variants with significantly lower CLint for ticagrelor versus wild-type.",
+        "citations": [
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*32",
+        "sentence": "CYP3A4*32 not mentioned in article.",
+        "explanation": "The provided text does not report findings for CYP3A4*32 with ticagrelor.",
+        "citations": [
+          "four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type;",
+          "The intrinsic clearance of CYP3A4*11, *18 and *33 was much higher than that of wild-type; four variants exhibited similar intrinsic clearance values as the wild-type enzyme; The remaining 14 variants showed significantly reduced intrinsic clearance values, ranging from 1.48% to 75.11% of the wild-type; CYP3A4*30 displayed weak or no activity.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*31",
+        "sentence": "CYP3A4*31 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "CYP3A4*31 was included among variants with significantly reduced catalytic activity toward ticagrelor in vitro.",
+        "citations": [
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "The remaining 14 variants showed significantly reduced intrinsic clearance values, ranging from 1.48% to 75.11% of the wild-type;",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*18",
+        "sentence": "CYP3A4*18 is associated with increased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "The recombinant assays showed CYP3A4*18 with significantly higher CLint for ticagrelor than wild-type.",
+        "citations": [
+          "The intrinsic clearance of CYP3A4*11, *18 and *33 was much higher than that of wild-type;",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*34",
+        "sentence": "CYP3A4*34 not mentioned in article.",
+        "explanation": "No data for CYP3A4*34 and ticagrelor were provided in the text.",
+        "citations": [
+          "four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type;",
+          "The intrinsic clearance of CYP3A4*11, *18 and *33 was much higher than that of wild-type; four variants exhibited similar intrinsic clearance values as the wild-type enzyme; The remaining 14 variants showed significantly reduced intrinsic clearance values, ranging from 1.48% to 75.11% of the wild-type; CYP3A4*30 displayed weak or no activity.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*9",
+        "sentence": "CYP3A4*9 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "The in vitro study identified CYP3A4*9 among variants with significantly reduced ticagrelor CLint versus wild-type.",
+        "citations": [
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*11",
+        "sentence": "CYP3A4*11 is associated with increased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "CYP3A4*11 showed significantly higher catalytic activity for ticagrelor than wild-type in the recombinant system.",
+        "citations": [
+          "The intrinsic clearance of CYP3A4*11, *18 and *33 was much higher than that of wild-type;",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "rs35599367",
+        "sentence": "Allele T of rs35599367 (CYP3A4*22) is associated with increased plasma exposure (area under the concentration–time curve) of ticagrelor in carriers as compared to non-carriers.",
+        "explanation": "A cited clinical pharmacokinetic study reported an 89% higher ticagrelor AUC in CYP3A4*22 carriers versus controls, consistent with reduced CYP3A4 expression/activity.",
+        "citations": [
+          "Research reported an 89% higher area under the plasma concentration–time curve for ticagrelor in CYP3A4*22 carriers compared to controls, suggesting that the CYP3A4*22 carriers may reinforce the antiplatelet effect by impairing ticagrelor elimination ([Holmberg et al., 2019](#ref-8)).",
+          "Several real-world studies have indicated that CYP3A4*22 carriers showed pronounced platelet inhibition after ticagrelor ingestion, and CYP3A4*22 variant was associated with increased risk of bleeding events in ticagrelor users ([Holmberg et al., 2019](#ref-8); [Liedes et al., 2023](#ref-15)).",
+          "For example, the CYP3A4*22 allele defined by the rs35599367 variant, which reduces CYP3A4 mRNA expression and enzyme activity in the liver ([Van Eerden et al., 2023](#ref-26))."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*30",
+        "sentence": "CYP3A4*30 is associated with no measurable intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "The study could not assess enzymatic activity for CYP3A4*30 due to a truncating mutation (c.388C>T) leading to a loss of the catalytic domain and likely complete loss of function.",
+        "citations": [
+          "CYP3A4*30 (R130STOP) could not be determined because of no detectable enzymatic activity toward ticagrelor.",
+          "The remaining 14 variants showed significantly reduced intrinsic clearance values, ranging from 1.48% to 75.11% of the wild-type; CYP3A4*30 displayed weak or no activity.",
+          "In experiments involving ticagrelor incubation, the enzymatic activity of CYP3A4*30 could not be assessed.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*17",
+        "sentence": "CYP3A4*17 is associated with markedly decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "CYP3A4*17 displayed only 4.72% of wild-type activity (CLint) toward ticagrelor in the recombinant assay, indicating severe impairment.",
+        "citations": [
+          "CYP3A4*17 (F189S) and *24 (Q200H) exhibit severely reduced activity in the metabolism of ticagrelor, with over 90% decreased CLint compared to the wild-type.",
+          "Our results provide some support for this prediction, indicating that CYP3A4*17 exhibits a markedly reduced Clint for ticagrelor, achieving only 4.72% of the activity observed in the wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*5",
+        "sentence": "CYP3A4*5 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "CYP3A4*5 was listed among the variants with significantly reduced ticagrelor CLint relative to wild-type.",
+        "citations": [
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*19",
+        "sentence": "CYP3A4*19 is associated with decreased intrinsic clearance of ticagrelor in vitro as compared to CYP3A4*1.",
+        "explanation": "The recombinant study grouped CYP3A4*19 with variants showing significantly lower catalytic activity for ticagrelor than wild-type.",
+        "citations": [
+          "Twelve variants (CYP3A4*2, *14, *3, *16, *5, *28, *29, *19, *4, *15, *9 and *31) also display significantly lower catalytic activity than CYP3A4*1, with relative clearance ranging from 25.52% to 75.11%.",
+          "Except for CYP3A4*30, the remaining 21 CYP3A4 variants could be classified into the following three categories according to the relative clearance values compare with CYP3A4*1: CYP3A4*11, CYP3A4*18 and CYP3A4*33 showed significantly higher intrinsic clearance than that of CYP3A4*1; four CYP3A4 variants (CYP3A4*10, CYP3A4*23, CYP3A4*32 and CYP3A4*34) were not significantly different from that of wild-type; the remaining fourteen variants (CYP3A4*2-*5, *9, *14-*17, *19, *24, *28, *29, and *31,) exhibited significantly reduced CLint in different degrees (1.48%–75.11% relative clearance) compared to that of wild-type.",
+          "### Table 3. Kinetic parameters of ticagrelor metabolized by wild-type and 22 CYP3A4 variants.",
+          "Table 3 Caption: Notes. *p < 0.05 versus wild-type. **p < 0.01 versus wild-type. ND, not determined."
+        ]
+      },
+      {
+        "variant_id": "CYP3A4*22",
+        "sentence": "CYP3A4*22 is associated with increased plasma exposure (area under the concentration–time curve) of ticagrelor in carriers as compared to non-carriers.",
+        "explanation": "Although not tested in vitro here, the paper cites clinical data showing 89% higher ticagrelor AUC in CYP3A4*22 carriers, reflecting reduced hepatic CYP3A4 expression and activity.",
+        "citations": [
+          "Research reported an 89% higher area under the plasma concentration–time curve for ticagrelor in CYP3A4*22 carriers compared to controls, suggesting that the CYP3A4*22 carriers may reinforce the antiplatelet effect by impairing ticagrelor elimination ([Holmberg et al., 2019](#ref-8)).",
+          "Several real-world studies have indicated that CYP3A4*22 carriers showed pronounced platelet inhibition after ticagrelor ingestion, and CYP3A4*22 variant was associated with increased risk of bleeding events in ticagrelor users ([Holmberg et al., 2019](#ref-8); [Liedes et al., 2023](#ref-15)).",
+          "For example, the CYP3A4*22 allele defined by the rs35599367 variant, which reduces CYP3A4 mRNA expression and enzyme activity in the liver ([Van Eerden et al., 2023](#ref-26))."
+        ]
+      }
+    ],
+    "summary": "## Background\nTicagrelor is primarily cleared by CYP3A4. Higher ticagrelor plasma concentrations correlate with bleeding and dyspnea, while the active metabolite (AR‑C124910XX) is less linked to these adverse effects. This in vitro study characterized ticagrelor metabolism by 22 CYP3A4 protein variants identified in the Chinese Han population using recombinant enzymes, quantifying intrinsic clearance (CLint = Vmax/Km) via AR‑C124910XX formation.\n\n## Key Findings\n- Broad allele-specific effects on ticagrelor clearance were observed versus wild‑type CYP3A4*1; most differences were statistically significant (generally p<0.01).\n- Increased metabolic activity (higher CLint):\n  - CYP3A4*11 (T363M): 264.7% of wild-type\n  - CYP3A4*18 (L293P): 122.5%\n  - CYP3A4*33 (A370S): 117.8%\n- Similar to wild‑type:\n  - CYP3A4*10 (111.4%), *23 (92.8%), *32 (103.8%), *34 (111.9%)\n- Decreased metabolic activity:\n  - Markedly reduced: CYP3A4*24 (Q200H) 1.48%; CYP3A4*17 (F189S) 4.72%\n  - Moderately to substantially reduced (25–75% of wild-type): CYP3A4*2 (25.5%), *3 (35.0%), *4 (68.8%), *5 (46.3%), *9 (75.0%), *14 (28.7%), *15 (71.8%), *16 (45.1%), *19 (67.4%), *28 (53.3%), *29 (66.5%), *31 (75.1%)\n- No measurable activity:\n  - CYP3A4*30 (R130STOP): null/near-null activity toward ticagrelor.\n- Contextual clinical evidence (not part of the enzyme panel but relevant): CYP3A4*22 (rs35599367) reduces hepatic CYP3A4 expression and is associated with higher ticagrelor exposure (≈+89% AUC) and increased bleeding risk in clinical studies.\n\n## Clinical Implications\n- Reduced-function or null CYP3A4 alleles (especially *24, *17, and others listed) may slow ticagrelor clearance, potentially increasing plasma levels and elevating bleeding and dyspnea risk at standard doses. Increased-function alleles (*11, *18, *33) may lower exposure, possibly risking reduced effect in some patients.\n- Because adverse events correlate with ticagrelor (parent) concentration, consider closer monitoring for toxicity in carriers of decreased-function alleles and assess antiplatelet effect in carriers of increased-function alleles. Therapeutic drug monitoring of ticagrelor and vigilance for CYP3A inhibitors/inducers are advisable.\n- These results are from in vitro recombinant systems; they support hypothesis generation for genotype-informed risk assessment. Clinical pharmacokinetic studies are needed to define dosing adjustments. Existing clinical data for CYP3A4*22 already demonstrate that reduced CYP3A4 function can meaningfully raise ticagrelor exposure and bleeding risk."
+  }
+}

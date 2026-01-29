@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC12036300",
+    "variants": [
+      "CYP2C19*17",
+      "rs4986893",
+      "CYP2C19*33",
+      "rs375781227",
+      "CYP2C19*1",
+      "rs140278421",
+      "CYP2C9*17",
+      "rs4244285",
+      "rs370803989",
+      "CYP2C19*22",
+      "CYP2C19*3",
+      "CYP2C19*10",
+      "CYP2C19*2",
+      "CYP2C19*26",
+      "rs1045642",
+      "rs12248560",
+      "rs6413438",
+      "CYP3A5*3"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": false,
+      "supplement_variants": [],
+      "total_extracted": 18,
+      "from_article": 18,
+      "from_supplement": 0
+    },
+    "associations": [
+      {
+        "variant_id": "CYP2C19*17",
+        "sentence": "Genotypes CYP2C19 *1/*17 + *17/*17 are not associated with increased risk of bleeding events when treated with clopidogrel (double maintenance dose 150 mg/day as part of DAPT) in people with Coronary Artery Disease undergoing PCI in Syria as compared to CYP2C19 *1/*1; no significant difference reported.",
+        "explanation": "In a prospective cohort of 50 Syrian CAD patients followed 18–24 months, ~30% carried CYP2C19*17, yet bleeding incidence was ≤9.7% overall and no genotype-based increase in bleeding was reported.",
+        "citations": [
+          "No association was found between the CYP2C19*2 allele and recurrent ischemic events or between the CYP2C19*17 allele and bleeding complications in patients treated with a doubled maintenance dose of clopidogrel.",
+          "Our results indicated that carriers of the CYP2C19*17 variant experienced a higher incidence of bleeding events (16.67%) compared to non-carriers (6.9%).",
+          "Despite this observed difference, it is important to note that the statistical analysis found no significant difference between the two groups (P = 0.567; see Table 7).",
+          "Additionally, two individuals (4.88%) experienced MACE, and four patients (9.76%) reported bleeding events.",
+          "Table 7 Caption: Distribution of bleeding events by CYP2C19 polymorphism"
+        ]
+      },
+      {
+        "variant_id": "rs4986893",
+        "sentence": "Genotypes GA + AA of rs4986893 are absent and therefore not associated with MACE or bleeding when treated with clopidogrel (double maintenance dose) in people with Coronary Artery Disease undergoing PCI in Syria as compared to genotype GG; association could not be assessed.",
+        "explanation": "The study genotyped CYP2C19*3 (rs4986893) and observed 0% allele frequency in 50 patients, precluding outcome analysis.",
+        "citations": [
+          "The allele frequencies were 8% for CYP2C19*2, 0% for CYP2C19*3, and 17% for CYP2C19*17.",
+          "Genotyping of CYP2C19*2 (rs4244285), CYP2C19*3 (rs4986893), and CYP2C19*17 (rs12248560) was performed using polymerase chain reaction (PCR), followed by Sanger sequencing of the amplicons.",
+          "The other examined alleles (CYP2C19*3, *10, *22, *26*, and *33) were not detected in the study population.",
+          "Table 3 Caption: Studied CYP2C19 gene polymorphisms"
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*33",
+        "sentence": "CYP2C19*33 mentioned in article but not studied by paper.",
+        "explanation": "The SNP defining CYP2C19*33 was noted as screened but no genotype results or clinical associations with clopidogrel outcomes were analyzed.",
+        "citations": [
+          "Moreover, by using the length of the PCR products, we were able to screen for four additional core SNPs (rs6413438, rs140278421, rs375781227, and rs370803989) that define the 10*, 22*,26*, and 33* alleles, respectively.",
+          "The other examined alleles (CYP2C19*3, *10, *22, *26*, and *33) were not detected in the study population.",
+          "Table 3 Caption: Studied CYP2C19 gene polymorphisms"
+        ]
+      },
+      {
+        "variant_id": "rs375781227",
+        "sentence": "rs375781227 mentioned in article but not studied by paper.",
+        "explanation": "This SNP (defining CYP2C19*26) was listed as screened by amplicon length, but no genotype data or outcome associations were reported.",
+        "citations": [
+          "Moreover, by using the length of the PCR products, we were able to screen for four additional core SNPs (rs6413438, rs140278421, rs375781227, and rs370803989) that define the 10*, 22*,26*, and 33* alleles, respectively.",
+          "The other examined alleles (CYP2C19*3, *10, *22, *26*, and *33) were not detected in the study population.",
+          "Table 3 Caption: Studied CYP2C19 gene polymorphisms"
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*1",
+        "sentence": "CYP2C19*1 mentioned in article but not studied by paper.",
+        "explanation": "The allele was used to assign CPIC phenotypes (e.g., NM, RM) but no direct association with clopidogrel outcomes was analyzed.",
+        "citations": [
+          "Those with one copy of the CYP2C19*17 allele and one copy of the normal function allele CYP2C19*1 are classified as rapid metabolizers (RMs).",
+          "Individuals carrying two copies of the normal function allele CYP2C19*1 are designated as normal metabolizers (NMs).",
+          "Genotyping of CYP2C19*2 (rs4244285), CYP2C19*3 (rs4986893), and CYP2C19*17 (rs12248560) was performed using polymerase chain reaction (PCR), followed by Sanger sequencing of the amplicons.",
+          "Table 4 Caption: Observed versus expected genotype distribution of CYP2C19"
+        ]
+      },
+      {
+        "variant_id": "rs140278421",
+        "sentence": "rs140278421 mentioned in article but not studied by paper.",
+        "explanation": "This SNP (defining CYP2C19*22) was stated as screened; no genotype frequencies or outcome analyses were provided.",
+        "citations": [
+          "Moreover, by using the length of the PCR products, we were able to screen for four additional core SNPs (rs6413438, rs140278421, rs375781227, and rs370803989) that define the 10*, 22*,26*, and 33* alleles, respectively.",
+          "The other examined alleles (CYP2C19*3, *10, *22, *26*, and *33) were not detected in the study population.",
+          "Table 3 Caption: Studied CYP2C19 gene polymorphisms"
+        ]
+      },
+      {
+        "variant_id": "CYP2C9*17",
+        "sentence": "CYP2C9*17 mentioned in article but not studied by paper.",
+        "explanation": "The discussion referenced allele frequency contextually, but the study did not genotype CYP2C9*17 for association with clopidogrel outcomes.",
+        "citations": [
+          "In addition to the extensively studied CYP2C19, several other genes have been investigated in the literature because of their potential impact on the metabolism and effective concentration of the active metabolites of clopidogrel.",
+          "These genes included ABCB1, CYP2C9, CYP3A4/5, PON1, and CES1.",
+          "For the CYP2C9*17 allele, the frequency was found to be (17%), which is close to that reported in European and Middle Eastern populations but higher than those found in other studies on Asians (from 0.3% in Koreans to 1.3% in Japanese)."
+        ]
+      },
+      {
+        "variant_id": "rs4244285",
+        "sentence": "Genotypes GA + AA of rs4244285 are not associated with increased risk of MACE when treated with clopidogrel (double maintenance dose 150 mg/day as part of DAPT) in people with Coronary Artery Disease undergoing PCI in Syria as compared to genotype GG; no significant difference reported.",
+        "explanation": "Among 50 Syrian PCI patients genotyped for CYP2C19*2 (rs4244285) and followed 18–24 months, carriers showed no increased MACE under the doubled clopidogrel regimen; statistical significance was not reported.",
+        "citations": [
+          "No association was found between the CYP2C19*2 allele and recurrent ischemic events or between the CYP2C19*17 allele and bleeding complications in patients treated with a doubled maintenance dose of clopidogrel.",
+          "Overall, two of the 41 patients who were followed up in the study experienced at least one MACE after PCI.",
+          "In terms of the distribution of MACE based on CYP2C19*2 status, there was no statistically significant correlation (P = 0.2744).",
+          "Table 5 Caption: Distribution of recurrent cardiac ischemic events by CYP2C19*2 polymorphism"
+        ]
+      },
+      {
+        "variant_id": "rs370803989",
+        "sentence": "rs370803989 mentioned in article but not studied by paper.",
+        "explanation": "The SNP (defining CYP2C19*33) was only noted as screened; no clinical association with clopidogrel response was presented.",
+        "citations": [
+          "Moreover, by using the length of the PCR products, we were able to screen for four additional core SNPs (rs6413438, rs140278421, rs375781227, and rs370803989) that define the 10*, 22*,26*, and 33* alleles, respectively.",
+          "The other examined alleles (CYP2C19*3, *10, *22, *26*, and *33) were not detected in the study population.",
+          "Table 3 Caption: Studied CYP2C19 gene polymorphisms"
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*22",
+        "sentence": "CYP2C19*22 mentioned in article but not studied by paper.",
+        "explanation": "Although the defining SNP was listed as screened, the study did not report genotypes or test associations with MACE or bleeding.",
+        "citations": [
+          "Moreover, by using the length of the PCR products, we were able to screen for four additional core SNPs (rs6413438, rs140278421, rs375781227, and rs370803989) that define the 10*, 22*,26*, and 33* alleles, respectively.",
+          "The other examined alleles (CYP2C19*3, *10, *22, *26*, and *33) were not detected in the study population.",
+          "Table 3 Caption: Studied CYP2C19 gene polymorphisms"
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*3",
+        "sentence": "CYP2C19*3 carriers (CYP2C19 *1/*3 + *3/*3) were not observed and thus not associated with MACE or bleeding when treated with clopidogrel (double maintenance dose) in people with Coronary Artery Disease undergoing PCI in Syria as compared to non-carriers; association could not be assessed.",
+        "explanation": "The cohort had 0% CYP2C19*3 allele frequency, preventing any genotype–outcome analysis.",
+        "citations": [
+          "The allele frequencies were 8% for CYP2C19*2, 0% for CYP2C19*3, and 17% for CYP2C19*17.",
+          "The other examined alleles (CYP2C19*3, *10, *22, *26*, and *33) were not detected in the study population.",
+          "Genotyping of CYP2C19*2 (rs4244285), CYP2C19*3 (rs4986893), and CYP2C19*17 (rs12248560) was performed using polymerase chain reaction (PCR), followed by Sanger sequencing of the amplicons.",
+          "Table 4 Caption: Observed versus expected genotype distribution of CYP2C19"
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*10",
+        "sentence": "CYP2C19*10 mentioned in article but not studied by paper.",
+        "explanation": "The defining SNP (rs6413438) was listed as screened, but no genotype results or outcome associations were reported.",
+        "citations": [
+          "Moreover, by using the length of the PCR products, we were able to screen for four additional core SNPs (rs6413438, rs140278421, rs375781227, and rs370803989) that define the 10*, 22*,26*, and 33* alleles, respectively.",
+          "The other examined alleles (CYP2C19*3, *10, *22, *26*, and *33) were not detected in the study population.",
+          "Table 3 Caption: Studied CYP2C19 gene polymorphisms"
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*2",
+        "sentence": "CYP2C19*2 carriers (CYP2C19 *1/*2 + *2/*17) are not associated with increased risk of MACE when treated with clopidogrel (double maintenance dose 150 mg/day as part of DAPT) in people with Coronary Artery Disease undergoing PCI in Syria as compared to CYP2C19 *1/*1; no significant difference reported.",
+        "explanation": "In 50 Syrian PCI patients followed 18–24 months, all *2 carriers were intermediate metabolizers and received doubled clopidogrel; the study found no increased MACE among carriers versus non-carriers.",
+        "citations": [
+          "No association was found between the CYP2C19*2 allele and recurrent ischemic events or between the CYP2C19*17 allele and bleeding complications in patients treated with a doubled maintenance dose of clopidogrel.",
+          "In terms of the distribution of MACE based on CYP2C19*2 status, there was no statistically significant correlation (P = 0.2744).",
+          "In our study population, all patients who carried the CYP2C19*2 allele and were followed up demonstrated the IM phenotype of the CYP2C19 enzyme, as they carried a single copy of the CYP2C19*2 allele.",
+          "These patients were prescribed a double maintenance dose of clopidogrel (150 mg/day) for at least one month following (PCI) procedure, as directed by their treating physician.",
+          "Table 5 Caption: Distribution of recurrent cardiac ischemic events by CYP2C19*2 polymorphism"
+        ]
+      },
+      {
+        "variant_id": "CYP2C19*26",
+        "sentence": "CYP2C19*26 mentioned in article but not studied by paper.",
+        "explanation": "While the defining SNP was noted as screened, no genotype data or clinical outcome analyses were provided.",
+        "citations": [
+          "Moreover, by using the length of the PCR products, we were able to screen for four additional core SNPs (rs6413438, rs140278421, rs375781227, and rs370803989) that define the 10*, 22*,26*, and 33* alleles, respectively.",
+          "The other examined alleles (CYP2C19*3, *10, *22, *26*, and *33) were not detected in the study population.",
+          "Table 3 Caption: Studied CYP2C19 gene polymorphisms"
+        ]
+      },
+      {
+        "variant_id": "rs1045642",
+        "sentence": "rs1045642 mentioned in article but not studied by paper.",
+        "explanation": "The ABCB1 C3435T variant was discussed from prior literature regarding clopidogrel response, but it was not genotyped or analyzed in this cohort.",
+        "citations": [
+          "Within the ABCB1 gene, a SNP known as C3435T (rs1045642) has been associated with a higher incidence of ischemic cardiac events in patients with acute myocardial infarction treated with clopidogrel.",
+          "This SNP has been linked to potential sub-therapeutic concentrations of clopidogrel, primarily resulting from decreased intestinal absorption of the drug.",
+          "The frequency of this genetic variant varies among populations."
+        ]
+      },
+      {
+        "variant_id": "rs12248560",
+        "sentence": "Genotypes CT + TT of rs12248560 are not associated with increased risk of bleeding events when treated with clopidogrel (double maintenance dose 150 mg/day as part of DAPT) in people with Coronary Artery Disease undergoing PCI in Syria as compared to genotype CC; no significant difference reported.",
+        "explanation": "Approximately 30% of the 50-patient cohort carried rs12248560 (CYP2C19*17); over 18–24 months, bleeding events were ≤9.7% and no significant genotype-related increase in bleeding was reported.",
+        "citations": [
+          "The allelic frequency of CYP2C19*17 was determined to be (17%), with (4%) of the participants carrying the homozygous (*17/*17) genotype, and (26%) were heterozygous wild-type (*1/*17).",
+          "Our results indicated that carriers of the CYP2C19*17 variant experienced a higher incidence of bleeding events (16.67%) compared to non-carriers (6.9%).",
+          "Despite this observed difference, it is important to note that the statistical analysis found no significant difference between the two groups (P = 0.567; see Table 7).",
+          "No association was found between the CYP2C19*2 allele and recurrent ischemic events or between the CYP2C19*17 allele and bleeding complications in patients treated with a doubled maintenance dose of clopidogrel.",
+          "Table 7 Caption: Distribution of bleeding events by CYP2C19 polymorphism"
+        ]
+      },
+      {
+        "variant_id": "rs6413438",
+        "sentence": "rs6413438 mentioned in article but not studied by paper.",
+        "explanation": "This SNP (defining CYP2C19*10) was listed as screened, yet no genotype frequencies or associations with clopidogrel outcomes were analyzed.",
+        "citations": [
+          "Moreover, by using the length of the PCR products, we were able to screen for four additional core SNPs (rs6413438, rs140278421, rs375781227, and rs370803989) that define the 10*, 22*,26*, and 33* alleles, respectively.",
+          "The other examined alleles (CYP2C19*3, *10, *22, *26*, and *33) were not detected in the study population.",
+          "Table 3 Caption: Studied CYP2C19 gene polymorphisms"
+        ]
+      },
+      {
+        "variant_id": "CYP3A5*3",
+        "sentence": "CYP3A5*3 mentioned in article but not studied by paper.",
+        "explanation": "CYP3A4/5 were cited as potentially relevant genes from prior studies, but CYP3A5*3 was not genotyped nor associated with outcomes in this cohort.",
+        "citations": [
+          "In addition to the extensively studied CYP2C19, several other genes have been investigated in the literature because of their potential impact on the metabolism and effective concentration of the active metabolites of clopidogrel.",
+          "These genes included ABCB1, CYP2C9, CYP3A4/5, PON1, and CES1."
+        ]
+      }
+    ],
+    "summary": "## Background\nClopidogrel is a prodrug activated primarily by CYP2C19. Loss-of-function (LOF) and gain-of-function (GOF) CYP2C19 variants can alter antiplatelet effect and clinical outcomes. This prospective cohort of 50 Syrian patients with coronary artery disease undergoing PCI examined CYP2C19*2 (LOF), *3 (LOF), and *17 (GOF) variants and their association with clinical outcomes while on a doubled maintenance dose of clopidogrel (150 mg/day) as part of DAPT, with 18–24 months follow-up (outcomes available for n=41).\n\n## Key Findings\n- Variant frequencies: CYP2C19*2 = 8%, CYP2C19*3 = 0%, CYP2C19*17 = 17%. Phenotypes: normal metabolizer 56%, intermediate 12%, rapid 26%, ultrarapid 4%, poor 2%.\n- No association between CYP2C19*2 carrier status and recurrent ischemic events (MACE) on doubled-dose clopidogrel (1/6 vs 1/35; P=0.2744). Refractory angina symptoms also did not differ by CYP2C19*2 status (P>0.9999).\n- Bleeding events were numerically higher in CYP2C19*17 carriers versus non-carriers (16.7% vs 6.9%) but not statistically significant (P=0.567). Bleeding was also numerically higher in CYP2C19*2 carriers (33.3% vs 5.7%; P=0.0952) but not significant.\n- CYP2C19*3 carriers were absent, so associations could not be assessed.\n\n## Clinical Implications\n- In this Syrian cohort, a doubled maintenance dose of clopidogrel (150 mg/day) appeared to mitigate the expected adverse ischemic impact of CYP2C19 LOF carriage, with no observed increase in MACE among CYP2C19*2 carriers. The study did not detect a significant increase in bleeding among CYP2C19*17 carriers on this regimen.\n- Given the small sample size and limited events, these findings should be interpreted cautiously. They suggest that dose escalation may be a pragmatic option where alternative P2Y12 inhibitors are not feasible, but current guidelines generally favor prasugrel or ticagrelor over clopidogrel for IM/PM phenotypes after PCI. Local CYP2C19 allele frequencies (notably low *3 and moderate *2 and *17) can inform regional implementation of pharmacogenomic testing and antiplatelet selection, pending confirmation in larger studies with platelet function and/or active metabolite measurements."
+  }
+}

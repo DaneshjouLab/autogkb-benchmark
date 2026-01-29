@@ -1,0 +1,445 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-28T14:06:20.536176",
+    "config_name": "base_config",
+    "config_description": "Base configuration for the pipeline using previous best performers",
+    "stages_run": [
+      "sentences",
+      "citations",
+      "variants",
+      "summary"
+    ],
+    "pipeline_config": {
+      "variant_extraction": {
+        "method": "regex",
+        "version": "v5",
+        "description": "Regex-based variant extraction with BioC supplement integration"
+      },
+      "sentence_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v5"
+      },
+      "citation_finding": {
+        "model": "gpt-5",
+        "prompt_version": "v2"
+      },
+      "summary_generation": {
+        "model": "gpt-5",
+        "prompt_version": "v1"
+      }
+    }
+  },
+  "result": {
+    "pmcid": "PMC6435416",
+    "variants": [
+      "CYP2D6*2xN",
+      "rs1065",
+      "rs72549",
+      "CYP2D6*35",
+      "CYP2D6*29",
+      "CYP2D6*1xN",
+      "CYP2D6*9",
+      "rs28371",
+      "rs77467",
+      "CYP2D6*46",
+      "rs3892",
+      "CYP2D6*33",
+      "CYP2D6*17",
+      "CYP2D6*10",
+      "CYP2D6*2",
+      "rs1694",
+      "CYP2D6*10xN",
+      "rs50308",
+      "CYP2D6*6",
+      "CYP2D6*3",
+      "CYP2D6*41",
+      "CYP2D6*1",
+      "rs35742",
+      "rs59421",
+      "rs7692",
+      "CYP2D6*5",
+      "CYP2D6*4",
+      "rs1135",
+      "rs5030",
+      "CYP2D6*4xN",
+      "rs20137"
+    ],
+    "variant_extraction_metadata": {
+      "has_supplement": true,
+      "supplement_variants": [
+        "rs1065",
+        "rs1694",
+        "rs72549",
+        "rs50308",
+        "CYP2D6*6",
+        "CYP2D6*3",
+        "CYP2D6*35",
+        "CYP2D6*29",
+        "CYP2D6*41",
+        "rs35742",
+        "rs59421",
+        "rs7692",
+        "CYP2D6*5",
+        "CYP2D6*4",
+        "rs1135",
+        "CYP2D6*9",
+        "rs28371",
+        "rs3892",
+        "rs5030",
+        "rs77467",
+        "CYP2D6*4xN",
+        "rs20137",
+        "CYP2D6*46",
+        "CYP2D6*33",
+        "CYP2D6*17"
+      ],
+      "total_extracted": 31,
+      "from_article": 6,
+      "from_supplement": 25
+    },
+    "associations": [
+      {
+        "variant_id": "CYP2D6*2xN",
+        "sentence": "CYP2D6*2xN mentioned in article but not studied by paper.",
+        "explanation": "The study examined risperidone adverse events in pediatric patients by CYP2D6 metabolizer phenotype (poor/intermediate vs normal/ultrarapid) and did not report allele- or genotype-specific associations.",
+        "citations": [
+          "An additional long-range PCR to determine CYP2D6 deletions or duplications was performed using the primers specified in [Supplemental Table S1](#SD1) (online).",
+          "In instances of unambiguous metabolic status (e.g. *1×N/*2 and *1/*2×N are both ultrarapid), the first allele was selected as duplicated.",
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers."
+        ]
+      },
+      {
+        "variant_id": "rs1065",
+        "sentence": "rs1065 mentioned in article but not studied by paper.",
+        "explanation": "The analysis focused on CYP2D6 phenotype groups for adverse event risk rather than individual rsID genotype effects.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "rs72549",
+        "sentence": "rs72549 mentioned in article but not studied by paper.",
+        "explanation": "No SNP-level results were presented; genotyping was used only to assign overall CYP2D6 metabolizer status.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*35",
+        "sentence": "CYP2D6*35 mentioned in article but not studied by paper.",
+        "explanation": "Star alleles were genotyped to infer CYP2D6 phenotype, but no allele-specific risperidone outcome analyses were reported.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "A complete list of CYP2D6 diplotypes identified is included in [Supplemental Table S3](#SD1) (online).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*29",
+        "sentence": "CYP2D6*29 mentioned in article but not studied by paper.",
+        "explanation": "The paper reported associations only at the metabolizer-phenotype level, not for individual CYP2D6 star alleles.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "A complete list of CYP2D6 diplotypes identified is included in [Supplemental Table S3](#SD1) (online).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*1xN",
+        "sentence": "CYP2D6*1xN mentioned in article but not studied by paper.",
+        "explanation": "Although duplications were detected to define ultrarapid metabolizers, no genotype-specific associations with risperidone adverse events were provided.",
+        "citations": [
+          "In instances of unambiguous metabolic status (e.g. *1×N/*2 and *1/*2×N are both ultrarapid), the first allele was selected as duplicated.",
+          "In some instances, the metabolic status was ambiguous (e.g. *1×N/*10 and *1/*10×N are ultrarapid and normal, respectively), in which case the individual was excluded from analysis.",
+          "An additional long-range PCR to determine CYP2D6 deletions or duplications was performed using the primers specified in [Supplemental Table S1](#SD1) (online).",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*9",
+        "sentence": "CYP2D6*9 mentioned in article but not studied by paper.",
+        "explanation": "Individual star allele effects were not analyzed; results were aggregated by CYP2D6 phenotype.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "A complete list of CYP2D6 diplotypes identified is included in [Supplemental Table S3](#SD1) (online).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "rs28371",
+        "sentence": "rs28371 mentioned in article but not studied by paper.",
+        "explanation": "The study did not present rsID-level associations with risperidone outcomes in children.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "rs77467",
+        "sentence": "rs77467 mentioned in article but not studied by paper.",
+        "explanation": "Only phenotype-based (poor/intermediate vs normal/ultrarapid) analyses were reported for adverse events.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*46",
+        "sentence": "CYP2D6*46 mentioned in article but not studied by paper.",
+        "explanation": "No allele-specific comparisons for risperidone adverse events were reported.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "A complete list of CYP2D6 diplotypes identified is included in [Supplemental Table S3](#SD1) (online).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "rs3892",
+        "sentence": "rs3892 mentioned in article but not studied by paper.",
+        "explanation": "The cohort analysis did not include genotype-specific (rsID) associations; it assessed CYP2D6 phenotype vs adverse events.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*33",
+        "sentence": "CYP2D6*33 mentioned in article but not studied by paper.",
+        "explanation": "Star allele data were used to derive metabolizer status only; no star allele–specific outcome analyses were presented.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "A complete list of CYP2D6 diplotypes identified is included in [Supplemental Table S3](#SD1) (online).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*17",
+        "sentence": "CYP2D6*17 mentioned in article but not studied by paper.",
+        "explanation": "The paper did not provide allele-level associations with risperidone adverse events in the pediatric cohort.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "A complete list of CYP2D6 diplotypes identified is included in [Supplemental Table S3](#SD1) (online).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*10",
+        "sentence": "CYP2D6*10 mentioned in article but not studied by paper.",
+        "explanation": "Although CYP2D6*10 can influence phenotype, the study reported only phenotype-level associations with adverse events.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "In some instances, the metabolic status was ambiguous (e.g. *1×N/*10 and *1/*10×N are ultrarapid and normal, respectively), in which case the individual was excluded from analysis.",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*2",
+        "sentence": "CYP2D6*2 mentioned in article but not studied by paper.",
+        "explanation": "No genotype-specific outcomes were reported; analyses were limited to metabolizer categories.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "In instances of unambiguous metabolic status (e.g. *1×N/*2 and *1/*2×N are both ultrarapid), the first allele was selected as duplicated.",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "rs1694",
+        "sentence": "rs1694 mentioned in article but not studied by paper.",
+        "explanation": "The investigators did not analyze individual rsID genotypes in relation to risperidone adverse events.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*10xN",
+        "sentence": "CYP2D6*10xN mentioned in article but not studied by paper.",
+        "explanation": "Duplications with possible ambiguity were noted for phenotype assignment, but no genotype-specific outcome data were given.",
+        "citations": [
+          "In some instances, the metabolic status was ambiguous (e.g. *1×N/*10 and *1/*10×N are ultrarapid and normal, respectively), in which case the individual was excluded from analysis.",
+          "An additional long-range PCR to determine CYP2D6 deletions or duplications was performed using the primers specified in [Supplemental Table S1](#SD1) (online).",
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers."
+        ]
+      },
+      {
+        "variant_id": "rs50308",
+        "sentence": "rs50308 mentioned in article but not studied by paper.",
+        "explanation": "The study used SNPs to call star alleles and phenotype but did not report rsID-specific associations.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*6",
+        "sentence": "CYP2D6*6 mentioned in article but not studied by paper.",
+        "explanation": "Poor/intermediate vs normal/ultrarapid metabolizer groups were compared for adverse events; no star allele–level results were shown.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "A complete list of CYP2D6 diplotypes identified is included in [Supplemental Table S3](#SD1) (online).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*3",
+        "sentence": "CYP2D6*3 mentioned in article but not studied by paper.",
+        "explanation": "Individual star allele associations with risperidone adverse events were not reported.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "A complete list of CYP2D6 diplotypes identified is included in [Supplemental Table S3](#SD1) (online).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*41",
+        "sentence": "CYP2D6*41 mentioned in article but not studied by paper.",
+        "explanation": "The analysis did not present outcomes stratified by specific CYP2D6 alleles.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "A complete list of CYP2D6 diplotypes identified is included in [Supplemental Table S3](#SD1) (online).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*1",
+        "sentence": "CYP2D6*1 mentioned in article but not studied by paper.",
+        "explanation": "While *1 contributes to normal/ultrarapid phenotypes, the paper did not analyze outcomes by this allele specifically.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "In instances of unambiguous metabolic status (e.g. *1×N/*2 and *1/*2×N are both ultrarapid), the first allele was selected as duplicated.",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "rs35742",
+        "sentence": "rs35742 mentioned in article but not studied by paper.",
+        "explanation": "No rsID-level associations with risperidone adverse events were assessed.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "rs59421",
+        "sentence": "rs59421 mentioned in article but not studied by paper.",
+        "explanation": "The cohort results were reported only for CYP2D6 phenotype categories, not individual SNPs.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "rs7692",
+        "sentence": "rs7692 mentioned in article but not studied by paper.",
+        "explanation": "The study did not evaluate genotype-specific associations for individual rsIDs.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*5",
+        "sentence": "CYP2D6*5 mentioned in article but not studied by paper.",
+        "explanation": "Although deletions were detected to define phenotype, no star allele–specific adverse event analyses were presented.",
+        "citations": [
+          "An additional long-range PCR to determine CYP2D6 deletions or duplications was performed using the primers specified in [Supplemental Table S1](#SD1) (online).",
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*4",
+        "sentence": "CYP2D6*4 mentioned in article but not studied by paper.",
+        "explanation": "The paper linked adverse events to CYP2D6 phenotype (e.g., poor/intermediate) rather than to specific star alleles like *4.",
+        "citations": [
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "A complete list of CYP2D6 diplotypes identified is included in [Supplemental Table S3](#SD1) (online).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "rs1135",
+        "sentence": "rs1135 mentioned in article but not studied by paper.",
+        "explanation": "Genotype-level associations for this SNP were not reported; only phenotype-based results were provided.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      },
+      {
+        "variant_id": "rs5030",
+        "sentence": "rs5030 mentioned in article but not studied by paper.",
+        "explanation": "The investigators did not present rsID-specific analyses of risperidone outcomes.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Genotypes were assigned to known CYP2D6 star alleles per [Supplemental Table S2](#SD1) (online), and then individuals were characterized as poor metabolizers, intermediate metabolizers, normal metabolizers, or ultrarapid metabolizers based on predicted CYP2D6 function as shown in [Supplemental Table S3](#SD1) (online) ([29](#R29),[30](#R30)).",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "In multivariate analysis, the risk for AEs, after adjustment for age, sex, race, and initial risperidone dose was higher for poor/intermediate metabolizers compared to normal/ultrarapid metabolizers (adjusted odds ratio (OR) 2.4, 95% confidence intervals (CI) 1.1-5.1, P =0.03), ([Figure 1](#F1))."
+        ]
+      },
+      {
+        "variant_id": "CYP2D6*4xN",
+        "sentence": "CYP2D6*4xN mentioned in article but not studied by paper.",
+        "explanation": "Duplications were considered for phenotype calling, but no allele-specific outcome associations were shown.",
+        "citations": [
+          "An additional long-range PCR to determine CYP2D6 deletions or duplications was performed using the primers specified in [Supplemental Table S1](#SD1) (online).",
+          "In cases of duplication with heterozygosity, allelic balance of the specific variants identified was used to determine which allele was duplicated.",
+          "If the allelic balance was unable to identify the duplicated allele, possible metabolic statuses were considered.",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers."
+        ]
+      },
+      {
+        "variant_id": "rs20137",
+        "sentence": "rs20137 mentioned in article but not studied by paper.",
+        "explanation": "The study evaluated risk of adverse events by CYP2D6 metabolizer status in pediatric risperidone users, without reporting SNP-specific associations.",
+        "citations": [
+          "After DNA sequencing, individuals were classified as CYP2D6 poor, intermediate, normal, or ultrarapid CYP2D6 metabolizers.",
+          "Patients with poor and intermediate metabolizer statuses were combined and analyzed as poor/intermediate metabolizers.",
+          "Patients with normal and ultrarapid metabolizer status were combined and analyzed as normal/ultrarapid metabolizers.",
+          "In univariate analysis, AEs were more common among poor/intermediate metabolizers than normal/ultrarapid metabolizers (15/33, 46% vs. 61/224, 27%, P=0.04) ([Table 2](#T2))."
+        ]
+      }
+    ],
+    "summary": "## Background\nRisperidone is primarily metabolized by CYP2D6 to the active metabolite paliperidone. Children are particularly susceptible to risperidone-related adverse events (AEs), but data on how CYP2D6 genetic variation affects AE risk in pediatrics have been limited and mixed. This retrospective cohort study (n=257; ≤18 years; ≥4 weeks of risperidone) evaluated whether CYP2D6 metabolizer phenotype predicts AEs using genotype-derived phenotypes (poor, intermediate, normal, ultrarapid).\n\n## Key Findings\n- Overall, 30% experienced AEs; most common were weight change (9%), sedation (6%), and extrapyramidal symptoms (6%).\n- AE rates were higher in CYP2D6 poor/intermediate metabolizers vs normal/ultrarapid: 46% (15/33) vs 27% (61/224), P=0.04.\n- After adjusting for age, sex, race, and starting dose, poor/intermediate metabolizers had a 2.4-fold higher odds of AEs (adjusted OR 2.4; 95% CI 1.1–5.1; P=0.03).\n- By phenotype: AEs occurred in 33% of poor, 56% of intermediate, 27% of normal, and 50% of ultrarapid metabolizers (ultrarapid group was small, n=6).\n- Concomitant strong CYP2D6 inhibitor use among normal/ultrarapid metabolizers did not significantly affect AE risk (adjusted OR 1.2; 95% CI 0.4–3.3; P=0.7).\n\n## Clinical Implications\n- Children with reduced CYP2D6 function (poor or intermediate metabolizers) are at significantly higher risk of risperidone AEs. If genotype is known, consider an alternative antipsychotic with less CYP2D6 dependence, or start risperidone at a lower dose with slow titration and enhanced monitoring (weight/metabolic parameters and movement disorders).\n- Ultrarapid metabolizers may also warrant added vigilance, though evidence is limited due to small numbers.\n- Genotype appears to be a stronger predictor of AE risk than concomitant CYP2D6 inhibitor use in this setting, supporting the potential value of pre-prescription CYP2D6 testing to guide safer pediatric risperidone therapy."
+  }
+}
