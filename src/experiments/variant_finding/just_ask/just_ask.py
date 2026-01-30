@@ -11,12 +11,11 @@ from pathlib import Path
 
 import yaml
 from dotenv import load_dotenv
-from litellm import completion
 from loguru import logger
 
 load_dotenv()
 
-from src.experiments.utils import get_methods_and_conclusions_text
+from src.experiments.utils import call_llm, get_methods_and_conclusions_text
 
 # Path to benchmark annotations
 BENCHMARK_DIR = Path(__file__).resolve().parents[4] / "data" / "benchmark_annotations"
@@ -76,19 +75,6 @@ def extract_json_array(text: str) -> list[str]:
 
     logger.warning(f"Could not parse JSON from response: {text[:200]}...")
     return []
-
-
-def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
-    """Call LLM using litellm."""
-    response = completion(
-        model=model,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        temperature=0,
-    )
-    return response.choices[0].message.content
 
 
 def score_variants(proposed: list[str], true_variants: list[str]) -> dict:

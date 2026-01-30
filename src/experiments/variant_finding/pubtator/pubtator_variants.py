@@ -32,7 +32,9 @@ from src.benchmark_v2.variant_bench import (
 )
 
 # PubTator3 API endpoint for exporting annotations
-PUBTATOR_API_URL = "https://www.ncbi.nlm.nih.gov/research/pubtator3-api/publications/export/biocjson"
+PUBTATOR_API_URL = (
+    "https://www.ncbi.nlm.nih.gov/research/pubtator3-api/publications/export/biocjson"
+)
 
 # Rate limit: 3 requests per second, so wait at least 0.35 seconds between requests
 REQUEST_DELAY = 0.35

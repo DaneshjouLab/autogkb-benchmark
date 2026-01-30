@@ -72,7 +72,7 @@ from src.benchmark_v2.sentence_bench import (
 )
 
 # Import LLM utilities for summary generation
-from litellm import completion
+from src.experiments.utils import call_llm
 
 # Default paths within eval_pipeline folder
 CONFIGS_DIR = EVAL_PIPELINE_DIR / "configs"
@@ -553,12 +553,12 @@ Write a concise summary (2-4 paragraphs) of these evaluation results. Include:
 Be specific and quantitative where possible. Focus on actionable insights."""
 
     try:
-        response = completion(
+        summary = call_llm(
             model=model,
-            messages=[{"role": "user", "content": prompt}],
+            system_prompt="",
+            user_prompt=prompt,
             temperature=0,
         )
-        summary = response.choices[0].message.content
         logger.info(f"Generated evaluation summary ({len(summary)} chars)")
         return summary
     except Exception as e:

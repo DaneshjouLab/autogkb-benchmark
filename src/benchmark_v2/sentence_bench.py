@@ -18,10 +18,11 @@ from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
-from litellm import completion
 
 # Load environment variables for API keys
 load_dotenv()
+
+from src.experiments.utils import call_llm
 
 
 @dataclass
@@ -129,13 +130,12 @@ Provide your response in this exact JSON format:
 {{"score": <float between 0 and 1>, "explanation": "<brief explanation of your scoring>"}}"""
 
     try:
-        response = completion(
+        content = call_llm(
             model=model,
-            messages=[{"role": "user", "content": prompt}],
+            system_prompt="",
+            user_prompt=prompt,
             temperature=0,
         )
-
-        content = response.choices[0].message.content
         # Parse JSON response
         result = json.loads(content)
         score = float(result["score"])
