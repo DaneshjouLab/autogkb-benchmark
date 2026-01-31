@@ -29,7 +29,7 @@ from src.experiments.variant_finding.regex_variants.extract_variants_v5 import (
     get_combined_text,
     get_snp_expander,
 )
-from src.experiments.utils import call_llm
+from src.utils import call_llm
 from src.benchmark_v2.variant_bench import load_variant_bench_data, score_variants
 
 # Load environment variables

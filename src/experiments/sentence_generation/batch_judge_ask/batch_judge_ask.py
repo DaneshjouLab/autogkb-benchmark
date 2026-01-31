@@ -58,7 +58,7 @@ ROOT = Path(__file__).resolve().parents[4]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.experiments.utils import call_llm
+from src.utils import call_llm
 
 # Import sentence bench for evaluation
 try:
@@ -169,7 +169,7 @@ def process_pmcid(
 
     # Get article text; reuse utils for markdown content
     try:
-        from src.experiments.utils import (
+        from src.utils import (
             get_methods_and_conclusions_text,
             get_markdown_text,
         )

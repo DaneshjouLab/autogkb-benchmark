@@ -72,7 +72,7 @@ from src.benchmark_v2.sentence_bench import (
 )
 
 # Import LLM utilities for summary generation
-from src.experiments.utils import call_llm
+from src.utils import call_llm
 
 # Default paths within eval_pipeline folder
 CONFIGS_DIR = EVAL_PIPELINE_DIR / "configs"

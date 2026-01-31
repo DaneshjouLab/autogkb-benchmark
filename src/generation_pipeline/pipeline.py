@@ -64,8 +64,8 @@ ROOT = PIPELINE_DIR.parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-# Import utilities from experiments
-from src.experiments.utils import (
+# Import shared utilities
+from src.utils import (
     call_llm,
     get_markdown_text,
     get_methods_and_conclusions_text,

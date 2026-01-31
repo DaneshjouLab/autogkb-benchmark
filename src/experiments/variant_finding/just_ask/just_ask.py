@@ -15,7 +15,7 @@ from loguru import logger
 
 load_dotenv()
 
-from src.experiments.utils import call_llm, get_methods_and_conclusions_text
+from src.utils import call_llm, get_methods_and_conclusions_text
 
 # Path to benchmark annotations
 BENCHMARK_DIR = Path(__file__).resolve().parents[4] / "data" / "benchmark_annotations"

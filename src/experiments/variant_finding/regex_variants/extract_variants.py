@@ -21,7 +21,7 @@ import json
 import re
 from pathlib import Path
 
-from src.experiments.utils import get_methods_and_conclusions_text
+from src.utils import get_methods_and_conclusions_text
 from src.benchmark_v2.variant_bench import load_variant_bench_data, score_variants
 
 

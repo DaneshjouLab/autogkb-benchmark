@@ -20,7 +20,7 @@ from loguru import logger
 
 load_dotenv()
 
-from src.experiments.utils import call_llm, get_markdown_text
+from src.utils import call_llm, get_markdown_text
 from src.experiments.variant_finding.regex_variants.extract_variants_v5 import (
     get_combined_text,
 )

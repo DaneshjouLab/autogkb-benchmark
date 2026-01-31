@@ -52,7 +52,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 # Import utils
-from src.experiments.utils import call_llm, get_markdown_text
+from src.utils import call_llm, get_markdown_text
 
 SENTENCE_BENCH_PATH = ROOT / "data" / "benchmark_v2" / "sentence_bench.jsonl"
 PROMPTS_FILE = Path(__file__).parent / "summary_prompts.yaml"

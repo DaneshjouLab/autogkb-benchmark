@@ -22,7 +22,7 @@ from dotenv import load_dotenv
 # Load environment variables for API keys
 load_dotenv()
 
-from src.experiments.utils import call_llm
+from src.utils import call_llm
 
 
 @dataclass
