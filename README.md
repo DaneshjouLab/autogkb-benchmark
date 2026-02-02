@@ -106,55 +106,16 @@ The V2 variant benchmark provides a JSON output with the following structure:
 
 ## Experiments
 
-The `src/experiments` directory contains scripts for developing and testing new features, such as improved methods for variant extraction and sentence generation.
+The `src/experiments` directory contains modular, multi-stage pipelines for developing and evaluating new methods for knowledge extraction. Each stage is designed to be run independently, with outputs from one stage feeding into the next.
 
-### Sentence Generation
+The primary experimental pipelines are:
 
-These experiments focus on generating pharmacogenomic association sentences using LLMs.
+1.  [**Variant Finding**](./src/experiments/variant_finding/README.md): Extracts genetic variants from full-text articles.
+2.  [**Sentence Generation**](./src/experiments/sentence_generation/README.md): Generates sentences describing the clinical significance of each variant.
+3.  [**Citation Finding**](./src/experiments/citations/README.md): Identifies the source sentence from the original article that supports each generated sentence.
+4.  [**Summary Generation**](./src/experiments/summary/README.md): Creates a final, concise summary of the key pharmacogenomic findings in the article.
 
-#### Raw Sentence Ask
-
-This experiment generates sentences for a given article and variant.
-
-```bash
-PYTHONPATH=src pixi run python src/experiments/sentence_generation/raw_sentence_ask/raw_sentence_ask.py --model <model_name> --prompt <prompt_version>
-```
-
-#### LLM Judge Ask
-
-This experiment generates sentences and uses another LLM to judge their quality.
-
-```bash
-PYTHONPATH=src pixi run python src/experiments/sentence_generation/llm_judge_ask/llm_judge_ask.py --model <generation_model> --judge-model <judge_model> --prompt <prompt_version> --num-pmcids <number_of_pmcids>
-```
-
-#### Batch Judge Ask
-
-This experiment generates sentences for all variants in a PMCID at once.
-
-```bash
-PYTHONPATH=src pixi run python src/experiments/sentence_generation/batch_judge_ask/batch_judge_ask.py --model <generation_model> --judge-model <judge_model> --prompt <prompt_version> --num-pmcids <number_of_pmcids>
-```
-
-### Variant Finding
-
-These experiments focus on extracting variants from articles.
-
-#### Just Ask
-
-This experiment asks an LLM to extract variants from an article and evaluates the accuracy.
-
-```bash
-PYTHONPATH=src pixi run python src/experiments/variant_finding/just_ask/just_ask.py --model <model_name> --prompt <prompt_version>
-```
-
-#### Regex Variants
-
-This experiment uses regular expressions to extract variants from articles, including supplementary materials.
-
-```bash
-PYTHONPATH=src pixi run python src/experiments/variant_finding/regex_variants/extract_variants_v5.py
-```
+Each experiment directory contains a detailed `README.md` with instructions on how to run the specific pipeline, including example commands and descriptions of available methods. Please refer to these files for more information on each stage of the experimental process.
 
 ## Dependencies
 
