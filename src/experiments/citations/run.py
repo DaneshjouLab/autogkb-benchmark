@@ -96,9 +96,7 @@ def find_citations(
         source_sentences=sentences_file,
         model=model,
         prompt_version=prompt_version,
-        citations={
-            pmcid: cites for pmcid, cites in all_citations.items()
-        },
+        citations={pmcid: cites for pmcid, cites in all_citations.items()},
     )
 
     output_path = output_dir / "citations.json"
@@ -110,9 +108,7 @@ def find_citations(
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Run citation finding experiments"
-    )
+    parser = argparse.ArgumentParser(description="Run citation finding experiments")
     parser.add_argument(
         "--method",
         choices=["one_shot_citations"],

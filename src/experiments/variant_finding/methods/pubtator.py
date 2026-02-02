@@ -83,7 +83,9 @@ def _extract_variants_from_biocjson(biocjson: dict) -> list[str]:
 
                     text_mention = annotation.get("text", "").strip()
                     if text_mention:
-                        if "*" in text_mention or text_mention.lower().startswith("hla-"):
+                        if "*" in text_mention or text_mention.lower().startswith(
+                            "hla-"
+                        ):
                             variants.add(text_mention)
                         elif text_mention.lower().startswith("rs"):
                             variants.add(text_mention)

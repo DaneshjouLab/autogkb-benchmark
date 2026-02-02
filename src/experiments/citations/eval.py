@@ -58,10 +58,10 @@ def normalize_text(text: str) -> str:
 
     # Normalize common special chars
     text = text.replace("\u00a0", " ")  # non-breaking space
-    text = text.replace("\u200b", "")   # zero-width space
+    text = text.replace("\u200b", "")  # zero-width space
     text = text.replace("\u00d7", "x")  # multiplication sign
-    text = text.replace("\u2264", "<=") # less-than-or-equal
-    text = text.replace("\u2265", ">=") # greater-than-or-equal
+    text = text.replace("\u2264", "<=")  # less-than-or-equal
+    text = text.replace("\u2265", ">=")  # greater-than-or-equal
     text = text.replace("\u03b1", "alpha")
     text = text.replace("\u03b2", "beta")
 
@@ -117,7 +117,7 @@ def citation_is_grounded(citation: str, article_text: str) -> bool:
         threshold = int(len(citation_words) * 0.8)
 
         for start in range(0, len(article_words) - window_size + 1, 5):
-            window = set(article_words[start:start + window_size])
+            window = set(article_words[start : start + window_size])
             matches = sum(1 for w in citation_words if w in window)
             if matches >= threshold:
                 return True
@@ -168,15 +168,17 @@ def check_grounding(
                 ungrounded.append(cite)
 
         rate = len(grounded) / len(cites) if cites else 0.0
-        results.append({
-            "variant": assoc.get("variant", ""),
-            "total": len(cites),
-            "grounded": len(grounded),
-            "ungrounded": len(ungrounded),
-            "grounding_rate": rate,
-            "grounded_citations": grounded,
-            "ungrounded_citations": ungrounded,
-        })
+        results.append(
+            {
+                "variant": assoc.get("variant", ""),
+                "total": len(cites),
+                "grounded": len(grounded),
+                "ungrounded": len(ungrounded),
+                "grounding_rate": rate,
+                "grounded_citations": grounded,
+                "ungrounded_citations": ungrounded,
+            }
+        )
 
     return results
 
@@ -263,17 +265,19 @@ def evaluate_pmcid(
     for i, gr in enumerate(grounding_results):
         if gr["ungrounded"] > 0:
             logger.warning(
-                f"  Association {i+1} ({gr['variant']}): "
+                f"  Association {i + 1} ({gr['variant']}): "
                 f"{gr['ungrounded']}/{gr['total']} citations NOT found in article"
             )
 
     # Step 2: Build associations with only grounded citations for the LLM judge
     grounded_associations = []
     for assoc, gr in zip(associations, grounding_results):
-        grounded_associations.append({
-            **assoc,
-            "citations": gr["grounded_citations"],
-        })
+        grounded_associations.append(
+            {
+                **assoc,
+                "citations": gr["grounded_citations"],
+            }
+        )
 
     # Format for the LLM judge prompt
     associations_text_parts = []
@@ -406,8 +410,12 @@ def evaluate_from_file(
 
         combined_scores = [s["combined_score"] for s in scores]
         grounding_rates = [s["grounding_rate"] for s in scores]
-        avg_combined = sum(combined_scores) / len(combined_scores) if combined_scores else 0
-        avg_grounding = sum(grounding_rates) / len(grounding_rates) if grounding_rates else 0
+        avg_combined = (
+            sum(combined_scores) / len(combined_scores) if combined_scores else 0
+        )
+        avg_grounding = (
+            sum(grounding_rates) / len(grounding_rates) if grounding_rates else 0
+        )
 
         all_combined_scores.extend(combined_scores)
         all_grounding_rates.extend(grounding_rates)
@@ -423,12 +431,19 @@ def evaluate_from_file(
         )
 
         logger.info(
-            f"  {pmcid}: combined={avg_combined:.3f} "
-            f"(grounding={avg_grounding:.3f})"
+            f"  {pmcid}: combined={avg_combined:.3f} (grounding={avg_grounding:.3f})"
         )
 
-    overall_combined = sum(all_combined_scores) / len(all_combined_scores) if all_combined_scores else 0
-    overall_grounding = sum(all_grounding_rates) / len(all_grounding_rates) if all_grounding_rates else 0
+    overall_combined = (
+        sum(all_combined_scores) / len(all_combined_scores)
+        if all_combined_scores
+        else 0
+    )
+    overall_grounding = (
+        sum(all_grounding_rates) / len(all_grounding_rates)
+        if all_grounding_rates
+        else 0
+    )
 
     result = {
         "judge_model": judge_model,

@@ -84,10 +84,7 @@ def generate_sentences(
         model=model,
         prompt_version=prompt_version,
         sentences={
-            pmcid: {
-                variant: sents
-                for variant, sents in variant_results.items()
-            }
+            pmcid: {variant: sents for variant, sents in variant_results.items()}
             for pmcid, variant_results in all_sentences.items()
         },
     )
@@ -101,9 +98,7 @@ def generate_sentences(
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Run sentence generation experiments"
-    )
+    parser = argparse.ArgumentParser(description="Run sentence generation experiments")
     parser.add_argument(
         "--method",
         choices=["raw_sentence_ask", "batch_judge_ask", "llm_judge_ask"],

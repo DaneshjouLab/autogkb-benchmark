@@ -35,8 +35,12 @@ class VariantExtractor:
     def _load_methods(cls):
         from src.experiments.variant_finding.methods.just_ask import just_ask_extract
         from src.experiments.variant_finding.methods.pubtator import pubtator_extract
-        from src.experiments.variant_finding.methods.regex_llm_filter import regex_llm_filter_extract
-        from src.experiments.variant_finding.methods.regex_term_norm import regex_term_norm_extract
+        from src.experiments.variant_finding.methods.regex_llm_filter import (
+            regex_llm_filter_extract,
+        )
+        from src.experiments.variant_finding.methods.regex_term_norm import (
+            regex_term_norm_extract,
+        )
         from src.experiments.variant_finding.methods.regex_v1 import regex_v1_extract
         from src.experiments.variant_finding.methods.regex_v2 import regex_v2_extract
         from src.experiments.variant_finding.methods.regex_v3 import regex_v3_extract

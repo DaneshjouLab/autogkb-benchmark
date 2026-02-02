@@ -46,7 +46,9 @@ def raw_sentence_ask_generate(
     prompts = load_prompts(PROMPTS_FILE)
     prompt_config = prompts[prompt_version]
 
-    article_text, has_supplement = get_article_text(pmcid, use_supplements=use_supplements)
+    article_text, has_supplement = get_article_text(
+        pmcid, use_supplements=use_supplements
+    )
     if not article_text:
         logger.warning(f"No article text found for {pmcid}")
         return {v: [] for v in variants}
@@ -89,9 +91,7 @@ def raw_sentence_ask_generate(
 
         if output:
             sentences = split_sentences(output)
-            result[variant] = [
-                GeneratedSentence(sentence=s) for s in sentences
-            ]
+            result[variant] = [GeneratedSentence(sentence=s) for s in sentences]
         else:
             result[variant] = []
 

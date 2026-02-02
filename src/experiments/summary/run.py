@@ -128,9 +128,7 @@ def generate_summaries(
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Run summary generation experiments"
-    )
+    parser = argparse.ArgumentParser(description="Run summary generation experiments")
     parser.add_argument(
         "--method",
         choices=["basic_summary"],

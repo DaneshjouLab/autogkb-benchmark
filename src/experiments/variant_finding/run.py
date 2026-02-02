@@ -67,12 +67,20 @@ def extract_variants(extractor, pmcids: list[str], run_name: str) -> Path:
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Run variant extraction experiments"
-    )
+    parser = argparse.ArgumentParser(description="Run variant extraction experiments")
     parser.add_argument(
         "--method",
-        choices=["just_ask", "regex_v1", "regex_v2", "regex_v3", "regex_v4", "regex_v5", "regex_llm_filter", "regex_term_norm", "pubtator"],
+        choices=[
+            "just_ask",
+            "regex_v1",
+            "regex_v2",
+            "regex_v3",
+            "regex_v4",
+            "regex_v5",
+            "regex_llm_filter",
+            "regex_term_norm",
+            "pubtator",
+        ],
         help="Extraction method to use",
     )
     parser.add_argument(
@@ -114,7 +122,9 @@ def main():
 
     # For extraction modes, --method is required
     if args.method is None:
-        parser.error("--method is required for extraction (or pass --eval <path> to evaluate)")
+        parser.error(
+            "--method is required for extraction (or pass --eval <path> to evaluate)"
+        )
 
     # Build kwargs for the extractor
     kwargs = {}

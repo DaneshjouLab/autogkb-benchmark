@@ -21,9 +21,7 @@ class CitationFinder:
         fn = self._resolve(method)
         self._find_fn = partial(fn, **kwargs) if kwargs else fn
 
-    def find_citations(
-        self, pmcid: str, associations: list[dict]
-    ) -> list[Citation]:
+    def find_citations(self, pmcid: str, associations: list[dict]) -> list[Citation]:
         """Find citations for all associations in one article.
 
         Args:

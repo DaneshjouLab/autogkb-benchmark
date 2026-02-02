@@ -65,9 +65,7 @@ def batch_judge_ask_generate(
     result: dict[str, list[GeneratedSentence]] = {}
     for variant in variants:
         if variant in parsed:
-            result[variant] = [
-                GeneratedSentence(**entry) for entry in parsed[variant]
-            ]
+            result[variant] = [GeneratedSentence(**entry) for entry in parsed[variant]]
         else:
             result[variant] = []
             logger.warning(f"  {variant}: not found in batch output")

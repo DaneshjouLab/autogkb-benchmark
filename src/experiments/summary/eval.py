@@ -19,7 +19,10 @@ from src.utils import call_llm
 
 RESULTS_DIR = Path(__file__).parent / "results"
 SUMMARY_BENCH_PATH = (
-    Path(__file__).resolve().parents[3] / "data" / "benchmark_v2" / "summary_bench.jsonl"
+    Path(__file__).resolve().parents[3]
+    / "data"
+    / "benchmark_v2"
+    / "summary_bench.jsonl"
 )
 
 JUDGE_SYSTEM_PROMPT = """You are an expert evaluator of pharmacogenomic research summaries.
@@ -68,7 +71,9 @@ def format_facts_checklist(bench_record: dict) -> str:
     parts = []
     for i, assoc in enumerate(bench_record["associations"], 1):
         lines = [f"Association {i}:"]
-        lines.append(f"  Variant: {assoc['variant']} (Gene: {assoc.get('gene', 'N/A')})")
+        lines.append(
+            f"  Variant: {assoc['variant']} (Gene: {assoc.get('gene', 'N/A')})"
+        )
         lines.append(f"  Drug(s): {assoc.get('drug', 'N/A')}")
         lines.append(f"  Association: {assoc.get('is_associated', 'N/A')}")
         lines.append(f"  Direction: {assoc.get('direction', 'N/A')}")
@@ -76,7 +81,9 @@ def format_facts_checklist(bench_record: dict) -> str:
         lines.append(f"  Significance: {assoc.get('significance', 'N/A')}")
 
         if assoc.get("alleles"):
-            lines.append(f"  Alleles: {assoc['alleles']} vs {assoc.get('comparison', 'N/A')}")
+            lines.append(
+                f"  Alleles: {assoc['alleles']} vs {assoc.get('comparison', 'N/A')}"
+            )
         if assoc.get("population"):
             lines.append(f"  Population: {assoc['population']}")
         if assoc.get("phenotype"):
@@ -188,7 +195,9 @@ def evaluate_from_file(
         result = evaluate_summary(pmcid, summary_text, bench_data[pmcid], judge_model)
         all_results.append(result)
         all_scores.append(result["score"])
-        logger.info(f"  {pmcid}: {result['score']:.2f} ({result['associations_covered']}/{result['associations_total']} associations)")
+        logger.info(
+            f"  {pmcid}: {result['score']:.2f} ({result['associations_covered']}/{result['associations_total']} associations)"
+        )
 
     overall_avg = sum(all_scores) / len(all_scores) if all_scores else 0.0
 

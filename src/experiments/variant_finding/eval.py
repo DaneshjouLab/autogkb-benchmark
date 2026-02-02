@@ -83,9 +83,7 @@ def _score_and_summarize(
 
     avg_recall = total_recall / processed if processed > 0 else 0
     avg_precision = total_precision / processed if processed > 0 else 0
-    perfect_recall_count = sum(
-        1 for r in per_article_results if r["recall"] == 1.0
-    )
+    perfect_recall_count = sum(1 for r in per_article_results if r["recall"] == 1.0)
 
     results = {
         "extractor": extractor_name,

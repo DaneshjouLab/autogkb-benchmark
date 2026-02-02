@@ -41,9 +41,7 @@ def regex_term_norm_extract(
 
     for variant in extracted:
         try:
-            results = variant_lookup.search(
-                variant, threshold=threshold, top_k=top_k
-            )
+            results = variant_lookup.search(variant, threshold=threshold, top_k=top_k)
             if results and results[0].score >= min_score:
                 final_variants.append(results[0].normalized_term)
             else:
