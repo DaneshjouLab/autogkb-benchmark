@@ -10,7 +10,7 @@ from datetime import datetime
 from pathlib import Path
 
 from src.benchmark_v2.variant_bench import load_variant_bench_data, score_variants
-from src.experiments.variant_finding.VariantExtractor import VariantExtractor
+from src.experiments.variant_finding.variant_extractor import VariantExtractor
 
 RESULTS_DIR = Path(__file__).parent / "results"
 

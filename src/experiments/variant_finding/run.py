@@ -21,10 +21,11 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 from src.benchmark_v2.variant_bench import load_variant_bench_data
-from src.experiments.variant_finding.VariantExtractor import create_variant_extractor
+from src.experiments.variant_finding.variant_extractor import VariantExtractor
 from src.experiments.variant_finding.eval import evaluate_from_file
 
 OUTPUTS_DIR = Path(__file__).parent / "outputs"
@@ -122,7 +123,7 @@ def main():
     if args.prompt is not None:
         kwargs["prompt_version"] = args.prompt
 
-    extractor = create_variant_extractor(args.method, **kwargs)
+    extractor = VariantExtractor(args.method, **kwargs)
     run_name = generate_run_name(args.method)
 
     benchmark_data = load_variant_bench_data()

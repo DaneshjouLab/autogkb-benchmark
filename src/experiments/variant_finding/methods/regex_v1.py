@@ -9,7 +9,6 @@ Basic patterns on methods/conclusions text only:
 
 import re
 
-from src.experiments.variant_finding.VariantExtractor import VariantExtractor
 from src.utils import get_methods_and_conclusions_text
 
 
@@ -44,13 +43,8 @@ def extract_all_variants(text: str) -> list[str]:
     return list(set(variants))
 
 
-class RegexV1Extractor(VariantExtractor):
-    """Regex v1: basic patterns on methods/conclusions text only."""
-
-    name = "regex_v1"
-
-    def get_variants(self, pmcid: str) -> list[str]:
-        text = get_methods_and_conclusions_text(pmcid)
-        if not text:
-            return []
-        return extract_all_variants(text)
+def regex_v1_extract(pmcid: str) -> list[str]:
+    text = get_methods_and_conclusions_text(pmcid)
+    if not text:
+        return []
+    return extract_all_variants(text)

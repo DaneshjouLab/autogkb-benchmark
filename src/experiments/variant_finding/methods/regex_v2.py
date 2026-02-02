@@ -10,7 +10,6 @@ Improvements over v1:
 
 import re
 
-from src.experiments.variant_finding.VariantExtractor import VariantExtractor
 from src.utils import get_markdown_text
 
 
@@ -124,13 +123,8 @@ def extract_all_variants(text: str) -> list[str]:
     return list(set(variants))
 
 
-class RegexV2Extractor(VariantExtractor):
-    """Regex v2: full text, HLA normalization, broader gene patterns."""
-
-    name = "regex_v2"
-
-    def get_variants(self, pmcid: str) -> list[str]:
-        text = get_markdown_text(pmcid)
-        if not text:
-            return []
-        return extract_all_variants(text)
+def regex_v2_extract(pmcid: str) -> list[str]:
+    text = get_markdown_text(pmcid)
+    if not text:
+        return []
+    return extract_all_variants(text)

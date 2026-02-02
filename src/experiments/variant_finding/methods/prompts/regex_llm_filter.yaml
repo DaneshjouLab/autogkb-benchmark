@@ -51,9 +51,9 @@ v2:
     - Part of citations or references to other research
 
     Examples:
-    - "We genotyped CYP2C9*2 in 500 patients" → INCLUDE CYP2C9*2
-    - "Previous studies found rs9923231 associated with warfarin dose" → EXCLUDE rs9923231 (unless also studied here)
-    - "Results showed HLA-B*58:01 carriers had higher risk" → INCLUDE HLA-B*58:01
+    - "We genotyped CYP2C9*2 in 500 patients" -> INCLUDE CYP2C9*2
+    - "Previous studies found rs9923231 associated with warfarin dose" -> EXCLUDE rs9923231 (unless also studied here)
+    - "Results showed HLA-B*58:01 carriers had higher risk" -> INCLUDE HLA-B*58:01
 
     Return ONLY a JSON array of variants that are being studied:
     ["variant1", "variant2", ...]
@@ -87,8 +87,8 @@ v3:
 
     Guidelines:
     - Be strict: err on the side of exclusion if unclear
-    - Variants in supplementary tables with genotype data → INCLUDE
-    - Variants only in literature review sections → EXCLUDE
+    - Variants in supplementary tables with genotype data -> INCLUDE
+    - Variants only in literature review sections -> EXCLUDE
     - If a variant is both mentioned for context AND studied, INCLUDE it
 
     Output format: Return ONLY a JSON array of the variants being studied.
@@ -141,17 +141,17 @@ v5:
     Classification criteria:
 
     STUDIED - Include if the variant:
-    ✓ Is genotyped/sequenced in study subjects
-    ✓ Has association results reported (e.g., p-values, odds ratios)
-    ✓ Appears in results tables or figures with study data
-    ✓ Is mentioned in methods as part of the experimental design
-    ✓ Has study-specific findings discussed in conclusions
+    - Is genotyped/sequenced in study subjects
+    - Has association results reported (e.g., p-values, odds ratios)
+    - Appears in results tables or figures with study data
+    - Is mentioned in methods as part of the experimental design
+    - Has study-specific findings discussed in conclusions
 
     MENTIONED ONLY - Exclude if the variant:
-    ✗ Only appears in introduction describing background
-    ✗ Only cited from prior studies without replication
-    ✗ Only in discussion comparing to other research
-    ✗ Only in references/bibliography context
+    - Only appears in introduction describing background
+    - Only cited from prior studies without replication
+    - Only in discussion comparing to other research
+    - Only in references/bibliography context
 
     When uncertain: INCLUDE the variant (conservative approach favoring recall)
 

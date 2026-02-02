@@ -1,17 +1,16 @@
 """
-Regex-based variant extraction v3.
+Regex-based variant extraction v4.
 
-Improvements over v2:
-- Handles star alleles with space between gene and allele (e.g., "CYP2D6 *4")
-- Handles standalone star alleles (*3, *4) by finding nearby gene context
-- Handles NUDT15 star alleles
-- Handles copy number variants (*1xN, *2xN)
-- Handles diplotype patterns (*3/*3, *1/*4)
+Improvements over v3:
+- Integrates SNP notation expansion (516G>T -> rs3745274)
+- Extracts informal SNP notations from text
+- Uses PharmGKB-derived mappings for SNP-to-rsID conversion
+- Handles various SNP notation formats: 516G>T, G516T, -1639G>A
 """
 
 import re
 
-from src.experiments.variant_finding.VariantExtractor import VariantExtractor
+from src.term_normalization.snp_expansion import SNPExpander
 from src.utils import get_markdown_text
 
 PGX_GENES = [
@@ -41,6 +40,17 @@ PGX_GENES = [
     "IFNL3",
     "IFNL4",
 ]
+
+_snp_expander = None
+
+
+def get_snp_expander() -> SNPExpander:
+    """Get or initialize the SNP expander singleton."""
+    global _snp_expander
+    if _snp_expander is None:
+        _snp_expander = SNPExpander()
+        _snp_expander.load_or_build()
+    return _snp_expander
 
 
 def normalize_hla(variant: str) -> str:
@@ -82,6 +92,50 @@ def extract_rsids(text: str) -> list[str]:
     pattern = r"\brs\d{4,}\b"
     matches = re.findall(pattern, text, re.IGNORECASE)
     return [m.lower() for m in set(matches)]
+
+
+def extract_snp_notations(text: str) -> list[str]:
+    """
+    Extract rsIDs from informal SNP notations in text.
+
+    Handles patterns like:
+    - CYP2B6 516G>T -> rs3745274
+    - CYP2B6-G516T -> rs3745274
+    - VKORC1-1639 G>A -> rs9923231
+    """
+    expander = get_snp_expander()
+    rsids = []
+
+    pgx_genes = expander.target_genes
+
+    for gene in pgx_genes:
+        # Pattern 1: GENE followed by position and substitution
+        pattern1 = rf"\b({gene})[\s\-\(\)]*(-?\d+)\s*([ACGT])\s*>\s*([ACGT])"
+        for match in re.finditer(pattern1, text, re.IGNORECASE):
+            matched_gene = match.group(1)
+            pos = match.group(2)
+            ref = match.group(3)
+            alt = match.group(4)
+            notation = f"{pos}{ref.upper()}>{alt.upper()}"
+
+            mapping = expander.lookup(matched_gene, notation)
+            if mapping:
+                rsids.append(mapping.rsid.lower())
+
+        # Pattern 2: Reversed notation GENE G516T
+        pattern2 = rf"\b({gene})[\s\-\(\)]*([ACGT])(-?\d+)([ACGT])(?![>\d])"
+        for match in re.finditer(pattern2, text, re.IGNORECASE):
+            matched_gene = match.group(1)
+            ref = match.group(2)
+            pos = match.group(3)
+            alt = match.group(4)
+            notation = f"{pos}{ref.upper()}>{alt.upper()}"
+
+            mapping = expander.lookup(matched_gene, notation)
+            if mapping:
+                rsids.append(mapping.rsid.lower())
+
+    return list(set(rsids))
 
 
 def extract_star_alleles(text: str) -> list[str]:
@@ -232,18 +286,14 @@ def extract_all_variants(text: str) -> list[str]:
     """Extract all variant types from text."""
     variants = []
     variants.extend(extract_rsids(text))
+    variants.extend(extract_snp_notations(text))
     variants.extend(extract_star_alleles(text))
     variants.extend(extract_hla_alleles(text))
     return list(set(variants))
 
 
-class RegexV3Extractor(VariantExtractor):
-    """Regex v3: standalone star alleles with gene context, diplotypes."""
-
-    name = "regex_v3"
-
-    def get_variants(self, pmcid: str) -> list[str]:
-        text = get_markdown_text(pmcid)
-        if not text:
-            return []
-        return extract_all_variants(text)
+def regex_v4_extract(pmcid: str) -> list[str]:
+    text = get_markdown_text(pmcid)
+    if not text:
+        return []
+    return extract_all_variants(text)

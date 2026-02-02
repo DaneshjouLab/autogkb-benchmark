@@ -1,6 +1,3 @@
-# Prompts for variant extraction experiment
-# Each prompt version includes the system prompt and user prompt template
-
 v1:
   name: "Basic extraction"
   system: |

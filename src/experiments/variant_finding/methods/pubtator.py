@@ -6,30 +6,32 @@ Queries the NCBI PubTator3 API to get variant annotations for articles.
 
 import json
 import time
-from pathlib import Path
 
 import requests
 from loguru import logger
 
-from src.experiments.variant_finding.VariantExtractor import VariantExtractor
+from src.utils import ROOT
 
 PUBTATOR_API_URL = (
     "https://www.ncbi.nlm.nih.gov/research/pubtator3-api/publications/export/biocjson"
 )
 REQUEST_DELAY = 0.35
 
+_pmid_mapping = None
+_last_request_time = 0.0
 
-def _load_pmid_mapping() -> dict[str, str]:
-    """Load the PMCID to PMID mapping from the benchmark data."""
-    data_path = (
-        Path(__file__).resolve().parents[4] / "data" / "benchmark_v2" / "variant_bench.jsonl"
-    )
-    pmcid_to_pmid: dict[str, str] = {}
-    with open(data_path) as f:
-        for line in f:
-            record = json.loads(line)
-            pmcid_to_pmid[record["pmcid"]] = record["pmid"]
-    return pmcid_to_pmid
+
+def _get_pmid_mapping() -> dict[str, str]:
+    """Get or initialize the PMCID-to-PMID mapping singleton."""
+    global _pmid_mapping
+    if _pmid_mapping is None:
+        data_path = ROOT / "data" / "benchmark_v2" / "variant_bench.jsonl"
+        _pmid_mapping = {}
+        with open(data_path) as f:
+            for line in f:
+                record = json.loads(line)
+                _pmid_mapping[record["pmcid"]] = record["pmid"]
+    return _pmid_mapping
 
 
 def _fetch_pubtator_annotations(pmid: str, full_text: bool = True) -> dict | None:
@@ -89,29 +91,23 @@ def _extract_variants_from_biocjson(biocjson: dict) -> list[str]:
     return list(variants)
 
 
-class PubTatorExtractor(VariantExtractor):
-    name = "pubtator"
+def pubtator_extract(pmcid: str, full_text: bool = True) -> list[str]:
+    global _last_request_time
 
-    def __init__(self, full_text: bool = True):
-        self.full_text = full_text
-        self._pmid_mapping = _load_pmid_mapping()
-        self._last_request_time = 0.0
+    pmid_mapping = _get_pmid_mapping()
+    pmid = pmid_mapping.get(pmcid)
+    if not pmid:
+        logger.warning(f"No PMID found for {pmcid}")
+        return []
 
-    def get_variants(self, pmcid: str) -> list[str]:
-        pmid = self._pmid_mapping.get(pmcid)
-        if not pmid:
-            logger.warning(f"No PMID found for {pmcid}")
-            return []
+    elapsed = time.time() - _last_request_time
+    if elapsed < REQUEST_DELAY:
+        time.sleep(REQUEST_DELAY - elapsed)
 
-        # Rate limiting
-        elapsed = time.time() - self._last_request_time
-        if elapsed < REQUEST_DELAY:
-            time.sleep(REQUEST_DELAY - elapsed)
+    biocjson = _fetch_pubtator_annotations(pmid, full_text=full_text)
+    _last_request_time = time.time()
 
-        biocjson = _fetch_pubtator_annotations(pmid, full_text=self.full_text)
-        self._last_request_time = time.time()
+    if biocjson is None:
+        return []
 
-        if biocjson is None:
-            return []
-
-        return _extract_variants_from_biocjson(biocjson)
+    return _extract_variants_from_biocjson(biocjson)
