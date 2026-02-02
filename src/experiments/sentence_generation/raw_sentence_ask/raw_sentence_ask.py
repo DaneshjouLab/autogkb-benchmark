@@ -16,12 +16,11 @@ from pathlib import Path
 
 import yaml
 from dotenv import load_dotenv
-from litellm import completion
 from loguru import logger
 
 load_dotenv()
 
-from src.experiments.utils import get_markdown_text
+from src.utils import call_llm, get_markdown_text
 from src.experiments.variant_finding.regex_variants.extract_variants_v5 import (
     get_combined_text,
 )
@@ -111,28 +110,6 @@ def get_variant_context(variant: str) -> str:
             return f"Also known as: {', '.join(unique_notations)}"
 
     return ""
-
-
-def call_llm(model: str, system_prompt: str, user_prompt: str) -> str:
-    """Call LLM using litellm."""
-    # O-series and GPT-5 models don't support temperature=0
-    no_temp_models = (
-        model.startswith("o1") or model.startswith("o3") or model.startswith("gpt-5")
-    )
-
-    kwargs = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-    }
-
-    if not no_temp_models:
-        kwargs["temperature"] = 0
-
-    response = completion(**kwargs)
-    return response.choices[0].message.content
 
 
 def normalize_for_comparison(text: str) -> str:

@@ -34,7 +34,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 # Import utils
-from src.experiments.utils import call_llm
+from src.utils import call_llm
 
 # Judge prompt
 JUDGE_SYSTEM_PROMPT = """You are an expert evaluator of scientific citations for pharmacogenomic claims.
