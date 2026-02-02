@@ -71,7 +71,7 @@ def main():
     )
     parser.add_argument(
         "--method",
-        choices=["just_ask", "regex_v5", "regex_llm_filter", "regex_term_norm", "pubtator"],
+        choices=["just_ask", "regex_v1", "regex_v2", "regex_v3", "regex_v4", "regex_v5", "regex_llm_filter", "regex_term_norm", "pubtator"],
         help="Extraction method to use",
     )
     parser.add_argument(
