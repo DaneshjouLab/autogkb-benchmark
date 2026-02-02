@@ -1,45 +1,28 @@
 # Pipeline Configuration
-# Control model and prompt choices for each pipeline stage
-# These settings are included in the output for reproducibility
+# Control method and model choices for each pipeline stage
+# Method names map to experiment factory registries
 
-# Variant Extraction Stage
-# Best performer: Regex-based extraction v5 with BioC supplement integration
-# Uses pattern matching for rsIDs, star alleles, HLA alleles, and SNP notation expansion
 config:
   name: "base_config"
-  description: "Base configuration for the pipeline using previous best performers"
+  description: "Base configuration using best-performing methods"
 
 variant_extraction:
-  method: "regex"
-  version: "v5"
-  description: "Regex-based variant extraction with BioC supplement integration"
-  features:
-    - "rsID extraction (rs#####)"
-    - "Star allele extraction (GENE*#)"
-    - "HLA allele extraction (HLA-X*##:##)"
-    - "SNP notation expansion (e.g., CYP2B6 516G>T -> rs3745274)"
-    - "BioC API for supplementary material text"
+  method: "regex_v5"
 
-# Sentence Generation Stage
-# Using batch processing with enhanced phenotype capture (v5)
 sentence_generation:
+  method: "batch_judge_ask"
   model: "gpt-5"
   prompt_version: "v5"
-  description: "Generate association sentences for variants"
 
-# Citation Finding Stage
-# Using v2 prompt with explanation context for better citation finding
 citation_finding:
+  method: "one_shot_citations"
   model: "gpt-5"
   prompt_version: "v2"
-  description: "Find supporting citations for association sentences"
 
-# Summary Generation Stage
 summary_generation:
+  method: "basic_summary"
   model: "gpt-5"
   prompt_version: "v1"
-  description: "Generate summary of pharmacogenomic findings"
 
-# Default processing options
 processing_options:
   num_pmcids: 1
