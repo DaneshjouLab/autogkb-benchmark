@@ -44,10 +44,10 @@ ROOT = EVAL_PIPELINE_DIR.parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.experiments.variant_finding import eval as variant_eval
-from src.experiments.sentence_generation import eval as sentence_eval
-from src.experiments.citations import eval as citation_eval
-from src.experiments.summary import eval as summary_eval
+from src.modules.variant_finding import eval as variant_eval
+from src.modules.sentence_generation import eval as sentence_eval
+from src.modules.citations import eval as citation_eval
+from src.modules.summary import eval as summary_eval
 
 CONFIGS_DIR = EVAL_PIPELINE_DIR / "configs"
 CONFIG_FILE = CONFIGS_DIR / "default_config.yaml"

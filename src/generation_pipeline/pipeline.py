@@ -62,13 +62,13 @@ ROOT = PIPELINE_DIR.parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.experiments.variant_finding.variant_extractor import VariantExtractor
-from src.experiments.sentence_generation.sentence_generator import SentenceGenerator
-from src.experiments.sentence_generation.models import GeneratedSentence
-from src.experiments.citations.citation_finder import CitationFinder
-from src.experiments.citations.models import Citation
-from src.experiments.summary.summary_generator import SummaryGenerator
-from src.experiments.summary.models import ArticleSummary
+from src.modules.variant_finding.variant_extractor import VariantExtractor
+from src.modules.sentence_generation.sentence_generator import SentenceGenerator
+from src.modules.sentence_generation.models import GeneratedSentence
+from src.modules.citations.citation_finder import CitationFinder
+from src.modules.citations.models import Citation
+from src.modules.summary.summary_generator import SummaryGenerator
+from src.modules.summary.models import ArticleSummary
 
 CONFIGS_DIR = PIPELINE_DIR / "configs"
 CONFIG_FILE = CONFIGS_DIR / "base_config.yaml"

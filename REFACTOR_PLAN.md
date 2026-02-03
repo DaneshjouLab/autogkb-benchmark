@@ -42,7 +42,7 @@ Each experiment module follows a consistent pattern:
 
 1. **Replace hardcoded variant extraction** (lines 75-79, 190-256) with:
    ```python
-   from src.experiments.variant_finding.variant_extractor import VariantExtractor
+   from src.modules.variant_finding.variant_extractor import VariantExtractor
 
    # In process_pmcid():
    extractor = VariantExtractor(method=config["variant_extraction"]["method"])
@@ -51,7 +51,7 @@ Each experiment module follows a consistent pattern:
 
 2. **Replace inline sentence generation** (lines 264-381) with:
    ```python
-   from src.experiments.sentence_generation.sentence_generator import SentenceGenerator
+   from src.modules.sentence_generation.sentence_generator import SentenceGenerator
 
    generator = SentenceGenerator(method=config["sentence_generation"]["method"])
    output = generator.generate(pmcid, variants)
@@ -59,7 +59,7 @@ Each experiment module follows a consistent pattern:
 
 3. **Replace inline citation finding** (lines 389-534) with:
    ```python
-   from src.experiments.citations.citation_finder import CitationFinder
+   from src.modules.citations.citation_finder import CitationFinder
 
    finder = CitationFinder(method=config["citation_finding"]["method"])
    citations = finder.find(pmcid, sentences)
@@ -67,7 +67,7 @@ Each experiment module follows a consistent pattern:
 
 4. **Replace inline summary generation** (lines 542-612) with:
    ```python
-   from src.experiments.summary.summary_generator import SummaryGenerator
+   from src.modules.summary.summary_generator import SummaryGenerator
 
    summarizer = SummaryGenerator(method=config["summary_generation"]["method"])
    summary = summarizer.generate(pmcid, sentences)
@@ -91,10 +91,10 @@ Each experiment module follows a consistent pattern:
 
 2. **Define a thin `PipelineResult` Pydantic model** that composes the experiment output models:
    ```python
-   from src.experiments.variant_finding.models import VariantExtractionOutput
-   from src.experiments.sentence_generation.models import SentenceGenerationOutput
-   from src.experiments.citations.models import CitationOutput
-   from src.experiments.summary.models import SummaryOutput
+   from src.modules.variant_finding.models import VariantExtractionOutput
+   from src.modules.sentence_generation.models import SentenceGenerationOutput
+   from src.modules.citations.models import CitationOutput
+   from src.modules.summary.models import SummaryOutput
 
    class PipelineResult(BaseModel):
        pmcid: str
@@ -152,13 +152,13 @@ Each experiment module follows a consistent pattern:
 
 2. **Delete `evaluate_variants_for_pmcid()`** — replace with:
    ```python
-   from src.experiments.variant_finding.eval import evaluate_from_file
+   from src.modules.variant_finding.eval import evaluate_from_file
    # or evaluate inline results
    ```
 
 3. **Delete `evaluate_sentences_for_pmcid()`** — replace with:
    ```python
-   from src.experiments.sentence_generation.eval import evaluate_from_file
+   from src.modules.sentence_generation.eval import evaluate_from_file
    ```
 
 4. **Delete all custom eval dataclasses** (`VariantEvaluationResult`, `SentenceEvaluationResult`, `PMCIDEvaluationResult`, `VariantMetrics`, `EvaluationResult`) and use the result types from experiment `eval.py` modules.
