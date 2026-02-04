@@ -72,7 +72,9 @@ def _get_pgxmine_df() -> pd.DataFrame:
     return _pgxmine_df
 
 
-def _normalize_variant(variant_id: str, variant_type: str, gene_names: str) -> str | None:
+def _normalize_variant(
+    variant_id: str, variant_type: str, gene_names: str
+) -> str | None:
     """Normalize a PGxMine variant to match the benchmark format.
 
     Returns None if the variant can't be meaningfully normalized.

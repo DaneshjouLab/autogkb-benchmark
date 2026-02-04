@@ -336,7 +336,9 @@ def run_pipeline(
     with open(run_dir / "metadata.yaml", "w") as f:
         yaml.dump(metadata, f, default_flow_style=False)
 
-    logger.success(f"Pipeline complete in {elapsed_seconds:.1f}s! Results saved to: {run_dir}")
+    logger.success(
+        f"Pipeline complete in {elapsed_seconds:.1f}s! Results saved to: {run_dir}"
+    )
     return run_dir
 
 
@@ -401,9 +403,7 @@ def main():
     logger.info(f"  Config: {config_info.get('name', 'unknown')}")
     logger.info(f"  PMCIDs to process: {len(pmcids)}")
     logger.info(f"  Stages: {sorted(stages)}")
-    logger.info(
-        f"  Variant extraction: {config['variant_extraction']['method']}"
-    )
+    logger.info(f"  Variant extraction: {config['variant_extraction']['method']}")
     if "sentences" in stages:
         logger.info(f"  Sentence model: {config['sentence_generation']['model']}")
     if "citations" in stages:
