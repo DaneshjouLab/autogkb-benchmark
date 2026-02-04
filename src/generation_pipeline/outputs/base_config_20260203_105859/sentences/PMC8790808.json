@@ -1,0 +1,158 @@
+{
+  "HLA-C*07:02": [
+    {
+      "sentence": "HLA-C*07:02 not mentioned in article.",
+      "explanation": "The study did not report any data or associations for HLA-C*07:02 with pegaspargase outcomes."
+    }
+  ],
+  "HLA-DRB1*04:05": [
+    {
+      "sentence": "HLA-DRB1*04:05 is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in people with acute lymphoblastic leukemia (B-ALL and T-ALL) as compared to non-carriers.",
+      "explanation": "The study\u2019s HLA analysis identified HLA-DRB1*04:05 among the top HLA-DRB1 allele hits for pegaspargase hypersensitivity in large pediatric ALL cohorts; specific effect sizes were not detailed."
+    }
+  ],
+  "HLA-DQB1*02:02": [
+    {
+      "sentence": "HLA-DQB1*02:02 is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in people with acute lymphoblastic leukemia (B-ALL and T-ALL) as compared to non-carriers (meta-analysis P = 3.8\u00d710^-9).",
+      "explanation": "Across three ALL cohorts (total n \u2248 4,259), DQB1*02:02 showed the strongest and most consistent association and was the only allele significant in all three cohorts."
+    }
+  ],
+  "HLA-DQA1*01:01": [
+    {
+      "sentence": "HLA-DQA1*01:01 not mentioned in article.",
+      "explanation": "The study did not report any data or associations for HLA-DQA1*01:01 with pegaspargase outcomes."
+    }
+  ],
+  "HLA-DQB1*02": [
+    {
+      "sentence": "HLA-DQB1*02 not mentioned in article.",
+      "explanation": "The paper specifically examined HLA-DQB1*02:02, but did not report associations for the broader HLA-DQB1*02 group."
+    }
+  ],
+  "HLA-DQA1*01:03": [
+    {
+      "sentence": "HLA-DQA1*01:03 not mentioned in article.",
+      "explanation": "The study did not report any data or associations for HLA-DQA1*01:03 with pegaspargase outcomes."
+    }
+  ],
+  "HLA-DRB1*07:01": [
+    {
+      "sentence": "HLA-DRB1*07:01 (when co-carried with HLA-DQB1*02:02) is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in people with acute lymphoblastic leukemia (B-ALL and T-ALL) as compared to non-carriers (P = 2.0\u00d710^-7), whereas HLA-DRB1*07:01 alone is not associated (P = 0.45).",
+      "explanation": "In European-ancestry patients, risk increased only when DRB1*07:01 was present with DQB1*02:02, demonstrating dependence on the DQB1 allele (Figure 3)."
+    }
+  ],
+  "HLA-DRB1*15:01": [
+    {
+      "sentence": "HLA-DRB1*15:01 not mentioned in article.",
+      "explanation": "The study did not report any data or associations for HLA-DRB1*15:01 with pegaspargase outcomes."
+    }
+  ],
+  "rs1694129": [
+    {
+      "sentence": "Minor allele of rs1694129 is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in people with acute lymphoblastic leukemia (B-ALL and T-ALL), observed in European-ancestry patients and replicated in non-European-ancestry patients as compared to major-allele homozygotes (meta-analysis in non-EAs: P = 0.013, OR = 2.01).",
+      "explanation": "The top HLA-DQB1 SNP signal in EAs replicated in non-EAs; analyses adjusted for protocol and ancestry across the three cohorts."
+    }
+  ],
+  "HLA-DQB1*06:03": [
+    {
+      "sentence": "HLA-DQB1*06:03 not mentioned in article.",
+      "explanation": "The study did not report any data or associations for HLA-DQB1*06:03 with pegaspargase outcomes."
+    }
+  ],
+  "rs11739459": [
+    {
+      "sentence": "rs11739459 not mentioned in article.",
+      "explanation": "The paper did not include this SNP in reported associations with pegaspargase hypersensitivity."
+    }
+  ],
+  "HLA-B*57:01": [
+    {
+      "sentence": "HLA-B*57:01 not mentioned in article.",
+      "explanation": "No data on HLA-B*57:01 and pegaspargase outcomes were presented."
+    }
+  ],
+  "HLA-DQB1*06:02": [
+    {
+      "sentence": "HLA-DQB1*06:02 not mentioned in article.",
+      "explanation": "The study did not report any data or associations for HLA-DQB1*06:02 with pegaspargase outcomes."
+    }
+  ],
+  "HLA-DRB1*04:02": [
+    {
+      "sentence": "HLA-DRB1*04:02 is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in people with acute lymphoblastic leukemia (B-ALL and T-ALL) as compared to non-carriers.",
+      "explanation": "HLA-DRB1*04:02 was listed among the top HLA-DRB1 allele hits for pegaspargase hypersensitivity; specific effect sizes/p-values were not detailed in the text."
+    }
+  ],
+  "HLA-DPA1*02:02": [
+    {
+      "sentence": "HLA-DPA1*02:02 not mentioned in article.",
+      "explanation": "The study did not report any data or associations for HLA-DPA1*02:02 with pegaspargase outcomes."
+    }
+  ],
+  "HLA-B*50:01": [
+    {
+      "sentence": "HLA-B*50:01 not mentioned in article.",
+      "explanation": "No associations for HLA-B*50:01 were described."
+    }
+  ],
+  "HLA-DRB1*13:01": [
+    {
+      "sentence": "HLA-DRB1*13:01 not mentioned in article.",
+      "explanation": "The study did not report any data or associations for HLA-DRB1*13:01 with pegaspargase outcomes."
+    }
+  ],
+  "HLA-DQA1*02:01": [
+    {
+      "sentence": "HLA-DQA1*02:01 is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in people with acute lymphoblastic leukemia (B-ALL and T-ALL) as compared to non-carriers, with risk most pronounced when co-inherited in the HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02 haplotype.",
+      "explanation": "DQA1*02:01 is part of the risk haplotype; meta-analysis showed significance for this allele, but DQB1*02:02 had the strongest and most consistent effect across cohorts."
+    }
+  ],
+  "rs79377225": [
+    {
+      "sentence": "rs79377225 not mentioned in article.",
+      "explanation": "The paper did not include this SNP in reported associations with pegaspargase hypersensitivity."
+    }
+  ],
+  "rs28383172": [
+    {
+      "sentence": "Minor allele of rs28383172 is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in people with acute lymphoblastic leukemia (B-ALL and T-ALL) of European ancestry as compared to major-allele homozygotes (meta-analysis P = 2.9\u00d710^-4).",
+      "explanation": "In EAs, rs28383172 was associated with reactions and, together with rs7775228, tagged the high-risk HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02 haplotype; 98.3% of individuals carrying both minor alleles had the risk haplotype."
+    }
+  ],
+  "rs9268670": [
+    {
+      "sentence": "rs9268670 not mentioned in article.",
+      "explanation": "The study did not report any data or associations for rs9268670 with pegaspargase outcomes."
+    }
+  ],
+  "HLA-A*02:05": [
+    {
+      "sentence": "HLA-A*02:05 not mentioned in article.",
+      "explanation": "No associations for HLA-A*02:05 were described."
+    }
+  ],
+  "rs9958628": [
+    {
+      "sentence": "Minor allele of rs9958628 is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in non-European-ancestry people with acute lymphoblastic leukemia as compared to major-allele homozygotes, reaching genome-wide significance.",
+      "explanation": "The ARHGAP28 locus SNP rs9958628 was the top genome-wide hit in non-EAs and the top non-HLA signal overall; prior literature links this locus to immune response phenotypes in non-EA children."
+    }
+  ],
+  "HLA-B*38:01": [
+    {
+      "sentence": "HLA-B*38:01 not mentioned in article.",
+      "explanation": "The study did not report any data or associations for HLA-B*38:01 with pegaspargase outcomes."
+    }
+  ],
+  "rs28383308": [
+    {
+      "sentence": "rs28383308 not mentioned in article.",
+      "explanation": "The paper did not include this SNP in reported associations with pegaspargase hypersensitivity."
+    }
+  ],
+  "rs7775228": [
+    {
+      "sentence": "Minor allele of rs7775228 is associated with increased risk of hypersensitivity reactions when treated with pegaspargase in people with acute lymphoblastic leukemia (B-ALL and T-ALL) of European ancestry as compared to major-allele homozygotes (meta-analysis P = 3.9\u00d710^-5).",
+      "explanation": "In EAs, rs7775228 associated with reactions and, together with rs28383172, strongly tagged the risk HLA haplotype; nearly all double-minor-allele carriers harbored the HLA-DRB1*07:01-DQA1*02:01-DQB1*02:02 haplotype."
+    }
+  ]
+}

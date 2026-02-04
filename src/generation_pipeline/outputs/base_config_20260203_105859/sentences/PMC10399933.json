@@ -1,0 +1,62 @@
+{
+  "CYP2C9*2": [
+    {
+      "sentence": "Genotypes *1/*2 + *2/*2 of CYP2C9*2 are not associated with increased risk of statin intolerance (switch to another statin) when treated with atorvastatin, fluvastatin, or rosuvastatin in people initiating statin therapy in the Helsinki Biobank (Finland) as compared to CYP2C9 *1/*1 (not statistically significant).",
+      "explanation": "In a cohort of 2,042 Finnish statin initiators genotyped for CYP2C9*2, Cox models stratified by statin showed no significant associations with the intolerance phenotypes; a non-significant trend only appeared in a combined \u201crisk allele count\u201d model for fluvastatin."
+    }
+  ],
+  "rs2231142": [
+    {
+      "sentence": "Genotypes CA + AA of rs2231142 (ABCG2 c.421C>A) are not associated with increased risk of statin intolerance (switch to another statin) with atorvastatin, fluvastatin, or rosuvastatin in people initiating statin therapy in the Helsinki Biobank (Finland) as compared to genotype CC (not statistically significant).",
+      "explanation": "The study directly genotyped ABCG2 rs2231142 and, using Cox regression by statin type, found no statistically significant associations; a non-significant trend was noted only within a multi-allele risk model for fluvastatin."
+    }
+  ],
+  "CYP2C9*3": [
+    {
+      "sentence": "Genotypes *1/*3 + *3/*3 of CYP2C9*3 are not associated with increased risk of statin intolerance (switch to another statin) when treated with atorvastatin, fluvastatin, or rosuvastatin in people initiating statin therapy in the Helsinki Biobank (Finland) as compared to CYP2C9 *1/*1 (not statistically significant).",
+      "explanation": "Among 2,042 statin initiators genotyped for CYP2C9*3, no significant associations with the switching-based intolerance phenotypes were detected across these statins; only a non-significant signal emerged in a combined risk-allele analysis for fluvastatin."
+    }
+  ],
+  "CYP3A4*3": [
+    {
+      "sentence": "CYP3A4*3 mentioned in article but not studied by paper.",
+      "explanation": "The paper notes simvastatin and atorvastatin are metabolized by CYP3A4/5 but did not genotype or analyze CYP3A4*3."
+    }
+  ],
+  "rs1799853": [
+    {
+      "sentence": "Genotypes CT + TT of rs1799853 (CYP2C9*2, c.430C>T) are not associated with increased risk of statin intolerance (switch to another statin) with atorvastatin, fluvastatin, or rosuvastatin in people initiating statin therapy in the Helsinki Biobank (Finland) as compared to genotype CC (not statistically significant).",
+      "explanation": "The cohort was genotyped for rs1799853, and Cox models stratified by statin showed no statistically significant associations; a trend only appeared when combining multiple risk alleles for fluvastatin."
+    }
+  ],
+  "CYP3A5*3": [
+    {
+      "sentence": "CYP3A5*3 mentioned in article but not studied by paper.",
+      "explanation": "Although CYP3A4/5 metabolism of some statins is discussed, CYP3A5*3 was not genotyped or analyzed."
+    }
+  ],
+  "rs1057910": [
+    {
+      "sentence": "Genotypes AG + GG of rs1057910 (CYP2C9*3, c.1075A>G) are not associated with increased risk of statin intolerance (switch to another statin) with atorvastatin, fluvastatin, or rosuvastatin in people initiating statin therapy in the Helsinki Biobank (Finland) as compared to genotype AA (not statistically significant).",
+      "explanation": "rs1057910 was directly genotyped; no significant associations with the switching-based intolerance phenotypes were found across these statins, consistent with the null results for CYP2C9*3."
+    }
+  ],
+  "SLCO1B1*5": [
+    {
+      "sentence": "Genotypes *1/*5 + *5/*5 of SLCO1B1*5 are associated with increased risk of statin intolerance (switch to another statin) when treated with simvastatin (in both switching-only and switching+CK phenotypes) and with pravastatin (switching-only phenotype) in people initiating statin therapy in the Helsinki Biobank (Finland) as compared to SLCO1B1 *1/*1 (statistically significant).",
+      "explanation": "The study replicated the known SLCO1B1 c.521T>C effect for simvastatin across both intolerance phenotypes and found a significant association for pravastatin using the switching-based phenotype in this 2,042-patient cohort."
+    }
+  ],
+  "CYP3A4*22": [
+    {
+      "sentence": "CYP3A4*22 mentioned in article but not studied by paper.",
+      "explanation": "The paper references CYP3A4 metabolism but did not genotype or analyze CYP3A4*22."
+    }
+  ],
+  "rs4149056": [
+    {
+      "sentence": "Genotypes CT + CC of rs4149056 (SLCO1B1 c.521T>C) are associated with increased risk of statin intolerance (switch to another statin) when treated with simvastatin (in both switching-only and switching+CK phenotypes) and with pravastatin (switching-only phenotype) in people initiating statin therapy in the Helsinki Biobank (Finland) as compared to genotype TT (statistically significant).",
+      "explanation": "Using Cox models in a 2,042-patient register-based cohort, the study confirmed the established simvastatin association for both intolerance definitions and detected a significant pravastatin association for the primary switching phenotype; no significant effects were observed for atorvastatin, fluvastatin, or rosuvastatin."
+    }
+  ]
+}

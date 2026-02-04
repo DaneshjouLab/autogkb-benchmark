@@ -1,0 +1,33 @@
+{
+  "pmcid": "PMC8790808",
+  "summary": "## Background\nPegaspargase is a cornerstone of therapy for pediatric acute lymphoblastic leukemia (ALL), but hypersensitivity reactions are common and can interrupt treatment. This multi-cohort, multi-ancestry genome-wide and HLA-focused study (n \u2248 3,900) evaluated germline variants associated specifically with pegaspargase hypersensitivity (grade \u22652) across three large pediatric ALL trials.\n\n## Key Findings\n- European ancestry (EA):\n  - A class II HLA haplotype\u2014HLA-DRB1*07:01\u2013DQA1*02:01\u2013DQB1*02:02\u2014was strongly associated with increased risk of pegaspargase hypersensitivity. The signal was driven primarily by HLA-DQB1*02:02 (meta P = 3.8\u00d710^-9; OR \u2248 2.13). HLA-DRB1*07:01 and HLA-DQA1*02:01 were also significant (meta P = 2.2\u00d710^-5 and 2.7\u00d710^-5; OR \u2248 1.96 each).\n  - DRB1*07:01 alone was not associated without DQB1*02:02 (P = 0.45), but risk was higher with the full haplotype (reaction rate 21.3% vs 13.7% for the partial haplotype; P = 0.061).\n  - Additional HLA signal: DRB1*04:02 (meta P = 6.3\u00d710^-5; OR \u2248 4.61; low frequency).\n  - GWAS signals in EAs localized to HLA class II: top SNP rs1694129 (5\u2032 to HLA-DQB1) tagged DQB1*02:02 (r^2 = 0.96) and was genome-wide significant (meta P = 1.1\u00d710^-8; OR \u2248 2.03). Across all ancestries, rs28383308 near HLA-DQA1 was also highly significant (meta P = 4.9\u00d710^-14; OR \u2248 1.95).\n  - Tag SNPs rs28383172 and rs7775228 effectively captured the high-risk HLA haplotype in EAs (meta P = 2.9\u00d710^-4 and 3.9\u00d710^-5).\n\n- Non-European ancestries:\n  - Non-HLA variant rs9958628 in ARHGAP28 (5\u2032-UTR) reached genome-wide significance (meta P = 8.9\u00d710^-9; OR \u2248 3.69) and was the top non-HLA hit overall (meta P = 1.2\u00d710^-7; OR \u2248 3.03). It associated in African ancestry meta-analysis (meta P = 3.2\u00d710^-5; OR \u2248 2.03), but not in EAs/AMRs (likely low allele frequency).\n  - Additional genome-wide significant loci near GPBP1: rs79377225 and rs11739459 (meta P = 2.5\u00d710^-8 and 2.7\u00d710^-8; OR \u2248 2.7 and 2.5), remaining significant in trans-ancestry meta-analysis.\n  - HLA associations in non-EAs were weaker and varied by ancestry; a top HLA-DRA SNP (rs9268670) in non-EAs did not replicate in EAs. The EA tagging SNP rs1694129 showed nominal association in non-EAs (meta P = 0.013; OR \u2248 2.01).\n\n## Clinical Implications\n- EA children carrying the HLA-DQB1*02:02\u2013DRB1*07:01\u2013DQA1*02:01 haplotype have roughly a twofold higher risk of pegaspargase hypersensitivity. If validated prospectively, HLA typing or use of tag SNPs (e.g., rs1694129, rs28383172/rs7775228) could help identify higher-risk patients for closer monitoring and early management of reactions.\n- In non-EA populations\u2014particularly those with African ancestry\u2014ARHGAP28 rs9958628 and GPBP1-adjacent variants identify additional, non-HLA genetic risk for hypersensitivity, highlighting ancestry-specific biology that may inform tailored risk assessment.\n- Because HLA imputation accuracy and effect sizes differ by ancestry, and clinical practices varied across cohorts, these findings are best used to inform risk stratification and surveillance rather than to mandate therapy changes. Further replication and implementation studies are warranted to define how genotyping can guide premedication strategies, rechallenge decisions, or selection of alternative asparaginase preparations when appropriate.",
+  "num_variants": 26,
+  "variants": [
+    "HLA-C*07:02",
+    "HLA-DRB1*04:05",
+    "HLA-DQB1*02:02",
+    "HLA-DQA1*01:01",
+    "HLA-DQB1*02",
+    "HLA-DQA1*01:03",
+    "HLA-DRB1*07:01",
+    "HLA-DRB1*15:01",
+    "rs1694129",
+    "HLA-DQB1*06:03",
+    "rs11739459",
+    "HLA-B*57:01",
+    "HLA-DQB1*06:02",
+    "HLA-DRB1*04:02",
+    "HLA-DPA1*02:02",
+    "HLA-B*50:01",
+    "HLA-DRB1*13:01",
+    "HLA-DQA1*02:01",
+    "rs79377225",
+    "rs28383172",
+    "rs9268670",
+    "HLA-A*02:05",
+    "rs9958628",
+    "HLA-B*38:01",
+    "rs28383308",
+    "rs7775228"
+  ]
+}

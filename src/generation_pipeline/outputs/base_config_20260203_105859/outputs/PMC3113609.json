@@ -1,0 +1,56 @@
+{
+  "pmcid": "PMC3113609",
+  "variants": [
+    "HLA-A*31:01",
+    "rs1061235"
+  ],
+  "sentences": {
+    "HLA-A*31:01": [
+      {
+        "sentence": "Carriage of HLA-A*31:01 is associated with increased risk of hypersensitivity reactions (maculopapular exanthema, hypersensitivity syndrome/DRESS, and SJS\u2013TEN) when treated with carbamazepine in people of European descent as compared to non-carriers; this association reached genome-wide significance, with the presence of the allele increasing absolute risk from 5.0% to 26.0%.",
+        "explanation": "A genome-wide association study and replication in Europeans (22 hypersensitivity syndrome, 43 maculopapular exanthema, 3987 controls; plus replication in 145 additional cases, and comparison to 257 clinical carbamazepine-tolerant controls) identified HLA-A*31:01 as a predictor across phenotypes (e.g., OR ~8.33 for maculopapular exanthema, 12.41 for hypersensitivity syndrome, 25.93 for SJS vs clinical controls), meeting genome-wide significance and showing a marked increase in absolute risk."
+      }
+    ],
+    "rs1061235": [
+      {
+        "sentence": "Carriers of the HLA-A*31:01\u2013tagging risk allele of rs1061235 are associated with increased risk of hypersensitivity reactions (maculopapular exanthema, hypersensitivity syndrome/DRESS, and SJS\u2013TEN) when treated with carbamazepine in people of European descent as compared to non-carriers; this proxy association was genome-wide significant.",
+        "explanation": "The study genotyped rs1061235 (in complete linkage disequilibrium, r2 = 1, with HLA-A*31:01 in Europeans) and found an association consistent with the HLA-A*31:01 signal in the same European cohorts, achieving genome-wide significance across carbamazepine-induced hypersensitivity phenotypes."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "variant": "HLA-A*31:01",
+      "sentence": "Carriage of HLA-A*31:01 is associated with increased risk of hypersensitivity reactions (maculopapular exanthema, hypersensitivity syndrome/DRESS, and SJS\u2013TEN) when treated with carbamazepine in people of European descent as compared to non-carriers; this association reached genome-wide significance, with the presence of the allele increasing absolute risk from 5.0% to 26.0%.",
+      "explanation": "A genome-wide association study and replication in Europeans (22 hypersensitivity syndrome, 43 maculopapular exanthema, 3987 controls; plus replication in 145 additional cases, and comparison to 257 clinical carbamazepine-tolerant controls) identified HLA-A*31:01 as a predictor across phenotypes (e.g., OR ~8.33 for maculopapular exanthema, 12.41 for hypersensitivity syndrome, 25.93 for SJS vs clinical controls), meeting genome-wide significance and showing a marked increase in absolute risk.",
+      "citations": [
+        "The HLA-A\u26053101 allele, which has a prevalence of 2 to 5% in Northern European populations, was significantly associated with the hypersensitivity syndrome (P = 3.5\u00d710\u22128).",
+        "An independent genomewide association study of samples from subjects with maculopapular exanthema also showed an association with the HLA-A\u26053101 allele (P = 1.1\u00d710\u22126).",
+        "Follow-up genotyping confirmed the variant as a risk factor for the hypersensitivity syndrome (odds ratio, 12.41; 95% confidence interval [CI], 1.27 to 121.03), maculopapular exanthema (odds ratio, 8.33; 95% CI, 3.59 to 19.36), and SJS\u2013TEN (odds ratio, 25.93; 95% CI, 4.93 to 116.18).",
+        "A pooled analysis of all 145 subjects with carbamazepine-induced hypersensitivity and 257 control subjects without adverse drug reactions showed a strong association between hypersensitivity and the HLA-A\u26053101 allele (odds ratio, 9.12; 95% CI, 4.03 to 20.65; P = 1.0\u00d710^\u22127^).",
+        "The presence of the allele increased the risk from 5.0% to 26.0%, whereas its absence reduced the risk from 5.0% to 3.8%."
+      ]
+    },
+    {
+      "variant": "rs1061235",
+      "sentence": "Carriers of the HLA-A*31:01\u2013tagging risk allele of rs1061235 are associated with increased risk of hypersensitivity reactions (maculopapular exanthema, hypersensitivity syndrome/DRESS, and SJS\u2013TEN) when treated with carbamazepine in people of European descent as compared to non-carriers; this proxy association was genome-wide significant.",
+      "explanation": "The study genotyped rs1061235 (in complete linkage disequilibrium, r2 = 1, with HLA-A*31:01 in Europeans) and found an association consistent with the HLA-A*31:01 signal in the same European cohorts, achieving genome-wide significance across carbamazepine-induced hypersensitivity phenotypes.",
+      "citations": [
+        "We tested for an association between disease and HLA alleles through proxy single-nucleotide polymorphisms and imputation, confirming associations by high-resolution sequence-based HLA typing.",
+        "We identified a strong signal in the MHC region on chromosome 6, with several SNPs around HLA-A reaching genome-wide significance (P = 3.5\u00d710^\u22128^) ([Fig. 1A and 1B](#F1)).",
+        "The top hit (rs1061235) had previously been shown to be a proxy for the HLA-A\u26053101 allele in persons of European descent.^22^",
+        "Therefore, we focused on this locus as a predictor of response through high-resolution, sequence-based HLA-A typing, which confirmed the absolute correlation (r^2^ = 1) between rs1061235 and HLA-A\u26053101 that had been observed previously.^22^",
+        "Genotyping of the rs1061235 SNP in samples from all Liverpool subjects (including case subjects with maculopapular exanthema, the hypersensitivity syndrome, or SJS\u2013TEN and clinical control subjects) was performed by KBioscience."
+      ]
+    }
+  ],
+  "summary": {
+    "pmcid": "PMC3113609",
+    "summary": "## Background\nCarbamazepine, an antiepileptic and mood stabilizer, can cause cutaneous hypersensitivity reactions ranging from maculopapular exanthema (MPE) to severe Stevens\u2013Johnson syndrome/toxic epidermal necrolysis (SJS\u2013TEN). While HLA-B*15:02 predicts SJS\u2013TEN in many Asian populations, it is not informative in Europeans. This study sought genetic predictors of carbamazepine hypersensitivity in individuals of European ancestry.\n\n## Key Findings\n- HLA-A*31:01 is strongly associated with the full spectrum of carbamazepine-induced hypersensitivity reactions in Europeans:\n  - GWAS signal near HLA-A reached genome-wide significance for hypersensitivity syndrome/DRESS (P = 3.5\u00d710^-8), and was also associated with MPE (P = 1.1\u00d710^-6).\n  - Confirmed effect sizes: hypersensitivity syndrome/DRESS (OR 12.41; 95% CI 1.27\u2013121.03), MPE (OR 8.33; 95% CI 3.59\u201319.36), SJS\u2013TEN (OR 25.93; 95% CI 4.93\u2013116.18).\n  - Pooled analysis across phenotypes: OR 9.12 (95% CI 4.03\u201320.65; P = 1.0\u00d710^-7), with sensitivity 26% and specificity 96%.\n  - Absolute risk estimate: baseline 5.0% increases to 26.0% in HLA-A*31:01 carriers; decreases to 3.8% in non-carriers.\n  - Allele frequency ~2\u20135% in Northern Europeans.\n- rs1061235 is a perfect proxy (r^2 = 1) for HLA-A*31:01 in Europeans and captured the initial genome-wide signal.\n\n## Clinical Implications\n- Consider pre-prescription HLA-A*31:01 testing for patients of European ancestry before starting carbamazepine. A positive result indicates markedly increased risk of hypersensitivity (including SJS\u2013TEN); consider alternative therapies.\n- A negative test lowers but does not eliminate risk (residual ~3.8%); maintain clinical vigilance during initiation and early treatment.\n- Test performance in Europeans: sensitivity ~26%, specificity ~96%; estimated number needed to screen to prevent one hypersensitivity case \u224883 at 5% baseline prevalence (\u224839 if prevalence is 10%).\n- rs1061235 genotyping can serve as a validated proxy for HLA-A*31:01 in Europeans, facilitating implementation where direct HLA typing is not available.",
+    "num_variants": 2,
+    "variants": [
+      "HLA-A*31:01",
+      "rs1061235"
+    ]
+  }
+}

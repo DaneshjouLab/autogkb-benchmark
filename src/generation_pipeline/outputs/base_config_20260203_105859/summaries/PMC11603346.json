@@ -1,0 +1,14 @@
+{
+  "pmcid": "PMC11603346",
+  "summary": "## Background\nThis systematic review and meta-analysis evaluated whether CYP2B6 genetic variation predicts nonnucleoside reverse transcriptase inhibitor (NNRTI)\u2013induced liver injury in people living with HIV. The focus was on the common reduced-function CYP2B6*6 haplotype, defined by rs3745274 (516G>T) and rs2279343 (785A>G), which lowers CYP2B6 expression/activity.\n\n## Key Findings\n- Efavirenz (EFV):\n  - Carriers of CYP2B6*6 had a higher risk of EFV-induced liver injury versus normal metabolizers (CYP2B6*1/*1).\n  - Effect sizes: heterozygous (*1/*6) OR 1.83 (95% CI 1.15\u20132.90; p=0.01); homozygous (*6/*6) OR 2.48 (1.28\u20134.79; p=0.007); combined carriers OR 1.94 (1.24\u20133.01; p=0.003). No heterogeneity (I2=0%; 3 studies, African populations).\n- Nevirapine (NVP):\n  - CYP2B6*6 carriage was associated with a lower risk of NVP-induced liver injury compared with CYP2B6*1/*1.\n  - Effect sizes: heterozygous (*1/*6) OR 0.44 (0.22\u20130.91; p=0.03); combined carriers (*1/*6 + *6/*6) OR 0.42 (0.21\u20130.84; p=0.01). Homozygous *6/*6 alone was not significant (OR 0.45; 0.15\u20131.32; p=0.14). No heterogeneity (I2=0%; 2 studies, African and Caucasian populations).\n- Broader context: The review identified UGT1A1, CYP2B6, and ABCB1 as the most frequently studied genes for antiretroviral-associated hepatotoxicity, but pooled analyses in this paper centered on CYP2B6.\n\n## Clinical Implications\n- EFV: CYP2B6*6 (rs3745274/rs2279343) identifies patients at elevated risk for EFV-related hepatotoxicity. Consider avoiding EFV, using alternative ART, dose adjustment where guideline-supported, and/or closer liver function monitoring in CYP2B6*6 carriers.\n- NVP: CYP2B6*6 carriage appears protective against NVP-related hepatotoxicity relative to CYP2B6*1/*1; CYP2B6 genotype may inform choice between EFV and NVP when both are options.\n- Caveats: EFV estimates were derived from African cohorts; NVP results came from small numbers (2 studies). NVP hepatotoxicity likely involves additional pathways (e.g., CYP3A4-mediated metabolites), so multi-gene factors may matter. Validation in larger, diverse populations and integration with clinical monitoring are recommended.",
+  "num_variants": 7,
+  "variants": [
+    "rs3745274",
+    "ABCB1*04",
+    "CYP2B6*6",
+    "rs2279343",
+    "HLA-C*04",
+    "CYP2B6*1",
+    "HLA-CW*04"
+  ]
+}

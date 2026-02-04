@@ -1,0 +1,23 @@
+{
+  "pmcid": "PMC554812",
+  "summary": "## Background\nAllopurinol is widely used for gout and hyperuricemia but can cause severe cutaneous adverse reactions (SCAR), including hypersensitivity syndrome (HSS), Stevens\u2013Johnson syndrome (SJS), and toxic epidermal necrolysis (TEN). This case\u2013control study in Han Chinese (Taiwan) evaluated genetic risk factors for allopurinol-induced SCAR: 51 cases, 135 allopurinol-tolerant patients, and 93 population controls.\n\n## Key Findings\n- The HLA-B*58:01 (B*5801) allele was present in 100% (51/51) of SCAR cases vs 15% (20/135) of tolerant patients and 20% (19/93) of population controls, indicating an extremely strong association with SCAR (vs tolerant: OR 580.3, 95% CI 34.4\u20139780.9, Pc = 4.7 \u00d7 10^\u221224; vs population: OR 393.5, 95% CI 23.2\u20136665.3, Pc = 8.1 \u00d7 10^\u221218). This association was not explained by underlying diseases.\n- Additional HLA alleles in linkage disequilibrium with HLA-B*58:01 were enriched in cases: HLA-A*33:03, HLA-C*03:02, and HLA-DRB1*03:01. The extended haplotype A*33:03\u2013C*03:02\u2013B*58:01\u2013DRB1*03:01 occurred in 41% of cases vs 7% of tolerant and 10% of population controls (reflecting LD with B*58:01).\n- SNP screening highlighted strong signals in the MHC region near BAT3 (rs3117583), MSH5 (rs1150793), and MICB (rs2855804) (P < 10^\u22127). Outside MHC, two CFLAR SNPs (rs2268791, rs1594) showed association and replicated, whereas a KIR2DL1 SNP (rs2304224) did not.\n- Chronic renal insufficiency independently increased SCAR risk (OR 4.7, 95% CI 2.3\u20139.3), supporting that HLA-B*58:01 is a strong necessary but not solely sufficient risk factor (some tolerant carriers exist).\n\n## Clinical Implications\n- HLA-B*58:01 is a powerful genetic marker for allopurinol-induced SCAR in Han Chinese. Pre-prescription HLA-B*58:01 testing can identify patients at very high risk; avoiding allopurinol in carriers and selecting alternative urate-lowering therapies should be considered.\n- Given the very high negative predictive value in this cohort (no SCAR cases without B*58:01), testing is particularly relevant in high-prevalence populations and in patients with chronic kidney disease, where clinical risk is elevated.\n- While MHC SNPs and the extended haplotype track with risk, HLA-B*58:01 remains the key actionable marker for clinical decision-making.",
+  "num_variants": 16,
+  "variants": [
+    "rs1150793",
+    "HLA-A*33:03",
+    "HLA-B*58:01",
+    "rs1264314",
+    "HLA-C*03:02",
+    "HLA-DRB1*03:01",
+    "HLA-B*57:01",
+    "rs1594",
+    "rs2855804",
+    "rs2304224",
+    "rs589428",
+    "HLA-B*15:02",
+    "rs3117583",
+    "rs1755038",
+    "rs2268791",
+    "rs1264440"
+  ]
+}

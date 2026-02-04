@@ -1,0 +1,72 @@
+{
+  "pmcid": "PMC6465603",
+  "variants": [
+    "rs1142345",
+    "rs116855232",
+    "rs147390019"
+  ],
+  "sentences": {
+    "rs1142345": [
+      {
+        "sentence": "Genotypes AG + GG of rs1142345 are not associated with increased risk of leukopenia when treated with azathioprine in people with Autoimmune Hepatitis (AIH), AIH\u2013Primary Biliary Cholangitis (PBC) variant syndrome, and related cirrhosis in China as compared to genotype AA.",
+        "explanation": "In a cohort of 149 Chinese AIH/AIH\u2013PBC variant patients genotyped for TPMT rs1142345, the study reported no significant association with AZA-induced leukopenia or maintenance dose; the risk-allele frequency was low (~1.7%), which may have limited power."
+      }
+    ],
+    "rs116855232": [
+      {
+        "sentence": "Genotype CT of rs116855232 is associated with increased risk of leukopenia when treated with azathioprine in people with Autoimmune Hepatitis (AIH), AIH\u2013Primary Biliary Cholangitis (PBC) variant syndrome, and related cirrhosis in China as compared to genotype CC.",
+        "explanation": "The single-center study of 149 Chinese AIH/AIH\u2013PBC variant patients found a significant association between NUDT15 rs116855232 and AZA-induced leukopenia; heterozygotes also tolerated and maintained remission on lower AZA doses (~1 mg/kg/day), and showed a lower AZA dose-to-6-TGN concentration ratio."
+      }
+    ],
+    "rs147390019": [
+      {
+        "sentence": "rs147390019 mentioned in article but not studied by paper.",
+        "explanation": "The variant (NUDT15 p.Arg139His) was cited from prior literature as relevant to thiopurine toxicity but was not genotyped or analyzed in this AIH/AIH\u2013PBC azathioprine cohort."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "variant": "rs1142345",
+      "sentence": "Genotypes AG + GG of rs1142345 are not associated with increased risk of leukopenia when treated with azathioprine in people with Autoimmune Hepatitis (AIH), AIH\u2013Primary Biliary Cholangitis (PBC) variant syndrome, and related cirrhosis in China as compared to genotype AA.",
+      "explanation": "In a cohort of 149 Chinese AIH/AIH\u2013PBC variant patients genotyped for TPMT rs1142345, the study reported no significant association with AZA-induced leukopenia or maintenance dose; the risk-allele frequency was low (~1.7%), which may have limited power.",
+      "citations": [
+        "In contrast, no significant association was observed for TPMT\u22173C genotypes.",
+        "Our results found that the rs116855232 but not the rs1142345 genotype was significantly associated with AZA-induced leukopenia and the maintenance dose in Chinese patients with AIH and related cirrhosis.",
+        "The present study showed a 1.7% frequency of the risk TPMT allele in the analyzed population, which is similar to that reported in other studies involving Chinese IBD patients.",
+        "Hence, the lack of significance observed for rs1142345 in the present study is likely due to its low prevalence in East Asian populations and the small sample size of our cohort."
+      ]
+    },
+    {
+      "variant": "rs116855232",
+      "sentence": "Genotype CT of rs116855232 is associated with increased risk of leukopenia when treated with azathioprine in people with Autoimmune Hepatitis (AIH), AIH\u2013Primary Biliary Cholangitis (PBC) variant syndrome, and related cirrhosis in China as compared to genotype CC.",
+      "explanation": "The single-center study of 149 Chinese AIH/AIH\u2013PBC variant patients found a significant association between NUDT15 rs116855232 and AZA-induced leukopenia; heterozygotes also tolerated and maintained remission on lower AZA doses (~1 mg/kg/day), and showed a lower AZA dose-to-6-TGN concentration ratio.",
+      "citations": [
+        "Twelve patients developed leukopenia, and this adverse drug reaction was significantly associated with the T risk allele in NUDT15 [P < 0.00001, odds ratio = 20.41; 95% confidence interval (CI) (7.84, 53.13)], with the sensitivity and specificity of 91.67 and 89.05%, respectively.",
+        "Therapy-induced leukopenia was observed in 9/24 (37.5%) patients with the CT allele and 2/2 (100%) patients with the TT allele.",
+        "However, only one patient with wild-type homozygote allele experienced leukopenia.",
+        "When evaluated by rs116855232 genotype, leukopenia was significantly associated with the T allele [P < 0.00001, odds ratio = 20.41; 95% CI (7.84, 53.13)], with the sensitivity and specificity of 91.67 and 89.05%, respectively ([Table 3](#T3))."
+      ]
+    },
+    {
+      "variant": "rs147390019",
+      "sentence": "rs147390019 mentioned in article but not studied by paper.",
+      "explanation": "The variant (NUDT15 p.Arg139His) was cited from prior literature as relevant to thiopurine toxicity but was not genotyped or analyzed in this AIH/AIH\u2013PBC azathioprine cohort.",
+      "citations": [
+        "This finding has been replicated by multiple independent studies and has expanded to several other NUDT15 SNPs, including rs147390019 (induces p.Arg139His) ([Moriyama et al., 2016](#B23)).",
+        "NUDT15 (rs116855232) and TPMT\u22173C (rs1142345) SNPs were genotyped using a PCR method.",
+        "A second limitation is the possibility that we may have missed some rare mutations in the TPMT and NUDT15 genes, given that we were testing only the two most common mutations in Asians as a cost-effective practice using commercially available tests."
+      ]
+    }
+  ],
+  "summary": {
+    "pmcid": "PMC6465603",
+    "summary": "## Background\nAzathioprine (AZA) is commonly used for autoimmune hepatitis (AIH) and AIH\u2013primary biliary cholangitis (PBC) overlap, but leukopenia is a serious adverse effect. In East Asian populations, TPMT variants explain little of this risk. This single-center retrospective study of 149 Chinese patients evaluated whether NUDT15 rs116855232 (R139C) and TPMT*3C rs1142345 variants predict AZA-induced leukopenia and influence dosing.\n\n## Key Findings\n- NUDT15 rs116855232 (C>T, R139C) strongly predicted leukopenia. Carriage of the T allele was associated with markedly higher risk (OR 20.41; 95% CI 7.84\u201353.13; P < 0.00001), with sensitivity 91.7% and specificity 89.1% for leukopenia. Leukopenia occurred in 37.5% of CT heterozygotes (9/24) and 100% of TT homozygotes (2/2) versus 0.8% of CC (1/123), typically within 60 days of starting/increasing AZA.\n- NUDT15 variation affected thiopurine metabolism and tolerated dose: CT carriers had higher 6-thioguanine nucleotide (6-TGN) levels (median 276.6 vs 145.3 pmol/8\u00d710^8 RBC; P = 0.002) and required lower AZA maintenance doses (median 0.96 vs 1.23 mg/kg/day; P = 0.028). The AZA dose-to\u20136-TGN ratio was lower in CT (P = 0.013). Overall, 6-TGN concentration did not distinguish those with vs without leukopenia (P = 0.149).\n- TPMT*3C rs1142345 showed no significant association with leukopenia or dosing in this cohort; the risk allele was rare.\n- In a subgroup with pre-existing leukopenia (n = 13), WBC counts did not worsen on AZA; most were NUDT15 wild-type and maintained typical doses (~1.13 mg/kg/day).\n\n## Clinical Implications\n- Preemptive NUDT15 genotyping should be considered alongside TPMT before initiating AZA in AIH, especially in East Asian patients. T-allele carriers (CT/TT) are at high risk for early leukopenia and need dose adjustments and close monitoring in the first 8 weeks.\n- For NUDT15 CT heterozygotes, starting/maintaining AZA at about 1 mg/kg/day appears effective and safer; TT homozygotes may require very low doses or alternative immunosuppression.\n- Routine TPMT*3C testing alone is insufficient in East Asians; NUDT15 provides substantially greater predictive value.\n- 6-TGN levels alone may not predict leukopenia; genotype-guided dosing, potentially supplemented by metabolite monitoring, can optimize safety. Patients with baseline leukopenia from cirrhosis/hypersplenism may still tolerate AZA if NUDT15 is wild-type.",
+    "num_variants": 3,
+    "variants": [
+      "rs1142345",
+      "rs116855232",
+      "rs147390019"
+    ]
+  }
+}

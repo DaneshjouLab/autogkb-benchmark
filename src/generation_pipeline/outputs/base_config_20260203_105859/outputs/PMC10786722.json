@@ -1,0 +1,1099 @@
+{
+  "pmcid": "PMC10786722",
+  "variants": [
+    "rs919596571",
+    "rs371313778",
+    "rs138616379",
+    "rs367623519",
+    "rs746991079",
+    "rs145548112",
+    "rs114096998",
+    "DPYD*1",
+    "rs773159364",
+    "DPYD*6",
+    "rs202212118",
+    "rs368617815",
+    "DPYD*13",
+    "rs57918000",
+    "rs55886062",
+    "rs3918289",
+    "rs67376798",
+    "rs147601618",
+    "rs758927521",
+    "rs141044036",
+    "rs1355754530",
+    "rs72975710",
+    "rs376073289",
+    "rs56005131",
+    "rs61622928",
+    "rs555178721",
+    "rs927463053",
+    "rs150759598",
+    "rs746368304",
+    "rs772950053",
+    "rs375436137",
+    "rs2297595",
+    "rs1801160",
+    "rs45589337",
+    "rs1801158",
+    "rs1801159",
+    "rs374825099",
+    "rs768519000",
+    "rs17376848",
+    "rs140039091",
+    "rs142619737",
+    "rs138391898",
+    "rs368146607",
+    "rs779728902",
+    "rs749122978",
+    "rs371792178",
+    "rs764173823",
+    "rs573299212",
+    "rs760853559",
+    "rs56038477",
+    "rs148372305",
+    "rs72549308",
+    "rs763174477",
+    "rs3918290",
+    "rs115232898",
+    "rs1801265",
+    "rs539032572"
+  ],
+  "sentences": {
+    "rs919596571": [
+      {
+        "sentence": "rs919596571 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "rs371313778": [
+      {
+        "sentence": "rs371313778 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "rs138616379": [
+      {
+        "sentence": "rs138616379 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "rs367623519": [
+      {
+        "sentence": "rs367623519 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "rs746991079": [
+      {
+        "sentence": "rs746991079 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "rs145548112": [
+      {
+        "sentence": "rs145548112 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "rs114096998": [
+      {
+        "sentence": "rs114096998 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "DPYD*1": [
+      {
+        "sentence": "DPYD*1/*1 is associated with normal DPD activity (no predicted increase in fluoropyrimidine toxicity) in people eligible for uracil analog-based (fluoropyrimidine) chemotherapy as compared to carriers of decreased-function DPYD alleles.",
+        "explanation": "In this NGS-based cohort with pretreatment DPD phenotyping (UH2/U ratio and uracil), DPYD*1 is the reference (normal function) allele against which decreased-function variants were evaluated."
+      }
+    ],
+    "rs773159364": [
+      {
+        "sentence": "rs773159364 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "DPYD*6": [
+      {
+        "sentence": "Genotypes DPYD*1/*6 + DPYD*6/*6 (DPYD*6) are not associated with a significant change in DPD activity or predicted fluoropyrimidine toxicity in people eligible for uracil analog-based chemotherapy as compared to DPYD*1/*1.",
+        "explanation": "Within the study\u2019s evaluation of common DPYD variants against DPD phenotype, DPYD*6 was not identified among those with significant effects, and toxicity outcomes were not available."
+      }
+    ],
+    "rs202212118": [
+      {
+        "sentence": "rs202212118 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "rs368617815": [
+      {
+        "sentence": "rs368617815 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "DPYD*13": [
+      {
+        "sentence": "Genotypes DPYD*1/*13 + DPYD*13/*13 (DPYD*13) are associated with decreased DPD activity, predicting increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to DPYD*1/*1.",
+        "explanation": "The study confirmed a strong impact of this clinically relevant rare variant on DPD enzyme activity in a large NGS-genotyped cohort with pretreatment DPD phenotyping."
+      }
+    ],
+    "rs57918000": [
+      {
+        "sentence": "rs57918000 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant."
+      }
+    ],
+    "rs55886062": [
+      {
+        "sentence": "Genotypes TG + GG of rs55886062 (DPYD*13) are associated with decreased DPD activity, predicting increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype TT.",
+        "explanation": "The cohort\u2019s NGS analysis confirmed a strong association of DPYD*13 with reduced DPD activity measured by UH2/U ratio, though clinical toxicity data were not available."
+      }
+    ],
+    "rs3918289": [
+      {
+        "sentence": "rs3918289 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs67376798": [
+      {
+        "sentence": "Genotypes AT + TT of rs67376798 are associated with decreased DPD activity, predicting increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype AA.",
+        "explanation": "The study states that three clinically rare variants showed strong impact on DPD activity; rs67376798 (c.2846A>T) is among these established risk variants in the cohort\u2019s phenotype-genotype analysis."
+      }
+    ],
+    "rs147601618": [
+      {
+        "sentence": "rs147601618 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs758927521": [
+      {
+        "sentence": "rs758927521 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs141044036": [
+      {
+        "sentence": "rs141044036 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs1355754530": [
+      {
+        "sentence": "rs1355754530 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs72975710": [
+      {
+        "sentence": "rs72975710 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs376073289": [
+      {
+        "sentence": "rs376073289 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs56005131": [
+      {
+        "sentence": "rs56005131 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs61622928": [
+      {
+        "sentence": "rs61622928 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs555178721": [
+      {
+        "sentence": "rs555178721 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs927463053": [
+      {
+        "sentence": "rs927463053 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs150759598": [
+      {
+        "sentence": "rs150759598 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs746368304": [
+      {
+        "sentence": "rs746368304 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs772950053": [
+      {
+        "sentence": "rs772950053 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs375436137": [
+      {
+        "sentence": "rs375436137 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs2297595": [
+      {
+        "sentence": "Genotypes AG + GG of rs2297595 are associated with a modest decrease in DPD activity, predicting slightly increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype AA.",
+        "explanation": "The study reported significant associations between DPD activity and several common variants (including beyond HapB3), with modest effect sizes; rs2297595 (c.496A>G) is a commonly evaluated DPYD variant in such analyses."
+      }
+    ],
+    "rs1801160": [
+      {
+        "sentence": "Genotypes GA + AA of rs1801160 (DPYD*6) are not associated with a significant change in DPD activity or predicted fluoropyrimidine toxicity in people eligible for uracil analog-based chemotherapy as compared to genotype GG.",
+        "explanation": "Among common DPYD variants assessed against DPD phenotype, rs1801160 was not highlighted as significantly associated in this cohort; toxicity outcomes were not captured."
+      }
+    ],
+    "rs45589337": [
+      {
+        "sentence": "rs45589337 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs1801158": [
+      {
+        "sentence": "rs1801158 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs1801159": [
+      {
+        "sentence": "rs1801159 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs374825099": [
+      {
+        "sentence": "rs374825099 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs768519000": [
+      {
+        "sentence": "rs768519000 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs17376848": [
+      {
+        "sentence": "rs17376848 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs140039091": [
+      {
+        "sentence": "rs140039091 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs142619737": [
+      {
+        "sentence": "rs142619737 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs138391898": [
+      {
+        "sentence": "rs138391898 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs368146607": [
+      {
+        "sentence": "rs368146607 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs779728902": [
+      {
+        "sentence": "rs779728902 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs749122978": [
+      {
+        "sentence": "rs749122978 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs371792178": [
+      {
+        "sentence": "rs371792178 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs764173823": [
+      {
+        "sentence": "rs764173823 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs573299212": [
+      {
+        "sentence": "rs573299212 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs760853559": [
+      {
+        "sentence": "rs760853559 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs56038477": [
+      {
+        "sentence": "Genotypes GA + AA of rs56038477 (HapB3) are associated with a modest decrease in DPD activity, predicting slightly increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype GG.",
+        "explanation": "The study found a significant association between DPD activity and several common variants including HapB3, with modest effect sizes on the UH2/U phenotype."
+      }
+    ],
+    "rs148372305": [
+      {
+        "sentence": "rs148372305 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs72549308": [
+      {
+        "sentence": "rs72549308 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs763174477": [
+      {
+        "sentence": "rs763174477 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs3918290": [
+      {
+        "sentence": "Genotypes GA + AA of rs3918290 (DPYD*2A) are associated with markedly decreased DPD activity, predicting increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype GG.",
+        "explanation": "The cohort confirmed the strong impact of this splice-site loss-of-function variant on DPD phenotype by pretreatment UH2/U measurements; clinical toxicity outcomes were not recorded."
+      }
+    ],
+    "rs115232898": [
+      {
+        "sentence": "rs115232898 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ],
+    "rs1801265": [
+      {
+        "sentence": "Genotypes AG + GG of rs1801265 are associated with a modest decrease in DPD activity, predicting slightly increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype AA.",
+        "explanation": "Among common DPYD variants assessed in this large, phenotyped cohort, several showed significant but modest effects on DPD activity; rs1801265 has been evaluated in this context."
+      }
+    ],
+    "rs539032572": [
+      {
+        "sentence": "rs539032572 mentioned in article but not studied by paper.",
+        "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "variant": "rs919596571",
+      "sentence": "rs919596571 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs371313778",
+      "sentence": "rs371313778 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs138616379",
+      "sentence": "rs138616379 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs367623519",
+      "sentence": "rs367623519 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs746991079",
+      "sentence": "rs746991079 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs145548112",
+      "sentence": "rs145548112 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs114096998",
+      "sentence": "rs114096998 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "DPYD*1",
+      "sentence": "DPYD*1/*1 is associated with normal DPD activity (no predicted increase in fluoropyrimidine toxicity) in people eligible for uracil analog-based (fluoropyrimidine) chemotherapy as compared to carriers of decreased-function DPYD alleles.",
+      "explanation": "In this NGS-based cohort with pretreatment DPD phenotyping (UH2/U ratio and uracil), DPYD*1 is the reference (normal function) allele against which decreased-function variants were evaluated.",
+      "citations": [
+        "The group of patients with partial DPD deficiency represented a total of 580 patients, including 134 wild-type patients (*DPYD*1/*1*) and 446 patients harboring at least one genetic variant (208 patients carried one genetic variant and 238 patients more than one).",
+        "The remaining 2392 patients exhibiting normal DPD activity include 623 wild-type patients (*DPYD*1/*1*) and 1769 mutated patients in which a total of 3183 genetic variants were identified (831 carrying a single genetic variant and 938 carrying more than one).",
+        "All patients included in this study were eligible for an uracil analog-based chemotherapy (Supplementary Table S1).",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1)."
+      ]
+    },
+    {
+      "variant": "rs773159364",
+      "sentence": "rs773159364 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "DPYD*6",
+      "sentence": "Genotypes DPYD*1/*6 + DPYD*6/*6 (DPYD*6) are not associated with a significant change in DPD activity or predicted fluoropyrimidine toxicity in people eligible for uracil analog-based chemotherapy as compared to DPYD*1/*1.",
+      "explanation": "Within the study\u2019s evaluation of common DPYD variants against DPD phenotype, DPYD*6 was not identified among those with significant effects, and toxicity outcomes were not available.",
+      "citations": [
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "Nevertheless, compared to the most clinically relevant DPYD defective variants, the association of these three variants with DPD activity was rather modest (Fig. 2).",
+        "n = number of patients, ns = non-significant; *P < 0.05, **P < 0.01.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs202212118",
+      "sentence": "rs202212118 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs368617815",
+      "sentence": "rs368617815 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "DPYD*13",
+      "sentence": "Genotypes DPYD*1/*13 + DPYD*13/*13 (DPYD*13) are associated with decreased DPD activity, predicting increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to DPYD*1/*1.",
+      "explanation": "The study confirmed a strong impact of this clinically relevant rare variant on DPD enzyme activity in a large NGS-genotyped cohort with pretreatment DPD phenotyping.",
+      "citations": [
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "n = number of patients; ***P < 0.001; ****P < 0.0001.",
+        "Specifically, our results confirmed the strong impact of the three clinically rare variants."
+      ]
+    },
+    {
+      "variant": "rs57918000",
+      "sentence": "rs57918000 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not report any genotype\u2013drug association or DPD activity analysis for this variant.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs55886062",
+      "sentence": "Genotypes TG + GG of rs55886062 (DPYD*13) are associated with decreased DPD activity, predicting increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype TT.",
+      "explanation": "The cohort\u2019s NGS analysis confirmed a strong association of DPYD*13 with reduced DPD activity measured by UH2/U ratio, though clinical toxicity data were not available.",
+      "citations": [
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "n = number of patients; ***P < 0.001; ****P < 0.0001.",
+        "Specifically, our results confirmed the strong impact of the three clinically rare variants."
+      ]
+    },
+    {
+      "variant": "rs3918289",
+      "sentence": "rs3918289 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs67376798",
+      "sentence": "Genotypes AT + TT of rs67376798 are associated with decreased DPD activity, predicting increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype AA.",
+      "explanation": "The study states that three clinically rare variants showed strong impact on DPD activity; rs67376798 (c.2846A>T) is among these established risk variants in the cohort\u2019s phenotype-genotype analysis.",
+      "citations": [
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "n = number of patients; ***P < 0.001; ****P < 0.0001.",
+        "Specifically, our results confirmed the strong impact of the three clinically rare variants."
+      ]
+    },
+    {
+      "variant": "rs147601618",
+      "sentence": "rs147601618 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs758927521",
+      "sentence": "rs758927521 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs141044036",
+      "sentence": "rs141044036 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs1355754530",
+      "sentence": "rs1355754530 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs72975710",
+      "sentence": "rs72975710 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs376073289",
+      "sentence": "rs376073289 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs56005131",
+      "sentence": "rs56005131 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs61622928",
+      "sentence": "rs61622928 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs555178721",
+      "sentence": "rs555178721 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs927463053",
+      "sentence": "rs927463053 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs150759598",
+      "sentence": "rs150759598 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs746368304",
+      "sentence": "rs746368304 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs772950053",
+      "sentence": "rs772950053 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs375436137",
+      "sentence": "rs375436137 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs2297595",
+      "sentence": "Genotypes AG + GG of rs2297595 are associated with a modest decrease in DPD activity, predicting slightly increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype AA.",
+      "explanation": "The study reported significant associations between DPD activity and several common variants (including beyond HapB3), with modest effect sizes; rs2297595 (c.496A>G) is a commonly evaluated DPYD variant in such analyses.",
+      "citations": [
+        "Among the seven genetic variants identified, three variants (c.1236G>A or rs56038477 p.Glu412Glu ; c.496A>G or rs2297595 p.Met166Val; DPYD6 c.2194G>A or rs1801160 p.Val732Ile) were significantly more frequent in the group of patients exhibiting partial DPD deficiency.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "Nevertheless, compared to the most clinically relevant DPYD defective variants, the association of these three variants with DPD activity was rather modest (Fig. 2).",
+        "n = number of patients, ns = non-significant; *P < 0.05, **P < 0.01."
+      ]
+    },
+    {
+      "variant": "rs1801160",
+      "sentence": "Genotypes GA + AA of rs1801160 (DPYD*6) are not associated with a significant change in DPD activity or predicted fluoropyrimidine toxicity in people eligible for uracil analog-based chemotherapy as compared to genotype GG.",
+      "explanation": "Among common DPYD variants assessed against DPD phenotype, rs1801160 was not highlighted as significantly associated in this cohort; toxicity outcomes were not captured.",
+      "citations": [
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "Nevertheless, compared to the most clinically relevant DPYD defective variants, the association of these three variants with DPD activity was rather modest (Fig. 2).",
+        "n = number of patients, ns = non-significant; *P < 0.05, **P < 0.01.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs45589337",
+      "sentence": "rs45589337 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs1801158",
+      "sentence": "rs1801158 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs1801159",
+      "sentence": "rs1801159 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs374825099",
+      "sentence": "rs374825099 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs768519000",
+      "sentence": "rs768519000 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs17376848",
+      "sentence": "rs17376848 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs140039091",
+      "sentence": "rs140039091 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs142619737",
+      "sentence": "rs142619737 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs138391898",
+      "sentence": "rs138391898 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs368146607",
+      "sentence": "rs368146607 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs779728902",
+      "sentence": "rs779728902 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs749122978",
+      "sentence": "rs749122978 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs371792178",
+      "sentence": "rs371792178 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs764173823",
+      "sentence": "rs764173823 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs573299212",
+      "sentence": "rs573299212 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs760853559",
+      "sentence": "rs760853559 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs56038477",
+      "sentence": "Genotypes GA + AA of rs56038477 (HapB3) are associated with a modest decrease in DPD activity, predicting slightly increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype GG.",
+      "explanation": "The study found a significant association between DPD activity and several common variants including HapB3, with modest effect sizes on the UH2/U phenotype.",
+      "citations": [
+        "Consistent with previous reports, the c.1236G>A (rs56038477) which is included in the risk haplotype B3 was significantly associated with low DPD activity [30, 31].",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "Nevertheless, compared to the most clinically relevant DPYD defective variants, the association of these three variants with DPD activity was rather modest (Fig. 2).",
+        "n = number of patients, ns = non-significant; *P < 0.05, **P < 0.01."
+      ]
+    },
+    {
+      "variant": "rs148372305",
+      "sentence": "rs148372305 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs72549308",
+      "sentence": "rs72549308 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs763174477",
+      "sentence": "rs763174477 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs3918290",
+      "sentence": "Genotypes GA + AA of rs3918290 (DPYD*2A) are associated with markedly decreased DPD activity, predicting increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype GG.",
+      "explanation": "The cohort confirmed the strong impact of this splice-site loss-of-function variant on DPD phenotype by pretreatment UH2/U measurements; clinical toxicity outcomes were not recorded.",
+      "citations": [
+        "Dose adjustment based on pretreatment screening for the most clinically relevant DPYD defective variants, i.e. c.1679T>G (DPYD13, rs55886062), c.1905+1G>A (DPYD2A, rs3918290) and c.2846A>T (p.Asp949Val or rs67376798), has been shown to improve the safety of chemotherapy regimens based on fluorouracil [29].",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "n = number of patients; ***P < 0.001; ****P < 0.0001.",
+        "Specifically, our results confirmed the strong impact of the three clinically rare variants."
+      ]
+    },
+    {
+      "variant": "rs115232898",
+      "sentence": "rs115232898 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs1801265",
+      "sentence": "Genotypes AG + GG of rs1801265 are associated with a modest decrease in DPD activity, predicting slightly increased risk of fluoropyrimidine toxicity, in people eligible for uracil analog-based chemotherapy as compared to genotype AA.",
+      "explanation": "Among common DPYD variants assessed in this large, phenotyped cohort, several showed significant but modest effects on DPD activity; rs1801265 has been evaluated in this context.",
+      "citations": [
+        "The association between common DPYD genetic variants (MAF \u2265 1%) and DPD activity is summarized in Fig. 2.",
+        "n = number of patients, ns = non-significant; *P < 0.05, **P < 0.01.",
+        "Nevertheless, compared to the most clinically relevant DPYD defective variants, the association of these three variants with DPD activity was rather modest (Fig. 2).",
+        "However, information regarding fluoropyrimidine toxicity was not available."
+      ]
+    },
+    {
+      "variant": "rs539032572",
+      "sentence": "rs539032572 mentioned in article but not studied by paper.",
+      "explanation": "The provided text does not describe any association between this variant and DPD activity or fluoropyrimidine outcomes.",
+      "citations": [
+        "Table 2 Caption: List of the genetic variants identified in DPYD by next generation sequencing.",
+        "As expected, our data showed a significant association between each of these genetic variants and low DPD activity (Fig. 1).",
+        "However, information regarding fluoropyrimidine toxicity was not available.",
+        "Specifically, our results confirmed the strong impact of the three clinically rare variants."
+      ]
+    }
+  ],
+  "summary": {
+    "pmcid": "PMC10786722",
+    "summary": "## Background\nFluoropyrimidines (5\u2011FU/capecitabine) are widely used but can cause severe, sometimes fatal, toxicity in patients with reduced dihydropyrimidine dehydrogenase (DPD) activity. This study sequenced DPYD (exons and splice junctions) in 2,972 patients and related genotype to pretreatment DPD phenotype using the dihydrouracil/uracil ([UH2]/[U]) plasma ratio (partial deficiency defined as \u226410).\n\n## Key Findings\n- Established high\u2011risk alleles were strongly associated with lower DPD activity: DPYD*2A (c.1905+1G>A), DPYD*13 (c.1679T>G), and c.2846A>T (all P \u2264 0.001\u20130.0001 vs wild\u2011type).\n- Several common variants showed only modest effects: hapB3 (c.1236G>A), c.496A>G (p.Met166Val), and DPYD*6 (c.2194G>A) were more frequent in patients with partial DPD deficiency, but the effect sizes were small relative to the high\u2011risk alleles.\n- Rare/very rare DPYD variants (MAF <1%) were enriched in patients with low DPD activity:\n  - Any rare variant: 9.3% (deficient) vs 3.2% (normal); P < 0.00001.\n  - After excluding the three clinically established high\u2011risk alleles: 4.5% vs 2.6%; P < 0.03.\n  - Restricting to rare variants predicted deleterious (CADD >15): 4.2% vs 1.6%; P < 0.001.\n- Multiple novel or very rare putative loss\u2011of\u2011function variants (e.g., frameshift, stop\u2011gain, canonical splice) were identified in individuals with low DPD activity. All rare variants detected were heterozygous.\n\n## Clinical Implications\n- Beyond guideline variants (DPYD*2A, DPYD*13, c.2846A>T, and hapB3), rare deleterious DPYD variants contribute meaningfully to reduced DPD activity. Comprehensive DPYD sequencing can improve identification of patients at risk for fluoropyrimidine toxicity versus targeted SNP panels alone.\n- Continue to apply CPIC/EMA dose reductions for established high\u2011risk alleles; interpret common variants with modest effects (e.g., hapB3, c.496A>G, DPYD*6) cautiously given smaller impact.\n- Consider integrating NGS\u2011based genotyping with DPD phenotyping where available to optimize safety. Note: this study used DPD activity as a surrogate; prospective linkage to clinical toxicity is still needed.",
+    "num_variants": 57,
+    "variants": [
+      "rs919596571",
+      "rs371313778",
+      "rs138616379",
+      "rs367623519",
+      "rs746991079",
+      "rs145548112",
+      "rs114096998",
+      "DPYD*1",
+      "rs773159364",
+      "DPYD*6",
+      "rs202212118",
+      "rs368617815",
+      "DPYD*13",
+      "rs57918000",
+      "rs55886062",
+      "rs3918289",
+      "rs67376798",
+      "rs147601618",
+      "rs758927521",
+      "rs141044036",
+      "rs1355754530",
+      "rs72975710",
+      "rs376073289",
+      "rs56005131",
+      "rs61622928",
+      "rs555178721",
+      "rs927463053",
+      "rs150759598",
+      "rs746368304",
+      "rs772950053",
+      "rs375436137",
+      "rs2297595",
+      "rs1801160",
+      "rs45589337",
+      "rs1801158",
+      "rs1801159",
+      "rs374825099",
+      "rs768519000",
+      "rs17376848",
+      "rs140039091",
+      "rs142619737",
+      "rs138391898",
+      "rs368146607",
+      "rs779728902",
+      "rs749122978",
+      "rs371792178",
+      "rs764173823",
+      "rs573299212",
+      "rs760853559",
+      "rs56038477",
+      "rs148372305",
+      "rs72549308",
+      "rs763174477",
+      "rs3918290",
+      "rs115232898",
+      "rs1801265",
+      "rs539032572"
+    ]
+  }
+}

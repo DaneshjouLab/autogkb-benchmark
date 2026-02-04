@@ -106,14 +106,14 @@ The V2 variant benchmark provides a JSON output with the following structure:
 
 ## Experiments
 
-The `src/experiments` directory contains modular, multi-stage pipelines for developing and evaluating new methods for knowledge extraction. Each stage is designed to be run independently, with outputs from one stage feeding into the next.
+The `src/modules` directory contains modular, multi-stage pipelines for developing and evaluating new methods for knowledge extraction. Each stage is designed to be run independently, with outputs from one stage feeding into the next.
 
 The primary experimental pipelines are:
 
-1.  [**Variant Finding**](./src/experiments/variant_finding/README.md): Extracts genetic variants from full-text articles.
-2.  [**Sentence Generation**](./src/experiments/sentence_generation/README.md): Generates sentences describing the clinical significance of each variant.
-3.  [**Citation Finding**](./src/experiments/citations/README.md): Identifies the source sentence from the original article that supports each generated sentence.
-4.  [**Summary Generation**](./src/experiments/summary/README.md): Creates a final, concise summary of the key pharmacogenomic findings in the article.
+1.  [**Variant Finding**](./src/modules/variant_finding/README.md): Extracts genetic variants from full-text articles.
+2.  [**Sentence Generation**](./src/modules/sentence_generation/README.md): Generates sentences describing the clinical significance of each variant.
+3.  [**Citation Finding**](./src/modules/citations/README.md): Identifies the source sentence from the original article that supports each generated sentence.
+4.  [**Summary Generation**](./src/modules/summary/README.md): Creates a final, concise summary of the key pharmacogenomic findings in the article.
 
 Each experiment directory contains a detailed `README.md` with instructions on how to run the specific pipeline, including example commands and descriptions of available methods. Please refer to these files for more information on each stage of the experimental process.
 

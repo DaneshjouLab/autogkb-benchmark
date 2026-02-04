@@ -1,0 +1,44 @@
+{
+  "HLA-A*33:03": [
+    {
+      "sentence": "HLA-A *33:03 mentioned in article but not studied by paper.",
+      "explanation": "The allele was referenced in the context of ancestry (more common in Asian-origin patients) but no association testing with carbamazepine outcomes was reported."
+    }
+  ],
+  "HLA-A*31:01": [
+    {
+      "sentence": "HLA-A *31:01 is associated with increased risk of hypersensitivity (particularly hypersensitivity syndrome [HSS], and also maculopapular exanthema) when treated with carbamazepine in children from ethnically diverse Canadian pediatric hospitals as compared to non-carriers.",
+      "explanation": "The study of pediatric CPNDS participants replicated the HLA-A*31:01 risk association (dominant model, Fisher\u2019s exact test), noted a stronger signal for HSS versus MPE, and did not detect an association with SJS/TEN in this cohort (limited SJS/TEN cases)."
+    }
+  ],
+  "HLA-A*31": [
+    {
+      "sentence": "HLA-A *31 mentioned in article but not studied by paper.",
+      "explanation": "HLA-A*31 was only referenced in the genotyping methods (allele-specific amplification) without separate association analyses."
+    }
+  ],
+  "HLA-A*33:01": [
+    {
+      "sentence": "HLA-A *33:01 not mentioned in article.",
+      "explanation": "The provided text does not include HLA-A*33:01, and no association data were presented."
+    }
+  ],
+  "HLA-B*15:02": [
+    {
+      "sentence": "HLA-B *15:02 is associated with increased risk of severe cutaneous adverse reactions (SJS/TEN) when treated with carbamazepine in children in Canada, particularly those of Asian origin, as compared to non-carriers.",
+      "explanation": "In the pediatric CPNDS cohort, all CBZ-SJS/TEN cases with Asian ancestry carried HLA-B*15:02, confirming a well-established association; analyses used Fisher\u2019s exact test under a dominant model."
+    }
+  ],
+  "HLA-B*15:11": [
+    {
+      "sentence": "HLA-B *15:11 not mentioned in article.",
+      "explanation": "The provided text does not include HLA-B*15:11, and no association data were presented."
+    }
+  ],
+  "rs1061235": [
+    {
+      "sentence": "Allele T of rs1061235 is associated with increased risk of carbamazepine-induced hypersensitivity in children from ethnically diverse Canadian pediatric hospitals, including in those not carrying HLA-A*31:01, as compared to non-T carriers.",
+      "explanation": "The study genotyped rs1061235 (a proxy for HLA-A*31:01 in Europeans) and observed T-allele overrepresentation among hypersensitivity cases, though the authors cautioned it is not an optimal surrogate in multiethnic populations."
+    }
+  ]
+}

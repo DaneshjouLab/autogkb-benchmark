@@ -1,0 +1,26 @@
+[
+  {
+    "variant": "UGT1A1*28",
+    "sentence": "Genotypes heterozygous + homozygous of UGT1A1*28 are not associated with increased risk of adverse events when treated with irinotecan in people with advanced gastric cancer receiving second-line chemotherapy as compared to wild-type genotype.",
+    "explanation": "In a single-center retrospective study of 110 advanced gastric cancer patients (107 treated with irinotecan), the authors reported no significant difference in the incidence of adverse events across UGT1A1*28 genotype groups under their dosing approach.",
+    "citations": [
+      "There was a significant difference in the risk of delayed diarrhea (p = 0.000), leukopenia (p = 0.003) and neutropenia (p = 0.000) in patients with different UGT1A1*6 genotypes, while no difference in patients with different UGT1A1*28 genotypes.",
+      "In addition, there were no significant differences in diarrhea (*p *= 0.136), neutropenia (*p *= 0.991), and leukopenia (*p *= 0.857) in *UGT1A1*28* subgroups.",
+      "It was found that there was no significant difference in the incidence of AEs in GC patients with different *UGT1A1*28* genotypes.",
+      "Patients with *UGT1A1*6* or *UGT1A1*28* genetype showed no significant difference in thrombocytopenia and hemoglobin reduction.",
+      "## Table 3: Adverse Events."
+    ]
+  },
+  {
+    "variant": "UGT1A1*6",
+    "sentence": "Genotypes GA + AA of UGT1A1*6 are associated with increased risk of adverse events (delayed diarrhea and neutropenia) when treated with irinotecan in people with advanced gastric cancer receiving second-line chemotherapy as compared to genotype GG.",
+    "explanation": "The study (n=110; 107 on irinotecan with genotype-guided dosing: GG 125 mg/m\u00b2, GA 100 mg/m\u00b2, AA 75 mg/m\u00b2) found UGT1A1*6 was significantly related to toxicity, with adverse events increasing from GG to GA to AA; notably, 5 of 8 AA patients developed severe toxicity despite a 40% dose reduction.",
+    "citations": [
+      "However, diarrhea (*p *= 0.000), neutropenia (*p *= 0.000), and leukopenia (*p *= 0.003) were significantly different among *UGT1A1*6* subgroups ([Table 3](#table3-15330338241236658)).",
+      "There was a significant difference in the risk of delayed diarrhea (p = 0.000), leukopenia (p = 0.003) and neutropenia (p = 0.000) in patients with different UGT1A1*6 genotypes, while no difference in patients with different UGT1A1*28 genotypes.",
+      "Additionally, grade 3/4 diarrhea, neutropenia, and leukopenia were significantly more common in AA genotype patients compared to GG (2%, 19%, and 24%) or GA (23%, 31%, and 31%) genotype patients, suggesting that that patients with the AA genotype could not tolerate severe toxicity even with reduced doses of irinotecan.",
+      "The incidence of adverse reactions gradually increases in patients with wild-type, mutant heterozygous and mutant homozygous.",
+      "## Table 3: Adverse Events."
+    ]
+  }
+]

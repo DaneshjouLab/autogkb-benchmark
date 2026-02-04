@@ -1,0 +1,38 @@
+{
+  "CYP2D6*10": [
+    {
+      "sentence": "Genotypes EM/IM or IM/IM of CYP2D6*10 are not associated with increased likelihood of disease events when treated with tamoxifen in postmenopausal women with early-stage ER-positive breast cancer as compared to EM/EM; not statistically significant.",
+      "explanation": "In the ABCSG 8 matched case\u2013control analysis (postmenopausal ER-positive breast cancer; analysis included 52% [214/408] of early events), patients without poor alleles (i.e., EM/IM and IM/IM carrying reduced-function alleles such as *10) did not show increased odds of disease events versus EM/EM during tamoxifen (p \u2265 0.05)."
+    }
+  ],
+  "CYP2D6*41": [
+    {
+      "sentence": "Genotypes EM/IM or IM/IM of CYP2D6*41 are not associated with increased likelihood of disease events when treated with tamoxifen in postmenopausal women with early-stage ER-positive breast cancer as compared to EM/EM; not statistically significant.",
+      "explanation": "The study\u2019s conditional logistic regression showed no significant increase in disease-event odds for reduced-function genotypes (IM/IM or EM/IM, which include *41) versus EM/EM during tamoxifen; effects were not statistically significant."
+    }
+  ],
+  "CYP2D6*3": [
+    {
+      "sentence": "Genotypes PM/PM involving CYP2D6*3 (e.g., *3/*3 or *3 with another null allele) are associated with increased likelihood of disease events when treated with 5 years of tamoxifen in postmenopausal women with early-stage ER-positive breast cancer as compared to EM/EM; statistically significant.",
+      "explanation": "Among women assigned to 5 years of tamoxifen (Arm A), those with the PM/PM phenotype (two null alleles, which can include *3) had significantly higher odds of a disease event relative to EM/EM; this effect was observed during tamoxifen but not after switching to anastrozole."
+    }
+  ],
+  "CYP2D6*6": [
+    {
+      "sentence": "Genotypes PM/PM involving CYP2D6*6 (e.g., *6/*6 or *6 with another null allele) are associated with increased likelihood of disease events when treated with 5 years of tamoxifen in postmenopausal women with early-stage ER-positive breast cancer as compared to EM/EM; statistically significant.",
+      "explanation": "The analysis found significantly higher odds of disease events for PM/PM versus EM/EM in the tamoxifen-only arm, and PM/PM includes individuals with two null alleles such as *6; no significant association was seen during anastrozole treatment."
+    }
+  ],
+  "CYP2D6*5": [
+    {
+      "sentence": "CYP2D6*5 mentioned in article but not studied by paper.",
+      "explanation": "The gene deletion allele (*5) could not be assessed due to DNA fragmentation from paraffin fixation, so no association with tamoxifen outcomes was analyzed."
+    }
+  ],
+  "CYP2D6*4": [
+    {
+      "sentence": "Genotype CYP2D6 *4/*4 is associated with increased likelihood of disease events when treated with 5 years of tamoxifen in postmenopausal women with early-stage ER-positive breast cancer as compared to EM/EM (e.g., *1/*1); statistically significant.",
+      "explanation": "In Arm A (5 years tamoxifen), the PM/PM phenotype had significantly higher odds of a disease event versus EM/EM; *4 is a common null allele, and homozygous *4/*4 confers the PM/PM phenotype driving this association, whereas no association was seen after switching to anastrozole."
+    }
+  ]
+}

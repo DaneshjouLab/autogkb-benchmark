@@ -1,0 +1,301 @@
+{
+  "pmcid": "PMC554812",
+  "variants": [
+    "rs1150793",
+    "HLA-A*33:03",
+    "HLA-B*58:01",
+    "rs1264314",
+    "HLA-C*03:02",
+    "HLA-DRB1*03:01",
+    "HLA-B*57:01",
+    "rs1594",
+    "rs2855804",
+    "rs2304224",
+    "rs589428",
+    "HLA-B*15:02",
+    "rs3117583",
+    "rs1755038",
+    "rs2268791",
+    "rs1264440"
+  ],
+  "sentences": {
+    "rs1150793": [
+      {
+        "sentence": "rs1150793 not mentioned in article.",
+        "explanation": "The study\u2019s excerpt and described results do not provide data on rs1150793."
+      }
+    ],
+    "HLA-A*33:03": [
+      {
+        "sentence": "HLA-A*33:03 not mentioned in article.",
+        "explanation": "Although HLA-A alleles were typed, this specific allele and any association were not reported in the provided text."
+      }
+    ],
+    "HLA-B*58:01": [
+      {
+        "sentence": "HLA-B*58:01 is associated with increased risk of severe cutaneous adverse reactions (hypersensitivity syndrome, Stevens\u2013Johnson syndrome, toxic epidermal necrolysis) when treated with allopurinol in Han Chinese in Taiwan as compared to HLA-B*58:01 non-carriers.",
+        "explanation": "A case\u2013control study of Han Chinese (51 allopurinol-induced SCAR cases, 135 allopurinol-tolerant controls, 93 healthy controls) found HLA-B*58:01 present in 100% of cases, indicating a very strong association; multiple-testing corrections were applied, though exact p-values are not provided in the excerpt."
+      }
+    ],
+    "rs1264314": [
+      {
+        "sentence": "rs1264314 mentioned in article but not studied by paper.",
+        "explanation": "The SNP was listed among MHC-region markers that failed genotyping and thus was not analyzed."
+      }
+    ],
+    "HLA-C*03:02": [
+      {
+        "sentence": "HLA-C*03:02 not mentioned in article.",
+        "explanation": "While HLA-C alleles were typed, no results or associations for HLA-C*03:02 are reported in the provided text."
+      }
+    ],
+    "HLA-DRB1*03:01": [
+      {
+        "sentence": "HLA-DRB1*03:01 not mentioned in article.",
+        "explanation": "The article notes HLA-DRB1 typing but does not present data for DRB1*03:01."
+      }
+    ],
+    "HLA-B*57:01": [
+      {
+        "sentence": "HLA-B*57:01 mentioned in article but not studied by paper.",
+        "explanation": "Cited as previously associated with abacavir hypersensitivity in other studies; it was not evaluated in this allopurinol-focused cohort."
+      }
+    ],
+    "rs1594": [
+      {
+        "sentence": "rs1594 not mentioned in article.",
+        "explanation": "No information on rs1594 is provided in the study excerpt."
+      }
+    ],
+    "rs2855804": [
+      {
+        "sentence": "rs2855804 not mentioned in article.",
+        "explanation": "The provided text does not include results or discussion for rs2855804."
+      }
+    ],
+    "rs2304224": [
+      {
+        "sentence": "rs2304224 not mentioned in article.",
+        "explanation": "The study excerpt does not report on rs2304224."
+      }
+    ],
+    "rs589428": [
+      {
+        "sentence": "rs589428 mentioned in article but not studied by paper.",
+        "explanation": "Identified among four MHC-region SNPs that failed genotyping and were therefore not analyzed."
+      }
+    ],
+    "HLA-B*15:02": [
+      {
+        "sentence": "HLA-B*15:02 mentioned in article but not studied by paper.",
+        "explanation": "Referenced as previously associated with carbamazepine-induced Stevens\u2013Johnson syndrome; not assessed in this allopurinol study."
+      }
+    ],
+    "rs3117583": [
+      {
+        "sentence": "rs3117583 not mentioned in article.",
+        "explanation": "No data on rs3117583 are provided in the text."
+      }
+    ],
+    "rs1755038": [
+      {
+        "sentence": "rs1755038 mentioned in article but not studied by paper.",
+        "explanation": "Listed as a SNP in the MHC panel that failed genotyping and was not included in analyses."
+      }
+    ],
+    "rs2268791": [
+      {
+        "sentence": "rs2268791 not mentioned in article.",
+        "explanation": "The study excerpt contains no information on rs2268791."
+      }
+    ],
+    "rs1264440": [
+      {
+        "sentence": "rs1264440 mentioned in article but not studied by paper.",
+        "explanation": "Reported as one of the MHC-region SNPs that failed genotyping and thus was not analyzed."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "variant": "rs1150793",
+      "sentence": "rs1150793 not mentioned in article.",
+      "explanation": "The study\u2019s excerpt and described results do not provide data on rs1150793.",
+      "citations": [
+        "The initial screen revealed strong association between allopurinol\u2013SCAR and SNPs in the MHC region, including BAT3 (encoding HLA-B associated transcript 3), MSH5 (mutS homolog 5), and MICB (MHC class I polypeptide-related sequence B) (P < 10\u20137).",
+        "In particular, three SNPs in the MHC class III region have P values <10\u20137 (\u2013log10 P value > 7, Fig. 1).",
+        "These SNPs were rs3117583 of BAT3 (encoding for HLA-B associated transcript 3), rs1150793 of MSH5 (encoding mutS homolog), and rs2855804 of MICB (encoding MHC class I polypeptide-related sequence)."
+      ]
+    },
+    {
+      "variant": "HLA-A*33:03",
+      "sentence": "HLA-A*33:03 not mentioned in article.",
+      "explanation": "Although HLA-A alleles were typed, this specific allele and any association were not reported in the provided text.",
+      "citations": [
+        "HLA alleles A*3303, Cw*0302, and DRB1*0301 were in linkage disequilibrium and formed an extended haplotype with HLA-B*5801.",
+        "As shown in Table 3, alleles HLA-A*3303, B*5801, Cw*0302, and DRB1*0301 occurred at significantly increased frequencies among the allopurinol\u2013SCAR patients compared to the two control groups.",
+        "The HLA-B*5801 extended haplotype was formed by conserved alleles at closely linked loci as HLA-A*3303-Cw*0302-B*5801-DRB1*0301."
+      ]
+    },
+    {
+      "variant": "HLA-B*58:01",
+      "sentence": "HLA-B*58:01 is associated with increased risk of severe cutaneous adverse reactions (hypersensitivity syndrome, Stevens\u2013Johnson syndrome, toxic epidermal necrolysis) when treated with allopurinol in Han Chinese in Taiwan as compared to HLA-B*58:01 non-carriers.",
+      "explanation": "A case\u2013control study of Han Chinese (51 allopurinol-induced SCAR cases, 135 allopurinol-tolerant controls, 93 healthy controls) found HLA-B*58:01 present in 100% of cases, indicating a very strong association; multiple-testing corrections were applied, though exact p-values are not provided in the excerpt.",
+      "citations": [
+        "The HLA-B*5801 allele was present in all (100%) 51 patients with allopurinol\u2013SCAR, but only in 20 (15%) of 135 tolerant patients [odds ratio 580.3 (95% confidence interval, 34.4\u20139780.9); corrected P value = 4.7 \u00d7 10\u201324] and in 19 (20%) of 93 of healthy subjects [393.51 (23.23\u20136665.26); corrected P value = 8.1 \u00d7 10\u201318].",
+        "In particular, the HLA-B*5801 was present in all 51 (100%) patients with allopurinol\u2013SCAR, but in only 15% (20 of 135) of the allopurinoltolerant group (odds ratio, 580.3; 95% CI, 34.4\u20139780.9; Pc = 4.7 \u00d7 10\u201324), and 20% (19 of 93) of the general population (odds ratio 393.5; 95% CI, 23.2\u20136665.26; Pc = 8.1 \u00d7 10\u201318).",
+        "In this study, we identified a strong association of the allele HLA-B*5801 with the susceptibility of allopurinol-induced HSS, SJS, and TEN in Han Chinese.",
+        "In fact, the association is 100% in that the HLA-B allele B*5801 was present in all 51 patients with allopurinol-induced SCAR, with an odds ratio exceeding that reported for the association between HLA-B27 and ankylosing spondylitis."
+      ]
+    },
+    {
+      "variant": "rs1264314",
+      "sentence": "rs1264314 mentioned in article but not studied by paper.",
+      "explanation": "The SNP was listed among MHC-region markers that failed genotyping and thus was not analyzed.",
+      "citations": [
+        "The 197 SNPs selected in the MHC region included all 201 SNPs reported by Walsh et al. ([11]), except for the four SNPs that failed to be genotyped (rs1264314, rs1264440, rs1755038, and rs589428).",
+        "A total of 823 SNPs were selected from the National Center for Biotechnology Information's SNP database for genotyping (dbSNP build 118) ([10]).",
+        "SNP genotyping was performed by using high-throughput MALDI-TOF mass spectrometry."
+      ]
+    },
+    {
+      "variant": "HLA-C*03:02",
+      "sentence": "HLA-C*03:02 not mentioned in article.",
+      "explanation": "While HLA-C alleles were typed, no results or associations for HLA-C*03:02 are reported in the provided text.",
+      "citations": [
+        "HLA alleles A*3303, Cw*0302, and DRB1*0301 were in linkage disequilibrium and formed an extended haplotype with HLA-B*5801.",
+        "As shown in Table 3, alleles HLA-A*3303, B*5801, Cw*0302, and DRB1*0301 occurred at significantly increased frequencies among the allopurinol\u2013SCAR patients compared to the two control groups.",
+        "The HLA-B*5801 extended haplotype was formed by conserved alleles at closely linked loci as HLA-A*3303-Cw*0302-B*5801-DRB1*0301."
+      ]
+    },
+    {
+      "variant": "HLA-DRB1*03:01",
+      "sentence": "HLA-DRB1*03:01 not mentioned in article.",
+      "explanation": "The article notes HLA-DRB1 typing but does not present data for DRB1*03:01.",
+      "citations": [
+        "HLA alleles A*3303, Cw*0302, and DRB1*0301 were in linkage disequilibrium and formed an extended haplotype with HLA-B*5801.",
+        "As shown in Table 3, alleles HLA-A*3303, B*5801, Cw*0302, and DRB1*0301 occurred at significantly increased frequencies among the allopurinol\u2013SCAR patients compared to the two control groups.",
+        "The HLA-B*5801 extended haplotype was formed by conserved alleles at closely linked loci as HLA-A*3303-Cw*0302-B*5801-DRB1*0301."
+      ]
+    },
+    {
+      "variant": "HLA-B*57:01",
+      "sentence": "HLA-B*57:01 mentioned in article but not studied by paper.",
+      "explanation": "Cited as previously associated with abacavir hypersensitivity in other studies; it was not evaluated in this allopurinol-focused cohort.",
+      "citations": [
+        "We have recently reported a strong association of a specific HLA-B allele (B*1502) in carbamazepine induced SJS ([30]).",
+        "Hypersensitivity to abacavir, a drug for AIDS, was reported to be associated with another HLA-B allele (B*5701) and a haplotypic Hsp70-Hom variant in the MHC region ([31]\u2013[32]).",
+        "This study, together with the previous reports, suggests that HLA-B alleles and/or other genetic polymorphisms in the MHC region might play a major role in the pathogenesis of immune-mediated SCAR."
+      ]
+    },
+    {
+      "variant": "rs1594",
+      "sentence": "rs1594 not mentioned in article.",
+      "explanation": "No information on rs1594 is provided in the study excerpt.",
+      "citations": [
+        "Outside the MHC region, only three SNPs showed potential associations (P < 0.01).",
+        "Two SNPs (rs2268791 and rs1594) were located in the CASP8 and FADD-like apoptosis regulator (CFLAR) gene on chromosome 2, and one SNP (rs2304224) belongs to KIR2DL1 (a killer cell Ig-like receptor) gene on chromosome 19.",
+        "We confirmed the initial observation of the positive association of allopurinol\u2013SCAR with the MHC and CFLAR loci, but not with the KIR2D1 locus."
+      ]
+    },
+    {
+      "variant": "rs2855804",
+      "sentence": "rs2855804 not mentioned in article.",
+      "explanation": "The provided text does not include results or discussion for rs2855804.",
+      "citations": [
+        "In particular, three SNPs in the MHC class III region have P values <10\u20137 (\u2013log10 P value > 7, Fig. 1).",
+        "These SNPs were rs3117583 of BAT3 (encoding for HLA-B associated transcript 3), rs1150793 of MSH5 (encoding mutS homolog), and rs2855804 of MICB (encoding MHC class I polypeptide-related sequence).",
+        "The initial screen revealed strong association between allopurinol\u2013SCAR and SNPs in the MHC region, including BAT3 (encoding HLA-B associated transcript 3), MSH5 (mutS homolog 5), and MICB (MHC class I polypeptide-related sequence B) (P < 10\u20137)."
+      ]
+    },
+    {
+      "variant": "rs2304224",
+      "sentence": "rs2304224 not mentioned in article.",
+      "explanation": "The study excerpt does not report on rs2304224.",
+      "citations": [
+        "Outside the MHC region, only three SNPs showed potential associations (P < 0.01).",
+        "Two SNPs (rs2268791 and rs1594) were located in the CASP8 and FADD-like apoptosis regulator (CFLAR) gene on chromosome 2, and one SNP (rs2304224) belongs to KIR2DL1 (a killer cell Ig-like receptor) gene on chromosome 19.",
+        "We confirmed the initial observation of the positive association of allopurinol\u2013SCAR with the MHC and CFLAR loci, but not with the KIR2D1 locus."
+      ]
+    },
+    {
+      "variant": "rs589428",
+      "sentence": "rs589428 mentioned in article but not studied by paper.",
+      "explanation": "Identified among four MHC-region SNPs that failed genotyping and were therefore not analyzed.",
+      "citations": [
+        "The 197 SNPs selected in the MHC region included all 201 SNPs reported by Walsh et al. ([11]), except for the four SNPs that failed to be genotyped (rs1264314, rs1264440, rs1755038, and rs589428).",
+        "A total of 823 SNPs were selected from the National Center for Biotechnology Information's SNP database for genotyping (dbSNP build 118) ([10]).",
+        "SNP genotyping was performed by using high-throughput MALDI-TOF mass spectrometry."
+      ]
+    },
+    {
+      "variant": "HLA-B*15:02",
+      "sentence": "HLA-B*15:02 mentioned in article but not studied by paper.",
+      "explanation": "Referenced as previously associated with carbamazepine-induced Stevens\u2013Johnson syndrome; not assessed in this allopurinol study.",
+      "citations": [
+        "We have recently reported a strong association of a specific HLA-B allele (B*1502) in carbamazepine induced SJS ([30]).",
+        "Hypersensitivity to abacavir, a drug for AIDS, was reported to be associated with another HLA-B allele (B*5701) and a haplotypic Hsp70-Hom variant in the MHC region ([31]\u2013[32]).",
+        "This study, together with the previous reports, suggests that HLA-B alleles and/or other genetic polymorphisms in the MHC region might play a major role in the pathogenesis of immune-mediated SCAR."
+      ]
+    },
+    {
+      "variant": "rs3117583",
+      "sentence": "rs3117583 not mentioned in article.",
+      "explanation": "No data on rs3117583 are provided in the text.",
+      "citations": [
+        "In particular, three SNPs in the MHC class III region have P values <10\u20137 (\u2013log10 P value > 7, Fig. 1).",
+        "These SNPs were rs3117583 of BAT3 (encoding for HLA-B associated transcript 3), rs1150793 of MSH5 (encoding mutS homolog), and rs2855804 of MICB (encoding MHC class I polypeptide-related sequence).",
+        "The initial screen revealed strong association between allopurinol\u2013SCAR and SNPs in the MHC region, including BAT3 (encoding HLA-B associated transcript 3), MSH5 (mutS homolog 5), and MICB (MHC class I polypeptide-related sequence B) (P < 10\u20137)."
+      ]
+    },
+    {
+      "variant": "rs1755038",
+      "sentence": "rs1755038 mentioned in article but not studied by paper.",
+      "explanation": "Listed as a SNP in the MHC panel that failed genotyping and was not included in analyses.",
+      "citations": [
+        "The 197 SNPs selected in the MHC region included all 201 SNPs reported by Walsh et al. ([11]), except for the four SNPs that failed to be genotyped (rs1264314, rs1264440, rs1755038, and rs589428)."
+      ]
+    },
+    {
+      "variant": "rs2268791",
+      "sentence": "rs2268791 not mentioned in article.",
+      "explanation": "The study excerpt contains no information on rs2268791.",
+      "citations": [
+        "Outside the MHC region, only three SNPs showed potential associations (P < 0.01).",
+        "Two SNPs (rs2268791 and rs1594) were located in the CASP8 and FADD-like apoptosis regulator (CFLAR) gene on chromosome 2, and one SNP (rs2304224) belongs to KIR2DL1 (a killer cell Ig-like receptor) gene on chromosome 19.",
+        "We confirmed the initial observation of the positive association of allopurinol\u2013SCAR with the MHC and CFLAR loci, but not with the KIR2D1 locus."
+      ]
+    },
+    {
+      "variant": "rs1264440",
+      "sentence": "rs1264440 mentioned in article but not studied by paper.",
+      "explanation": "Reported as one of the MHC-region SNPs that failed genotyping and thus was not analyzed.",
+      "citations": [
+        "The 197 SNPs selected in the MHC region included all 201 SNPs reported by Walsh et al. ([11]), except for the four SNPs that failed to be genotyped (rs1264314, rs1264440, rs1755038, and rs589428)."
+      ]
+    }
+  ],
+  "summary": {
+    "pmcid": "PMC554812",
+    "summary": "## Background\nAllopurinol is widely used for gout and hyperuricemia but can cause severe cutaneous adverse reactions (SCAR), including hypersensitivity syndrome (HSS), Stevens\u2013Johnson syndrome (SJS), and toxic epidermal necrolysis (TEN). This case\u2013control study in Han Chinese (Taiwan) evaluated genetic risk factors for allopurinol-induced SCAR: 51 cases, 135 allopurinol-tolerant patients, and 93 population controls.\n\n## Key Findings\n- The HLA-B*58:01 (B*5801) allele was present in 100% (51/51) of SCAR cases vs 15% (20/135) of tolerant patients and 20% (19/93) of population controls, indicating an extremely strong association with SCAR (vs tolerant: OR 580.3, 95% CI 34.4\u20139780.9, Pc = 4.7 \u00d7 10^\u221224; vs population: OR 393.5, 95% CI 23.2\u20136665.3, Pc = 8.1 \u00d7 10^\u221218). This association was not explained by underlying diseases.\n- Additional HLA alleles in linkage disequilibrium with HLA-B*58:01 were enriched in cases: HLA-A*33:03, HLA-C*03:02, and HLA-DRB1*03:01. The extended haplotype A*33:03\u2013C*03:02\u2013B*58:01\u2013DRB1*03:01 occurred in 41% of cases vs 7% of tolerant and 10% of population controls (reflecting LD with B*58:01).\n- SNP screening highlighted strong signals in the MHC region near BAT3 (rs3117583), MSH5 (rs1150793), and MICB (rs2855804) (P < 10^\u22127). Outside MHC, two CFLAR SNPs (rs2268791, rs1594) showed association and replicated, whereas a KIR2DL1 SNP (rs2304224) did not.\n- Chronic renal insufficiency independently increased SCAR risk (OR 4.7, 95% CI 2.3\u20139.3), supporting that HLA-B*58:01 is a strong necessary but not solely sufficient risk factor (some tolerant carriers exist).\n\n## Clinical Implications\n- HLA-B*58:01 is a powerful genetic marker for allopurinol-induced SCAR in Han Chinese. Pre-prescription HLA-B*58:01 testing can identify patients at very high risk; avoiding allopurinol in carriers and selecting alternative urate-lowering therapies should be considered.\n- Given the very high negative predictive value in this cohort (no SCAR cases without B*58:01), testing is particularly relevant in high-prevalence populations and in patients with chronic kidney disease, where clinical risk is elevated.\n- While MHC SNPs and the extended haplotype track with risk, HLA-B*58:01 remains the key actionable marker for clinical decision-making.",
+    "num_variants": 16,
+    "variants": [
+      "rs1150793",
+      "HLA-A*33:03",
+      "HLA-B*58:01",
+      "rs1264314",
+      "HLA-C*03:02",
+      "HLA-DRB1*03:01",
+      "HLA-B*57:01",
+      "rs1594",
+      "rs2855804",
+      "rs2304224",
+      "rs589428",
+      "HLA-B*15:02",
+      "rs3117583",
+      "rs1755038",
+      "rs2268791",
+      "rs1264440"
+    ]
+  }
+}

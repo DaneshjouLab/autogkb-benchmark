@@ -1,0 +1,33 @@
+{
+  "pmcid": "PMC4706412",
+  "summary": "## Background\nWarfarin dose requirements vary widely and are influenced by genetics. Existing dosing algorithms were largely derived in Europeans and may underperform in admixed populations. This study developed and validated an admixture-adjusted, genotype-guided refinement model for warfarin maintenance dosing in Caribbean Hispanics (n=255; external validation n=55).\n\n## Key Findings\n- VKORC1 -1639G>A (rs9923231): Each A allele was associated with lower dose (~13% reduction per A). GA and AA genotypes remained significant in the refinement model (GA p=0.007; AA p<0.0001), together explaining ~2.1% of dose variance.\n- CYP2C9 loss-of-function alleles: Inclusion of both common (*2, *3) and African-ancestry alleles (*5, *6, *8, *11) was important. Collectively, each variant allele lowered dose by ~18% and explained ~5% of variance. Individually: *2 (~7% decrease; p=0.014), *3 (~16% decrease; p=0.015); *8 showed a larger decrease (~31%) with a trend toward significance (p=0.098).\n- CYP4F2*3 (rs2108622 V433M): Associated with higher dose (~17% increase per allele; p=0.014).\n- NQO1*2 (rs1800566 P187S): Trend toward higher dose (~10% per allele; p=0.125). EPHX1 variants were not predictive.\n- Admixture/Ancestry: An admixture index suggested ~7% lower dose for \u201cadmixed\u201d status (p=0.108). Higher Amerindian ancestry correlated with low-dose requirements (\u22643 mg/day: 33% vs 19% in others; p<0.01).\n- Rare resistance variants: A VKORC1 p.V45A (rs104894540) carrier and VKORC1 H7 haplotypes were observed, consistent with warfarin resistance in a small subset.\n- Model performance: The admixture-adjusted pharmacogenetic refinement algorithm explained 70% of dose variance (MAE 0.72 mg/day) and outperformed a non-genetic clinical model (R^2=0.60; MAE 0.99 mg/day) and two published PGx algorithms. External validation showed R^2=0.59 (MAE 0.89 mg/day). In high-risk dosing ranges (\u22643 or \u22657 mg/day), ideal dose predictions (within 20% of actual) were 54.5% vs 29% with the clinical model (p<0.001).\n\n## Clinical Implications\n- For Caribbean Hispanics, refine warfarin dosing after day 3\u20134 by integrating VKORC1 -1639G>A, an expanded CYP2C9 panel (including African-ancestry alleles *5, *6, *8, *11), CYP4F2*3 (and consider NQO1*2), together with early INR data and ancestry/admixture.\n- Expect lower doses with VKORC1 A alleles and CYP2C9 loss-of-function alleles; anticipate higher doses with CYP4F2*3; investigate rare VKORC1 resistance variants when unusually high doses are needed.\n- This approach improves dose precision\u2014especially for low- and high-dose patients\u2014reducing clinically relevant under- or over-dosing compared with clinical factors alone.",
+  "num_variants": 26,
+  "variants": [
+    "rs104894540",
+    "rs4653436",
+    "CYP2C9*1",
+    "CYP4F2*3",
+    "VKORC1*2",
+    "CYP2C9*8",
+    "CYP2C9*2",
+    "rs2108622",
+    "rs2234922",
+    "CYP2C9*4",
+    "rs28371685",
+    "CYP2C9*5",
+    "rs2260863",
+    "CYP2C9*6",
+    "CYP2C9*3",
+    "CYP4F2*2",
+    "rs1800566",
+    "VKORC1*1",
+    "rs1051740",
+    "rs9332094",
+    "CYP4F2*1",
+    "CYP2C9*11",
+    "rs12714145",
+    "rs9923231",
+    "rs2292566",
+    "rs56165452"
+  ]
+}
