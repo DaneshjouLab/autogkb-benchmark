@@ -3,20 +3,23 @@ Pharmacogenomics Knowledge Extraction Pipeline
 
 Delegates to experiment factory classes for each stage:
 - Variant extraction via VariantExtractor
+- Term normalization via TermNormalizer
 - Sentence generation via SentenceGenerator
 - Citation finding via CitationFinder
 - Summary generation via SummaryGenerator
 
 Output Structure:
   outputs/<run_name>/
-    config.yaml          — copy of resolved config
-    metadata.yaml        — timestamp, pmcids, stages, git sha
-    variants.json        — {pmcid: [variant_list]}
-    sentences/           — {pmcid}.json per article
-    citations/           — {pmcid}.json per article
-    summaries/           — {pmcid}.json per article
-    outputs/             — {pmcid}.json — full combined result per article
-    eval_results/        — populated by eval pipeline
+    config.yaml              — copy of resolved config
+    metadata.yaml            — timestamp, pmcids, stages, git sha
+    variants.json            — {pmcid: [variant_list]} (raw extracted)
+    normalized_variants.json — {pmcid: [variant_list]} (after normalization)
+    normalized_variants/     — {pmcid}.json per article (mappings)
+    sentences/               — {pmcid}.json per article
+    citations/               — {pmcid}.json per article
+    summaries/               — {pmcid}.json per article
+    outputs/                 — {pmcid}.json — full combined result per article
+    eval_results/            — populated by eval pipeline
 
 Example Commands:
 
@@ -65,6 +68,8 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from src.modules.variant_finding.variant_extractor import VariantExtractor
+from src.modules.term_normalization.term_normalizer import TermNormalizer
+from src.modules.term_normalization.models import NormalizationResult
 from src.modules.sentence_generation.sentence_generator import SentenceGenerator
 from src.modules.sentence_generation.models import GeneratedSentence
 from src.modules.citations.citation_finder import CitationFinder
@@ -152,6 +157,19 @@ def _build_citation_finder(config: dict) -> CitationFinder:
     return CitationFinder(method=cfg["method"], **kwargs)
 
 
+def _build_term_normalizer(config: dict) -> TermNormalizer:
+    cfg = config.get("term_normalization", {})
+    method = cfg.get("method", "pharmgkb_fuzzy")
+    kwargs = {}
+    if "threshold" in cfg:
+        kwargs["threshold"] = cfg["threshold"]
+    if "min_score" in cfg:
+        kwargs["min_score"] = cfg["min_score"]
+    if "top_k" in cfg:
+        kwargs["top_k"] = cfg["top_k"]
+    return TermNormalizer(method=method, **kwargs)
+
+
 def _build_summary_generator(config: dict) -> SummaryGenerator:
     cfg = config["summary_generation"]
     kwargs = {}
@@ -171,13 +189,20 @@ def process_pmcid(
     pmcid: str,
     stages: set[str],
     extractor: VariantExtractor | None,
+    normalizer: TermNormalizer | None,
     generator: SentenceGenerator | None,
     finder: CitationFinder | None,
     summarizer: SummaryGenerator | None,
+    preloaded_variants: dict[str, list[str]] | None = None,
 ) -> dict:
     """Process a single PMCID through the pipeline stages.
 
-    Returns a dict with keys: pmcid, variants, sentences, citations, summary.
+    Args:
+        preloaded_variants: Optional {pmcid: [variant_list]} loaded from a
+            previous run's variants.json via --variants-file.
+
+    Returns a dict with keys: pmcid, variants, normalized_variants, sentences,
+    citations, summary.
     """
     logger.info(f"\n{'=' * 60}")
     logger.info(f"Processing PMCID: {pmcid}")
@@ -191,6 +216,26 @@ def process_pmcid(
         variants = extractor.get_variants(pmcid)
         result["variants"] = variants
         logger.info(f"  Extracted {len(variants)} variant(s)")
+
+    # Load variants from file if extraction didn't run
+    if not variants and preloaded_variants and pmcid in preloaded_variants:
+        variants = preloaded_variants[pmcid]
+        result["variants"] = variants
+        logger.info(f"  Loaded {len(variants)} variant(s) from variants file")
+
+    # Stage 1.5: Term Normalization
+    if "term_normalization" in stages and normalizer and variants:
+        norm_result: NormalizationResult = normalizer.normalize(pmcid, variants)
+        result["normalized_variants"] = {
+            m.original: {"normalized": m.normalized, "score": m.score}
+            for m in norm_result.mappings
+        }
+        # Downstream stages use normalized variants
+        variants = norm_result.normalized_variants
+        logger.info(
+            f"  Normalized variants: {len(norm_result.normalized_variants)} "
+            f"({sum(m.changed for m in norm_result.mappings)} changed)"
+        )
 
     # Stage 2: Sentence Generation
     sentences: dict[str, list[GeneratedSentence]] = {}
@@ -240,38 +285,54 @@ def process_pmcid(
     return result
 
 
-def _save_result(result: dict, run_dir: Path, all_variants: dict) -> None:
+def _save_result(
+    result: dict,
+    run_dir: Path,
+    all_variants: dict,
+    all_normalized_variants: dict,
+) -> None:
     """Save per-PMCID results into the run directory structure."""
     pmcid = result["pmcid"]
+
+    # Save normalized variants per-article (mappings)
+    if "normalized_variants" in result:
+        d = run_dir / "normalized_variants"
+        d.mkdir(parents=True, exist_ok=True)
+        with open(d / f"{pmcid}.json", "w", encoding="utf-8") as f:
+            json.dump(result["normalized_variants"], f, indent=2, ensure_ascii=False)
 
     # Save per-stage files
     if "sentences" in result:
         d = run_dir / "sentences"
         d.mkdir(parents=True, exist_ok=True)
-        with open(d / f"{pmcid}.json", "w") as f:
-            json.dump(result["sentences"], f, indent=2)
+        with open(d / f"{pmcid}.json", "w", encoding="utf-8") as f:
+            json.dump(result["sentences"], f, indent=2, ensure_ascii=False)
 
     if "citations" in result:
         d = run_dir / "citations"
         d.mkdir(parents=True, exist_ok=True)
-        with open(d / f"{pmcid}.json", "w") as f:
-            json.dump(result["citations"], f, indent=2)
+        with open(d / f"{pmcid}.json", "w", encoding="utf-8") as f:
+            json.dump(result["citations"], f, indent=2, ensure_ascii=False)
 
     if "summary" in result:
         d = run_dir / "summaries"
         d.mkdir(parents=True, exist_ok=True)
-        with open(d / f"{pmcid}.json", "w") as f:
-            json.dump(result["summary"], f, indent=2)
+        with open(d / f"{pmcid}.json", "w", encoding="utf-8") as f:
+            json.dump(result["summary"], f, indent=2, ensure_ascii=False)
 
     # Save full combined output
     d = run_dir / "outputs"
     d.mkdir(parents=True, exist_ok=True)
-    with open(d / f"{pmcid}.json", "w") as f:
-        json.dump(result, f, indent=2)
+    with open(d / f"{pmcid}.json", "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)
 
-    # Accumulate variants for aggregated file
+    # Accumulate raw variants
     if "variants" in result:
         all_variants[pmcid] = result["variants"]
+
+    # Accumulate normalized variants separately
+    if "normalized_variants" in result:
+        all_normalized_variants[pmcid] = result["normalized_variants"]
 
 
 def run_pipeline(
@@ -279,16 +340,39 @@ def run_pipeline(
     config: dict,
     stages: set[str],
     run_dir: Path,
+    variants_file: Path | None = None,
 ) -> Path:
     """Run the full pipeline on multiple PMCIDs.
+
+    Args:
+        variants_file: Optional path to a variants.json from a previous run.
+            Used to feed pre-extracted variants into term_normalization or
+            downstream stages without re-running extraction.
 
     Returns the run directory path.
     """
     run_dir.mkdir(parents=True, exist_ok=True)
     start_time = time.monotonic()
 
+    # Load pre-extracted variants if provided
+    preloaded_variants: dict[str, list[str]] | None = None
+    if variants_file:
+        with open(variants_file) as f:
+            data = json.load(f)
+        preloaded_variants = data["variants"]
+        logger.info(
+            f"Loaded variants for {len(preloaded_variants)} PMCID(s) "
+            f"from {variants_file}"
+        )
+
     # Build factory instances
     extractor = _build_extractor(config) if "variants" in stages else None
+    normalizer = (
+        _build_term_normalizer(config)
+        if "term_normalization" in stages
+        and config.get("term_normalization", {}).get("enabled", True)
+        else None
+    )
     generator = _build_sentence_generator(config) if "sentences" in stages else None
     finder = _build_citation_finder(config) if "citations" in stages else None
     summarizer = _build_summary_generator(config) if "summary" in stages else None
@@ -301,22 +385,32 @@ def run_pipeline(
         "stages": sorted(stages),
         "git_sha": _git_sha(),
     }
+    if variants_file:
+        metadata["variants_file"] = str(variants_file)
     with open(run_dir / "metadata.yaml", "w") as f:
         yaml.dump(metadata, f, default_flow_style=False)
 
     # Process each PMCID
     all_variants: dict[str, list[str]] = {}
+    all_normalized_variants: dict[str, list[str]] = {}
     for i, pmcid in enumerate(pmcids, 1):
         logger.info(f"\n[{i}/{len(pmcids)}] Processing {pmcid}")
         try:
             result = process_pmcid(
-                pmcid, stages, extractor, generator, finder, summarizer
+                pmcid,
+                stages,
+                extractor,
+                normalizer,
+                generator,
+                finder,
+                summarizer,
+                preloaded_variants,
             )
-            _save_result(result, run_dir, all_variants)
+            _save_result(result, run_dir, all_variants, all_normalized_variants)
         except Exception as e:
             logger.error(f"Failed to process {pmcid}: {e}")
 
-    # Save aggregated variants file
+    # Save aggregated raw variants file
     if all_variants:
         variants_data = {
             "extractor": config["variant_extraction"]["method"],
@@ -324,8 +418,20 @@ def run_pipeline(
             "timestamp": metadata["timestamp"],
             "variants": all_variants,
         }
-        with open(run_dir / "variants.json", "w") as f:
-            json.dump(variants_data, f, indent=2)
+        with open(run_dir / "variants.json", "w", encoding="utf-8") as f:
+            json.dump(variants_data, f, indent=2, ensure_ascii=False)
+
+    # Save aggregated normalized variants file
+    if all_normalized_variants:
+        norm_cfg = config.get("term_normalization", {})
+        norm_data = {
+            "normalizer": norm_cfg.get("method", "pharmgkb_fuzzy"),
+            "run_name": config.get("config", {}).get("name", "unknown"),
+            "timestamp": metadata["timestamp"],
+            "normalized_variants": all_normalized_variants,
+        }
+        with open(run_dir / "normalized_variants.json", "w", encoding="utf-8") as f:
+            json.dump(norm_data, f, indent=2, ensure_ascii=False)
 
     # Create eval_results directory
     (run_dir / "eval_results").mkdir(exist_ok=True)
@@ -371,8 +477,14 @@ def main():
     )
     parser.add_argument(
         "--stages",
-        default="variants,sentences,citations,summary",
-        help="Comma-separated list of stages to run (default: all)",
+        default="variants,term_normalization,sentences,citations,summary",
+        help="Comma-separated list of stages to run: variants, term_normalization, sentences, citations, summary (default: all)",
+    )
+    parser.add_argument(
+        "--variants-file",
+        type=Path,
+        default=None,
+        help="Path to a variants.json from a previous run to use as input for term_normalization or downstream stages",
     )
     parser.add_argument(
         "--eval",
@@ -392,7 +504,7 @@ def main():
 
     # Parse stages
     stages = set(s.strip() for s in args.stages.split(","))
-    valid_stages = {"variants", "sentences", "citations", "summary"}
+    valid_stages = {"variants", "term_normalization", "sentences", "citations", "summary"}
     invalid_stages = stages - valid_stages
     if invalid_stages:
         logger.error(f"Invalid stages: {invalid_stages}. Valid: {valid_stages}")
@@ -404,6 +516,8 @@ def main():
     logger.info(f"  PMCIDs to process: {len(pmcids)}")
     logger.info(f"  Stages: {sorted(stages)}")
     logger.info(f"  Variant extraction: {config['variant_extraction']['method']}")
+    if args.variants_file:
+        logger.info(f"  Variants file: {args.variants_file}")
     if "sentences" in stages:
         logger.info(f"  Sentence model: {config['sentence_generation']['model']}")
     if "citations" in stages:
@@ -422,7 +536,7 @@ def main():
     shutil.copy2(args.config, run_dir / "config.yaml")
 
     # Run pipeline
-    run_dir = run_pipeline(pmcids, config, stages, run_dir)
+    run_dir = run_pipeline(pmcids, config, stages, run_dir, args.variants_file)
 
     # Optional evaluation
     if args.eval:
