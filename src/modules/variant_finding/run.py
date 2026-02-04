@@ -80,6 +80,10 @@ def main():
             "regex_llm_filter",
             "regex_term_norm",
             "pubtator",
+            "pgxmine",
+            "pgxmine_context_aware",
+            "pgxmine_normalized",
+            "pgxmine_full",
         ],
         help="Extraction method to use",
     )

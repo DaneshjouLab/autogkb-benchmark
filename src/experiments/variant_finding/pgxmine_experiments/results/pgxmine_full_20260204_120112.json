@@ -1,0 +1,131 @@
+{
+  "extractor": "pgxmine_full",
+  "run_name": "pgxmine_full_20260204_120112",
+  "timestamp": "2026-02-04T12:01:15.260506",
+  "articles_processed": 5,
+  "avg_recall": 0.1,
+  "avg_precision": 0.13333333333333333,
+  "perfect_recall_count": 0,
+  "per_article_results": [
+    {
+      "pmcid": "PMC5508045",
+      "recall": 0.5,
+      "precision": 0.6666666666666666,
+      "true_count": 4,
+      "extracted_count": 3,
+      "matches": [
+        "rs2108622",
+        "rs887829"
+      ],
+      "misses": [
+        "rs1057910",
+        "rs9923231"
+      ],
+      "extras": [
+        "rs8175347"
+      ]
+    },
+    {
+      "pmcid": "PMC4916189",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 7,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "rs28399499",
+        "rs2472677",
+        "cyp2b6*1",
+        "rs3745274",
+        "rs1045642",
+        "cyp2b6*9",
+        "rs4803419"
+      ],
+      "extras": []
+    },
+    {
+      "pmcid": "PMC12036300",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 3,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "cyp2c19*1",
+        "cyp2c19*2",
+        "cyp2c19*17"
+      ],
+      "extras": []
+    },
+    {
+      "pmcid": "PMC554812",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 5,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "rs1594",
+        "hla-drb1*03:01",
+        "hla-c*03:02",
+        "hla-b*58:01",
+        "hla-a*33:03"
+      ],
+      "extras": []
+    },
+    {
+      "pmcid": "PMC5561238",
+      "recall": 0.0,
+      "precision": 0.0,
+      "true_count": 43,
+      "extracted_count": 0,
+      "matches": [],
+      "misses": [
+        "hla-b*55:02",
+        "hla-drb1*04:04",
+        "hla-b*56:06",
+        "hla-b*38:02",
+        "hla-drb1*01:03",
+        "rs28399499",
+        "hla-b*15:25",
+        "hla-b*51:02",
+        "hla-b*56:01",
+        "hla-b*39:01",
+        "hla-c*04:06",
+        "hla-drb1*10:01",
+        "hla-b*39:09",
+        "hla-b*15:32",
+        "hla-b*35:05",
+        "hla-c*04:01",
+        "hla-b*35:10",
+        "hla-b*78:01",
+        "hla-b*67:01",
+        "hla-b*51:01",
+        "hla-c*18:01",
+        "hla-c*05:09",
+        "hla-b*57:01",
+        "hla-b*38:01",
+        "hla-drb1*08:01",
+        "hla-drb1*01:01",
+        "hla-b*39:06",
+        "hla-b*15:01",
+        "hla-b*54:01",
+        "hla-c*04:03",
+        "hla-b*55:01",
+        "hla-b*15:12",
+        "hla-b*15:27",
+        "hla-b*13:02",
+        "hla-c*05:01",
+        "hla-b*52:01",
+        "hla-b*15:24",
+        "hla-drb1*01:02",
+        "hla-c*04:07",
+        "rs3745274",
+        "hla-b*39:05",
+        "hla-b*39:10",
+        "hla-b*15:35"
+      ],
+      "extras": []
+    }
+  ]
+}
