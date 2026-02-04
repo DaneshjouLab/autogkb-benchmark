@@ -1,0 +1,20 @@
+{
+  "pmcid": "PMC4916189",
+  "summary": "## Background\nENCORE1 was a randomized, double-blind trial in treatment\u2011na\u00efve adults with HIV comparing efavirenz 400 mg (EFV400) versus 600 mg (EFV600). This analysis evaluated whether common pharmacogenetic variants in drug\u2011metabolizing enzymes and transporters influence 96\u2011week virologic outcomes and efavirenz\u2011related adverse events.\n\n## Key Findings\n- Virologic efficacy:\n  - No tested SNP was associated with achieving HIV RNA <200 copies/mL at 96 weeks. This included variants in CYP2B6 (rs3745274, rs28399499, rs4803419), CYP2A6 (*9B rs8192726, *17 rs28399454), CYP3A4*22 (rs35599367), ABCB1 3435C>T (rs1045642), NR1I3 (rs2307424, rs3003596), and NR1I2 (rs2472677, rs6785049).\n\n- Overall discontinuation of efavirenz:\n  - Higher risk with CYP2B6 516G>T (rs3745274): GT HR 1.80 (95% CI 1.01\u20133.21; p=0.047) and TT HR 2.66 (1.26\u20135.60; p=0.010) vs GG.\n  - Higher risk with CYP2A6*9B (rs8192726) CA/AA: HR 2.00 (1.14\u20133.52; p=0.016) vs CC.\n  - Lower risk with NR1I2 63396C>T (rs2472677) TT: HR 0.22 (0.07\u20130.67; p=0.008) vs CC.\n\n- Central nervous system (CNS) adverse events:\n  - Lower risk with CYP2B6 983T>C (rs28399499) TC/CC: OR 0.30 (0.12\u20130.75; p=0.010) vs TT.\n  - Higher risk with CYP2B6 15582C>T (rs4803419) CT/TT: OR 1.59 (1.11\u20132.27; p=0.011) vs CC.\n  - Higher risk with ABCB1 3435C>T (rs1045642) TT: OR 2.14 (1.25\u20133.67; p=0.006) vs CC.\n  - The higher adverse event rate with EFV600 versus EFV400 was not explained by the genotypes assessed.\n\n## Clinical Implications\n- Genotyping is not needed to predict efavirenz virologic success; suppression at 96 weeks was high and independent of the tested variants.\n- CYP2B6 and ABCB1 genotypes can inform risk of CNS toxicity and treatment discontinuation:\n  - Patients with CYP2B6 516G>T or CYP2A6*9B variants have higher discontinuation risk; consider closer follow\u2011up and early management of side effects.\n  - CYP2B6 15582C>T and ABCB1 3435 TT identify patients at higher risk of CNS adverse events; enhanced monitoring or selecting EFV400 or non\u2011EFV regimens may be prudent if symptoms emerge.\n  - CYP2B6 983T>C may be protective against CNS toxicity.\n- Overall, EFV400 offers comparable efficacy with fewer adverse events than EFV600; pharmacogenetic signals primarily guide toxicity risk mitigation rather than efficacy-based dosing.",
+  "num_variants": 13,
+  "variants": [
+    "rs3745274",
+    "rs35599367",
+    "rs28399499",
+    "CYP2A6*17",
+    "rs3003596",
+    "rs4803419",
+    "rs1045642",
+    "rs8192726",
+    "rs2472677",
+    "rs2307424",
+    "rs6785049",
+    "rs28399454",
+    "CYP3A4*22"
+  ]
+}

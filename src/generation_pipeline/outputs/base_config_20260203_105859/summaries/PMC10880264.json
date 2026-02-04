@@ -1,0 +1,33 @@
+{
+  "pmcid": "PMC10880264",
+  "summary": "## Background\nProspective study of 12\u201317-year-olds with depression and/or anxiety and a first-degree relative with bipolar I disorder, treated with escitalopram. The goal was to test whether CYP2C19 and CYP2D6 metabolizer status and pharmacodynamic variants in HTR2A (rs6311) and SLC6A4 (5-HTTLPR) influence escitalopram pharmacokinetics (PK) and treatment-emergent adverse events, especially activation-like symptoms.\n\n## Key Findings\n- CYP2C19 and PK:\n  - Slower CYP2C19 metabolizers had higher dose-normalized exposure: AUC0\u201324 (p=0.025), trough concentration (p=0.013), and longer half-life (p<0.001); Cmax trended higher (p=0.057).\n  - CYP2C19 phenotype and escitalopram exposure were not associated with adverse events (no links to hyperarousal or TEASAP subscales; trend only for self-injury subscale, p=0.09).\n- CYP2D6 and adverse events:\n  - CYP2D6 phenotype did not affect escitalopram PK.\n  - Slower CYP2D6 metabolizers showed greater increases in TEASAP akathisia/hyperkinesis/somatic anxiety (p=0.015). When grouped, IM+PM vs NM+UM also had higher disinhibition/impulsivity (mean 3.0 vs 1.1; p=0.02). Trends toward higher mania and akathisia subscales (p=0.07\u20130.08).\n- HTR2A (rs6311):\n  - A-allele carriers (A/A or A/G) had greater increases on the TEASAP \u201cself-injury, suicidality, and harm to others\u201d subscale than G/G (p=0.017).\n- SLC6A4 (5-HTTLPR):\n  - No associations with activation, hyperarousal, or overall adverse events.\n- Exposure\u2013AE relationships:\n  - Nondose-normalized Cmax and AUC0\u201324 were not associated with hyperarousal or TEASAP subscales; lower exposure trended with higher PAERS scores (p=0.11).  \nNote: Small sample, very few extreme CYP phenotypes (no CYP2C19 poor metabolizers), and no correction for multiple comparisons.\n\n## Clinical Implications\n- CYP2C19-guided dosing remains supported for escitalopram PK in youth; consider CPIC-based dose adjustments for CYP2C19 phenotype. This study did not link CYP2C19 to adverse events.\n- Slower CYP2D6 metabolizers may be at higher risk for activation-like side effects (especially akathisia and disinhibition). Consider slower titration, closer monitoring, and prompt management of activation symptoms in these patients.\n- HTR2A rs6311 A-carrier status may signal greater risk for self-harm/suicidality-related behaviors during escitalopram treatment; heighten safety monitoring.\n- No evidence here to change management based on SLC6A4 for adverse events.  \nOverall, findings are preliminary and hypothesis-generating; larger, adequately powered cohorts are needed before changing practice beyond established CYP2C19 dosing guidance.",
+  "num_variants": 26,
+  "variants": [
+    "CYP2C19*1",
+    "CYP2D6*15",
+    "CYP2D6*4",
+    "CYP2D6*10",
+    "CYP2D6*11",
+    "rs6311",
+    "CYP2D6*14",
+    "CYP2D6*9",
+    "CYP2C19*6",
+    "CYP2C19*8",
+    "CYP2D6*2",
+    "CYP2C19*5",
+    "CYP2D6*41",
+    "CYP2C19*2",
+    "CYP2C19*4",
+    "CYP2D6*3",
+    "CYP2D6*8",
+    "CYP2D6*5",
+    "CYP2D6*6",
+    "CYP2D6*12",
+    "CYP2C19*3",
+    "CYP2D6*17",
+    "CYP2D6*1",
+    "CYP2D6*7",
+    "CYP2C19*7",
+    "CYP2C19*17"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "pmcid": "PMC3387531",
+  "summary": "## Background\nNevirapine can cause early severe cutaneous rash and hepatotoxicity, particularly at higher CD4 counts. This multicenter case\u2013control study (276 cases, 587 controls) examined HLA and drug metabolism gene variants across Black, Asian (largely Thai), and White adults to identify genetic predictors of nevirapine-related adverse events within 8 weeks of therapy initiation (CD4 >150 cells/\u03bcl).\n\n## Key Findings\n- Cutaneous adverse events (rash):\n  - CYP2B6 516G>T (rs3745274) was associated with increased risk overall (OR 1.66). A dose\u2013response was seen in Blacks (trend P=0.0025) and Whites (P=0.021), with 516TT vs GG conferring high risk in Blacks (OR 5.92). Two linked CYP2B6 SNPs (rs2054675, rs3786547) were also significant after multiple testing and are in strong LD with 516G>T.\n  - HLA-Cw*04 increased risk across populations (OR 2.51 overall), and HLA-B*35 was strongly associated in Asians (OR 3.47) and especially Thais (OR 5.65).\n  - Risk was markedly amplified by genetic combinations: Blacks with CYP2B6 516TT plus HLA-Cw*04 (OR 18.90); Asians with HLA-B*35 plus HLA-Cw*04 (OR 18.34). Across all participants, CYP2B6 516TT plus HLA-Cw*04 had OR 6.31 (95% CI 2.53\u201315.73).\n  - No association was found with HLA-Cw*08; ABCB1 3435C>T was not significant overall.\n- Hepatic adverse events:\n  - HLA-DRB1*01 was associated in Whites (OR 3.02; increased to OR 3.63 when excluding concomitant rash), consistent with an MHC class II effect. HLA-DQB1*05 showed association in Whites likely due to linkage with DRB1*01 and was not significant in isolated hepatic cases.\n  - No CYP2B6 variants were associated with hepatotoxicity; no SNPs met multiple-testing significance for hepatic events.\n\nOverall, findings suggest distinct mechanisms: cutaneous reactions are largely MHC class I\u2013mediated and influenced by CYP2B6-mediated nevirapine metabolism, whereas hepatic reactions are MHC class II\u2013mediated and not metabolism-dependent.\n\n## Clinical Implications\n- Genetic risk is ancestry- and allele-dependent: HLA-B*35 and HLA-Cw*04 notably raise rash risk in Asians (especially Thai), and CYP2B6 516TT further augments risk, particularly in Blacks. HLA-DRB1*01 identifies higher hepatotoxicity risk in Whites.\n- Despite significant odds ratios, sensitivity is low: many cases lacked these risk alleles, limiting utility for routine pre-emptive screening.\n- Practical takeaways:\n  - If nevirapine is considered (especially near or above usual CD4 thresholds), heightened vigilance for early rash/hepatotoxicity is warranted in carriers of HLA-Cw*04, HLA-B*35 (Asians/Thais), or HLA-DRB1*01 (Whites), and in individuals with CYP2B6 516TT.\n  - These markers may inform risk counseling and intensified monitoring but are not sufficient alone to exclude patients from therapy. Different pathways underlying skin vs liver toxicity may guide future mechanistic studies and targeted prevention strategies.",
+  "num_variants": 23,
+  "variants": [
+    "rs3745274",
+    "HLA-DQB1*05",
+    "HLA-C*04:01",
+    "HLA-CW*08",
+    "HLA-DQB*05",
+    "rs3786547",
+    "HLA-CW*04",
+    "HLA-CW*15",
+    "HLA-DRB*01",
+    "CYP2B6*04",
+    "HLA-B*35:05",
+    "HLA-DRB1*01:01",
+    "HLA-CW*04:01",
+    "HLA-B*35",
+    "HLA-DRB1*01",
+    "rs28399499",
+    "HLA-C*08",
+    "HLA-B*35:01",
+    "CYP2B6*01",
+    "rs2054675",
+    "HLA-C*04",
+    "CYP2B6*35",
+    "HLA-C*15"
+  ]
+}

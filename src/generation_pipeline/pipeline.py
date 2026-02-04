@@ -49,6 +49,8 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+import time
+
 import yaml
 from dotenv import load_dotenv
 from loguru import logger
@@ -283,6 +285,7 @@ def run_pipeline(
     Returns the run directory path.
     """
     run_dir.mkdir(parents=True, exist_ok=True)
+    start_time = time.monotonic()
 
     # Build factory instances
     extractor = _build_extractor(config) if "variants" in stages else None
@@ -327,7 +330,13 @@ def run_pipeline(
     # Create eval_results directory
     (run_dir / "eval_results").mkdir(exist_ok=True)
 
-    logger.success(f"Pipeline complete! Results saved to: {run_dir}")
+    # Update metadata with total elapsed time
+    elapsed_seconds = time.monotonic() - start_time
+    metadata["elapsed_seconds"] = round(elapsed_seconds, 2)
+    with open(run_dir / "metadata.yaml", "w") as f:
+        yaml.dump(metadata, f, default_flow_style=False)
+
+    logger.success(f"Pipeline complete in {elapsed_seconds:.1f}s! Results saved to: {run_dir}")
     return run_dir
 
 

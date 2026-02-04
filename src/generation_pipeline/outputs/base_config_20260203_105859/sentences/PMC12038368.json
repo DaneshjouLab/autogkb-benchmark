@@ -1,0 +1,98 @@
+{
+  "rs2231142": [
+    {
+      "sentence": "Genotypes CA + AA of rs2231142 are not associated with steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype CC.",
+      "explanation": "In a cohort of 89 Thai simvastatin-treated patients, the study genotyped ABCG2 rs2231142 and found no significant effect on simvastatin pharmacokinetics."
+    }
+  ],
+  "rs7311158": [
+    {
+      "sentence": "rs7311158 mentioned in article but not studied by paper.",
+      "explanation": "Although listed in the discussion, rs7311158 was not among the SNPs genotyped in this study and no results specific to it were reported."
+    }
+  ],
+  "SLCO1B1*15": [
+    {
+      "sentence": "Genotype 1b/*15 of SLCO1B1*15 is associated with increased steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to normal-function genotypes (*1a/*1a or *1a/*1b).",
+      "explanation": "The study reports that the SLCO1B1 1b/*15 diplotype was significantly associated with higher simvastatin acid exposure, consistent with reduced OATP1B1 function; no exact p-value was provided."
+    }
+  ],
+  "rs1045642": [
+    {
+      "sentence": "Genotypes CT + TT of rs1045642 are not associated with steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype CC.",
+      "explanation": "ABCB1 rs1045642 was genotyped in 89 participants and showed no significant association with simvastatin concentrations."
+    }
+  ],
+  "rs776746": [
+    {
+      "sentence": "Genotypes AG + GG of rs776746 are not associated with steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype AA.",
+      "explanation": "CYP3A5*3 (rs776746) was tested and showed no significant effect on simvastatin pharmacokinetics in this cohort (n = 89)."
+    }
+  ],
+  "rs7311358": [
+    {
+      "sentence": "Genotypes GA + AA of rs7311358 are not associated with steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype GG.",
+      "explanation": "SLCO1B3 rs7311358 was included in the genotyping panel and showed no significant association with simvastatin exposure."
+    }
+  ],
+  "rs4149117": [
+    {
+      "sentence": "Genotypes TG + GG of rs4149117 are not associated with steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype TT.",
+      "explanation": "SLCO1B3 rs4149117 was evaluated and demonstrated no significant impact on simvastatin pharmacokinetics."
+    }
+  ],
+  "CYP3A5*3": [
+    {
+      "sentence": "Genotypes *1/*3 + *3/*3 of CYP3A5*3 are not associated with steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype *1/*1.",
+      "explanation": "Consistent with rs776746 results, CYP3A5*3 metabolizer status did not significantly influence simvastatin levels in this study (n = 89)."
+    }
+  ],
+  "rs2306283": [
+    {
+      "sentence": "Genotypes AG + GG of rs2306283 are associated with increased steady-state simvastatin acid concentrations at 10 mg/day in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype AA (p = 0.04).",
+      "explanation": "Although no overall association was seen, a dose-specific analysis showed higher simvastatin acid (3.63 vs. 1.59 ng/mL) for G-allele carriers at 10 mg/day (p = 0.04); subgroup sizes were small."
+    }
+  ],
+  "SLCO1B1*1": [
+    {
+      "sentence": "Genotypes *1a/*1a + *1a/*1b of SLCO1B1*1 are associated with decreased steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to decreased-function genotypes *1b/*5 + *1b/*15 (p = 0.07).",
+      "explanation": "Phenotype grouping per CPIC showed higher simvastatin acid in decreased-function carriers versus normal function (0.53 vs. 0.19 ng/mL), with a trend toward significance (p = 0.07)."
+    }
+  ],
+  "rs2242480": [
+    {
+      "sentence": "Genotypes CT + TT of rs2242480 are not associated with steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype CC.",
+      "explanation": "CYP3A4*1G (rs2242480) was genotyped and showed no significant association with simvastatin pharmacokinetics in this cohort."
+    }
+  ],
+  "SLCO1B1*5": [
+    {
+      "sentence": "Genotype *1b/*5 of SLCO1B1*5 is associated with increased steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to normal-function genotypes (*1a/*1a or *1a/*1b), with the combined decreased-function group (*1b/*5 + *1b/*15) showing higher levels (p = 0.07).",
+      "explanation": "The study grouped decreased-function genotypes and observed higher simvastatin acid exposure versus normal function, albeit with marginal statistical significance (p = 0.07)."
+    }
+  ],
+  "rs717620": [
+    {
+      "sentence": "Genotypes CT + TT of rs717620 are not associated with steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype CC.",
+      "explanation": "ABCC2 rs717620 was tested and showed no significant effect on simvastatin levels in the 89-patient cohort."
+    }
+  ],
+  "rs3740066": [
+    {
+      "sentence": "Genotypes CT + TT of rs3740066 are not associated with steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype CC.",
+      "explanation": "ABCC2 rs3740066 was evaluated and showed no significant association with simvastatin pharmacokinetics."
+    }
+  ],
+  "CYP3A4*22": [
+    {
+      "sentence": "CYP3A4*22 mentioned in article but not studied by paper.",
+      "explanation": "The study assessed CYP3A4*1G (rs2242480) but did not genotype or analyze CYP3A4*22."
+    }
+  ],
+  "rs4149056": [
+    {
+      "sentence": "Genotypes TC + CC of rs4149056 are associated with increased steady-state simvastatin acid concentrations in Thai people with dyslipidemia or coronary artery diseases treated with simvastatin as compared to genotype TT, with a dose-specific trend at 10 mg/day (p = 0.06).",
+      "explanation": "SLCO1B1 c.521T>C (rs4149056) was reported as significantly associated with higher simvastatin acid overall; at 10 mg/day, TC+CC carriers showed higher levels versus TT with p = 0.06 in this 89-patient cohort."
+    }
+  ]
+}

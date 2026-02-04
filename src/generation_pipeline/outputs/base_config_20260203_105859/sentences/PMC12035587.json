@@ -1,0 +1,14 @@
+{
+  "TPMT*3": [
+    {
+      "sentence": "Genotypes *1/*3A + *1/*3C + *3A/*3A + *3C/*3C of TPMT (TPMT*3 alleles) are associated with increased risk of severe haematological toxicity when treated with thiopurines (azathioprine or mercaptopurine) in people with inflammatory bowel disease as compared to genotype *1/*1.",
+      "explanation": "The article notes that TPMT loss-of-function variants (with *3A, *3C, and *3B accounting for >90% of dysfunctional alleles) lead to intermediate/poor metabolism and severe thiopurine toxicity, and cites a randomized study of 783 IBD patients where pretreatment TPMT screening reduced adverse haematological events ~10-fold in at-risk individuals."
+    }
+  ],
+  "NUDT15*3": [
+    {
+      "sentence": "Genotype *3/*3 of NUDT15*3 is associated with decreased tolerated dose (\u22488% of standard) and increased risk of thiopurine toxicity with mercaptopurine in people of Asian and Hispanic descent as compared to genotype *1/*1.",
+      "explanation": "The article summarizes pharmacoepidemiologic evidence (2014 study) showing NUDT15*3 homozygotes tolerate only ~8% of the mercaptopurine dose before toxicity and highlights higher carrier frequencies in Asians/Hispanics; it also presents a case with NUDT15 *3/*3 who developed severe myelosuppression, hepatotoxicity, and alopecia on mercaptopurine."
+    }
+  ]
+}

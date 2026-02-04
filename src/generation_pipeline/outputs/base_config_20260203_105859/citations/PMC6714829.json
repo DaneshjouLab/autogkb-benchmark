@@ -1,0 +1,46 @@
+[
+  {
+    "variant": "SLCO1B1*15",
+    "sentence": "Carriage of SLCO1B1*15 (defined by rs2306283 G together with rs4149056 C) is associated with decreased reductions in LDL-C and total cholesterol after 4 weeks of simvastatin treatment in people with hyperlipidemia in China as compared to carriers with rs2306283 G and rs4149056 TT (statistically significant, p < 0.05).",
+    "explanation": "In a cohort of 542 Chinese hyperlipidemia patients receiving simvastatin 20 mg daily, individuals with the rs2306283 G allele and rs4149056 C allele had a significantly attenuated 4-week LDL-C and TC lowering versus those with rs2306283 G and rs4149056 TT; the paper notes significance but does not provide exact p-values, and the effect was not observed at 8 weeks.",
+    "citations": [
+      "In addition, compared to 388G allele and 521C allele carriers, individuals with the 388G allele and 521TT genotype carriers had greater TC and LDL-C reduction in response to simvastatin after 4 weeks of treatment.",
+      "In our study, individuals with the 388G allele and 521TT genotype carriers showed significantly greater TC and LDL-C lowering responses to simvastatin treatment after 4 weeks than those with the 388G allele and 521C allele carriers (Supplemental Table 3).",
+      "Haplotype analysis further suggested that the SLCO1B1*15 haplotype (388G/521C) is associated with low activity of the transporter.",
+      "On the contrary, no significant associations were found between the 521T>C and 388A>G polymorphisms and the lipid-lowering effects of simvastatin treatment after 8 weeks (data not shown)."
+    ]
+  },
+  {
+    "variant": "SLCO1B1*5",
+    "sentence": "Genotypes TC + CC of rs4149056 (SLCO1B1*5 carriers) are associated with decreased reductions in LDL-C and total cholesterol after 4 weeks of simvastatin treatment in people with hyperlipidemia in China as compared to genotype TT (statistically significant, p < 0.05).",
+    "explanation": "The study of 542 Chinese hyperlipidemia patients reported that, among rs2306283 G carriers, those carrying the rs4149056 C allele had significantly less LDL-C and TC lowering at 4 weeks on simvastatin 20 mg/day; this difference was significant but specific p-values were not provided and was not seen at 8 weeks.",
+    "citations": [
+      "In addition, compared to 388G allele and 521C allele carriers, individuals with the 388G allele and 521TT genotype carriers had greater TC and LDL-C reduction in response to simvastatin after 4 weeks of treatment.",
+      "In our study, individuals with the 388G allele and 521TT genotype carriers showed significantly greater TC and LDL-C lowering responses to simvastatin treatment after 4 weeks than those with the 388G allele and 521C allele carriers (Supplemental Table 3).",
+      "At baseline, 4 weeks, and 8 weeks of treatment, venous blood samples were drawn from all participants at the research center after an overnight fast.",
+      "On the contrary, no significant associations were found between the 521T>C and 388A>G polymorphisms and the lipid-lowering effects of simvastatin treatment after 8 weeks (data not shown)."
+    ]
+  },
+  {
+    "variant": "rs2306283",
+    "sentence": "Genotypes AG + GG of rs2306283 are not associated with increased likelihood of creatine kinase elevations when treated with simvastatin in people with hyperlipidemia in China as compared to genotype AA (no significant association).",
+    "explanation": "Across 542 simvastatin-treated hyperlipidemia patients, the authors found no significant association between rs2306283 genotype and simvastatin-induced CK elevations at either 4 or 8 weeks (Supplemental Tables 8\u20139).",
+    "citations": [
+      "Thus, our current study also investigated the association between statin-induced elevations in serum creatine kinase (CK) levels and the SLCO1B1 gene polymorphisms.",
+      "Supplemental Table 7 showed that there was a significant increase in CK levels after both 4 and 8 weeks of treatment.",
+      "However, no associations between the SLCO1B1 388A>G and 521T>C genotypes and the presence of CK elevations were found (Supplemental Tables 8 and 9).",
+      "At baseline, 4 weeks, and 8 weeks of treatment, venous blood samples were drawn from all participants at the research center after an overnight fast."
+    ]
+  },
+  {
+    "variant": "rs4149056",
+    "sentence": "Genotypes TC + CC of rs4149056 are associated with decreased reductions in LDL-C and total cholesterol after 4 weeks of simvastatin treatment in people with hyperlipidemia in China as compared to genotype TT (statistically significant, p < 0.05).",
+    "explanation": "In this cohort (n = 542) on simvastatin 20 mg/day, carriers of the rs4149056 C allele showed a significantly attenuated lipid-lowering response at 4 weeks (relative to TT), particularly noted among rs2306283 G carriers; the effect was not observed at 8 weeks.",
+    "citations": [
+      "In addition, compared to 388G allele and 521C allele carriers, individuals with the 388G allele and 521TT genotype carriers had greater TC and LDL-C reduction in response to simvastatin after 4 weeks of treatment.",
+      "In our study, individuals with the 388G allele and 521TT genotype carriers showed significantly greater TC and LDL-C lowering responses to simvastatin treatment after 4 weeks than those with the 388G allele and 521C allele carriers (Supplemental Table 3).",
+      "At baseline, 4 weeks, and 8 weeks of treatment, venous blood samples were drawn from all participants at the research center after an overnight fast.",
+      "On the contrary, no significant associations were found between the 521T>C and 388A>G polymorphisms and the lipid-lowering effects of simvastatin treatment after 8 weeks (data not shown)."
+    ]
+  }
+]

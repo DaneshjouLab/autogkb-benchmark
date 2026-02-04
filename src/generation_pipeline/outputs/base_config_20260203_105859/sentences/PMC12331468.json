@@ -1,0 +1,182 @@
+{
+  "rs1801131": [
+    {
+      "sentence": "rs1801131 mentioned in article but not studied by paper.",
+      "explanation": "The study did not report analyses or results for MTHFR rs1801131 in the Chilean advanced colorectal cancer cohort."
+    }
+  ],
+  "DPYD*5": [
+    {
+      "sentence": "DPYD*5 mentioned in article but not studied by paper.",
+      "explanation": "The paper focused on DPYD rs1801265 and referenced other DPYD variants only generally; no DPYD*5-specific analyses or results were presented."
+    }
+  ],
+  "rs45445694": [
+    {
+      "sentence": "Genotypes 2R/2R + 2R/3R of rs45445694 are not associated with increased severity of hematological adverse reactions during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype 3R/3R.",
+      "explanation": "Although TYMS rs45445694 (TSER 2R/3R) was genotyped, the retrospective nested case-control study of 82 patients did not report a significant association with ADRs by logistic regression."
+    }
+  ],
+  "rs1045642": [
+    {
+      "sentence": "rs1045642 mentioned in article but not studied by paper.",
+      "explanation": "While an ABCB1 variant appeared in a multivariate anemia model (and was not statistically significant), the specific rs1045642 SNP was not analyzed or reported."
+    }
+  ],
+  "rs717620": [
+    {
+      "sentence": "rs717620 mentioned in article but not studied by paper.",
+      "explanation": "ABCC2 rs717620 was cited from another Chilean study as part of prior evidence, but it was not analyzed in this cohort."
+    }
+  ],
+  "DPYD*13": [
+    {
+      "sentence": "DPYD*13 mentioned in article but not studied by paper.",
+      "explanation": "The study referenced DPYD genotyping broadly but did not test or report results for DPYD*13 in the 82-patient cohort."
+    }
+  ],
+  "rs9561778": [
+    {
+      "sentence": "rs9561778 mentioned in article but not studied by paper.",
+      "explanation": "This variant was not included among those analyzed or discussed in the study\u2019s results."
+    }
+  ],
+  "rs1695": [
+    {
+      "sentence": "Allele A of rs1695 is associated with increased risk of hematological and nervous system adverse reactions during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to allele G.",
+      "explanation": "In this 82-patient study, GSTP1 rs1695 showed that the A allele conferred higher risk of hematological and nervous system ADRs by logistic regression; the cohort received FP-based regimens (e.g., FOLFOX/FOLFIRI/CAPOX/capecitabine)."
+    }
+  ],
+  "rs11280056": [
+    {
+      "sentence": "Allele 6-bp deletion of rs11280056 is associated with decreased risk of gastrointestinal and hematological adverse reactions during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to the insertion allele.",
+      "explanation": "The study found the TYMS 3\u2032UTR 6-bp deletion (rs11280056) to be protective against GI and hematological ADRs in the 82-patient Chilean cohort using logistic regression."
+    }
+  ],
+  "rs55886062": [
+    {
+      "sentence": "rs55886062 mentioned in article but not studied by paper.",
+      "explanation": "The canonical DPYD toxicity variant (DPYD*13; rs55886062) was not evaluated in this cohort; only rs1801265 was analyzed among DPYD SNPs."
+    }
+  ],
+  "rs1044642": [
+    {
+      "sentence": "rs1044642 mentioned in article but not studied by paper.",
+      "explanation": "The paper did not report analyses for rs1044642; ABCB1 SNPs were not individually specified."
+    }
+  ],
+  "rs67376798": [
+    {
+      "sentence": "rs67376798 mentioned in article but not studied by paper.",
+      "explanation": "The DPYD c.2846A>T variant (rs67376798) was not analyzed in the study; it was only discussed that some DPYD variants were not included."
+    }
+  ],
+  "rs1801133": [
+    {
+      "sentence": "Allele C of rs1801133 is associated with increased risk of nervous system adverse reactions and decreased likelihood of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to allele T.",
+      "explanation": "The study reported MTHFR rs1801133 C allele linked to higher nervous-system ADR risk but protective against pain in the 82-patient cohort; associations were derived from logistic regression."
+    }
+  ],
+  "rs1128503": [
+    {
+      "sentence": "rs1128503 mentioned in article but not studied by paper.",
+      "explanation": "Although ABCB1 variation was referenced within a multivariate model, rs1128503 was not specifically analyzed or reported."
+    }
+  ],
+  "rs6737679": [
+    {
+      "sentence": "rs6737679 mentioned in article but not studied by paper.",
+      "explanation": "This SNP does not appear in the list of analyzed variants or results for the cohort."
+    }
+  ],
+  "rs11479": [
+    {
+      "sentence": "Allele T of rs11479 is associated with increased likelihood of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to allele C.",
+      "explanation": "The study found TYMP rs11479 (c.1412C>T) T allele associated with pain development in the 82-patient cohort via logistic regression."
+    }
+  ],
+  "rs16430": [
+    {
+      "sentence": "rs16430 mentioned in article but not studied by paper.",
+      "explanation": "The TYMS 3\u2032UTR 6\u2011bp variant was analyzed as rs11280056 in this study; rs16430 itself was not reported."
+    }
+  ],
+  "rs1801159": [
+    {
+      "sentence": "rs1801159 mentioned in article but not studied by paper.",
+      "explanation": "This DPYD SNP was not analyzed; only rs1801265 was tested among DPYD variants in the cohort."
+    }
+  ],
+  "rs2231142": [
+    {
+      "sentence": "rs2231142 mentioned in article but not studied by paper.",
+      "explanation": "ABCG2 rs2231142 was not included among the variants analyzed or discussed in the results."
+    }
+  ],
+  "rs4544694": [
+    {
+      "sentence": "rs4544694 mentioned in article but not studied by paper.",
+      "explanation": "This SNP was not listed or analyzed in the paper."
+    }
+  ],
+  "DPYD*9": [
+    {
+      "sentence": "Allele C of DPYD*9 (rs1801265) is associated with increased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to allele T.",
+      "explanation": "The study specifically analyzed DPYD rs1801265 (DPYD*9A) and identified the C allele as a risk factor for neuropathies in the 82-patient cohort."
+    }
+  ],
+  "rs3742106": [
+    {
+      "sentence": "rs3742106 mentioned in article but not studied by paper.",
+      "explanation": "This variant was not included in the analyzed panel or reported in the results."
+    }
+  ],
+  "rs13181": [
+    {
+      "sentence": "Genotype CC of rs13181 is associated with decreased risk of gastrointestinal (gastric) adverse reactions during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes AA + AC.",
+      "explanation": "ERCC2 rs13181 (c.2251A>C) showed the CC genotype as a protective factor against gastric ADRs in this 82-patient study using logistic regression."
+    }
+  ],
+  "rs180131": [
+    {
+      "sentence": "rs180131 mentioned in article but not studied by paper.",
+      "explanation": "This SNP was not analyzed or reported in the study."
+    }
+  ],
+  "DPYD*2": [
+    {
+      "sentence": "DPYD*2 mentioned in article but not studied by paper.",
+      "explanation": "The study did not include DPYD*2 genotyping; it discussed DPYD variants generally but only tested rs1801265."
+    }
+  ],
+  "rs1665": [
+    {
+      "sentence": "rs1665 mentioned in article but not studied by paper.",
+      "explanation": "This variant does not appear among those analyzed or reported for the cohort."
+    }
+  ],
+  "rs56038477": [
+    {
+      "sentence": "rs56038477 mentioned in article but not studied by paper.",
+      "explanation": "The DPYD HapB3-linked c.1236G>A (rs56038477) was not tested in this cohort."
+    }
+  ],
+  "rs3918290": [
+    {
+      "sentence": "rs3918290 mentioned in article but not studied by paper.",
+      "explanation": "The canonical DPYD*2A splice variant (rs3918290) was not analyzed; only rs1801265 was genotyped among DPYD variants."
+    }
+  ],
+  "rs1801265": [
+    {
+      "sentence": "Allele C of rs1801265 is associated with increased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to allele T.",
+      "explanation": "In this retrospective nested case-control study of 82 Chilean advanced CRC patients, DPYD rs1801265 C allele was identified as a risk factor for neuropathies via logistic regression."
+    }
+  ],
+  "rs1801019": [
+    {
+      "sentence": "rs1801019 mentioned in article but not studied by paper.",
+      "explanation": "UMPS rs1801019 was cited from another Chilean study but was not evaluated in this cohort."
+    }
+  ]
+}

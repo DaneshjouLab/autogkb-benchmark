@@ -1,0 +1,137 @@
+[
+  {
+    "variant": "rs3745274",
+    "sentence": "Genotypes GT + TT of rs3745274 (CYP2B6 516G>T) are associated with increased risk of overall discontinuation of efavirenz in treatment-na\u00efve people with HIV infection at 96 weeks as compared to genotype GG.",
+    "explanation": "In the ENCORE1 randomized trial of treatment\u2011na\u00efve, HIV\u2011infected adults, Cox regression (adjusted for confounders) showed higher discontinuation risk among CYP2B6 516G>T carriers, consistent with higher efavirenz concentrations driving cessation; no p-value was reported here.",
+    "citations": [
+      "Following adjustment for age, sex and dose, and stratifying by country, CYP2B6 516GT, TT and CYP2A6*9B heterozygote or homozygous variant (CA or AA) patients had an 80, 166 and 100 % increased risk of overall discontinuation, respectively, whereas NR1I2 63396TT carriers had a 22 % reduced risk (Table [4](#Tab4)).",
+      "Possession of the CYP2B6 516GT and TT variants and CYP2A6*9B CA/AA carriers was associated with a higher risk of overall EFV discontinuation (80, 166 and 100 %, respectively), whereas NR1I2 63396TT carriers were at decreased risk (22 %).",
+      "In contrast to the 48-week analysis, carriers of both CYP2B6 516GT or TT variants were at increased risk due to higher EFV concentrations, along with CYP2A6*9B CA/AA.",
+      "## Table 4: Cox regression assessing the relationship between overall discontinuation of efavirenz once daily and CYP2B6, CYP2A6, CYP3A4, ABCB1, NR1I3, NR1I2 polymorphisms"
+    ]
+  },
+  {
+    "variant": "rs35599367",
+    "sentence": "Genotypes CT + TT of rs35599367 (CYP3A4*22) are not associated with likelihood of achieving plasma HIV RNA <200 copies/mL at 96 weeks when treated with efavirenz in treatment-na\u00efve people with HIV infection as compared to genotype CC.",
+    "explanation": "ENCORE1 reported that none of the tested SNPs, including CYP3A4*22 (rs35599367), significantly predicted virological control at 96 weeks.",
+    "citations": [
+      "Achieving pVL <200 copies/mL at 96 weeks was not associated with the selection of single nucleotide polymorphisms (SNP; CYP2B6, CYP2A6, CYP3A4, NR1I3, NR1I2, ABCB1) assessed.",
+      "None of the SNPs assessed were associated with achieving pVL <200 copies/mL (Table [3](#Tab3)).",
+      "## Table 3: Summary of the relationships between achieving plasma viral load <200 copies/mL at week 96 of therapy and single nucleotide polymorphisms (data analysed by Fisher\u2019s exact test)"
+    ]
+  },
+  {
+    "variant": "rs28399499",
+    "sentence": "Genotypes TC + CC of rs28399499 (CYP2B6 983T>C) are associated with decreased risk of central nervous system adverse events when treated with efavirenz in treatment-na\u00efve people with HIV infection at 96 weeks as compared to genotype TT.",
+    "explanation": "The study observed a lower risk of CNS adverse events in CYP2B6 983T>C carriers at 96 weeks, consistent with reduced CYP2B6 metabolism (less 8\u2011hydroxy\u2011efavirenz); effect noted in ENCORE1 without a reported p-value.",
+    "citations": [
+      "Lower risk of CNS-related adverse events was associated with CYP2B6 983TC/CC (OR 0.35, 95 % CI 0.15\u20130.81, p = 0.015) and higher risk was associated with CYP2B6 15582CT/TT and ABCB1 3435TT (OR 1.46, 95 % CI 1.02\u20132.09, p = 0.040; OR 2.31, 95 % CI 1.33\u20134.02, p = 0.003, respectively).",
+      "A decreased risk of CNS adverse events (Stocrin^\u00ae product information) was associated with CYP2B6 983TC or CC carriers (OR 0.30, 95 % CI 0.12\u20130.75, p = 0.010) but an increased risk in patients with CYP2B6 15582CT or TT and ABCB1 3435TT carriers was observed (OR 1.59, 95 % CI 1.11\u20132.27, p = 0.011; and OR 2.14, 95 % CI 1.25\u20133.67, p = 0.006, respectively).",
+      "CNS adverse events were not driven by EFV dose or concentrations; however, CYP2B6 15582CT/TT and ABCB1 3435TT carriers were at higher risk (46 and 131 %, respectively) of CNS-related adverse events compared with 35 % lower risk in CYP2B6 983TC/CC patients.",
+      "Indeed, in ENCORE1 patients a lower risk of CNS adverse events at 96 weeks (and similarly at 48 weeks [[5](#CR5)]) was observed in CYP2B6 983TC/CC carriers, in which CYP2B6 metabolism is impeded, generating less 8OH-EFV and thus providing a protective effect."
+    ]
+  },
+  {
+    "variant": "CYP2A6*17",
+    "sentence": "CYP2A6*17 (rs28399454) carriers are not associated with likelihood of achieving plasma HIV RNA <200 copies/mL at 96 weeks when treated with efavirenz in treatment\u2011na\u00efve people with HIV infection as compared to non\u2011carriers.",
+    "explanation": "Although CYP2A6*17 was genotyped, ENCORE1 found no significant associations between any SNP and virological control at 96 weeks.",
+    "citations": [
+      "Achieving pVL <200 copies/mL at 96 weeks was not associated with the selection of single nucleotide polymorphisms (SNP; CYP2B6, CYP2A6, CYP3A4, NR1I3, NR1I2, ABCB1) assessed.",
+      "None of the SNPs assessed were associated with achieving pVL <200 copies/mL (Table [3](#Tab3)).",
+      "## Table 3: Summary of the relationships between achieving plasma viral load <200 copies/mL at week 96 of therapy and single nucleotide polymorphisms (data analysed by Fisher\u2019s exact test)"
+    ]
+  },
+  {
+    "variant": "rs3003596",
+    "sentence": "Genotypes TC + CC of rs3003596 (NR1I3 1089T>C) are not associated with likelihood of achieving plasma HIV RNA <200 copies/mL at 96 weeks when treated with efavirenz in treatment-na\u00efve people with HIV infection as compared to genotype TT.",
+    "explanation": "ENCORE1 reported no significant relationship between NR1I3 variants and 96\u2011week virological suppression.",
+    "citations": [
+      "Achieving pVL <200 copies/mL at 96 weeks was not associated with the selection of single nucleotide polymorphisms (SNP; CYP2B6, CYP2A6, CYP3A4, NR1I3, NR1I2, ABCB1) assessed.",
+      "None of the SNPs assessed were associated with achieving pVL <200 copies/mL (Table [3](#Tab3)).",
+      "## Table 3: Summary of the relationships between achieving plasma viral load <200 copies/mL at week 96 of therapy and single nucleotide polymorphisms (data analysed by Fisher\u2019s exact test)"
+    ]
+  },
+  {
+    "variant": "rs4803419",
+    "sentence": "Genotypes CT + TT of rs4803419 (CYP2B6 15582C>T) are not associated with likelihood of achieving plasma HIV RNA <200 copies/mL at 96 weeks when treated with efavirenz in treatment-na\u00efve people with HIV infection as compared to genotype CC.",
+    "explanation": "Despite pharmacokinetic differences by composite CYP2B6 genotype, ENCORE1 did not find SNPs (including CYP2B6 15582C>T) to predict virological failure at 96 weeks; notably, only 1/47 EFV400 patients with the low\u2011concentration wild\u2011type composite had pVL \u2265200.",
+    "citations": [
+      "Achieving pVL <200 copies/mL at 96 weeks was not associated with the selection of single nucleotide polymorphisms (SNP; CYP2B6, CYP2A6, CYP3A4, NR1I3, NR1I2, ABCB1) assessed.",
+      "None of the SNPs assessed were associated with achieving pVL <200 copies/mL (Table [3](#Tab3)).",
+      "## Table 3: Summary of the relationships between achieving plasma viral load <200 copies/mL at week 96 of therapy and single nucleotide polymorphisms (data analysed by Fisher\u2019s exact test)"
+    ]
+  },
+  {
+    "variant": "rs1045642",
+    "sentence": "Genotype TT of rs1045642 (ABCB1 3435C>T) is associated with increased risk of central nervous system adverse events by approximately 131% when treated with efavirenz in treatment-na\u00efve people with HIV infection at 96 weeks as compared to genotype CC.",
+    "explanation": "ENCORE1 post hoc analyses showed markedly higher CNS adverse event risk for ABCB1 3435TT versus CC at 96 weeks, aligning with prior findings linking this variant to toxicity-related EFV regimen failure.",
+    "citations": [
+      "Lower risk of CNS-related adverse events was associated with CYP2B6 983TC/CC (OR 0.35, 95 % CI 0.15\u20130.81, p = 0.015) and higher risk was associated with CYP2B6 15582CT/TT and ABCB1 3435TT (OR 1.46, 95 % CI 1.02\u20132.09, p = 0.040; OR 2.31, 95 % CI 1.33\u20134.02, p = 0.003, respectively).",
+      "A decreased risk of CNS adverse events (Stocrin^\u00ae product information) was associated with CYP2B6 983TC or CC carriers (OR 0.30, 95 % CI 0.12\u20130.75, p = 0.010) but an increased risk in patients with CYP2B6 15582CT or TT and ABCB1 3435TT carriers was observed (OR 1.59, 95 % CI 1.11\u20132.27, p = 0.011; and OR 2.14, 95 % CI 1.25\u20133.67, p = 0.006, respectively).",
+      "CNS adverse events were not driven by EFV dose or concentrations; however, CYP2B6 15582CT/TT and ABCB1 3435TT carriers were at higher risk (46 and 131 %, respectively) of CNS-related adverse events compared with 35 % lower risk in CYP2B6 983TC/CC patients.",
+      "Conversely, ABCB1 3435TT markedly increased the risk of experiencing CNS adverse events by 131 % compared with wild-type (CC)."
+    ]
+  },
+  {
+    "variant": "rs8192726",
+    "sentence": "Genotypes CA + AA of rs8192726 (CYP2A6*9B) are associated with increased risk of overall discontinuation of efavirenz in treatment-na\u00efve people with HIV infection at 96 weeks as compared to genotype CC.",
+    "explanation": "In multivariable Cox regression at 96 weeks, CYP2A6*9B variant carriers had higher discontinuation risk, consistent with polymorphism-related EFV concentration differences influencing cessation.",
+    "citations": [
+      "Following adjustment for age, sex and dose, and stratifying by country, CYP2B6 516GT, TT and CYP2A6*9B heterozygote or homozygous variant (CA or AA) patients had an 80, 166 and 100 % increased risk of overall discontinuation, respectively, whereas NR1I2 63396TT carriers had a 22 % reduced risk (Table [4](#Tab4)).",
+      "Possession of the CYP2B6 516GT and TT variants and CYP2A6*9B CA/AA carriers was associated with a higher risk of overall EFV discontinuation (80, 166 and 100 %, respectively), whereas NR1I2 63396TT carriers were at decreased risk (22 %).",
+      "In contrast to the 48-week analysis, carriers of both CYP2B6 516GT or TT variants were at increased risk due to higher EFV concentrations, along with CYP2A6*9B CA/AA.",
+      "## Table 4: Cox regression assessing the relationship between overall discontinuation of efavirenz once daily and CYP2B6, CYP2A6, CYP3A4, ABCB1, NR1I3, NR1I2 polymorphisms"
+    ]
+  },
+  {
+    "variant": "rs2472677",
+    "sentence": "Genotype TT of rs2472677 (NR1I2 63396C>T) is associated with decreased risk of overall discontinuation of efavirenz by about 22% in treatment-na\u00efve people with HIV infection at 96 weeks as compared to genotype CC.",
+    "explanation": "ENCORE1 found NR1I2 63396TT lowered discontinuation risk, plausibly via altered PXR/CYP3A4 activity and reduced EFV exposure; effect estimated at 22% reduction, though no p-value was provided.",
+    "citations": [
+      "Following adjustment for age, sex and dose, and stratifying by country, CYP2B6 516GT, TT and CYP2A6*9B heterozygote or homozygous variant (CA or AA) patients had an 80, 166 and 100 % increased risk of overall discontinuation, respectively, whereas NR1I2 63396TT carriers had a 22 % reduced risk (Table [4](#Tab4)).",
+      "Possession of the CYP2B6 516GT and TT variants and CYP2A6*9B CA/AA carriers was associated with a higher risk of overall EFV discontinuation (80, 166 and 100 %, respectively), whereas NR1I2 63396TT carriers were at decreased risk (22 %).",
+      "Possession of NR1I2 63396TT lowered the risk of discontinuation by 22 % but was not assessed at 48 weeks, and inclusion in the multivariable model at 96 weeks may also speak to the disparity in relationships observed with overall discontinuation at 48 and 96 weeks.",
+      "## Table 4: Cox regression assessing the relationship between overall discontinuation of efavirenz once daily and CYP2B6, CYP2A6, CYP3A4, ABCB1, NR1I3, NR1I2 polymorphisms"
+    ]
+  },
+  {
+    "variant": "rs2307424",
+    "sentence": "Genotypes CT + TT of rs2307424 (NR1I3 540C>T) are not associated with likelihood of achieving plasma HIV RNA <200 copies/mL at 96 weeks when treated with efavirenz in treatment-na\u00efve people with HIV infection as compared to genotype CC.",
+    "explanation": "The trial reported no significant associations between NR1I3 variants and 96\u2011week virological suppression.",
+    "citations": [
+      "Achieving pVL <200 copies/mL at 96 weeks was not associated with the selection of single nucleotide polymorphisms (SNP; CYP2B6, CYP2A6, CYP3A4, NR1I3, NR1I2, ABCB1) assessed.",
+      "None of the SNPs assessed were associated with achieving pVL <200 copies/mL (Table [3](#Tab3)).",
+      "## Table 3: Summary of the relationships between achieving plasma viral load <200 copies/mL at week 96 of therapy and single nucleotide polymorphisms (data analysed by Fisher\u2019s exact test)"
+    ]
+  },
+  {
+    "variant": "rs6785049",
+    "sentence": "Genotypes AG + GG of rs6785049 (NR1I2 7635A>G) are not associated with likelihood of achieving plasma HIV RNA <200 copies/mL at 96 weeks when treated with efavirenz in treatment-na\u00efve people with HIV infection as compared to genotype AA.",
+    "explanation": "ENCORE1 indicated no significant relationship between this NR1I2 variant and virological control at 96 weeks.",
+    "citations": [
+      "Achieving pVL <200 copies/mL at 96 weeks was not associated with the selection of single nucleotide polymorphisms (SNP; CYP2B6, CYP2A6, CYP3A4, NR1I3, NR1I2, ABCB1) assessed.",
+      "None of the SNPs assessed were associated with achieving pVL <200 copies/mL (Table [3](#Tab3)).",
+      "## Table 3: Summary of the relationships between achieving plasma viral load <200 copies/mL at week 96 of therapy and single nucleotide polymorphisms (data analysed by Fisher\u2019s exact test)"
+    ]
+  },
+  {
+    "variant": "rs28399454",
+    "sentence": "Genotypes CT + TT of rs28399454 (CYP2A6*17) are not associated with likelihood of achieving plasma HIV RNA <200 copies/mL at 96 weeks when treated with efavirenz in treatment-na\u00efve people with HIV infection as compared to genotype CC.",
+    "explanation": "Although genotyped, CYP2A6*17 showed no significant association with virological suppression at 96 weeks in ENCORE1.",
+    "citations": [
+      "Achieving pVL <200 copies/mL at 96 weeks was not associated with the selection of single nucleotide polymorphisms (SNP; CYP2B6, CYP2A6, CYP3A4, NR1I3, NR1I2, ABCB1) assessed.",
+      "None of the SNPs assessed were associated with achieving pVL <200 copies/mL (Table [3](#Tab3)).",
+      "## Table 3: Summary of the relationships between achieving plasma viral load <200 copies/mL at week 96 of therapy and single nucleotide polymorphisms (data analysed by Fisher\u2019s exact test)"
+    ]
+  },
+  {
+    "variant": "CYP3A4*22",
+    "sentence": "CYP3A4*22 (rs35599367) carriers are not associated with likelihood of achieving plasma HIV RNA <200 copies/mL at 96 weeks when treated with efavirenz in treatment\u2011na\u00efve people with HIV infection as compared to CYP3A4*1/*1.",
+    "explanation": "Consistent with the overall finding that no SNP predicted 96\u2011week virological control, CYP3A4*22 showed no significant effect in ENCORE1.",
+    "citations": [
+      "Achieving pVL <200 copies/mL at 96 weeks was not associated with the selection of single nucleotide polymorphisms (SNP; CYP2B6, CYP2A6, CYP3A4, NR1I3, NR1I2, ABCB1) assessed.",
+      "None of the SNPs assessed were associated with achieving pVL <200 copies/mL (Table [3](#Tab3)).",
+      "## Table 3: Summary of the relationships between achieving plasma viral load <200 copies/mL at week 96 of therapy and single nucleotide polymorphisms (data analysed by Fisher\u2019s exact test)"
+    ]
+  }
+]

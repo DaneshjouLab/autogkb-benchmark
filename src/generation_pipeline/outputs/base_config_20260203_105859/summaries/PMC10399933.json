@@ -1,0 +1,17 @@
+{
+  "pmcid": "PMC10399933",
+  "summary": "## Background\nThis real-world cohort study linked Helsinki Biobank genotypes with national prescription and laboratory data to assess whether common pharmacokinetic variants in SLCO1B1 (rs4149056, c.521T>C), ABCG2 (rs2231142, c.421C>A), and CYP2C9 (*2 rs1799853, *3 rs1057910) predict statin intolerance. Intolerance was primarily defined as switching from the index statin; a secondary phenotype required a temporally related creatine kinase (CK) measurement (\u221230 to +90 days).\n\n## Key Findings\n- Simvastatin:\n  - SLCO1B1 c.521C/C was associated with higher intolerance risk vs T/T: HR 1.88 (95% CI 1.08\u20133.25; P=0.025) for switching, and HR 5.44 (1.49\u201319.9; P=0.011) for switching+CK. Higher doses (\u226540 mg) also increased switching risk: HR 1.48 (1.03\u20132.12; P=0.035).\n- Pravastatin:\n  - SLCO1B1 c.521T>C carriers (T/C or C/C) had increased switching vs T/T: HR 2.11 (1.01\u20134.39; P=0.047). Sample size was limited.\n- Atorvastatin and rosuvastatin:\n  - No significant associations with SLCO1B1 c.521T>C or ABCG2 c.421C>A; for rosuvastatin, 10 mg vs 5 mg dose increased switching (HR 3.55; 1.07\u201311.8; P=0.038) but genotype effects were null. \n- Fluvastatin:\n  - No significant associations for SLCO1B1, ABCG2, or CYP2C9 phenotype (PM/IM vs NM); a non-significant trend with higher combined risk-allele burden was noted. Power was limited.\n- Across statins studied, CYP2C9*2 and *3 were not significantly associated with intolerance in this cohort.\n\n## Clinical Implications\n- Strongest evidence supports SLCO1B1-guided prescribing for simvastatin: patients with c.521C/C are at higher risk of intolerance, particularly at higher doses. Consider lower doses, alternative statins, and closer CK/symptom monitoring.\n- The observed association of SLCO1B1 c.521T>C with pravastatin switching suggests OATP1B1 function may also influence pravastatin tolerability; if using pravastatin in carriers, monitor closely, though findings need confirmation.\n- No genotype-intolerance signal was detected for atorvastatin or rosuvastatin in this cohort, supporting their use as alternatives for SLCO1B1 risk genotypes, consistent with CPIC guidance; caution remains with high-dose atorvastatin based on prior studies.",
+  "num_variants": 10,
+  "variants": [
+    "CYP2C9*2",
+    "rs2231142",
+    "CYP2C9*3",
+    "CYP3A4*3",
+    "rs1799853",
+    "CYP3A5*3",
+    "rs1057910",
+    "SLCO1B1*5",
+    "CYP3A4*22",
+    "rs4149056"
+  ]
+}

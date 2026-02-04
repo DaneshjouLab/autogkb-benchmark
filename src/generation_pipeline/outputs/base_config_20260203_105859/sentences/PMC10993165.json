@@ -1,0 +1,206 @@
+{
+  "HLA-C*07:02": [
+    {
+      "sentence": "HLA-C*07:02 not mentioned in the article.",
+      "explanation": "This allele was not reported in the meta-analysis of SMX/CTX-induced SCARs."
+    }
+  ],
+  "HLA-A*31:01": [
+    {
+      "sentence": "HLA-A*31:01 mentioned in article but not studied by paper.",
+      "explanation": "It is referenced in relation to carbamazepine-induced SJS/TEN, not SMX/CTX-induced SCARs."
+    }
+  ],
+  "HLA-A*68:01": [
+    {
+      "sentence": "HLA-A*68:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms (DRESS) when treated with sulfamethoxazole or co-trimoxazole in people exposed to these drugs as compared to non-carriers.",
+      "explanation": "The meta-analysis\u2019 phenotype-specific subgroup showed a statistically significant association of HLA-A*68:01 with SMX/CTX-induced DRESS."
+    }
+  ],
+  "HLA-A*11:01": [
+    {
+      "sentence": "HLA-A*11:01 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole or co-trimoxazole in people exposed to these drugs, with higher odds observed in HIV-positive patients, as compared to non-carriers.",
+      "explanation": "The meta-analysis identified HLA-A*11:01 as significantly associated with SMX/CTX-induced SCARs overall, and a subgroup of three Thai HIV-positive studies showed higher ORs."
+    }
+  ],
+  "HLA-C*04:01": [
+    {
+      "sentence": "HLA-C*04:01 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-A*24:07": [
+    {
+      "sentence": "HLA-A*24:07 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-B*58:01": [
+    {
+      "sentence": "HLA-B*58:01 not mentioned in the article.",
+      "explanation": "This well-known allopurinol risk allele was not discussed for SMX/CTX-induced SCARs in the meta-analysis."
+    }
+  ],
+  "HLA-A*02:07": [
+    {
+      "sentence": "HLA-A*02:07 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-C*03:04": [
+    {
+      "sentence": "HLA-C*03:04 is not associated with risk of severe cutaneous adverse reactions when treated with sulfamethoxazole or co-trimoxazole in people exposed to these drugs as compared to non-carriers.",
+      "explanation": "Although included among the primary alleles analyzed, the meta-analysis did not find a statistically significant association with SMX/CTX-induced SCARs."
+    }
+  ],
+  "HLA-C*14:02": [
+    {
+      "sentence": "HLA-C*14:02 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-B*38:11": [
+    {
+      "sentence": "HLA-B*38:11 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-DQB1*03:01": [
+    {
+      "sentence": "HLA-DQB1*03:01 mentioned in article but not studied by paper.",
+      "explanation": "It appears only as part of a haplotype note (A*11:01\u2013B*15:02\u2013C*08:01\u2013DRB1*12:02\u2013DQB1*03:01) and was not quantitatively evaluated for SMX/CTX-induced SCAR risk."
+    }
+  ],
+  "HLA-B*57:01": [
+    {
+      "sentence": "HLA-B*57:01 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-B*38:02": [
+    {
+      "sentence": "HLA-B*38:02 is associated with increased risk of severe cutaneous adverse reactions, particularly Stevens-Johnson syndrome/toxic epidermal necrolysis, when treated with sulfamethoxazole or co-trimoxazole in people exposed to these drugs (with higher odds noted in Taiwanese and HIV-positive subgroups) as compared to non-carriers.",
+      "explanation": "The meta-analysis found significant associations overall and specifically for SJS/TEN; geographic (Taiwan) and HIV-positive subgroup analyses also showed elevated odds."
+    }
+  ],
+  "HLA-B*40:01": [
+    {
+      "sentence": "HLA-B*40:01 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-C*04:03": [
+    {
+      "sentence": "HLA-C*04:03 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-DQB1*05:01": [
+    {
+      "sentence": "HLA-DQB1*05:01 mentioned in article but not studied by paper.",
+      "explanation": "It was discussed in relation to CD4+ T-cell responses to 4-nitro SMX in maculopapular exanthema, not evaluated for SMX/CTX-induced SCAR risk in this meta-analysis."
+    }
+  ],
+  "HLA-B*07:05": [
+    {
+      "sentence": "HLA-B*07:05 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole or co-trimoxazole in people with HIV infection as compared to non-carriers.",
+      "explanation": "In a subgroup of three Thai studies including HIV-positive patients, this allele showed a significant association that was not observed in the overall population."
+    }
+  ],
+  "HLA-B*38:01": [
+    {
+      "sentence": "HLA-B*38:01 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole or co-trimoxazole in people of European descent as compared to non-carriers.",
+      "explanation": "Geographic subgroup analyses indicated significant associations for HLA-B*38:01 (and B*38:02) among individuals of European ancestry."
+    }
+  ],
+  "HLA-C*06:02": [
+    {
+      "sentence": "HLA-C*06:02 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-B*46:01": [
+    {
+      "sentence": "HLA-B*46:01 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-B*38": [
+    {
+      "sentence": "HLA-B*38 not mentioned in the article.",
+      "explanation": "The meta-analysis discussed specific subtypes (B*38:01 and B*38:02), not the two-digit B*38 designation."
+    }
+  ],
+  "HLA-A*02:03": [
+    {
+      "sentence": "HLA-A*02:03 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-DRB1*12:02": [
+    {
+      "sentence": "HLA-DRB1*12:02 mentioned in article but not studied by paper.",
+      "explanation": "It is noted as part of a haplotype with A*11:01\u2013B*15:02\u2013C*08:01\u2013DRB1*12:02\u2013DQB1*03:01, without quantitative analysis for SCAR risk."
+    }
+  ],
+  "HLA-C*04:06": [
+    {
+      "sentence": "HLA-C*04:06 is not associated with risk of severe cutaneous adverse reactions when treated with sulfamethoxazole or co-trimoxazole in people exposed to these drugs as compared to non-carriers.",
+      "explanation": "Although included in the primary allele set, the meta-analysis did not find a significant association with SMX/CTX-induced SCARs."
+    }
+  ],
+  "HLA-B*39:01": [
+    {
+      "sentence": "HLA-B*39:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms when treated with sulfamethoxazole or co-trimoxazole in people exposed to these drugs as compared to non-carriers.",
+      "explanation": "Phenotype-specific analyses identified a significant association between HLA-B*39:01 and SMX/CTX-induced DRESS."
+    }
+  ],
+  "HLA-A*33:03": [
+    {
+      "sentence": "HLA-A*33:03 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-C*03:02": [
+    {
+      "sentence": "HLA-C*03:02 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-C*01:02": [
+    {
+      "sentence": "HLA-C*01:02 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-B*13:01": [
+    {
+      "sentence": "HLA-B*13:01 is associated with increased risk of severe cutaneous adverse reactions, including Stevens-Johnson syndrome/toxic epidermal necrolysis and DRESS, when treated with sulfamethoxazole or co-trimoxazole in Asian populations as compared to non-carriers.",
+      "explanation": "The meta-analysis found significant associations versus both healthy and tolerant controls, supported by Thai, Malaysian, and Taiwanese studies; reported ORs were elevated though lower than for dapsone-induced SCARs."
+    }
+  ],
+  "HLA-B*15:02": [
+    {
+      "sentence": "HLA-B*15:02 is associated with increased risk of severe cutaneous adverse reactions, particularly Stevens-Johnson syndrome/toxic epidermal necrolysis, when treated with sulfamethoxazole or co-trimoxazole in Asian populations and HIV-positive patients as compared to non-carriers.",
+      "explanation": "The meta-analysis showed significant associations overall and for SJS/TEN, with higher odds observed in Thai and HIV-positive subgroups."
+    }
+  ],
+  "HLA-C*08:01": [
+    {
+      "sentence": "HLA-C*08:01 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole or co-trimoxazole in Thai and HIV-positive populations as compared to non-carriers.",
+      "explanation": "Significant associations were identified overall, with higher ORs in HIV-positive patients and specific geographic enrichment in Thailand."
+    }
+  ],
+  "HLA-A*24:02": [
+    {
+      "sentence": "HLA-A*24:02 not mentioned in the article.",
+      "explanation": "This allele was not reported among the HLA markers assessed."
+    }
+  ],
+  "HLA-C*07:27": [
+    {
+      "sentence": "HLA-C*07:27 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole or co-trimoxazole in people with HIV infection as compared to non-carriers.",
+      "explanation": "A subgroup analysis of HIV-positive patients (three Thai studies) found a significant association for HLA-C*07:27 that was not present in the overall SCAR population."
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "rs3745274": [
+    {
+      "sentence": "Genotype GT of rs3745274 is associated with increased risk of tumor occurrence when treated with tacrolimus in people with kidney transplantation as compared to genotype GG (p = 0.048).",
+      "explanation": "In a cohort of 79 adult kidney transplant recipients on tacrolimus, logistic regression showed the CYP2B6 rs3745274 GT genotype in recipients was linked to higher tumor incidence during follow-up (p = 0.048)."
+    }
+  ],
+  "rs6714486": [
+    {
+      "sentence": "rs6714486 mentioned in article but not studied by paper.",
+      "explanation": "The SNP is referenced in background as a UGT1A9 variant related to mycophenolate, but no genotype-specific analyses or tacrolimus-related results were presented for this cohort."
+    }
+  ],
+  "rs1045642": [
+    {
+      "sentence": "Genotype CC of rs1045642 is associated with decreased likelihood of severe infections when treated with tacrolimus in people with kidney transplantation as compared to genotypes CT + TT (OR: 0.087).",
+      "explanation": "Logistic regression in the 79-patient tacrolimus-treated kidney transplant cohort found the recipient ABCB1 rs1045642 CC genotype had markedly lower severe infection risk (OR 0.087)."
+    }
+  ],
+  "rs2745074": [
+    {
+      "sentence": "rs2745074 mentioned in article but not studied by paper.",
+      "explanation": "This SNP was not reported among the study findings for the tacrolimus-treated kidney transplant cohort."
+    }
+  ],
+  "rs2273697": [
+    {
+      "sentence": "rs2273697 mentioned in article but not studied by paper.",
+      "explanation": "Although donor ABCC2 rs2273697 was noted to show survival differences by Kaplan\u2013Meier analysis, specific genotype comparisons and effect directions were not reported."
+    }
+  ],
+  "rs717620": [
+    {
+      "sentence": "rs717620 mentioned in article but not studied by paper.",
+      "explanation": "The SNP is cited from prior literature as having no significant effect on tacrolimus levels, but no genotype-specific results were reported in this cohort."
+    }
+  ],
+  "rs1800871": [
+    {
+      "sentence": "rs1800871 mentioned in article but not studied by paper.",
+      "explanation": "IL10 polymorphisms were discussed conceptually in relation to tumor susceptibility, without cohort analyses."
+    }
+  ],
+  "rs2235013": [
+    {
+      "sentence": "Genotype GA of rs2235013 (donor) is associated with decreased risk of chronic rejection when treated with tacrolimus in people with kidney transplantation as compared to other genotypes (OR: 0.13).",
+      "explanation": "Donor ABCB1 rs2235013 GA was linked by logistic regression to lower chronic rejection risk; the study included 79 tacrolimus-treated kidney transplant recipients with donor genotyping."
+    }
+  ],
+  "rs2032582": [
+    {
+      "sentence": "rs2032582 mentioned in article but not studied by paper.",
+      "explanation": "While referenced in background as associated with graft rejection in literature, no cohort results were provided."
+    }
+  ],
+  "rs1142345": [
+    {
+      "sentence": "rs1142345 mentioned in article but not studied by paper.",
+      "explanation": "TPMT variants were noted to be protective against re-transplantation, but specific rs1142345 genotype results were not reported."
+    }
+  ],
+  "rs2279343": [
+    {
+      "sentence": "rs2279343 mentioned in article but not studied by paper.",
+      "explanation": "Although CYP2B6 variants were examined, only rs3745274 had genotype-specific results; rs2279343 findings were not provided."
+    }
+  ],
+  "rs3745275": [
+    {
+      "sentence": "rs3745275 mentioned in article but not studied by paper.",
+      "explanation": "No genotype-specific analyses or outcomes were reported for this SNP in the cohort."
+    }
+  ],
+  "rs1800872": [
+    {
+      "sentence": "rs1800872 mentioned in article but not studied by paper.",
+      "explanation": "IL10 variants were discussed broadly but not analyzed in the study cohort."
+    }
+  ],
+  "rs2235033": [
+    {
+      "sentence": "rs2235033 mentioned in article but not studied by paper.",
+      "explanation": "This ABCB1 SNP was not included in the reported cohort results."
+    }
+  ],
+  "rs17868320": [
+    {
+      "sentence": "rs17868320 mentioned in article but not studied by paper.",
+      "explanation": "The SNP is cited as a UGT1A9 variant related to mycophenolate in prior reports; no cohort data were provided."
+    }
+  ],
+  "rs4244285": [
+    {
+      "sentence": "Genotype AA of rs4244285 is associated with increased risk of nephrotoxicity and higher dose-adjusted tacrolimus concentrations when treated with tacrolimus in people with kidney transplantation as compared to genotype GG (p = 0.026).",
+      "explanation": "The study reported significantly increased nephrotoxicity risk (OR 11.6; p = 0.026) and elevated tacrolimus C/D among patients with CYP2C19*2 (rs4244285 AA)."
+    }
+  ],
+  "rs2306283": [
+    {
+      "sentence": "rs2306283 mentioned in article but not studied by paper.",
+      "explanation": "Although SLCO1B1 rs2306283 was assessed for interactions with CYP3A5 in relation to exitus, no genotype-specific main-effect results were reported."
+    }
+  ],
+  "rs9282564": [
+    {
+      "sentence": "Genotype AA of rs9282564 (donor) is associated with increased likelihood of severe infections when treated with tacrolimus in people with kidney transplantation as compared to genotypes AG + GG (OR: 23.8).",
+      "explanation": "Donor ABCB1 rs9282564 AA showed a markedly increased severe infection risk by logistic regression in the 79-patient tacrolimus cohort; this SNP also showed survival differences by Kaplan\u2013Meier (log-rank p = 0.042)."
+    }
+  ],
+  "rs1799853": [
+    {
+      "sentence": "rs1799853 mentioned in article but not studied by paper.",
+      "explanation": "CYP2C9 variants were noted as protective for re-transplantation, but rs1799853-specific results were not provided."
+    }
+  ],
+  "rs776746": [
+    {
+      "sentence": "Genotype GG of rs776746 (CYP3A5*3/*3) is associated with increased dose-adjusted tacrolimus concentrations in people with kidney transplantation as compared to genotypes AG + AA.",
+      "explanation": "Consistent with CPIC/DPWG guidance, the study observed higher tacrolimus C/D in CYP3A5 non-expressers (*3/*3) among the 79 recipients; survival differences by KM were not statistically significant (log-rank p = 0.138)."
+    }
+  ],
+  "rs2066844": [
+    {
+      "sentence": "Genotype CC of rs2066844 (donor) is associated with decreased risk of nephrotoxicity when treated with tacrolimus in people with kidney transplantation as compared to genotypes CT + TT.",
+      "explanation": "Logistic regression showed donor NOD2 rs2066844 CC reduced nephrotoxicity risk; prior literature linked this locus to hospital stay, but not tacrolimus PK."
+    }
+  ],
+  "rs72551330": [
+    {
+      "sentence": "rs72551330 mentioned in article but not studied by paper.",
+      "explanation": "Referenced in the background as a UGT1A9 variant related to mycophenolate; no cohort findings were reported."
+    }
+  ],
+  "rs3832043": [
+    {
+      "sentence": "rs3832043 mentioned in article but not studied by paper.",
+      "explanation": "Not reported among the study\u2019s genotype-specific results."
+    }
+  ],
+  "rs1800896": [
+    {
+      "sentence": "rs1800896 mentioned in article but not studied by paper.",
+      "explanation": "IL10 polymorphisms were discussed generally for tumor susceptibility, without cohort analyses."
+    }
+  ],
+  "rs3740066": [
+    {
+      "sentence": "rs3740066 mentioned in article but not studied by paper.",
+      "explanation": "Prior literature links ABCC2 rs3740066 to higher tacrolimus C/D, but no genotype-specific results were presented for this cohort."
+    }
+  ],
+  "rs2740574": [
+    {
+      "sentence": "Genotype AA of rs2740574 is associated with increased dose-adjusted concentrations of tacrolimus in people with kidney transplantation as compared to genotype GG (p < 0.001).",
+      "explanation": "The study found significantly higher tacrolimus C/D in CYP3A4 rs2740574 AA recipients (p < 0.001), aligning with previous reports of enhanced CYP3A4 activity."
+    }
+  ],
+  "rs4149056": [
+    {
+      "sentence": "Genotype TT of rs4149056 is associated with decreased risk of acute rejection and increased dose-adjusted tacrolimus concentrations when treated with tacrolimus in people with kidney transplantation as compared to genotypes CT + CC (OR: 0.157).",
+      "explanation": "Recipient SLCO1B1 rs4149056 TT showed reduced acute rejection risk (OR 0.157) and higher tacrolimus C/D over time in this 79-patient cohort."
+    }
+  ]
+}

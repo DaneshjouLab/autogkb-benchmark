@@ -1,0 +1,15 @@
+{
+  "pmcid": "PMC5508045",
+  "summary": "## Background\nThis retrospective study evaluated how genetic and non-genetic factors influence stable warfarin maintenance dose in 250 Thai patients (target INR 2\u20133). Four variants were genotyped: VKORC1 \u22121639G>A (rs9923231), CYP2C9*3 (rs1057910), CYP4F2 rs2108622, and UGT1A1 rs887829.\n\n## Key Findings\n- VKORC1 \u22121639G>A (rs9923231):\n  - Strongest genetic predictor. Compared with GG, GA and AA genotypes required lower weekly doses (27.9 vs 38.6 mg and 19.4 vs 38.6 mg; p<0.001).\n  - In multivariable modeling, GA and AA reduced dose by 9.7 mg and 18.1 mg/week, respectively (p<0.001), explaining 26.2% of dose variance.\n\n- CYP2C9*3 (rs1057910):\n  - Carriers required lower doses: *1/*3 and *3/*3 averaged 14.9 and 8.0 mg/week vs 22.6 mg for *1/*1 (p=0.006).\n  - In multivariable analysis, *1/*3 and *3/*3 reduced dose by 7.9 mg and 25.9 mg/week (p<0.001), contributing 6.0% to variability.\n\n- CYP4F2 rs2108622:\n  - Univariate differences were not significant (p=0.172), but in multivariable analysis the TT genotype was associated with a modest increase in dose (+4.1 mg/week vs CC; p=0.016), accounting for 1.2% of variability.\n\n- UGT1A1 rs887829:\n  - No association with dose (p=0.921); did not contribute to variability.\n\n- Overall model:\n  - Genetics (VKORC1, CYP2C9*3, CYP4F2) plus clinical factors (age, BMI, amiodarone, antiplatelets, current smoking) explained 51.3% of dose variability. Notably, age alone accounted for 10.8%.\n\n## Clinical Implications\n- Genotype-guided warfarin dosing in Thai patients should prioritize VKORC1 \u22121639G>A and CYP2C9*3, which have large, clinically meaningful effects and together explain much of the genetic variability.\n- Consider CYP4F2 rs2108622 as a minor modifier: TT carriers may need slightly higher doses.\n- UGT1A1 rs887829 testing is unlikely to inform warfarin dosing in this population.\n- Incorporate clinical factors\u2014especially older age (lower dose), higher BMI (higher dose), amiodarone or antiplatelet use (lower dose), and current smoking (higher dose)\u2014alongside genetics to improve initial dose selection and maintenance adjustments.",
+  "num_variants": 8,
+  "variants": [
+    "CYP2C9*2",
+    "rs2108622",
+    "rs9923231",
+    "rs887829",
+    "rs8175347",
+    "CYP2C9*3",
+    "rs1057910",
+    "CYP2C9*1"
+  ]
+}

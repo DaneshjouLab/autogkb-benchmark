@@ -1,0 +1,14 @@
+{
+  "HLA-B*57:01": [
+    {
+      "sentence": "HLA-B*57:01 (carriers/positive) is associated with increased risk of abacavir hypersensitivity when treated with abacavir in people with HIV infection in the Western Australian HIV Cohort Study as compared to HLA-B*57:01\u2013negative individuals.",
+      "explanation": "In a cohort of abacavir-exposed HIV patients (retrospective n=200; prospective n=48; 18 hypersensitive, 230 tolerant), the study confirmed a strong association of HLA-B*57:01 with definite abacavir hypersensitivity; the combination of HLA-B*57:01 with Hsp70-Hom M493T was present in 94.4% of hypersensitive cases versus 0.4% of controls, supporting HLA-B*57:01 as a key marker of risk."
+    }
+  ],
+  "HLA-DRB1*07:01": [
+    {
+      "sentence": "HLA-DRB1*07:01 mentioned in article but not studied by paper.",
+      "explanation": "The allele is referenced as part of the 57.1 ancestral haplotype used for screening, but the paper does not report an independent analysis of HLA-DRB1*07:01 with abacavir hypersensitivity or other abacavir outcomes."
+    }
+  ]
+}

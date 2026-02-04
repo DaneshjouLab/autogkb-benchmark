@@ -35,6 +35,7 @@ class VariantExtractor:
     def _load_methods(cls):
         from src.modules.variant_finding.methods.just_ask import just_ask_extract
         from src.modules.variant_finding.methods.pubtator import pubtator_extract
+        from src.modules.variant_finding.methods.pxgmine import pgxmine_extract
         from src.modules.variant_finding.methods.regex_llm_filter import (
             regex_llm_filter_extract,
         )
@@ -57,4 +58,5 @@ class VariantExtractor:
             "regex_llm_filter": regex_llm_filter_extract,
             "regex_term_norm": regex_term_norm_extract,
             "pubtator": pubtator_extract,
+            "pgxmine": pgxmine_extract,
         }
