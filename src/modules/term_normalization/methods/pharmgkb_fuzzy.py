@@ -40,9 +40,7 @@ def pharmgkb_fuzzy_normalize(
 
     for variant in variants:
         try:
-            results = variant_lookup.search(
-                variant, threshold=threshold, top_k=top_k
-            )
+            results = variant_lookup.search(variant, threshold=threshold, top_k=top_k)
             if results and results[0].score >= min_score:
                 norm = results[0].normalized_term
                 normalized_variants.append(norm)

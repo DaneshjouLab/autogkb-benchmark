@@ -504,7 +504,13 @@ def main():
 
     # Parse stages
     stages = set(s.strip() for s in args.stages.split(","))
-    valid_stages = {"variants", "term_normalization", "sentences", "citations", "summary"}
+    valid_stages = {
+        "variants",
+        "term_normalization",
+        "sentences",
+        "citations",
+        "summary",
+    }
     invalid_stages = stages - valid_stages
     if invalid_stages:
         logger.error(f"Invalid stages: {invalid_stages}. Valid: {valid_stages}")
