@@ -47,6 +47,11 @@ class VariantExtractor:
         from src.modules.variant_finding.methods.regex_v3 import regex_v3_extract
         from src.modules.variant_finding.methods.regex_v4 import regex_v4_extract
         from src.modules.variant_finding.methods.regex_v5 import regex_v5_extract
+        from src.modules.variant_finding.methods.pgxmine_flow import (
+            pgxmine_context_aware_extract,
+            pgxmine_normalized_extract,
+            pgxmine_full_extract,
+        )
 
         cls.METHODS = {
             "just_ask": just_ask_extract,
@@ -59,4 +64,7 @@ class VariantExtractor:
             "regex_term_norm": regex_term_norm_extract,
             "pubtator": pubtator_extract,
             "pgxmine": pgxmine_extract,
+            "pgxmine_context_aware": pgxmine_context_aware_extract,
+            "pgxmine_normalized": pgxmine_normalized_extract,
+            "pgxmine_full": pgxmine_full_extract,
         }
