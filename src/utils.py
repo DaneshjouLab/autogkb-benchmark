@@ -72,13 +72,13 @@ def _extract_section(markdown_text: str, section_patterns: list[str]) -> str:
 
 def get_methods_and_conclusions_text(pmcid: str) -> str:
     """
-    Retrieves the methods and conclusions sections from an article's markdown.
+    Retrieves the methods, results, and conclusions sections from an article's markdown.
 
     Args:
         pmcid: PMCID of the article
 
     Returns:
-        The methods and conclusions sections concatenated as a string
+        The methods, results, and conclusions sections concatenated as a string
     """
     markdown_text = get_markdown_text(pmcid)
     if not markdown_text:
@@ -93,6 +93,13 @@ def get_methods_and_conclusions_text(pmcid: str) -> str:
         r"experimental\s+procedures?",
     ]
 
+    # Patterns for results section (various naming conventions)
+    results_patterns = [
+        r"results?",
+        r"findings?",
+        r"results?\s+and\s+discussion",
+    ]
+
     # Patterns for conclusions section
     conclusions_patterns = [
         r"conclusions?",
@@ -102,11 +109,14 @@ def get_methods_and_conclusions_text(pmcid: str) -> str:
     ]
 
     methods_text = _extract_section(markdown_text, methods_patterns)
+    results_text = _extract_section(markdown_text, results_patterns)
     conclusions_text = _extract_section(markdown_text, conclusions_patterns)
 
     result_parts = []
     if methods_text:
         result_parts.append(methods_text)
+    if results_text:
+        result_parts.append(results_text)
     if conclusions_text:
         result_parts.append(conclusions_text)
 
