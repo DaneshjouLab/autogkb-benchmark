@@ -138,8 +138,26 @@ def normalize_star_allele(gene: str, allele_num: str) -> str:
 # ============================================================================
 
 
+def _rejoin_split_rsids(text: str) -> str:
+    """Rejoin rsIDs split by spaces from PDF table cell parsing.
+
+    BioC supplement text from PDFs can split rsIDs at table cell boundaries,
+    e.g. "rs7692 58 rs28371 696" should be "rs769258 rs28371696".
+
+    Only rejoins when the trailing digits are followed by another rsID or
+    an uppercase word (column header), avoiding false positives in prose
+    like "rs12345 was found in 3 patients".
+    """
+    return re.sub(
+        r"(rs\d{4,})\s+(\d{1,4})(?=\s+(?:rs\d|[A-Z])|\s*$)",
+        r"\1\2",
+        text,
+    )
+
+
 def extract_rsids(text: str) -> list[str]:
     """Extract rsID variants from text."""
+    text = _rejoin_split_rsids(text)
     pattern = r"\brs\d{4,}\b"
     matches = re.findall(pattern, text, re.IGNORECASE)
     return [m.lower() for m in set(matches)]
