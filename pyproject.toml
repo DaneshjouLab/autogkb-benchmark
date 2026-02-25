@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "autogkb-pipeline"
+version = "0.1.0"
+description = "AutoGKB annotation generation and evaluation pipeline"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32.0",
+    "loguru>=0.7.0",
+    "tqdm>=4.67.0",
+    "pandas>=2.2.0",
+    "python-dotenv>=1.0.0",
+    "litellm>=1.72.0",
+    "pydantic>=2.0.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["autogkb_pipeline"]

@@ -7,11 +7,11 @@ platforms = ["osx-64", "linux-64"]
 
 [tasks]
 setup-repo = "pixi install && pixi run setup-data"
-setup-data = "python -m src.data_setup.main"
-benchmark = "python -m src.benchmark.run_benchmark --save_analysis"
-variant-setup = "python -m src.data_setup.variant_bench_table"
-variants = "python -m src.benchmark_v2.variant_bench"
-fields = "python -m src.benchmark_v2.field_extractor"
+setup-data = "python -m autogkb_pipeline.data_setup.main"
+benchmark = "python -m autogkb_pipeline.benchmark.run_benchmark --save_analysis"
+variant-setup = "python -m autogkb_pipeline.data_setup.variant_bench_table"
+variants = "python -m autogkb_pipeline.benchmark_v2.variant_bench"
+fields = "python -m autogkb_pipeline.benchmark_v2.field_extractor"
 
 
 [dependencies]
@@ -36,3 +36,6 @@ sentence-transformers = ">=3.0.0,<4"
 scikit-learn = ">=1.3.0,<2"
 polars = ">=1.37.1,<2"
 ruff = ">=0.14.11,<0.15"
+
+[pypi-dependencies]
+pubmed-downloader = {path = "../PubMedDownloader", editable = true}
