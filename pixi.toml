@@ -7,11 +7,12 @@ platforms = ["osx-64", "linux-64"]
 
 [tasks]
 setup-repo = "pixi install && pixi run setup-data"
-setup-data = "python -m autogkb_pipeline.data_setup.main"
-benchmark = "python -m autogkb_pipeline.benchmark.run_benchmark --save_analysis"
-variant-setup = "python -m autogkb_pipeline.data_setup.variant_bench_table"
-variants = "python -m autogkb_pipeline.benchmark_v2.variant_bench"
-fields = "python -m autogkb_pipeline.benchmark_v2.field_extractor"
+setup-data = "python -m shared.data_setup.main"
+generate = "python -m generation"
+benchmark = "python -m benchmark.v1.run_benchmark --save_analysis"
+variant-setup = "python -m shared.data_setup.variant_bench_table"
+variants = "python -m benchmark.v2.variant_bench"
+fields = "python -m benchmark.v2.field_extractor"
 
 
 [dependencies]
