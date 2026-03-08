@@ -19,6 +19,7 @@ dependencies = [
 
 [project.scripts]
 generate = "generation.pipeline:main"
+clean-generations = "generation.clean:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["generation", "benchmark", "shared"]
