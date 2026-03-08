@@ -18,17 +18,17 @@ term_normalization:
 
 sentence_generation:
   method: "batch_judge_ask"
-  model: "gpt-5"
+  model: "claude-sonnet-4-20250514"
   prompt_version: "v5"
 
 citation_finding:
   method: "one_shot_citations"
-  model: "gpt-5"
+  model: "claude-sonnet-4-20250514"
   prompt_version: "v2"
 
 summary_generation:
   method: "basic_summary"
-  model: "gpt-5"
+  model: "claude-sonnet-4-20250514"
   prompt_version: "v1"
 
 processing_options:
