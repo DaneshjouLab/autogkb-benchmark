@@ -130,7 +130,8 @@ def _row_to_record(row: dict) -> GenerationRecord:
 # Push (local → DB)
 # ---------------------------------------------------------------------------
 
-_UPSERT_SQL = text(f"""
+_UPSERT_SQL = text(
+    f"""
     INSERT INTO {TABLE}
         (id, pmid, pmcid, title, status, progress, markdown_content,
          annotations, annotation_citations, annotation_data,
@@ -153,7 +154,8 @@ _UPSERT_SQL = text(f"""
         generation_metadata = EXCLUDED.generation_metadata,
         error = EXCLUDED.error,
         updated_at = EXCLUDED.updated_at
-""")
+"""
+)
 
 
 def push(override: bool = False) -> None:
@@ -173,8 +175,10 @@ def push(override: bool = False) -> None:
             row = _record_to_row(rec)
             conn.execute(_UPSERT_SQL, row)
 
-    logger.success(f"Pushed {len(records)} record(s) to {TABLE}" +
-                   (" (override)" if override else ""))
+    logger.success(
+        f"Pushed {len(records)} record(s) to {TABLE}"
+        + (" (override)" if override else "")
+    )
 
 
 # ---------------------------------------------------------------------------

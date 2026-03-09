@@ -441,9 +441,9 @@ def run_pipeline(
             generation_metadata=GenerationMetadata(
                 config_name=config_info.get("name", "unknown"),
                 variant_extraction_method=config["variant_extraction"]["method"],
-                sentence_generation_method=config.get(
-                    "sentence_generation", {}
-                ).get("method"),
+                sentence_generation_method=config.get("sentence_generation", {}).get(
+                    "method"
+                ),
                 sentence_model=config.get("sentence_generation", {}).get("model"),
                 citation_model=config.get("citation_finding", {}).get("model"),
                 summary_model=config.get("summary_generation", {}).get("model"),
@@ -471,13 +471,16 @@ def run_pipeline(
 
             if result is None:
                 # Skipped (e.g. no variants found)
-                _update_jsonl(record_id, {
-                    "status": GenerationStatus.completed.value,
-                    "generation_metadata": {
-                        **record.generation_metadata.model_dump(),
-                        "elapsed_seconds": round(time.monotonic() - pmcid_start, 2),
+                _update_jsonl(
+                    record_id,
+                    {
+                        "status": GenerationStatus.completed.value,
+                        "generation_metadata": {
+                            **record.generation_metadata.model_dump(),
+                            "elapsed_seconds": round(time.monotonic() - pmcid_start, 2),
+                        },
                     },
-                })
+                )
                 continue
 
             # Build annotations dict: {variant_name: [{sentence, explanation}]}
@@ -497,28 +500,34 @@ def run_pipeline(
 
             elapsed = round(time.monotonic() - pmcid_start, 2)
 
-            _update_jsonl(record_id, {
-                "annotations": annotations,
-                "annotation_citations": annotation_citations,
-                "annotation_data": result,
-                "status": GenerationStatus.completed.value,
-                "generation_metadata": {
-                    **record.generation_metadata.model_dump(),
-                    "elapsed_seconds": elapsed,
+            _update_jsonl(
+                record_id,
+                {
+                    "annotations": annotations,
+                    "annotation_citations": annotation_citations,
+                    "annotation_data": result,
+                    "status": GenerationStatus.completed.value,
+                    "generation_metadata": {
+                        **record.generation_metadata.model_dump(),
+                        "elapsed_seconds": elapsed,
+                    },
                 },
-            })
+            )
             logger.info(f"  Updated record {record_id} to completed")
 
         except Exception as e:
             elapsed = round(time.monotonic() - pmcid_start, 2)
-            _update_jsonl(record_id, {
-                "status": GenerationStatus.error.value,
-                "error": str(e),
-                "generation_metadata": {
-                    **record.generation_metadata.model_dump(),
-                    "elapsed_seconds": elapsed,
+            _update_jsonl(
+                record_id,
+                {
+                    "status": GenerationStatus.error.value,
+                    "error": str(e),
+                    "generation_metadata": {
+                        **record.generation_metadata.model_dump(),
+                        "elapsed_seconds": elapsed,
+                    },
                 },
-            })
+            )
             logger.error(f"Failed to process {pmcid}: {e}")
 
     total_elapsed = time.monotonic() - start_time
