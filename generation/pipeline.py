@@ -46,7 +46,7 @@ from shared.data_setup.pmcid_converter import PMIDConverter
 from shared.data_setup.pmc_title_fetcher import get_title_from_pmcid
 from shared.data_setup.download_article import download_article
 
-from generation.models import GenerationRecord, GenerationMetadata
+from generation.models import GenerationRecord, GenerationMetadata, GenerationStatus
 from generation.modules.variant_finding.variant_extractor import VariantExtractor
 from generation.modules.term_normalization.term_normalizer import TermNormalizer
 from generation.modules.term_normalization.models import NormalizationResult
@@ -63,6 +63,7 @@ CONFIG_FILE = CONFIGS_DIR / "base_config.yaml"
 VARIANT_BENCH_PATH = DATA_DIR / "benchmark_v2" / "variant_bench.jsonl"
 PMCID_MAPPING_PATH = DATA_DIR / "pmcid_mapping.json"
 GENERATIONS_JSONL = DATA_DIR / "generations.jsonl"
+GENERATIONS_DIR = DATA_DIR / "generations"
 
 
 # =============================================================================
@@ -335,11 +336,36 @@ def process_pmcid(
     return result
 
 
+def _save_generation_md(record: GenerationRecord) -> None:
+    """Save the article text as a markdown file in data/generations/."""
+    GENERATIONS_DIR.mkdir(parents=True, exist_ok=True)
+    pmid = record.pmid or "unknown"
+    filename = f"PMID{pmid}_{record.id}.md"
+    (GENERATIONS_DIR / filename).write_text(record.text_content, encoding="utf-8")
+
+
 def _append_jsonl(record: GenerationRecord) -> None:
     """Append a GenerationRecord as one JSON line to data/generations.jsonl."""
     GENERATIONS_JSONL.parent.mkdir(parents=True, exist_ok=True)
     with open(GENERATIONS_JSONL, "a", encoding="utf-8") as f:
         f.write(record.model_dump_json() + "\n")
+    _save_generation_md(record)
+
+
+def _update_jsonl(record_id: str, updates: dict) -> None:
+    """Update an existing record in generations.jsonl by ID."""
+    if not GENERATIONS_JSONL.exists():
+        return
+    lines = GENERATIONS_JSONL.read_text(encoding="utf-8").splitlines()
+    new_lines = []
+    for line in lines:
+        if not line.strip():
+            continue
+        data = json.loads(line)
+        if data.get("id") == record_id:
+            data.update(updates)
+        new_lines.append(json.dumps(data, ensure_ascii=False))
+    GENERATIONS_JSONL.write_text("\n".join(new_lines) + "\n", encoding="utf-8")
 
 
 def run_pipeline(
@@ -396,6 +422,40 @@ def run_pipeline(
             except Exception as e:
                 logger.warning(f"Could not download article for {pmcid}: {e}")
 
+        # Get article title and text early for the in_progress record
+        try:
+            title = get_title_from_pmcid(pmcid, DATA_DIR)
+        except Exception:
+            title = None
+        text_content = get_markdown_text(pmcid)
+
+        # Write initial in_progress record
+        record = GenerationRecord(
+            pmid=pmid,
+            pmcid=pmcid,
+            title=title,
+            text_content=text_content,
+            annotations={},
+            annotation_citations=[],
+            status=GenerationStatus.in_progress,
+            generation_metadata=GenerationMetadata(
+                config_name=config_info.get("name", "unknown"),
+                variant_extraction_method=config["variant_extraction"]["method"],
+                sentence_generation_method=config.get(
+                    "sentence_generation", {}
+                ).get("method"),
+                sentence_model=config.get("sentence_generation", {}).get("model"),
+                citation_model=config.get("citation_finding", {}).get("model"),
+                summary_model=config.get("summary_generation", {}).get("model"),
+                elapsed_seconds=0.0,
+                git_sha=git_sha,
+                stages_run=sorted(stages),
+            ),
+        )
+        record_id = record.id
+        _append_jsonl(record)
+        logger.info(f"  Wrote in_progress record {record_id}")
+
         pmcid_start = time.monotonic()
         try:
             result = process_pmcid(
@@ -411,6 +471,13 @@ def run_pipeline(
 
             if result is None:
                 # Skipped (e.g. no variants found)
+                _update_jsonl(record_id, {
+                    "status": GenerationStatus.completed.value,
+                    "generation_metadata": {
+                        **record.generation_metadata.model_dump(),
+                        "elapsed_seconds": round(time.monotonic() - pmcid_start, 2),
+                    },
+                })
                 continue
 
             # Build annotations dict: {variant_name: [{sentence, explanation}]}
@@ -428,40 +495,30 @@ def run_pipeline(
             # Build annotation_citations list
             annotation_citations = result.get("citations", [])
 
-            # Get article title and text
-            try:
-                title = get_title_from_pmcid(pmcid, DATA_DIR)
-            except Exception:
-                title = None
-            text_content = get_markdown_text(pmcid)
-
             elapsed = round(time.monotonic() - pmcid_start, 2)
 
-            record = GenerationRecord(
-                pmid=pmid,
-                pmcid=pmcid,
-                title=title,
-                text_content=text_content,
-                annotations=annotations,
-                annotation_citations=annotation_citations,
-                generation_metadata=GenerationMetadata(
-                    config_name=config_info.get("name", "unknown"),
-                    variant_extraction_method=config["variant_extraction"]["method"],
-                    sentence_generation_method=config.get(
-                        "sentence_generation", {}
-                    ).get("method"),
-                    sentence_model=config.get("sentence_generation", {}).get("model"),
-                    citation_model=config.get("citation_finding", {}).get("model"),
-                    summary_model=config.get("summary_generation", {}).get("model"),
-                    elapsed_seconds=elapsed,
-                    git_sha=git_sha,
-                    stages_run=sorted(stages),
-                ),
-            )
-            _append_jsonl(record)
-            logger.info(f"  Appended record to {GENERATIONS_JSONL}")
+            _update_jsonl(record_id, {
+                "annotations": annotations,
+                "annotation_citations": annotation_citations,
+                "annotation_data": result,
+                "status": GenerationStatus.completed.value,
+                "generation_metadata": {
+                    **record.generation_metadata.model_dump(),
+                    "elapsed_seconds": elapsed,
+                },
+            })
+            logger.info(f"  Updated record {record_id} to completed")
 
         except Exception as e:
+            elapsed = round(time.monotonic() - pmcid_start, 2)
+            _update_jsonl(record_id, {
+                "status": GenerationStatus.error.value,
+                "error": str(e),
+                "generation_metadata": {
+                    **record.generation_metadata.model_dump(),
+                    "elapsed_seconds": elapsed,
+                },
+            })
             logger.error(f"Failed to process {pmcid}: {e}")
 
     total_elapsed = time.monotonic() - start_time

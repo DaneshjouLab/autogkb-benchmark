@@ -4,8 +4,16 @@ from __future__ import annotations
 
 import uuid
 from datetime import datetime
+from enum import Enum
+from typing import Any
 
 from pydantic import BaseModel, Field
+
+
+class GenerationStatus(str, Enum):
+    in_progress = "in_progress"
+    completed = "completed"
+    error = "error"
 
 
 class GenerationMetadata(BaseModel):
@@ -28,5 +36,8 @@ class GenerationRecord(BaseModel):
     text_content: str
     annotations: dict  # {variant_name: [{sentence, explanation}]}
     annotation_citations: list[dict]
+    annotation_data: dict[str, Any] | None = None  # raw pipeline result JSON
+    status: GenerationStatus = GenerationStatus.completed
+    error: str | None = None
     generation_metadata: GenerationMetadata
     timestamp: str = Field(default_factory=lambda: datetime.now().isoformat())

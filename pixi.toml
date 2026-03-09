@@ -13,6 +13,8 @@ benchmark = "python -m benchmark.v1.run_benchmark --save_analysis"
 variant-setup = "python -m shared.data_setup.variant_bench_table"
 variants = "python -m benchmark.v2.variant_bench"
 fields = "python -m benchmark.v2.field_extractor"
+db-push = "python -m generation.sync push"
+db-pull = "python -m generation.sync pull"
 
 
 [dependencies]
@@ -37,3 +39,5 @@ sentence-transformers = ">=3.0.0,<4"
 scikit-learn = ">=1.3.0,<2"
 polars = ">=1.37.1,<2"
 ruff = ">=0.14.11,<0.15"
+psycopg2-binary = ">=2.9.10,<3"
+sqlalchemy = ">=2.0.48,<3"
