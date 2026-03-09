@@ -1,3 +1,0 @@
-"""
-AutoGKB Benchmark
-"""

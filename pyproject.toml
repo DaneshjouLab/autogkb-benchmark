@@ -17,5 +17,9 @@ dependencies = [
     "pydantic>=2.0.0",
 ]
 
+[project.scripts]
+generate = "generation.pipeline:main"
+clean-generations = "generation.clean:main"
+
 [tool.hatch.build.targets.wheel]
-packages = ["autogkb_pipeline"]
+packages = ["generation", "benchmark", "shared"]
