@@ -782,6 +782,7 @@ def main():
         logger.info("Pulling latest records from database...")
         try:
             from generation.sync import pull as sync_pull
+
             sync_pull(override=False)
         except Exception as e:
             logger.warning(f"Could not pull from DB (continuing with local data): {e}")
