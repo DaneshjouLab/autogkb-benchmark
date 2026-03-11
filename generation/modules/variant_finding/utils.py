@@ -11,7 +11,7 @@ from pathlib import Path
 
 import yaml
 
-from shared.utils import get_markdown_text
+from shared.utils import get_markdown_text, get_methods_and_results_text
 from generation.modules.utils_bioc import fetch_bioc_supplement
 from shared.term_normalization.snp_expansion import SNPExpander
 
@@ -364,6 +364,38 @@ def extract_all_variants(text: str) -> list[str]:
     variants.extend(extract_star_alleles(text))
     variants.extend(extract_hla_alleles(text))
     return list(set(variants))
+
+
+def filter_studied_variants(pmcid: str, variants: list[str]) -> list[str]:
+    """Filter variants to only those appearing in Methods or Results sections.
+
+    Variants that only appear in Discussion/Introduction (not directly studied)
+    are excluded. Variants found in supplementary materials are kept.
+
+    Args:
+        pmcid: Article PMC identifier.
+        variants: Full list of extracted variants.
+
+    Returns:
+        Filtered list containing only variants found in Methods, Results,
+        or supplementary materials.
+    """
+    methods_results_text = get_methods_and_results_text(pmcid)
+    supplement_text = fetch_bioc_supplement(pmcid, use_cache=True) or ""
+
+    # Combine Methods+Results with supplements for the filter check
+    studied_text = methods_results_text
+    if supplement_text:
+        studied_text += "\n\n" + supplement_text
+
+    if not studied_text:
+        # If we can't extract sections, return all variants as fallback
+        return variants
+
+    studied_variants = extract_all_variants(studied_text)
+    studied_set = {v.lower() for v in studied_variants}
+
+    return [v for v in variants if v.lower() in studied_set]
 
 
 def get_variant_types(variants: list[str]) -> dict:

@@ -48,6 +48,7 @@ from shared.data_setup.download_article import download_article
 
 from generation.models import GenerationRecord, GenerationMetadata, GenerationStatus
 from generation.modules.variant_finding.variant_extractor import VariantExtractor
+from generation.modules.variant_finding.utils import filter_studied_variants
 from generation.modules.term_normalization.term_normalizer import TermNormalizer
 from generation.modules.term_normalization.models import NormalizationResult
 from generation.modules.sentence_generation.sentence_generator import SentenceGenerator
@@ -261,6 +262,17 @@ def process_pmcid(
         result["variants"] = variants
         logger.info(f"  Extracted {len(variants)} variant(s)")
 
+    # Filter to only variants found in Methods/Results/Supplements
+    if "variants" in stages and extractor and variants:
+        pre_filter_count = len(variants)
+        variants = filter_studied_variants(pmcid, variants)
+        filtered_count = pre_filter_count - len(variants)
+        if filtered_count:
+            logger.info(
+                f"  Filtered {filtered_count} variant(s) not in Methods/Results"
+            )
+        result["variants"] = variants
+
     # Bail out early if variant extraction found nothing — likely not a PGx article
     if "variants" in stages and extractor and not variants:
         logger.warning(
@@ -336,12 +348,118 @@ def process_pmcid(
     return result
 
 
-def _save_generation_md(record: GenerationRecord) -> None:
-    """Save the article text as a markdown file in data/generations/."""
+def _render_annotation_md(record_data: dict) -> str:
+    """Render annotation data as human-readable markdown."""
+    ad = record_data.get("annotation_data") or {}
+    title = record_data.get("title") or ad.get("title") or "Untitled"
+    pmcid = record_data.get("pmcid", "")
+    pmid = record_data.get("pmid", "")
+    ts = record_data.get("timestamp", "")
+
+    lines = [f"# {title}", "", f"**PMCID:** {pmcid}  ", f"**PMID:** {pmid}  ", f"**Generated:** {ts}", ""]
+
+    # Summary
+    summary = ad.get("summary", "")
+    if isinstance(summary, dict):
+        summary_text = summary.get("summary", "")
+    else:
+        summary_text = summary
+    if summary_text:
+        lines.append("## Summary")
+        lines.append("")
+        lines.append(summary_text)
+        lines.append("")
+
+    # Variant Associations (from sentences)
+    sentences = ad.get("sentences", {})
+    if sentences:
+        lines.append("## Variant Associations")
+        lines.append("")
+        for variant, entries in sentences.items():
+            lines.append(f"### {variant}")
+            lines.append("")
+            for entry in entries:
+                sent = entry.get("sentence", "")
+                expl = entry.get("explanation", "")
+                lines.append(f"- **Sentence:** {sent}")
+                if expl:
+                    lines.append(f"  - *Explanation:* {expl}")
+            lines.append("")
+
+    # Structured annotations (var_drug_ann, var_pheno_ann, var_fa_ann)
+    for ann_type, label in [
+        ("var_drug_ann", "Variant-Drug Annotations"),
+        ("var_pheno_ann", "Variant-Phenotype Annotations"),
+        ("var_fa_ann", "Variant-Functional Assay Annotations"),
+    ]:
+        anns = ad.get(ann_type, [])
+        if anns:
+            lines.append(f"## {label}")
+            lines.append("")
+            for ann in anns:
+                gene = ann.get("Gene", "")
+                alleles = ann.get("Alleles", "")
+                drug = ann.get("Drug(s)", "")
+                sent = ann.get("Sentence", "")
+                sig = ann.get("Significance", "")
+                lines.append(f"- **{gene} {alleles}** | Drug: {drug} | Significance: {sig}")
+                lines.append(f"  - {sent}")
+                citations = ann.get("Citations", [])
+                if citations:
+                    lines.append("  - **Citations:**")
+                    for cit in citations:
+                        cit_text = cit.strip().replace("\n", " ") if isinstance(cit, str) else str(cit)
+                        lines.append(f"    - \"{cit_text}\"")
+            lines.append("")
+
+    # Variants extracted
+    variants = ad.get("variants", [])
+    if variants:
+        lines.append("## Variants Extracted")
+        lines.append("")
+        lines.append(", ".join(variants))
+        lines.append("")
+
+    # Citations
+    citations = ad.get("citations", {})
+    if citations:
+        lines.append("## Citations")
+        lines.append("")
+        if isinstance(citations, dict):
+            for variant, cit_entries in citations.items():
+                lines.append(f"### {variant}")
+                for cit in cit_entries:
+                    if isinstance(cit, dict):
+                        lines.append(f"- {cit.get('citation', cit.get('sentence', str(cit)))}")
+                    else:
+                        lines.append(f"- {cit}")
+                lines.append("")
+
+    # Generation metadata
+    meta = record_data.get("generation_metadata", {})
+    if meta:
+        lines.append("---")
+        lines.append(f"*Config: {meta.get('config_name', 'N/A')} | "
+                      f"Sentence model: {meta.get('sentence_model', 'N/A')} | "
+                      f"Stages: {', '.join(meta.get('stages_run', []))}*")
+
+    return "\n".join(lines)
+
+
+def _save_generation_file(record: GenerationRecord) -> None:
+    """Save the annotation content as a markdown file in data/generations/."""
     GENERATIONS_DIR.mkdir(parents=True, exist_ok=True)
-    pmid = record.pmid or "unknown"
-    filename = f"PMID{pmid}_{record.id}.md"
-    (GENERATIONS_DIR / filename).write_text(record.text_content, encoding="utf-8")
+    ts = record.timestamp[:19].replace(":", "").replace("-", "").replace("T", "_").replace(" ", "_")
+    filename = f"{ts}_{record.pmcid}.md"
+    record_data = {
+        "pmcid": record.pmcid,
+        "pmid": record.pmid,
+        "title": record.title,
+        "annotation_data": record.annotation_data,
+        "timestamp": record.timestamp,
+        "generation_metadata": record.generation_metadata.model_dump() if hasattr(record.generation_metadata, "model_dump") else record.generation_metadata,
+    }
+    (GENERATIONS_DIR / filename).write_text(_render_annotation_md(record_data), encoding="utf-8")
 
 
 def _append_jsonl(record: GenerationRecord) -> None:
@@ -349,7 +467,7 @@ def _append_jsonl(record: GenerationRecord) -> None:
     GENERATIONS_JSONL.parent.mkdir(parents=True, exist_ok=True)
     with open(GENERATIONS_JSONL, "a", encoding="utf-8") as f:
         f.write(record.model_dump_json() + "\n")
-    _save_generation_md(record)
+    _save_generation_file(record)
 
 
 def _update_jsonl(record_id: str, updates: dict) -> None:

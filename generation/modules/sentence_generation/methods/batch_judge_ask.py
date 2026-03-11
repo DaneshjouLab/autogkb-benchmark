@@ -8,7 +8,7 @@ from pathlib import Path
 
 from loguru import logger
 
-from shared.utils import call_llm, get_methods_and_conclusions_text, get_markdown_text
+from shared.utils import call_llm, get_methods_and_results_text, get_markdown_text
 from generation.modules.sentence_generation.models import GeneratedSentence
 from generation.modules.sentence_generation.utils import (
     load_prompts,
@@ -39,14 +39,14 @@ def batch_judge_ask_generate(
     prompts = load_prompts(PROMPTS_FILE)
     prompt_config = prompts[prompt_version]
 
-    article_text = get_methods_and_conclusions_text(pmcid)
+    article_text = get_methods_and_results_text(pmcid)
     if not article_text:
         article_text = get_markdown_text(pmcid)
     if not article_text:
         logger.warning(f"No article text found for {pmcid}")
         return {v: [] for v in variants}
 
-    use_explanations = prompt_version in ("v4", "v5")
+    use_explanations = prompt_version in ("v4", "v5", "v6")
 
     variants_list = "\n".join([f"- {variant}" for variant in variants])
     user_prompt = prompt_config["user"].format(
