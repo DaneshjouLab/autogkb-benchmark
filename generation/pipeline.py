@@ -97,6 +97,31 @@ def get_pmcids_from_benchmark(num_pmcids: int | None = None) -> list[str]:
     return pmcids
 
 
+def get_pmcids_from_generations() -> list[str]:
+    """Get list of unique PMCIDs from the generations.jsonl file."""
+    if not GENERATIONS_JSONL.exists():
+        logger.warning(f"No generations file found at {GENERATIONS_JSONL}")
+        return []
+
+    logger.debug(f"Loading PMCIDs from {GENERATIONS_JSONL}")
+    pmcids_seen = set()
+    pmcids = []
+    with open(GENERATIONS_JSONL) as f:
+        for line in f:
+            if not line.strip():
+                continue
+            try:
+                rec = json.loads(line)
+                pmcid = rec.get("pmcid")
+                if pmcid and pmcid not in pmcids_seen:
+                    pmcids_seen.add(pmcid)
+                    pmcids.append(pmcid)
+            except json.JSONDecodeError:
+                continue
+    logger.info(f"Found {len(pmcids)} unique PMCID(s) in generations.jsonl")
+    return pmcids
+
+
 def _git_sha() -> str:
     """Get the current git SHA, or 'unknown' if not in a git repo."""
     try:
@@ -741,13 +766,29 @@ def main():
         default=None,
         help="Path to a variants.json from a previous run",
     )
+    parser.add_argument(
+        "--regenerate-all",
+        action="store_true",
+        help="Regenerate annotations for all PMCIDs currently in generations.jsonl",
+    )
     args = parser.parse_args()
 
     # Load configuration
     config = load_config(args.config)
 
     # Build (pmid, pmcid) pairs from the chosen input mode
-    if args.pmid:
+    if args.regenerate_all:
+        # Pull latest from DB first, then get all PMCIDs
+        logger.info("Pulling latest records from database...")
+        try:
+            from generation.sync import pull as sync_pull
+            sync_pull(override=False)
+        except Exception as e:
+            logger.warning(f"Could not pull from DB (continuing with local data): {e}")
+        pmcids = get_pmcids_from_generations()
+        reverse_map = _build_reverse_pmcid_map()
+        pairs = [(reverse_map.get(p), p) for p in pmcids]
+    elif args.pmid:
         # PMID-first: resolve to PMCIDs
         pairs = resolve_pmids(args.pmid)
     elif args.pmcids:
