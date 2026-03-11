@@ -116,14 +116,22 @@ def parse_batch_output(
             variant_id = match[0].strip()
             sentence = match[1].strip()
             explanation = match[2].strip()
-            result[variant_id] = [{"sentence": sentence, "explanation": explanation}]
+            entry = {"sentence": sentence, "explanation": explanation}
+            if variant_id in result:
+                result[variant_id].append(entry)
+            else:
+                result[variant_id] = [entry]
     else:
         pattern = r"VARIANT:\s*(.+?)\s*\n\s*SENTENCE:\s*(.+?)(?=\n\s*VARIANT:|$)"
         matches = re.findall(pattern, output, re.DOTALL | re.IGNORECASE)
         for match in matches:
             variant_id = match[0].strip()
             sentence = match[1].strip()
-            result[variant_id] = [{"sentence": sentence, "explanation": ""}]
+            entry = {"sentence": sentence, "explanation": ""}
+            if variant_id in result:
+                result[variant_id].append(entry)
+            else:
+                result[variant_id] = [entry]
 
     return result
 

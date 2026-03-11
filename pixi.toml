@@ -43,3 +43,6 @@ polars = ">=1.37.1,<2"
 ruff = ">=0.14.11,<0.15"
 psycopg2-binary = ">=2.9.10,<3"
 sqlalchemy = ">=2.0.48,<3"
+
+[pypi-dependencies]
+pubmed-markdown = ">=0.1.0,<0.2"
