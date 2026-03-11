@@ -98,14 +98,18 @@ v3:
     - Create a summary that captures the main pharmacogenomic findings
     - Focus on the relationship between genetic variants and drug response/outcomes
     - Include relevant statistical evidence (p-values, effect sizes) when available
-    - Keep the summary concise (2-4 paragraphs)
     - Write in a clear, accessible style suitable for healthcare professionals
     - Ground your summary in the Results and Methods sections — do not include speculative interpretations from the Discussion section
+    - For Key Findings, use a structured bulleted format: group findings by theme (e.g., disease susceptibility, treatment response, biomarker context), with bold topic headers for each bullet. Use nested sub-bullets for variant-specific details.
 
     OUTPUT FORMAT:
     ## Background
     [Brief context about the study and drug/disease studied]
 
     ## Key Findings
-    [Main pharmacogenomic associations discovered, including statistical evidence]
+    - **[Finding theme/category]:** [Summary of finding]
+      - **[Variant/Gene]:** [Specific details with statistical evidence]
+      - **[Variant/Gene]:** [Specific details with statistical evidence]
+    - **[Finding theme/category]:** [Summary of finding]
+      - **[Variant/Gene]:** [Specific details with statistical evidence]
 
