@@ -476,14 +476,25 @@ def _update_jsonl(record_id: str, updates: dict) -> None:
         return
     lines = GENERATIONS_JSONL.read_text(encoding="utf-8").splitlines()
     new_lines = []
+    updated_record_data = None
     for line in lines:
         if not line.strip():
             continue
         data = json.loads(line)
         if data.get("id") == record_id:
             data.update(updates)
+            updated_record_data = data
         new_lines.append(json.dumps(data, ensure_ascii=False))
     GENERATIONS_JSONL.write_text("\n".join(new_lines) + "\n", encoding="utf-8")
+
+    # Also refresh the human-readable markdown file so it contains final info.
+    # We intentionally overwrite the same timestamp-based filename.
+    if updated_record_data is not None:
+        try:
+            rec = GenerationRecord.model_validate(updated_record_data)
+            _save_generation_file(rec)
+        except Exception as e:
+            logger.warning(f"Could not refresh generation markdown for {record_id}: {e}")
 
 
 def run_pipeline(
