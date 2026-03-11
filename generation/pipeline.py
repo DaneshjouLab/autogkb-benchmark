@@ -356,7 +356,14 @@ def _render_annotation_md(record_data: dict) -> str:
     pmid = record_data.get("pmid", "")
     ts = record_data.get("timestamp", "")
 
-    lines = [f"# {title}", "", f"**PMCID:** {pmcid}  ", f"**PMID:** {pmid}  ", f"**Generated:** {ts}", ""]
+    lines = [
+        f"# {title}",
+        "",
+        f"**PMCID:** {pmcid}  ",
+        f"**PMID:** {pmid}  ",
+        f"**Generated:** {ts}",
+        "",
+    ]
 
     # Summary
     summary = ad.get("summary", "")
@@ -402,14 +409,20 @@ def _render_annotation_md(record_data: dict) -> str:
                 drug = ann.get("Drug(s)", "")
                 sent = ann.get("Sentence", "")
                 sig = ann.get("Significance", "")
-                lines.append(f"- **{gene} {alleles}** | Drug: {drug} | Significance: {sig}")
+                lines.append(
+                    f"- **{gene} {alleles}** | Drug: {drug} | Significance: {sig}"
+                )
                 lines.append(f"  - {sent}")
                 citations = ann.get("Citations", [])
                 if citations:
                     lines.append("  - **Citations:**")
                     for cit in citations:
-                        cit_text = cit.strip().replace("\n", " ") if isinstance(cit, str) else str(cit)
-                        lines.append(f"    - \"{cit_text}\"")
+                        cit_text = (
+                            cit.strip().replace("\n", " ")
+                            if isinstance(cit, str)
+                            else str(cit)
+                        )
+                        lines.append(f'    - "{cit_text}"')
             lines.append("")
 
     # Variants extracted
@@ -430,7 +443,9 @@ def _render_annotation_md(record_data: dict) -> str:
                 lines.append(f"### {variant}")
                 for cit in cit_entries:
                     if isinstance(cit, dict):
-                        lines.append(f"- {cit.get('citation', cit.get('sentence', str(cit)))}")
+                        lines.append(
+                            f"- {cit.get('citation', cit.get('sentence', str(cit)))}"
+                        )
                     else:
                         lines.append(f"- {cit}")
                 lines.append("")
@@ -439,9 +454,11 @@ def _render_annotation_md(record_data: dict) -> str:
     meta = record_data.get("generation_metadata", {})
     if meta:
         lines.append("---")
-        lines.append(f"*Config: {meta.get('config_name', 'N/A')} | "
-                      f"Sentence model: {meta.get('sentence_model', 'N/A')} | "
-                      f"Stages: {', '.join(meta.get('stages_run', []))}*")
+        lines.append(
+            f"*Config: {meta.get('config_name', 'N/A')} | "
+            f"Sentence model: {meta.get('sentence_model', 'N/A')} | "
+            f"Stages: {', '.join(meta.get('stages_run', []))}*"
+        )
 
     return "\n".join(lines)
 
@@ -449,7 +466,13 @@ def _render_annotation_md(record_data: dict) -> str:
 def _save_generation_file(record: GenerationRecord) -> None:
     """Save the annotation content as a markdown file in data/generations/."""
     GENERATIONS_DIR.mkdir(parents=True, exist_ok=True)
-    ts = record.timestamp[:19].replace(":", "").replace("-", "").replace("T", "_").replace(" ", "_")
+    ts = (
+        record.timestamp[:19]
+        .replace(":", "")
+        .replace("-", "")
+        .replace("T", "_")
+        .replace(" ", "_")
+    )
     filename = f"{ts}_{record.pmcid}.md"
     record_data = {
         "pmcid": record.pmcid,
@@ -457,9 +480,15 @@ def _save_generation_file(record: GenerationRecord) -> None:
         "title": record.title,
         "annotation_data": record.annotation_data,
         "timestamp": record.timestamp,
-        "generation_metadata": record.generation_metadata.model_dump() if hasattr(record.generation_metadata, "model_dump") else record.generation_metadata,
+        "generation_metadata": (
+            record.generation_metadata.model_dump()
+            if hasattr(record.generation_metadata, "model_dump")
+            else record.generation_metadata
+        ),
     }
-    (GENERATIONS_DIR / filename).write_text(_render_annotation_md(record_data), encoding="utf-8")
+    (GENERATIONS_DIR / filename).write_text(
+        _render_annotation_md(record_data), encoding="utf-8"
+    )
 
 
 def _append_jsonl(record: GenerationRecord) -> None:
@@ -494,7 +523,9 @@ def _update_jsonl(record_id: str, updates: dict) -> None:
             rec = GenerationRecord.model_validate(updated_record_data)
             _save_generation_file(rec)
         except Exception as e:
-            logger.warning(f"Could not refresh generation markdown for {record_id}: {e}")
+            logger.warning(
+                f"Could not refresh generation markdown for {record_id}: {e}"
+            )
 
 
 def run_pipeline(
