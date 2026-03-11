@@ -9,7 +9,7 @@ This repository contains:
 - **`generation/`** — Multi-stage pipeline for extracting pharmacogenomic annotations from articles (variants, sentences, citations, summaries).
 - **`benchmark/`** — Evaluation suite for scoring generated annotations against ground truth (V1 comprehensive + V2 per-stage modular).
 - **`shared/`** — Shared utilities, data setup, and term normalization lookups.
-- **`pubmed_downloader/`** — Article downloading tools (PMID → PMCID → HTML → Markdown).
+- **[`pubmed-markdown`](https://pypi.org/project/pubmed-markdown/)** — Article downloading tools (PMID → PMCID → HTML → Markdown), installed as a PyPI dependency.
 
 ## Setup
 
@@ -145,7 +145,6 @@ autogkb-benchmark/
 │   ├── utils.py          # Common helpers (LLM calls, paths)
 │   ├── data_setup/       # Data download and setup scripts
 │   └── term_normalization/  # Term lookup and normalization
-├── pubmed_downloader/    # Article download tools
 ├── data/                 # Articles, ground truth, generated outputs
 │   ├── articles/         # Downloaded article markdown
 │   ├── cache/            # BioC supplement cache
