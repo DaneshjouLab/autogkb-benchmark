@@ -22,7 +22,7 @@ from loguru import logger
 from sqlalchemy import create_engine, text
 
 from generation.models import GenerationRecord, GenerationStatus
-from generation.pipeline import GENERATIONS_JSONL
+from generation.pipeline import GENERATIONS_JSONL, _save_generation_file
 
 load_dotenv()
 
@@ -46,9 +46,22 @@ def _load_local_records() -> list[GenerationRecord]:
     if not GENERATIONS_JSONL.exists():
         return []
     records = []
-    for line in GENERATIONS_JSONL.read_text(encoding="utf-8").splitlines():
-        if line.strip():
+    for line_no, line in enumerate(
+        GENERATIONS_JSONL.read_text(encoding="utf-8").splitlines(), start=1
+    ):
+        if not line.strip():
+            continue
+        try:
             records.append(GenerationRecord.model_validate(json.loads(line)))
+        except json.JSONDecodeError as e:
+            snippet = line.strip()
+            if len(snippet) > 400:
+                snippet = snippet[:400] + "…"
+            raise RuntimeError(
+                "Invalid JSON in local generations file "
+                f"({GENERATIONS_JSONL}) at line {line_no}: {e}. "
+                f"Line snippet: {snippet}"
+            ) from e
     return records
 
 
@@ -192,11 +205,13 @@ def pull(override: bool = False) -> None:
 
     if override:
         _write_local_records(db_records)
+        new_records = db_records
         logger.success(f"Overwrote local JSONL with {len(db_records)} record(s)")
     else:
         # Merge: DB records win on conflict (by id)
         local_records = _load_local_records()
         local_by_id = {r.id: r for r in local_records}
+        new_records = [rec for rec in db_records if rec.id not in local_by_id]
         for rec in db_records:
             local_by_id[rec.id] = rec
         merged = list(local_by_id.values())
@@ -205,6 +220,15 @@ def pull(override: bool = False) -> None:
             f"Merged {len(db_records)} DB record(s) into local JSONL "
             f"({len(merged)} total)"
         )
+
+    # Generate markdown files for new/updated entries
+    md_count = 0
+    for rec in new_records:
+        if rec.annotation_data:
+            _save_generation_file(rec)
+            md_count += 1
+    if md_count:
+        logger.info(f"Generated {md_count} markdown file(s) in data/generations/")
 
 
 # ---------------------------------------------------------------------------

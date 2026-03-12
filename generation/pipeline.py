@@ -528,7 +528,7 @@ def _update_jsonl(record_id: str, updates: dict) -> None:
     """Update an existing record in generations.jsonl by ID."""
     if not GENERATIONS_JSONL.exists():
         return
-    lines = GENERATIONS_JSONL.read_text(encoding="utf-8").splitlines()
+    lines = GENERATIONS_JSONL.read_text(encoding="utf-8").split("\n")
     new_lines = []
     updated_record_data = None
     for line in lines:
