@@ -29,7 +29,7 @@ citation_finding:
 summary_generation:
   method: "basic_summary"
   model: "gpt-5.4"
-  prompt_version: "v3"
+  prompt_version: "v4"
 
 processing_options:
   num_pmcids: 1
