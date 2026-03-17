@@ -43,8 +43,8 @@ def download_article(identifier: str, data_dir: Path = DATA_DIR) -> Path:
         ValueError: If a PMID cannot be mapped to a PMCID.
         RuntimeError: If the HTML fetch fails for the resolved PMCID.
     """
-    from pubmed_downloader.html_from_pmcid import get_html_from_pmcid
-    from pubmed_downloader.markdown_from_html import PubMedHTMLToMarkdownConverter
+    from pubmed_markdown.html_from_pmcid import get_html_from_pmcid
+    from pubmed_markdown.markdown_from_html import PubMedHTMLToMarkdownConverter
 
     pmcid = _resolve_to_pmcid(identifier)
 

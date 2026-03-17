@@ -46,4 +46,4 @@ psycopg2-binary = ">=2.9.10,<3"
 sqlalchemy = ">=2.0.48,<3"
 
 [pypi-dependencies]
-pubmed-markdown = ">=0.1.0,<0.2"
+pubmed-markdown = ">=0.2.0,<0.3"
