@@ -5,7 +5,7 @@ The canonical implementation lives in the pubmed-markdown package.
 Install: pip install pubmed-markdown
 """
 
-from pubmed_downloader.utils_bioc import (
+from pubmed_markdown.utils_bioc import (
     fetch_bioc_supplement,
     get_bioc_supplement_cached,
     prefetch_bioc_supplements,
