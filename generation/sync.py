@@ -27,7 +27,7 @@ from generation.pipeline import GENERATIONS_JSONL, _save_generation_file
 load_dotenv()
 
 DATABASE_URL = os.environ.get("DATABASE_URL", "")
-TABLE = "analysis_jobs"
+TABLE = "annotation_jobs"
 
 
 def _engine():
