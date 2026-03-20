@@ -1,4 +1,4 @@
-"""Sync generations.jsonl with Railway Postgres (analysis_jobs table).
+"""Sync generations.jsonl with Railway Postgres (annotation_jobs table).
 
 Push (local → DB):
     python -m generation.sync push              # upsert local records into DB
