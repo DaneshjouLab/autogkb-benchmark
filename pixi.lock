@@ -294,7 +294,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zlib-1.3.1-hb9d3cd8_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstandard-0.25.0-py313h54dd161_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb8e6e7a_2.conda
-      - pypi: https://files.pythonhosted.org/packages/5b/24/c3795d957cdfd32b3611072894cef427156bbbfc01720e2e720650968c55/pubmed_markdown-0.2.4-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/ef/1c/362ca1803a6d825c3005ce4295437c98b1c1bebb192708de9d6de245491a/pubmed_markdown-0.2.5-py3-none-any.whl
       osx-64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/aiohappyeyeballs-2.6.1-pyhd8ed1ab_0.conda
@@ -572,7 +572,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zlib-1.3.1-hd23fc13_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zstandard-0.25.0-py313hcb05632_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zstd-1.5.7-h8210216_2.conda
-      - pypi: https://files.pythonhosted.org/packages/5b/24/c3795d957cdfd32b3611072894cef427156bbbfc01720e2e720650968c55/pubmed_markdown-0.2.4-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/ef/1c/362ca1803a6d825c3005ce4295437c98b1c1bebb192708de9d6de245491a/pubmed_markdown-0.2.5-py3-none-any.whl
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-7_kmp_llvm.conda
   build_number: 7
@@ -5438,10 +5438,10 @@ packages:
   - pkg:pypi/ptyprocess?source=hash-mapping
   size: 19457
   timestamp: 1733302371990
-- pypi: https://files.pythonhosted.org/packages/5b/24/c3795d957cdfd32b3611072894cef427156bbbfc01720e2e720650968c55/pubmed_markdown-0.2.4-py3-none-any.whl
+- pypi: https://files.pythonhosted.org/packages/ef/1c/362ca1803a6d825c3005ce4295437c98b1c1bebb192708de9d6de245491a/pubmed_markdown-0.2.5-py3-none-any.whl
   name: pubmed-markdown
-  version: 0.2.4
-  sha256: 08cc850f5c385a8b392606bda02e6c18cef39d7422520264da834f42b2c3ebe5
+  version: 0.2.5
+  sha256: 9937b1899d1fa1966f54b9cad4dc543c46876088923a5cd36fc2ed54506756b9
   requires_dist:
   - beautifulsoup4>=4.13.0
   - biopython>=1.85

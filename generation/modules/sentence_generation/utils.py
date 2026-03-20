@@ -41,7 +41,7 @@ def get_article_text(pmcid: str, use_supplements: bool = True) -> tuple[str, boo
         return "", False
 
     if use_supplements:
-        supplement_text = fetch_bioc_supplement(pmcid, use_cache=True)
+        supplement_text = fetch_bioc_supplement(pmcid)
         if supplement_text:
             combined = (
                 article_text

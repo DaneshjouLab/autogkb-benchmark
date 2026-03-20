@@ -79,7 +79,7 @@ def get_combined_text(pmcid: str) -> tuple[str, str | None]:
         Tuple of (combined_text, supplement_text_or_none)
     """
     article_text = get_markdown_text(pmcid)
-    supplement_text = fetch_bioc_supplement(pmcid, use_cache=True)
+    supplement_text = fetch_bioc_supplement(pmcid)
 
     if supplement_text:
         combined_text = (
@@ -381,7 +381,7 @@ def filter_studied_variants(pmcid: str, variants: list[str]) -> list[str]:
         or supplementary materials.
     """
     methods_results_text = get_methods_and_results_text(pmcid)
-    supplement_text = fetch_bioc_supplement(pmcid, use_cache=True) or ""
+    supplement_text = fetch_bioc_supplement(pmcid) or ""
 
     # Combine Methods+Results with supplements for the filter check
     studied_text = methods_results_text
